@@ -125,6 +125,7 @@ const onAfterDataTransformation = (data) => {
 };
 
 module.exports = {
+    noIndex: true, // TODO: delete before release
     title: 'DHTMLX JavaScript To Do List Docs',
     tagline: 'DHTMLX JavaScript To Do List Docs',
     url: 'https://docs.dhtmlx.com',
