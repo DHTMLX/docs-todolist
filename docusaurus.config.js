@@ -128,7 +128,7 @@ module.exports = {
     title: 'DHTMLX JavaScript To Do List Docs',
     tagline: 'DHTMLX JavaScript To Do List Docs',
     url: 'https://docs.dhtmlx.com',
-    baseUrl: '/todolist-alt/',
+    baseUrl: '/todolist/',
     onBrokenLinks: 'warn',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.ico',
