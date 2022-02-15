@@ -26,6 +26,8 @@ module.exports = {
 					collapsible: true,
 					collapsed: true,
 					items: [
+            "api/methods/collapseitem_method",
+            "api/methods/expanditem_method",
 						"api/methods/selectitem_method",
 						"api/methods/unselectitem_method",
 					]
@@ -37,6 +39,8 @@ module.exports = {
 					collapsed: true,
 					items: [
 						// To Do List events
+            "api/events/collapseitem_event",
+            "api/events/expanditem_event",
 						"api/events/keypressontodo_event",
 						"api/events/selectitem_event",
 						"api/events/unselectitem_event",
