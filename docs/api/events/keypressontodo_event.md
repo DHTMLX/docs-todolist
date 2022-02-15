@@ -6,11 +6,11 @@ description: You can learn about the keypress-on-todo event in the documentation
 
 # keypress-on-todo
 
-### Description
+## Description
 
 @short: fires when an item is in focus at the time of using key navigation
 
-### Usage
+## Usage
 
 ~~~js
 "keypress-on-todo": ({
