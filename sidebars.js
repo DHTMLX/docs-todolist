@@ -37,7 +37,7 @@ module.exports = {
 					collapsed: true,
 					items: [
 						// To Do List events
-						
+						"api/events/keypressontodo_event",
 					]
 				},
 				{
