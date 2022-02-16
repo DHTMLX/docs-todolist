@@ -44,8 +44,8 @@ There are two groups of keyboard shortcuts:
 | **ArrowLeft** |arrowleft| Collapses the expanded parent item. If the item is already collapsed or does not have child items, moves selection to the parent item 
 | **Ctrl+ArrowUp** |ctrl+arrowup| Moves the selected item up within the same level |
 | **Ctrl+ArrowDown** |ctrl+arrowdown| Moves the selected item down within the same level | 
-| **Tab** |tab| Increases the nesting level of the item (up to the maximum possible level) |
-| **Shift+Tab** |shift+tab| Decreases the nesting level of the item (up to the minimum possible level) |
+| **Tab** |tab| Demotes the nesting level of the item to one lower level |
+| **Shift+Tab** |shift+tab| Promotes the nesting level of the item to one higher level|
 | **Ctrl+Enter** |ctrl+enter| Opens the editor of the selected item |
 | **Ctrl+D** |ctrl+d| Duplicates the selected item at the same level |
 | **Ctrl+C** |ctrl+c| Copies the selected item into the clipboard, including all child items |
