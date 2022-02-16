@@ -20,4 +20,4 @@ selectItem({
 
 ### Parameters
 
-- `id` - (required) the ID of an item
+- `id` - (required) the ID of the item

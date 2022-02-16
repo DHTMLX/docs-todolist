@@ -22,5 +22,5 @@ description: You can learn about the collapse-item event in the documentation of
 
 The callback of the **collapse-item** event can take an object with the following parameters:
 
-- `id` - (required) the id of a collapsed item
+- `id` - (required) the id of the item
  

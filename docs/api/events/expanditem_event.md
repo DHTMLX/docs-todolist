@@ -22,5 +22,5 @@ description: You can learn about the expand-item event in the documentation of t
 
 The callback of the **expand-item** event can take an object with the following parameters:
 
-- `id` - (required) the id of an expanded item
+- `id` - (required) the id of the item
  
