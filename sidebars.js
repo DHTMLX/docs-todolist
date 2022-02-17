@@ -27,6 +27,7 @@ module.exports = {
 					collapsed: true,
 					items: [
 						"api/methods/additem_method",
+						"api/methods/assignuser_method",
             			"api/methods/checkitem_method",
 						"api/methods/closeitemeditor_method",
 						"api/methods/collapseitem_method",
@@ -38,6 +39,7 @@ module.exports = {
             			"api/methods/openitemeditor_method",
             			"api/methods/pasteitem_method",
 						"api/methods/selectitem_method",
+						"api/methods/unassignuser_method",
 						"api/methods/uncheckitem_method",
 						"api/methods/unindentitem_method",
 						"api/methods/unselectitem_method",
@@ -52,6 +54,7 @@ module.exports = {
 					items: [
 						// To Do List events
 						"api/events/additem_event",
+						"api/events/assignuser_event",
 						"api/events/checkitem_event",
             			"api/events/closeitemeditor_event",
 						"api/events/collapseitem_event",
@@ -65,6 +68,7 @@ module.exports = {
 						"api/events/openitemeditor_event",
 						"api/events/pasteitem_event",
 						"api/events/selectitem_event",
+						"api/events/unassignuser_event",
 						"api/events/uncheckitem_event",
 						"api/events/unindentitem_event",
 						"api/events/unselectitem_event",
