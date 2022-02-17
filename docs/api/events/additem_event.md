@@ -28,6 +28,6 @@ The callback of the **add-item** event can take an object with the following par
 
 - `id` - (required) the ID of the added item
 - `parent` - (optional) the ID of the parent item
-- `targetId` - (optional) the ID of the adjacent item
-- `reverse` - (optional) **true**, if the item is added before the adjacent item; otherwise, **false**
+- `targetId` - (optional) the ID of the target item
+- `reverse` - (optional) **true**, if the item is added before the target item; otherwise, **false**
 - `item` - (required) the object of the added item

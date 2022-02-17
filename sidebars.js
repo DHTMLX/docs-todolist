@@ -33,11 +33,13 @@ module.exports = {
 						"api/methods/deleteitem_method",
             			"api/methods/expanditem_method",
             			"api/methods/indentitem_method",
+            			"api/methods/moveitem_method",
             			"api/methods/openitemeditor_method",
 						"api/methods/selectitem_method",
 						"api/methods/uncheckitem_method",
 						"api/methods/unindentitem_method",
 						"api/methods/unselectitem_method",
+						"api/methods/updateitem_method",
 					]
 				},
 				{
@@ -56,11 +58,13 @@ module.exports = {
             			"api/events/expanditem_event",
             			"api/events/indentitem_event",
 						"api/events/keypressontodo_event",
+						"api/events/moveitem_event",
 						"api/events/openitemeditor_event",
 						"api/events/selectitem_event",
 						"api/events/uncheckitem_event",
 						"api/events/unindentitem_event",
 						"api/events/unselectitem_event",
+						"api/events/updateitem_event",
 					]
 				},
 				{
