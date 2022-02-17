@@ -26,9 +26,11 @@ module.exports = {
 					collapsible: true,
 					collapsed: true,
 					items: [
+						"api/methods/additem_method",
             			"api/methods/checkitem_method",
 						"api/methods/closeitemeditor_method",
 						"api/methods/collapseitem_method",
+						"api/methods/deleteitem_method",
             			"api/methods/expanditem_method",
             			"api/methods/indentitem_method",
             			"api/methods/openitemeditor_method",
@@ -45,9 +47,11 @@ module.exports = {
 					collapsed: true,
 					items: [
 						// To Do List events
+						"api/events/additem_event",
 						"api/events/checkitem_event",
             			"api/events/closeitemeditor_event",
 						"api/events/collapseitem_event",
+						"api/events/deleteitem_event",
 						"api/events/editingitem_event",
             			"api/events/expanditem_event",
             			"api/events/indentitem_event",
