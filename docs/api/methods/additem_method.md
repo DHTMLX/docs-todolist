@@ -27,5 +27,5 @@ addItem({
 - `id` - (optional) the ID of the new item
 - `parent` - (optional) the ID of the future parent item
 - `targetId` - (optional) the ID of the future target item where the new item will be added
-- `reverse` - (optional) defines where the new item will be added: **before** or **after** the target item
+- `reverse` - (optional) defines the position where the new item will be added: **before** or **after** the target item
 - `item` - (required) the data object of the new item

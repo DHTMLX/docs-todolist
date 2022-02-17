@@ -26,4 +26,4 @@ moveItem({
 - `id` - (optional) the ID of the item to be moved
 - `parent` - (optional) the ID of the parent item
 - `targetId` - (optional) the ID of the target item where the moved item will be pasted
-- `reverse` - (optional) defines where the moved item will be pasted: **before** or **after** the target item
+- `reverse` - (optional) defines the position where the moved item will be pasted: **before** or **after** the target item
