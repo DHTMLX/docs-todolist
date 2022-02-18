@@ -21,7 +21,7 @@ data: [
         checked?: boolean;
         collapsed?: boolean;
         assigned?: string[] | number[];
-        [key: string]: any;
+        [key: string]?: any;
     },
     {...} // more data objects
 ];
@@ -36,5 +36,5 @@ The **data** property presents an array of task objects. Each object includes th
 - `description`- (optional) the text of the item; **""** by default
 - `checked`- (optional) marks the item as completed; **false** by default
 - `collapsed`- (optional) defines whether the item is collapsed (in case the item has child items), **false** by default
-- `appointed`- (optional) an array with id(s) of the users assigned to the item
+- `assigned`- (optional) an array with id(s) of the users assigned to the item
 - `[key: string]`- (optional) a set of custom properties

@@ -26,4 +26,4 @@ copyItem({
 - `id` - (optional) the ID of the item
 - `parent` - (optional) the ID of the future parent item
 - `targetId` - (optional) the ID of the target item where the copied item will be pasted
-- `reverse` - (optional) defines the position where the copied item will be added: **before** the target item or **after** it
+- `reverse` - (optional) defines the position where the copied item will be pasted: **before** the target item or **after** it
