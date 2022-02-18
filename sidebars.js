@@ -82,6 +82,9 @@ module.exports = {
 					collapsed: true,
 					items: [
 						// To Do List properties
+						"api/configs/data_config",
+						"api/configs/readonly_config",
+						"api/configs/users_config",
 					]
 				}
 			]

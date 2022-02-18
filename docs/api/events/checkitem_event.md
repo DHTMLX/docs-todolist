@@ -8,7 +8,7 @@ description: You can learn about the check-item event in the documentation of th
 
 ### Description
 
-@short: fires when the item is checked
+@short: fires when the item is marked as completed
 
 ### Usage
 

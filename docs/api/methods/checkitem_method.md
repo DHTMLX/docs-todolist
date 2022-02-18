@@ -8,7 +8,7 @@ description: You can learn about the checkItem method in the documentation of th
 
 ### Description
 
-@short: checks the item to mark it as completed
+@short: marks an item as completed
 
 ### Usage
 

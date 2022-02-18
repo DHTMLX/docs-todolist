@@ -8,7 +8,7 @@ description: You can learn about the uncheck-item event in the documentation of 
 
 ### Description
 
-@short: fires when the item is unchecked
+@short: fires when the item is marked as uncompleted
 
 ### Usage
 

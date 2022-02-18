@@ -8,7 +8,7 @@ description: You can learn about the uncheckItem method in the documentation of 
 
 ### Description
 
-@short: unchecks the item to mark it as uncompleted
+@short: marks an item as uncompleted
 
 ### Usage
 
