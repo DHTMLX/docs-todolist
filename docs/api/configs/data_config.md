@@ -35,6 +35,6 @@ The **data** property presents an array of task objects. Each object includes th
 - `parent` - (optional) the id of the parent item. The value of the parameter is **undefined** for root items
 - `description`- (optional) the text of the item; **""** by default
 - `checked`- (optional) marks the item as completed; **false** by default
-- `collapsed`- (optional) defines whether the item is collapsed (in case the item has child items), **false** by default
+- `collapsed`- (optional) defines whether the item is collapsed initially (in case the item has child items), **false** by default
 - `assigned`- (optional) an array with id(s) of the users assigned to the item
 - `[key: string]`- (optional) a set of custom properties
