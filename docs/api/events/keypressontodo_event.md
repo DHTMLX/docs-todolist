@@ -46,10 +46,10 @@ There are two groups of keyboard shortcuts:
 | **Ctrl+ArrowDown** |ctrl+arrowdown| Moves the selected item down within the same level | 
 | **Tab** |tab| Demotes the nesting level of the item to one lower level |
 | **Shift+Tab** |shift+tab| Promotes the nesting level of the item to one higher level|
-| **Ctrl+Enter** |ctrl+enter| Opens the editor of the selected item |
-| **Ctrl+D** |ctrl+d| Duplicates the selected item at the same level |
-| **Ctrl+C** |ctrl+c| Copies the selected item into the clipboard, including all child items |
-| **Ctrl+V** |ctrl+v| Pastes the copied items to the same level as the currently selected item. It is possible to paste a copied item to any level, the structure of the copied item is saved |
+| **Ctrl(Cmd)+Enter** |ctrl+enter| Opens the editor of the selected item |
+| **Ctrl(Cmd)+D** |ctrl+d| Duplicates the selected item at the same level |
+| **Ctrl(Cmd)+C** |ctrl+c| Copies the selected item into the clipboard, including all child items |
+| **Ctrl(Cmd)+V** |ctrl+v| Pastes the copied items to the same level as the currently selected item. It is possible to paste a copied item to any level, the structure of the copied item is saved |
 
 - keyboard shortcuts **in the editing mode**
 

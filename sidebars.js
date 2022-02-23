@@ -34,7 +34,9 @@ module.exports = {
 						"api/methods/closeuserlist_method",
 						"api/methods/collapseitem_method",
 						"api/methods/copyitem_method",
+						"api/methods/createproject_method",
 						"api/methods/deleteitem_method",
+						"api/methods/deleteproject_method",
             			"api/methods/expanditem_method",
             			"api/methods/indentitem_method",
             			"api/methods/moveitem_method",
@@ -43,6 +45,7 @@ module.exports = {
             			"api/methods/openuserlist_method",
             			"api/methods/pasteitem_method",
 						"api/methods/selectitem_method",
+						"api/methods/setproject_method",
 						"api/methods/unassignuser_method",
 						"api/methods/uncheckitem_method",
 						"api/methods/unindentitem_method",
@@ -66,7 +69,9 @@ module.exports = {
             			"api/events/closeuserlist_event",
 						"api/events/collapseitem_event",
 						"api/events/copyitem_event",
+						"api/events/createproject_event",
 						"api/events/deleteitem_event",
+						"api/events/deleteproject_event",
 						"api/events/editingitem_event",
             			"api/events/expanditem_event",
             			"api/events/indentitem_event",
@@ -77,6 +82,7 @@ module.exports = {
 						"api/events/openuserlist_event",
 						"api/events/pasteitem_event",
 						"api/events/selectitem_event",
+						"api/events/setproject_event",
 						"api/events/unassignuser_event",
 						"api/events/uncheckitem_event",
 						"api/events/unindentitem_event",
@@ -91,8 +97,10 @@ module.exports = {
 					collapsed: true,
 					items: [
 						// To Do List properties
+						"api/configs/activeproject_config",
 						"api/configs/data_config",
 						"api/configs/itemshape_config",
+						"api/configs/projects_config",
 						"api/configs/readonly_config",
 						"api/configs/users_config",
 					]
@@ -106,6 +114,20 @@ module.exports = {
 			collapsed: true,
 			items: [
 				"guides/initialization",
+				"guides/configuration",
+				{
+					type: "category",
+					label: "Managing tasks",
+					collapsible: true,
+					collapsed: true,
+					items: [
+						"guides/task_operations",
+						"guides/task_menu",
+						"guides/assigning_users",
+						"guides/inline_editing",
+					]
+				},
+				"guides/work_with_projects",
 			]
 		}
 	]

@@ -28,7 +28,7 @@ users?: [
 
 The **users** property presents an array of user objects. Each object includes the following set of parameters:
 
-- `id` - (required) the id of the user
+- `id` - (required) the id of a user
 - `label` - (required) the description of the user
 - `path` - (optional) a path to the image of the user
 - `color` - (optional) the color of the user if the image isn't uploaded<br>

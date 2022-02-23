@@ -26,5 +26,5 @@ To configure the item's appearance, you can specify the following parameters in 
 
 - `counter` - (optional) an object with settings for the counter of completed child tasks:
     - `type` - (optional) the type of display of the counter. There are two types:
-        - *"number"* - the value of the counter is displayed as a fraction
+        - *"number"* - the value of the counter is displayed as a ratio between two numbers: the number of completed child tasks and the total number of child tasks
         - *"percentage"* - the value of the counter is displayed as a percentage
