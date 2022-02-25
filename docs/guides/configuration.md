@@ -24,6 +24,10 @@ If you need some operations to be still available for end-users, specify the [re
 
 You can change the type of the counter which renders the completion of the child tasks.
 
+```todo
+add image
+```
+
 By default, each parent task is equipped with the counter whose value is shown as the ratio of completed child tasks and the total number of the child tasks.
 
 If you want the value of the counter to be displayed as a percentage, specify the *type: "percentage"* attribute inside the **counter** parameter of the [itemShape](../../api/configs/itemshape_config/) property:

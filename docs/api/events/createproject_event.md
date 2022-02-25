@@ -14,7 +14,8 @@ description: You can learn about the create-project event in the documentation o
 
 ~~~js
 "create-project": ({
-    id: string | number;
+    id: string | number,
+    label: string;
 }) => void;
 ~~~
 
@@ -23,3 +24,4 @@ description: You can learn about the create-project event in the documentation o
 The callback of the **create-project** event can take an object with the following parameters:
 
 - `id` - (required) the ID of the created project
+- `label` - (required) the project label

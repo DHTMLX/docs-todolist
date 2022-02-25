@@ -10,6 +10,8 @@ description: You can learn about the readonly config in the documentation of the
 
 @short: Optional. Enables/disables editing, adding, selecting, dragging the items
 
+After you enable the readonly mode, the *add Task* button and *3 dots* icon will be hidden.
+
 ### Usage
 
 ~~~js

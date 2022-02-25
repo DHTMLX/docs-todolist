@@ -14,10 +14,12 @@ description: You can learn about the createProject method in the documentation o
 
 ~~~js
 createProject({
-    id?: string | number
+    id?: string | number,
+    label?: string
 }): void;
 ~~~
 
 ### Parameters
 
 - `id` - (optional) the ID of the new project
+- `label` - (optional) the label of the new project

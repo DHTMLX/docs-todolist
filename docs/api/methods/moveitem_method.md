@@ -10,6 +10,8 @@ description: You can learn about the moveItem method in the documentation of the
 
 @short: moves an item to the specified position
 
+A parent item is moved together with its children.
+
 ### Usage
 
 ~~~js

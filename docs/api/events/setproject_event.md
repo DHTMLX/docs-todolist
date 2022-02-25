@@ -10,6 +10,10 @@ description: You can learn about the set-project event in the documentation of t
 
 @short: fires when changing the active project
 
+:::info
+The event fires when you use the [setProject] method not the [activeProject] property to change the active project
+:::
+
 ### Usage
 
 ~~~js
@@ -22,4 +26,5 @@ description: You can learn about the set-project event in the documentation of t
 
 The callback of the **set-project** event can take an object with the following parameters:
 
-- `id` - (required) the ID of an active project
+- `id` - (required) the ID of a newly active project
+

@@ -15,7 +15,8 @@ description: You can learn about the projects config in the documentation of the
 ~~~js
 projects?: [
     {
-        id: string | number;
+        id: string | number,
+        label: string
     },
     {...} // more projects
 ];
@@ -24,3 +25,4 @@ projects?: [
 ### Parameters
 
 - `id` - (required) the id of a project
+- `label` - (required) the label of a project. It is displayed in the list of available projects
