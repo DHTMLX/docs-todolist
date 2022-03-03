@@ -165,6 +165,7 @@ module.exports = {
             // This is a read-only, search-only key served directly by the front-end, managed by Algolia via their
             // free DocSearch program. The key is not sensitive. See https://docsearch.algolia.com/ for more details.
             //appId: '123', // TODO: change it
+            appId: '123', // TODO: change it
             apiKey: '123', // TODO: change it
             indexName: 'todolistalt', // TODO: change it
 
@@ -301,7 +302,6 @@ module.exports = {
                 sitemap: {
                     changefreq: 'daily',
                     priority: 0.5,
-                    trailingSlash: true
                 },
             },
         ],
