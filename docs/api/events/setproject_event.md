@@ -11,7 +11,7 @@ description: You can learn about the set-project event in the documentation of t
 @short: fires when changing the active project
 
 :::info
-The event fires when you use the [setProject] method not the [activeProject] property to change the active project
+The event fires when you use the [setProject] method to change the currently active project
 :::
 
 ### Usage

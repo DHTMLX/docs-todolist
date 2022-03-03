@@ -11,7 +11,7 @@ description: You can learn about the deleteProject method in the documentation o
 @short: removes a project
 
 :::note
-The items linked to the project won't be removed.
+The tasks linked to the project won't be removed.
 :::
 
 ### Usage

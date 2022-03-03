@@ -6,6 +6,10 @@ description: descr
 
 # Task operations
 
+Use task menu
+Use key navigation
+Call API methods that are described below
+
 ## Adding a new task
 
 To add a new task to the list, use the [addItem()] method:
