@@ -8,7 +8,7 @@ description: You can learn about the unassign-user event in the documentation of
 
 ### Description
 
-@short: fires when a user is unassigned from the item
+@short: fires when a user is unassigned from a task
 
 ### Usage
 
@@ -23,5 +23,5 @@ description: You can learn about the unassign-user event in the documentation of
 
 The callback of the **unassign-user** event can take an object with the following parameters:
 
-- `id` - (required) the id of the item
-- `userId` - (required) the id of the user unassigned from the item
+- `id` - (required) the id of a task
+- `userId` - (required) the id of the user unassigned from the task

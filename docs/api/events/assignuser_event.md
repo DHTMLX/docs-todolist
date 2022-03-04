@@ -8,7 +8,7 @@ description: You can learn about the assign-user event in the documentation of t
 
 ### Description
 
-@short: fires when a user is assigned to the item
+@short: fires when a user is assigned to a task
 
 ### Usage
 
@@ -23,5 +23,5 @@ description: You can learn about the assign-user event in the documentation of t
 
 The callback of the **assign-user** event can take an object with the following parameters:
 
-- `id` - (required) the id of the item
-- `userId` - (required) the id of the user assigned to the item
+- `id` - (required) the id of a task
+- `userId` - (required) the id of the user assigned to the task

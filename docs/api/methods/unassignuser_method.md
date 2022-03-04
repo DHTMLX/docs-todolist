@@ -8,7 +8,7 @@ description: You can learn about the unassignUser method in the documentation of
 
 ### Description
 
-@short: unassigns a user from the specified item
+@short: unassigns a user from the specified task
 
 ### Usage
 
@@ -21,5 +21,5 @@ unassignUser({
 
 ### Parameters
 
-- `id` - (required) the id of the item
-- `userId` - (required) the id of the user which to be unassigned from the item
+- `id` - (required) the id of a task
+- `userId` - (required) the id of the user which to be unassigned from the task

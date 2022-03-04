@@ -8,7 +8,7 @@ description: You can learn about the close-user-list event in the documentation 
 
 ### Description
 
-@short: fires when closing the list of the users assigned to the item
+@short: fires when closing the list of the users assigned to the task
 
 ### Usage
 
@@ -23,7 +23,7 @@ description: You can learn about the close-user-list event in the documentation 
 
 The callback of the **close-user-list** event can take an object with the following parameters:
 
-- `id` - (required) the id of the item
+- `id` - (required) the id of a task
 - `coords` - (required) an object with the x and y coordinates of the user list:
     - `x` - (required) the x coordinate of the list position
     - `y` - (required) the y coordinate of the list position 

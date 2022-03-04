@@ -24,6 +24,6 @@ description: You can learn about the click-menu-item event in the documentation 
 
 The callback of the **click-menu-item** event can take an object with the following parameters:
 
-- `id` - (required) the id of a list item
+- `id` - (required) the id of a task
 - `action` - (required) the ID of a clicked menu item
 - `extra` - (optional) the ID of a clicked submenu item

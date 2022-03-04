@@ -8,7 +8,7 @@ description: You can learn about the readonly config in the documentation of the
 
 ### Description
 
-@short: Optional. Enables/disables editing, adding, selecting, dragging the items
+@short: Optional. Enables/disables editing, adding, selecting, dragging the tasks
 
 After you enable the readonly mode, the *add Task* button and *3 dots* icon will be hidden.
 
@@ -29,10 +29,10 @@ readonly?: {
 
 As an object with extended settings, the **readonly** property can contain the following parameters:
 
-- `edit` - (optional) enables/disables **editing** of the items
-- `add` - (optional) enables/disables **adding** of the new items
-- `select` - (optional) enables/disables **selecting** of the items
-- `dnd` - (optional) enables/disables **dragging** of the items
+- `edit` - (optional) enables/disables **editing** of the tasks
+- `add` - (optional) enables/disables **adding** of the new tasks
+- `select` - (optional) enables/disables **selecting** of the tasks
+- `dnd` - (optional) enables/disables **dragging** of the tasks
 
 ### Default config
 

@@ -8,7 +8,7 @@ description: You can learn about the keypress-on-todo event in the documentation
 
 ## Description
 
-@short: fires when an item is in focus at the time of using key navigation
+@short: fires when a task is in focus at the time of using key navigation
 
 ## Usage
 
@@ -30,26 +30,26 @@ The callback of the **keypress-on-todo** event can take an object with the follo
 
 There are two groups of keyboard shortcuts:
 
-- keyboard shortcuts **in the default mode**, i.e. when the editing mode of an item is not activated
+- keyboard shortcuts **in the default mode**, i.e. when the editing mode of a task is not activated
 
 | Keyboard shortcut   |Key code| Description                                                          |
 | :--------- |--| :------------------------------------------------------------------- |
-| **Escape** |escape| Closes the menu if it is opened for the item when the key is pressed |
+| **Escape** |escape| Closes the menu if it is opened for the task when the key is pressed |
 | **Enter** |enter| Creates a new task on the same level as the selected one, moves selection to the created task and opens the editor |
-| **Space** |space| Marks an item as complete or incomplete depending on its initial state |
-| **Delete/<br>Backspace** |delete/<br>backspace | Removes the selected item by the following logic:<br> - after removing a child item, moves the selection down/up until it reaches the parent item <br>- after removing a parent item, moves the selection down to the next parent item if it's exist; otherwise, moves the selection up to the previous parent item |
-| **ArrowUp** |arrowup| Moves the selection up to the previous item |
-| **ArrowDown** |arrowdown| Moves the selection down to the next item |
-| **ArrowRight** |arrowright| Expands the collapsed parent item |
-| **ArrowLeft** |arrowleft| Collapses the expanded parent item. If the item is already collapsed or does not have child items, moves selection to the parent item 
-| **Ctrl+ArrowUp** |ctrl+arrowup| Moves the selected item up within the same level |
-| **Ctrl+ArrowDown** |ctrl+arrowdown| Moves the selected item down within the same level | 
-| **Tab** |tab| Demotes the nesting level of the item to one lower level |
-| **Shift+Tab** |shift+tab| Promotes the nesting level of the item to one higher level|
-| **Ctrl(Cmd)+Enter** |ctrl+enter| Opens the editor of the selected item |
-| **Ctrl(Cmd)+D** |ctrl+d| Duplicates the selected item at the same level |
-| **Ctrl(Cmd)+C** |ctrl+c| Copies the selected item into the clipboard, including all child items |
-| **Ctrl(Cmd)+V** |ctrl+v| Pastes the copied items to the same level as the currently selected item. It is possible to paste a copied item to any level, the structure of the copied item is saved |
+| **Space** |space| Marks a task as complete or incomplete depending on its initial state |
+| **Delete/<br>Backspace** |delete/<br>backspace | Removes the selected task by the following logic:<br> - after removing a child task, moves the selection down/up until it reaches the parent task <br>- after removing a parent task, moves the selection down to the next parent task if it's exist; otherwise, moves the selection up to the previous parent task |
+| **ArrowUp** |arrowup| Moves the selection up to the previous task |
+| **ArrowDown** |arrowdown| Moves the selection down to the next task |
+| **ArrowRight** |arrowright| Expands the collapsed parent task |
+| **ArrowLeft** |arrowleft| Collapses the expanded parent task. If the task is already collapsed or does not have child tasks, moves selection to the parent task | 
+| **Ctrl+ArrowUp** |ctrl+arrowup| Moves the selected task up within the same level |
+| **Ctrl+ArrowDown** |ctrl+arrowdown| Moves the selected task down within the same level | 
+| **Tab** |tab| Demotes the nesting level of the task to one lower level |
+| **Shift+Tab** |shift+tab| Promotes the nesting level of the task to one higher level|
+| **Ctrl(Cmd)+Enter** |ctrl+enter| Opens the editor of the selected task |
+| **Ctrl(Cmd)+D** |ctrl+d| Duplicates the selected task at the same level |
+| **Ctrl(Cmd)+C** |ctrl+c| Copies the selected task into the clipboard, including all child tasks |
+| **Ctrl(Cmd)+V** |ctrl+v| Pastes the copied tasks to the same level as the currently selected task. It is possible to paste a copied task to any level, the structure of the copied task is saved |
 
 - keyboard shortcuts **in the editing mode**
 

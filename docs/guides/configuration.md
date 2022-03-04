@@ -8,7 +8,7 @@ description: You can learn about the To Do List Configuration in the documentati
 
 ## Read-only mode
 
-The read-only mode lets you limit such actions as *adding*, *editing*, *selecting*, *dragging* of items. 
+The read-only mode lets you limit such actions as *adding*, *editing*, *selecting*, *dragging* of tasks. 
 
 It is possible to block all these actions at once by setting the [readonly](../../api/configs/readonly_config/) configuration property to *true*.
 
@@ -30,7 +30,7 @@ add image
 
 By default, each parent task is equipped with the counter whose value is shown as the ratio of completed child tasks and the total number of the child tasks.
 
-If you want the value of the counter to be displayed as a percentage, specify the *type: "percentage"* attribute inside the **counter** parameter of the [itemShape](../../api/configs/itemshape_config/) property:
+If you want the value of the counter to be displayed as a percentage, specify the *type: "percentage"* attribute inside the **counter** parameter of the [taskShape](../../api/configs/taskshape_config/) property:
 
 ~~~js
 ~~~

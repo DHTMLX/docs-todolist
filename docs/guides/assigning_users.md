@@ -23,7 +23,7 @@ As a result, the related tasks will display avatars of the assigned users.
 To view the list of users assigned to a task, click on the users avatars. To close the opened list, click outside it.
 
 :::info
-The [itemShape](../../api/configs/itemshape_config/)  property lets you customize the appearance of the avatars.
+The [taskShape](../../api/configs/taskshape_config/)  property lets you customize the appearance of the avatars.
 :::
 
 ## Opening/closing the list of assigned users

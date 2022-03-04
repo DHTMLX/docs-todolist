@@ -12,28 +12,28 @@ Call API methods that are described below
 
 ## Adding a new task
 
-To add a new task to the list, use the [addItem()] method:
+To add a new task to the list, use the [addTask()] method:
 
 ~~~js
 ~~~
 
 ## Deleting a task
 
-To delete a task, use the [deleteItem()] method:
+To delete a task, use the [deleteTask()] method:
 
 ~~~js
 ~~~
 
 ## Updating task's properties
 
-To dynamically update properties of a task object, apply the [updateItem()] method:
+To dynamically update properties of a task object, apply the [updateTask()] method:
 
 ~~~js
 ~~~
 
 ## Moving a task
 
-To move a task to another position, use the [moveItem()] method:
+To move a task to another position, use the [moveTask()] method:
 
 ~~~js
 ~~~
@@ -46,7 +46,7 @@ If you move a parent task, it will be moved together with its subtasks.
 
 ### Copy and paste
 
-The quickest way to copy and paste a task is use the [copyItem()] method. For that, it is necessary to pass the following parameters to the method: 
+The quickest way to copy and paste a task is use the [copyTask()] method. For that, it is necessary to pass the following parameters to the method: 
 - the ID of the task that you want to copy and paste
 - the ID of the target task where the copied task should be pasted
 - another two parameters (**parent** and **reverse**) are optional
@@ -56,51 +56,51 @@ The quickest way to copy and paste a task is use the [copyItem()] method. For th
 
 ### Copy to the clipboard
 
-To copy a necessary task to the clipboard without its further pasting, pass just the ID of the task to the [copyItem()] method:
+To copy a necessary task to the clipboard without its further pasting, pass just the ID of the task to the [copyTask()] method:
 
 ~~~js
 ~~~
 
 ### Paste from the clipboard
 
-The copied task can be pasted from the clipboard into a new position via the [pasteItem()] method:
+The copied task can be pasted from the clipboard into a new position via the [pasteTask()] method:
 
 ~~~js
 ~~~
 
 ## Selecting/unselecting a task
 
-To select a particular task, pass the ID of the task as a parameter to the [selectItem()] method:
+To select a particular task, pass the ID of the task as a parameter to the [selectTask()] method:
 
 ~~~js
 ~~~
 
-To remove selection from a selected task, pass the ID of the task as a parameter to the [unselectItem()] method:
+To remove selection from a selected task, pass the ID of the task as a parameter to the [unselectTask()] method:
 
 ~~~js
 ~~~
 
 
-To remove selection from all previously selected tasks, use the [unselectItem()] method without parameters:
+To remove selection from all previously selected tasks, use the [unselectTask()] method without parameters:
 
 ~~~js
 ~~~
 
 ## Expanding/collapsing a task
 
-To expand a collapsed task by its ID use the [expandItem()] method:
+To expand a collapsed task by its ID use the [expandTask()] method:
 
 ~~~js
 ~~~
 
-To collapse a task, use the [collapseItem()] method. The method takes the ID of the task as a parameter:
+To collapse a task, use the [collapseTask()] method. The method takes the ID of the task as a parameter:
 
 ~~~js
 ~~~
 
 ## Marking a task complete/incomplete
 
-You may mark the necessary task as complete/uncomplete via the corresponding [checkItem()] and [uncheckItem()] methods. Both methods take one parameter - the ID of a task:
+You may mark the necessary task as complete/uncomplete via the corresponding [checkTask()] and [uncheckTask()] methods. Both methods take one parameter - the ID of a task:
 
 ~~~js
 // marks the task as complete
@@ -112,12 +112,12 @@ You may mark the necessary task as complete/uncomplete via the corresponding [ch
 ## Indenting/outdenting a task
 
 To change the nesting level of a task dynamically, use the following two methods:
-- [indentItem()] - to demote the nesting level of a task to one lower level
+- [indentTask()] - to demote the nesting level of a task to one lower level
 
 ~~~js
 ~~~
 
-- [unindentItem()] - to promote the nesting level of the item to one higher level
+- [unindentTask()] - to promote the nesting level of the task to one higher level
 
 ~~~js
 ~~~

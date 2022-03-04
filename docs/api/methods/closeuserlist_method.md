@@ -8,7 +8,7 @@ description: You can learn about the closeUserList method in the documentation o
 
 ### Description
 
-@short: closes the opened list of the users assigned to the item
+@short: closes the opened list of the users assigned to the task
 
 ### Usage
 
@@ -20,4 +20,4 @@ closeUserList({
 
 ### Parameters
 
-- `id` - (required) the ID of the item
+- `id` - (required) the ID of a task

@@ -8,7 +8,7 @@ description: You can learn about the openUserList method in the documentation of
 
 ### Description
 
-@short: opens the list of the users assigned to the item at the specified coordinates
+@short: opens the list of the users assigned to the task at the specified coordinates
 
 ### Usage
 
@@ -21,7 +21,7 @@ openUserList({
 
 ### Parameters
 
-- `id` - (required) the ID of the item
+- `id` - (required) the ID of a task
 - `coords` - (required) an object with the x and y coordinates of the user list:
     - `x` - (required) the value of the x coordinate
     - `y` - (required) the value of the y coordinate

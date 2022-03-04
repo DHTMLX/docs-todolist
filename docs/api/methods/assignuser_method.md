@@ -8,7 +8,7 @@ description: You can learn about the assignUser method in the documentation of t
 
 ### Description
 
-@short: assigns a user to the specified item
+@short: assigns a user to the specified task
 
 ### Usage
 
@@ -21,5 +21,5 @@ assignUser({
 
 ### Parameters
 
-- `id` - (required) the id of the item
-- `userId` - (required) the id of the user to be assigned to the item
+- `id` - (required) the id of the task
+- `userId` - (required) the id of the user to be assigned to the task
