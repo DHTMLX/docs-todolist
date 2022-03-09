@@ -8,7 +8,7 @@ description: You can learn about the unselectTask method in the documentation of
 
 ### Description
 
-@short: unselects a task(s)
+@short: Unselects a task(s)
 
 ### Usage
 

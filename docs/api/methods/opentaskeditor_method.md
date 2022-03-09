@@ -8,7 +8,7 @@ description: You can learn about the openTaskEditor method in the documentation 
 
 ### Description
 
-@short: opens the inline editor of a task
+@short: Opens the inline editor of a task
 
 ### Usage
 

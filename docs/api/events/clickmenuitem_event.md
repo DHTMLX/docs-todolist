@@ -8,7 +8,7 @@ description: You can learn about the click-menu-item event in the documentation 
 
 ### Description
 
-@short: fires when the user clicks on the item of the menu
+@short: Fires when the user clicks on the item of the menu
 
 ### Usage
 

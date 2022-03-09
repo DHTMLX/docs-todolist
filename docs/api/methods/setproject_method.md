@@ -8,7 +8,7 @@ description: You can learn about the setProject method in the documentation of t
 
 ### Description
 
-@short: sets an active project
+@short: Sets an active project
 
 ### Usage
 

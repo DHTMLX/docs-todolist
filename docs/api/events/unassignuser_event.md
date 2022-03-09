@@ -8,7 +8,7 @@ description: You can learn about the unassign-user event in the documentation of
 
 ### Description
 
-@short: fires when a user is unassigned from a task
+@short: Fires when a user is unassigned from a task
 
 ### Usage
 

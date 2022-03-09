@@ -8,7 +8,7 @@ description: You can learn about the pasteTask method in the documentation of th
 
 ### Description
 
-@short: pastes the copied task from the clipboard into the specified position
+@short: Pastes the copied task from the clipboard into the specified position
 
 ### Usage
 

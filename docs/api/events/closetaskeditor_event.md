@@ -8,7 +8,7 @@ description: You can learn about the close-task-editor event in the documentatio
 
 ### Description
 
-@short: fires when closing the inline editor of a task
+@short: Fires when closing the inline editor of a task
 
 ### Usage
 

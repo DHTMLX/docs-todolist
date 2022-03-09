@@ -8,7 +8,7 @@ description: You can learn about the closeTaskEditor method in the documentation
 
 ### Description
 
-@short: closes the inline editor of a task
+@short: Closes the inline editor of a task
 
 ### Usage
 

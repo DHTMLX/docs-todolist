@@ -8,7 +8,7 @@ description: You can learn about the selectTask method in the documentation of t
 
 ### Description
 
-@short: selects the specified task by its ID
+@short: Selects the specified task by its ID
 
 ### Usage
 

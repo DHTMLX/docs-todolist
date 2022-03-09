@@ -8,7 +8,7 @@ description: You can learn about the expandTask method in the documentation of t
 
 ### Description
 
-@short: expands a collapsed task by its id
+@short: Expands a collapsed task by its id
 
 ### Usage
 

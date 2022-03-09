@@ -8,7 +8,7 @@ description: You can learn about the copyTask method in the documentation of the
 
 ### Description
 
-@short: copies a task into the clipboard and pastes into the specified position
+@short: Copies a task into the clipboard and pastes into the specified position
 
 ### Usage
 

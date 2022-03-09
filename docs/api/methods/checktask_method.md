@@ -8,7 +8,7 @@ description: You can learn about the checkTask method in the documentation of th
 
 ### Description
 
-@short: marks a task as completed
+@short: Marks a task as completed
 
 ### Usage
 

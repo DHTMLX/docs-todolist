@@ -8,7 +8,7 @@ description: You can learn about the indent-task event in the documentation of t
 
 ### Description
 
-@short: fires when the nesting level of a task is demoted by one
+@short: Fires when the nesting level of a task is demoted by one
 
 ### Usage
 

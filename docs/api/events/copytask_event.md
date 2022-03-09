@@ -8,7 +8,7 @@ description: You can learn about the copy-task event in the documentation of the
 
 ### Description
 
-@short: fires when a task is copied into the clipboard
+@short: Fires when a task is copied into the clipboard
 
 ### Usage
 

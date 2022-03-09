@@ -8,7 +8,7 @@ description: You can learn about the add-task event in the documentation of the 
 
 ### Description
 
-@short: fires when adding a new task
+@short: Fires when adding a new task
 
 ### Usage
 

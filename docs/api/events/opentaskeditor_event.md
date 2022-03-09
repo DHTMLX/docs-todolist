@@ -8,7 +8,7 @@ description: You can learn about the open-task-editor event in the documentation
 
 ### Description
 
-@short: fires when opening the inline editor of a task
+@short: Fires when opening the inline editor of a task
 
 ### Usage
 

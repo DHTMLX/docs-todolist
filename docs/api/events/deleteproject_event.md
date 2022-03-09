@@ -8,7 +8,7 @@ description: You can learn about the delete-project event in the documentation o
 
 ### Description
 
-@short: fires when removing a project
+@short: Fires when removing a project
 
 ### Usage
 

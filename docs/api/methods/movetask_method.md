@@ -8,7 +8,7 @@ description: You can learn about the moveTask method in the documentation of the
 
 ### Description
 
-@short: moves a task to the specified position
+@short: Moves a task to the specified position
 
 A parent task is moved together with its children.
 

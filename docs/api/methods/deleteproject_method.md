@@ -8,7 +8,7 @@ description: You can learn about the deleteProject method in the documentation o
 
 ### Description
 
-@short: removes a project
+@short: Removes a project
 
 :::note
 The tasks linked to the project won't be removed.

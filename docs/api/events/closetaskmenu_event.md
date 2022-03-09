@@ -8,7 +8,7 @@ description: You can learn about the close-task-menu event in the documentation 
 
 ### Description
 
-@short: fires when closing the opened menu of a task
+@short: Fires when closing the opened menu of a task
 
 ### Usage
 

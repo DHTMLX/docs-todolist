@@ -8,7 +8,7 @@ description: You can learn about the create-project event in the documentation o
 
 ### Description
 
-@short: fires when creating a new project
+@short: Fires when creating a new project
 
 ### Usage
 

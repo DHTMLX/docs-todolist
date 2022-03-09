@@ -8,7 +8,7 @@ description: You can learn about the createProject method in the documentation o
 
 ### Description
 
-@short: creates a new project
+@short: Creates a new project
 
 ### Usage
 

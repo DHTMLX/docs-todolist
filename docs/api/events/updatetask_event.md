@@ -8,7 +8,7 @@ description: You can learn about the update-task event in the documentation of t
 
 ### Description
 
-@short: fires when updating a task
+@short: Fires when updating a task
 
 ### Usage
 

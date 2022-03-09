@@ -8,7 +8,7 @@ description: You can learn about the keypress-on-todo event in the documentation
 
 ## Description
 
-@short: fires when a task is in focus at the time of using key navigation
+@short: Fires when a task is in focus at the time of using key navigation
 
 ## Usage
 

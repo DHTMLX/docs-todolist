@@ -8,7 +8,7 @@ description: You can learn about the open-user-list event in the documentation o
 
 ### Description
 
-@short: fires when opening the list of the users assigned to the task
+@short: Fires when opening the list of the users assigned to the task
 
 ### Usage
 

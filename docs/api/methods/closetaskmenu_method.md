@@ -8,7 +8,7 @@ description: You can learn about the closeTaskMenu method in the documentation o
 
 ### Description
 
-@short: closes the opened menu of a task
+@short: Closes the opened menu of a task
 
 ### Usage
 

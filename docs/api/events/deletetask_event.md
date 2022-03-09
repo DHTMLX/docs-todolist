@@ -8,7 +8,7 @@ description: You can learn about the delete-task event in the documentation of t
 
 ### Description
 
-@short: fires when removing a task
+@short: Fires when removing a task
 
 ### Usage
 

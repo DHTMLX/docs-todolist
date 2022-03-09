@@ -8,7 +8,7 @@ description: You can learn about the move-task event in the documentation of the
 
 ### Description
 
-@short: fires when moving a task
+@short: Fires when moving a task
 
 ### Usage
 

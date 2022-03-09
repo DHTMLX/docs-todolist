@@ -8,7 +8,7 @@ description: You can learn about the set-project event in the documentation of t
 
 ### Description
 
-@short: fires when changing the active project
+@short: Fires when changing the active project
 
 :::info
 The event fires when you use the [setProject] method to change the currently active project

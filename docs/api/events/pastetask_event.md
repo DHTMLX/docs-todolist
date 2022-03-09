@@ -8,7 +8,7 @@ description: You can learn about the paste-task event in the documentation of th
 
 ### Description
 
-@short: fires when the task is pasted from the clipboard into the specified position
+@short: Fires when the task is pasted from the clipboard into the specified position
 
 ### Usage
 

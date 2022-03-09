@@ -8,7 +8,7 @@ description: You can learn about the assign-user event in the documentation of t
 
 ### Description
 
-@short: fires when a user is assigned to a task
+@short: Fires when a user is assigned to a task
 
 ### Usage
 

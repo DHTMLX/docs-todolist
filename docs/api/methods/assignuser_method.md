@@ -8,7 +8,7 @@ description: You can learn about the assignUser method in the documentation of t
 
 ### Description
 
-@short: assigns a user to the specified task
+@short: Assigns a user to the specified task
 
 ### Usage
 

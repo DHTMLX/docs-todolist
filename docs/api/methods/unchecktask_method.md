@@ -8,7 +8,7 @@ description: You can learn about the uncheckTask method in the documentation of 
 
 ### Description
 
-@short: marks a task as uncompleted
+@short: Marks a task as uncompleted
 
 ### Usage
 

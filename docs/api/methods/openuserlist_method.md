@@ -8,7 +8,7 @@ description: You can learn about the openUserList method in the documentation of
 
 ### Description
 
-@short: opens the list of the users assigned to the task at the specified coordinates
+@short: Opens the list of the users assigned to the task at the specified coordinates
 
 ### Usage
 

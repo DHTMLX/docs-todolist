@@ -8,7 +8,7 @@ description: You can learn about the unselect-task event in the documentation of
 
 ### Description
 
-@short: fires when unselecting a task
+@short: Fires when unselecting a task
 
 ### Usage
 

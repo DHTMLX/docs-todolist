@@ -8,7 +8,7 @@ description: You can learn about the unindent-task event in the documentation of
 
 ### Description
 
-@short: fires when the nesting level of a task is promoted by one
+@short: Fires when the nesting level of a task is promoted by one
 
 ### Usage
 

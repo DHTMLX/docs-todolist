@@ -8,7 +8,7 @@ description: You can learn about the addTask method in the documentation of the 
 
 ### Description
 
-@short: adds a new task into the list
+@short: Adds a new task into the list
 
 ### Usage
 

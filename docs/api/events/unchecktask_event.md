@@ -8,7 +8,7 @@ description: You can learn about the uncheck-task event in the documentation of 
 
 ### Description
 
-@short: fires when a task is marked as uncompleted
+@short: Fires when a task is marked as uncompleted
 
 ### Usage
 

@@ -8,7 +8,7 @@ description: You can learn about the closeUserList method in the documentation o
 
 ### Description
 
-@short: closes the opened list of the users assigned to the task
+@short: Closes the opened list of the users assigned to the task
 
 ### Usage
 

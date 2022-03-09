@@ -8,7 +8,7 @@ description: You can learn about the collapse-task event in the documentation of
 
 ### Description
 
-@short: fires when collapsing a task
+@short: Fires when collapsing a task
 
 ### Usage
 

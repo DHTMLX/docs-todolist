@@ -8,7 +8,7 @@ description: You can learn about the open-task-menu event in the documentation o
 
 ### Description
 
-@short: fires when opening the menu of a task
+@short: Fires when opening the menu of a task
 
 ### Usage
 

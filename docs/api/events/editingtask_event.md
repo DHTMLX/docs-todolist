@@ -8,7 +8,7 @@ description: You can learn about the editing-task event in the documentation of 
 
 ### Description
 
-@short: fires when the value of a task is edited via the inline editor
+@short: Fires when the value of a task is edited via the inline editor
 
 ### Usage
 

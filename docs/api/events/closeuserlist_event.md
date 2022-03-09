@@ -8,7 +8,7 @@ description: You can learn about the close-user-list event in the documentation 
 
 ### Description
 
-@short: fires when closing the list of the users assigned to the task
+@short: Fires when closing the list of the users assigned to the task
 
 ### Usage
 

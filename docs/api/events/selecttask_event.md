@@ -8,7 +8,7 @@ description: You can learn about the select-task event in the documentation of t
 
 ### Description
 
-@short: fires when selecting a task
+@short: Fires when selecting a task
 
 ### Usage
 

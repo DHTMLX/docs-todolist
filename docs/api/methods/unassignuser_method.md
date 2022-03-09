@@ -8,7 +8,7 @@ description: You can learn about the unassignUser method in the documentation of
 
 ### Description
 
-@short: unassigns a user from the specified task
+@short: Unassigns a user from the specified task
 
 ### Usage
 

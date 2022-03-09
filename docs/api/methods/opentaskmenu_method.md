@@ -8,7 +8,7 @@ description: You can learn about the openTaskMenu method in the documentation of
 
 ### Description
 
-@short: opens the menu of a task at the specified coordinates
+@short: Opens the menu of a task at the specified coordinates
 
 ### Usage
 

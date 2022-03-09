@@ -8,7 +8,7 @@ description: You can learn about the check-task event in the documentation of th
 
 ### Description
 
-@short: fires when a task is marked as completed
+@short: Fires when a task is marked as completed
 
 ### Usage
 

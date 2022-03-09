@@ -8,7 +8,7 @@ description: You can learn about the collapseTask method in the documentation of
 
 ### Description
 
-@short: collapses a task by its id
+@short: Collapses a task by its id
 
 ### Usage
 

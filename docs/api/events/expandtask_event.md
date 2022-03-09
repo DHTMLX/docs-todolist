@@ -8,7 +8,7 @@ description: You can learn about the expand-task event in the documentation of t
 
 ### Description
 
-@short: fires when expanding a task
+@short: Fires when expanding a task
 
 ### Usage
 

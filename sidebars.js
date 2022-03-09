@@ -17,6 +17,14 @@ module.exports = {
 			label: "API",
 			collapsible: true,
 			collapsed: false,
+			link: {
+				type: 'generated-index',
+				title: 'API overview',
+				description: 'Learn about the most important Docusaurus concepts!',
+        		//slug: '/category/docusaurus-guides',
+				keywords: ['guides'],
+				image: '/img/docusaurus.png',
+			},
 			items: [
 				//"api/api_overview",
 				// To Do List methods
@@ -25,6 +33,10 @@ module.exports = {
 					label: "To Do List methods",
 					collapsible: true,
 					collapsed: true,
+					link: {
+						type: 'doc',
+						id: 'api/methods/methods_overview',
+					},
 					items: [
 						"api/methods/addtask_method",
 						"api/methods/assignuser_method",
@@ -58,6 +70,10 @@ module.exports = {
 					label: "To Do List events",
 					collapsible: true,
 					collapsed: true,
+					link: {
+						type: 'doc',
+						id: 'api/events/events_overview',
+					},
 					items: [
 						// To Do List events
 						"api/events/addtask_event",
@@ -95,6 +111,10 @@ module.exports = {
 					label: "To Do List properties",
 					collapsible: true,
 					collapsed: true,
+					link: {
+						type: 'doc',
+						id: 'api/configs/configs_overview',
+					},
 					items: [
 						// To Do List properties
 						"api/configs/activeproject_config",
@@ -112,6 +132,10 @@ module.exports = {
 			label: "Guides",
 			collapsible: true,
 			collapsed: true,
+			link: {
+				type: 'doc',
+				id: 'guides/guides',
+			},
 			items: [
 				"guides/initialization",
 				"guides/configuration",
@@ -120,6 +144,10 @@ module.exports = {
 					label: "Managing tasks",
 					collapsible: true,
 					collapsed: true,
+					link: {
+						type: 'doc',
+						id: 'guides/tasks',
+					},
 					items: [
 						"guides/task_operations",
 						"guides/task_menu",
