@@ -33,7 +33,7 @@ Describe behavior if active project isn't set
 
 ## Changing the active project
 
-It is possible to change the currently active project via the [setProject](../../api/methods/setproject_method/) method. It takes the id of a project as a parameter:
+It is possible to change the currently active project via the [setProject()](../../api/methods/setproject_method/) method. It takes the id of a project as a parameter:
 
 ~~~js
 ~~~

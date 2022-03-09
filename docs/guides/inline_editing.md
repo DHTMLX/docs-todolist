@@ -13,12 +13,12 @@ But if you disable editing of all tasks via the [readonly] property
 
 ```
 
-To open the editor for a particular task, use the [openTaskEditor()] method:
+To open the editor for a particular task, use the [openTaskEditor()](../../api/methods/opentaskeditor_method/) method:
 
 ~~~js
 ~~~
 
-To close the editor after finishing the editing of the task and save the made changes, pass the ID of the task to the [closeTaskEditor()] method. 
+To close the editor after finishing the editing of the task and save the made changes, pass the ID of the task to the [closeTaskEditor()](../../api/methods/closetaskeditor_method/) method. 
 
 ~~~js
 ~~~

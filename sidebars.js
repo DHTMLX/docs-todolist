@@ -20,9 +20,9 @@ module.exports = {
 			link: {
 				type: 'generated-index',
 				title: 'API overview',
-				description: 'Learn about the most important Docusaurus concepts!',
+				//description: '',
         		//slug: '/category/docusaurus-guides',
-				keywords: ['guides'],
+				keywords: ['api'],
 				image: '/img/docusaurus.png',
 			},
 			items: [
@@ -133,8 +133,12 @@ module.exports = {
 			collapsible: true,
 			collapsed: true,
 			link: {
-				type: 'doc',
-				id: 'guides/guides',
+					type: 'generated-index',
+					title: 'Guides',
+					//description: '',
+					//slug: '/category/docusaurus-guides',
+					keywords: ['guides'],
+					image: '/img/docusaurus.png',
 			},
 			items: [
 				"guides/initialization",

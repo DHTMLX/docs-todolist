@@ -19,6 +19,6 @@ The task menu allows operating the tasks in the following ways:
 - to copy/paste a task
 - to delete a task
 
-To open the task menu, you can either click on the 3 dots icon or use the [openTaskMenu()] method.
+To open the task menu, you can either click on the 3 dots icon or use the [openTaskMenu()](../../api/methods/opentaskmenu_method/) method.
 
-To close the task menu, you can either click anywhere outside the menu or use the [closeTaskMenu()] method.
+To close the task menu, you can either click anywhere outside the menu or use the [closeTaskMenu()](../../api/methods/closetaskmenu_method/) method.
