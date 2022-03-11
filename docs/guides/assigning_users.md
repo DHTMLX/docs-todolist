@@ -16,7 +16,7 @@ To assign the users to necessary tasks, pass the id(s) of the users to the **ass
 ~~~js
 ~~~
 
-As a result, the related tasks will display avatars of the assigned users.
+As a result, the related tasks will display avatars of the assigned users to the right of the task.
 
 [image]
 

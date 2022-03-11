@@ -160,6 +160,7 @@ module.exports = {
 					]
 				},
 				"guides/work_with_projects",
+				"guides/localization",
 			]
 		}
 	]
