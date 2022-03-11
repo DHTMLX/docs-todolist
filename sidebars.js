@@ -18,12 +18,8 @@ module.exports = {
 			collapsible: true,
 			collapsed: false,
 			link: {
-				type: 'generated-index',
-				title: 'API overview',
-				//description: '',
-        		//slug: '/category/docusaurus-guides',
-				keywords: ['api'],
-				image: '/img/docusaurus.png',
+				type: 'doc',
+				id: 'api/api_overview'
 			},
 			items: [
 				//"api/api_overview",
@@ -35,7 +31,7 @@ module.exports = {
 					collapsed: true,
 					link: {
 						type: 'doc',
-						id: 'api/methods/methods_overview',
+						id: 'api/overview/methods_overview',
 					},
 					items: [
 						"api/methods/addtask_method",
@@ -72,7 +68,7 @@ module.exports = {
 					collapsed: true,
 					link: {
 						type: 'doc',
-						id: 'api/events/events_overview',
+						id: 'api/overview/events_overview',
 					},
 					items: [
 						// To Do List events
@@ -113,7 +109,7 @@ module.exports = {
 					collapsed: true,
 					link: {
 						type: 'doc',
-						id: 'api/configs/configs_overview',
+						id: 'api/overview/configs_overview',
 					},
 					items: [
 						// To Do List properties
