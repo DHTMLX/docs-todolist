@@ -12,7 +12,7 @@ description: You can explore the API methods in the documentation of the DHTMLX 
 | [](../methods/assignuser_method.md)        | @getshort(../methods/assignuser_method.md)        |
 | [](../methods/checktask_method.md)         | @getshort(../methods/checktask_method.md)         |
 | [](../methods/closeinlineeditor_method.md) | @getshort(../methods/closeinlineeditor_method.md) |
-| [](../methods/closetaskmenu_method.md)     | @getshort(../methods/closetaskmenu_method.md)     |
+| [](../methods/closemenu_method.md)         | @getshort(../methods/closemenu_method.md)         |
 | [](../methods/collapsetask_method.md)      | @getshort(../methods/collapsetask_method.md)      |
 | [](../methods/copytask_method.md)          | @getshort(../methods/copytask_method.md)          |
 | [](../methods/createproject_method.md)     | @getshort(../methods/createproject_method.md)     |
@@ -22,7 +22,7 @@ description: You can explore the API methods in the documentation of the DHTMLX 
 | [](../methods/indenttask_method.md)        | @getshort(../methods/indenttask_method.md)        |
 | [](../methods/movetask_method.md)          | @getshort(../methods/movetask_method.md)          |
 | [](../methods/openinlineeditor_method.md)  | @getshort(../methods/openinlineeditor_method.md)  |
-| [](../methods/opentaskmenu_method.md)      | @getshort(../methods/opentaskmenu_method.md)      |
+| [](../methods/openmenu_method.md)          | @getshort(../methods/openmenu_method.md)          |
 | [](../methods/pastetask_method.md)         | @getshort(../methods/pastetask_method.md)         |
 | [](../methods/selecttask_method.md)        | @getshort(../methods/selecttask_method.md)        |
 | [](../methods/setproject_method.md)        | @getshort(../methods/setproject_method.md)        |
