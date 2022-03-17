@@ -14,7 +14,8 @@ description: You can learn about the pasteTask method in the documentation of th
 
 ~~~js
 pasteTask({
-    parent?: string | number;
+    parent?: string | number | null;
+    project?: string | number | null;
     targetId?: string | number;
     reverse?: boolean;
 }): void;
@@ -23,5 +24,6 @@ pasteTask({
 ### Parameters
 
 - `parent` - (optional) the ID of the future parent task
-- `targetId` - (optional) the ID of the target task where the copied task will be pasted
+- `project` - (optional) the ID of the project where the task should be pasted
+- `targetId` - (optional) the ID of the target task where the copied task should be pasted
 - `reverse` - (optional) defines the position where the copied task will be pasted: **before** the target task or **after** it

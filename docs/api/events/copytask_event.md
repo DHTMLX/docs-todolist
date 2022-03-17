@@ -15,7 +15,8 @@ description: You can learn about the copy-task event in the documentation of the
 ~~~js
 "copy-task": ({
     id: string | number;
-    parent?: string | number;
+    parent?: string | number | null;
+    project?: string | number | null;
     targetId?: string | number;
     reverse?: boolean;
 }) => void;
@@ -32,6 +33,7 @@ In case the copied task is also pasted from the clipboard into another position,
 :::
 
 - `parent` - (optional) the ID of the parent task
+- `project` - (optional) the ID of the project
 - `targetId` - (optional) the ID of the target task where the copied task is pasted
 - `reverse` - (optional) **true**, if the copied task is pasted before the target task; otherwise, **false**
  

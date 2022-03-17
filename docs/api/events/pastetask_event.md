@@ -8,13 +8,14 @@ description: You can learn about the paste-task event in the documentation of th
 
 ### Description
 
-@short: Fires when the task is pasted from the clipboard into the specified position
+@short: Fires when a task is pasted from the clipboard into the specified position
 
 ### Usage
 
 ~~~js
 "paste-task": ({
-    parent?: string | number;
+    parent?: string | number | null;
+    project?: string | number | null;
     targetId?: string | number;
     reverse?: boolean;
 }) => void;
@@ -25,5 +26,6 @@ description: You can learn about the paste-task event in the documentation of th
 The callback of the **paste-task** event can take an object with the following parameters:
 
 - `parent` - (optional) the ID of the future parent task
+- `project` - (optional) the ID of the project
 - `targetId` - (optional) the ID of the target task where the task is pasted
 - `reverse` - (optional) **true**, if the task is pasted before the target task; otherwise, **false**

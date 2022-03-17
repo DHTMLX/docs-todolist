@@ -15,7 +15,8 @@ description: You can learn about the add-task event in the documentation of the 
 ~~~js
 "add-task": ({
     id: string | number;
-    parent?: string | number;
+    parent?: string | number | null;
+    project?: string | number | null;
     targetId?: string | number;
     reverse?: boolean;
     task: object;
@@ -28,6 +29,7 @@ The callback of the **add-task** event can take an object with the following par
 
 - `id` - (required) the ID of the added task
 - `parent` - (optional) the ID of the parent task
+- `project` - (optional) the ID of the project
 - `targetId` - (optional) the ID of the target task
 - `reverse` - (optional) **true**, if the task is added before the target task; otherwise, **false**
 - `task` - (required) the object of the added task
