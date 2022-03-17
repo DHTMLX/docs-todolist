@@ -14,7 +14,7 @@ description: You can learn about the uncheckTask method in the documentation of 
 
 ~~~js
 uncheckTask({
-    id: string | number,
+    id: string | number
 }): void;
 ~~~
 

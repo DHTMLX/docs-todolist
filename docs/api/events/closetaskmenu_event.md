@@ -15,7 +15,7 @@ description: You can learn about the close-task-menu event in the documentation 
 ~~~js
 "close-task-menu": ({
     id: string | number,
-    coords: { x: number, y: number },
+    coords: { x: number, y: number }
 }) => void;
 ~~~
 

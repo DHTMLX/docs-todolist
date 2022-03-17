@@ -14,7 +14,7 @@ description: You can learn about the delete-project event in the documentation o
 
 ~~~js
 "delete-project": ({
-    id: string | number;
+    id: string | number
 }) => void;
 ~~~
 

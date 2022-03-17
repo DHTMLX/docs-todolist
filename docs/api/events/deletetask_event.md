@@ -14,7 +14,7 @@ description: You can learn about the delete-task event in the documentation of t
 
 ~~~js
 "delete-task": ({
-    id: string | number;
+    id: string | number
 }) => void;
 ~~~
 

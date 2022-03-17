@@ -14,7 +14,7 @@ description: You can learn about the unselect-task event in the documentation of
 
 ```js
 "unselect-task": ({
-    id: string | number,
+    id: string | number
 }) => void;
 ```
 ### Parameters

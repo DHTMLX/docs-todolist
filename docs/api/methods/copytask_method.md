@@ -20,11 +20,11 @@ The method copies a task together with all its children
 
 ~~~js
 copyTask({
-    id: string | number;
-    parent?: string | number | null;
-    project?: string | number | null;
-    targetId?: string | number;
-    reverse?: boolean;
+    id: string | number,
+    parent?: string | number | null,
+    project?: string | number | null,
+    targetId?: string | number,
+    reverse?: boolean
 }): void;
 ~~~
 

@@ -14,7 +14,7 @@ description: You can learn about the unindentTask method in the documentation of
 
 ~~~js
 unindentTask({
-    id: string | number,
+    id: string | number
 }): void;
 ~~~
 

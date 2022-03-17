@@ -15,7 +15,7 @@ description: You can learn about the editing-item event in the documentation of 
 ~~~js
 "editing-item": ({
     id: string | number,
-    currentValue: string,
+    currentValue: string
 }) => void;
 ~~~
 

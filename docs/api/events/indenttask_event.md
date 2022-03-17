@@ -14,7 +14,7 @@ description: You can learn about the indent-task event in the documentation of t
 
 ~~~js
 "indent-task": ({
-    id: string | number,
+    id: string | number
 }) => void;
 ~~~
 

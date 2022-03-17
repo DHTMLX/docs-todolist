@@ -14,10 +14,10 @@ description: You can learn about the pasteTask method in the documentation of th
 
 ~~~js
 pasteTask({
-    parent?: string | number | null;
-    project?: string | number | null;
-    targetId?: string | number;
-    reverse?: boolean;
+    parent?: string | number | null,
+    project?: string | number | null,
+    targetId?: string | number,
+    reverse?: boolean
 }): void;
 ~~~
 

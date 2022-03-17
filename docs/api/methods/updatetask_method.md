@@ -14,8 +14,8 @@ description: You can learn about the updateTask method in the documentation of t
 
 ~~~js
 updateTask({
-    id: string | number;
-    task: object;
+    id: string | number,
+    task: object
 }): void;
 ~~~
 

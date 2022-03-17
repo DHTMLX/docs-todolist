@@ -15,7 +15,7 @@ description: You can learn about the assignUser method in the documentation of t
 ~~~js
 assignUser({
     id: string | number,
-    userId: string | number,
+    userId: string | number
 }): void;
 ~~~
 

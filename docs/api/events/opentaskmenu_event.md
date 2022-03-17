@@ -15,7 +15,7 @@ description: You can learn about the open-task-menu event in the documentation o
 ~~~js
 "open-task-menu": ({
     id: string | number,
-    coords: { x: number, y: number },
+    coords: { x: number, y: number }
 }) => void;
 ~~~
 

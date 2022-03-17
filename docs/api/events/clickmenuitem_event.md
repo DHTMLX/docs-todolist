@@ -16,7 +16,7 @@ description: You can learn about the click-menu-item event in the documentation 
 "click-menu-item": ({
     id: string | number,
     action: string,
-    extra?: string,
+    extra?: string
 }) => void;
 ~~~
 

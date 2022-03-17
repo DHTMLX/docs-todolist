@@ -15,7 +15,7 @@ description: You can learn about the unassign-user event in the documentation of
 ~~~js
 "unassign-user": ({
     id: string | number,
-    userId: string | number,
+    userId: string | number
 }) => void;
 ~~~
 

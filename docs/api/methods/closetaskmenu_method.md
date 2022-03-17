@@ -14,7 +14,7 @@ description: You can learn about the closeTaskMenu method in the documentation o
 
 ~~~js
 closeTaskMenu({
-    id: string | number,
+    id: string | number
 }): void;
 ~~~
 

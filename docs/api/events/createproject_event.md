@@ -15,7 +15,7 @@ description: You can learn about the create-project event in the documentation o
 ~~~js
 "create-project": ({
     id: string | number,
-    label: string;
+    label: string
 }) => void;
 ~~~
 

@@ -16,11 +16,11 @@ A parent task is moved together with its children.
 
 ~~~js
 moveTask({
-    id?: string | number;
-    parent?: string | number | null;
-    project?: string | number | null;
-    targetId?: string | number;
-    reverse?: boolean;
+    id?: string | number,
+    parent?: string | number | null,
+    project?: string | number | null,
+    targetId?: string | number,
+    reverse?: boolean
 }): void;
 ~~~
 

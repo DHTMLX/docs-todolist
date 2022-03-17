@@ -14,8 +14,8 @@ description: You can learn about the update-task event in the documentation of t
 
 ~~~js
 "update-task": ({
-    id: string | number;
-    task: object;
+    id: string | number,
+    task: object
 }) => void;
 ~~~
 

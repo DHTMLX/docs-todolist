@@ -18,7 +18,7 @@ The event fires when you use the [setProject] method to change the currently act
 
 ~~~js
 "set-project": ({
-    id: string | number;
+    id: string | number
 }) => void;
 ~~~
 

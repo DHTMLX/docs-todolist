@@ -14,7 +14,7 @@ description: You can learn about the check-task event in the documentation of th
 
 ~~~js
 "check-task": ({
-    id: string | number,
+    id: string | number
 }) => void;
 ~~~
 

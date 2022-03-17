@@ -14,12 +14,12 @@ description: You can learn about the add-task event in the documentation of the 
 
 ~~~js
 "add-task": ({
-    id: string | number;
-    parent?: string | number | null;
-    project?: string | number | null;
-    targetId?: string | number;
-    reverse?: boolean;
-    task: object;
+    id: string | number,
+    parent?: string | number | null,
+    project?: string | number | null,
+    targetId?: string | number,
+    reverse?: boolean,
+    task: object
 }) => void;
 ~~~
 

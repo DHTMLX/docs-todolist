@@ -15,7 +15,7 @@ description: You can learn about the close-inline-editor event in the documentat
 ~~~js
 "close-inline-editor": ({
     id: string | number,
-    save: boolean,
+    save: boolean
 }) => void;
 ~~~
 

@@ -14,7 +14,7 @@ description: You can learn about the collapseTask method in the documentation of
 
 ~~~js
 collapseTask({
-    id: string | number,
+    id: string | number
 }): void;
 ~~~
 

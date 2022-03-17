@@ -14,7 +14,7 @@ description: You can learn about the expandTask method in the documentation of t
 
 ~~~js
 expandTask({
-    id: string | number,
+    id: string | number
 }): void;
 ~~~
 

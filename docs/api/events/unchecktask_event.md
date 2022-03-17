@@ -14,7 +14,7 @@ description: You can learn about the uncheck-task event in the documentation of 
 
 ~~~js
 "uncheck-task": ({
-    id: string | number,
+    id: string | number
 }) => void;
 ~~~
 

@@ -14,8 +14,8 @@ description: You can learn about the openInlineEditor method in the documentatio
 
 ~~~js
 openInlineEditor({
-    id: string | number;
-    type?: "task" | "project";
+    id: string | number,
+    type?: "task" | "project"
 }): void;
 ~~~
 

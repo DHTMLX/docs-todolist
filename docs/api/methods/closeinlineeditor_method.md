@@ -15,7 +15,7 @@ description: You can learn about the closeInlineEditor method in the documentati
 ~~~js
 closeInlineEditor({
     id: string | number,
-    save?: boolean,
+    save?: boolean
 }): void;
 ~~~
 

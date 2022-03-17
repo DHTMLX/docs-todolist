@@ -15,7 +15,7 @@ description: You can learn about the unassignUser method in the documentation of
 ~~~js
 unassignUser({
     id: string | number,
-    userId: string | number,
+    userId: string | number
 }): void;
 ~~~
 

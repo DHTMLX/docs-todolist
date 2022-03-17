@@ -14,7 +14,7 @@ description: You can learn about the unselectTask method in the documentation of
 
 ~~~js
 unselectTask({
-    id: string | number,
+    id: string | number
 }): void;
 ~~~
 

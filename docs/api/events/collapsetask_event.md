@@ -14,7 +14,7 @@ description: You can learn about the collapse-task event in the documentation of
 
 ~~~js
 "collapse-task": ({
-    id: string | number,
+    id: string | number
 }) => void;
 ~~~
 

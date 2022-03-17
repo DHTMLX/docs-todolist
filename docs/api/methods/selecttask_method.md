@@ -14,7 +14,7 @@ description: You can learn about the selectTask method in the documentation of t
 
 ~~~js
 selectTask({
-    id: string | number,
+    id: string | number
 }): void;
 ~~~
 

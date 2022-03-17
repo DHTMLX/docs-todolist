@@ -14,11 +14,11 @@ description: You can learn about the copy-task event in the documentation of the
 
 ~~~js
 "copy-task": ({
-    id: string | number;
-    parent?: string | number | null;
-    project?: string | number | null;
-    targetId?: string | number;
-    reverse?: boolean;
+    id: string | number,
+    parent?: string | number | null,
+    project?: string | number | null,
+    targetId?: string | number,
+    reverse?: boolean
 }) => void;
 ~~~
 

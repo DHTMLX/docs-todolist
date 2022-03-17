@@ -14,7 +14,7 @@ description: You can learn about the checkTask method in the documentation of th
 
 ~~~js
 checkTask({
-    id: string | number,
+    id: string | number
 }): void;
 ~~~
 

@@ -14,7 +14,7 @@ description: You can learn about the deleteTask method in the documentation of t
 
 ~~~js
 deleteTask({
-    id: string | number;
+    id: string | number
 }): void;
 ~~~
 

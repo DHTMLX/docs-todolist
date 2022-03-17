@@ -15,7 +15,7 @@ description: You can learn about the assign-user event in the documentation of t
 ~~~js
 "assign-user": ({
     id: string | number,
-    userId: string | number,
+    userId: string | number
 }) => void;
 ~~~
 

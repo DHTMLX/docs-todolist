@@ -14,10 +14,10 @@ description: You can learn about the paste-task event in the documentation of th
 
 ~~~js
 "paste-task": ({
-    parent?: string | number | null;
-    project?: string | number | null;
-    targetId?: string | number;
-    reverse?: boolean;
+    parent?: string | number | null,
+    project?: string | number | null,
+    targetId?: string | number,
+    reverse?: boolean
 }) => void;
 ~~~
 

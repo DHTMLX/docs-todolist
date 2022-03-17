@@ -14,8 +14,8 @@ description: You can learn about the open-inline-editor event in the documentati
 
 ~~~js
 "open-inline-editor": ({
-    id: string | number;
-    type: "task" | "project";
+    id: string | number,
+    type: "task" | "project"
 }) => void;
 ~~~
 

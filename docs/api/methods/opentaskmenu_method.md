@@ -16,7 +16,7 @@ description: You can learn about the openTaskMenu method in the documentation of
 openTaskenu({
     id: string | number,
     coords: { x: number, y: number },
-    context?: boolean,
+    context?: boolean
 }): void;
 ~~~
 

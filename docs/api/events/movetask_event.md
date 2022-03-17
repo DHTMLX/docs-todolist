@@ -14,11 +14,11 @@ description: You can learn about the move-task event in the documentation of the
 
 ~~~js
 "move-task": ({
-    id: string | number;
-    parent?: string | number | null;
-    project?: string | number | null;
-    targetId?: string | number;
-    reverse?: boolean;
+    id: string | number,
+    parent?: string | number | null,
+    project?: string | number | null,
+    targetId?: string | number,
+    reverse?: boolean
 }) => void;
 ~~~
 
