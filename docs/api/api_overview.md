@@ -15,7 +15,6 @@ description: You can have an API overview of the DHTMLX JavaScript To Do List li
 | [](api/methods/checktask_method.md)       | @getshort(api/methods/checktask_method.md)       |
 | [](api/methods/closetaskeditor_method.md) | @getshort(api/methods/closetaskeditor_method.md) |
 | [](api/methods/closetaskmenu_method.md)   | @getshort(api/methods/closetaskmenu_method.md)   |
-| [](api/methods/closeuserlist_method.md)   | @getshort(api/methods/closeuserlist_method.md)   |
 | [](api/methods/collapsetask_method.md)    | @getshort(api/methods/collapsetask_method.md)    |
 | [](api/methods/copytask_method.md)        | @getshort(api/methods/copytask_method.md)        |
 | [](api/methods/createproject_method.md)   | @getshort(api/methods/createproject_method.md)   |
@@ -26,7 +25,6 @@ description: You can have an API overview of the DHTMLX JavaScript To Do List li
 | [](api/methods/movetask_method.md)        | @getshort(api/methods/movetask_method.md)        |
 | [](api/methods/opentaskeditor_method.md)  | @getshort(api/methods/opentaskeditor_method.md)  |
 | [](api/methods/opentaskmenu_method.md)    | @getshort(api/methods/opentaskmenu_method.md)    |
-| [](api/methods/openuserlist_method.md)    | @getshort(api/methods/openuserlist_method.md)    |
 | [](api/methods/pastetask_method.md)       | @getshort(api/methods/pastetask_method.md)       |
 | [](api/methods/selecttask_method.md)      | @getshort(api/methods/selecttask_method.md)      |
 | [](api/methods/setproject_method.md)      | @getshort(api/methods/setproject_method.md)      |
@@ -46,7 +44,6 @@ description: You can have an API overview of the DHTMLX JavaScript To Do List li
 | [](api/events/clickmenuitem_event.md)   | @getshort(api/events/clickmenuitem_event.md)   |
 | [](api/events/closetaskeditor_event.md) | @getshort(api/events/closetaskeditor_event.md) |
 | [](api/events/closetaskmenu_event.md)   | @getshort(api/events/closetaskmenu_event.md)   |
-| [](api/events/closeuserlist_event.md)   | @getshort(api/events/closeuserlist_event.md)   |
 | [](api/events/collapsetask_event.md)    | @getshort(api/events/collapsetask_event.md)    |
 | [](api/events/copytask_event.md)        | @getshort(api/events/copytask_event.md)        |
 | [](api/events/createproject_event.md)   | @getshort(api/events/createproject_event.md)   |
@@ -58,7 +55,6 @@ description: You can have an API overview of the DHTMLX JavaScript To Do List li
 | [](api/events/movetask_event.md)        | @getshort(api/events/movetask_event.md)        |
 | [](api/events/opentaskeditor_event.md)  | @getshort(api/events/opentaskeditor_event.md)  |
 | [](api/events/opentaskmenu_event.md)    | @getshort(api/events/opentaskmenu_event.md)    |
-| [](api/events/openuserlist_event.md)    | @getshort(api/events/openuserlist_event.md)    |
 | [](api/events/pastetask_event.md)       | @getshort(api/events/pastetask_event.md)       |
 | [](api/events/selecttask_event.md)      | @getshort(api/events/selecttask_event.md)      |
 | [](api/events/setproject_event.md)      | @getshort(api/events/setproject_event.md)      |

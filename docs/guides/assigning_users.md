@@ -26,13 +26,6 @@ To view the list of users assigned to a task, click on the users avatars. To clo
 The [taskShape](../../api/configs/taskshape_config/) property lets you customize the appearance of the avatars.
 :::
 
-## Opening/closing the list of assigned users
-
-To open/close the list of assigned users dynamically, call the corresponding [openUserList()](../../api/methods/openuserlist_method/) and [closeUserList()](../../api/methods/closeuserlist_method/) methods:
-
-~~~js
-~~~
-
 ## Assigning/unassigning users
 
 There are two ways to assign/unassign users to a task:

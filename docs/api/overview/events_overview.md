@@ -15,7 +15,6 @@ description: You can explore the API events in the documentation of the DHTMLX J
 | [](../events/clickmenuitem_event.md)   | @getshort(../events/clickmenuitem_event.md)   |
 | [](../events/closetaskeditor_event.md) | @getshort(../events/closetaskeditor_event.md) |
 | [](../events/closetaskmenu_event.md)   | @getshort(../events/closetaskmenu_event.md)   |
-| [](../events/closeuserlist_event.md)   | @getshort(../events/closeuserlist_event.md)   |
 | [](../events/collapsetask_event.md)    | @getshort(../events/collapsetask_event.md)    |
 | [](../events/copytask_event.md)        | @getshort(../events/copytask_event.md)        |
 | [](../events/createproject_event.md)   | @getshort(../events/createproject_event.md)   |
@@ -27,7 +26,6 @@ description: You can explore the API events in the documentation of the DHTMLX J
 | [](../events/movetask_event.md)        | @getshort(../events/movetask_event.md)        |
 | [](../events/opentaskeditor_event.md)  | @getshort(../events/opentaskeditor_event.md)  |
 | [](../events/opentaskmenu_event.md)    | @getshort(../events/opentaskmenu_event.md)    |
-| [](../events/openuserlist_event.md)    | @getshort(../events/openuserlist_event.md)    |
 | [](../events/pastetask_event.md)       | @getshort(../events/pastetask_event.md)       |
 | [](../events/selecttask_event.md)      | @getshort(../events/selecttask_event.md)      |
 | [](../events/setproject_event.md)      | @getshort(../events/setproject_event.md)      |

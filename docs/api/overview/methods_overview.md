@@ -13,7 +13,6 @@ description: You can explore the API methods in the documentation of the DHTMLX 
 | [](../methods/checktask_method.md)       | @getshort(../methods/checktask_method.md)       |
 | [](../methods/closetaskeditor_method.md) | @getshort(../methods/closetaskeditor_method.md) |
 | [](../methods/closetaskmenu_method.md)   | @getshort(../methods/closetaskmenu_method.md)   |
-| [](../methods/closeuserlist_method.md)   | @getshort(../methods/closeuserlist_method.md)   |
 | [](../methods/collapsetask_method.md)    | @getshort(../methods/collapsetask_method.md)    |
 | [](../methods/copytask_method.md)        | @getshort(../methods/copytask_method.md)        |
 | [](../methods/createproject_method.md)   | @getshort(../methods/createproject_method.md)   |
@@ -24,7 +23,6 @@ description: You can explore the API methods in the documentation of the DHTMLX 
 | [](../methods/movetask_method.md)        | @getshort(../methods/movetask_method.md)        |
 | [](../methods/opentaskeditor_method.md)  | @getshort(../methods/opentaskeditor_method.md)  |
 | [](../methods/opentaskmenu_method.md)    | @getshort(../methods/opentaskmenu_method.md)    |
-| [](../methods/openuserlist_method.md)    | @getshort(../methods/openuserlist_method.md)    |
 | [](../methods/pastetask_method.md)       | @getshort(../methods/pastetask_method.md)       |
 | [](../methods/selecttask_method.md)      | @getshort(../methods/selecttask_method.md)      |
 | [](../methods/setproject_method.md)      | @getshort(../methods/setproject_method.md)      |

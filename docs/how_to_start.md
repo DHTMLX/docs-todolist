@@ -6,3 +6,4 @@ description: description
 
 # How to start
 
+The next guidelines will 
