@@ -15,7 +15,7 @@ description: You can learn about the add-project event in the documentation of t
 ~~~js
 "add-project": ({
     id: string | number,
-    project: object
+    project?: object
 }) => void;
 ~~~
 
@@ -24,5 +24,5 @@ description: You can learn about the add-project event in the documentation of t
 The callback of the **add-project** event can take an object with the following parameters:
 
 - `id` - (required) the ID of the created project
-- `project` - (required) an object with project parameters:
+- `project` - (optional) an object with project parameters:
   - `label` - (optional) the name of the project

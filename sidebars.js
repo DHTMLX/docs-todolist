@@ -113,6 +113,7 @@ module.exports = {
 						// To Do List properties
 						"api/configs/activeproject_config",
 						"api/configs/data_config",
+						"api/configs/id_config",
 						"api/configs/taskshape_config",
 						"api/configs/projects_config",
 						"api/configs/readonly_config",
