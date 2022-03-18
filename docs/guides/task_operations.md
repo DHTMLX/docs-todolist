@@ -24,9 +24,9 @@ To delete a task, use the [deleteTask()](../../api/methods/deletetask_method/) m
 ~~~js
 ~~~
 
-## Updating task's properties
+## Updating a task
 
-To dynamically update properties of a task object, apply the [updateTask()](../../api/methods/updatetask_method/) method:
+To dynamically update parameters of a task, apply the [updateTask()](../../api/methods/updatetask_method/) method:
 
 ~~~js
 ~~~

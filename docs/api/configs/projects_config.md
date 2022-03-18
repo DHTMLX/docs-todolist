@@ -25,4 +25,4 @@ projects?: [
 ### Parameters
 
 - `id` - (required) the id of a project
-- `label` - (required) the label of a project. It is displayed in the list of available projects
+- `label` - (required) the name of a project. It is displayed in the list of available projects

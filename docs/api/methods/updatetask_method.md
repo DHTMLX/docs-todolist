@@ -8,7 +8,7 @@ description: You can learn about the updateTask method in the documentation of t
 
 ### Description
 
-@short: Updates properties of a task
+@short: Updates configuration parameters of a task
 
 ### Usage
 

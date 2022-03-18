@@ -10,9 +10,14 @@ description: You can learn about the activeProject config in the documentation o
 
 @short: Optional. The ID of the active project
 
-```todo
-add details
-```
+:::info
+If the specified active project doesn't exist or there are no projects loaded into To Do List at all, the *project-free* section will be displayed on initialization of the component. 
+
+The tasks will be included into this section in the following cases:
+- if the **project** parameter is not specified in the [data object of the root task](../../configs/data_config/)
+- if **project: null | undefined** is specified in the [data object of the root task](../../configs/data_config/)
+:::
+
 
 ### Usage
 

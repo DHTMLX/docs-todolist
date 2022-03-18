@@ -34,6 +34,7 @@ module.exports = {
 						id: 'api/overview/methods_overview',
 					},
 					items: [
+						"api/methods/addproject_method",
 						"api/methods/addtask_method",
 						"api/methods/assignuser_method",
             			"api/methods/checktask_method",
@@ -41,7 +42,6 @@ module.exports = {
 						"api/methods/closemenu_method",
 						"api/methods/collapsetask_method",
 						"api/methods/copytask_method",
-						"api/methods/createproject_method",
 						"api/methods/deletetask_method",
 						"api/methods/deleteproject_method",
             			"api/methods/expandtask_method",
@@ -56,6 +56,7 @@ module.exports = {
 						"api/methods/unchecktask_method",
 						"api/methods/unindenttask_method",
 						"api/methods/unselecttask_method",
+						"api/methods/updateproject_method",
 						"api/methods/updatetask_method",
 					]
 				},
@@ -70,6 +71,7 @@ module.exports = {
 					},
 					items: [
 						// To Do List events
+						"api/events/addproject_event",
 						"api/events/addtask_event",
 						"api/events/assignuser_event",
 						"api/events/checktask_event",
@@ -78,7 +80,6 @@ module.exports = {
             			"api/events/closemenu_event",
 						"api/events/collapsetask_event",
 						"api/events/copytask_event",
-						"api/events/createproject_event",
 						"api/events/deletetask_event",
 						"api/events/deleteproject_event",
 						"api/events/editingitem_event",
@@ -95,6 +96,7 @@ module.exports = {
 						"api/events/unchecktask_event",
 						"api/events/unindenttask_event",
 						"api/events/unselecttask_event",
+						"api/events/updateproject_event",
 						"api/events/updatetask_event",
 					]
 				},
@@ -147,11 +149,11 @@ module.exports = {
 					items: [
 						"guides/task_operations",
 						"guides/assigning_users",
-						"guides/inline_editing",
 					]
 				},
 				"guides/work_with_projects",
 				"guides/menu",
+				"guides/inline_editing",
 				"guides/localization",
 			]
 		}

@@ -8,16 +8,16 @@ description: You can learn about the setProject method in the documentation of t
 
 ### Description
 
-@short: Sets an active project
+@short: Sets the specified project as an active one
 
 ### Usage
 
 ~~~js
 setProject({
-    id: string | number
+    id: string | number | null
 }): void;
 ~~~
 
 ### Parameters
 
-- `id` - (required) the ID of a project
+- `id` - (required) the ID of a project. To display the *project-free* section, set ID to **null**

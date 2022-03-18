@@ -31,6 +31,12 @@ You can easily make a certain project active on initialization of To do list via
 Describe behavior if active project isn't set
 ```
 
+If the specified active project doesn't exist or there are no projects loaded into To Do List at all, the *project-free* section will be displayed on initialization of the component. 
+
+The tasks will be included into this section in the following cases:
+- if the **project** parameter is not specified in the [data object of the root task](../../api/configs/data_config/)
+- if **project: null | undefined** is specified in the [data object of the root task](../../api/configs/data_config/)
+
 ## Changing the active project
 
 It is possible to change the currently active project via the [setProject()](../../api/methods/setproject_method/) method. It takes the id of a project as a parameter:
@@ -38,9 +44,16 @@ It is possible to change the currently active project via the [setProject()](../
 ~~~js
 ~~~
 
-## Creating a new project
+## Adding a new project
 
-You may create a new project via the [createProject()](../../api/methods/createproject_method/) method:
+You may create a new project via the [addProject()](../../api/methods/addproject_method/) method:
+
+~~~js
+~~~
+
+## Updating a project
+
+To dynamically update parameters of a project, apply the [updateProject()](../../api/methods/updateproject_method/) method:
 
 ~~~js
 ~~~

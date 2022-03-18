@@ -10,6 +10,7 @@ description: You can have an API overview of the DHTMLX JavaScript To Do List li
 
 | Name                                        | Description                                        |
 | :------------------------------------------ | :------------------------------------------------- |
+| [](api/methods/addproject_method.md)           | @getshort(api/methods/addproject_method.md)           |
 | [](api/methods/addtask_method.md)           | @getshort(api/methods/addtask_method.md)           |
 | [](api/methods/assignuser_method.md)        | @getshort(api/methods/assignuser_method.md)        |
 | [](api/methods/checktask_method.md)         | @getshort(api/methods/checktask_method.md)         |
@@ -17,7 +18,6 @@ description: You can have an API overview of the DHTMLX JavaScript To Do List li
 | [](api/methods/closemenu_method.md)         | @getshort(api/methods/closemenu_method.md)         |
 | [](api/methods/collapsetask_method.md)      | @getshort(api/methods/collapsetask_method.md)      |
 | [](api/methods/copytask_method.md)          | @getshort(api/methods/copytask_method.md)          |
-| [](api/methods/createproject_method.md)     | @getshort(api/methods/createproject_method.md)     |
 | [](api/methods/deleteproject_method.md)     | @getshort(api/methods/deleteproject_method.md)     |
 | [](api/methods/deletetask_method.md)        | @getshort(api/methods/deletetask_method.md)        |
 | [](api/methods/expandtask_method.md)        | @getshort(api/methods/expandtask_method.md)        |
@@ -32,12 +32,14 @@ description: You can have an API overview of the DHTMLX JavaScript To Do List li
 | [](api/methods/unchecktask_method.md)       | @getshort(api/methods/unchecktask_method.md)       |
 | [](api/methods/unindenttask_method.md)      | @getshort(api/methods/unindenttask_method.md)      |
 | [](api/methods/unselecttask_method.md)      | @getshort(api/methods/unselecttask_method.md)      |
+| [](api/methods/updateproject_method.md)      | @getshort(api/methods/updateproject_method.md)      |
 | [](api/methods/updatetask_method.md)        | @getshort(api/methods/updatetask_method.md)        |
 
 ## To Do List events
 
 | Name                                      | Description                                      |
 | :---------------------------------------- | :----------------------------------------------- |
+| [](api/events/addproject_event.md)           | @getshort(api/events/addproject_event.md)           |
 | [](api/events/addtask_event.md)           | @getshort(api/events/addtask_event.md)           |
 | [](api/events/assignuser_event.md)        | @getshort(api/events/assignuser_event.md)        |
 | [](api/events/checktask_event.md)         | @getshort(api/events/checktask_event.md)         |
@@ -63,6 +65,7 @@ description: You can have an API overview of the DHTMLX JavaScript To Do List li
 | [](api/events/unchecktask_event.md)       | @getshort(api/events/unchecktask_event.md)       |
 | [](api/events/unindenttask_event.md)      | @getshort(api/events/unindenttask_event.md)      |
 | [](api/events/unselecttask_event.md)      | @getshort(api/events/unselecttask_event.md)      |
+| [](api/events/updateproject_event.md)      | @getshort(api/events/updateproject_event.md)      |
 | [](api/events/updatetask_event.md)        | @getshort(api/events/updatetask_event.md)        |
 
 
