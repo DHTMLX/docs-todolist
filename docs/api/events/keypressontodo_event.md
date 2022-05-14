@@ -30,11 +30,18 @@ The callback of the **keypress-on-todo** event can take an object with the follo
 
 There are two groups of keyboard shortcuts:
 
-- keyboard shortcuts **in the default mode**, i.e. when the editing mode of a task is not activated
+1\. Keyboard shortcuts **in the default mode**, i.e. when the editing mode of a task is not activated
 
 | Keyboard shortcut   |Key code| Description                                                          |
 | :--------- |--| :------------------------------------------------------------------- |
-| **Escape** |escape| Closes the menu if it is opened for the task when the key is pressed |
+| **Escape** |escape| Closes the menu if it is opened for the task when the key is pressed. Pressing again will close the editor, reset filtering, and collapse search results in the Toolbar|
+
+:::tip
+The key codes described below are not available if focus is set on the Search element of the Toolbar.
+:::
+
+| Keyboard shortcut   |Key code| Description                                                          |
+| :--------- |--| :------------------------------------------------------------------- |
 | **Enter** |enter| Creates a new task on the same level as the selected one, moves selection to the created task and opens the editor |
 | **Space** |space| Marks a task as complete or incomplete depending on its initial state |
 | **Delete/<br>Backspace** |delete/<br>backspace | Removes the selected task by the following logic:<br> - after removing a child task, moves the selection down/up until it reaches the parent task <br>- after removing a parent task, moves the selection down to the next parent task if it's exist; otherwise, moves the selection up to the previous parent task |
@@ -51,7 +58,7 @@ There are two groups of keyboard shortcuts:
 | **Ctrl(Cmd)+C** |ctrl+c| Copies the selected task into the clipboard, including all child tasks |
 | **Ctrl(Cmd)+V** |ctrl+v| Pastes the copied tasks to the same level as the currently selected task. It is possible to paste a copied task to any level, the structure of the copied task is saved |
 
-- keyboard shortcuts **in the editing mode**
+2\. Keyboard shortcuts **in the editing mode**
 
 | Keyboard shortcut |Key code| Description |
 | :---------------- |--| :---------- |

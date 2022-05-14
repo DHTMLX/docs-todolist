@@ -15,11 +15,6 @@ It is possible to block all these actions at once by setting the [readonly](../.
 ~~~js
 ~~~
 
-If you need some operations to be still available for end-users, specify the [readonly](../../api/configs/readonly_config/) property as an object and provide it with extended settings:
-
-~~~js
-~~~
-
 ## Displaying the count of completed subtasks
 
 You can change the type of the counter which renders the completion of the child tasks.
@@ -34,4 +29,6 @@ If you want the value of the counter to be displayed as a percentage, specify th
 
 ~~~js
 ~~~
+
+## Configuring dates
 

@@ -18,10 +18,11 @@ data: [
         id?: string | number,
         parent?: string | number,
         project?: string | number,
-        description?: string,
+        text?: string,
         checked?: boolean,
         collapsed?: boolean,
         assigned?: string[] | number[],
+        due_date?: Date | string,
         [key: string]?: any
     },
     {...} // more data objects
@@ -39,8 +40,9 @@ The **data** property presents an array of task objects. Each object includes th
 If there are projects initialized, specify the ID of the necessary project for the root task to display it in this project.<br><br>
 If you don't specify the project ID for the task or set it to *null* or *undefined*, the task will belong to the section without a project.
 :::<br>
-- `description`- (optional) the text of the task; **""** by default
+- `text`- (optional) the text of the task; **""** by default
 - `checked`- (optional) marks the task as completed; **false** by default
 - `collapsed`- (optional) defines whether the task is collapsed initially (in case the task has subtasks), **false** by default
 - `assigned`- (optional) an array with id(s) of the users assigned to the task
+- `due_date` - (optional) the date when the task must be completed
 - `[key: string]`- (optional) a set of custom properties

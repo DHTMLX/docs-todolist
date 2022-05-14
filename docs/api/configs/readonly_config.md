@@ -8,41 +8,21 @@ description: You can learn about the readonly config in the documentation of the
 
 ### Description
 
-@short: Optional. Enables/disables editing, adding, selecting, dragging the tasks
+@short: Optional. Makes To Do List readonly
 
 After you enable the readonly mode, the *add Task* button and *3 dots* icon will be hidden.
+
+In the readonly mode it is only possible to mark tasks as completed/uncompleted.
 
 ### Usage
 
 ~~~js
 readonly?: boolean;
-//or
-readonly?: {
-    edit?: boolean,
-    add?: boolean,
-    select?: boolean,
-    dnd?: boolean
-};
 ~~~
-
-### Parameters
-
-As an object with extended settings, the **readonly** property can contain the following parameters:
-
-- `edit` - (optional) enables/disables **editing** of the tasks
-- `add` - (optional) enables/disables **adding** of the new tasks
-- `select` - (optional) enables/disables **selecting** of the tasks
-- `dnd` - (optional) enables/disables **dragging** of the tasks
 
 ### Default config
 
 ~~~jsx {}
 readonly: false // readonly mode is disabled
-//or
-readonly: {
-	edit: true, // editing is enabled
-	add: true, // adding is enabled
-	select: true, // selecting is enabled
-	dnd: true // dragging is enabled
-}
 ~~~
+
