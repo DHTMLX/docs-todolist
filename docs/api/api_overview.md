@@ -51,7 +51,6 @@ description: You can have an API overview of the DHTMLX JavaScript To Do List li
 | [](api/events/closemenu_event.md)         | @getshort(api/events/closemenu_event.md)         |
 | [](api/events/collapsetask_event.md)      | @getshort(api/events/collapsetask_event.md)      |
 | [](api/events/copytask_event.md)          | @getshort(api/events/copytask_event.md)          |
-| [](api/events/createproject_event.md)     | @getshort(api/events/createproject_event.md)     |
 | [](api/events/deleteproject_event.md)     | @getshort(api/events/deleteproject_event.md)     |
 | [](api/events/deletetask_event.md)        | @getshort(api/events/deletetask_event.md)        |
 | [](api/events/editingitem_event.md)       | @getshort(api/events/editingitem_event.md)       |
@@ -63,7 +62,7 @@ description: You can have an API overview of the DHTMLX JavaScript To Do List li
 | [](api/events/openmenu_event.md)          | @getshort(api/events/openmenu_event.md)          |
 | [](api/events/pastetask_event.md)         | @getshort(api/events/pastetask_event.md)         |
 | [](api/events/selecttask_event.md)        | @getshort(api/events/selecttask_event.md)        |
-| [](api/events/setfiler_event.md)          | @getshort(api/events/setfilter_event.md)         |
+| [](api/events/setfilter_event.md)         | @getshort(api/events/setfilter_event.md)         |
 | [](api/events/setproject_event.md)        | @getshort(api/events/setproject_event.md)        |
 | [](api/events/unassignuser_event.md)      | @getshort(api/events/unassignuser_event.md)      |
 | [](api/events/unchecktask_event.md)       | @getshort(api/events/unchecktask_event.md)       |
@@ -82,5 +81,6 @@ description: You can have an API overview of the DHTMLX JavaScript To Do List li
 | [](api/configs/id_config.md)            | @getshort(api/configs/id_config.md)            |
 | [](api/configs/projects_config.md)      | @getshort(api/configs/projects_config.md)      |
 | [](api/configs/readonly_config.md)      | @getshort(api/configs/readonly_config.md)      |
+| [](api/configs/tags_config.md)          | @getshort(api/configs/tags_config.md)          |
 | [](api/configs/taskshape_config.md)     | @getshort(api/configs/taskshape_config.md)     |
 | [](api/configs/users_config.md)         | @getshort(api/configs/users_config.md)         |

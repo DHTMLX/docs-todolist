@@ -146,7 +146,8 @@ const component = new ToDo("#root", {
 // filter data by the specified rules
 component.setFilter({
 	match: "ran",
-	highlight: true
+	highlight: true,
+	strict: true
 });
 ~~~
 

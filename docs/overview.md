@@ -76,6 +76,11 @@ As a result, the related tasks will display avatars of the assigned users to the
 
 You may easily change the structure of the task list and edit tasks using [**Keyboard shortcuts**](api/events/keypressontodo_event/#keyboard-shortcuts).
 
+## Tags
+
+
+
+
 ## What's next
 
 Once you have a short overview of To Do List you are ready to learn how to display the component on the page. Follow the directions given in the [How to start](how_to_start/) article. 

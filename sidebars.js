@@ -14,7 +14,7 @@ module.exports = {
 		},
 		{
 			type: "category",
-			label: "API",
+			label: "To Do List API",
 			collapsible: true,
 			collapsed: false,
 			link: {
@@ -85,7 +85,7 @@ module.exports = {
 						"api/events/copytask_event",
 						"api/events/deletetask_event",
 						"api/events/deleteproject_event",
-						"api/events/editingitem_event",
+						"api/events/edititem_event",
             			"api/events/expandtask_event",
             			"api/events/indenttask_event",
 						"api/events/keypressontodo_event",
@@ -121,9 +121,32 @@ module.exports = {
 						"api/configs/taskshape_config",
 						"api/configs/projects_config",
 						"api/configs/readonly_config",
+						"api/configs/tags_config",
 						"api/configs/users_config",
 					]
 				}
+			]
+		},
+		{
+			type: "category",
+			label: "RestDataProvider API",
+			collapsible: true,
+			collapsed: false,
+			link: {
+				type: 'generated-index',
+				title: "RestDataProvider methods",
+				keywords: ['rest methods'],
+				image: '/img/docusaurus.png'
+			},
+			items: [
+				
+				"rest_api/methods/getprojects_method",
+				"rest_api/methods/getprojecttasks_method",
+				"rest_api/methods/gettags_method",
+				"rest_api/methods/gettasks_method",
+				"rest_api/methods/gettasks_method",
+				"rest_api/methods/getusers_method",
+				"rest_api/methods/setapi_method",
 			]
 		},
 		{
