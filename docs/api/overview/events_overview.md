@@ -9,11 +9,12 @@ description: You can explore the API events in the documentation of the DHTMLX J
 
 | Name                                     | Description                                     |
 | :--------------------------------------- | :---------------------------------------------- |
-| [](../events/addproject_event.md)           | @getshort(../events/addproject_event.md)           |
+| [](../events/addproject_event.md)        | @getshort(../events/addproject_event.md)        |
 | [](../events/addtask_event.md)           | @getshort(../events/addtask_event.md)           |
 | [](../events/assignuser_event.md)        | @getshort(../events/assignuser_event.md)        |
 | [](../events/checktask_event.md)         | @getshort(../events/checktask_event.md)         |
 | [](../events/clickmenuitem_event.md)     | @getshort(../events/clickmenuitem_event.md)     |
+| [](../events/clonetask_event.md)         | @getshort(../events/clonetask_event.md)         |
 | [](../events/closeinlineeditor_event.md) | @getshort(../events/closeinlineeditor_event.md) |
 | [](../events/closemenu_event.md)         | @getshort(../events/closemenu_event.md)         |
 | [](../events/collapsetask_event.md)      | @getshort(../events/collapsetask_event.md)      |
@@ -29,10 +30,11 @@ description: You can explore the API events in the documentation of the DHTMLX J
 | [](../events/openmenu_event.md)          | @getshort(../events/openmenu_event.md)          |
 | [](../events/pastetask_event.md)         | @getshort(../events/pastetask_event.md)         |
 | [](../events/selecttask_event.md)        | @getshort(../events/selecttask_event.md)        |
+| [](../events/setfilter_event.md)        | @getshort(../events/setfilter_event.md)        |
 | [](../events/setproject_event.md)        | @getshort(../events/setproject_event.md)        |
 | [](../events/unassignuser_event.md)      | @getshort(../events/unassignuser_event.md)      |
 | [](../events/unchecktask_event.md)       | @getshort(../events/unchecktask_event.md)       |
 | [](../events/unindenttask_event.md)      | @getshort(../events/unindenttask_event.md)      |
 | [](../events/unselecttask_event.md)      | @getshort(../events/unselecttask_event.md)      |
-| [](../events/updateproject_event.md)      | @getshort(../events/updateproject_event.md)      |
+| [](../events/updateproject_event.md)     | @getshort(../events/updateproject_event.md)     |
 | [](../events/updatetask_event.md)        | @getshort(../events/updatetask_event.md)        |

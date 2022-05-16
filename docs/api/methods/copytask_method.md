@@ -33,7 +33,7 @@ copyTask({
 - `id` - (required) the ID of a task
 
 :::info
-If you need to copy and paste a task, pass the following parameters to the method to define a new position of the task:
+If you need to copy (and paste!) a task, pass the following parameters to the method to define a new position of the task:
 :::
 
 - `parent` - (optional) the ID of the future parent task

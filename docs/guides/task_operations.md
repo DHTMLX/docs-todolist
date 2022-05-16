@@ -75,6 +75,10 @@ To select a particular task, pass the ID of the task as a parameter to the [sele
 ~~~js
 ~~~
 
+:::tip
+To get the ID of the currently selected task, use the [getSelectionTask()](../../api/methods/getselectiontask_method/) method
+:::
+
 To remove selection from a selected task, pass the ID of the task as a parameter to the [unselectTask()](../../api/methods/unselecttask_method/) method:
 
 ~~~js
@@ -125,3 +129,30 @@ To change the nesting level of a task dynamically, use the following two methods
 :::info
 The result of applying the methods depends on the structure of the list.
 :::
+
+## Filtering tasks
+
+You can find the tasks that match the specified criteria with the help of the [setFilter()](../../api/methods/setfilter_method/) method. The method supports the *strict* mode of filtering that allows you to filter tasks by the exact match.
+
+~~~js
+// create To do list
+const component = new ToDo("#root", {
+	data,
+	users,
+	projects,
+	tags,
+});
+
+// filter data by the specified rules
+component.setFilter({
+	match: "ran",
+	highlight: true
+});
+~~~
+
+To reset filtering, call the method without parameters:
+
+~~~js
+// reset filtering
+component.setFilter({});
+~~~

@@ -23,4 +23,24 @@ addProject({
 
 - `id` - (optional) the ID of a new project
 - `project` - (optional) an object with parameters of the project:
-  - `label` - (optional) the name of the project
+  - `label` - (optional) a string with the name of the project
+
+### Example
+
+~~~js
+const { ToDo, Toolbar } = todo;
+const { data, users, projects, tags } = getData();
+
+// create To do list
+const component = new ToDo("#root", {
+    data,
+    users,
+		projects,
+		tags,
+});
+
+// add a new project
+component.addProject({
+		project: {label: "New project"}
+});
+~~~
