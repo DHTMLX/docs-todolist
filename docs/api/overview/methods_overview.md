@@ -19,14 +19,14 @@ description: You can explore the API methods in the documentation of the DHTMLX 
 | [](../methods/deleteproject_method.md)     | @getshort(../methods/deleteproject_method.md)     |
 | [](../methods/deletetask_method.md)        | @getshort(../methods/deletetask_method.md)        |
 | [](../methods/expandtask_method.md)        | @getshort(../methods/expandtask_method.md)        |
-| [](../methods/getselection_method)         | @getshort(../methods/getselection_method)         |
+| [](../methods/getselection_method.md)      | @getshort(../methods/getselection_method.md)      |
 | [](../methods/indenttask_method.md)        | @getshort(../methods/indenttask_method.md)        |
 | [](../methods/movetask_method.md)          | @getshort(../methods/movetask_method.md)          |
 | [](../methods/openinlineeditor_method.md)  | @getshort(../methods/openinlineeditor_method.md)  |
 | [](../methods/openmenu_method.md)          | @getshort(../methods/openmenu_method.md)          |
 | [](../methods/pastetask_method.md)         | @getshort(../methods/pastetask_method.md)         |
 | [](../methods/selecttask_method.md)        | @getshort(../methods/selecttask_method.md)        |
-| [](../methods/setfilter_method.md)        | @getshort(../methods/setfilter_method.md)        |
+| [](../methods/setfilter_method.md)         | @getshort(../methods/setfilter_method.md)         |
 | [](../methods/setproject_method.md)        | @getshort(../methods/setproject_method.md)        |
 | [](../methods/unassignuser_method.md)      | @getshort(../methods/unassignuser_method.md)      |
 | [](../methods/unchecktask_method.md)       | @getshort(../methods/unchecktask_method.md)       |

@@ -53,6 +53,7 @@ module.exports = {
             			"api/methods/pastetask_method",
 						"api/methods/selecttask_method",
 						"api/methods/setfilter_method",
+						"api/methods/setlocale_method",
 						"api/methods/setproject_method",
 						"api/methods/unassignuser_method",
 						"api/methods/unchecktask_method",
@@ -118,6 +119,7 @@ module.exports = {
 						"api/configs/activeproject_config",
 						"api/configs/data_config",
 						"api/configs/id_config",
+						"api/configs/locale_config",
 						"api/configs/taskshape_config",
 						"api/configs/projects_config",
 						"api/configs/readonly_config",
@@ -129,25 +131,81 @@ module.exports = {
 		},
 		{
 			type: "category",
+			label: "Toolbar API",
+			collapsible: true,
+			collapsed: false,
+			link: {
+				type: 'generated-index',
+				title: "Toolbar API",
+				keywords: ['toolbar api'],
+				image: '/img/docusaurus.png'
+			},
+			items: [
+				{
+					type: "category",
+                	label: "Toolbar methods",
+                	collapsed: true,
+                	link: {
+                    	type: 'generated-index',
+                    	title: "Toolbar methods",
+                    	keywords: ['toolbar methods'],
+                    	image: '/img/docusaurus.png'
+                	},
+					items: [
+						"toolbar_api/methods/destructor_method",
+						"toolbar_api/methods/setconfig_method",
+						"toolbar_api/methods/setlocale_method",
+					]
+				},
+				{
+					type: "category",
+                	label: "Toolbar properties",
+                	collapsed: true,
+                	link: {
+                    	type: 'generated-index',
+                    	title: "Toolbar properties",
+                    	keywords: ['toolbar properties'],
+                    	image: '/img/docusaurus.png'
+                	},
+					items: [
+						"toolbar_api/configs/api_config",
+						"toolbar_api/configs/items_config",
+						"toolbar_api/configs/locale_config",
+					]
+				}
+			]
+		},
+		{
+			type: "category",
 			label: "RestDataProvider API",
 			collapsible: true,
 			collapsed: false,
 			link: {
 				type: 'generated-index',
-				title: "RestDataProvider methods",
-				keywords: ['rest methods'],
+				title: "RestDataProvider API",
+				keywords: ['rest api'],
 				image: '/img/docusaurus.png'
 			},
-			items: [
-				
-				"rest_api/methods/getprojects_method",
-				"rest_api/methods/getprojecttasks_method",
-				"rest_api/methods/gettags_method",
-				"rest_api/methods/gettasks_method",
-				"rest_api/methods/gettasks_method",
-				"rest_api/methods/getusers_method",
-				"rest_api/methods/setapi_method",
-			]
+			items: [{
+				type: "category",
+                label: "RestDataProvider methods",
+                collapsed: true,
+                link: {
+                    type: 'generated-index',
+                    title: "RestDataProvider methods",
+                    keywords: ['rest methods'],
+                    image: '/img/docusaurus.png'
+                },
+				items: [
+					"rest_api/methods/getprojects_method",
+					"rest_api/methods/getprojecttasks_method",
+					"rest_api/methods/gettags_method",
+					"rest_api/methods/gettasks_method",
+					"rest_api/methods/gettasks_method",
+					"rest_api/methods/getusers_method",
+					"rest_api/methods/setapi_method",
+				]
+			}]
 		},
 		{
 			type: "category",

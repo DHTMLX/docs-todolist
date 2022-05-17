@@ -21,7 +21,7 @@ description: You can explore the API events in the documentation of the DHTMLX J
 | [](../events/copytask_event.md)          | @getshort(../events/copytask_event.md)          |
 | [](../events/deleteproject_event.md)     | @getshort(../events/deleteproject_event.md)     |
 | [](../events/deletetask_event.md)        | @getshort(../events/deletetask_event.md)        |
-| [](../events/editingitem_event.md)       | @getshort(../events/editingitem_event.md)       |
+| [](../events/edititem_event.md)          | @getshort(../events/edititem_event.md)          |
 | [](../events/expandtask_event.md)        | @getshort(../events/expandtask_event.md)        |
 | [](../events/indenttask_event.md)        | @getshort(../events/indenttask_event.md)        |
 | [](../events/keypressontodo_event.md)    | @getshort(../events/keypressontodo_event.md)    |
@@ -30,7 +30,7 @@ description: You can explore the API events in the documentation of the DHTMLX J
 | [](../events/openmenu_event.md)          | @getshort(../events/openmenu_event.md)          |
 | [](../events/pastetask_event.md)         | @getshort(../events/pastetask_event.md)         |
 | [](../events/selecttask_event.md)        | @getshort(../events/selecttask_event.md)        |
-| [](../events/setfilter_event.md)        | @getshort(../events/setfilter_event.md)        |
+| [](../events/setfilter_event.md)         | @getshort(../events/setfilter_event.md)         |
 | [](../events/setproject_event.md)        | @getshort(../events/setproject_event.md)        |
 | [](../events/unassignuser_event.md)      | @getshort(../events/unassignuser_event.md)      |
 | [](../events/unchecktask_event.md)       | @getshort(../events/unchecktask_event.md)       |

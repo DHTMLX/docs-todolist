@@ -21,7 +21,7 @@ description: You can have an API overview of the DHTMLX JavaScript To Do List li
 | [](api/methods/deleteproject_method.md)     | @getshort(api/methods/deleteproject_method.md)     |
 | [](api/methods/deletetask_method.md)        | @getshort(api/methods/deletetask_method.md)        |
 | [](api/methods/expandtask_method.md)        | @getshort(api/methods/expandtask_method.md)        |
-| [](api/methods/getselection_method)         | @getshort(api/methods/getselection_method)         |
+| [](api/methods/getselection_method.md)         | @getshort(api/methods/getselection_method.md)         |
 | [](api/methods/indenttask_method.md)        | @getshort(api/methods/indenttask_method.md)        |
 | [](api/methods/movetask_method.md)          | @getshort(api/methods/movetask_method.md)          |
 | [](api/methods/openinlineeditor_method.md)  | @getshort(api/methods/openinlineeditor_method.md)  |
@@ -53,7 +53,7 @@ description: You can have an API overview of the DHTMLX JavaScript To Do List li
 | [](api/events/copytask_event.md)          | @getshort(api/events/copytask_event.md)          |
 | [](api/events/deleteproject_event.md)     | @getshort(api/events/deleteproject_event.md)     |
 | [](api/events/deletetask_event.md)        | @getshort(api/events/deletetask_event.md)        |
-| [](api/events/editingitem_event.md)       | @getshort(api/events/editingitem_event.md)       |
+| [](api/events/edititem_event.md)       | @getshort(api/events/edititem_event.md)       |
 | [](api/events/expandtask_event.md)        | @getshort(api/events/expandtask_event.md)        |
 | [](api/events/indenttask_event.md)        | @getshort(api/events/indenttask_event.md)        |
 | [](api/events/keypressontodo_event.md)    | @getshort(api/events/keypressontodo_event.md)    |
