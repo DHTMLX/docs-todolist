@@ -178,3 +178,11 @@ code {
 }
 
 /* end list */
+
+/* icons styles */
+
+.iconExternalLink_I5OW { /* hides the link icon */
+    display: none
+  }
+  
+/* end icons styles */
