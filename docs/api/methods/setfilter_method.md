@@ -29,7 +29,7 @@ setFilter({
 - `strict` - (optional) enables the *strict* mode of filtering. The searching will be implemented by the exact match
 
 :::info
-To reset filtering, call the method without parameters
+To reset filtering, pass `match: null` to the method
 :::
 
 ### Example
@@ -53,5 +53,5 @@ component.setFilter({
 });
 
 // reset filtering
-component.setFilter({});
+component.setFilter({ match: null });
 ~~~

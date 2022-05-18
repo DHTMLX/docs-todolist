@@ -1,0 +1,50 @@
+---
+sidebar_label: parse()
+title: parse Method
+description: You can learn about the parse method in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
+---
+
+# parse()
+
+### Description
+
+@short: Loads data from a client-side resource
+
+### Usage
+
+~~~js
+parse({
+    data?: [],
+    users?: [],
+    projects?: [],
+    tags?: [],
+    activeProject?: string
+}): void;
+~~~
+
+### Parameters
+
+- [`data`](api/configs/data_config.md) - (optional) an array of objects with tasks data
+- [`users`](api/configs/users_config.md) - (optional) an array of objects with users data
+- [`projects`](api/configs/projects_config.md) - (optional) an array of objects with projects data
+- [`tags`](api/configs/tags_config.md) - (optional) - an array with a list of tags
+- [`activeProject`](api/configs/activeproject_config.md) - (optional) the ID of the active project
+
+### Example
+
+~~~js {9-13}
+const { ToDo, Toolbar } = todo;
+const { users, projects, data } = getData();
+
+const component = new ToDo("#root", {});
+
+const toolbar = new Toolbar("#toolbar", {
+	api: component.api,
+});
+
+component.parse({
+    data,
+    users,
+    projects
+});
+~~~

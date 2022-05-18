@@ -18,6 +18,13 @@ module.exports = {
 			label: "API",
 			collapsible: true,
 			collapsed: false,
+			link: {
+			  type: 'generated-index',
+			  title: "API",
+			  
+			  keywords: ['api'],
+			  image: '/img/docusaurus.png',
+			},
 			items: [
 		{
 			type: "category",
@@ -50,15 +57,25 @@ module.exports = {
 						"api/methods/collapsetask_method",
 						"api/methods/copytask_method",
 						"api/methods/deletetask_method",
+						"api/methods/destructor_method",
+						"api/methods/existsproject_method",
+						"api/methods/existstask_method",
 						"api/methods/deleteproject_method",
             			"api/methods/expandtask_method",
+            			"api/methods/getchildrenids_method",
+            			"api/methods/getproject_method",
             			"api/methods/getselection_method",
+            			"api/methods/gettask_method",
+            			"api/methods/haschildren_method",
             			"api/methods/indenttask_method",
             			"api/methods/movetask_method",
             			"api/methods/openinlineeditor_method",
             			"api/methods/openmenu_method",
+            			"api/methods/parse_method",
             			"api/methods/pastetask_method",
 						"api/methods/selecttask_method",
+						"api/methods/serialize_method",
+						"api/methods/setconfig_method",
 						"api/methods/setfilter_method",
 						"api/methods/setlocale_method",
 						"api/methods/setproject_method",
@@ -136,6 +153,8 @@ module.exports = {
 				}
 			]
 		},
+
+		// Toolbar api
 		{
 			type: "category",
 			label: "Toolbar API",
@@ -159,9 +178,9 @@ module.exports = {
                     	image: '/img/docusaurus.png'
                 	},
 					items: [
-						"toolbar_api/methods/destructor_method",
-						"toolbar_api/methods/setconfig_method",
-						"toolbar_api/methods/setlocale_method",
+						"api/toolbar_api/methods/destructor_method",
+						"api/toolbar_api/methods/setconfig_method",
+						"api/toolbar_api/methods/setlocale_method",
 					]
 				},
 				{
@@ -175,13 +194,15 @@ module.exports = {
                     	image: '/img/docusaurus.png'
                 	},
 					items: [
-						"toolbar_api/configs/api_config",
-						"toolbar_api/configs/items_config",
-						"toolbar_api/configs/locale_config",
+						"api/toolbar_api/configs/api_config",
+						"api/toolbar_api/configs/items_config",
+						"api/toolbar_api/configs/locale_config",
 					]
 				}
 			]
 		},
+
+		// RestDataProvider api
 		{
 			type: "category",
 			label: "RestDataProvider API",
@@ -204,13 +225,13 @@ module.exports = {
                     image: '/img/docusaurus.png'
                 },
 				items: [
-					"rest_api/methods/getprojects_method",
-					"rest_api/methods/getprojecttasks_method",
-					"rest_api/methods/gettags_method",
-					"rest_api/methods/gettasks_method",
-					"rest_api/methods/gettasks_method",
-					"rest_api/methods/getusers_method",
-					"rest_api/methods/setapi_method",
+					"api/rest_api/methods/getprojects_method",
+					"api/rest_api/methods/getprojecttasks_method",
+					"api/rest_api/methods/gettags_method",
+					"api/rest_api/methods/gettasks_method",
+					"api/rest_api/methods/gettasks_method",
+					"api/rest_api/methods/getusers_method",
+					"api/rest_api/methods/setapi_method",
 				]
 			}]
 		}]
