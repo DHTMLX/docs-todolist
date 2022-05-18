@@ -65,3 +65,7 @@ DHTMLX To Do List uses the following characters for setting a date format:
 | **%F**    | full name of the month, January February March... |
 | **%y**    | year as a number, 2 digits                        |
 | **%Y**    | year as a number, 4 digits                        |
+
+:::tip
+Check the [Localization](guides/localization.md) article to learn how to present the date labels in the necessary language
+:::

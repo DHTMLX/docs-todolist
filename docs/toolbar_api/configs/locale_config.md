@@ -18,7 +18,7 @@ locale?: object;
 
 ### Default config
 
-By default, Toolbar of DHTMLX To Do List uses [English locale].
+By default, Toolbar of DHTMLX To Do List uses [English locale](guides/localization.md#default-locale).
 
 ~~~js
 locale: en
@@ -53,3 +53,4 @@ Toolbar is a separate component of To do list. Thus, before applying the necessa
 To change the locale dynamically, use the [setLocale()](toolbar_api/methods/setlocale_method.md) method
 :::
 
+**Related article:** [Localization](guides/localization.md)

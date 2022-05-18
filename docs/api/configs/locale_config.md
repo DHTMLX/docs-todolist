@@ -10,18 +10,6 @@ description: You can learn about the locale config in the documentation of the D
 
 @short: Optional. Applies the necessary locale to the component
 
-:::info
-The library includes four built-in locales: **en**, **ru**, **de**, **cn**. 
-
-You can access the locales via running the following command:
-
-~~~js
-npm i @xbs/wx-todo-locales
-// or
-yarn add @xbs/wx-todo-locales
-~~~
-:::
-
 ### Usage
 
 ~~~js
@@ -30,20 +18,11 @@ locale?: object;
 
 ### Default config
 
-By default, DHTMLX To Do List uses [English locale].
+By default, DHTMLX To Do List uses [English locale](guides/localization.md#default-locale).
 
 ~~~js
 locale: en
 ~~~
-
-:::info
-If needed you can export the **en** locale right from the component:
-
-~~~js
-const { ToDo, Toolbar, en } = todo;
-~~~
-:::
-
 
 ### Example
 
@@ -72,3 +51,5 @@ The Toolbar is a separate component of To do list . Thus, you also need to apply
 :::tip
 To change the locale dynamically, use the [setLocale()](api/methods/setlocale_method.md) method
 :::
+
+**Related article:** [Localization](guides/localization.md)

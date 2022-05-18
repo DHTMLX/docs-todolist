@@ -12,6 +12,13 @@ module.exports = {
 			type: "doc",
 			id: "whats_new"
 		},
+		// API
+		{
+			type: "category",
+			label: "API",
+			collapsible: true,
+			collapsed: false,
+			items: [
 		{
 			type: "category",
 			label: "To Do List API",
@@ -206,7 +213,9 @@ module.exports = {
 					"rest_api/methods/setapi_method",
 				]
 			}]
-		},
+		}]
+	
+},
 		{
 			type: "category",
 			label: "Guides",
