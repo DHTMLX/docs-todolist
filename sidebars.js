@@ -89,6 +89,55 @@ module.exports = {
 				},
 				{
 					type: "category",
+					label: "To Do List internal API",
+					collapsible: true,
+					collapsed: true,
+					link: {
+						type: 'generated-index',
+						title: "API",
+			  			keywords: ['internal api'],
+			  			image: '/img/docusaurus.png',
+					},
+					items: [
+						{
+							type: "category",
+							label: "Event Bus methods",
+							collapsible: true,
+							collapsed: true,
+							link: {
+								type: 'generated-index',
+								title: "Event Bus methods",
+								  keywords: ['internal api'],
+								  image: '/img/docusaurus.png',
+							},
+							items: [
+								"api/internal/exec_method",
+								"api/internal/intercept_method",
+								"api/internal/on_method",
+								"api/internal/setnext_method",
+							]
+						},
+						{
+							type: "category",
+							label: "State methods",
+							collapsible: true,
+							collapsed: true,
+							link: {
+								type: 'generated-index',
+								title: "State methods",
+								  keywords: ['internal api'],
+								  image: '/img/docusaurus.png',
+							},
+							items: [
+								"api/internal/getreactivestate_method",
+								"api/internal/getstate_method",
+								"api/internal/getstores_method",
+							]
+						},
+					]
+				},
+				{
+					type: "category",
 					label: "To Do List events",
 					collapsible: true,
 					collapsed: true,
