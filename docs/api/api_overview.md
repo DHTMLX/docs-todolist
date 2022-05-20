@@ -28,7 +28,7 @@ description: You can have an API overview of the DHTMLX JavaScript To Do List li
 | [](api/methods/getproject_method.md)        | @getshort(api/methods/getproject_method.md)        |
 | [](api/methods/getselection_method.md)      | @getshort(api/methods/getselection_method.md)      |
 | [](api/methods/gettask_method.md)           | @getshort(api/methods/gettask_method.md)           |
-| [](api/methods/haschildren_method.md)      | @getshort(api/methods/haschildren_method.md)      |
+| [](api/methods/haschildren_method.md)       | @getshort(api/methods/haschildren_method.md)       |
 | [](api/methods/indenttask_method.md)        | @getshort(api/methods/indenttask_method.md)        |
 | [](api/methods/movetask_method.md)          | @getshort(api/methods/movetask_method.md)          |
 | [](api/methods/openinlineeditor_method.md)  | @getshort(api/methods/openinlineeditor_method.md)  |

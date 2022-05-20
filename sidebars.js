@@ -229,7 +229,6 @@ module.exports = {
 					"api/rest_api/methods/getprojecttasks_method",
 					"api/rest_api/methods/gettags_method",
 					"api/rest_api/methods/gettasks_method",
-					"api/rest_api/methods/gettasks_method",
 					"api/rest_api/methods/getusers_method",
 					"api/rest_api/methods/setapi_method",
 				]
