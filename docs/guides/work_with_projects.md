@@ -11,7 +11,7 @@ The list of projects is specified by the [projects](../../api/configs/projects_c
 ~~~js
 ~~~
 
-To define what project a task will belong to, you need to pass the id of the project to the **project** parameter of the related [data](../../api/configs/data_config/) object:
+To define what project a task will belong to, you need to pass the id of the project to the **project** parameter of the related [data](../../api/configs/tasks_config/) object:
 
 ~~~js
 ~~~
@@ -34,8 +34,8 @@ Describe behavior if active project isn't set
 If the specified active project doesn't exist or there are no projects loaded into To Do List at all, the *project-free* section will be displayed on initialization of the component. 
 
 The tasks will be included into this section in the following cases:
-- if the **project** parameter is not specified in the [data object of the root task](../../api/configs/data_config/)
-- if **project: null | undefined** is specified in the [data object of the root task](../../api/configs/data_config/)
+- if the **project** parameter is not specified in the [data object of the root task](../../api/configs/tasks_config/)
+- if **project: null | undefined** is specified in the [data object of the root task](../../api/configs/tasks_config/)
 
 ## Changing the active project
 

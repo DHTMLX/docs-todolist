@@ -88,7 +88,7 @@ description: You can have an API overview of the DHTMLX JavaScript To Do List li
 | Name                                    | Description                                    |
 | :-------------------------------------- | :--------------------------------------------- |
 | [](api/configs/activeproject_config.md) | @getshort(api/configs/activeproject_config.md) |
-| [](api/configs/data_config.md)          | @getshort(api/configs/data_config.md)          |
+| [](api/configs/tasks_config.md)          | @getshort(api/configs/tasks_config.md)          |
 | [](api/configs/id_config.md)            | @getshort(api/configs/id_config.md)            |
 | [](api/configs/locale_config.md)        | @getshort(api/configs/locale_config.md)        |
 | [](api/configs/projects_config.md)      | @getshort(api/configs/projects_config.md)      |

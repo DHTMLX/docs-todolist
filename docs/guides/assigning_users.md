@@ -11,7 +11,7 @@ The list of users is specified via the [assign](../../api/configs/assign_config/
 ~~~js
 ~~~
 
-To assign the users to necessary tasks, pass the id(s) of the users to the **assigned** parameter of the related [task](../../api/configs/data_config/) object:
+To assign the users to necessary tasks, pass the id(s) of the users to the **assigned** parameter of the related [task](../../api/configs/tasks_config/) object:
 
 ~~~js
 ~~~

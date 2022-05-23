@@ -40,7 +40,7 @@ const { ToDo, Toolbar } = todo;
 const { users, projects, tags } = getData();
 
 const component = new ToDo("#root", {
-	data: [
+	tasks: [
         { id: "1", text: "Task 1 #tag1" },
 		{ id: "1.1", text: "Task 1.1", parent: "1" },
         { id: "1.1.2", text: "Task 1.1.2 #tag1", parent: "1.1" },

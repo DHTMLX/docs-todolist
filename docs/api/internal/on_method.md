@@ -34,11 +34,11 @@ The full list of the To Do List internal events can be found [**here**](api/over
 
 ~~~js {12-16}
 const { ToDo, Toolbar } = todo;
-const { data, users, projects } = getData();
+const { tasks, users, projects } = getData();
 
 // create To do list
 const component = new ToDo("#root", {
-    data,
+    tasks,
     users,
 	projects
 });

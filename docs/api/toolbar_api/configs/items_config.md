@@ -45,10 +45,10 @@ You can specify your own structure of the toolbar by enumerating necessary eleme
 
 ~~~js {12-17}
 const { ToDo, Toolbar } = todo;
-const { data, users, projects, tags } = getData();
+const { tasks, users, projects, tags } = getData();
 
 const component = new ToDo("#root", {
-	data,
+	tasks,
 	users,
 	projects,
 	tags,

@@ -24,7 +24,7 @@ parse({
 
 ### Parameters
 
-- [`data`](api/configs/data_config.md) - (optional) an array of objects with tasks data
+- [`data`](api/configs/tasks_config.md) - (optional) an array of objects with tasks data
 - [`users`](api/configs/users_config.md) - (optional) an array of objects with users data
 - [`projects`](api/configs/projects_config.md) - (optional) an array of objects with projects data
 - [`tags`](api/configs/tags_config.md) - (optional) - an array with a list of tags
@@ -34,7 +34,7 @@ parse({
 
 ~~~js {2,11-15}
 const { ToDo, Toolbar } = todo;
-const { users, projects, data } = getData(); // export data declared in another file
+const { users, projects, data } = getData(); // get data declared in another file
 
 const component = new ToDo("#root", {});
 
@@ -44,7 +44,7 @@ const toolbar = new Toolbar("#toolbar", {
 
 // parse data into the component
 component.parse({
-    data,
+    tasks,
     users,
     projects
 });

@@ -28,10 +28,10 @@ The method returns an object with data of the project
 
 ~~~js {18}
 const { ToDo, Toolbar } = todo;
-const { data, users } = getData();
+const { tasks, users } = getData();
 
 const component = new ToDo("#root", {
-	data,
+	tasks,
 	users,
 	projects: [
 		{ id: "first", label: "First project" },

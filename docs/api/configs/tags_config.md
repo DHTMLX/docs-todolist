@@ -28,10 +28,10 @@ A tag can start with any symbol, the `#` sign is added automatically
 
 ~~~js
 const { ToDo, Toolbar } = todo;
-const { data, users, projects, tags } = getData();
+const { tasks, users, projects, tags } = getData();
 
 const component = new ToDo("#root", {
-	data,
+	tasks,
 	users,
 	projects,
 	tags: ["urgent", "normal"]

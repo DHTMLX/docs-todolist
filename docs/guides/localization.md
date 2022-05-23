@@ -42,10 +42,10 @@ To initialize the component in non-English language, you need to apply the neces
 
 ~~~js {8,13}
 const { ToDo, Toolbar} = todo;
-const { data, users, projects, tags } = getData();
+const { tasks, users, projects, tags } = getData();
 
 const component = new ToDo("#root", {
-    data,
+    tasks,
     users,
     projects,
     locale: de // sets the "de" locale in the component

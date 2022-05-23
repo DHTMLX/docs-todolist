@@ -33,9 +33,9 @@ const restProvider = new RestDataProvider(url);
 Promise.all([
     restProvider.getProjects(),
     restProvider.getTasks(),
-]).then(([data, projects]) => {
+]).then(([tasks, projects]) => {
     const component = new ToDo("#root", {
-        data,
+        tasks,
         projects,
         activeProject,
     });

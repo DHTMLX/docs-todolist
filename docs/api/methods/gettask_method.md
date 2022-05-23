@@ -31,7 +31,7 @@ const { ToDo, Toolbar } = todo;
 const { projects, users } = getData();
 
 const component = new ToDo("#root", {
-	data: [
+	tasks: [
         { id: "1", text: "Task 1" },
 		{ id: "1.1", text: "Task 1.1", parent: "1" },
 		{ id: "1.2", text: "Task 1.2", parent: "1" },

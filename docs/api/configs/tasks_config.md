@@ -1,10 +1,10 @@
 ---
-sidebar_label: data
-title: data Config
-description: You can learn about the data config in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
+sidebar_label: tasks
+title: tasks Config
+description: You can learn about the tasks config in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
 ---
 
-# data
+# tasks
 
 ### Description
 
@@ -13,7 +13,7 @@ description: You can learn about the data config in the documentation of the DHT
 ### Usage
 
 ~~~js
-data: [
+tasks: [
     {
         id?: string | number,
         parent?: string | number,
@@ -25,13 +25,13 @@ data: [
         due_date?: Date | string,
         [key: string]?: any
     },
-    {...} // more data objects
+    {...} // more task objects
 ];
 ~~~
 
 ### Parameters
 
-The **data** property presents an array of task objects. Each object includes the following set of parameters:
+The **tasks** property presents an array of task objects. Each object includes the following set of parameters:
 
 - `id` - (optional) the id of a task
 - `parent` - (optional) the id of the parent task. The value of the parameter is **undefined** for root tasks

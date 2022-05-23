@@ -29,10 +29,10 @@ The method returns `true` if the project exists; otherwise, `false`
 
 ~~~js {27-28}
 const { ToDo, Toolbar } = todo;
-const { data, users } = getData();
+const { tasks, users } = getData();
 
 const component = new ToDo("#root", {
-	data,
+	tasks,
 	users,
 	projects: [
 		{

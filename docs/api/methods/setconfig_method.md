@@ -32,10 +32,10 @@ setConfig(config: object): void;
 
 ~~~js {16-18,20-22}
 const { ToDo, Toolbar } = todo;
-const { data, users, projects, tags } = getData();
+const { tasks, users, projects, tags } = getData();
 
 const component = new ToDo("#root", {
-	data,
+	tasks,
 	users,
 	projects,
 	tags,

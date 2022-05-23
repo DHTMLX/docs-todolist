@@ -23,7 +23,7 @@ The method returns an object with the following properties:
 ~~~js
 {
     activeProject: {set: any, update: any, subscribe: any}
-    data: {...}
+    tasks: {...}
     id: {...}
     projects: {...}
     readonly: {...}
@@ -38,11 +38,11 @@ The method returns an object with the following properties:
 
 ~~~js {12-15}
 const { ToDo, Toolbar } = todo;
-const { data, users, projects } = getData();
+const { tasks, users, projects } = getData();
 
 // create To do list
 const component = new ToDo("#root", {
-    data,
+    tasks,
     users,
 	projects
 });

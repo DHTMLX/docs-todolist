@@ -137,7 +137,7 @@ You can find the tasks that match the specified criteria with the help of the [s
 ~~~js
 // create To do list
 const component = new ToDo("#root", {
-	data,
+	tasks,
 	users,
 	projects,
 	tags,
@@ -157,3 +157,24 @@ To reset filtering, call the method without parameters:
 // reset filtering
 component.setFilter({});
 ~~~
+
+
+getChildrenIds
+haveChildren
+getTask
+existsTask
+
+
+getProject
+existsProject
+
+
+serialize
+parse
+
+setConfig
+
+
+const taskObj = component.getTask({id:"3.2.1"});
+const parent = taskObj.parent;
+console.log(parent); // -> 3.2

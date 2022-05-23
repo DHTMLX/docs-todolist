@@ -36,11 +36,11 @@ To reset filtering, pass `match: null` to the method
 
 ~~~js
 const { ToDo, Toolbar } = todo;
-const { data, users, projects, tags } = getData();
+const { tasks, users, projects, tags } = getData();
 
 // create To do list
 const component = new ToDo("#root", {
-	data,
+	tasks,
 	users,
 	projects,
 	tags,

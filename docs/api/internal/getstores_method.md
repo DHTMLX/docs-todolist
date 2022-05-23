@@ -28,11 +28,11 @@ state: DataStore // ( object )
 
 ~~~js {11-12}
 const { ToDo, Toolbar } = todo;
-const { data, users, projects } = getData();
+const { tasks, users, projects } = getData();
 
 // create To do list
 const list = new ToDo("#root", {
-    data,
+    tasks,
     users,
 	projects
 });

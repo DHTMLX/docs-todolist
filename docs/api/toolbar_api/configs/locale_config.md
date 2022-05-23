@@ -29,10 +29,10 @@ locale: en
 
 ~~~js {8,13}
 const { ToDo, Toolbar} = todo;
-const { data, users, projects, tags } = getData();
+const { tasks, users, projects, tags } = getData();
 
 const component = new ToDo("#root", {
-	data,
+	tasks,
 	users,
 	projects,
 	locale: de // sets the "de" locale in the component (read Info below)

@@ -190,7 +190,7 @@ module.exports = {
 					items: [
 						// To Do List properties
 						"api/configs/activeproject_config",
-						"api/configs/data_config",
+						"api/configs/tasks_config",
 						"api/configs/id_config",
 						"api/configs/locale_config",
 						"api/configs/taskshape_config",
@@ -300,6 +300,7 @@ module.exports = {
 			},
 			items: [
 				"guides/initialization",
+				"guides/loading_data",
 				"guides/configuration",
 				{
 					type: "category",

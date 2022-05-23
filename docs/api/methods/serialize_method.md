@@ -14,7 +14,7 @@ description: You can learn about the serialize method in the documentation of th
 
 ~~~js
 serialize(): {
-    data: [{...}, {...}, ...],
+    tasks: [{...}, {...}, ...],
     users: [{...}, {...}, ...],
     projects: [{...}, {...}, ...],
     tags: [],
@@ -30,10 +30,10 @@ The method returns serialized data of the component
 
 ~~~js {11}
 const { ToDo, Toolbar } = todo;
-const { data, users, projects, tags } = getData();
+const { tasks, users, projects, tags } = getData();
 
 const component = new ToDo("#root", {
-    data,
+    tasks,
     users,
     projects,
     tags
