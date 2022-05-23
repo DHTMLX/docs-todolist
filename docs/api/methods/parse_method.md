@@ -14,7 +14,7 @@ description: You can learn about the parse method in the documentation of the DH
 
 ~~~js
 parse({
-    data?: [],
+    tasks?: [],
     users?: [],
     projects?: [],
     tags?: [],
@@ -24,7 +24,7 @@ parse({
 
 ### Parameters
 
-- [`data`](api/configs/tasks_config.md) - (optional) an array of objects with tasks data
+- [`tasks`](api/configs/tasks_config.md) - (optional) an array of objects with tasks data
 - [`users`](api/configs/users_config.md) - (optional) an array of objects with users data
 - [`projects`](api/configs/projects_config.md) - (optional) an array of objects with projects data
 - [`tags`](api/configs/tags_config.md) - (optional) - an array with a list of tags

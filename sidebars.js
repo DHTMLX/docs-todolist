@@ -190,13 +190,13 @@ module.exports = {
 					items: [
 						// To Do List properties
 						"api/configs/activeproject_config",
-						"api/configs/tasks_config",
 						"api/configs/id_config",
 						"api/configs/locale_config",
 						"api/configs/taskshape_config",
 						"api/configs/projects_config",
 						"api/configs/readonly_config",
 						"api/configs/tags_config",
+						"api/configs/tasks_config",
 						"api/configs/users_config",
 					]
 				}
