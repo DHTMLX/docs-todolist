@@ -30,7 +30,7 @@ The method returns an object with data of the task
 const { ToDo, Toolbar } = todo;
 const { projects, users } = getData();
 
-const component = new ToDo("#root", {
+const list = new ToDo("#root", {
 	tasks: [
         { id: "1", text: "Task 1" },
 		{ id: "1.1", text: "Task 1.1", parent: "1" },
@@ -41,8 +41,8 @@ const component = new ToDo("#root", {
 });
 
 const toolbar = new Toolbar("#toolbar", {
-	api: component.api,
+	api: list.api,
 });
 
-component.getTask({ id: "1.2" }); // -> {id: '1.2', text: 'Task 1.2', parent: '1'}
+list.getTask({ id: "1.2" }); // -> {id: '1.2', text: 'Task 1.2', parent: '1'}
 ~~~

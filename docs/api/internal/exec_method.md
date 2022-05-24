@@ -37,12 +37,12 @@ const { ToDo, Toolbar } = todo;
 const { tasks, users, projects } = getData();
 
 // create To do list
-const component = new ToDo("#root", {
+const list = new ToDo("#root", {
     tasks,
     users,
 	projects
 });
 
 // add a new project
-component.api.exec("add-project", { project: { label: "New project" } });
+list.api.exec("add-project", { project: { label: "New project" } });
 ~~~

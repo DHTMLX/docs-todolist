@@ -40,46 +40,71 @@ You need to include the following two files:
     </body>
 </html>
 ~~~
+## Step 2. Create To Do List
 
-## Step 2. Prepare data to load
+Now you can add To Do List to the page. For this, you should create two DIV containers to place To Do List its Toolbar into. So, your steps are:
+
+- specify two DIV containers in the *index.html* file
+- apply the object destructuring to "unpack" the **todo** global object into two variables: ToDo and Toolbar
+- initialize To Do List and its Toolbar via the **new ToDo()** and **new Toolbar()** constructors correspondingly
+
+~~~js title="index.html"
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>How to Start with To Do List</title>
+        <script type="text/javascript" src="./dist/todo.js"></script>  
+        <link rel="stylesheet" href="./dist/todo.css">
+    </head>
+    <body>
+        <div id="root"></div>
+        <div id="toolbar"></div>
+
+        <script>
+            const { ToDo, Toolbar } = todo;
+            
+            const list = new ToDo("#root", {
+				// configuration properties 
+			});
+			const toolbar = new Toolbar("#toolbar", {
+				api: list.api,
+                // more configuration properties  
+			});
+        </script>
+    </body>
+</html>
+~~~
+
+
+
+:::info
+Toolbar is an optional part of the To Do List interface. To create a To Do List without the Toolbar, you can specify only one DIV container and initialize the widget via the **new ToDo()** constructor
+:::
+
+For more information about initialization of To Do List read the [Initialization](guides/initialization.md) article.
+
+## Step 3. Load data into To Do List
+
+As you can see, we've initialized the To Do List but it is still empty. At this step you can learn how to fill in the component with data.
 
 :::info
 You can skip this step if you want to display an empty component on the page
 :::
 
-Before creating a To Do List, you can prepare data sets for [**tasks**](api/configs/tasks_config.md), [**projects**](api/configs/projects_config.md), [**users**](api/configs/users_config.md), and [**tags**](api/configs/tags_config.md) to load into the component. 
+At first, you should prepare data (in the JSON format) to load into the component. The data can include the following sets of information: [**tasks**](api/configs/tasks_config.md), [**projects**](api/configs/projects_config.md), [**users**](api/configs/users_config.md), and [**tags**](api/configs/tags_config.md). 
 
 The most convenient way is to prepare data in a separate file, for example:
 
 ~~~js title="data.js"
 function getData() {
-
     // data for tasks
     const tasks = [
         // data for tasks of the "widgets" project
-        {
-            "id": "widgets",
-            "project": "widgets",
-            "text": "\u{1F389} DHTMLX widgets"
-        },
-        {
-            "id": "gantt",
-            "project": "widgets",
-            "parent": "widgets",
-            "text": "Gantt"
-        },
-        {
-            "id": "scheduler",
-            "project": "widgets",
-            "parent": "widgets",
-            "text": "Scheduler"
-        },
-        {
-            "id": "diagram",
-            "project": "widgets",
-            "parent": "widgets",
-            "text": "Diagram"
-        },
+        { "id": "widgets", "project": "widgets", "text": "\u{1F389} DHTMLX widgets" },
+        { "id": "gantt", "project": "widgets", "parent": "widgets", "text": "Gantt" },
+        { "id": "scheduler", "project": "widgets", "parent": "widgets", "text": "Scheduler" },
+        { "id": "diagram", "project": "widgets", "parent": "widgets", "text": "Diagram" },
+        
         // data for tasks of the "introduction" project    
         {
             "id": "temp://1652991560212",
@@ -90,20 +115,14 @@ function getData() {
             "id": "1652374122964",
             "project": "introduction",
             "text": "You can assign task performers and due dates using the menu.",
-            "assigned": [
-                "user_2",
-                "user_1",
-                "user_3",
-            ],
+            "assigned": [ "user_2", "user_1", "user_3" ],
             "due_date": "2033-03-08T21:00:00.000Z"
         },
         {
             "id": "1652097809881",
             "project": "introduction",
             "text": "You can create tasks with an infinite number of subtasks.",
-            "assigned": [
-                "user_2"
-            ],
+            "assigned": [ "user_2" ],
             "collapsed": false
         },
         {
@@ -125,59 +144,88 @@ function getData() {
 
     // data for users
     const users = [
-        {
-            "id": "user_1",
-            "label": "Don Smith",
-            "path": "../avatar_02.jpg"
-        },
-        {
-            "id": "user_2",
-            "label": "Nadia Chasey",
-            "path": "../avatar_05.jpg"
-        },
-        {
-            "id": "user_3",
-            "label": "Mike Young",
-            "path": "../avatar_21.jpg"
-        },
+        { "id": "user_1", "label": "Don Smith", "path": "../avatar_02.jpg" },
+        { "id": "user_2", "label": "Nadia Chasey", "path": "../avatar_05.jpg" },
+        { "id": "user_3", "label": "Mike Young", "path": "../avatar_21.jpg" },
         // more user objects
     ];
 
     // data for projects
     const projects = [
-        {
-            "id": "introduction",
-            "label": "Introduction to DHTMLX To Do List"
-        },
-        {
-            "id": "widgets",
-            "label": "Our widgets"
-        },
+        { "id": "introduction", "label": "Introduction to DHTMLX To Do List" },
+        { "id": "widgets", "label": "Our widgets" },
         // more project objects
     ];
 }
 ~~~
 
-## Step 3. Create To Do List
+Now, you can populate the To Do List with data. For that, specify the related properties in the configuration object of the component:
 
-## Step 4. Populate To Do List with data
-
-Include the file with data the page:
-
-~~~html {8} title="index.html"
+~~~js {8,16,18-22} title="index.html"
 <!DOCTYPE html>
 <html>
     <head>
-        <title>How to Start with DHTMLX To Do List</title>
+        <title>How to Start with To Do List</title>
         <script type="text/javascript" src="./dist/todo.js"></script>  
         <link rel="stylesheet" href="./dist/todo.css">
 
         <script src="../data.js"></script>
     </head>
     <body>
+        <div id="root"></div>
+        <div id="toolbar"></div>
+
         <script>
-        // your code will be here
+            const { ToDo, Toolbar } = todo;
+            const { tasks, users, projects } = getData();
+
+			const list = new ToDo("#root", {
+				tasks,
+				users,
+				projects
+			});
+			const toolbar = new Toolbar("#toolbar", {
+				api: list.api,
+			});
         </script>
     </body>
 </html>
 ~~~
+
+You can find more information on loading data into To Do List in the [Data loading](guides/loading_data.md) article.
+
+## Step 4. Configure To Do List
+
+Now, you can define the desired configuration of To Do list. 
+
+As you already know, To Do List consists of two separate interfaces: List and Toolbar. And each of them possesses a separate list of configuration options:
+
+- check the list of [To Do List properties](api/overview/configs_overview.md)
+- check the list of [Toolbar properties](category/toolbar-properties.md)
+
+As an example, let's enable the *readonly* mode for To Do List, specify an active project, and hide the control that allows switching between projects:
+
+~~~js {5-6,11}
+const list = new ToDo("#root", {
+	tasks,
+	users,
+	projects,
+    activeProject: "introduction",
+    readonly: true
+});
+
+const toolbar = new Toolbar("#toolbar", {
+	api: list.api,
+    items: ["search"]
+});
+~~~
+
+## What's next
+
+Now you have a ready To Do List. You can load your own set of data, and configure the component to make it meet your needs
+
+If you feel like diving deeper into the world of To Do List, these are suggestions for further studying:
+
+- [To Do List overview](../)
+- [Guides](category/guides.md)
+- [API](category/api.md)

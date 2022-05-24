@@ -164,7 +164,7 @@ const { users, projects, tasks } = getData();
 const list = new ToDo("#root", {});
 
 const toolbar = new Toolbar("#toolbar", {
-    api: component.api,
+    api: list.api,
 });
 
 // parse data into the component

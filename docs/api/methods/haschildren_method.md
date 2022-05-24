@@ -39,7 +39,7 @@ The method returns `true` if the task has children; otherwise, returns `false`
 const { ToDo, Toolbar } = todo;
 const { users, projects, tags } = getData();
 
-const component = new ToDo("#root", {
+const list = new ToDo("#root", {
 	tasks: [
         { id: "1", text: "Task 1 #tag1" },
 		{ id: "1.1", text: "Task 1.1", parent: "1" },
@@ -51,17 +51,17 @@ const component = new ToDo("#root", {
 });
 
 const toolbar = new Toolbar("#toolbar", {
-	api: component.api,
+	api: list.api,
 });
 
 
 
-console.log(component.hasChildren({ id: "1.1" })); // -> true
+console.log(list.hasChildren({ id: "1.1" })); // -> true
 
 // filter the tasks
-component.setFilter({ match: "3", highlight: true });
+list.setFilter({ match: "3", highlight: true });
 
 // after filtering
-console.log(component.hasChildren({ id: "1.1" })); // -> true
-console.log(component.hasChildren({ id: "1.1", filtered: true })); // -> false
+console.log(list.hasChildren({ id: "1.1" })); // -> true
+console.log(list.hasChildren({ id: "1.1", filtered: true })); // -> false
 ~~~

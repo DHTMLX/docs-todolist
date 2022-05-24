@@ -41,7 +41,7 @@ The method returns an array of children's ID
 const { ToDo, Toolbar } = todo;
 const { users, projects, tags } = getData();
 
-const component = new ToDo("#root", {
+const list = new ToDo("#root", {
 	tasks: [
         { id: "1", text: "Task 1 #tag1" },
 		{ id: "1.1", text: "Task 1.1", parent: "1" },
@@ -53,20 +53,20 @@ const component = new ToDo("#root", {
 });
 
 const toolbar = new Toolbar("#toolbar", {
-	api: component.api,
+	api: list.api,
 });
 
 // before filtering
-component.getChildrenIds({ id: "1" }); // ['1.1', '1.1.2', '1.2']
-component.getChildrenIds({ id: "1", tree: false }); // ['1.1', '1.2']
+list.getChildrenIds({ id: "1" }); // ['1.1', '1.1.2', '1.2']
+list.getChildrenIds({ id: "1", tree: false }); // ['1.1', '1.2']
 
 // filter the tasks
-component.setFilter({ match: "#tag1", highlight: true });
+list.setFilter({ match: "#tag1", highlight: true });
 
 // after filtering
-component.getChildrenIds({ id: "1" }); // -> ['1.1', '1.1.2', '1.2']
-component.getChildrenIds({ id: "1", tree: false }); // -> ['1.1', '1.2']
+list.getChildrenIds({ id: "1" }); // -> ['1.1', '1.1.2', '1.2']
+list.getChildrenIds({ id: "1", tree: false }); // -> ['1.1', '1.2']
 
-component.getChildrenIds({ id: "1", filtered: true }) // -> ['1.1', '1.1.2']
-component.getChildrenIds({ id: "1", filtered: true, tree: false }); // -> ['1.1']
+list.getChildrenIds({ id: "1", filtered: true }) // -> ['1.1', '1.1.2']
+list.getChildrenIds({ id: "1", filtered: true, tree: false }); // -> ['1.1']
 ~~~

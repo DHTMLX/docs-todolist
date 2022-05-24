@@ -65,10 +65,14 @@ const list = new ToDo("#root", {
 });
 ~~~
 
-And initialize Toolbar with the **new Toolbar()** constructor. The constructor also takes two parameters:
+Next, initialize Toolbar with the **new Toolbar()** constructor. The constructor also takes two parameters:
 
 - a container to place a Toolbar into. The one we have created at the previous step
 - an object with configuration properties. [See the full list here](category/toolbar-properties.md)
+
+:::info
+Initialization of the Toolbar is optional. You can skip this step if you don't need the Toolbar in your application
+:::
 
 ~~~js {7-9} title="index.js"
 // create List
@@ -83,6 +87,4 @@ const toolbar = new Toolbar("#toolbar", {
 ~~~
 
 
-:::info
-Initialization of the Toolbar is optional. You can skip this step if you don't need the Toolbar in your application
-:::
+

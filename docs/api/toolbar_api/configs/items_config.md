@@ -47,14 +47,14 @@ You can specify your own structure of the toolbar by enumerating necessary eleme
 const { ToDo, Toolbar } = todo;
 const { tasks, users, projects, tags } = getData();
 
-const component = new ToDo("#root", {
+const list = new ToDo("#root", {
 	tasks,
 	users,
 	projects,
 	tags,
 });
 const toolbar = new Toolbar("#toolbar", {
-	api: component.api,
+	api: list.api,
 	items: [
 		`<div style="font-weight:500;font-size:18px;padding:0 10px; width: 100%">Logo<div/>`,
 		"search",

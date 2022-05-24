@@ -32,7 +32,7 @@ const { ToDo, Toolbar } = todo;
 const { tasks, users, projects, tags } = getData();
 
 // create To do list
-const component = new ToDo("#root", {
+const list = new ToDo("#root", {
     tasks,
     users,
 		projects,
@@ -40,7 +40,7 @@ const component = new ToDo("#root", {
 });
 
 // add a new project
-component.addProject({
+list.addProject({
 		project: {label: "New project"}
 });
 ~~~

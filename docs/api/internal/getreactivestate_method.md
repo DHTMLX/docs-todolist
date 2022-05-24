@@ -41,14 +41,14 @@ const { ToDo, Toolbar } = todo;
 const { tasks, users, projects } = getData();
 
 // create To do list
-const component = new ToDo("#root", {
+const list = new ToDo("#root", {
     tasks,
     users,
 	projects
 });
 
 // subscribe to the task selection
-component.api.getReactiveState().selected.subscribe((value) => {
+list.api.getReactiveState().selected.subscribe((value) => {
     console.log(value);
     // other actions
 });

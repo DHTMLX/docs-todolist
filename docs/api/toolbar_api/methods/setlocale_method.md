@@ -113,21 +113,21 @@ const de = {
     },
 };
 
-const component = new ToDo("#root", {
+const list = new ToDo("#root", {
     tasks,
     users,
     projects,
     tags,
 });
 const toolbar = new Toolbar("#toolbar", {
-    api: component.api,
+    api: list.api,
 });
 
 // change locale of To do list (read Info)
-component.setLocale(de);
+list.setLocale(de);
 
 // change locale of Toolbar
-toolbar.setLocale(de, component.api);
+toolbar.setLocale(de, list.api);
 ~~~
 
 :::info

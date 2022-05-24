@@ -37,14 +37,14 @@ const { ToDo, Toolbar } = todo;
 const { tasks, users, projects } = getData();
 
 // create To do list
-const component = new ToDo("#root", {
+const list = new ToDo("#root", {
     tasks,
     users,
 	projects
 });
 
 // forbid removing a project with the "first" ID
-component.api.intercept("delete-project", ({ id }) => {
+list.api.intercept("delete-project", ({ id }) => {
     if(id == "first"){
         return false;
     }

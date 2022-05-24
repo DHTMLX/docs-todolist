@@ -31,7 +31,7 @@ The method returns `true` if the task exists; otherwise, `false`
 const { ToDo, Toolbar } = todo;
 const { users, projects } = getData();
 
-const component = new ToDo("#root", {
+const list = new ToDo("#root", {
 	tasks: [
         { id: "1", text: "Task 1" },
 		{ id: "1.1", text: "Task 1.1", parent: "1" },
@@ -42,9 +42,9 @@ const component = new ToDo("#root", {
 });
 
 const toolbar = new Toolbar("#toolbar", {
-	api: component.api,
+	api: list.api,
 });
 
-component.existsTask({ id: "2" }); // -> false
-component.existsTask({ id: "1.2" }); // -> true
+list.existsTask({ id: "2" }); // -> false
+list.existsTask({ id: "1.2" }); // -> true
 ~~~

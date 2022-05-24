@@ -38,16 +38,16 @@ Promise.all([
     restProvider.getProjects(),
     restProvider.getTasks(),
 ]).then(([tasks, projects]) => {
-    const component = new ToDo("#root", {
+    const list = new ToDo("#root", {
         tasks,
         projects,
         activeProject,
     });
     const toolbar = new Toolbar("#toolbar", {
-        api: component.api,
+        api: list.api,
     });
 
-    component.api.setNext(restProvider);
-    restProvider.setAPI(component.api);
+    list.api.setNext(restProvider);
+    restProvider.setAPI(list.api);
 });
 ~~~

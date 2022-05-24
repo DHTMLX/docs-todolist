@@ -32,12 +32,12 @@ The method returns serialized data of the component
 const { ToDo, Toolbar } = todo;
 const { tasks, users, projects, tags } = getData();
 
-const component = new ToDo("#root", {
+const list = new ToDo("#root", {
     tasks,
     users,
     projects,
     tags
 });
 
-component.serialize();
+list.serialize();
 ~~~

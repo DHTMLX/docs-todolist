@@ -37,7 +37,7 @@ const { ToDo, Toolbar } = todo;
 const { tasks, users, projects, tags } = getData();
 
 // create To do list
-const component = new ToDo("#root", {
+const list = new ToDo("#root", {
 	tasks,
 	users,
 	projects,
@@ -45,7 +45,7 @@ const component = new ToDo("#root", {
 });
 
 // subscribe to the "set-filter" event
-component.api.on("set-filter", (obj) => {
+list.api.on("set-filter", (obj) => {
     console.log(obj);
 });
 ~~~

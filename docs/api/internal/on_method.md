@@ -37,14 +37,14 @@ const { ToDo, Toolbar } = todo;
 const { tasks, users, projects } = getData();
 
 // create To do list
-const component = new ToDo("#root", {
+const list = new ToDo("#root", {
     tasks,
     users,
 	projects
 });
 
 // output the project data to console when you remove it
-component.api.intercept("delete-project", ({ id }) => {
+list.api.on("delete-project", ({ id }) => {
     console.log( "The id of the project", { id });
 });
 ~~~

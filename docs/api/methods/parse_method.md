@@ -36,14 +36,14 @@ parse({
 const { ToDo, Toolbar } = todo;
 const { users, projects, data } = getData(); // get data declared in another file
 
-const component = new ToDo("#root", {});
+const list = new ToDo("#root", {});
 
 const toolbar = new Toolbar("#toolbar", {
-	api: component.api,
+	api: list.api,
 });
 
 // parse data into the component
-component.parse({
+list.parse({
     tasks,
     users,
     projects

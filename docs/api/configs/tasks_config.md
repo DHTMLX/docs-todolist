@@ -34,7 +34,7 @@ tasks: [
 The **tasks** property presents an array of task objects. Each object includes the following set of parameters:
 
 - `id` - (optional) the id of a task
-- `parent` - (optional) the id of the parent task. The value of the parameter is **undefined** for root tasks
+- `parent` - (optional) the id of the parent task. The value of the parameter is **null | undefined** for root tasks
 - `project` - (optional) the id of the project where the task should be rendered. To initialize the projects, use the **projects** property.<br>
 :::info
 If there are projects initialized, specify the ID of the necessary project for the root task to display it in this project.<br><br>

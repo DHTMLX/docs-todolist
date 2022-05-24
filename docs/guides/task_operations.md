@@ -136,7 +136,7 @@ You can find the tasks that match the specified criteria with the help of the [s
 
 ~~~js
 // create To do list
-const component = new ToDo("#root", {
+const list = new ToDo("#root", {
 	tasks,
 	users,
 	projects,
@@ -144,7 +144,7 @@ const component = new ToDo("#root", {
 });
 
 // filter data by the specified rules
-component.setFilter({
+list.setFilter({
 	match: "ran",
 	highlight: true,
 	strict: true
@@ -155,26 +155,5 @@ To reset filtering, call the method without parameters:
 
 ~~~js
 // reset filtering
-component.setFilter({});
+list.setFilter({});
 ~~~
-
-
-getChildrenIds
-haveChildren
-getTask
-existsTask
-
-
-getProject
-existsProject
-
-
-serialize
-parse
-
-setConfig
-
-
-const taskObj = component.getTask({id:"3.2.1"});
-const parent = taskObj.parent;
-console.log(parent); // -> 3.2

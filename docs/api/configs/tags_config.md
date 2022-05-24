@@ -30,7 +30,7 @@ A tag can start with any symbol, the `#` sign is added automatically
 const { ToDo, Toolbar } = todo;
 const { tasks, users, projects, tags } = getData();
 
-const component = new ToDo("#root", {
+const list = new ToDo("#root", {
 	tasks,
 	users,
 	projects,

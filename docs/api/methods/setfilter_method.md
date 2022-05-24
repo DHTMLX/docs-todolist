@@ -39,7 +39,7 @@ const { ToDo, Toolbar } = todo;
 const { tasks, users, projects, tags } = getData();
 
 // create To do list
-const component = new ToDo("#root", {
+const list = new ToDo("#root", {
 	tasks,
 	users,
 	projects,
@@ -47,11 +47,11 @@ const component = new ToDo("#root", {
 });
 
 // filter data by the specified rules
-component.setFilter({
+list.setFilter({
 	match: "ran",
 	highlight: true
 });
 
 // reset filtering
-component.setFilter({ match: null });
+list.setFilter({ match: null });
 ~~~

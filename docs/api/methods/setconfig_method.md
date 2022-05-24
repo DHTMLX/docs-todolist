@@ -34,7 +34,7 @@ setConfig(config: object): void;
 const { ToDo, Toolbar } = todo;
 const { tasks, users, projects, tags } = getData();
 
-const component = new ToDo("#root", {
+const list = new ToDo("#root", {
 	tasks,
 	users,
 	projects,
@@ -43,15 +43,15 @@ const component = new ToDo("#root", {
 });
 			
 const toolbar = new Toolbar("#toolbar", {
-	api: component.api,
+	api: list.api,
 });
 
-component.setConfig({
+list.setConfig({
 	activeProject: "second"
 });
 
 toolbar.setConfig({
-	api: component.api,
+	api: list.api,
 });
 ~~~
 

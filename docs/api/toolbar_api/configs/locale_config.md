@@ -31,7 +31,7 @@ locale: en
 const { ToDo, Toolbar} = todo;
 const { tasks, users, projects, tags } = getData();
 
-const component = new ToDo("#root", {
+const list = new ToDo("#root", {
 	tasks,
 	users,
 	projects,
@@ -39,7 +39,7 @@ const component = new ToDo("#root", {
 });
 
 const toolbar = new Toolbar("#toolbar", {
-	api: component.api,
+	api: list.api,
 	locale: de // sets the "de" locale in the Toolbar
 });
 ~~~
