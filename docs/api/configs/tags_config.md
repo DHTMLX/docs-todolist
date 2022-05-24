@@ -8,7 +8,7 @@ description: You can learn about the tags config in the documentation of the DHT
 
 ### Description
 
-@short: Optional. An array of tags to be shown by default
+@short: Optional. An array of hashtags to be shown by default
 
 :::tip
 To view the list of tags, type `#` in the search field or in the text
@@ -21,7 +21,7 @@ tags?: string[];
 ~~~
 
 :::info
-A tag can start with any symbol, the `#` sign is added automatically
+A hashtag can start with any symbol, the `#` symbol is added automatically
 :::
 
 ### Example

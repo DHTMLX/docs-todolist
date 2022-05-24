@@ -8,10 +8,44 @@ description: descr
 
 Inline editing lets you edit the content of a task/project directly by double-clicking on it. The functionality is enabled by default.
 
-```todo change
-But if you disable editing of all tasks via the [readonly] property 
+:::tip
+When you enable the [readonly](api/configs/readonly_config.md) mode of To Do List, inline editing becomes unavailable. 
+:::
 
-```
+## Supported formats of data
+
+It is possible to type and edit the following types of information via the inline editor:
+
+1\. **Text, numbers, emojis**
+
+2\. **Hashtags**
+
+Use hashtags to categorize tasks and make them more searchable. Here are some simple rules to know:
+
+- Hashtag is a combination of the `#` symbol and any letters, numbers, or emojis (for instance, **#sport**)
+- To create a hashtag, enter `#` and at least one symbol after it (for instance, **#t**), and press Enter
+- You can use unlimited number of hashtags in To Do List. Separate the tags by spaces (for instance, **#tag #tag1**) 
+- All created hashtags are visible in every project
+- To view the list of all hashtags you've already created, enter the `#` symbol. Click the necessary hashtag to add it to the task
+- To activate strict filtering, click a hashtag or enter it in the search field in the toolbar
+
+:::info
+You can create a default list of tags via the [tags](api/configs/tags_config.md) property
+:::
+
+3\. **Dates**
+
+To enter a date via the inline editor, type the `!` symbol and the built-in date picker will appear on the page.
+    
+You can also wrap some text in the special symbols - `!()` - for instance, **!(Enter Booking date)**, and press Enter to close the editor. In the future, clicking on this text will open the date picker. 
+
+:::info
+The appearance of the added dates depends on the specified [locale](api/configs/locale_config.md) and [date format](api/configs/taskshape_config.md)
+:::
+
+## Working with editor
+
+You can manage the editor by using the API:
 
 To open the editor for a particular task/project, use the [openInlineEditor()](../../api/methods/openinlineeditor_method/) method:
 
