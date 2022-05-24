@@ -38,7 +38,7 @@ const { ToDo, Toolbar, en } = todo;
 
 ## Activating a locale
 
-To initialize the component in non-English language, you need to apply the necessary locale to the component and its toolbar via the corresponding **locale** properties:
+To initialize the To Do List component in non-English language, you need to apply the necessary locale to the To Do List component and its toolbar via the corresponding **locale** properties:
 
 ~~~js {8,13}
 const { ToDo, Toolbar} = todo;
@@ -159,7 +159,7 @@ The easiest way to create a custom locale is to make a copy of the default (Engl
 
 To apply the custom locale, use either of the following ways:
 
-- activate the locale on initialization of the component via the [locale](api/configs/locale_config.md) property
+- activate the locale on initialization of the To Do List component via the [locale](api/configs/locale_config.md) property
 - or override the current locale via the [setLocale()](api/methods/setlocale_method.md) method
 
 :::info

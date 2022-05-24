@@ -8,7 +8,7 @@ description: You can learn about the id config in the documentation of the DHTML
 
 ### Description
 
-@short: Optional. The ID of the component
+@short: Optional. The ID of the To Do List
 
 :::info
 Auto-generated, provides correct work of the component parts, such as Toolbar

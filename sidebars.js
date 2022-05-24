@@ -265,11 +265,11 @@ module.exports = {
 			},
 			items: [{
 				type: "category",
-                label: "RestDataProvider methods",
+                label: "REST methods",
                 collapsed: true,
                 link: {
                     type: 'generated-index',
-                    title: "RestDataProvider methods",
+                    title: "REST methods",
                     keywords: ['rest methods'],
                     image: '/img/docusaurus.png'
                 },
@@ -300,8 +300,9 @@ module.exports = {
 			},
 			items: [
 				"guides/initialization",
-				"guides/loading_data",
 				"guides/configuration",
+				"guides/loading_data",
+				"guides/working_with_server",
 				{
 					type: "category",
 					label: "Managing tasks",

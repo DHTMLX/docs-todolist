@@ -35,7 +35,7 @@ const list = new ToDo("#root", {
 	tasks,
 	users,
 	projects,
-	locale: de // sets the "de" locale in the component (read Info below)
+	locale: de // sets the "de" locale in the To Do List component (read Info below)
 });
 
 const toolbar = new Toolbar("#toolbar", {

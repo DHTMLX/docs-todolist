@@ -8,7 +8,7 @@ description: You can learn about the setAPI method of the RestDataProvider in th
 
 ### Description
 
-@short: Required. Sets API of the component into RestDataProvider
+@short: Required. Sets API of the To Do List component into RestDataProvider
 
 :::info
 The **setAPI()** method is required for correct work of the RestDataProvider methods

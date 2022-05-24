@@ -20,7 +20,6 @@ api.setNext(next: any): void;
 
 - `next` - (required) the action to be included into the **Event Bus** order
 
-
 ### Example
 
 ~~~js {20}
@@ -49,5 +48,5 @@ Promise.all([
 ~~~
 
 :::info
-You need to include **RestDataProvider** into the **Event Bus** order to perform operations with data (**adding, deleting** etc) and send the corresponding requests to the server
+You need to include **RestDataProvider** into the **Event Bus** order to perform operations with data (**adding, deleting**, etc) and send the corresponding requests to the server
 :::

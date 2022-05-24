@@ -8,14 +8,14 @@ description: You can learn about the setConfig method in the documentation of th
 
 ### Description
 
-@short: Sets a new configuration for the component
+@short: Sets a new configuration for the To Do List
 
 :::tip
 Using this method, you can change configuration of the To do list widget. The method changes only the parameters you passed
 :::
 
 :::info
-It is also possible to load data into the component via the method, but we recommend that you use the [parse()](api/methods/parse_method.md) method for this purpose
+It is also possible to load data into the To Do List via the method, but we recommend that you use the [parse()](api/methods/parse_method.md) method for this purpose
 :::
 
 ### Usage
