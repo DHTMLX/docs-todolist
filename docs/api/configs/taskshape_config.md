@@ -47,8 +47,36 @@ To configure the task's appearance, you can specify the following parameters in 
         - *"number"* - the value of the counter is displayed as a ratio between two numbers: the number of completed subtasks and the total number of subtasks
         - *"percentage"* - the value of the counter is displayed as a percentage
 - `date` - (optional) an object with date settings: 
-    - `format` - (optional) defines the format of displaying dates. By default, "%d %M %Y". The full list of available characters is given below.
-    - `validate` - (optional) defines whether the **due_date** property of the task object should be validated
+    - `format` - (optional) defines the format of displaying dates. By default, "%d %M %Y". The full list of available characters is given [below](#list-of-characters)
+    - `validate` - (optional) defines whether the **due_date** property of the [task object](api/configs/tasks_config.md) should be validated
+
+### Example
+
+~~~js {9-17}
+const { ToDo, Toolbar } = todo;
+const { tasks, users, projects } = getData();
+
+// create To do list
+const list = new ToDo("#root", {
+    tasks,
+    users,
+	projects,
+    taskShape: {
+        counter: {
+            type: "percentage"
+        },
+        date: {
+            format: "%d %m %Y",
+            validate: false
+        }
+    }
+});
+
+const toolbar = new Toolbar("#toolbar", {
+    api: list.api,
+});
+~~~
+
 
 ### List of characters
 

@@ -31,7 +31,7 @@ You can easily make a certain project active on initialization of To do list via
 Describe behavior if active project isn't set
 ```
 
-If the specified active project doesn't exist or there are no projects loaded into To Do List at all, the *project-free* section will be displayed on initialization of the component. 
+If the specified active project doesn't exist or there are no projects loaded into To Do List at all, the *No project* section will be displayed on initialization of the component. 
 
 The tasks will be included into this section in the following cases:
 - if the **project** parameter is not specified in the [data object of the root task](../../api/configs/tasks_config/)

@@ -10,9 +10,11 @@ description: You can learn about the readonly config in the documentation of the
 
 @short: Optional. Makes To Do List readonly
 
-After you enable the readonly mode, the *add Task* button and *3 dots* icon will be hidden.
+:::tip
+After you enable the readonly mode, the *add Task* button and *3 dots* icons will be hidden in the toolbar and list
 
-In the readonly mode it is only possible to mark tasks as completed/uncompleted.
+In the *readonly* mode it is only possible to mark tasks as completed/uncompleted
+:::
 
 ### Usage
 
@@ -26,3 +28,21 @@ readonly?: boolean;
 readonly: false // readonly mode is disabled
 ~~~
 
+### Example
+
+~~~js {9}
+const { ToDo, Toolbar } = todo;
+const { tasks, users, projects } = getData();
+
+// create To do list
+const list = new ToDo("#root", {
+    tasks,
+    users,
+	projects,
+    readonly: true
+});
+
+const toolbar = new Toolbar("#toolbar", {
+    api: list.api,
+});
+~~~

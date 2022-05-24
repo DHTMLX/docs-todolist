@@ -26,3 +26,24 @@ projects?: [
 
 - `id` - (required) the id of a project
 - `label` - (required) the name of a project. It is displayed in the list of available projects
+
+### Example
+
+~~~js {4-7,11}
+const { ToDo, Toolbar } = todo;
+
+// projects data
+const projects = [
+    { "id": "books", "label": "Books" },
+    { "id": "films", "label": "Films" },
+];
+
+// create To do list
+const list = new ToDo("#root", {
+	projects,
+});
+
+const toolbar = new Toolbar("#toolbar", {
+    api: list.api,
+});
+~~~

@@ -20,3 +20,21 @@ Auto-generated, provides correct work of the component parts, such as Toolbar
 id?: string | number;
 ~~~
 
+### Example
+
+~~~js {9}
+const { ToDo, Toolbar } = todo;
+const { tasks, users, projects } = getData();
+
+// create To do list
+const list = new ToDo("#root", {
+    tasks,
+    users,
+	projects,
+    id: "1"
+});
+
+const toolbar = new Toolbar("#toolbar", {
+    api: list.api,
+});
+~~~

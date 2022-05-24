@@ -35,12 +35,16 @@ const { tasks, users, projects, tags } = getData();
 const list = new ToDo("#root", {
     tasks,
     users,
-		projects,
-		tags,
+	projects,
+	tags,
+});
+
+const toolbar = new Toolbar("#toolbar", {
+    api: list.api,
 });
 
 // add a new project
 list.addProject({
-		project: {label: "New project"}
+	project: {label: "New project"}
 });
 ~~~

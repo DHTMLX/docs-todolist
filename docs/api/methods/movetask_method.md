@@ -29,7 +29,7 @@ moveTask({
 - `id` - (optional) the ID of the task to be moved
 - `project` - (optional) the ID of the project<br>
 :::info
-To move a task to the project-free section, specify the value of the parameter to **null**
+To move a task to the *No project* section, specify the value of the parameter to **null**
 :::
 - `parent` - (optional) the ID of the parent task
 - `targetId` - (optional) the ID of the target task where the moved task will be pasted

@@ -20,4 +20,4 @@ setProject({
 
 ### Parameters
 
-- `id` - (required) the ID of a project. To display the *project-free* section, set ID to **null**
+- `id` - (required) the ID of a project. To display the *No project* section, set ID to **null**

@@ -22,4 +22,27 @@ unassignUser({
 ### Parameters
 
 - `id` - (required) the id of a task
-- `userId` - (required) the id of the user which to be unassigned from the task
+- `userId` - (required) the id of the user which needs to be unassigned from the task
+
+### Example
+
+~~~js
+const { ToDo, Toolbar } = todo;
+const { tasks, users, projects } = getData();
+
+// create To do list
+const list = new ToDo("#root", {
+    tasks,
+    users,
+	projects,
+});
+
+const toolbar = new Toolbar("#toolbar", {
+    api: list.api,
+});
+
+list.unassignUser({
+	id: "2",
+    userId: "user_1"
+});
+~~~

@@ -11,7 +11,7 @@ description: You can learn about the tags config in the documentation of the DHT
 @short: Optional. An array of hashtags to be shown by default
 
 :::tip
-To view the list of tags, type `#` in the search field or in the text
+To view the list of tags, type `#` in the search field or in the text editor
 :::
 
 ### Usage
@@ -26,15 +26,19 @@ A hashtag can start with any symbol, the `#` symbol is added automatically
 
 ### Example
 
-~~~js
+~~~js {8}
 const { ToDo, Toolbar } = todo;
-const { tasks, users, projects, tags } = getData();
+const { tasks, users, projects } = getData();
 
 const list = new ToDo("#root", {
 	tasks,
 	users,
 	projects,
 	tags: ["urgent", "normal"]
+});
+
+const toolbar = new Toolbar("#toolbar", {
+    api: list.api,
 });
 ~~~
 

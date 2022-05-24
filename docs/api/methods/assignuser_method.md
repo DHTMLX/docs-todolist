@@ -23,3 +23,26 @@ assignUser({
 
 - `id` - (required) the id of the task
 - `userId` - (required) the id of the user to be assigned to the task
+
+### Example
+
+~~~js
+const { ToDo, Toolbar } = todo;
+const { tasks, users, projects } = getData();
+
+// create To do list
+const list = new ToDo("#root", {
+    tasks,
+    users,
+    projects
+});
+
+const toolbar = new Toolbar("#toolbar", {
+    api: list.api,
+});
+
+list.assignUser({
+	id: "2",
+    userId: "user_2"
+});
+~~~

@@ -35,3 +35,62 @@ The **users** property presents an array of user objects. Each object includes t
 :::info
 If the **color** parameter is not specified, the color from the default set of colors will be applied.
 :::
+
+### Example
+
+~~~js {29-40,48}
+const { ToDo, Toolbar } = todo;
+
+const tasks = [
+    {
+        id: "1",
+        project: "books",
+        // parent: null,
+        text: "Read books",
+        collapsed: false,
+        due_date: "30 08 2022"
+    },
+    {
+        id: "2",
+        project: "books",
+        parent: "1",
+        text: "Don Quixote",
+        assigned: [ "user_1" ],
+    },
+    {
+        id: "3",
+        project: "books",
+        parent: "1",
+        text: "The Great Gatsby",
+        assigned: [ "user_2" ],
+        checked: true,
+    },
+];
+
+const users = [
+    { 
+        id: "user_1",
+        label: "John",
+        path: "../avatar_02.jpg" 
+    },
+    { 
+        id: "user_2", 
+        label: "Kate",
+        path: "../avatar_03.jpg"  
+    },
+];
+
+const projects = [
+    { "id": "books", "label": "Books" },
+];
+
+const list = new ToDo("#root", {
+	tasks,
+	users,
+	projects
+});
+
+const toolbar = new Toolbar("#toolbar", {
+    api: list.api,
+});
+~~~
