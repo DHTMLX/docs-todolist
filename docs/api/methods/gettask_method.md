@@ -26,7 +26,7 @@ The method returns an object with data of the task
 
 ### Example
 
-~~~js {18}
+~~~js {19}
 const { ToDo, Toolbar } = todo;
 const { projects, users } = getData();
 
@@ -44,5 +44,6 @@ const toolbar = new Toolbar("#toolbar", {
 	api: list.api,
 });
 
+// get the data object of the task
 list.getTask({ id: "1.2" }); // -> {id: '1.2', text: 'Task 1.2', parent: '1'}
 ~~~

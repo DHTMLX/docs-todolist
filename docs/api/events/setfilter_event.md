@@ -32,16 +32,18 @@ The callback of the **set-filter** event can take an object with the following p
 
 ### Example
 
-~~~js
+~~~js {15-17}
 const { ToDo, Toolbar } = todo;
-const { tasks, users, projects, tags } = getData();
+const { tasks, users, projects } = getData();
 
-// create To do list
 const list = new ToDo("#root", {
 	tasks,
 	users,
 	projects,
-	tags,
+});
+
+const toolbar = new Toolbar("#toolbar", {
+	api: list.api,
 });
 
 // subscribe to the "set-filter" event

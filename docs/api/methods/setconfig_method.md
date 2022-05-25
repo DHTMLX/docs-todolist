@@ -30,15 +30,15 @@ setConfig(config: object): void;
 
 ### Example
 
-~~~js {16-18,20-22}
+~~~js {17-19,21-23}
 const { ToDo, Toolbar } = todo;
-const { tasks, users, projects, tags } = getData();
 
 const list = new ToDo("#root", {
-	tasks,
-	users,
-	projects,
-	tags,
+	projects: [
+		{ id: "first", label: "First project" },
+		{ id: "second", label: "Second project" },
+		{ id: "third", label: "Third project" },
+	],
 	activeProject: "first"
 });
 			
@@ -46,6 +46,7 @@ const toolbar = new Toolbar("#toolbar", {
 	api: list.api,
 });
 
+// change configuration of To Do List
 list.setConfig({
 	activeProject: "second"
 });

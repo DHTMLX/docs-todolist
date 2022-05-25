@@ -20,8 +20,28 @@ unselectTask({
 
 ### Parameters
 
-- `id` - (optional) the id of the task to be unselected
+- `id` - (required) the id of the task to be unselected
 
-:::info
-To unselect all previously selected tasks, call the **unselectTask()** method without parameters
-:::
+### Example
+
+~~~js {16,19}
+const { ToDo, Toolbar } = todo;
+
+const list = new ToDo("#root", {
+	tasks: [
+        { id: "1", text: "Task 1" },
+		{ id: "1.1", text: "Task 1.1", parent: "1" },
+        { id: "1.1.1", text: "Task 1.1.1", parent: "1.1" },
+		{ id: "1.2", text: "Task 1.2", parent: "1" },
+    ]
+});
+
+const toolbar = new Toolbar("#toolbar", {
+	api: list.api,
+});
+
+list.selectTask({ id: "1.1"});
+
+// unselect the selected task
+list.unselectTask({ id: "1.1" });
+~~~

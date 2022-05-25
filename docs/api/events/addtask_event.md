@@ -33,3 +33,25 @@ The callback of the **add-task** event can take an object with the following par
 - `targetId` - (optional) the ID of the target task
 - `reverse` - (optional) **true**, if the task is added before the target task; otherwise, **false**
 - `task` - (required) the object of the added task
+
+### Example
+
+~~~js {15-17}
+const { ToDo, Toolbar } = todo;
+const {tasks, projects, users} = getData();
+
+const list = new ToDo("#root", {
+	tasks,
+    projects,
+    users
+});
+
+const toolbar = new Toolbar("#toolbar", {
+	api: list.api,
+});
+
+// subscribe to the "add-task" event
+list.api.on("add-task", (obj) => {
+    console.log("A new task is added", obj);
+});
+~~~

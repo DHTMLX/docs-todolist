@@ -31,3 +31,25 @@ The callback of the **move-task** event can take an object with the following pa
 - `project` - (optional) the ID of the project
 - `targetId` - (optional) the ID of the target task
 - `reverse` - (optional) **true**, if the task is pasted before the target task; otherwise, **false**
+
+### Example
+
+~~~js {15-17}
+const { ToDo, Toolbar } = todo;
+const {tasks, projects, users} = getData();
+
+const list = new ToDo("#root", {
+	tasks,
+    projects,
+    users
+});
+
+const toolbar = new Toolbar("#toolbar", {
+	api: list.api,
+});
+
+// subscribe to the "move-task" event
+list.api.on("move-task", ({id}) => {
+    console.log("The", id, "task is moved"); 
+});
+~~~ 

@@ -37,3 +37,24 @@ In case the copied task is also pasted from the clipboard into another position,
 - `targetId` - (optional) the ID of the target task where the copied task is pasted
 - `reverse` - (optional) **true**, if the copied task is pasted before the target task; otherwise, **false**
  
+### Example
+
+~~~js {15-17}
+const { ToDo, Toolbar } = todo;
+const {tasks, projects, users} = getData();
+
+const list = new ToDo("#root", {
+	tasks,
+    projects,
+    users
+});
+
+const toolbar = new Toolbar("#toolbar", {
+	api: list.api,
+});
+
+// subscribe to the "copy-task" event
+list.api.on("copy-task", ({id}) => {
+    console.log("The", id, "task is copied"); 
+});
+~~~ 

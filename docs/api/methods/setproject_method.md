@@ -21,3 +21,27 @@ setProject({
 ### Parameters
 
 - `id` - (required) the ID of a project. To display the *No project* section, set ID to **null**
+
+### Example
+
+~~~js {17-19}
+const { ToDo, Toolbar } = todo;
+
+const list = new ToDo("#root", {
+	projects: [
+		{ id: "first", label: "First project" },
+		{ id: "second", label: "Second project" },
+		{ id: "third", label: "Third project" },
+	],
+    activeProject: "second"
+});
+
+const toolbar = new Toolbar("#toolbar", {
+	api: list.api,
+});
+
+// change an active project
+list.setProject({
+    id: "first"
+});
+~~~

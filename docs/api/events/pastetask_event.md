@@ -29,3 +29,25 @@ The callback of the **paste-task** event can take an object with the following p
 - `project` - (optional) the ID of the project
 - `targetId` - (optional) the ID of the target task where the task is pasted
 - `reverse` - (optional) **true**, if the task is pasted before the target task; otherwise, **false**
+
+### Example
+
+~~~js {15-17}
+const { ToDo, Toolbar } = todo;
+const {tasks, projects, users} = getData();
+
+const list = new ToDo("#root", {
+	tasks,
+    projects,
+    users
+});
+
+const toolbar = new Toolbar("#toolbar", {
+	api: list.api,
+});
+
+// subscribe to the "paste-task" event
+list.api.on("paste-task", (obj) => {
+    console.log("The task is pasted", obj); 
+});
+~~~ 

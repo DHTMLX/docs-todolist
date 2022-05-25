@@ -27,26 +27,14 @@ The method returns `true` if the project exists; otherwise, `false`
 
 ### Example
 
-~~~js {27-28}
+~~~js {16-17}
 const { ToDo, Toolbar } = todo;
-const { tasks, users } = getData();
 
 const list = new ToDo("#root", {
-	tasks,
-	users,
 	projects: [
-		{
-			id: "first",
-			label: "First project",
-		},
-		{
-			id: "second",
-			label: "Second project",
-		},
-		{
-			id: "third",
-			label: "Third project",
-		},
+		{ id: "first", label: "First project" },
+		{ id: "second", label: "Second project" },
+		{ id: "third", label: "Third project" },
 	]
 });
 
@@ -54,6 +42,7 @@ const toolbar = new Toolbar("#toolbar", {
 	api: list.api,
 });
 
+// check whether projects exist
 list.existsProject({ id: 1 }); // -> false
 list.existsProject({ id: "first" }); // -> true
 ~~~

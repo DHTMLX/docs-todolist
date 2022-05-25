@@ -26,3 +26,25 @@ The callback of the **add-project** event can take an object with the following 
 - `id` - (required) the ID of the created project
 - `project` - (optional) an object with project parameters:
   - `label` - (optional) the name of the project
+
+### Example
+
+~~~js {15-17}
+const { ToDo, Toolbar } = todo;
+const {tasks, projects, users} = getData();
+
+const list = new ToDo("#root", {
+	tasks,
+    projects,
+    users
+});
+
+const toolbar = new Toolbar("#toolbar", {
+	api: list.api,
+});
+
+// subscribe to the "add-project" event
+list.api.on("add-project", ({id, project}) => {
+    console.log("A new ", project.label, " project with ID:", id, "is added");
+});
+~~~

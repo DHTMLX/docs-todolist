@@ -25,4 +25,25 @@ The callback of the **open-inline-editor** event can take an object with the fol
 
 - `id` - (required) the id of a task/project
 - `type` - (required) the type of the item: "task" or "project"
- 
+
+### Example
+
+~~~js {15-17}
+const { ToDo, Toolbar } = todo;
+const {tasks, projects, users} = getData();
+
+const list = new ToDo("#root", {
+	tasks,
+    projects,
+    users
+});
+
+const toolbar = new Toolbar("#toolbar", {
+	api: list.api,
+});
+
+// subscribe to the "open-inline-editor" event
+list.api.on("open-inline-editor", ({id, save}) => {
+    console.log("The inline editor is opened for the", id, "item"); 
+});
+~~~

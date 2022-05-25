@@ -31,3 +31,25 @@ The callback of the **clone-task** event can take an object with the following p
 - `project` - (optional) the ID of the project
 - `targetId` - (optional) the ID of the target task where the task was pasted
 - `bunch` - (required) an array of objects that were created when copying and then pasted
+
+### Example
+
+~~~js {15-17}
+const { ToDo, Toolbar } = todo;
+const {tasks, projects, users} = getData();
+
+const list = new ToDo("#root", {
+	tasks,
+    projects,
+    users
+});
+
+const toolbar = new Toolbar("#toolbar", {
+	api: list.api,
+});
+
+// subscribe to the "clone-task" event
+list.api.on("clone-task", (obj) => {
+    console.log(obj); 
+});
+~~~

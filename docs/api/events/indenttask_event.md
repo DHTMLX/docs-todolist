@@ -23,3 +23,23 @@ description: You can learn about the indent-task event in the documentation of t
 The callback of the **indent-task** event can take an object with the following parameters:
 
 - `id` - (required) the id of a task
+
+~~~js {15-17}
+const { ToDo, Toolbar } = todo;
+const {tasks, projects, users} = getData();
+
+const list = new ToDo("#root", {
+	tasks,
+    projects,
+    users
+});
+
+const toolbar = new Toolbar("#toolbar", {
+	api: list.api,
+});
+
+// subscribe to the "indent-task" event
+list.api.on("indent-task", ({id}) => {
+    console.log("The nesting level of the", id, "task is demoted by one"); 
+});
+~~~ 

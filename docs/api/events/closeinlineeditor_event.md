@@ -25,3 +25,25 @@ The callback of the **close-inline-editor** event can take an object with the fo
 
 - `id` - (required) the id of a task/project
 - `save` - (required) **true** if the made changes have been saved after closing the editor; otherwise, **false**
+
+### Example
+
+~~~js {15-17}
+const { ToDo, Toolbar } = todo;
+const {tasks, projects, users} = getData();
+
+const list = new ToDo("#root", {
+	tasks,
+    projects,
+    users
+});
+
+const toolbar = new Toolbar("#toolbar", {
+	api: list.api,
+});
+
+// subscribe to the "close-inline-editor" event
+list.api.on("close-inline-editor", ({id, save}) => {
+    console.log("The inline editor is closed for the", id, "item"); 
+});
+~~~

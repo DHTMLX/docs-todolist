@@ -34,7 +34,7 @@ To reset filtering, pass `match: null` to the method
 
 ### Example
 
-~~~js
+~~~js {13-16,19}
 const { ToDo, Toolbar } = todo;
 const { tasks, users, projects, tags } = getData();
 

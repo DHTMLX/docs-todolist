@@ -32,9 +32,8 @@ parse({
 
 ### Example
 
-~~~js {2,11-15}
+~~~js {3,10-14}
 const { ToDo, Toolbar } = todo;
-const { users, projects, data } = getData(); // get data declared in another file
 
 const list = new ToDo("#root", {});
 
@@ -42,7 +41,7 @@ const toolbar = new Toolbar("#toolbar", {
 	api: list.api,
 });
 
-// parse data into the component
+// parse prepared data into the component
 list.parse({
     tasks,
     users,

@@ -23,3 +23,25 @@ description: You can learn about the delete-task event in the documentation of t
 The callback of the **delete-task** event can take an object with the following parameters:
 
 - `id` - (required) the ID of a removed task
+
+### Example
+
+~~~js {15-17}
+const { ToDo, Toolbar } = todo;
+const {tasks, projects, users} = getData();
+
+const list = new ToDo("#root", {
+	tasks,
+    projects,
+    users
+});
+
+const toolbar = new Toolbar("#toolbar", {
+	api: list.api,
+});
+
+// subscribe to the "delete-task" event
+list.api.on("delete-task", ({id}) => {
+    console.log("The", id, "task is removed"); 
+});
+~~~

@@ -29,7 +29,7 @@ The method returns an array of parent's ID
 
 ### Example
 
-~~~js {}
+~~~js {20}
 const { ToDo, Toolbar } = todo;
 const { users, projects, tags } = getData();
 
@@ -37,7 +37,7 @@ const list = new ToDo("#root", {
 	tasks: [
         { id: "1", text: "Task 1 #tag1" },
 		{ id: "1.1", text: "Task 1.1", parent: "1" },
-        { id: "1.1.2", text: "Task 1.1.2", parent: "1.1" },
+        { id: "1.1.1", text: "Task 1.1.1", parent: "1.1" },
 		{ id: "1.2", text: "Task 1.2", parent: "1" },
     ],
 	users,
@@ -48,5 +48,6 @@ const toolbar = new Toolbar("#toolbar", {
 	api: list.api,
 });
 
-list.getParentIds({ id: "1.1.2" }); //  ['1.1', '1']
+// get parents of the task
+console.log(list.getParentIds({ id: "1.1.1" })); //  ['1.1', '1']
 ~~~

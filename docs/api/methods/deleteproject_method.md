@@ -11,7 +11,7 @@ description: You can learn about the deleteProject method in the documentation o
 @short: Removes a project
 
 :::note
-The tasks linked to the project won't be removed.
+The tasks linked to the project won't be removed.They will be moved to the *"No project"* section
 :::
 
 ### Usage
@@ -25,3 +25,24 @@ deleteProject({
 ### Parameters
 
 - `id` - (required) the ID of a project
+
+### Example
+
+~~~js {16}
+const { ToDo, Toolbar } = todo;
+
+const list = new ToDo("#root", {
+	projects: [
+		{ id: "first", label: "First project" },
+		{ id: "second", label: "Second project" },
+		{ id: "third", label: "Third project" },
+	]
+});
+
+const toolbar = new Toolbar("#toolbar", {
+	api: list.api,
+});
+
+// remove a project
+list.removeProject({ id: "first" });
+~~~

@@ -37,7 +37,7 @@ The method returns an array of children's ID
 
 ### Example
 
-~~~js {}
+~~~js {20-21,24,27-28,30-31}
 const { ToDo, Toolbar } = todo;
 const { users, projects, tags } = getData();
 
@@ -45,7 +45,7 @@ const list = new ToDo("#root", {
 	tasks: [
         { id: "1", text: "Task 1 #tag1" },
 		{ id: "1.1", text: "Task 1.1", parent: "1" },
-        { id: "1.1.2", text: "Task 1.1.2 #tag1", parent: "1.1" },
+        { id: "1.1.1", text: "Task 1.1.1 #tag1", parent: "1.1" },
 		{ id: "1.2", text: "Task 1.2", parent: "1" },
     ],
 	users,
@@ -56,17 +56,17 @@ const toolbar = new Toolbar("#toolbar", {
 	api: list.api,
 });
 
-// before filtering
-list.getChildrenIds({ id: "1" }); // ['1.1', '1.1.2', '1.2']
-list.getChildrenIds({ id: "1", tree: false }); // ['1.1', '1.2']
+// get children of the task before filtering
+console.log(list.getChildrenIds({ id: "1" })); // ['1.1', '1.1.1', '1.2']
+console.log(list.getChildrenIds({ id: "1", tree: false })); // ['1.1', '1.2']
 
 // filter the tasks
-list.setFilter({ match: "#tag1", highlight: true });
+console.log(list.setFilter({ match: "#tag1", highlight: true }));
 
-// after filtering
-list.getChildrenIds({ id: "1" }); // -> ['1.1', '1.1.2', '1.2']
-list.getChildrenIds({ id: "1", tree: false }); // -> ['1.1', '1.2']
+// get children of the task after filtering
+console.log(list.getChildrenIds({ id: "1" })); // -> ['1.1', '1.1.1', '1.2']
+console.log(list.getChildrenIds({ id: "1", tree: false })); // -> ['1.1', '1.2']
 
-list.getChildrenIds({ id: "1", filtered: true }) // -> ['1.1', '1.1.2']
-list.getChildrenIds({ id: "1", filtered: true, tree: false }); // -> ['1.1']
+console.log(list.getChildrenIds({ id: "1", filtered: true })); // -> ['1.1', '1.1.1']
+console.log(list.getChildrenIds({ id: "1", filtered: true, tree: false })); // -> ['1.1']
 ~~~

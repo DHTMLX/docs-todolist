@@ -27,7 +27,7 @@ The method returns `true` if the task exists; otherwise, `false`
 
 ### Example
 
-~~~js {18-19}
+~~~js {19-20}
 const { ToDo, Toolbar } = todo;
 const { users, projects } = getData();
 
@@ -45,6 +45,7 @@ const toolbar = new Toolbar("#toolbar", {
 	api: list.api,
 });
 
+// check whether tasks exist
 list.existsTask({ id: "2" }); // -> false
 list.existsTask({ id: "1.2" }); // -> true
 ~~~

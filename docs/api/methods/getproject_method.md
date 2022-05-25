@@ -26,7 +26,7 @@ The method returns an object with data of the project
 
 ### Example
 
-~~~js {18}
+~~~js {19}
 const { ToDo, Toolbar } = todo;
 const { tasks, users } = getData();
 
@@ -44,5 +44,6 @@ const toolbar = new Toolbar("#toolbar", {
 	api: list.api,
 });
 
+// get the data object of the project
 list.getProject({ id: "first" }); // -> {id: 'first', label: 'First project'}
 ~~~

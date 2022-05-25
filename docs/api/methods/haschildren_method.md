@@ -35,33 +35,29 @@ The method returns `true` if the task has children; otherwise, returns `false`
 
 ### Example
 
-~~~js {}
+~~~js {17,20,23-24}
 const { ToDo, Toolbar } = todo;
-const { users, projects, tags } = getData();
 
 const list = new ToDo("#root", {
 	tasks: [
         { id: "1", text: "Task 1 #tag1" },
 		{ id: "1.1", text: "Task 1.1", parent: "1" },
-        { id: "1.1.2", text: "Task 1.1.2 #tag1", parent: "1.1" },
+        { id: "1.1.1", text: "Task 1.1.1 #tag1", parent: "1.1" },
 		{ id: "1.2", text: "Task 1.2", parent: "1" },
-    ],
-	users,
-	projects
+    ]
 });
 
 const toolbar = new Toolbar("#toolbar", {
 	api: list.api,
 });
 
-
-
+// check whether the task has children (before filtering)
 console.log(list.hasChildren({ id: "1.1" })); // -> true
 
 // filter the tasks
 list.setFilter({ match: "3", highlight: true });
 
-// after filtering
+// check whether the task has children (after filtering)
 console.log(list.hasChildren({ id: "1.1" })); // -> true
 console.log(list.hasChildren({ id: "1.1", filtered: true })); // -> false
 ~~~

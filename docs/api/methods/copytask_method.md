@@ -39,4 +39,38 @@ If you need to copy (and paste!) a task, pass the following parameters to the me
 - `parent` - (optional) the ID of the future parent task
 - `project` - (optional) the ID of the project where the task should be pasted
 - `targetId` - (optional) the ID of the target task where the copied task will be pasted
-- `reverse` - (optional) defines the position where the copied task will be pasted: **before** the target task or **after** it
+- `reverse` - (optional) defines the position where the copied task will be pasted: **before** the target task (*true*) or **after** it (*false* by default)
+
+### Example
+
+~~~js {23-29}
+const { ToDo, Toolbar } = todo;
+
+const list = new ToDo("#root", {
+	tasks: [
+        { id: "1", text: "Task 1", project: "p_1"},
+		{ id: "1.1", text: "Task 1.1", parent: "1", project: "p_1" },
+        { id: "2", text: "Task 2", project: "p_2" },
+        { id: "2.1", text: "Task 2.1", parent: "2", project: "p_2" },
+		{ id: "2.1.1", text: "Task 2.1.1", parent: "2.1", project: "p_2" },
+		{ id: "2.1.2", text: "Task 2.1.2", parent: "2.1", project: "p_2" },
+    ],
+    projects: [
+        { "id": "p_1", "label": "Project 1" },
+        { "id": "p_2", "label": "Project 2" },
+    ]
+});
+
+const toolbar = new Toolbar("#toolbar", {
+	api: list.api,
+});
+
+// copy "Task 1.1" to the "Project 2" and paste it before "Task 2.1.2"
+list.copyTask({ 
+    id: "1.1",
+    project: "p_2",
+    parent: "2.1",
+    targetId: "2.1.2",
+    reverse: true
+});
+~~~

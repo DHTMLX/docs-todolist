@@ -24,4 +24,26 @@ description: You can learn about the check-task event in the documentation of th
 The callback of the **check-task** event can take an object with the following parameters:
 
 - `id` - (required) the id of a task
-- `manual` - (optional) **true** if the task is marked as completed in the "manual" mode; otherwise, **false**
+- `manual` - (optional) **true** if the task is marked as completed in the "manual" mode
+
+### Example
+
+~~~js {15-17}
+const { ToDo, Toolbar } = todo;
+const {tasks, projects, users} = getData();
+
+const list = new ToDo("#root", {
+	tasks,
+    projects,
+    users
+});
+
+const toolbar = new Toolbar("#toolbar", {
+	api: list.api,
+});
+
+// subscribe to the "check-task" event
+list.api.on("check-task", ({id}) => {
+    console.log("The", id, "task is marked as completed"); 
+});
+~~~

@@ -26,23 +26,30 @@ unassignUser({
 
 ### Example
 
-~~~js
+~~~js {22-25}
 const { ToDo, Toolbar } = todo;
-const { tasks, users, projects } = getData();
 
 // create To do list
 const list = new ToDo("#root", {
-    tasks,
-    users,
-	projects,
+    tasks: [
+        { id: "1", text: "Task 1 #tag1" },
+		{ id: "1.1", text: "Task 1.1", parent: "1"},
+        { id: "1.1.1", text: "Task 1.1.1 #tag1", parent: "1.1" },
+		{ id: "1.2", text: "Task 1.2", parent: "1" },
+    ],
+    users: [
+        { "id": "user_1", "label": "John" },
+        { "id": "user_2", "label": "Kate" },
+    ]
 });
 
 const toolbar = new Toolbar("#toolbar", {
     api: list.api,
 });
 
+// unassign the user from the task
 list.unassignUser({
-	id: "2",
-    userId: "user_1"
+	id: "1.1",
+    userId: "user_2"
 });
 ~~~

@@ -25,3 +25,25 @@ The callback of the **assign-user** event can take an object with the following 
 
 - `id` - (required) the id of a task
 - `userId` - (required) the id of the user assigned to the task
+
+### Example
+
+~~~js {15-17}
+const { ToDo, Toolbar } = todo;
+const {tasks, projects, users} = getData();
+
+const list = new ToDo("#root", {
+	tasks,
+    projects,
+    users
+});
+
+const toolbar = new Toolbar("#toolbar", {
+	api: list.api,
+});
+
+// subscribe to the "assign-user" event
+list.api.on("assign-user", ({id, userId}) => {
+    console.log("The", userId, "user is assigned to the", id, "task"); 
+});
+~~~

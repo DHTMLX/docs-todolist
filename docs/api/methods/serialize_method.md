@@ -28,7 +28,7 @@ The method returns serialized data of the component
 
 ### Example
 
-~~~js {11}
+~~~js {12}
 const { ToDo, Toolbar } = todo;
 const { tasks, users, projects, tags } = getData();
 
@@ -39,5 +39,6 @@ const list = new ToDo("#root", {
     tags
 });
 
+// get an object with data of To Do List
 list.serialize();
 ~~~

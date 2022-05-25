@@ -27,24 +27,26 @@ addProject({
 
 ### Example
 
-~~~js
+~~~js {16-21}
 const { ToDo, Toolbar } = todo;
-const { tasks, users, projects, tags } = getData();
 
-// create To do list
 const list = new ToDo("#root", {
-    tasks,
-    users,
-	projects,
-	tags,
+	projects: [
+		{ id: "first", label: "First project" },
+		{ id: "second", label: "Second project" },
+		{ id: "third", label: "Third project" },
+	]
 });
 
 const toolbar = new Toolbar("#toolbar", {
-    api: list.api,
+	api: list.api,
 });
 
 // add a new project
 list.addProject({
-	project: {label: "New project"}
+    id: "fourth",
+	project: {
+        label: "Fourth project"
+    }
 });
 ~~~

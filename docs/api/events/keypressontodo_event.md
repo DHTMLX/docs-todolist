@@ -26,6 +26,26 @@ The callback of the **keypress-on-todo** event can take an object with the follo
 - `code` - (required) the code of the pressed key or a combination of the pressed keys in the *lower case*. The full lists of keyboard shortcuts and their codes are given [below](#keyboard-shortcuts)
 - `event` - (required) a native [event object](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent) 
 
+~~~js {15-17}
+const { ToDo, Toolbar } = todo;
+const {tasks, projects, users} = getData();
+
+const list = new ToDo("#root", {
+	tasks,
+    projects,
+    users
+});
+
+const toolbar = new Toolbar("#toolbar", {
+	api: list.api,
+});
+
+// subscribe to the "keypress-on-todo" event
+list.api.on("keypress-on-todo", ({code, event}) => {
+    console.log("The", code, "key is pressed"); 
+});
+~~~ 
+
 ## Keyboard shortcuts 
 
 There are two groups of keyboard shortcuts:
@@ -37,7 +57,7 @@ There are two groups of keyboard shortcuts:
 | **Escape** |escape| Closes the menu if it is opened for the task when the key is pressed. Pressing again will close the editor, reset filtering, and collapse search results in the Toolbar|
 
 :::tip
-The key codes described below are not available if focus is set on the Search element of the Toolbar.
+The key codes described below are not available if focus is set on the Search field of the Toolbar.
 :::
 
 | Keyboard shortcut   |Key code| Description                                                          |

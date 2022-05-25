@@ -24,3 +24,29 @@ updateProject({
 - `id` - (required) the ID of the project to be updated
 - `project` - (required) an object with a hash of project's parameters which need to be updated:
   - `label` - (optional) the name of the project
+
+### Example
+
+~~~js {16-21}
+const { ToDo, Toolbar } = todo;
+
+const list = new ToDo("#root", {
+	projects: [
+		{ id: "first", label: "First project" },
+		{ id: "second", label: "Second project" },
+		{ id: "third", label: "Third project" },
+	]
+});
+
+const toolbar = new Toolbar("#toolbar", {
+	api: list.api,
+});
+
+// update some configuration of the project
+list.updateProject({
+    id: "second",
+    project: {
+        label: "Project 2"
+    }
+});
+~~~
