@@ -14,10 +14,42 @@ description: You can learn about the checkTask method in the documentation of th
 
 ~~~js
 checkTask({
-    id: string | number
+    id: string | number,
+    manual?: boolean // false by default
 }): void;
 ~~~
 
 ### Parameters
 
 - `id` - (required) the id of a task
+- `manual` - (optional) defines whether the task must be marked as completed in the "manual" or "auto" mode. See the **behavior** parameter of the [taskShape](api/configs/taskshape_config.md) property
+
+### Example
+
+~~~js {}
+const { ToDo, Toolbar } = todo;
+
+const list = new ToDo("#root", {
+	tasks: [
+        { id: "1", text: "Task 1 #tag1" },
+		{ id: "1.1", text: "Task 1.1", parent: "1" },
+        { id: "1.1.2", text: "Task 1.1.2", parent: "1.1" },
+		{ id: "1.2", text: "Task 1.2", parent: "1" },
+    ]
+});
+
+const toolbar = new Toolbar("#toolbar", {
+	api: list.api,
+});
+
+
+list.checkTask({ 
+    id: "1.1.2",
+    manual: false // mark the task and its parent as completed
+});
+
+list.checkTask({ 
+    id: "1.1.2",
+    manual: true // or mark only the specified task as completed
+});
+~~~

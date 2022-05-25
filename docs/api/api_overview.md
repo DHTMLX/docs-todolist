@@ -25,6 +25,7 @@ description: You can have an API overview of the DHTMLX JavaScript To Do List li
 | [](api/methods/existstask_method.md)        | @getshort(api/methods/existstask_method.md)        |
 | [](api/methods/expandtask_method.md)        | @getshort(api/methods/expandtask_method.md)        |
 | [](api/methods/getchildrenids_method.md)    | @getshort(api/methods/getchildrenids_method.md)    |
+| [](api/methods/getparentids_method.md)      | @getshort(api/methods/getparentids_method.md)      |
 | [](api/methods/getproject_method.md)        | @getshort(api/methods/getproject_method.md)        |
 | [](api/methods/getselection_method.md)      | @getshort(api/methods/getselection_method.md)      |
 | [](api/methods/gettask_method.md)           | @getshort(api/methods/gettask_method.md)           |
@@ -93,6 +94,6 @@ description: You can have an API overview of the DHTMLX JavaScript To Do List li
 | [](api/configs/projects_config.md)      | @getshort(api/configs/projects_config.md)      |
 | [](api/configs/readonly_config.md)      | @getshort(api/configs/readonly_config.md)      |
 | [](api/configs/tags_config.md)          | @getshort(api/configs/tags_config.md)          |
-| [](api/configs/tasks_config.md)          | @getshort(api/configs/tasks_config.md)          |
+| [](api/configs/tasks_config.md)         | @getshort(api/configs/tasks_config.md)         |
 | [](api/configs/taskshape_config.md)     | @getshort(api/configs/taskshape_config.md)     |
 | [](api/configs/users_config.md)         | @getshort(api/configs/users_config.md)         |

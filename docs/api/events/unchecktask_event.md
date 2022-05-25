@@ -14,7 +14,8 @@ description: You can learn about the uncheck-task event in the documentation of 
 
 ~~~js
 "uncheck-task": ({
-    id: string | number
+    id: string | number,
+    manual?: boolean
 }) => void;
 ~~~
 
@@ -23,3 +24,4 @@ description: You can learn about the uncheck-task event in the documentation of 
 The callback of the **uncheck-task** event can take an object with the following parameters:
 
 - `id` - (required) the id of a task
+- `manual` - (optional) **true** if the task is marked as uncompleted in the "manual" mode; otherwise, **false**

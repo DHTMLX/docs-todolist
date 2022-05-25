@@ -14,7 +14,8 @@ description: You can learn about the check-task event in the documentation of th
 
 ~~~js
 "check-task": ({
-    id: string | number
+    id: string | number,
+    manual?: boolean
 }) => void;
 ~~~
 
@@ -23,3 +24,4 @@ description: You can learn about the check-task event in the documentation of th
 The callback of the **check-task** event can take an object with the following parameters:
 
 - `id` - (required) the id of a task
+- `manual` - (optional) **true** if the task is marked as completed in the "manual" mode; otherwise, **false**

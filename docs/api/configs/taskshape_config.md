@@ -18,8 +18,11 @@ taskShape?: {
         type?: "percentage" | "number", 
     },
     date?: {
-        format?: string;
-        validate?: boolean; 
+        format?: string,
+        validate?: boolean
+    },
+    selectable?: {
+        behavior?: "manual" | "auto"
     }
 };
 ~~~
@@ -34,7 +37,10 @@ taskShape: {
     date: {
         format: "%d %M %Y",
         validate: true 
-    }
+    },
+    selectable: {
+        behavior?: "auto"
+};
 }
 ~~~
 
@@ -49,10 +55,15 @@ To configure the task's appearance, you can specify the following parameters in 
 - `date` - (optional) an object with date settings: 
     - `format` - (optional) defines the format of displaying dates. By default, "%d %M %Y". The full list of available characters is given [below](#list-of-characters)
     - `validate` - (optional) defines whether the **due_date** property of the [task object](api/configs/tasks_config.md) should be validated
+- `selectable` - (optional) an objet with settings for managing the task marking. It takes one parameter:
+    - `behavior` - (optional) sets behavior for the parent and child tasks when marking them as completed/uncompleted. There are two options:
+        - *"auto"* - enables the **"auto"** mode. When you mark all child tasks as completed, the parent task automatically becomes marked  as completed. When you mark the parent task as completed, all its child automatically become marked as completed.
+        - *"manual"* - enables the **"manual"** mode. You need to manually mark each task (be it a child task or its parent) as completed
+
 
 ### Example
 
-~~~js {9-17}
+~~~js {9-20}
 const { ToDo, Toolbar } = todo;
 const { tasks, users, projects } = getData();
 
@@ -68,6 +79,9 @@ const list = new ToDo("#root", {
         date: {
             format: "%d %m %Y",
             validate: false
+        },
+        selectable: {
+            behavior: "manual"
         }
     }
 });

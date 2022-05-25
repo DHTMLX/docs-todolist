@@ -63,6 +63,7 @@ module.exports = {
 						"api/methods/deleteproject_method",
             			"api/methods/expandtask_method",
             			"api/methods/getchildrenids_method",
+            			"api/methods/getparentids_method",
             			"api/methods/getproject_method",
             			"api/methods/getselection_method",
             			"api/methods/gettask_method",

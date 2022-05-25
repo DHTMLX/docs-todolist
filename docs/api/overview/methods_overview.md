@@ -23,10 +23,11 @@ description: You can explore the API methods in the documentation of the DHTMLX 
 | [](../methods/existstask_method.md)        | @getshort(../methods/existstask_method.md)        |
 | [](../methods/expandtask_method.md)        | @getshort(../methods/expandtask_method.md)        |
 | [](../methods/getchildrenids_method.md)    | @getshort(../methods/getchildrenids_method.md)    |
+| [](../methods/getparentids_method.md)      | @getshort(../methods/getparentids_method.md)      |
 | [](../methods/getproject_method.md)        | @getshort(../methods/getproject_method.md)        |
 | [](../methods/getselection_method.md)      | @getshort(../methods/getselection_method.md)      |
 | [](../methods/gettask_method.md)           | @getshort(../methods/gettask_method.md)           |
-| [](../methods/haschildren_method.md)       | @getshort(../methods/haschildren_method.md)        |
+| [](../methods/haschildren_method.md)       | @getshort(../methods/haschildren_method.md)       |
 | [](../methods/indenttask_method.md)        | @getshort(../methods/indenttask_method.md)        |
 | [](../methods/movetask_method.md)          | @getshort(../methods/movetask_method.md)          |
 | [](../methods/openinlineeditor_method.md)  | @getshort(../methods/openinlineeditor_method.md)  |
