@@ -8,7 +8,7 @@ description: You can learn about the uncheckTask method in the documentation of 
 
 ### Description
 
-@short: Marks a task as uncompleted
+@short: Marks a task as incomplete
 
 ### Usage
 
@@ -22,7 +22,7 @@ uncheckTask({
 ### Parameters
 
 - `id` - (required) the id of a task
-- `manual` - (optional) defines whether the task must be marked as uncompleted in the "manual" or "auto" mode. See the **behavior** parameter of the [taskShape](api/configs/taskshape_config.md) property
+- `manual` - (optional) enables/disables the "manual" mode. If `false`, the task will be marked as uncompleted in the "auto" mode. See the **behavior** parameter of the [taskShape](api/configs/taskshape_config.md) property
 
 ### Example
 
@@ -44,16 +44,16 @@ const toolbar = new Toolbar("#toolbar", {
 
 
 list.checkTask({ 
-    id: "1.1.1", // mark the task and its parent as completed
+    id: "1.1.1", // mark the task and its parent as complete
 });
 
 list.uncheckTask({ 
     id: "1.1.1",
-    manual: true // mark only the specified task as uncompleted
+    manual: true // mark only the specified task as incomplete
 });
 
 list.uncheckTask({ 
     id: "1.1.1",
-    manual: false // or mark the task and its parent as uncompleted
+    manual: false // or mark the task and its parent as incomplete
 });
 ~~~

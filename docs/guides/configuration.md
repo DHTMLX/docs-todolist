@@ -6,15 +6,6 @@ description: You can learn about the To Do List Configuration in the documentati
 
 # Configuration
 
-## Read-only mode
-
-The read-only mode lets you limit such actions as *adding*, *editing*, *selecting*, *dragging* of tasks. 
-
-It is possible to block all these actions at once by setting the [readonly](../../api/configs/readonly_config/) configuration property to *true*.
-
-~~~js
-~~~
-
 ## Displaying the count of completed subtasks
 
 You can change the type of the counter which renders the completion of the child tasks.

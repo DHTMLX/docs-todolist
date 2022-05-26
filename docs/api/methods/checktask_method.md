@@ -8,7 +8,7 @@ description: You can learn about the checkTask method in the documentation of th
 
 ### Description
 
-@short: Marks a task as completed
+@short: Marks a task as complete
 
 ### Usage
 
@@ -22,7 +22,7 @@ checkTask({
 ### Parameters
 
 - `id` - (required) the id of a task
-- `manual` - (optional) defines whether the task must be marked as completed in the "manual" or "auto" mode. See the **behavior** parameter of the [taskShape](api/configs/taskshape_config.md) property
+- `manual` - (optional) enables/disables the "manual" mode. If `false`, the task will be marked as complete in the "auto" mode. See the **behavior** parameter of the [taskShape](api/configs/taskshape_config.md) property
 
 ### Example
 

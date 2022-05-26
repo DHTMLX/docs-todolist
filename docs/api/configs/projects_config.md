@@ -41,9 +41,14 @@ const projects = [
 // create To do list
 const list = new ToDo("#root", {
 	projects,
+    activeProject: "films"
 });
 
 const toolbar = new Toolbar("#toolbar", {
     api: list.api,
 });
 ~~~
+
+:::tip
+You can easily make a certain project active on initialization of To do list via the [activeProject](api/configs/activeproject_config.md) property
+:::

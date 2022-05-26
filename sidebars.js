@@ -30,7 +30,7 @@ module.exports = {
 			type: "category",
 			label: "To Do List API",
 			collapsible: true,
-			collapsed: false,
+			collapsed: true,
 			link: {
 				type: 'doc',
 				id: 'api/api_overview'
@@ -56,11 +56,11 @@ module.exports = {
 						//"api/methods/closemenu_method",
 						"api/methods/collapsetask_method",
 						"api/methods/copytask_method",
+						"api/methods/deleteproject_method",
 						"api/methods/deletetask_method",
 						"api/methods/destructor_method",
 						"api/methods/existsproject_method",
 						"api/methods/existstask_method",
-						"api/methods/deleteproject_method",
             			"api/methods/expandtask_method",
             			"api/methods/getchildrenids_method",
             			"api/methods/getparentids_method",
@@ -209,7 +209,7 @@ module.exports = {
 			type: "category",
 			label: "Toolbar API",
 			collapsible: true,
-			collapsed: false,
+			collapsed: true,
 			link: {
 				type: 'generated-index',
 				title: "Toolbar API",
@@ -220,6 +220,7 @@ module.exports = {
 				{
 					type: "category",
                 	label: "Toolbar methods",
+					collapsible: true,
                 	collapsed: true,
                 	link: {
                     	type: 'generated-index',
@@ -236,6 +237,7 @@ module.exports = {
 				{
 					type: "category",
                 	label: "Toolbar properties",
+					collapsible: true,
                 	collapsed: true,
                 	link: {
                     	type: 'generated-index',
@@ -257,7 +259,7 @@ module.exports = {
 			type: "category",
 			label: "RestDataProvider API",
 			collapsible: true,
-			collapsed: false,
+			collapsed: true,
 			link: {
 				type: 'generated-index',
 				title: "RestDataProvider API",
@@ -284,8 +286,7 @@ module.exports = {
 				]
 			}]
 		}]
-	
-},
+	},
 		{
 			type: "category",
 			label: "Guides",
@@ -311,14 +312,29 @@ module.exports = {
 					collapsed: true,
 					link: {
 						type: 'doc',
-						id: 'guides/tasks',
+						id: 'guides/task_index',
 					},
 					items: [
+						"guides/task_object",
 						"guides/task_operations",
-						"guides/assigning_users",
+						"guides/task_users",
+						"guides/readonly_mode",
 					]
 				},
-				"guides/work_with_projects",
+				{
+					type: "category",
+					label: "Managing projects",
+					collapsible: true,
+					collapsed: true,
+					link: {
+						type: 'doc',
+						id: 'guides/project_index',
+					},
+					items: [
+						"guides/project_object_operations",
+						"guides/project_operations",
+					]
+				},
 				"guides/menu",
 				"guides/inline_editing",
 				"guides/localization",

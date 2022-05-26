@@ -44,5 +44,5 @@ const toolbar = new Toolbar("#toolbar", {
 });
 
 // remove a project
-list.removeProject({ id: "first" });
+list.deleteProject({ id: "first" });
 ~~~
