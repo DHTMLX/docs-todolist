@@ -53,6 +53,8 @@ The first thing you have to do is to apply the object destructuring:
 const { ToDo, Toolbar } = todo;
 ~~~
 
+### Initialize List
+
 After that, initialize List with the **new ToDo()** constructor. It takes two parameters:
 
 - a container to place a List into. The one we have created at the previous step
@@ -64,6 +66,8 @@ const list = new ToDo("#root", {
     // configuration properties
 });
 ~~~
+
+### Initialize Toolbar
 
 Next, initialize Toolbar with the **new Toolbar()** constructor. The constructor also takes two parameters:
 

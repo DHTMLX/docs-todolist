@@ -289,12 +289,12 @@ module.exports = {
 	},
 		{
 			type: "category",
-			label: "Guides",
+			label: "Developer guides",
 			collapsible: true,
 			collapsed: true,
 			link: {
 					type: 'generated-index',
-					title: 'Guides',
+					title: 'Developer guides',
 					//description: '',
 					//slug: '/category/docusaurus-guides',
 					keywords: ['guides'],
@@ -335,10 +335,14 @@ module.exports = {
 						"guides/project_operations",
 					]
 				},
-				"guides/menu",
 				"guides/inline_editing",
 				"guides/localization",
+				"guides/customization",
 			]
+		},
+		{
+			type: "doc",
+			id: "guides/user_guide",
 		}
 	]
 };

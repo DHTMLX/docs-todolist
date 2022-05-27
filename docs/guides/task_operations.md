@@ -69,6 +69,7 @@ If you move a parent task, it will be moved together with its subtasks.
 
 The quickest way to copy and paste a task is use the [copyTask()](../../api/methods/copytask_method/) method. For that, it is necessary to pass the following parameters to the method: 
 - the ID of the task that you want to copy and paste
+- the ID of the future project (if it exists)
 - the ID of the target task where the copied task should be pasted
 - another two parameters (**parent** and **reverse**) are optional
 
