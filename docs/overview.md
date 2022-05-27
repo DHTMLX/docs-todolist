@@ -13,17 +13,33 @@ DHTMLX To Do List is an easy to use component for maintaining the tasks. To do l
 There is a User Guide provided to make work with To Do List easy for your end users
 :::
 
-```todo
-Check [online samples for DHTMLX To Do List].
-```
+## To Do List structure
 
-## To Do List interface
+![todo](assets/todolist.png)
 
-The interface of To Do List is rather simple and intuitive.
+### Toolbar
 
 
 
+![toolbar](assets/toolbar.png)
 
+#### Project menu
+
+![toolbar](assets/project_menu.png)
+
+#### Search bar
+
+![toolbar](assets/search_field.png)
+
+
+
+### List
+
+![list](assets/list.png)
+
+#### Task menu
+
+![menu](assets/menu.png)
 
 
 ## What's next

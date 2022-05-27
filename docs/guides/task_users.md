@@ -10,8 +10,10 @@ The list of users is specified via the [users](../../api/configs/users_config/) 
 
 ~~~js
 const users = [
-    { id: "user_1", label: "John", path: "../avatar_02.jpg" },
-    { id: "user_2", label: "Kate", path: "../avatar_03.jpg" },
+    { id: "user_1", label: "Don Smith", path: "../avatar_61.jpg"},
+    { id: "user_2", label: "Nadia Chasey", path: "../avatar_63.jpg" },
+    { id: "user_3", label: "Mike Young", path: "../avatar_03.jpg" },
+    { id: "user_4", label: "Elvira Webb", path: "../avatar_33.jpg" }
 ];
 
 const list = new ToDo("#root", { users });
@@ -23,22 +25,15 @@ To assign users to the necessary task on the initialization stage, pass the id(s
 const tasks = [
     {
         id: "2",
-        parent: "1",
-        text: "Don Quixote",
-        assigned: [ "user_1", "user_2" ],
-    },
-    {
-        id: "3",
-        parent: "1",
-        text: "The Great Gatsby",
-        assigned: [ "user_2" ],
-        checked: true,
-    },
+        project: "introduction",
+        text: "You can assign task performers using the menu.",
+        assigned: [ "user_1", "user_2", "user_3", "user_4" ],
+    }
 ];
 
 const users = [
-    { id: "user_1", label: "John", path: "../avatar_02.jpg" },
-    { id: "user_2", label: "Kate", path: "../avatar_03.jpg" },
+    { id: "user_1", label: "Don Smith", path: "../avatar_61.jpg"},
+    ...
 ];
 
 const list = new ToDo("#root", {
@@ -49,9 +44,7 @@ const list = new ToDo("#root", {
 
 As a result, the assigned users will be displayed to the right of the task.
 
-```todo
-[image]
-```
+![users](../assets/users.png)
 
 To view the list of users assigned to a task, click on the users avatars. To close the opened list, click outside it.
 

@@ -6,6 +6,8 @@ description: You can learn about the User guide if To Do List in the documentati
 
 # User guide
 
+The interface of To Do List is rather simple and intuitive.
+
 ### Adding/removing a project
 
 To create a new project, click on the ...

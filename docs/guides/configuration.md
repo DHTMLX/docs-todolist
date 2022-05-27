@@ -17,13 +17,11 @@ You can also initialize To Do List in the readonly mode, if needed.
 
 ## Tasks
 
-### Count of completed subtasks
+### Counter of completed subtasks
 
 You can change the type of the counter which renders the completion of the child tasks.
 
-```todo
-add image
-```
+![counter](../assets/counter.png)
 
 By default, each parent task is equipped with the counter whose value is shown as the ratio of completed child tasks and the total number of the child tasks.
 
@@ -64,7 +62,15 @@ Check [the list of available characters](api/configs/taskshape_config.md#list-of
 
 ### Due date validation
 
-If you specify a [due date](api/configs/tasks_config.md) for a task, the due date validation will track the completion of the task. If the task is marked complete before the due date, it will be highlighted green. Otherwise, the color will be red. This validation is enabled by default. 
+If you specify a [due date](api/configs/tasks_config.md) for a task, the due date validation will track the completion of the task. The due date of the task has green color until the task becomes Overdue. 
+
+![due_date](../assets/due_date.png)
+
+The dates of the  tasks which have not been completed on the due date are highlighted in red.  
+
+![due_date](../assets/overdue_task.png)
+
+This validation works by default.
 
 In case you want to disable this functionality, specify the **validation** parameter of the [taskShape](api/configs/taskshape_config.md) property to *false*:
 
@@ -107,9 +113,7 @@ const list = new ToDo("#root", {
 
 ## Toolbar
 
-```todo
-add image
-```
+![toolbar](../assets/separate_toolbar.png)
 
 The toolbar is a top part of To Do List which is [initialized](guides/initialization.md#initialize-toolbar) and [configured](category/toolbar-properties.md) separately from To Do List.
 
