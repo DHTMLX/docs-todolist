@@ -161,7 +161,9 @@ module.exports = {
                 },
             },
         },*/
-        algolia: {
+
+        // This part can be deleted after release
+        /*algolia: {
             // This is a read-only, search-only key served directly by the front-end, managed by Algolia via their
             // free DocSearch program. The key is not sensitive. See https://docsearch.algolia.com/ for more details.
             //appId: '123', // TODO: change it
@@ -176,7 +178,7 @@ module.exports = {
             searchParameters: {},
 
             //... other Algolia params
-        },
+        },*/
         prism: {
             theme: require('prism-react-renderer/themes/github'),
             darkTheme: require('prism-react-renderer/themes/dracula'),
@@ -325,5 +327,19 @@ module.exports = {
               id: 'GTM-5M5RCSJ',
             }
         ]
+    ],
+    themes: [ 
+       [   // Local search parameters
+           require.resolve("@easyops-cn/docusaurus-search-local"),
+           {
+               indexDocs: true,
+               indexPages: true,
+               hashed: true,
+               highlightSearchTermsOnTargetPage: true,
+               removeDefaultStemmer: true,
+               removeDefaultStopWordFilter: true,
+               explicitSearchResultPath: true
+           },
+       ],
     ]
 };
