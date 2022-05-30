@@ -10,11 +10,11 @@ description: descr
 To create or, in other words, to display To Do List on the page, you need to take the following steps:
 
 
-1\. Include the To Do List source files on a page
+1\. [Include the To Do List source files on a page](#include-source-files)
 
-2\. Create two containers: one for List and another one for Toolbar
+2\. [Create two containers](#create-containers): one for List and another one for Toolbar
 
-3\. Initialize List and Toolbar
+3\. [Initialize List and Toolbar](#initialize-to-do-list)
 
 ## Include source files
 
@@ -90,5 +90,7 @@ const toolbar = new Toolbar("#toolbar", {
 });
 ~~~
 
+### Loading data into To Do List
 
+Detailed information on loading data into DHTMLX To Do is given in the [Data loading](guides/loading_data.md) article.
 

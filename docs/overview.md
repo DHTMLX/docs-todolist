@@ -11,9 +11,7 @@ DHTMLX To Do List is an easy to use component for maintaining the tasks. To do l
 
 ## To Do List structure
 
-The interface of the To Do List component consists of two parts: Toolbar and List.
-
-![todo](assets/todo_overview.png)
+The interface of the To Do List component consists of two parts: [Toolbar](#toolbar) and [List](#list).
 
 ### Toolbar
 
@@ -41,7 +39,9 @@ The **list of tasks** is the main part of the To Do List interface intended for 
 
 ![list](assets/list.png)
 
-#### Adding new tasks
+## Managing tasks
+
+### Adding new tasks
 
 - To add a new task into the beginning of the list, click on the **+ Add task** button in the top navigation panel
 
@@ -52,7 +52,7 @@ The **list of tasks** is the main part of the To Do List interface intended for 
 - To copy a task, press `Ctrl (Cmd) + C`. To paste a task, press `Ctrl (Cmd) + V`
 - To copy a task down, press `Ctrl (Cmd) + D`
 
-#### Editing tasks
+### Editing tasks
 
 - To edit a task, double-click on the task record in the list or press `Ctrl (Cmd) + Enter`. Then, make the changes and press `Enter`
 > It is possible to enter text, numbers, emojis, hashtags, dates. For more details, read [Supported formats of data](guides/inline_editing.md#supported-formats-of-data).
@@ -69,12 +69,12 @@ The **list of tasks** is the main part of the To Do List interface intended for 
 
 ![menu](assets/menu.png)
 
-#### Moving tasks
+### Moving tasks
 
 - To move a task withing a project, select the task and press `Arrow Up`/ `Arrow Down`
 - To move a task to another project, open the task menu, hover **Move to** and select the necessary project in the dropdown list
 
-#### Deleting tasks
+### Deleting tasks
 
 - To delete a task, select the task and press `Backspace`/`Delete`
 

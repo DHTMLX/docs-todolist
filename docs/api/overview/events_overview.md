@@ -13,10 +13,8 @@ description: You can explore the API events in the documentation of the DHTMLX J
 | [](../events/addtask_event.md)           | @getshort(../events/addtask_event.md)           |
 | [](../events/assignuser_event.md)        | @getshort(../events/assignuser_event.md)        |
 | [](../events/checktask_event.md)         | @getshort(../events/checktask_event.md)         |
-| [](../events/clickmenuitem_event.md)     | @getshort(../events/clickmenuitem_event.md)     |
 | [](../events/clonetask_event.md)         | @getshort(../events/clonetask_event.md)         |
 | [](../events/closeinlineeditor_event.md) | @getshort(../events/closeinlineeditor_event.md) |
-| [](../events/closemenu_event.md)         | @getshort(../events/closemenu_event.md)         |
 | [](../events/collapsetask_event.md)      | @getshort(../events/collapsetask_event.md)      |
 | [](../events/copytask_event.md)          | @getshort(../events/copytask_event.md)          |
 | [](../events/deleteproject_event.md)     | @getshort(../events/deleteproject_event.md)     |
@@ -27,7 +25,6 @@ description: You can explore the API events in the documentation of the DHTMLX J
 | [](../events/keypressontodo_event.md)    | @getshort(../events/keypressontodo_event.md)    |
 | [](../events/movetask_event.md)          | @getshort(../events/movetask_event.md)          |
 | [](../events/openinlineeditor_event.md)  | @getshort(../events/openinlineeditor_event.md)  |
-| [](../events/openmenu_event.md)          | @getshort(../events/openmenu_event.md)          |
 | [](../events/pastetask_event.md)         | @getshort(../events/pastetask_event.md)         |
 | [](../events/selecttask_event.md)        | @getshort(../events/selecttask_event.md)        |
 | [](../events/setfilter_event.md)         | @getshort(../events/setfilter_event.md)         |
