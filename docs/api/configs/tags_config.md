@@ -11,7 +11,7 @@ description: You can learn about the tags config in the documentation of the DHT
 @short: Optional. An array of hashtags to be shown by default
 
 :::tip
-To view the list of tags, type `#` in the search field or in the text editor
+To view the list of tags, type `#` in the search bar or in the text editor
 :::
 
 ### Usage

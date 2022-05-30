@@ -27,7 +27,7 @@ Use hashtags to categorize tasks and make them more searchable. Here are some si
 - You can use unlimited number of hashtags in To Do List. Separate the tags by spaces (for instance, **#tag #tag1**) 
 - All created hashtags are accessible in all projects
 - To view the list of all hashtags you've already created, enter the `#` symbol. Click the necessary hashtag to add it to the task
-- To activate strict filtering, click a hashtag or enter it in the search field in the toolbar
+- To activate strict filtering, click a hashtag or enter it in the search bar in the toolbar
 
 :::info
 You can create a default list of tags via the [tags](api/configs/tags_config.md) property

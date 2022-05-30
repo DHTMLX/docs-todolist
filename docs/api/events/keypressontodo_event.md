@@ -57,7 +57,7 @@ There are two groups of keyboard shortcuts:
 | **Escape** |escape| Closes the menu if it is opened for the task when the key is pressed. Pressing again will close the editor, reset filtering, and collapse search results in the Toolbar|
 
 :::tip
-The key codes described below are not available if focus is set on the Search field of the Toolbar.
+The key codes described below are not available if focus is set on the Search bar of the Toolbar.
 :::
 
 | Keyboard shortcut   |Key code| Description                                                          |

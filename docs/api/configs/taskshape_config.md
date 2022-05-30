@@ -15,14 +15,14 @@ description: You can learn about the taskShape config in the documentation of th
 ~~~js
 taskShape?: {
     counter?: {
-        type?: "percentage" | "number", 
+        type: "percentage" | "number", 
     },
     date?: {
-        format?: string,
-        validate?: boolean
+        format: string,
+        validate: boolean
     },
     selectable?: {
-        behavior?: "manual" | "auto"
+        behavior: "manual" | "auto"
     }
 };
 ~~~
@@ -49,14 +49,14 @@ taskShape: {
 To configure the task's appearance, you can specify the following parameters in the **taskShape** object:
 
 - `counter` - (optional) an object with settings for the counter of completed first-level subtasks:
-    - `type` - (optional) the type of display of the counter. There are two types:
+    - `type` - (required) the type of display of the counter. There are two types:
         - *"number"* - the value of the counter is displayed as a ratio between two numbers: the number of completed subtasks and the total number of subtasks
         - *"percentage"* - the value of the counter is displayed as a percentage
 - `date` - (optional) an object with date settings: 
-    - `format` - (optional) defines the format of displaying dates. By default, "%d %M %Y". The full list of available characters is given [below](#list-of-characters)
-    - `validate` - (optional) defines whether the **due_date** property of the [task object](api/configs/tasks_config.md) should be validated
+    - `format` - (required) defines the format of displaying dates. By default, "%d %M %Y". The full list of available characters is given [below](#list-of-characters)
+    - `validate` - (required) defines whether the **due_date** property of the [task object](api/configs/tasks_config.md) should be validated
 - `selectable` - (optional) an objet with settings for managing the task marking. It takes one parameter:
-    - `behavior` - (optional) sets behavior for the parent and child tasks when marking them as completed/uncompleted. There are two options:
+    - `behavior` - (required) sets behavior for the parent and child tasks when marking them as completed/uncompleted. There are two options:
         - *"auto"* - enables the **"auto"** mode. When you mark all child tasks as completed, the parent task automatically becomes marked  as completed. When you mark the parent task as completed, all its child automatically become marked as completed.
         - *"manual"* - enables the **"manual"** mode. You need to manually mark each task (be it a child task or its parent) as completed
 

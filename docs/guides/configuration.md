@@ -52,7 +52,7 @@ const list = new ToDo("#root", {
     taskShape: {
         date: {
             format: "%d/%m/%Y", // "%d %M %Y" by default
-            validate: false
+            validate: true
         }
     }
 });
@@ -81,6 +81,7 @@ const list = new ToDo("#root", {
     projects,
     taskShape: {
         date: {
+            format: "%d %M %Y",
             validate: false // true by default
         }
     }
