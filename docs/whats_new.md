@@ -1,7 +1,7 @@
 ---
 sidebar_label: What's new
 title: What's New
-description: descr
+description: You can learn a new information about DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
 ---
 
 # What's new

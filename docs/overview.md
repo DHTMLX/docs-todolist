@@ -2,7 +2,7 @@
 sidebar_label: To Do List overview
 title: DHTMLX To Do List overview
 slug: /
-description: description
+description: You can have an overview of DHTMLX JavaScript To Do List library in the DHTMLX documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
 ---
 
 # DHTMLX To Do List overview
@@ -25,7 +25,7 @@ The interface of the To Do List component consists of two parts: [Toolbar](#tool
 
 ![toolbar](assets/search_field.png)
 
-- a **menu** for adding, renaming, deleting a currently active project
+- a **menu** for adding a new project, and renaming or deleting a currently active project
 
 ![toolbar](assets/project_menu.png)
 

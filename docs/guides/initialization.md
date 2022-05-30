@@ -1,7 +1,7 @@
 ---
 sidebar_label: Initialization
 title: Initialization
-description: descr
+description: You can learn about initialization of the DHTMLX JavaScript To Do List in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
 ---
 
 # Initialization
@@ -90,7 +90,7 @@ const toolbar = new Toolbar("#toolbar", {
 });
 ~~~
 
-### Loading data into To Do List
+## Loading data into To Do List
 
 Detailed information on loading data into DHTMLX To Do is given in the [Data loading](guides/loading_data.md) article.
 
