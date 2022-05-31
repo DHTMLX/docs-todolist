@@ -30,6 +30,10 @@ The callback of the **paste-task** event can take an object with the following p
 - `targetId` - (optional) the ID of the target task where the task is pasted
 - `reverse` - (optional) **true**, if the task is pasted before the target task; otherwise, **false**
 
+:::info
+To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods.md)
+:::
+
 ### Example
 
 ~~~js {15-17}

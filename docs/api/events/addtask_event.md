@@ -34,6 +34,10 @@ The callback of the **add-task** event can take an object with the following par
 - `reverse` - (optional) **true**, if the task is added before the target task; otherwise, **false**
 - `task` - (required) the object of the added task
 
+:::info
+To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods.md)
+:::
+
 ### Example
 
 ~~~js {15-17}

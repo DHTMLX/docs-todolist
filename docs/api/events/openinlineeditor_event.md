@@ -26,6 +26,10 @@ The callback of the **open-inline-editor** event can take an object with the fol
 - `id` - (required) the id of a task/project
 - `type` - (required) the type of the item: "task" or "project"
 
+:::info
+To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods.md)
+:::
+
 ### Example
 
 ~~~js {15-17}

@@ -26,6 +26,10 @@ The callback of the **check-task** event can take an object with the following p
 - `id` - (required) the id of a task
 - `manual` - (optional) **true** if the task is marked as completed in the "manual" mode
 
+:::info
+To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods.md)
+:::
+
 ### Example
 
 ~~~js {15-17}

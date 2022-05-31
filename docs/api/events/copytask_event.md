@@ -28,15 +28,17 @@ The callback of the **copy-task** event takes an object with the following param
 
 - `id` - (required) the id of a task
 
-:::info 
-In case the copied task is also pasted from the clipboard into another position, the object can take three more parameters:
-:::
+In case the copied task is also pasted from the clipboard into another position, the object can take *four more* parameters:
 
 - `parent` - (optional) the ID of the parent task
 - `project` - (optional) the ID of the project
 - `targetId` - (optional) the ID of the target task where the copied task is pasted
 - `reverse` - (optional) **true**, if the copied task is pasted before the target task; otherwise, **false**
- 
+
+:::info
+To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods.md)
+:::
+
 ### Example
 
 ~~~js {15-17}

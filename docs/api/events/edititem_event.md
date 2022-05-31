@@ -26,6 +26,10 @@ The callback of the **edit-item** event can take an object with the following pa
 - `id` - (required) the id of a task/project
 - `currentValue` - (required) the current (but not saved) value of the task/project
 
+:::info
+To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods.md)
+:::
+
 ### Example
 
 ~~~js {15-17}

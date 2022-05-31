@@ -27,6 +27,10 @@ The callback of the **update-project** event can take an object with the followi
 - `project` - (required) the object of the updated project
     - `label` - (optional) the name of the project
 
+:::info
+To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods.md)
+:::
+
 ### Example
 
 ~~~js {15-17}

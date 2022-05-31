@@ -26,6 +26,12 @@ The callback of the **keypress-on-todo** event can take an object with the follo
 - `code` - (required) the code of the pressed key or a combination of the pressed keys in the *lower case*. The full lists of keyboard shortcuts and their codes are given [below](#keyboard-shortcuts)
 - `event` - (required) a native [event object](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent) 
 
+:::info
+To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods.md)
+:::
+
+### Example
+
 ~~~js {15-17}
 const { ToDo, Toolbar } = todo;
 const {tasks, projects, users} = getData();

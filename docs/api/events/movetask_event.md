@@ -32,6 +32,10 @@ The callback of the **move-task** event can take an object with the following pa
 - `targetId` - (optional) the ID of the target task
 - `reverse` - (optional) **true**, if the task is pasted before the target task; otherwise, **false**
 
+:::info
+To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods.md)
+:::
+
 ### Example
 
 ~~~js {15-17}

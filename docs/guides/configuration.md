@@ -40,6 +40,8 @@ const list = new ToDo("#root", {
 });
 ~~~
 
+**Related sample:** [To do list. Task shape config](https://snippet.dhtmlx.com/magidhw8)
+
 ### Date format
 
 By default, the To Do List displays dates in the "%d %M %Y" format (it looks like 09 Mar 2033). If you want to specify another format for dates, use the **date** parameter of the [taskShape](api/configs/taskshape_config.md) property:
@@ -57,6 +59,8 @@ const list = new ToDo("#root", {
     }
 });
 ~~~
+
+**Related sample:** [To do list. Task shape config](https://snippet.dhtmlx.com/magidhw8)
 
 Check [the list of available characters](api/configs/taskshape_config.md#list-of-characters).
 

@@ -26,6 +26,10 @@ The callback of the **unassign-user** event can take an object with the followin
 - `id` - (required) the id of a task
 - `userId` - (required) the id of the user unassigned from the task
 
+:::info
+To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods.md)
+:::
+
 ### Example
 
 ~~~js {15-17}

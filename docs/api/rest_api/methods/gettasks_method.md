@@ -51,3 +51,5 @@ Promise.all([
     restProvider.setAPI(list.api);
 });
 ~~~
+
+**Related articles**: [Working with Server](guides/working_with_server.md)

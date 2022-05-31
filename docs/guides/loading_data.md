@@ -1,10 +1,10 @@
 ---
-sidebar_label: Data loading
-title: Data loading
-description: You can learn about data loading in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
+sidebar_label: Loading and storing data
+title: Loading and storing data
+description: You can learn about loading and storing data in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
 ---
 
-# Data loading
+# Loading and storing data
 
 ## Preparing data to load
 
@@ -138,6 +138,7 @@ const { tasks, users, projects } = getData();
 
 
 ## Loading from local source
+
 ### Loading data on initialization
 
 You can load [a predefined data](guides/loading_data.md#preparing-data-to-load) into To do list on the initialization stage in the following way:
@@ -173,4 +174,29 @@ list.parse({
     users,
     projects
 });
+~~~
+
+## Saving and restoring state
+
+To save the current state of a To Do, use the [serialize()](api/methods/serialize_method.md) method. It converts the data of the To Do List into an array of JSON objects. 
+
+~~~js
+const state = list.serialize();
+// {
+//    tasks: [{...}, {...}, ...],
+//    users: [{...}, {...}, ...],
+//    projects: [{...}, {...}, ...],
+//    tags: [],
+//    activeProject: string,
+// }
+~~~
+
+Then you can parse the data stored in the saved state array to a different To Do List. For example:
+
+~~~js
+// creating a new To Do
+const list2 =  new ToDo("#root2", {});
+
+// parsing the state of To Do List into another To Do List
+list2.parse(state);
 ~~~

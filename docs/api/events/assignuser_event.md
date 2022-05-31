@@ -26,6 +26,10 @@ The callback of the **assign-user** event can take an object with the following 
 - `id` - (required) the id of a task
 - `userId` - (required) the id of the user assigned to the task
 
+:::info
+To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods.md)
+:::
+
 ### Example
 
 ~~~js {15-17}

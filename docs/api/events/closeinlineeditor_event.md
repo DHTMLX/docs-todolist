@@ -26,6 +26,10 @@ The callback of the **close-inline-editor** event can take an object with the fo
 - `id` - (required) the id of a task/project
 - `save` - (required) **true** if the made changes have been saved after closing the editor; otherwise, **false**
 
+:::info
+To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods.md)
+:::
+
 ### Example
 
 ~~~js {15-17}

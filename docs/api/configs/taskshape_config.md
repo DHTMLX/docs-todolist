@@ -111,3 +111,5 @@ DHTMLX To Do List uses the following characters for setting a date format:
 :::tip
 Check the [Localization](guides/localization.md) article to learn how to present the date labels in the necessary language
 :::
+
+**Related sample:** [To do list. Task shape config](https://snippet.dhtmlx.com/magidhw8)

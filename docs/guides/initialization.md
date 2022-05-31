@@ -9,7 +9,6 @@ description: You can learn about initialization of the DHTMLX JavaScript To Do L
 
 To create or, in other words, to display To Do List on the page, you need to take the following steps:
 
-
 1\. [Include the To Do List source files on a page](#include-source-files)
 
 2\. [Create two containers](#create-containers): one for List and another one for Toolbar
@@ -93,4 +92,8 @@ const toolbar = new Toolbar("#toolbar", {
 ## Loading data into To Do List
 
 Detailed information on loading data into DHTMLX To Do is given in the [Data loading](guides/loading_data.md) article.
+
+## Example
+
+<iframe src="https://snippet.dhtmlx.com/3vwlbwee?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="450"></iframe>
 

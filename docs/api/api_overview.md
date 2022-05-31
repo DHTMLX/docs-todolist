@@ -47,6 +47,25 @@ description: You can have an API overview of the DHTMLX JavaScript To Do List li
 | [](api/methods/updateproject_method.md)     | @getshort(api/methods/updateproject_method.md)     |
 | [](api/methods/updatetask_method.md)        | @getshort(api/methods/updatetask_method.md)        |
 
+## To Do List internal API
+
+### Event Bus methods
+
+| Name                                 | Description                                 |
+| :----------------------------------- | :------------------------------------------ |
+| [](api/internal/exec_method.md)      | @getshort(api/internal/exec_method.md)      |
+| [](api/internal/intercept_method.md) | @getshort(api/internal/intercept_method.md) |
+| [](api/internal/on_method.md)        | @getshort(api/internal/on_method.md)        |
+| [](api/internal/setnext_method.md)   | @getshort(api/internal/setnext_method.md)   |
+
+### State methods
+
+| Name                                        | Description                                        |
+| :------------------------------------------ | :------------------------------------------------- |
+| [](api/internal/getreactivestate_method.md) | @getshort(api/internal/getreactivestate_method.md) |
+| [](api/internal/getstate_method.md)         | @getshort(api/internal/getstate_method.md)         |
+| [](api/internal/getstores_method.md)        | @getshort(api/internal/getstores_method.md)        |
+
 ## To Do List events
 
 | Name                                      | Description                                      |

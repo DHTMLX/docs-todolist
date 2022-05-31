@@ -30,6 +30,10 @@ The callback of the **set-filter** event can take an object with the following p
 - `highlight` - (optional) defines whether the matches found are highlighted 
 - `strict` - (optional) **true**, if the *strict* mode of filtering is enabled; otherwise, **false**
 
+:::info
+To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods.md)
+:::
+
 ### Example
 
 ~~~js {15-17}

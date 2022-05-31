@@ -8,8 +8,6 @@ description: You can learn about the To Do List localization in the documentatio
 
 You can present the interface of DHTMLX To Do List in any language. The library provides a number of predefined locales and gives the ability to create custom ones.
 
-
-
 ## Built-in locales
 
 The library includes the built-in localization for the following languages: 
@@ -18,7 +16,6 @@ The library includes the built-in localization for the following languages:
 - English (**en**) - default
 - German (**de**) 
 - Russian (**ru**)
-
 
 To access the locales, you need to run the following command:
 
@@ -165,3 +162,9 @@ To apply the custom locale, use either of the following ways:
 :::info
 Don't forget to apply the custom locale to the Toolbar component as well
 :::
+
+## Example
+
+In this snippet you can see how to switch between the EN and DE locales:
+
+<iframe src="https://snippet.dhtmlx.com/kzjwvuq5?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>

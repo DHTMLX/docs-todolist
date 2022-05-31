@@ -28,6 +28,10 @@ The callback of the **set-project** event can take an object with the following 
 
 - `id` - (required) the ID of a newly active project
 
+:::info
+To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods.md)
+:::
+
 ### Example
 
 ~~~js {15-17}
