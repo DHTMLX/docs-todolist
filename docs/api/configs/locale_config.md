@@ -53,3 +53,5 @@ To change the locale dynamically, use the [setLocale()](api/methods/setlocale_me
 :::
 
 **Related article:** [Localization](guides/localization.md)
+
+**Related sample:** [To do list. Localization](https://snippet.dhtmlx.com/kzjwvuq5)

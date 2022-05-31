@@ -52,3 +52,5 @@ list.api.on("update-project", ({id, project}) => {
     console.log("The label of the project with ID:", id, "is changed to", project.label);
 });
 ~~~
+
+**Related article:** [Operations with projects](guides/project_operations.md#updating-a-project)

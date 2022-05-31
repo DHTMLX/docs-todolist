@@ -50,3 +50,5 @@ list.expandTask({
     id: "1.1",
 });
 ~~~
+
+**Related article:** [Operations with tasks](guides/task_operations.md)

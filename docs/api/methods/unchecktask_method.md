@@ -22,7 +22,7 @@ uncheckTask({
 ### Parameters
 
 - `id` - (required) the id of a task
-- `manual` - (optional) enables/disables the "manual" mode. If `false`, the task will be marked as uncompleted in the "auto" mode. See the **behavior** parameter of the [taskShape](api/configs/taskshape_config.md) property
+- `manual` - (optional) if `true`, marks the task in the "manual" mode. If `false`, the result of applying the method depends on the value which is specified for the **behavior** attribute of the **selectable** parameter of the [taskShape](api/configs/taskshape_config.md) property
 
 ### Example
 
@@ -44,16 +44,11 @@ const toolbar = new Toolbar("#toolbar", {
 
 
 list.checkTask({ 
-    id: "1.1.1", // mark the task and its parent as complete
+    id: "1.1.1", // mark the task as completed in the "auto" mode
 });
 
 list.uncheckTask({ 
     id: "1.1.1",
-    manual: true // mark only the specified task as incomplete
-});
-
-list.uncheckTask({ 
-    id: "1.1.1",
-    manual: false // or mark the task and its parent as incomplete
+    manual: true // mark the task as uncompleted in the "manual" mode
 });
 ~~~

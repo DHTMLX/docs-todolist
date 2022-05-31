@@ -57,7 +57,11 @@ To configure the task's appearance, you can specify the following parameters in 
     - `validate` - (required) defines whether the **due_date** property of the [task object](api/configs/tasks_config.md) should be validated
 - `selectable` - (optional) an objet with settings for managing the task marking. It takes one parameter:
     - `behavior` - (required) sets behavior for the parent and child tasks when marking them as completed/uncompleted. There are two options:
-        - *"auto"* - enables the **"auto"** mode. When you mark all child tasks as completed, the parent task automatically becomes marked  as completed. When you mark the parent task as completed, all its child automatically become marked as completed.
+        - *"auto"* - enables the **"auto"** mode:
+            - When you mark all child tasks as completed, the parent task automatically becomes marked  as completed
+            - When you mark the parent task as completed, all its child automatically become marked as completed
+            - If you mark at least one child of a completed task as uncompleted, the task automatically becomes marked as uncompleted
+            - If you mark the parent task as uncompleted, all its child automatically become uncompleted
         - *"manual"* - enables the **"manual"** mode. You need to manually mark each task (be it a child task or its parent) as completed
 
 
@@ -111,5 +115,7 @@ DHTMLX To Do List uses the following characters for setting a date format:
 :::tip
 Check the [Localization](guides/localization.md) article to learn how to present the date labels in the necessary language
 :::
+
+**Related article:** [Configuration](guides/configuration.md#tasks)
 
 **Related sample:** [To do list. Task shape config](https://snippet.dhtmlx.com/magidhw8)

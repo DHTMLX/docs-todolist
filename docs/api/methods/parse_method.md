@@ -48,3 +48,5 @@ list.parse({
     projects
 });
 ~~~
+
+**Related article:** [Loading and storing data](guides/loading_data.md)

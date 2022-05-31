@@ -50,3 +50,5 @@ list.updateProject({
     }
 });
 ~~~
+
+**Related article:** [Operations with projects](guides/project_operations.md)

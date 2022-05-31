@@ -70,3 +70,5 @@ console.log(list.getChildrenIds({ id: "1", tree: false })); // -> ['1.1', '1.2']
 console.log(list.getChildrenIds({ id: "1", filtered: true })); // -> ['1.1', '1.1.1']
 console.log(list.getChildrenIds({ id: "1", filtered: true, tree: false })); // -> ['1.1']
 ~~~
+
+**Related article:** [Task object/Id](guides/task_object.md)

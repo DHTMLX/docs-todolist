@@ -59,3 +59,5 @@ list.api.on("add-task", (obj) => {
     console.log("A new task is added", obj);
 });
 ~~~
+
+**Related article:** [Operations with tasks](guides/task_operations.md)

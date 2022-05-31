@@ -51,3 +51,5 @@ list.api.on("check-task", ({id}) => {
     console.log("The", id, "task is marked as completed"); 
 });
 ~~~
+
+**Related article:** [Operations with tasks](guides/task_operations.md)

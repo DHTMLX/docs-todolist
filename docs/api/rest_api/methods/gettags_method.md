@@ -27,7 +27,7 @@ The **getTags()** method sends a request to the server by the **GET** method and
 
 ### Example
 
-~~~js {5,9}
+~~~js {5,10}
 const { ToDo, Toolbar, RestDataProvider } = todo;
 
 const activeProject = null;
@@ -35,6 +35,7 @@ const url = "http://localhost:3000";
 const restProvider = new RestDataProvider(url);
 
 Promise.all([
+    restProvider.getProjectTasks(activeProject),
     restProvider.getProjects(),
     restProvider.getTags(),
 ]).then(([tasks, projects, tags]) => {

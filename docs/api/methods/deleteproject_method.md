@@ -46,3 +46,5 @@ const toolbar = new Toolbar("#toolbar", {
 // remove a project
 list.deleteProject({ id: "first" });
 ~~~
+
+**Related article:** [Operations with projects](guides/project_operations.md)

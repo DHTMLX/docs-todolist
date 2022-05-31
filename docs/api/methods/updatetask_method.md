@@ -46,9 +46,9 @@ const toolbar = new Toolbar("#toolbar", {
 list.updateTask({ 
     id: "1.1",
     task: {
-        text: "Completed task",
-        checked: true,
-        collapsed: true
+        text: "Completed task"
     }
 });
 ~~~
+
+**Related article:** [Operations with tasks](guides/task_operations.md)

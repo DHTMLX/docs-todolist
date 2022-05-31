@@ -27,7 +27,7 @@ The **getUsers()** method sends a request to the server by the **GET** method an
 
 ### Example
 
-~~~js {5,8}
+~~~js {5,9}
 const { ToDo, Toolbar, RestDataProvider } = todo;
 
 const activeProject = null;
@@ -35,6 +35,7 @@ const url = "http://localhost:3000";
 const restProvider = new RestDataProvider(url);
 
 Promise.all([
+    restProvider.getProjectTasks(activeProject),
     restProvider.getUsers(),
     restProvider.getProjects(),
 ]).then(([tasks, users, projects]) => {

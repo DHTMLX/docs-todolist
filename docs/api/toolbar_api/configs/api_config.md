@@ -36,3 +36,6 @@ const toolbar = new Toolbar("#toolbar", {
     api: list.api,
 });
 ~~~
+
+**Related article:**
+- [Initialization](guides/initialization.md)

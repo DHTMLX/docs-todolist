@@ -97,3 +97,7 @@ const toolbar = new Toolbar("#toolbar", {
     api: list.api,
 });
 ~~~
+
+**Related articles:** 
+- [Loading and storing data](guides/loading_data.md)
+- [Managing tasks](guides/task_index.md)

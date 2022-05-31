@@ -47,3 +47,5 @@ const toolbar = new Toolbar("#toolbar", {
 // get the data object of the task
 list.getTask({ id: "1.2" }); // -> {id: '1.2', text: 'Task 1.2', parent: '1'}
 ~~~
+
+**Related article:** [Task object/Id](guides/task_object.md)

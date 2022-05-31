@@ -43,7 +43,6 @@ You need to include the following two files:
 Now you can add To Do List to the page. For this, you should create two DIV containers to place To Do List its Toolbar into. So, your steps are:
 
 - specify two DIV containers in the *index.html* file
-- apply the object destructuring to "unpack" the **todo** global object into two variables: ToDo and Toolbar
 - initialize To Do List and its Toolbar via the **new ToDo()** and **new Toolbar()** constructors correspondingly
 
 ~~~js title="index.html"
@@ -59,7 +58,7 @@ Now you can add To Do List to the page. For this, you should create two DIV cont
         <div id="toolbar"></div>
 
         <script>
-            const { ToDo, Toolbar } = todo;
+            const { ToDo, Toolbar } = todo; // apply the object destructuring
             
             const list = new ToDo("#root", {
 				// configuration properties 
@@ -73,10 +72,14 @@ Now you can add To Do List to the page. For this, you should create two DIV cont
 </html>
 ~~~
 
+:::note
+You should apply the object destructuring to "unpack" the **todo** global object into two variables: ToDo and Toolbar. 
 
+You don't need this step if you use the **new todo.ToDo()** and **new todo.Toolbar()** constructors.
+:::
 
 :::info
-Toolbar is an optional part of the To Do List interface. To create a To Do List without the Toolbar, you can specify only one DIV container and initialize the widget via the **new ToDo()** constructor
+Toolbar is an optional part of the To Do List interface. To create a To Do List without the Toolbar, you can specify only one DIV container and initialize the widget via the constructor
 :::
 
 For more information about initialization of To Do List read the [Initialization](guides/initialization.md) article.
@@ -89,7 +92,7 @@ As you can see, we've initialized the To Do List but it is still empty. At this 
 You can skip this step if you want to display an empty component on the page
 :::
 
-At first, you should prepare data (in the JSON format) to load into the component. The data can include the following sets of information: [**tasks**](api/configs/tasks_config.md), [**projects**](api/configs/projects_config.md), [**users**](api/configs/users_config.md), and [**tags**](api/configs/tags_config.md). 
+At first, you should prepare data to load into the component. The data can include the following sets of information: [**tasks**](api/configs/tasks_config.md), [**projects**](api/configs/projects_config.md), [**users**](api/configs/users_config.md), [**tags**](api/configs/tags_config.md), and [**activeProject**](api/configs/activeproject_config.md)
 
 The most convenient way is to prepare data in a separate file, for example:
 
@@ -154,6 +157,8 @@ function getData() {
         { "id": "widgets", "label": "Our widgets" },
         // more project objects
     ];
+
+    return { projects, users, tasks };
 }
 ~~~
 
@@ -201,7 +206,7 @@ As you already know, To Do List consists of two separate interfaces: List and To
 - check the list of [To Do List properties](api/overview/configs_overview.md)
 - check the list of [Toolbar properties](category/toolbar-properties.md)
 
-As an example, let's enable the *readonly* mode for To Do List, specify an active project, and hide the control that allows switching between projects:
+As an example, let's enable the *readonly* mode for To Do List, specify an active project, and show only the search bar in the toolbar:
 
 ~~~js {5-6,11}
 const list = new ToDo("#root", {

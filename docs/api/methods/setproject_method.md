@@ -45,3 +45,5 @@ list.setProject({
     id: "first"
 });
 ~~~
+
+**Related article:** [Operations with projects](guides/project_operations.md)

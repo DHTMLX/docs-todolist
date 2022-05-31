@@ -47,3 +47,5 @@ list.indentTask({
 
 console.log(list.getParentIds({ id: "1.2" })); //  ['1.1', '1']
 ~~~
+
+**Related article:** [Operations with tasks](guides/task_operations.md)

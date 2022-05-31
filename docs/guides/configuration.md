@@ -100,6 +100,8 @@ By default, the process of checking/unchecking tasks is implemented in the "auto
 
 - If you mark all children of a task as completed, the parent task automatically becomes marked as completed 
 - If you mark the parent task as completed, all its child automatically become marked as completed
+- If you mark at least one child of a completed task as uncompleted, the task automatically becomes marked as uncompleted
+- If you mark the parent task as uncompleted, all its child automatically become uncompleted
 
 You can disable this behavior and activate the "manual" mode. For that, apply the **behavior: "manual"** setting of the **selectable** parameter of the [taskShape](api/configs/taskshape_config.md) property:
 

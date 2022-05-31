@@ -8,12 +8,13 @@ description: You can learn about loading and storing data in the documentation o
 
 ## Preparing data to load
 
-DHTMLX To do list takes data in the JSON format. There are the following types of data which can be loaded into the component: 
+There are the following types of information which can be loaded into DHTMLX To do list:
 
 - [**tasks**](api/configs/tasks_config.md)
 - [**projects**](api/configs/projects_config.md)
 - [**users**](api/configs/users_config.md)
 - [**tags**](api/configs/tags_config.md)
+- [**activeProject**](api/configs/activeproject_config.md)
 
 You can prepare data in a separate file. Here is an example of an appropriate data set:
 
@@ -121,6 +122,8 @@ function getData() {
         },
         // more project objects
     ];
+
+    return { projects, users, tasks };
 }
 ~~~
 
@@ -178,7 +181,7 @@ list.parse({
 
 ## Saving and restoring state
 
-To save the current state of a To Do, use the [serialize()](api/methods/serialize_method.md) method. It converts the data of the To Do List into an array of JSON objects. 
+To save the current state of a To Do, use the [serialize()](api/methods/serialize_method.md) method. It converts the data of the To Do List into a JSON object. 
 
 ~~~js
 const state = list.serialize();

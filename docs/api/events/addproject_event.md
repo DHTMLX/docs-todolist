@@ -52,3 +52,5 @@ list.api.on("add-project", ({id, project}) => {
     console.log("A new ", project.label, " project with ID:", id, "is added");
 });
 ~~~
+
+**Related article:** [Operations with projects](guides/project_operations.md#adding-a-new-project)

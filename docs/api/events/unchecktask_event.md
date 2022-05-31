@@ -51,3 +51,5 @@ list.api.on("uncheck-task", ({id}) => {
     console.log("The", id, "task is marked as uncompleted"); 
 });
 ~~~
+
+**Related article:** [Operations with tasks](guides/task_operations.md)

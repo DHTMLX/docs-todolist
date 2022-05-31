@@ -64,3 +64,6 @@ const toolbar = new Toolbar("#toolbar", {
 });
 ~~~
 
+**Related articles:**
+- [Configuration](guides/configuration.md#toolbar)
+- [Customization](guides/customization.md#toolbar)

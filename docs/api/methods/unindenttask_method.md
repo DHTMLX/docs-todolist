@@ -47,3 +47,5 @@ list.unindentTask({
 
 console.log(list.getParentIds({ id: "1.2" })); //  []
 ~~~
+
+**Related article:** [Operations with tasks](guides/task_operations.md)

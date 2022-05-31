@@ -51,3 +51,5 @@ list.api.on("assign-user", ({id, userId}) => {
     console.log("The", userId, "user is assigned to the", id, "task"); 
 });
 ~~~
+
+**Related article:** [Task users](guides/task_users.md)

@@ -47,3 +47,5 @@ list.openInlineEditor({
     id: "1.1.1",
 });
 ~~~
+
+**Related article:** [Inline editing](guides/inline_editing.md)

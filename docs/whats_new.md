@@ -12,8 +12,8 @@ Released on ...
 
 ### Initial functionality
 
-- Ability to create, rename, delete projects via [API](guides/project_index.md) and [UI](../#toolbar)
-- Ability to add, edit, move, delete tasks via [API](guides/task_index.md) and [UI](../#managing-tasks)
+- Ability to add, update, delete projects via [API](guides/project_index.md) and [UI](../#toolbar)
+- Ability to add, update, move, copy, paste, delete, check/uncheck, collapse/expand tasks via [API](guides/task_index.md) and [UI](../#managing-tasks)
 - Ability to search for projects, tasks ([UI](../#toolbar))
 - Ability to filter tasks ([API](guides/task_operations.md#filtering-tasks))
 - Ability to [configure tasks appearance](guides/configuration.md)

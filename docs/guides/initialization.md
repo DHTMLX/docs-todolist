@@ -45,13 +45,6 @@ Thus, create **two containers** to place a List and Toolbar into and give them I
 
 ## Initialize To Do List
 
-
-The first thing you have to do is to apply the object destructuring:
-
-~~~js title="index.js"
-const { ToDo, Toolbar } = todo;
-~~~
-
 ### Initialize List
 
 After that, initialize List with the **new ToDo()** constructor. It takes two parameters:
@@ -60,6 +53,8 @@ After that, initialize List with the **new ToDo()** constructor. It takes two pa
 - an object with configuration properties. [See the full list here](api/overview/configs_overview.md)
 
 ~~~js title="index.js"
+const { ToDo, Toolbar } = todo; // apply the object destructuring
+
 // create List
 const list = new ToDo("#root", {
     // configuration properties
@@ -77,7 +72,9 @@ Next, initialize Toolbar with the **new Toolbar()** constructor. The constructor
 Initialization of the Toolbar is optional. You can skip this step if you don't need the Toolbar in your application
 :::
 
-~~~js {7-9} title="index.js"
+~~~js {9-11} title="index.js"
+const { ToDo, Toolbar } = todo;
+
 // create List
 const list = new ToDo("#root", {
     // configuration properties

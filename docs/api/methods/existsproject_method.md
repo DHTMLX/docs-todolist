@@ -46,3 +46,5 @@ const toolbar = new Toolbar("#toolbar", {
 list.existsProject({ id: 1 }); // -> false
 list.existsProject({ id: "first" }); // -> true
 ~~~
+
+**Related article:** [Project object](guides/project_object_operations.md)

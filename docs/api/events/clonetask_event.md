@@ -57,3 +57,5 @@ list.api.on("clone-task", (obj) => {
     console.log(obj); 
 });
 ~~~
+
+**Related article:** [Operations with tasks](guides/task_operations.md)

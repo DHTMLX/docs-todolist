@@ -45,3 +45,5 @@ list.selectTask({ id: "1.1"});
 // unselect the selected task
 list.unselectTask({ id: "1.1" });
 ~~~
+
+**Related article:** [Operations with tasks](guides/task_operations.md)

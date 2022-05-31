@@ -53,3 +53,5 @@ list.api.on("set-project", ({id}) => {
     console.log("The active project is changed to", id);
 });
 ~~~
+
+**Related article:** [Operations with projects](guides/project_operations.md#changing-the-active-project)

@@ -48,3 +48,5 @@ list.closeInlineEditor({
     save: false
 });
 ~~~
+
+**Related article:** [Inline editing](guides/inline_editing.md)

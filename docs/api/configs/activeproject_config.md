@@ -45,3 +45,5 @@ const toolbar = new Toolbar("#toolbar", {
     api: list.api,
 });
 ~~~
+
+**Related article:** [Managing projects](guides/project_index.md)

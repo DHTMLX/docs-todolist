@@ -46,3 +46,5 @@ const toolbar = new Toolbar("#toolbar", {
     api: list.api,
 });
 ~~~
+
+**Related article:** [Read-only mode](guides/readonly_mode.md)

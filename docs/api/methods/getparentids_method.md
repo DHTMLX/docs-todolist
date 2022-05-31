@@ -51,3 +51,5 @@ const toolbar = new Toolbar("#toolbar", {
 // get parents of the task
 console.log(list.getParentIds({ id: "1.1.1" })); //  ['1.1', '1']
 ~~~
+
+**Related article:** [Task object/Id](guides/task_object.md)

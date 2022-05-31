@@ -22,7 +22,7 @@ destructor(): void;
 
 ~~~js {13}
 const { ToDo, Toolbar } = todo;
-const { tasks, users, projects, tags } = getData();
+const { tasks, users, projects } = getData();
 
 const list = new ToDo("#root", {
 	tasks,

@@ -45,3 +45,5 @@ list.collapseTask({
     id: "1",
 });
 ~~~
+
+**Related article:** [Operations with tasks](guides/task_operations.md)

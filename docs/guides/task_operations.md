@@ -23,46 +23,6 @@ list.addTask({
 });
 ~~~
 
-## Deleting a task
-
-To delete a task, use the [deleteTask()](../../api/methods/deletetask_method/) method:
-
-~~~js
-list.deleteTask({ id: "1.2" });
-~~~
-
-## Updating a task
-
-To dynamically update parameters of a task, apply the [updateTask()](../../api/methods/updatetask_method/) method:
-
-~~~js
-list.updateTask({ 
-    id: "1.1.1",
-    task: {
-        text: "Completed task",
-        checked: true
-    }
-});
-~~~
-
-## Moving a task
-
-To move a task to another position, use the [moveTask()](../../api/methods/movetask_method/) method:
-
-~~~js
-list.moveTask({ 
-    id: "1.1", // ID of the task to move
-    project:"p_2", // ID of the future project (if exists)
-    parent: "2", // ID of the future parent
-    targetId: "2.1", // ID of the target task
-    reverse: true // the task will be placed before the target one
-});
-~~~
-
-:::note
-If you move a parent task, it will be moved together with its subtasks.
-:::
-
 ## Copying/pasting a task
 
 ### Copy and paste
@@ -102,6 +62,45 @@ list.pasteTask({
     parent: "1",
     targetId: "1.2",
 });
+~~~
+
+## Updating a task
+
+To dynamically update parameters of a task, apply the [updateTask()](../../api/methods/updatetask_method/) method:
+
+~~~js
+list.updateTask({ 
+    id: "1.1.1",
+    task: {
+        text: "Completed task"
+    }
+});
+~~~
+
+## Moving a task
+
+To move a task to another position, use the [moveTask()](../../api/methods/movetask_method/) method:
+
+~~~js
+list.moveTask({ 
+    id: "1.1", // ID of the task to move
+    project:"p_2", // ID of the future project (if exists)
+    parent: "2", // ID of the future parent
+    targetId: "2.1", // ID of the target task
+    reverse: true // the task will be placed before the target one
+});
+~~~
+
+:::note
+If you move a parent task, it will be moved together with its subtasks.
+:::
+
+## Deleting a task
+
+To delete a task, use the [deleteTask()](../../api/methods/deletetask_method/) method:
+
+~~~js
+list.deleteTask({ id: "1.2" });
 ~~~
 
 ## Selecting/unselecting a task
@@ -144,20 +143,32 @@ list.expandTask({ id: "1.1" });
 You may mark the necessary task as complete/incomplete via the corresponding [checkTask()](../../api/methods/checktask_method/) and [uncheckTask()](../../api/methods/unchecktask_method/) methods
 
 ~~~js
-// marks the task as complete in the "auto" mode
 list.checkTask({ 
     id: "1.1.1",
     manual: false
 });
 
-// marks the task as incomplete in the "auto" mode
 list.uncheckTask({ 
     id: "1.1.1",
     manual: false
 });
 ~~~
 
-If you need to check/uncheck only the specified task, enable the "manual" mode (*manual:true*). For more details on each mode, check the **behavior** parameter of the [taskShape](api/configs/taskshape_config.md) property
+When `manual: false` is set, the result of applying the method depends on the value which is specified for the **behavior** attribute of the **selectable** parameter of the [taskShape](api/configs/taskshape_config.md) property. 
+
+If the "auto" mode is specified via the **taskShape** property but you need to check/uncheck the task in the "manual" mode, set the **manual** parameter of the [checkTask()](../../api/methods/checktask_method/) or [uncheckTask()](../../api/methods/unchecktask_method/) method to *true*.
+
+~~~js
+list.checkTask({ 
+    id: "1.1.1",
+    manual: true
+});
+
+list.uncheckTask({ 
+    id: "1.1.1",
+    manual: true
+});
+~~~
 
 ## Changing the indent level of a task
 

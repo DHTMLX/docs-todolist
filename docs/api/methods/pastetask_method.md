@@ -57,3 +57,5 @@ list.pasteTask({
     targetId: "1.2",
 });
 ~~~
+
+**Related article:** [Operations with tasks](guides/task_operations.md)

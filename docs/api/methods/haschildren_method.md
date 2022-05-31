@@ -61,3 +61,5 @@ list.setFilter({ match: "3", highlight: true });
 console.log(list.hasChildren({ id: "1.1" })); // -> true
 console.log(list.hasChildren({ id: "1.1", filtered: true })); // -> false
 ~~~
+
+**Related article:** [Task object/Id](guides/task_object.md)

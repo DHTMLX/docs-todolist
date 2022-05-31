@@ -45,3 +45,5 @@ list.selectTask({
 // get ID of the selected task
 console.log(list.getSelection()); // -> ["1.1"]
 ~~~
+
+**Related article:** [Task object/Id](guides/task_object.md)

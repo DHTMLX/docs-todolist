@@ -52,3 +52,7 @@ const toolbar = new Toolbar("#toolbar", {
 :::tip
 You can easily make a certain project active on initialization of To do list via the [activeProject](api/configs/activeproject_config.md) property
 :::
+
+**Related articles:** 
+- [Loading and storing data](guides/loading_data.md)
+- [Managing projects](guides/project_index.md)

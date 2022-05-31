@@ -42,3 +42,5 @@ const list = new ToDo("#root", {
 // get an object with data of To Do List
 list.serialize();
 ~~~
+
+**Related article:** [Loading and storing data](guides/loading_data.md)

@@ -51,3 +51,5 @@ list.api.on("unassign-user", ({id, userId}) => {
     console.log("The", userId, "user is unassigned from the", id, "task");
 });
 ~~~
+
+**Related article:** [Task users](guides/task_users.md)

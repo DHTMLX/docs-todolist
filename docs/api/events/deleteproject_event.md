@@ -49,3 +49,5 @@ list.api.on("delete-project", ({id}) => {
     console.log("The project with ID:", id, "is removed");
 });
 ~~~
+
+**Related article:** [Operations with projects](guides/project_operations.md#deleting-a-project)
