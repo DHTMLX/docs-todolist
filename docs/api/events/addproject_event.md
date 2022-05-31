@@ -27,6 +27,10 @@ The callback of the **add-project** event can take an object with the following 
 - `project` - (optional) an object with project parameters:
   - `label` - (optional) the name of the project
 
+:::info
+To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods.md)
+:::
+
 ### Example
 
 ~~~js {15-17}
