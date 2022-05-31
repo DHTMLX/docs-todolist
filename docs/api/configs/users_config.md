@@ -48,7 +48,7 @@ const tasks = [
         // parent: null,
         text: "Read books",
         collapsed: false,
-        due_date: "30 08 2022"
+        due_date: new Date()
     },
     {
         id: "2",

@@ -31,7 +31,7 @@ const list = new ToDo("#root", {
     tasks,
     users,
 	projects,
-    id: "1"
+    id: "root"
 });
 
 const toolbar = new Toolbar("#toolbar", {

@@ -40,9 +40,9 @@ The **tasks** property presents an array of task objects. Each object includes t
 If there are projects initialized, specify the ID of the necessary project for the root task to display it in this project.<br><br>
 If you don't specify the project ID for the root task or set it to *null* or *undefined*, the task will belong to the *No project* section.
 :::<br>
-- `text`- (optional) the text of the task; **""** by default
-- `checked`- (optional) marks the task as completed; **false** by default
-- `collapsed`- (optional) defines whether the task is collapsed initially (in case the task has subtasks), **false** by default
+- `text`- (optional) the text of the task
+- `checked`- (optional) marks the task as completed
+- `collapsed`- (optional) defines whether the task is collapsed initially (in case the task has subtasks)
 - `assigned`- (optional) an array with id(s) of the users assigned to the task
 - `due_date` - (optional) the date when the task must be completed
 - `[key: string]`- (optional) a set of custom properties
@@ -59,7 +59,7 @@ const tasks = [
         // parent: null,
         text: "Read books",
         collapsed: false,
-        due_date: "30 08 2022"
+        due_date: new Date()
     },
     {
         id: "2",

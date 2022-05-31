@@ -24,6 +24,10 @@ The tasks will be included into the *No project* section in the following cases:
 activeProject?: string | number;
 ~~~
 
+:::info
+If **activeProject** is not specified and there are no tasks which belong to the *No project* section, the first project from the list of project objects will be loaded as an active one.
+:::
+
 ### Example
 
 ~~~js {4-7,11-12}

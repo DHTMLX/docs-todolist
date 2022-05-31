@@ -73,7 +73,7 @@ Initialization of the Toolbar is optional. You can skip this step if you don't n
 :::
 
 ~~~js {9-11} title="index.js"
-const { ToDo, Toolbar } = todo;
+const { ToDo, Toolbar } = todo; // apply the object destructuring
 
 // create List
 const list = new ToDo("#root", {
@@ -85,6 +85,12 @@ const toolbar = new Toolbar("#toolbar", {
     api: list.api
 });
 ~~~
+
+:::note
+You should apply the object destructuring to "unpack" the **todo** global object into two variables: ToDo and Toolbar. 
+
+You don't need this step if you will use the **new todo.ToDo()** and **new todo.Toolbar()** constructors.
+:::
 
 ## Loading data into To Do List
 
