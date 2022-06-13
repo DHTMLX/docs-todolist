@@ -95,17 +95,17 @@ function getData() {
         {
             "id": "user_1",
             "label": "Don Smith",
-            "path": "../avatar_02.jpg"
+            "avatar": "../avatar_02.jpg"
         },
         {
             "id": "user_2",
             "label": "Nadia Chasey",
-            "path": "../avatar_05.jpg"
+            "avatar": "../avatar_05.jpg"
         },
         {
             "id": "user_3",
             "label": "Mike Young",
-            "path": "../avatar_21.jpg"
+            "avatar": "../avatar_21.jpg"
         },
         // more user objects
     ];

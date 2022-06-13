@@ -145,9 +145,9 @@ function getData() {
 
     // data for users
     const users = [
-        { "id": "user_1", "label": "Don Smith", "path": "../avatar_02.jpg" },
-        { "id": "user_2", "label": "Nadia Chasey", "path": "../avatar_05.jpg" },
-        { "id": "user_3", "label": "Mike Young", "path": "../avatar_21.jpg" },
+        { "id": "user_1", "label": "Don Smith", "avatar": "../avatar_02.jpg" },
+        { "id": "user_2", "label": "Nadia Chasey", "avatar": "../avatar_05.jpg" },
+        { "id": "user_3", "label": "Mike Young", "avatar": "../avatar_21.jpg" },
         // more user objects
     ];
 

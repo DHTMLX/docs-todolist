@@ -40,7 +40,7 @@ const { ToDo, Toolbar } = todo;
 
 const list = new ToDo("#root", {
 	tasks: [
-        { id: "1", text: "Task 1 #tag1" },
+        { id: "1", text: "Task 1 #tag1 #tag3" },
 		{ id: "1.1", text: "Task 1.1", parent: "1" },
         { id: "1.1.1", text: "Task 1.1.1 #tag1", parent: "1.1" },
 		{ id: "1.2", text: "Task 1.2", parent: "1" },
@@ -55,7 +55,7 @@ const toolbar = new Toolbar("#toolbar", {
 console.log(list.hasChildren({ id: "1.1" })); // -> true
 
 // filter the tasks
-list.setFilter({ match: "3", highlight: true });
+list.setFilter({ match: "#tag3", highlight: true });
 
 // check whether the task has children (after filtering)
 console.log(list.hasChildren({ id: "1.1" })); // -> true

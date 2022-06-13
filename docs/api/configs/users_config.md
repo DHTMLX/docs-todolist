@@ -17,7 +17,7 @@ users?: [
     {
         id: string | number,
         label: string,
-        path?: string,
+        avatar?: string,
         color?: string,
     },
     {...} // more user objects
@@ -30,7 +30,7 @@ The **users** property presents an array of user objects. Each object includes t
 
 - `id` - (required) the id of a user
 - `label` - (required) the description of the user
-- `path` - (optional) a path to the image of the user
+- `avatar` - (optional) a path to the image of the user
 - `color` - (optional) the color of the user if the image isn't uploaded<br>
 :::info
 If the **color** parameter is not specified, the color from the default set of colors will be applied.
@@ -71,12 +71,12 @@ const users = [
     { 
         id: "user_1",
         label: "John",
-        path: "../avatar_02.jpg" 
+        avatar: "../avatar_02.jpg" 
     },
     { 
         id: "user_2", 
         label: "Kate",
-        path: "../avatar_03.jpg"  
+        avatar: "../avatar_03.jpg"  
     },
 ];
 

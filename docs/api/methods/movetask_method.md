@@ -66,6 +66,13 @@ list.moveTask({
     targetId: "2.1",
     reverse: true
 });
+
+// move "Task 1.1" to "Project 2" and place it after "Task 2.1"
+list.moveTask({ 
+    id: "1.1",
+    project:"p_2",
+    parent: "2",
+});
 ~~~
 
 **Related article:** [Operations with tasks](guides/task_operations.md)

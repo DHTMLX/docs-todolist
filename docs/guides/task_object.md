@@ -83,7 +83,7 @@ To check whether a task has child tasks, apply the [hasChildren()](api/methods/h
 
 ~~~js
 const tasks = [
-    { id: "1", text: "Task 1 #tag1" },
+    { id: "1", text: "Task 1 #tag1 #tag3" },
     { id: "1.1", text: "Task 1.1", parent: "1" },
     { id: "1.1.1", text: "Task 1.1.1 #tag1", parent: "1.1" },
     { id: "1.2", text: "Task 1.2", parent: "1" },
@@ -99,7 +99,7 @@ If you apply filtering, some tasks can become invisible on the page. The **filte
 
 ~~~js
 // filter the tasks
-list.setFilter({ match: "3", highlight: true });
+list.setFilter({ match: "#tag3", highlight: true });
 
 // check whether the task has children (after filtering)
 console.log(list.hasChildren({ id: "1.1" })); // -> true

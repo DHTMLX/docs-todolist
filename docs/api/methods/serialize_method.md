@@ -13,18 +13,22 @@ description: You can learn about the serialize method in the documentation of th
 ### Usage
 
 ~~~js
-serialize(): {
-    tasks: [{...}, {...}, ...],
-    users: [{...}, {...}, ...],
-    projects: [{...}, {...}, ...],
-    tags: [],
-    activeProject: string,
-};
+serialize(): object;
 ~~~
 
 ### Returns
 
-The method returns serialized data of the component
+The method returns serialized data of the To Do List
+
+~~~js
+{
+    tasks: [],
+    users: [],
+    projects: [],
+    tags: [],
+    activeProject: string,
+}
+~~~
 
 ### Example
 

@@ -10,10 +10,10 @@ The list of users is specified via the [users](../../api/configs/users_config/) 
 
 ~~~js
 const users = [
-    { id: "user_1", label: "Don Smith", path: "../avatar_61.jpg"},
-    { id: "user_2", label: "Nadia Chasey", path: "../avatar_63.jpg" },
-    { id: "user_3", label: "Mike Young", path: "../avatar_03.jpg" },
-    { id: "user_4", label: "Elvira Webb", path: "../avatar_33.jpg" }
+    { id: "user_1", label: "Don Smith", avatar: "../avatar_61.jpg"},
+    { id: "user_2", label: "Nadia Chasey", avatar: "../avatar_63.jpg" },
+    { id: "user_3", label: "Mike Young", avatar: "../avatar_03.jpg" },
+    { id: "user_4", label: "Elvira Webb", avatar: "../avatar_33.jpg" }
 ];
 
 const list = new ToDo("#root", { users });
@@ -32,7 +32,7 @@ const tasks = [
 ];
 
 const users = [
-    { id: "user_1", label: "Don Smith", path: "../avatar_61.jpg"},
+    { id: "user_1", label: "Don Smith", avatar: "../avatar_61.jpg"},
     ...
 ];
 

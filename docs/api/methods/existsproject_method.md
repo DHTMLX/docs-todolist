@@ -8,7 +8,7 @@ description: You can learn about the existsProject method in the documentation o
 
 ### Description
 
-@short: Checks whether the specified project exists in the component
+@short: Checks whether the specified project exists in DataStore
 
 
 ### Usage

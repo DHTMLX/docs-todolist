@@ -8,7 +8,7 @@ description: You can learn about the existsTask method in the documentation of t
 
 ### Description
 
-@short: Checks whether the specified task exists in the component
+@short: Checks whether the specified task exists in DataStore
 
 
 ### Usage

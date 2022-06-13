@@ -8,7 +8,7 @@ description: You can learn about the parse method in the documentation of the DH
 
 ### Description
 
-@short: Loads data from a client-side resource
+@short: Loads data into To Do List
 
 ### Usage
 

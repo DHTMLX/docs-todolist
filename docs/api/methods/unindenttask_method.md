@@ -8,7 +8,7 @@ description: You can learn about the unindentTask method in the documentation of
 
 ### Description
 
-@short: Promotes the nesting level of the task to one higher level, depending on the nearby task in the data set
+@short: Promotes the nesting level of the task to one higher level, depending on the nearby task
 
 ### Usage
 

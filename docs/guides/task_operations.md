@@ -103,6 +103,10 @@ To delete a task, use the [deleteTask()](../../api/methods/deletetask_method/) m
 list.deleteTask({ id: "1.2" });
 ~~~
 
+:::note
+The method removes the task with all its child tasks
+:::
+
 ## Selecting/unselecting a task
 
 To select a particular task, pass the ID of the task as a parameter to the [selectTask()](../../api/methods/selecttask_method/) method:

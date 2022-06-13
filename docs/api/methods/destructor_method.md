@@ -20,7 +20,7 @@ destructor(): void;
 
 ### Example
 
-~~~js {14}
+~~~js {14,17}
 const { ToDo, Toolbar } = todo;
 const { tasks, users, projects, tags } = getData();
 
@@ -35,4 +35,7 @@ const toolbar = new Toolbar("#toolbar", {
 
 // remove List
 list.destructor();
+
+// remove Toolbar
+toolbar.destructor();
 ~~~

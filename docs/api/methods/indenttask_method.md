@@ -8,7 +8,7 @@ description: You can learn about the indentTask method in the documentation of t
 
 ### Description
 
-@short: Demotes the nesting level of the task to one lower level, depending on the nearby task in the data set
+@short: Demotes the nesting level of the task to one lower level, depending on the nearby task
 
 ### Usage
 

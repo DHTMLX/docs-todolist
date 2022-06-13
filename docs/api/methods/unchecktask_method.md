@@ -26,7 +26,7 @@ uncheckTask({
 
 ### Example
 
-~~~js {21-24,26-29}
+~~~js {22-25}
 const { ToDo, Toolbar } = todo;
 
 const list = new ToDo("#root", {
@@ -42,13 +42,14 @@ const toolbar = new Toolbar("#toolbar", {
 	api: list.api,
 });
 
-
+// mark the task as completed
 list.checkTask({ 
-    id: "1.1.1", // mark the task as completed in the "auto" mode
+    id: "1.1.1", 
 });
 
+// mark the specified task as uncompleted
 list.uncheckTask({ 
     id: "1.1.1",
-    manual: true // mark the task as uncompleted in the "manual" mode
+    manual: true // 'true' - ignores the value of the "behavior" attribute of the "selectable" parameter of the "taskShape" property
 });
 ~~~

@@ -8,7 +8,11 @@ description: You can learn about the deleteTask method in the documentation of t
 
 ### Description
 
-@short: Removes the specified task from the datastore 
+@short: Removes the specified task from DataStore 
+
+:::note
+The method removes the task with all its child tasks
+:::
 
 ### Usage
 

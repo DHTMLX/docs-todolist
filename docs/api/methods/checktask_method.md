@@ -26,7 +26,7 @@ checkTask({
 
 ### Example
 
-~~~js {16-19,21-24}
+~~~js {17-20}
 const { ToDo, Toolbar } = todo;
 
 const list = new ToDo("#root", {
@@ -42,9 +42,10 @@ const toolbar = new Toolbar("#toolbar", {
 	api: list.api,
 });
 
+// mark the specified task as completed
 list.checkTask({ 
     id: "1.1.1",
-    manual: true // mark the specified task as completed in the "manual" mode
+    manual: true  // 'true' - ignores the value of the "behavior" attribute of the "selectable" parameter of the "taskShape" property
 });
 ~~~
 
