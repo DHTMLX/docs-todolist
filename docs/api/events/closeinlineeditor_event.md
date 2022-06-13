@@ -51,3 +51,5 @@ list.api.on("close-inline-editor", ({id, save}) => {
     console.log("The inline editor is closed for the", id, "item"); 
 });
 ~~~
+
+**Related article:** [Inline editing](guides/inline_editing.md#working-with-editor)

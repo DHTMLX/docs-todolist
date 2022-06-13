@@ -50,7 +50,7 @@ const toolbar = new Toolbar("#toolbar", {
 ~~~
 
 :::tip
-By default, the first project from the list of project objects will be loaded as an active project. To specify any other project as an active one, use the [activeProject](api/configs/activeproject_config.md) property
+By default, the first project from the list of project objects will be loaded as an active project. To specify any other project as an active one, use the [`activeProject`](api/configs/activeproject_config.md) property
 :::
 
 **Related articles:** 

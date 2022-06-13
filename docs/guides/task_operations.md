@@ -118,7 +118,7 @@ list.selectTask({
 ~~~
 
 :::tip
-To get the ID of the currently selected task, use the [getSelectionTask()](../../api/methods/getselectiontask_method/) method
+To get the ID of the currently selected task, use the [`getSelectionTask()`](../../api/methods/getselectiontask_method/) method
 :::
 
 To remove selection from a selected task, pass the ID of the task as a parameter to the [unselectTask()](../../api/methods/unselecttask_method/) method:
@@ -176,7 +176,7 @@ list.uncheckTask({
 
 ## Changing the indent level of a task
 
-To change the nesting level a task dynamically, use the following two methods:
+To change the nesting level of a task dynamically, use the following two methods:
 
 - [indentTask()](../../api/methods/indenttask_method/) - to demote the nesting level of a task to one lower level
 

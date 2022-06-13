@@ -51,3 +51,5 @@ list.api.on("edit-item", ({id, currentValue}) => {
     console.log("The current value of the", id, "item is", currentValue); 
 });
 ~~~
+
+**Related article:** [Inline editing](guides/inline_editing.md)

@@ -51,3 +51,5 @@ list.api.on("update-task", ({id, task}) => {
     console.log("The", id, "task is updated. New task object is", task);
 });
 ~~~
+
+**Related article:** [Operations with tasks](guides/task_operations.md#updating-a-task)

@@ -60,4 +60,4 @@ list.api.on("add-task", (obj) => {
 });
 ~~~
 
-**Related article:** [Operations with tasks](guides/task_operations.md)
+**Related article:** [Operations with tasks](guides/task_operations.md#adding-a-new-task)

@@ -55,3 +55,5 @@ list.api.on("paste-task", (obj) => {
     console.log("The task is pasted", obj); 
 });
 ~~~ 
+
+**Related article:** [Operations with tasks](guides/task_operations.md#copyingpasting-a-task)

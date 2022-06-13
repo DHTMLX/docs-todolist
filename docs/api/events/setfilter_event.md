@@ -56,3 +56,5 @@ list.api.on("set-filter", (obj) => {
 });
 ~~~
 
+**Related article:** [Operations with tasks](guides/task_operations.md#filtering-tasks)
+

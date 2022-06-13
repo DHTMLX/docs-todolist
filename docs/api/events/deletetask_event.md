@@ -49,3 +49,5 @@ list.api.on("delete-task", ({id}) => {
     console.log("The", id, "task is removed"); 
 });
 ~~~
+
+**Related article:** [Operations with tasks](guides/task_operations.md#deleting-a-task)

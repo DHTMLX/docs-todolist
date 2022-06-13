@@ -49,3 +49,5 @@ list.api.on("indent-task", ({id}) => {
     console.log("The nesting level of the", id, "task is demoted by one"); 
 });
 ~~~ 
+
+**Related article:** [Operations with tasks](guides/task_operations.md#changing-the-indent-level-of-a-task)

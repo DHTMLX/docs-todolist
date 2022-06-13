@@ -51,3 +51,5 @@ list.api.on("open-inline-editor", ({id, save}) => {
     console.log("The inline editor is opened for the", id, "item"); 
 });
 ~~~
+
+**Related article:** [Inline editing](guides/inline_editing.md#working-with-editor)

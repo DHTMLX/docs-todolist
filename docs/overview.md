@@ -30,7 +30,7 @@ The interface of the To Do List component consists of two parts: [Toolbar](#tool
 ![toolbar](assets/project_menu.png)
 
 :::info
-You can change the toolbar structure by adding custom elements or changing the order of the built-in controls. Read more in the [Configuration](guides/configuration.md#toolbar) and [Customization](guides/customization.md#toolbar) sections.
+You can change the toolbar structure by adding custom elements or changing the order of the built-in controls. Read more in the [**Configuration**](guides/configuration.md#toolbar) and [**Customization**](guides/customization.md#toolbar) sections.
 :::
 
 ### List
@@ -79,7 +79,7 @@ The **list of tasks** is the main part of the To Do List interface intended for 
 - To delete a task, select the task and press `Backspace`/`Delete`
 
 :::info
-For more details about all available keyboard shortcuts, follow the [reference](api/events/keypressontodo_event.md#keyboard-shortcuts).
+For more details about all available keyboard shortcuts, follow the [**reference**](api/events/keypressontodo_event.md#keyboard-shortcuts)
 :::
 
 ## What's next

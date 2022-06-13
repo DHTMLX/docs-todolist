@@ -49,3 +49,5 @@ list.api.on("expand-task", ({id}) => {
     console.log("The", id, "task is expanded"); 
 });
 ~~~ 
+
+**Related article:** [Operations with tasks](guides/task_operations.md#expandingcollapsing-a-task)

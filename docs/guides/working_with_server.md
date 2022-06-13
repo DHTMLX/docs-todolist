@@ -77,5 +77,5 @@ Promise.all([
 ~~~
 
 :::info
-You need to include **RestDataProvider** into the **Event Bus** order via the [**api.setNext()**](api/internal/setnext_method.md) method to perform operations with data (*adding, deleting,* etc) and send the corresponding requests to the server
+You need to include **RestDataProvider** into the **Event Bus** order via the [`api.setNext()`](api/internal/setnext_method.md) method to perform operations with data (*adding, deleting,* etc) and send the corresponding requests to the server
 :::

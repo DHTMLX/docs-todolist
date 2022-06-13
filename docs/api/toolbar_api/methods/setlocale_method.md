@@ -131,7 +131,7 @@ toolbar.setLocale(de, list.api);
 ~~~
 
 :::info
-The **Toolbar** of the To do list is a separate component. Before changing its locale, be sure that you have already applied the [setLocale()](api/toolbar_api/methods/setlocale_method.md) method to the **To do list** component
+The **Toolbar** of the To do list is a separate component. Before changing its locale, be sure that you have already applied the [`setLocale()`](api/toolbar_api/methods/setlocale_method.md) method to the **To do list** component
 :::
 
 **Related article:** [Localization](guides/localization.md)

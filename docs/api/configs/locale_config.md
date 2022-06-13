@@ -45,11 +45,11 @@ const toolbar = new Toolbar("#toolbar", {
 
 
 :::info
-The Toolbar is a separate component of To do list . Thus, you also need to apply the necessary locale to the **Toolbar** via the related [locale](api/toolbar_api/configs/locale_config.md) property
+The Toolbar is a separate component of To do list . Thus, you also need to apply the necessary locale to the **Toolbar** via the related [`locale`](api/toolbar_api/configs/locale_config.md) property
 :::
 
 :::tip
-To change the locale dynamically, use the [setLocale()](api/methods/setlocale_method.md) method
+To change the locale dynamically, use the [`setLocale()`](api/methods/setlocale_method.md) method
 :::
 
 **Related article:** [Localization](guides/localization.md)

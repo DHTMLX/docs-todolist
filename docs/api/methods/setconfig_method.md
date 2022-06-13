@@ -15,7 +15,7 @@ Using this method, you can change configuration of the To do list widget. The me
 :::
 
 :::info
-It is also possible to load data into the To Do List via the method, but we recommend that you use the [parse()](api/methods/parse_method.md) method for this purpose
+It is also possible to load data into the To Do List via the method, but we recommend that you use the [`parse()`](api/methods/parse_method.md) method for this purpose
 :::
 
 ### Usage
@@ -57,5 +57,5 @@ toolbar.setConfig({
 ~~~
 
 :::info
-The To do list won't be rendered correctly until you call the [setConfig()](api/toolbar_api/methods/setconfig_method.md) method of the Toolbar component
+The To do list won't be rendered correctly until you call the [`setConfig()`](api/toolbar_api/methods/setconfig_method.md) method of the Toolbar component
 :::

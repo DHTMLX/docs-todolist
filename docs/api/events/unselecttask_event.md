@@ -48,3 +48,5 @@ list.api.on("unselect-task", ({id}) => {
     console.log("The", id, "task is unselected");
 });
 ~~~
+
+**Related article:** [Operations with tasks](guides/task_operations.md#selectingunselecting-a-task)

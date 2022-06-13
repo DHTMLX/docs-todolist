@@ -8,11 +8,11 @@ description: You can learn how to manage projects in the documentation of the DH
 
 
 :::info
-To configure projects, use the [projects](api/configs/projects_config/) property of To do list.
+To configure projects, use the [`projects`](api/configs/projects_config/) property of To do list.
 
-To define what project a task will belong to, you need to pass the id of the necessary project to the **project** parameter of the related [task](api/configs/tasks_config.md) object
+To define what project a task will belong to, you need to pass the id of the necessary project to the **project** parameter of the related [`task`](api/configs/tasks_config.md) object
 
-To make a certain project active on initialization of To do list, use the [activeProject](../../api/configs/activeproject_config/) property.
+To make a certain project active on initialization of To do list, use the [`activeProject`](../../api/configs/activeproject_config/) property.
 :::
 
 

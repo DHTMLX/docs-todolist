@@ -49,3 +49,5 @@ list.api.on("collapse-task", ({id}) => {
     console.log("The", id, "task is collapsed"); 
 });
 ~~~ 
+
+**Related article:** [Operations with tasks](guides/task_operations.md#expandingcollapsing-a-task)

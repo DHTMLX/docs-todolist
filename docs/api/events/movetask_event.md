@@ -57,3 +57,5 @@ list.api.on("move-task", ({id}) => {
     console.log("The", id, "task is moved"); 
 });
 ~~~ 
+
+**Related article:** [Operations with tasks](guides/task_operations.md#moving-a-task)

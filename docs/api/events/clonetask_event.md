@@ -58,4 +58,4 @@ list.api.on("clone-task", (obj) => {
 });
 ~~~
 
-**Related article:** [Operations with tasks](guides/task_operations.md)
+**Related article:** [Operations with tasks](guides/task_operations.md#copyingpasting-a-task)

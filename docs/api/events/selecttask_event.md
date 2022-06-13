@@ -49,3 +49,5 @@ list.api.on("select-task", ({id}) => {
     console.log("The", id, "task is selected");
 });
 ~~~
+
+**Related article:** [Operations with tasks](guides/task_operations.md#selectingunselecting-a-task)

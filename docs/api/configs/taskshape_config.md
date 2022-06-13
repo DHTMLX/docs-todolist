@@ -113,7 +113,7 @@ DHTMLX To Do List uses the following characters for setting a date format:
 | **%Y**    | year as a number, 4 digits                        |
 
 :::tip
-Check the [Localization](guides/localization.md) article to learn how to present the date labels in the necessary language
+Check the [**Localization**](guides/localization.md) article to learn how to present the date labels in the necessary language
 :::
 
 **Related article:** [Configuration](guides/configuration.md#tasks)
