@@ -1,31 +1,50 @@
-# SVAR To Do List Documentation
+<h1 align="center"><a href="https://docs.dhtmlx.com/todolist/">DHTMLX To Do List Documentation</a></h1>
 
-### Installation
+DHTMLX To Do List is an easy to use component for maintaining the tasks. To do list is a great planning tool that helps to achieve your goals and save the time. The component allows you to create infinite number of projects, add unlimited number of tasks and subtasks there, drag and drop tasks to change their order or priority level, and much more. 
+
+## Explore documentation locally
+
+To run the To Do List documentation locally, take the following steps:
+
+#### 1. Clone the documentation to the local folder
+
+```
+$ git clone git@github.com:DHTMLX/docs-todolist.git
+$ cd docs-todolist
+```
+
+#### 2. Install dependencies
 
 ```
 $ yarn
 ```
 
-### Local Development
+#### 3. Run the documentation on the local server and explore it
 
 ```
 $ yarn start
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+## Related sources
 
-### Build
+[Download DHTMLX To Do List]()
 
-```
-$ yarn build
-```
+[Live demos]()
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+[Blog]()
 
-### Deployment
+[Forum]()
 
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
+## Follow us
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Star our GitHub repo :star:
+
+Watch our tutorials on [YouTube](https://www.youtube.com/user/dhtmlx/videos) :eyes:
+
+Read us on [Medium](https://medium.com/@dhtmlx) :newspaper:
+
+Follow us on [Twitter](https://twitter.com/dhtmlx) :feet:
+
+Like our page on [Facebook](https://www.facebook.com/dhtmlx/) :thumbsup:
+
+See our news on [Linkedin](https://www.linkedin.com/groups/3345009/) :mega:
