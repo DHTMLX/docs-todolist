@@ -58,21 +58,54 @@ const toolbar = new Toolbar("#toolbar", {
 	api: list.api,
 });
 
-// move "Task 1.1" to "Project 2" and place it before "Task 2.1"
+// move "Task 1.1" to "Project 2" and place it before "Task 2.1.1" as a child of "Task 2.1"
 list.moveTask({ 
     id: "1.1",
     project:"p_2",
-    parent: "2",
-    targetId: "2.1",
+    parent: "2.1",
+    targetId: "2.1.1",
     reverse: true
 });
+~~~
 
-// move "Task 1.1" to "Project 2" and place it after "Task 2.1"
+The example below shows where the task will be moved if you specify only the **parent** and, optionally, **reverse** parameters:
+
+~~~js {5,12-13}
+// move "Task 1.1" to "Project 2" and place it after "Task 2.1" as a child of "Task 2"
 list.moveTask({ 
     id: "1.1",
     project:"p_2",
     parent: "2",
 });
+
+// move "Task 1.1" to "Project 2" and place it before "Task 2.1" as a child of "Task 2"
+list.moveTask({ 
+    id: "1.1",
+    project:"p_2",
+    parent: "2",
+    reverse: true
+});
 ~~~
+
+The example below shows where the task will be moved if you specify only the **targetId** and, optionally, **reverse** parameters:
+
+~~~js {5,12-13}
+// move "Task 1.1" to "Project 2" and place it after "Task 2" as a root task
+list.moveTask({ 
+    id: "1.1",
+    project:"p_2",
+    targetId: "2",
+});
+
+// move "Task 1.1" to "Project 2" and place it before "Task 2" as a root task
+list.moveTask({ 
+    id: "1.1",
+    project:"p_2",
+    targetId: "2",
+    reverse: true
+});
+~~~
+
+
 
 **Related article:** [Operations with tasks](guides/task_operations.md)

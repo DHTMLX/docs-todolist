@@ -48,7 +48,7 @@ Released on ...
     - [date format](guides/configuration.md#date-format)
     - [due date validation](guides/configuration.md#due-date-validation)
     - [mode of marking tasks complete](guides/configuration.md#mode-of-marking-tasks-complete)
-- Ability to [configure](guides/configuration.md#toolbar) and [customize](guides/customization.md#toolbar) **Toolbar**
+- The ability to [configure](guides/configuration.md#toolbar) and [customize](guides/customization.md#toolbar) **Toolbar**
 - [Keyboard navigation](api/events/keypressontodo_event.md#keyboard-shortcuts)
 - [Read-only mode](guides/readonly_mode.md)
 - [Localization](guides/localization.md)
