@@ -41,8 +41,10 @@ The **RestDataProvider** service includes the special REST methods for dynamic d
 
 To interact with the server, you need to connect **RestDataProvider** to the corresponding server scripts. If you want to use the built-in backend, you can find the needed scripts in the following repositories:
 
+```todo
 - Go backend
 - Node backend
+```
 
 or you can create a custom one.
 
@@ -52,7 +54,7 @@ To connect **RestDataProvider** to the backend, you need to call the **new RestD
 const { ToDo, Toolbar, RestDataProvider } = todo;
 
 const activeProject = null;
-const url = "http://localhost:3000";
+const url = "https://some_backend_url";
 const restProvider = new RestDataProvider(url);
 Promise.all([
 	restProvider.getProjectTasks(activeProject),
@@ -79,3 +81,17 @@ Promise.all([
 :::info
 You need to include **RestDataProvider** into the **Event Bus** order via the [`api.setNext()`](api/internal/setnext_method.md) method to perform operations with data (*adding, deleting,* etc) and send the corresponding requests to the server
 :::
+
+## Examples
+
+### Backend (Go)
+
+The snippet below shows you how to connect **RestDataProvider** to the **Go** backend and load server data dynamically:
+
+<iframe src="https://snippet.dhtmlx.com/hnk06gm7?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
+
+### Backend (Node.js)
+
+The following snippet demonstrates how to connect **RestDataProvider** to the **Node.js** backend and load server data dynamically:
+
+<iframe src="https://snippet.dhtmlx.com/r8cg7chn?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>

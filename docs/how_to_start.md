@@ -79,7 +79,7 @@ You don't need this step if you use the **new todo.ToDo()** and **new todo.Toolb
 :::
 
 :::info
-Toolbar is an optional part of the To Do List interface. To create a To Do List without the Toolbar, you can specify only one DIV container and initialize the widget via the constructor
+Toolbar is an optional part of the To Do List interface. To create a To Do List without the Toolbar, you can specify only one DIV container and initialize List via the **new ToDo()** constructor
 :::
 
 For more information about initialization of To Do List read the [Initialization](guides/initialization.md) article.

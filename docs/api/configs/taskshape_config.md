@@ -118,4 +118,6 @@ Check the [**Localization**](guides/localization.md) article to learn how to pre
 
 **Related article:** [Configuration](guides/configuration.md#tasks)
 
-**Related sample:** [To do list. Task shape config](https://snippet.dhtmlx.com/magidhw8)
+**Related samples:** 
+- [To do list. Subtask counter and date format](https://snippet.dhtmlx.com/magidhw8)
+- [To do list. Two variants of marking a parent task done](https://snippet.dhtmlx.com/5892fcr2)

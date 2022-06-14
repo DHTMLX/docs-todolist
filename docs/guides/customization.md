@@ -16,6 +16,4 @@ It is possible to customize the appearance of the toolbar. You can hide some def
 
 You can change the look and feel of To Do List by applying custom styles to it. For example:
 
-```todo
-add snippet
-```
+<iframe src="https://snippet.dhtmlx.com/thmx9921?mode=html" frameborder="0" class="snippet_iframe" width="100%" height="700"></iframe>
