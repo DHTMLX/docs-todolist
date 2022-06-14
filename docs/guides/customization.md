@@ -10,7 +10,7 @@ description: You can learn about the To Do List Customization in the documentati
 
 It is possible to customize the appearance of the toolbar. You can hide some default controls, add custom ones, and place them in the necessary order. To do that, use the [items](api/toolbar_api/configs/items_config.md) property of the Toolbar component. For instance:
 
-<iframe src="https://snippet.dhtmlx.com/jrnestbk?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
+<iframe src="https://snippet.dhtmlx.com/jrnestbk?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
 
 ## Styling To Do List
 
@@ -18,7 +18,7 @@ You can change the look and feel of To Do List by changing values of the [**CSS 
 
 Check the example:
 
-<iframe src="https://snippet.dhtmlx.com/thmx9921?mode=html" frameborder="0" class="snippet_iframe" width="100%" height="700"></iframe>
+<iframe src="https://snippet.dhtmlx.com/thmx9921?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="700"></iframe>
 
 ### List of CSS variables
 
