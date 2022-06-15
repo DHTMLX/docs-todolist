@@ -120,7 +120,7 @@ const de = {
 ~~~
 
 :::tip
-To create a custom locale, you can make a copy of the default ([English](#default-locale)) locale, and translate all strings from it into the required language.
+To create a custom locale, you can make a copy of the default ([English](#default-locale)) locale, and translate text labels from it into the required language.
 :::
 
 :::info
