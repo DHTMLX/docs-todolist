@@ -6,62 +6,13 @@ description: You can learn about the To Do List localization in the documentatio
 
 # Localization
 
-You can present the interface of DHTMLX To Do List in any language. The library provides a number of predefined locales and gives the ability to create custom ones.
-
-## Built-in locales
-
-The library includes the built-in localization for the following languages: 
-
-- Chinese (**cn**)
-- English (**en**) - default
-- German (**de**) 
-- Russian (**ru**)
-
-To access the locales, you need to run the following command:
-
-~~~js
-npm i @xbs/wx-todo-locales
-// or
-yarn add @xbs/wx-todo-locales
-~~~
-
-:::info
-The **en** locale is available by default but if needed you can export it right from the component:
-
-~~~js
-const { ToDo, Toolbar, en } = todo;
-~~~
-:::
-
-## Activating a locale
-
-To initialize the To Do List component in non-English language, you need to apply the necessary locale to the To Do List component and its toolbar via the corresponding **locale** properties:
-
-~~~js {8,13}
-const { ToDo, Toolbar} = todo;
-const { tasks, users, projects, tags } = getData();
-
-const list = new ToDo("#root", {
-    tasks,
-    users,
-    projects,
-    locale: de // sets the "de" locale in the component
-});
-
-const toolbar = new Toolbar("#toolbar", {
-    api: list.api,
-    locale: de // sets the "de" locale in the Toolbar
-});
-~~~
-
-:::tip
-To change the locale dynamically, use the related **setLocale()** methods of To do list and Toolbar
-:::
+You can present the interface of DHTMLX To Do List in any language. The library provides a number of predefined locales and gives the ability to create custom ones. By default, DHTMLX To Do List uses [English locale](#default-locale).
 
 ## Default locale
 
 ~~~js
 const en = {
+	// calendar
 	calendar:{
 		monthFull: [
 			"January",
@@ -106,6 +57,7 @@ const en = {
 		done: "Done",
 		today: "Today",
 	},
+	// To Do List
 	todo: {
 		// Toolbar
 		"No project": "No project",
@@ -150,17 +102,64 @@ const en = {
 };
 ~~~
 
-## Creating a custom locale
+## Custom locale
 
-The easiest way to create a custom locale is to make a copy of the default (English) locale presented above, and translate all strings from it into the required language.
+To initialize the To Do List component in non-English language, you need to:
 
-To apply the custom locale, use either of the following ways:
+- define necessary language settings: provide translations for all text labels (it can be any language you need)
 
-- activate the locale on initialization of the To Do List component via the [locale](api/configs/locale_config.md) property
-- or override the current locale via the [setLocale()](api/methods/setlocale_method.md) method
+~~~js
+const de = {
+    calendar: {
+        // translations for calendar labels
+    },
+    todo: {
+        // translations for To Do List labels
+    },
+};
+~~~
+
+:::tip
+To create a custom locale, you can make a copy of the default ([English](#default-locale)) locale, and translate all strings from it into the required language.
+:::
 
 :::info
-Don't forget to apply the custom locale to the Toolbar component as well
+You can download [**a repository from GitHub**](https://github.com/web-widgets/wx-todo-locales/tree/master/locales) which includes locales of the To Do List for the following languages: 
+
+- Chinese (**cn**)
+- French (**fr**)
+- German (**de**)
+- English (**en**)
+- Italian (**it**) 
+- Japanese (**jp**) 
+- Portuguese (**pt**) 
+- Russian (**ru**)
+- Spanish (**es**)
+
+*The files don't include translations for the Calendar labels therefore you will need to add them yourself.*
+:::
+
+- apply the necessary locale to the To Do List component and its Toolbar via the corresponding **locale** properties:
+
+~~~js {8,13}
+const { ToDo, Toolbar} = todo;
+const { tasks, users, projects, tags } = getData();
+
+const list = new ToDo("#root", {
+    tasks,
+    users,
+    projects,
+    locale: de // sets the "de" locale in the component
+});
+
+const toolbar = new Toolbar("#toolbar", {
+    api: list.api,
+    locale: de // sets the "de" locale in the Toolbar
+});
+~~~
+
+:::tip
+To change the locale dynamically, use the related `setLocale()` methods of the [To do list](api/methods/setlocale_method.md) and [Toolbar](api/toolbar_api/methods/setlocale_method.md)
 :::
 
 ## Example
