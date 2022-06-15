@@ -55,7 +55,7 @@ The **list of tasks** is the main part of the To Do List interface intended for 
 ### Editing tasks
 
 - To edit a task, double-click on the task record in the list or press `Ctrl (Cmd) + Enter`. Then, make the changes and press `Enter`
-> It is possible to enter text, numbers, emojis, hashtags, dates. For more details, read [Supported formats of data](guides/inline_editing.md#supported-formats-of-data).
+> It is possible to enter text, numbers, hashtags, dates. For more details, read [Supported formats of data](guides/inline_editing.md#supported-formats-of-data).
 
 - To mark a task as complete/incomplete, press `Space` or click on the checkbox to the left of the task
 

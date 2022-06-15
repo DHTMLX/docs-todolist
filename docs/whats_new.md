@@ -13,7 +13,7 @@ Released on ...
 ### Initial functionality
 
 - The ability [to load data for **tasks**, **projects**, **users**, **tags**, **activeProject**](guides/loading_data.md)
-- The ability to work with **projects** in the following way:
+- The ability to work with **projects** in the following ways:
     - [via API](guides/project_index.md):
         - [change the active project](api/methods/setproject_method.md)
         - [add new projects](api/methods/addproject_method.md)
@@ -23,7 +23,7 @@ Released on ...
         - switch between projects
         - add, rename, or delete projects
         - search for the necessary projects
-- The ability to work with **tasks** in the following way:
+- The ability to work with **tasks** in the following ways:
     - [via API](guides/task_index.md):
         - [add new tasks](api/methods/addtask_method.md)
         - [update tasks](api/methods/updatetask_method.md)
@@ -40,7 +40,7 @@ Released on ...
         - add, copy and paste, select, move, indent/unindent, delete tasks
         - search for tasks (by symbols or hashtags)
         - edit tasks:
-            - [edit the content of a task by double-click on it](guides/inline_editing.md): enter text, numbers, emojis, hashtags, dates
+            - [edit the content of a task by double-click on it](guides/inline_editing.md): enter text, numbers, hashtags, dates
             - assign/unassign users
             - set due date
 - The ability to configure **tasks appearance and behavior**:
@@ -53,7 +53,7 @@ Released on ...
 - [Read-only mode](guides/readonly_mode.md)
 - [Localization](guides/localization.md)
 - [Backend integration](guides/working_with_server.md) (Go and Node)
-- Integration with other DHTMLX widgets
+- [Integration with other DHTMLX widgets](guides/integration.md)
 - Cross browser compatibility
 
 ### API

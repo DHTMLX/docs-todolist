@@ -16,13 +16,13 @@ When you enable the [**readonly**](api/configs/readonly_config.md) mode of To Do
 
 It is possible to type and edit the following types of information via the inline editor:
 
-1\. **Text, numbers, emojis**
+1\. **Text, numbers**
 
 2\. **Hashtags**
 
 Use hashtags to categorize tasks and make them more searchable. Here are some simple rules to know:
 
-- Hashtag is a combination of the `#` symbol and any letters, numbers, or emojis (for instance, **#sport**)
+- Hashtag is a combination of the `#` symbol and any letters, numbers (for instance, **#sport**)
 - To create a hashtag, enter `#` and at least one symbol after it (for instance, **#t**), and press Enter
 - You can use unlimited number of hashtags in To Do List. Separate the tags by spaces (for instance, **#tag #tag1**) 
 - All created hashtags are accessible in all projects
