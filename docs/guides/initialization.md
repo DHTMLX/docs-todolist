@@ -17,7 +17,7 @@ To create or, in other words, to display To Do List on the page, you need to tak
 
 ## Include source files
 
-[Download the To Do List package] and unpack it into a folder of your project.
+[Download the To Do List package](https://dhtmlx.com/docs/products/dhtmlxTodo/download.shtml) and unpack it into a folder of your project.
 
 To create To Do List, you need to include 2 source files on your page:
 

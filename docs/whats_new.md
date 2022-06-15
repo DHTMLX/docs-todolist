@@ -8,7 +8,7 @@ description: You can learn a new information about DHTMLX JavaScript To Do List 
 
 ## Version 1.0
 
-Released on ...
+Released on June 20, 2022
 
 ### Initial functionality
 

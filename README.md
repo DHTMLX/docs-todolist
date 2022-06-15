@@ -27,13 +27,13 @@ $ yarn start
 
 ## Related sources
 
-[Download DHTMLX To Do List]()
+[Download DHTMLX To Do List](https://dhtmlx.com/docs/products/dhtmlxTodo/download.shtml)
 
-[Live demos]()
+[Live demos](https://snippet.dhtmlx.com/3vwlbwee?text=%23todolist)
 
-[Blog]()
+[Blog](https://dhtmlx.com/blog/tag/todo/)
 
-[Forum]()
+[Forum](https://forum.dhtmlx.com/c/todo)
 
 ## Follow us
 

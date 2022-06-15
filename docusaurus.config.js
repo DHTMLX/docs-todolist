@@ -125,7 +125,6 @@ const onAfterDataTransformation = (data) => {
 };
 
 module.exports = {
-    noIndex: true, // TODO: delete before release
     title: 'DHTMLX JavaScript To Do List Docs',
     tagline: 'DHTMLX JavaScript To Do List Docs',
     url: 'https://docs.dhtmlx.com',
@@ -193,12 +192,12 @@ module.exports = {
             },
             items: [{
                     label: 'Examples',
-                    href: 'https://snippet.dhtmlx.com/xdvi4fek?text=%23diagram', // Todo change before release
+                    href: 'https://snippet.dhtmlx.com/3vwlbwee?text=%23todolist', // Todo change before release
                     position: 'right',
                 },
                 {
                     label: 'Forum',
-                    href: 'https://forum.dhtmlx.com/c/widgets/diagram/', // Todo change before release
+                    href: 'https://forum.dhtmlx.com/c/todo', // Todo change before release
                     position: 'right'
                 },
                 {
@@ -208,7 +207,7 @@ module.exports = {
                 },
                 {
                     label: 'Download',
-                    href: 'https://dhtmlx.com/docs/products/dhtmlxTodolist/download.shtml', // Todo change before release
+                    href: 'https://dhtmlx.com/docs/products/dhtmlxTodo/download.shtml', // Todo change before release
                     position: 'right',
                 },
             ],
@@ -220,21 +219,21 @@ module.exports = {
                     title: 'Development center',
                     items: [{
                             label: 'Download To Do List',
-                            href: 'https://dhtmlx.com/docs/products/dhtmlxDiagram/download.shtml', // Todo change before release
+                            href: 'https://dhtmlx.com/docs/products/dhtmlxTodo/download.shtml', // Todo change before release
                             position: 'right',
                         },
                         {
                             label: 'Examples',
-                            href: 'https://snippet.dhtmlx.com/xdvi4fek?text=%23diagram', // Todo change before release
+                            href: 'https://snippet.dhtmlx.com/3vwlbwee?text=%23todolist', // Todo change before release
                             position: 'right',
                         },
                         {
                             label: 'Blog',
-                            href: 'https://dhtmlx.com/blog/',
+                            href: 'https://dhtmlx.com/blog/tag/todo/',
                         },
                         {
                             label: 'Forum',
-                            href: 'https://forum.dhtmlx.com/c/widgets/diagram/', // Todo change before release
+                            href: 'https://forum.dhtmlx.com/c/todo', // Todo change before release
                             position: 'right'
                         },
                     ],
@@ -277,7 +276,7 @@ module.exports = {
                         },
                         {
                             label: 'Licensing',
-                            href: 'https://dhtmlx.com/docs/products/dhtmlxDiagram/#licensing', // Todo change before release
+                            href: 'https://dhtmlx.com/docs/products/dhtmlxTodo/#licensing', // Todo change before release
                         },
                     ],
                 },

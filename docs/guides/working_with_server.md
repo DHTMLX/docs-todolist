@@ -41,10 +41,8 @@ The **RestDataProvider** service includes the special REST methods for dynamic d
 
 To interact with the server, you need to connect **RestDataProvider** to the corresponding server scripts. If you want to use the built-in backend, you can find the needed scripts in the following repositories:
 
-```todo
-- Go backend
-- Node backend
-```
+- [**Go**](https://github.com/web-widgets/todo-go) backend
+- [**Node**](https://github.com/web-widgets/todo-node) backend
 
 or you can create a custom one.
 

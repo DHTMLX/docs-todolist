@@ -12,8 +12,11 @@ This tutorial will teach you how to create a fully featured To Do List and add i
 
 After completing all the steps below, you will get a ready-to-use To Do List which you can easily configure to suite your needs and efficiently use in real life.
 
-
 ## Step 1. Include source files
+
+:::info
+Download the To Do List package [**here**](https://dhtmlx.com/docs/products/dhtmlxTodo/download.shtml) and unpack it into a folder of your future project.
+:::
 
 At first, create an HTML file and call it *index.html*. Then include the source files of DHTMLX To Do List into this file.
 
