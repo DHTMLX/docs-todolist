@@ -35,8 +35,8 @@ description: You can explore the API methods in the documentation of the DHTMLX 
 | [](../methods/selecttask_method.md)        | @getshort(../methods/selecttask_method.md)        |
 | [](../methods/serialize_method.md)         | @getshort(../methods/serialize_method.md)         |
 | [](../methods/setconfig_method.md)         | @getshort(../methods/setconfig_method.md)         |
-| [](../methods/setlocale_method.md)         | @getshort(../methods/setlocale_method.md)         |
 | [](../methods/setfilter_method.md)         | @getshort(../methods/setfilter_method.md)         |
+| [](../methods/setlocale_method.md)         | @getshort(../methods/setlocale_method.md)         |
 | [](../methods/setproject_method.md)        | @getshort(../methods/setproject_method.md)        |
 | [](../methods/unassignuser_method.md)      | @getshort(../methods/unassignuser_method.md)      |
 | [](../methods/unchecktask_method.md)       | @getshort(../methods/unchecktask_method.md)       |

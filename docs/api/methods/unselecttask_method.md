@@ -24,7 +24,7 @@ unselectTask({
 
 ### Example
 
-~~~js {16,19}
+~~~js {17,20}
 const { ToDo, Toolbar } = todo;
 
 const list = new ToDo("#root", {
@@ -40,6 +40,7 @@ const toolbar = new Toolbar("#toolbar", {
 	api: list.api,
 });
 
+// select a task
 list.selectTask({ id: "1.1"});
 
 // unselect the selected task

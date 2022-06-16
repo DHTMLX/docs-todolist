@@ -26,7 +26,7 @@ You need to include the following two files:
 - the CSS file of To Do List
 
 
-~~~html title="index.html"
+~~~html title="index.html" {5-6}
 <!DOCTYPE html>
 <html>
     <head>
@@ -43,7 +43,7 @@ You need to include the following two files:
 ~~~
 ## Step 2. Create To Do List
 
-Now you can add To Do List to the page. For this, you should create two DIV containers to place To Do List its Toolbar into. So, your steps are:
+Now you can add a To Do List to the page. For this, you should create two DIV containers to place the To Do List and its Toolbar into. So, your steps are:
 
 - specify two DIV containers in the *index.html* file
 - initialize To Do List and its Toolbar via the **new ToDo()** and **new Toolbar()** constructors correspondingly
@@ -202,14 +202,14 @@ You can find more information on loading data into To Do List in the [Data loadi
 
 ## Step 4. Configure To Do List
 
-Now, you can define the desired configuration of To Do list. 
+Now, you can define the desired configuration of the To Do list. 
 
 As you already know, To Do List consists of two separate interfaces: List and Toolbar. And each of them possesses a separate list of configuration options:
 
 - check the list of [To Do List properties](api/overview/configs_overview.md)
 - check the list of [Toolbar properties](category/toolbar-properties.md)
 
-As an example, let's enable the *readonly* mode for To Do List, specify an active project, and show only the search bar in the toolbar:
+As an example, let's enable the *readonly* mode for your To Do List, specify an active project, and show only the search bar in the toolbar:
 
 ~~~js {5-6,11}
 const list = new ToDo("#root", {

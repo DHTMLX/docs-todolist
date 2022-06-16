@@ -17,7 +17,7 @@ The interface of the To Do List component consists of two parts: [Toolbar](#tool
 
 **Toolbar** is a top part of the To Do List which includes:
 
-- a **combo** control for switching between projects, and searching for a necessary project
+- a **combo** control for switching between projects, and searching for the necessary project
 
 ![toolbar](assets/toolbar.png)
 

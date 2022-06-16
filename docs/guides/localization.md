@@ -136,7 +136,7 @@ You can download [**a repository from GitHub**](https://github.com/web-widgets/w
 - Russian (**ru**)
 - Spanish (**es**)
 
-*The files don't include translations for the Calendar labels therefore you will need to add them yourself.*
+*The files don't include translations for the Calendar labels, therefore you will need to add them yourself.*
 :::
 
 - apply the necessary locale to the To Do List component and its Toolbar via the corresponding **locale** properties:

@@ -35,7 +35,7 @@ The **tasks** property presents an array of task objects. Each object includes t
 
 - `id` - (optional) the id of a task
 - `parent` - (optional) the id of the parent task. The value of the parameter is **null | undefined** for root tasks
-- `project` - (optional) the id of the project where the task should be rendered. To initialize the projects, use the **projects** property.<br>
+- `project` - (optional) the id of the project where the task should be rendered. To initialize the projects, use the [projects](api/configs/projects_config.md) property.<br>
 :::info
 If there are projects initialized, specify the ID of the necessary project for the root task to display it in this project.<br><br>
 If you don't specify the project ID for the root task or set it to *null* or *undefined*, the task will belong to the *No project* section.
@@ -43,7 +43,7 @@ If you don't specify the project ID for the root task or set it to *null* or *un
 - `text`- (optional) the text of the task
 - `checked`- (optional) marks the task as completed
 - `collapsed`- (optional) defines whether the task is collapsed initially (in case the task has subtasks)
-- `assigned`- (optional) an array with id(s) of the users assigned to the task
+- `assigned`- (optional) an array with id(s) of the users assigned to the task. To initialize the users, use the [users](api/configs/users_config.md) property.
 - `due_date` - (optional) the date when the task must be completed
 - `[key: string]`- (optional) a set of custom properties
 

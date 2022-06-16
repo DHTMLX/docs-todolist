@@ -11,7 +11,7 @@ description: You can learn about the copyTask method in the documentation of the
 @short: Copies a task into the clipboard and pastes into the specified position
 
 :::info
-The method lets you copy/paste a task or just copy it into the clipboard
+The method lets you copy and paste a task or just copy it into the clipboard
  
 The method copies a task together with all its children
 :::

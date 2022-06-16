@@ -47,8 +47,8 @@ const toolbar = new Toolbar("#toolbar", {
 });
 
 // subscribe to the "open-inline-editor" event
-list.api.on("open-inline-editor", ({id, save}) => {
-    console.log("The inline editor is opened for the", id, "item"); 
+list.api.on("open-inline-editor", ({id, type}) => {
+    console.log("The inline editor is opened for the", type, "with ID:", id); 
 });
 ~~~
 

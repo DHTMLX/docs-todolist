@@ -23,7 +23,7 @@ You can change the type of the counter which renders the completion of the child
 
 ![counter](../assets/counter.png)
 
-By default, each parent task is equipped with the counter whose value is shown as the ratio of completed child tasks and the total number of the child tasks.
+By default, each parent task is equipped with the counter whose value is shown as a ratio of completed child tasks and the total number of the child tasks.
 
 If you want the value of the counter to be displayed as a percentage, specify the *type: "percentage"* attribute inside the **counter** parameter of the [taskShape](api/configs/taskshape_config.md) property:
 
@@ -128,7 +128,7 @@ The toolbar is a top part of To Do List which is [initialized](guides/initializa
 
 By default, there are the following controls in the toolbar:
 
-- the **"combo"** control which allows you to switch between projects
+- the **"combo"** control which allows you to switch between projects or search for the necessary ones
 - the **"search"** control which provides the search bar
 - the **"menu"** control which allows you to add, remove, or delete a project
 

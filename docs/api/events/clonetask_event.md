@@ -30,7 +30,7 @@ The callback of the **clone-task** event can take an object with the following p
 - `parent` - (optional) the ID of the parent task
 - `project` - (optional) the ID of the project
 - `targetId` - (optional) the ID of the target task where the task was pasted
-- `bunch` - (required) an array of objects that were created when copying and then pasted
+- `bunch` - (required) an array of objects that were created on copying and then pasted
 
 :::info
 To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods.md)

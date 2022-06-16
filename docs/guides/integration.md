@@ -6,7 +6,7 @@ description: You can learn about integration with other widgets in the documenta
 
 # To Do List integrations
 
-You can integrate DHTMLX To Do List with other DHTMLX widgets (for instance, [Gantt](https://docs.dhtmlx.com/gantt/), [Scheduler](https://docs.dhtmlx.com/scheduler/), [Kanban](https://docs.dhtmlx.com/kanban/)). Check the examples below.
+You can integrate DHTMLX To Do List with other DHTMLX widgets (for instance, [Gantt](https://docs.dhtmlx.com/gantt/), [Scheduler](https://docs.dhtmlx.com/scheduler/), [Kanban](https://docs.dhtmlx.com/kanban/)). Check the example below.
 
 ## Integration with DHTMLX Gantt
 

@@ -80,16 +80,8 @@ Promise.all([
 You need to include **RestDataProvider** into the **Event Bus** order via the [`api.setNext()`](api/internal/setnext_method.md) method to perform operations with data (*adding, deleting,* etc) and send the corresponding requests to the server
 :::
 
-## Examples
+## Example
 
-### Backend (Go)
-
-The snippet below shows you how to connect **RestDataProvider** to the **Go** backend and load server data dynamically:
+The snippet below shows you how to connect **RestDataProvider** to the backend and load server data dynamically:
 
 <iframe src="https://snippet.dhtmlx.com/hnk06gm7?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
-
-### Backend (Node.js)
-
-The following snippet demonstrates how to connect **RestDataProvider** to the **Node.js** backend and load server data dynamically:
-
-<iframe src="https://snippet.dhtmlx.com/r8cg7chn?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
