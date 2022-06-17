@@ -21,7 +21,7 @@ const list = new ToDo("#root", { users });
 
 To assign users to the necessary task on the initialization stage, pass the id(s) of the users to the **assigned** parameter of the related [task](../../api/configs/tasks_config/) object:
 
-~~~js
+~~~js {6}
 const tasks = [
     {
         id: "2",

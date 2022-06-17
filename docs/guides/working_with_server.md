@@ -46,7 +46,7 @@ To interact with the server, you need to connect **RestDataProvider** to the cor
 
 or you can create a custom one.
 
-To connect **RestDataProvider** to the backend, you need to call the **new RestDataProvider** constructor by passing the corresponding **URL** as a parameter.
+To connect **RestDataProvider** to the backend, you need to call the **new RestDataProvider()** constructor by passing the corresponding **URL** as a parameter.
 
 ~~~js {4-5,23-24}
 const { ToDo, Toolbar, RestDataProvider } = todo;

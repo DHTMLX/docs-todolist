@@ -14,7 +14,7 @@ When you enable the [**readonly**](api/configs/readonly_config.md) mode of To Do
 
 ## Supported formats of data
 
-It is possible to type and edit the following types of information via the inline editor:
+It is possible to type and edit the following data via the inline editor:
 
 1\. **Text, numbers**
 
@@ -53,7 +53,7 @@ To open the editor for a particular task/project, use the [openInlineEditor()](.
 list.openInlineEditor({ id: "1.1.1" });
 ~~~
 
-To close the editor after finishing the editing of the item and save the made changes, pass the ID of the item to the [closeInlineEditor()](../../api/methods/closeinlineeditor_method/) method:
+To close the editor after finishing the editing of the item and save the changes made, pass the ID of the item to the [closeInlineEditor()](../../api/methods/closeinlineeditor_method/) method:
 
 ~~~js
 list.closeInlineEditor({ 

@@ -118,7 +118,7 @@ list.selectTask({
 ~~~
 
 :::tip
-To get the ID of the currently selected task, use the [`getSelectionTask()`](../../api/methods/getselectiontask_method/) method
+To get the ID of the currently selected task, use the [`getSelection()`](../../api/methods/getselection_method/) method
 :::
 
 To remove selection from a selected task, pass the ID of the task as a parameter to the [unselectTask()](../../api/methods/unselecttask_method/) method:
@@ -144,7 +144,7 @@ list.expandTask({ id: "1.1" });
 
 ## Marking a task complete/incomplete
 
-You may mark the necessary task as complete/incomplete via the corresponding [checkTask()](../../api/methods/checktask_method/) and [uncheckTask()](../../api/methods/unchecktask_method/) methods
+You may mark the necessary task as complete/incomplete via the corresponding [checkTask()](../../api/methods/checktask_method/) and [uncheckTask()](../../api/methods/unchecktask_method/) methods:
 
 ~~~js
 list.checkTask({ 
@@ -160,7 +160,7 @@ list.uncheckTask({
 
 When `manual: false` is set, the result of applying the method depends on the value which is specified for the **behavior** attribute of the **selectable** parameter of the [taskShape](api/configs/taskshape_config.md) property. 
 
-If the "auto" mode is specified via the **taskShape** property but you need to check/uncheck the task in the "manual" mode, set the **manual** parameter of the [checkTask()](../../api/methods/checktask_method/) or [uncheckTask()](../../api/methods/unchecktask_method/) method to *true*.
+If the "auto" mode is specified via the **taskShape** property but you need to check/uncheck the task in the "manual" mode, set the **manual** parameter of the [checkTask()](../../api/methods/checktask_method/) or [uncheckTask()](../../api/methods/unchecktask_method/) method to *true*:
 
 ~~~js
 list.checkTask({ 
