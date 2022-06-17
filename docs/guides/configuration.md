@@ -7,13 +7,13 @@ description: You can learn about the To Do List Configuration in the documentati
 # Configuration
 
 You can adjust the settings of DHTMLX To Do List according to your needs. The available configuration options allow you:
-- to configure the appearance of the badge displayed the progress of task completion.
-- to configure the format of dates
-- to disable validation for due dates of tasks
-- to change the mode used for marking tasks done
-- to configure the appearance of the toolbar
+- [to configure the appearance of the badge displaying the progress of task completion](#counter-of-completed-subtasks)
+- [to configure the format of dates](#date-format)
+- [to disable validation for due dates of tasks](#due-date-validation)
+- [to change the mode used for marking tasks done](#mode-of-marking-tasks-complete)
+- [to configure the appearance of the toolbar](#toolbar)
 
-You can also initialize To Do List in the readonly mode, if needed.
+You can also initialize To Do List in the [readonly](#read-only-mode) mode, if needed.
 
 ## Tasks
 

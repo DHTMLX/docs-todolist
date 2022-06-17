@@ -11,7 +11,7 @@ description: You can learn about the getUsers method of the RestDataProvider in 
 @short: Gets a promise with an array of users objects
 
 :::info
-The **getUsers()** method is a part of the **RestDataProvider** service intended for working with server
+The **getUsers()** method is a part of the **RestDataProvider** service intended for working with a server
 :::
 
 ### Usage

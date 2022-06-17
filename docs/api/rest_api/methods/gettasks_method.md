@@ -11,7 +11,7 @@ description: You can learn about the getTasks method of the RestDataProvider in 
 @short: Gets a promise with an array of all tasks objects
 
 :::info
-The **getTasks()** method is a part of the **RestDataProvider** service intended for working with server
+The **getTasks()** method is a part of the **RestDataProvider** service intended for working with a server
 :::
 
 ### Usage

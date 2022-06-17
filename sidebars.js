@@ -338,6 +338,7 @@ module.exports = {
 				"guides/inline_editing",
 				"guides/localization",
 				"guides/customization",
+				"guides/stylization",
 				"guides/integration",
 			]
 		},
