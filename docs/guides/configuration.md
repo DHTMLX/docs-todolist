@@ -143,7 +143,6 @@ const toolbar = new Toolbar("#toolbar", {
 
 The property allows you to define which controls should be shown or hidden. Besides, you can enumerate the controls in the **items** array in the order you want to show them in the toolbar.
 
-
 ## Read-only mode
 
 Read the details on how to make the To Do List read-only in the [related section](guides/readonly_mode.md).
