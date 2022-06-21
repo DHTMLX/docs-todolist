@@ -9,7 +9,7 @@ description: You can learn about working with server in the documentation of the
 DHTMLX To Do List allows working both with the client and server data. The widget doesn't have any special requirements for the backend. It can be easily connected with any backend platform which supports the REST API (RESTful API).
 
 :::info
-By default, the widget comes with the built-in **Go** and **Node** backend. But you can use your custom server scripts as well
+By default, the widget comes with the built-in [**Go**](https://github.com/web-widgets/todo-go) and [**Node**](https://github.com/web-widgets/todo-node) backend. But you can use your custom server scripts as well.
 :::
 
 ## RestDataProvider
