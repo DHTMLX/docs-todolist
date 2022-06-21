@@ -19,7 +19,7 @@ You can also initialize To Do List in the [readonly](#read-only-mode) mode, if n
 
 ### Counter of completed subtasks
 
-You can change the type of the counter which renders the completion of the child tasks.
+You can change the type of the counter which renders the progress of completion of the child tasks.
 
 ![counter](../assets/counter.png)
 
@@ -76,7 +76,7 @@ The dates of the  tasks which have not been completed on the due date are highli
 
 This validation works by default.
 
-In case you want to disable this functionality, specify the **validation** parameter of the [taskShape](api/configs/taskshape_config.md) property to *false*:
+In case you want to disable this functionality, specify the **validate** parameter of the [taskShape](api/configs/taskshape_config.md) property to *false*:
 
 ~~~js {5-10}
 const list = new ToDo("#root", {
