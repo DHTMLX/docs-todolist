@@ -76,7 +76,7 @@ The dates of the  tasks which have not been completed on the due date are highli
 
 This validation works by default.
 
-In case you want to disable this functionality, specify the **validate** parameter of the [taskShape](api/configs/taskshape_config.md) property to *false*:
+In case you want to disable this functionality, specify the **validate** setting inside the *date* parameter of the [taskShape](api/configs/taskshape_config.md) property to *false*:
 
 ~~~js {5-10}
 const list = new ToDo("#root", {
