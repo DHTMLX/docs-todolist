@@ -14,4 +14,10 @@ You can integrate DHTMLX To Do List with other DHTMLX widgets (for instance, [Ga
 
 ## Integration with DHTMLX Scheduler
 
+### Example without projects
+
 <iframe src="https://snippet.dhtmlx.com/pnx51bqd?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="700"></iframe>
+
+### Example with projects
+
+<iframe src="https://snippet.dhtmlx.com/ddqphcz2?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="700"></iframe>
