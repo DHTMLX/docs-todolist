@@ -229,7 +229,7 @@ module.exports = {
                         },
                         {
                             label: 'Blog',
-                            href: 'https://dhtmlx.com/blog/tag/todo/',
+                            href: 'https://dhtmlx.com/blog/',
                         },
                         {
                             label: 'Forum',
