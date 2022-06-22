@@ -6,7 +6,7 @@ description: You can learn about task users in the documentation of the DHTMLX J
 
 # Task users
 
-The list of users is specified via the [users](../../api/configs/users_config/) configuration property of To do list.
+The list of users is specified via the [users](../../api/configs/users_config/) configuration property of To Do List.
 
 ~~~js
 const users = [

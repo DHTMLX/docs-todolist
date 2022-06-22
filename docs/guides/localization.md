@@ -159,7 +159,7 @@ const toolbar = new Toolbar("#toolbar", {
 ~~~
 
 :::tip
-To change the locale dynamically, use the related `setLocale()` methods of the [To do list](api/methods/setlocale_method.md) and [Toolbar](api/toolbar_api/methods/setlocale_method.md)
+To change the locale dynamically, use the related `setLocale()` methods of the [To Do List](api/methods/setlocale_method.md) and [Toolbar](api/toolbar_api/methods/setlocale_method.md)
 :::
 
 ## Example

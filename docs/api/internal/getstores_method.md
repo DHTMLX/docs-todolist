@@ -8,7 +8,7 @@ description: You can learn about the getStores method in the documentation of th
 
 ### Description
 
-@short: Gets an object with the DataStore object of To do list 
+@short: Gets an object with the DataStore object of To Do List 
 
 ### Usage
 

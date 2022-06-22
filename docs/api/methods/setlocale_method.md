@@ -8,7 +8,7 @@ description: You can learn about the setLocale method in the documentation of th
 
 ### Description
 
-@short: Sets the specified locale for To do list
+@short: Sets the specified locale for To Do List
 
 ### Usage
 
@@ -121,7 +121,7 @@ const toolbar = new Toolbar("#toolbar", {
     api: list.api,
 });
 
-// change locale of To do list
+// change locale of To Do List
 list.setLocale(de);
 
 // change locale of Toolbar (read Info)
@@ -129,7 +129,7 @@ toolbar.setLocale(de, list.api);
 ~~~
 
 :::info
-The Toolbar of To do list is a separate component. To change its locale, you must apply its own [`setLocale()`](api/toolbar_api/methods/setlocale_method.md) method
+The Toolbar of To Do List is a separate component. To change its locale, you must apply its own [`setLocale()`](api/toolbar_api/methods/setlocale_method.md) method
 :::
 
 **Related article:** [Localization](guides/localization.md)

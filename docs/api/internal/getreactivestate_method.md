@@ -8,7 +8,7 @@ description: You can learn about the getReactiveState method in the documentatio
 
 ### Description
 
-@short: Gets an object with the reactive properties of the DataStore of To do list 
+@short: Gets an object with the reactive properties of the DataStore of To Do List 
 
 ### Usage
 

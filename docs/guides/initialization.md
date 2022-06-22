@@ -27,8 +27,8 @@ To create To Do List, you need to include 2 source files on your page:
 Make sure that you set correct relative paths to the source files:
 
 ~~~html title="index.html"
-<script type="text/javascript" src="../dist/todo.js"></script>  
-<link rel="stylesheet" href="../dist/todo.css">	
+<script type="text/javascript" src="./dist/todo.js"></script>  
+<link rel="stylesheet" href="./dist/todo.css">	
 ~~~
 
 ## Create containers
@@ -39,8 +39,8 @@ Thus, create **two containers** to place a List and Toolbar into and give them I
 
 
 ~~~html title="index.html"
-<div id="root"></div> // the container for List
 <div id="toolbar"></div> // the container for Toolbar (if you need to create To Do List with its Toolbar)
+<div id="root"></div> // the container for List
 ~~~
 
 ## Initialize To Do List

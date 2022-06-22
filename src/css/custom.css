@@ -182,6 +182,10 @@ code {
     margin-top: 10px;
 }
 
+.admonition {
+    margin-top: 1em;
+}
+
 ::marker {
     color: #9c9c9c;
 }

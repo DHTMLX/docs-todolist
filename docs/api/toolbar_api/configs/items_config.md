@@ -8,7 +8,7 @@ description: You can learn about the items config of Toolbar in the documentatio
 
 ### Description
 
-@short: Optional. Specifies controls that will be shown in the toolbar of To do list
+@short: Optional. Specifies controls that will be shown in the toolbar of To Do List
 
 
 ### Usage

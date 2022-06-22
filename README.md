@@ -1,6 +1,6 @@
 <h1 align="center"><a href="https://docs.dhtmlx.com/todolist/">DHTMLX To Do List Documentation</a></h1>
 
-DHTMLX To Do List is an easy to use component for maintaining the tasks. To do list is a great planning tool that helps to achieve your goals and save the time. The component allows you to create infinite number of projects, add unlimited number of tasks and subtasks there, drag and drop tasks to change their order or priority level, and much more. 
+DHTMLX To Do List is an easy to use component for maintaining the tasks. The To Do List widget is a great planning tool that helps to achieve your goals and save the time. The component allows you to create infinite number of projects, add unlimited number of tasks and subtasks there, drag and drop tasks to change their order or priority level, and much more. 
 
 ## Explore documentation locally
 

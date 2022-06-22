@@ -8,7 +8,7 @@ description: You can learn about the getState method in the documentation of the
 
 ### Description
 
-@short: Gets an object with the current properties of the DataStore of To do list 
+@short: Gets an object with the current properties of the DataStore of To Do List 
 
 ### Usage
 

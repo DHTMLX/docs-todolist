@@ -57,8 +57,8 @@ Now you can add a To Do List to the page. For this, you should create two DIV co
         <link rel="stylesheet" href="./dist/todo.css">
     </head>
     <body>
-        <div id="root"></div>
         <div id="toolbar"></div>
+        <div id="root"></div>
 
         <script>
             const { ToDo, Toolbar } = todo; // apply the object destructuring
@@ -178,8 +178,8 @@ Now, you can populate the To Do List with data. For that, specify the related pr
         <script src="../data.js"></script>
     </head>
     <body>
-        <div id="root"></div>
         <div id="toolbar"></div>
+        <div id="root"></div>
 
         <script>
             const { ToDo, Toolbar } = todo;

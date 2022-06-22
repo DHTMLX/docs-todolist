@@ -22,7 +22,7 @@ setLocale(
 ### Parameters
  
 - `locale` - (required) an object of the locale
-- `api` - (required) an object with the internal API of To do list
+- `api` - (required) an object with the internal API of To Do List
 
 ### Example
 
@@ -123,7 +123,7 @@ const toolbar = new Toolbar("#toolbar", {
     api: list.api,
 });
 
-// change locale of To do list (read Info)
+// change locale of To Do List (read Info)
 list.setLocale(de);
 
 // change locale of Toolbar
@@ -131,7 +131,7 @@ toolbar.setLocale(de, list.api);
 ~~~
 
 :::info
-The **Toolbar** of the To do list is a separate component. Before changing its locale, be sure that you have already applied the [`setLocale()`](api/toolbar_api/methods/setlocale_method.md) method to the **To do list** component
+The **Toolbar** of the To Do List is a separate component. Before changing its locale, be sure that you have already applied the [`setLocale()`](api/toolbar_api/methods/setlocale_method.md) method to the **To Do List** component
 :::
 
 **Related article:** [Localization](guides/localization.md)

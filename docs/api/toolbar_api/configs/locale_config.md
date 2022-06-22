@@ -46,7 +46,7 @@ const toolbar = new Toolbar("#toolbar", {
 
 
 :::info
-Toolbar is a separate component of To do list. Thus, before applying the necessary locale to the Toolbar, be sure that you have already applied it to the **To do list**
+Toolbar is a separate component of To Do List. Thus, before applying the necessary locale to the Toolbar, be sure that you have already applied it to the **To Do List**
 :::
 
 :::tip

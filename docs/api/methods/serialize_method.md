@@ -8,7 +8,7 @@ description: You can learn about the serialize method in the documentation of th
 
 ### Description
 
-@short: Serializes data of To do list into a JSON object
+@short: Serializes data of To Do List into a JSON object
 
 ### Usage
 

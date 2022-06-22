@@ -8,10 +8,10 @@ description: You can learn about the api config of Toolbar in the documentation 
 
 ### Description
 
-@short: Required. An object with the internal API of To do list
+@short: Required. An object with the internal API of To Do List
 
 :::info
-Usage of the internal API of To do list is necessary for correct work of the search bar and controls located in the Toolbar
+Usage of the internal API of To Do List is necessary for correct work of the search bar and controls located in the Toolbar
 :::
 
 ### Usage

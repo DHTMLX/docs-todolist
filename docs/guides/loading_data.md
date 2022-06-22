@@ -8,7 +8,7 @@ description: You can learn about loading and storing data in the documentation o
 
 ## Preparing data to load
 
-There are the following types of information which can be loaded into DHTMLX To do list:
+There are the following types of information which can be loaded into DHTMLX To Do List:
 
 - [**tasks**](api/configs/tasks_config.md)
 - [**projects**](api/configs/projects_config.md)
@@ -144,7 +144,7 @@ const { tasks, users, projects } = getData();
 
 ### Loading data on initialization
 
-You can load [a predefined data](guides/loading_data.md#preparing-data-to-load) into To do list on the initialization stage in the following way:
+You can load [a predefined data](guides/loading_data.md#preparing-data-to-load) into To Do List on the initialization stage in the following way:
 
 ~~~js {2,4-8} title="index.js"
 const { ToDo, Toolbar } = todo;

@@ -11,7 +11,7 @@ description: You can learn about the setConfig method in the documentation of th
 @short: Sets a new configuration for the To Do List
 
 :::tip
-Using this method, you can change configuration of the To do list widget. The method changes only the parameters you passed
+Using this method, you can change configuration of the To Do List widget. The method changes only the parameters you passed
 :::
 
 :::info
@@ -26,7 +26,7 @@ setConfig(config: object): void;
 
 ### Parameters
 
-- `config` - (required) an object with new configuration of To do list. See the full list of properties [here](api/api_overview.md#to-do-list-properties) 
+- `config` - (required) an object with new configuration of To Do List. See the full list of properties [here](api/api_overview.md#to-do-list-properties) 
 
 ### Example
 
@@ -57,5 +57,5 @@ toolbar.setConfig({
 ~~~
 
 :::info
-The To do list won't be rendered correctly until you call the [`setConfig()`](api/toolbar_api/methods/setconfig_method.md) method of the Toolbar component
+The To Do List won't be rendered correctly until you call the [`setConfig()`](api/toolbar_api/methods/setconfig_method.md) method of the Toolbar component
 :::
