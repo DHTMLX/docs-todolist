@@ -17,7 +17,7 @@ You can stylize any part of the interface of DHTMLX To Do List to meet your proj
 New versions of the To Do List can bring some changes for the variables and their names. So, please, do not forget to check the names after updating to the newest version and promptly modify them in your code to avoid problems with display of the component
 :::
 
-~~~css
+~~~html
 <style>
     .wx-material-theme,
     .wx-portal {
