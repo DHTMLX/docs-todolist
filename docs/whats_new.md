@@ -6,6 +6,15 @@ description: You can learn a new information about DHTMLX JavaScript To Do List 
 
 # What's new
 
+
+## Version 1.0.1
+
+Released on July 5, 2022
+
+### Fixes
+
+- Significantly improved work of API
+
 ## Version 1.0
 
 Released on June 20, 2022
