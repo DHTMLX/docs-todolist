@@ -35,4 +35,6 @@ const toolbar = new Toolbar("#toolbar", {
 list.hideCompletedTasks(); 
 ~~~
 
+**Change log:** Added in v1.1
+
 **Related article:** 

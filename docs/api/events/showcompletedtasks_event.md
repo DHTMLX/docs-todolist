@@ -42,4 +42,6 @@ list.api.on("show-completed-tasks", () => {
 });
 ~~~
 
+**Change log:** Added in v1.1
+
 **Related article:**

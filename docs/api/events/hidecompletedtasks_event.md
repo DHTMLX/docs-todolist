@@ -42,4 +42,7 @@ list.api.on("hide-completed-tasks", () => {
 });
 ~~~
 
+**Change log:** Added in v1.1
+
 **Related article:**
+
