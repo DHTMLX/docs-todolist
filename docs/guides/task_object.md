@@ -51,8 +51,6 @@ const tasks = [
     { id: "1.2", text: "Task 1.2", parent: "1" },
 ];
 
-const list = new ToDo("#root", { tasks });
-
 console.log(list.getChildrenIds({ id: "1" })); // ['1.1', '1.1.1', '1.2']
 console.log(list.getChildrenIds({ id: "1", tree: false })); // ['1.1', '1.2']
 ~~~
@@ -61,10 +59,10 @@ If you apply filtering, some tasks can become invisible on the page. The **filte
 
 ~~~js
 // filter the tasks
-console.log(list.setFilter({ match: "#tag1", highlight: true }));
+list.setFilter({ match: "#tag1", highlight: true });
 
 // get children of the task after filtering
-console.log(list.getChildrenIds({ id: "1" })); // -> ['1.1', '1.1.1', '1.2']
+console.log(list.getChildrenIds({ id: "1", filtered: false })); // -> ['1.1', '1.1.1', '1.2']
 
 // enable the "filtered" parameter
 console.log(list.getChildrenIds({ id: "1", filtered: true })); // -> ['1.1', '1.1.1']
@@ -74,7 +72,33 @@ The **tree** parameter of the method allows you to get the IDs only for the firs
 
 ~~~js
 console.log(list.getChildrenIds({ id: "1", filtered: true, tree: false })); // -> ['1.1']
-console.log(list.getChildrenIds({ id: "1", tree: false })); // -> ['1.1', '1.2']
+console.log(list.getChildrenIds({ id: "1", filtered: false, tree: false })); // -> ['1.1', '1.2']
+~~~
+
+The **hideCompleted** parameter of the method lets you get the IDs only of those children tasks which yet need to be done, excluding the completed ones. For that, set the parameter to *true*:
+
+~~~js {4,11,18,21}
+const tasks = [
+    { id: "1", text: "Task 1 #tag1" },
+    { id: "1.1", text: "Task 1.1", parent: "1" },
+    { id: "1.1.1", text: "Task 1.1.1 #tag1", parent: "1.1", checked: true },
+    { id: "1.2", text: "Task 1.2", parent: "1" },
+];
+
+// before filtering
+console.log(list.getChildrenIds({ id: "1", tree: true, hideCompleted: false })); // -> ['1.1', '1.1.1', '1.2']
+
+console.log(list.getChildrenIds({ id: "1", tree: true, hideCompleted: true })); // ['1.1', '1.2']
+
+// filter the tasks
+list.setFilter({ match: "#tag1", highlight: true });
+
+// after filtering
+console.log(list.getChildrenIds({ id: "1", filtered: true, tree: true, hideCompleted: false})); // -> ['1.1', '1.1.1']
+console.log(list.getChildrenIds({ id: "1", filtered: true, tree: true, hideCompleted: true })); // -> ['1.1']
+
+console.log(list.getChildrenIds({ id: "1", filtered: false, tree: true, hideCompleted: false})); // -> ['1.1', '1.1.1', '1.2']
+console.log(list.getChildrenIds({ id: "1", filtered: false, tree: true, hideCompleted: true})); // -> ['1.1', '1.2']
 ~~~
 
 ## Checking if a task has children
@@ -89,8 +113,6 @@ const tasks = [
     { id: "1.2", text: "Task 1.2", parent: "1" },
 ];
 
-const list = new ToDo("#root", { tasks });
-
 // check whether the task has children (before filtering)
 console.log(list.hasChildren({ id: "1.1" })); // -> true
 ~~~
@@ -104,6 +126,20 @@ list.setFilter({ match: "#tag3", highlight: true });
 // check whether the task has children (after filtering)
 console.log(list.hasChildren({ id: "1.1" })); // -> true
 console.log(list.hasChildren({ id: "1.1", filtered: true })); // -> false
+~~~
+
+The **hideCompleted** parameter of the method lets you exclude completed tasks from the result. For that, set the parameter to *true*:
+
+~~~js {4,9}
+const tasks = [
+    { id: "1", text: "Task 1 #tag1 #tag3" },
+    { id: "1.1", text: "Task 1.1", parent: "1" },
+    { id: "1.1.1", text: "Task 1.1.1 #tag1", parent: "1.1", checked: true },
+    { id: "1.2", text: "Task 1.2", parent: "1" },
+];
+
+console.log(list.hasChildren({ id: "1.1" })); // -> true
+console.log(list.hasChildren({ id: "1.1", hideCompleted: true })); // -> false
 ~~~
 
 ## Getting parent Ids
