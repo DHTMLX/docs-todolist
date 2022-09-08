@@ -8,9 +8,22 @@ module.exports = {
 			type: "doc",
 			id: "how_to_start"
 		},
+		// News
 		{
-			type: "doc",
-			id: "whats_new"
+			type: "category",
+			label: "What's new and migration",
+			link: {
+			  type: 'generated-index',
+			  title: "What's new and migration",
+			  //description: '',
+			  //slug: '/category/docusaurus-guides',
+			  keywords: ['news'],
+			  image: '/img/docusaurus.png',
+			},
+			items: [
+			  "whats_new",
+			  "migration",
+			],
 		},
 		// API
 		{

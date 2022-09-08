@@ -8,7 +8,7 @@ description: You can learn about the hide-completed-tasks event in the documenta
 
 ### Description
 
-@short: Fires when To Do List is switched to the mode of hiding of completed tasks
+@short: Fires when To Do List is switched to the mode of hiding completed tasks
 
 ### Usage
 

@@ -8,7 +8,7 @@ description: You can learn about the show-completed-tasks event in the documenta
 
 ### Description
 
-@short: Fires when To Do List is switched to the mode of showing of completed tasks
+@short: Fires when To Do List is switched to the mode of showing completed tasks
 
 ### Usage
 

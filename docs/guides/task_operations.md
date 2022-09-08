@@ -158,7 +158,7 @@ list.uncheckTask({
 });
 ~~~
 
-When `manual: false` is set, the result of applying the method depends on the value which is specified for the **behavior** attribute of the **selectable** parameter of the [taskShape](api/configs/taskshape_config.md) property. 
+When `manual: false` is set, the result of applying the method depends on the value which is specified for the **behavior** attribute of the **completed** parameter of the [taskShape](api/configs/taskshape_config.md) property. 
 
 If the "auto" mode is specified via the **taskShape** property but you need to check/uncheck the task in the "manual" mode, set the **manual** parameter of the [checkTask()](../../api/methods/checktask_method/) or [uncheckTask()](../../api/methods/unchecktask_method/) method to *true*:
 
@@ -173,6 +173,22 @@ list.uncheckTask({
     manual: true
 });
 ~~~
+
+## Hiding/showing completed tasks
+
+There are two modes of displaying tasks in To Do List:
+
+- when all tasks are shown on the page
+- when completed tasks are hidden from the page
+
+To switch between these modes, use the related [hideCompletedTasks()](api/methods/hidecompletedtasks_method.md) and [showCompletedTasks()](api/methods/showcompletedtasks_method.md) methods:
+
+~~~js
+list.hideCompletedTasks(); 
+// or
+list.showCompletedTasks(); 
+~~~
+
 
 ## Changing the indent level of a task
 

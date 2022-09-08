@@ -21,8 +21,9 @@ taskShape?: {
         format: string,
         validate: boolean
     },
-    selectable?: {
-        behavior: "manual" | "auto"
+    completed?: {
+        behavior: "manual" | "auto",
+        taskHide: boolean
     }
 };
 ~~~
@@ -38,9 +39,10 @@ taskShape: {
         format: "%d %M %Y",
         validate: true 
     },
-    selectable: {
-        behavior?: "auto"
-};
+    completed: {
+        behavior: "auto",
+        taskHide: false
+    }
 }
 ~~~
 
@@ -55,7 +57,7 @@ To configure the task's appearance, you can specify the following parameters in 
 - `date` - (optional) an object with date settings: 
     - `format` - (required) defines the format of displaying dates. By default, "%d %M %Y". The full list of available characters is given [below](#list-of-characters)
     - `validate` - (required) defines whether the **due_date** property of the [task object](api/configs/tasks_config.md) should be validated
-- `selectable` - (optional) an objet with settings for managing the task marking. It takes one parameter:
+- `completed` - (optional) an objet with settings for managing the marking and display of completed tasks. It takes one parameter:
     - `behavior` - (required) sets behavior for the parent and child tasks when marking them as completed/uncompleted. There are two options:
         - *"auto"* - enables the **"auto"** mode:
             - When you mark all child tasks as completed, the parent task automatically becomes marked  as completed
@@ -63,11 +65,12 @@ To configure the task's appearance, you can specify the following parameters in 
             - If you mark at least one child of a completed task as uncompleted, the task automatically becomes marked as uncompleted
             - If you mark the parent task as uncompleted, all its child automatically become uncompleted
         - *"manual"* - enables the **"manual"** mode. You need to manually mark each task (be it a child task or its parent) as completed
+    - `taskHide` - (required) enables/disables the mode of hiding completed tasks from the list
 
 
 ### Example
 
-~~~js {9-20}
+~~~js {9-21}
 const { ToDo, Toolbar } = todo;
 const { tasks, users, projects } = getData();
 
@@ -84,8 +87,9 @@ const list = new ToDo("#root", {
             format: "%d %m %Y",
             validate: false
         },
-        selectable: {
-            behavior: "manual"
+        completed: {
+            behavior: "manual",
+            taskHide: true
         }
     }
 });
@@ -115,6 +119,11 @@ DHTMLX To Do List uses the following characters for setting a date format:
 :::tip
 Check the [**Localization**](guides/localization.md) article to learn how to present the date labels in the necessary language
 :::
+
+**Change log:**
+
+- The `selectable` parameter was renamed to `completed` in v1.1
+- The `taskHide` option of the `completed` parameter was added in v1.1
 
 **Related article:** [Configuration](guides/configuration.md#tasks)
 

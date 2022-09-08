@@ -6,6 +6,16 @@ description: You can learn a new information about DHTMLX JavaScript To Do List 
 
 # What's new
 
+If you are updating To Do List from an older version, check [Migration to newer version](migration.md) for details.
+
+## Version 1.1
+
+Released on
+
+## New functionality
+
+- new `taskHide` option of the `completed` parameter of the [taskShape](api/configs/taskshape_config.md) property. The ability to initialize To Do List in the mode when [all completed tasks will be hidden](guides/configuration.md#mode-of-displaying-completed-tasks)
+- the ability to show or hide completed tasks via [API methods](guides/task_operations.md#hidingshowing-completed-tasks) or via Toolbar menu
 
 ## Version 1.0.1
 
