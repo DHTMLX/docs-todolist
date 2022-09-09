@@ -1,12 +1,14 @@
 ---
-sidebar_label: Task users
-title: Task users
-description: You can learn about task users in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
+sidebar_label: Task assignees
+title: Task assignees
+description: You can learn about task assignees in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
 ---
 
-# Task users
+# Task assignees
 
-The list of users is specified via the [users](../../api/configs/users_config/) configuration property of To Do List.
+You can delegate tasks to one or several people.
+
+The list of assignees is specified via the [users](../../api/configs/users_config/) configuration property of To Do List.
 
 ~~~js
 const users = [
@@ -19,7 +21,7 @@ const users = [
 const list = new ToDo("#root", { users });
 ~~~
 
-To assign users to the necessary task on the initialization stage, pass the id(s) of the users to the **assigned** parameter of the related [task](../../api/configs/tasks_config/) object:
+To assign people to the necessary task on the initialization stage, pass the id(s) of the assignees to the **assigned** parameter of the related [task](../../api/configs/tasks_config/) object:
 
 ~~~js {6}
 const tasks = [
@@ -42,27 +44,27 @@ const list = new ToDo("#root", {
 });
 ~~~
 
-As a result, the assigned users will be displayed to the right of the task.
+As a result, the assigned people will be displayed to the right of the task.
 
 ![users](../assets/users.png)
 
-To view the list of users assigned to a task, click on the users avatars. To close the opened list, click outside it.
+To view the list of people assigned to a task, click on the people avatars. To close the opened list, click outside it.
 
-## Assigning/unassigning users
+## Assigning/unassigning people
 
-There are two ways to assign/unassign users to a task after initialization of the component:
+There are two ways to assign/unassign people to a task after initialization of the component:
 
 - via the **Assign to** option of the task menu
 - via the corresponding [assignUser()](../../api/methods/assignuser_method/) and [unassignUser()](../../api/methods/unassignuser_method/) methods, for example:
 
 ~~~js
-// assign a user to the task
+// assign a person to the task
 list.assignUser({
     id: "3",
     userId: "user_1"
 });
 
-// unassign a user from the task
+// unassign a person from the task
 list.unassignUser({
     id: "2",
     userId: "user_1"

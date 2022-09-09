@@ -71,7 +71,7 @@ The **list of tasks** is the main part of the To Do List interface intended for 
 
 ### Moving tasks
 
-- To move a task withing a project, select the task and press `Arrow Up`/ `Arrow Down`
+- To move a task withing a project, select the task and press `Ctrl (Cmd)` + `Arrow Up`/ `Arrow Down`
 - To move a task to another project, open the task menu, hover **Move to** and select the necessary project in the dropdown list
 
 ### Deleting tasks

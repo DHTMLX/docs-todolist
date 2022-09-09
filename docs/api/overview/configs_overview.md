@@ -14,6 +14,7 @@ description: You can explore the API properties of To Do List in the documentati
 | [](../configs/locale_config.md)        | @getshort(../configs/locale_config.md)        |
 | [](../configs/projects_config.md)      | @getshort(../configs/projects_config.md)      |
 | [](../configs/readonly_config.md)      | @getshort(../configs/readonly_config.md)      |
+| [](../configs/selected_config.md)      | @getshort(../configs/selected_config.md)      |
 | [](../configs/tags_config.md)          | @getshort(../configs/tags_config.md)          |
 | [](../configs/tasks_config.md)          | @getshort(../configs/tasks_config.md)          |
 | [](../configs/taskshape_config.md)     | @getshort(../configs/taskshape_config.md)     |

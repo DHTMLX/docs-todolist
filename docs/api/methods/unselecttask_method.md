@@ -14,13 +14,18 @@ description: You can learn about the unselectTask method in the documentation of
 
 ~~~js
 unselectTask({
-    id: string | number
+    id: string | number | null
 }): void;
 ~~~
 
 ### Parameters
 
 - `id` - (required) the id of the task to be unselected
+
+:::info
+Passing `id: null` to the method unselects all selected tasks and invokes the [`unselect-task`](api/events/unselecttask_event.md) event for each of them
+:::
+
 
 ### Example
 
@@ -46,5 +51,7 @@ list.selectTask({ id: "1.1"});
 // unselect the selected task
 list.unselectTask({ id: "1.1" });
 ~~~
+
+**Change log:** The ability to pass `id: null` to the method was added in v1.1
 
 **Related article:** [Operations with tasks](guides/task_operations.md)

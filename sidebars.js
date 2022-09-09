@@ -212,6 +212,7 @@ module.exports = {
 						"api/configs/locale_config",
 						"api/configs/projects_config",
 						"api/configs/readonly_config",
+						"api/configs/selected_config",
 						"api/configs/tags_config",
 						"api/configs/tasks_config",
 						"api/configs/taskshape_config",
