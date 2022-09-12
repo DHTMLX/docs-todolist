@@ -8,7 +8,7 @@ description: You can learn about the assignUser method in the documentation of t
 
 ### Description
 
-@short: Assigns a user to the specified task
+@short: Assigns a person to the specified task
 
 ### Usage
 
@@ -22,7 +22,7 @@ assignUser({
 ### Parameters
 
 - `id` - (required) the id of the task
-- `userId` - (required) the id of the user to be assigned to the task
+- `userId` - (required) the id of the person to be assigned to the task
 
 ### Example
 
@@ -54,4 +54,4 @@ list.assignUser({
 });
 ~~~
 
-**Related article:** [Task users](guides/task_users.md)
+**Related article:** [Task assignees](guides/task_users.md)

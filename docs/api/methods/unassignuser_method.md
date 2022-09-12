@@ -8,7 +8,7 @@ description: You can learn about the unassignUser method in the documentation of
 
 ### Description
 
-@short: Unassigns a user from the specified task
+@short: Unassigns a person from the specified task
 
 ### Usage
 
@@ -22,7 +22,7 @@ unassignUser({
 ### Parameters
 
 - `id` - (required) the id of a task
-- `userId` - (required) the id of the user which needs to be unassigned from the task
+- `userId` - (required) the id of the person which needs to be unassigned from the task
 
 ### Example
 
@@ -54,4 +54,4 @@ list.unassignUser({
 });
 ~~~
 
-**Related article:** [Task users](guides/task_users.md)
+**Related article:** [Task assignees](guides/task_users.md)

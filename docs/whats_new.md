@@ -59,7 +59,7 @@ Released on June 20, 2022
         - change the indent level of tasks: [indentTask()](api/methods/indenttask_method.md) / [unindentTask()](api/methods/unindenttask_method.md)
         - [assign](api/methods/assignuser_method.md) and [unassign](api/methods/unassignuser_method.md) users
         - [filter tasks](api/methods/setfilter_method.md)
-    - [via UI](../#managing-tasks):
+    - [via UI](../#managing-a-task):
         - add, copy and paste, select, move, indent/unindent, delete tasks
         - search for tasks (by symbols or hashtags)
         - edit tasks:
