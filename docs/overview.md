@@ -45,7 +45,7 @@ The **list of tasks** is the main part of the To Do List interface intended for 
 
 - To add a new task into the beginning of the list, click on the **+ Add task** button in the top navigation panel
 
-- To add a new task under the necessary one, select the task and press `Space`
+- To add a new task under the necessary one, select the task and press `Enter`
 
 - To add a subtask, add a new task under the selected one and press `Tab`. Use `Shift + Tab` to promote the nesting level of the task
 
@@ -102,7 +102,6 @@ After you have selected multiple tasks, you can perform a set of operations over
 - To copy tasks via pressing `Alt` while dragging-and-dropping them
 - To move tasks withing a project via `Ctrl (Cmd)` + `Arrow Up`/ `Arrow Down`
 - To mark tasks as complete/incomplete by pressing `Space`
-- To collapse/expand a task with subtasks, click on the arrow icon to the left of the task or press `Arrow Left`/ `Arrow Right`
 - To change the nesting level of tasks via `Tab`/ `Shift + Tab` 
 
 :::note

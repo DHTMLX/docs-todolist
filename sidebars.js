@@ -72,6 +72,7 @@ module.exports = {
 						"api/methods/deleteproject_method",
 						"api/methods/deletetask_method",
 						"api/methods/destructor_method",
+						"api/methods/eachselected_method",
 						"api/methods/existsproject_method",
 						"api/methods/existstask_method",
             			"api/methods/expandtask_method",
@@ -335,7 +336,9 @@ module.exports = {
 					items: [
 						"guides/task_object",
 						"guides/task_operations",
+						"guides/multiselection",
 						"guides/task_users",
+						"guides/hide_completed",
 						"guides/readonly_mode",
 					]
 				},

@@ -20,6 +20,7 @@ description: You can have an API overview of the DHTMLX JavaScript To Do List li
 | [](api/methods/deleteproject_method.md)      | @getshort(api/methods/deleteproject_method.md)      |
 | [](api/methods/deletetask_method.md)         | @getshort(api/methods/deletetask_method.md)         |
 | [](api/methods/destructor_method.md)         | @getshort(api/methods/destructor_method.md)         |
+| [](api/methods/eachselected_method.md)       | @getshort(api/methods/eachselected_method.md)       |
 | [](api/methods/existsproject_method.md)      | @getshort(api/methods/existsproject_method.md)      |
 | [](api/methods/existstask_method.md)         | @getshort(api/methods/existstask_method.md)         |
 | [](api/methods/expandtask_method.md)         | @getshort(api/methods/expandtask_method.md)         |

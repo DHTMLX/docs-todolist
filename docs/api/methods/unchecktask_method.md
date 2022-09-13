@@ -26,7 +26,7 @@ uncheckTask({
 
 ### Example
 
-~~~js {22-25}
+~~~js {22-25} title="Example 1. Unchecking one task"
 const { ToDo, Toolbar } = todo;
 
 const list = new ToDo("#root", {
@@ -52,4 +52,25 @@ list.uncheckTask({
     id: "1.1.1",
     manual: true // 'true' - ignores the value of the "behavior" attribute of the "completed" parameter of the "taskShape" property
 });
+~~~
+
+~~~js title="Example 2. Unchecking multiple tasks"
+const list = new ToDo("#root", {
+    tasks: [
+        { id: "1", text: "Task 1" },
+		{ id: "1.1", text: "Task 1.1", parent: "1", checked: true },
+        { id: "1.1.1", text: "Task 1.1.1", parent: "1.1", checked: true },
+		{ id: "1.2", text: "Task 1.2", parent: "1" },
+        { id: "2", text: "Task 2" },
+		{ id: "2.1", text: "Task 2.1", parent: "2" },
+        { id: "2.1.1", text: "Task 2.1.1", parent: "2.1" },
+		{ id: "2.2", text: "Task 2.2", parent: "2", checked: true },
+    ],
+    selected: ["1.1", "2.2"],
+});
+
+// uncheck selected tasks
+list.eachSelected(id => {
+    list.uncheckTask({ id });
+}, true);
 ~~~

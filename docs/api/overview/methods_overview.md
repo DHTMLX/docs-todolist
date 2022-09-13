@@ -18,6 +18,7 @@ description: You can explore the API methods in the documentation of the DHTMLX 
 | [](../methods/deleteproject_method.md)      | @getshort(../methods/deleteproject_method.md)      |
 | [](../methods/deletetask_method.md)         | @getshort(../methods/deletetask_method.md)         |
 | [](../methods/destructor_method.md)         | @getshort(../methods/destructor_method.md)         |
+| [](../methods/eachselected_method.md)       | @getshort(../methods/eachselected_method.md)       |
 | [](../methods/existsproject_method.md)      | @getshort(../methods/existsproject_method.md)      |
 | [](../methods/existstask_method.md)         | @getshort(../methods/existstask_method.md)         |
 | [](../methods/expandtask_method.md)         | @getshort(../methods/expandtask_method.md)         |

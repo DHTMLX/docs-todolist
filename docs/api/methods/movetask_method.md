@@ -37,7 +37,7 @@ To move a task to the *No project* section, specify the value of the parameter t
 
 ### Example
 
-~~~js {22-28}
+~~~js {22-28} title="Example 1. Moving one task"
 const { ToDo, Toolbar } = todo;
 
 const list = new ToDo("#root", {
@@ -106,6 +106,28 @@ list.moveTask({
 });
 ~~~
 
+~~~js title="Example 2. Moving multiple tasks"
+const list = new ToDo("#root", {
+	tasks: [
+        { id: "1", text: "Task 1" },
+		{ id: "1.1", text: "Task 1.1" },
+        { id: "1.1.1", text: "Task 1.1.1", parent: "1.1" },
+		{ id: "1.2", text: "Task 1.2", parent: "1" },
+        { id: "2", text: "Task 2" },
+		{ id: "2.1", text: "Task 2.1", parent: "2" },
+        { id: "2.1.1", text: "Task 2.1.1", parent: "2.1" },
+		{ id: "2.2", text: "Task 2.2" },
+    ],
+    selected: ["1.1", "2.2"],
+});
 
+// move selected tasks
+list.eachSelected(id => {
+    list.moveTask({ 
+        id,
+        parent: "2.1.1"
+    });
+}, true);
+~~~
 
 **Related article:** [Operations with tasks](guides/task_operations.md)

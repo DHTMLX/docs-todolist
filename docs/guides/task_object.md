@@ -161,7 +161,7 @@ console.log(list.getParentIds({ id: "1.1.1" })); //  ['1.1', '1']
 
 ## Getting Id of selected task
 
-To get ID of the currently selected task, use the [getSelection()](api/methods/getselection_method.md) method:
+To get IDs of the currently selected tasks, use the [getSelection()](api/methods/getselection_method.md) method:
 
 ~~~js
 const tasks = [
@@ -172,6 +172,10 @@ const tasks = [
 ];
 
 const list = new ToDo("#root", { tasks });
+
+list.selectTask({ 
+    id: "1.1",
+});
 
 console.log(list.getSelection()); // -> ["1.1"]
 ~~~
