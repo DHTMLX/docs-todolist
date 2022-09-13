@@ -11,10 +11,9 @@ You can adjust the settings of DHTMLX To Do List according to your needs. The av
 - [to configure the format of dates](#date-format)
 - [to disable validation for due dates of tasks](#due-date-validation)
 - [to change the mode used for marking tasks done](#mode-of-marking-tasks-complete)
-- [to change the mode of displaying completed tasks](#mode-of-displaying-completed-tasks)
 - [to configure the appearance of the toolbar](#toolbar)
 
-You can also initialize To Do List in the [readonly](#read-only-mode) mode, if needed.
+You can also configure the mode of [hiding completed tasks](#mode-of-hiding-completed-tasks) as well as initialize To Do List in the [readonly](#read-only-mode) mode.
 
 ## Tasks
 
@@ -121,22 +120,6 @@ const list = new ToDo("#root", {
 
 **Related sample:** [To do list. Two variants of marking a parent task done](https://snippet.dhtmlx.com/5892fcr2)
 
-### Mode of displaying completed tasks
-
-By default, To Do List displays all tasks (completed and uncompleted) on the page. But you may initialize To Do List in another mode when all completed tasks will be hidden from the page. For that, switch the [`taskShape.completed.hideTask`](api/configs/taskshape_config.md) property on, as in:  
-
-~~~js {6}
-const list = new ToDo("#root", {
-    tasks,
-    taskShape: {
-        completed: {
-            behavior: "manual",
-            taskHide: true
-        }
-    }
-});
-~~~
-
 ## Toolbar
 
 ![toolbar](../assets/separate_toolbar.png)
@@ -159,6 +142,10 @@ const toolbar = new Toolbar("#toolbar", {
 ~~~
 
 The property allows you to define which controls should be shown or hidden. Besides, you can enumerate the controls in the **items** array in the order you want to show them in the toolbar.
+
+## Mode of hiding completed tasks
+
+Read the details on how to hide completed tasks from To Do List in the [related section](guides/hide_completed.md).
 
 ## Read-only mode
 

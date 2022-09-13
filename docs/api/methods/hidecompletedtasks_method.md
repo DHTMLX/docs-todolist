@@ -37,4 +37,4 @@ list.hideCompletedTasks();
 
 **Change log:** Added in v1.1
 
-**Related article:** 
+**Related article:** [Hiding completed tasks](guides/hide_completed.md)

@@ -125,7 +125,10 @@ Check the [**Localization**](guides/localization.md) article to learn how to pre
 - The `selectable` parameter was renamed to `completed` in v1.1
 - The `taskHide` option of the `completed` parameter was added in v1.1
 
-**Related article:** [Configuration](guides/configuration.md#tasks)
+**Related articles:** 
+
+- [Configuration](guides/configuration.md#tasks)
+- [Hiding completed tasks](guides/hide_completed.md)
 
 **Related samples:** 
 - [To do list. Subtask counter and date format](https://snippet.dhtmlx.com/magidhw8)
