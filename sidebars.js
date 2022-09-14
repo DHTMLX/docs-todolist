@@ -338,7 +338,7 @@ module.exports = {
 						"guides/task_operations",
 						"guides/multiselection",
 						"guides/task_users",
-						"guides/hide_completed",
+						"guides/hide_completed_tasks",
 						"guides/readonly_mode",
 					]
 				},

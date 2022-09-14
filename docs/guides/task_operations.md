@@ -31,11 +31,12 @@ The quickest way to copy and paste a task is use the [copyTask()](../../api/meth
 - the ID of the task that you want to copy and paste
 - the ID of the future project (if it exists)
 - the ID of the target task where the copied task should be pasted
-- another two parameters (**parent** and **reverse**) are optional
+- other parameters are optional
 
 ~~~js
 list.copyTask({ 
     id: "1.1", // ID of the task to copy
+    join: false, // resets copies of other tasks and copies only this task
     project: "p_2", // ID of the future project (if exists)
     parent: "2.1", // ID of the future parent
     targetId: "2.1.2", // ID of the target task
@@ -45,13 +46,19 @@ list.copyTask({
 
 ### Copy to the clipboard
 
-To copy a necessary task to the clipboard without its further pasting, pass just the ID of the task to the [copyTask()](../../api/methods/copytask_method/) method:
+To copy a necessary task to the clipboard without its further pasting, pass the ID of the task to the [copyTask()](../../api/methods/copytask_method/) method:
 
 ~~~js
 list.copyTask({ 
     id: "1.1"
 });
 ~~~
+
+### Saving IDs of other copies
+
+:::info
+If you want to copy the task and save other previously copied tasks, you need to pass the **join: true** parameter to the [copyTask()](../../api/methods/copytask_method/) method. Otherwise, only the specified task will be copied, all others copies created earlier will be reset.
+:::
 
 ### Paste from the clipboard
 
@@ -106,26 +113,6 @@ list.deleteTask({ id: "1.2" });
 :::note
 The method removes the task with all its child tasks
 :::
-
-## Selecting/unselecting a task
-
-To select a particular task, pass the ID of the task as a parameter to the [selectTask()](../../api/methods/selecttask_method/) method:
-
-~~~js
-list.selectTask({ 
-    id: "1.1",
-});
-~~~
-
-:::tip
-To get the ID of the currently selected task, use the [`getSelection()`](../../api/methods/getselection_method/) method
-:::
-
-To remove selection from a selected task, pass the ID of the task as a parameter to the [unselectTask()](../../api/methods/unselecttask_method/) method:
-
-~~~js
-list.unselectTask({ id: "1.1" });
-~~~
 
 ## Expanding/collapsing a task
 

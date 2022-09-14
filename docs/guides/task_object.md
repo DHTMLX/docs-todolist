@@ -159,7 +159,7 @@ const list = new ToDo("#root", { tasks });
 console.log(list.getParentIds({ id: "1.1.1" })); //  ['1.1', '1']
 ~~~
 
-## Getting Id of selected task
+## Getting Id of selected tasks
 
 To get IDs of the currently selected tasks, use the [getSelection()](api/methods/getselection_method.md) method:
 

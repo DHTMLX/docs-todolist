@@ -39,6 +39,28 @@ The **list of tasks** is the main part of the To Do List interface intended for 
 
 ![list](assets/list.png)
 
+## Selecting tasks
+
+### Selecting one task
+
+- To select a task just click on it
+
+- To move selection up to the previous task, press `ArrowUp`
+
+- To move selection down to the next task, press `ArrowDown`
+
+### Selecting multiple tasks
+
+- To select multiple tasks, you can apply the following combinations:
+    - hold down the `Ctrl (Cmd)` key and click each task you'd like to select
+    - hold down the `Ctrl (Cmd) + Shift` keys and click each task you'd like to select
+    - click on the first task, hold down the `Shift` key, then click on the last task and release `Shift`
+- To select a task above/below the current one, press `Shift` + `Arrow Up`/ `Arrow Down` 
+
+:::info
+You can select the tasks only if they are visible on the page, i.e. tasks which stay visible after the filtering process or switching to the mode of hiding completed tasks.
+:::
+
 ## Managing a task
 
 ### Adding a new task
@@ -79,30 +101,18 @@ The **list of tasks** is the main part of the To Do List interface intended for 
 
 - To delete a task, select it and press `Backspace`/`Delete`
 
-## Selecting tasks
-
-- To select multiple tasks, you can:
-    - hold down the `Ctrl (Cmd)` key and click on the desired tasks to select
-    - hold down the `Ctrl (Cmd) + Shift` keys and click on the desired tasks to select
-- To select a range of tasks, click on the first task, hold down the `Shift` key, then click on the last task and release `Shift`
-- To select a task above/below the current one, press `Shift` + `Arrow Up`/ `Arrow Down` 
-
-:::info
-You can select the tasks only if they are visible on the page, i.e. tasks which stay visible after filtering or hiding completed tasks.
-:::
-
 ## Managing multiple tasks
 
-After you have selected multiple tasks, you can perform a set of operations over them, namely:
+After you have selected [multiple tasks](#selecting-multiple-tasks), you can perform a set of operations over them, namely:
 
-- To delete tasks by pressing `Backspace`/`Delete`
-- To copy tasks via `Ctrl (Cmd) + C` and paste them via `Ctrl (Cmd) + V`. The tasks which are selected in the chaotic order will be structured depending on the structure of the data
-- To copy tasks down via `Ctrl (Cmd) + D` 
-- To drag-n-drop tasks
-- To copy tasks via pressing `Alt` while dragging-and-dropping them
-- To move tasks withing a project via `Ctrl (Cmd)` + `Arrow Up`/ `Arrow Down`
-- To mark tasks as complete/incomplete by pressing `Space`
-- To change the nesting level of tasks via `Tab`/ `Shift + Tab` 
+- to delete tasks by pressing `Backspace`/`Delete`
+- to copy tasks via `Ctrl (Cmd) + C` and paste them via `Ctrl (Cmd) + V`. The tasks which are selected in the chaotic order will be structured depending on the structure of the data
+- to copy tasks down via `Ctrl (Cmd) + D` 
+- to drag-n-drop tasks
+- to copy tasks via pressing `Alt` while dragging-and-dropping them
+- to move tasks withing a project via `Ctrl (Cmd)` + `Arrow Up`/ `Arrow Down`
+- to mark tasks as complete/incomplete by pressing `Space`
+- to change the nesting level of tasks via `Tab`/ `Shift + Tab` 
 
 :::note
 The nesting level of the tasks which are selected with their parent will not change.

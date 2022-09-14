@@ -47,6 +47,8 @@ const toolbar = new Toolbar("#toolbar", {
 	api: list.api,
 });
 
+console.log(list.getSelection()); // -> ['1.1']
+
 list.selectTask({ 
     id: "1.1.1",
     join: true
@@ -57,4 +59,4 @@ console.log(list.getSelection()); // -> ['1.1', '1.1.1']
 
 **Change log:** The `join` parameter was added in v1.1
 
-**Related article:** [Operations with tasks](guides/task_operations.md)
+**Related article:** [Multiple select and bulk operations](guides/multiselection.md)
