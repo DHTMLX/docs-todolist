@@ -15,6 +15,7 @@ description: You can learn about the copy-task event in the documentation of the
 ~~~js
 "copy-task": ({
     id: string | number,
+    join?: boolean,
     parent?: string | number | null,
     project?: string | number | null,
     targetId?: string | number,
@@ -27,6 +28,9 @@ description: You can learn about the copy-task event in the documentation of the
 The callback of the **copy-task** event takes an object with the following parameters:
 
 - `id` - (required) the id of a task
+- `join` - (optional) defines the mode in which the task has been copied: 
+    - **true** - multiple copy mode
+    - **false** - single copy mode
 
 In case the copied task is also pasted from the clipboard into another position, the object can take *four more* parameters:
 
@@ -60,5 +64,7 @@ list.api.on("copy-task", ({id}) => {
     console.log("The", id, "task is copied"); 
 });
 ~~~ 
+
+**Change log:** The `join` parameter was added in v1.1
 
 **Related article:** [Operations with tasks](guides/task_operations.md#copyingpasting-a-task)

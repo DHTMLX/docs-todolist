@@ -57,4 +57,6 @@ list.api.on("select-task", ({id, join}) => {
 
 **Change log:** The `join` parameter was added in v1.1
 
-**Related article:** [Operations with tasks](guides/task_operations.md#selectingunselecting-a-task)
+**Related articles:** 
+- [Operations with tasks](guides/task_operations.md#selectingunselecting-a-task)
+- [Multiple select and bulk operations](guides/multiselection.md)
