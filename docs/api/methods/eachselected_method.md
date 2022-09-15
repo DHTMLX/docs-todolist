@@ -73,3 +73,5 @@ list.eachSelected(id => {
 ~~~
 
 **Change log:** Added in v1.1
+
+**Related article:** [Multiple select and bulk operations](guides/multiselection.md)

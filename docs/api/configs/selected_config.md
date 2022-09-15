@@ -8,7 +8,7 @@ description: You can learn about the selected config in the documentation of the
 
 ### Description
 
-@short: Optional. An array of tasks' IDs which need to be selected on initialization of To Do List
+@short: Optional. An array with IDs of the tasks which need to be selected on initialization of To Do List
 
 ### Usage
 
@@ -38,3 +38,5 @@ const toolbar = new Toolbar("#toolbar", {
 ~~~
 
 **Change log:** Added in v1.1
+
+**Related article:** [Multiple select and bulk operations](guides/multiselection.md)

@@ -8,7 +8,7 @@ description: You can learn about selection of multiple tasks in the documentatio
 
 The To Do List library allows you to select multiple tasks and manage them at once.
 
-In this article we'll discuss the details on how to initialize To Do List with selected tasks, how to select one or several tasks after the initialization, how to get IDs of all selected tasks. 
+In this article we'll discuss the details on how to initialize To Do List with selected tasks, how to select one or several tasks after the initialization stage, how to get IDs of all selected tasks. 
 
 We'll consider how to perform bulk operations over the selected tasks and provide you with a list of available operations. And, finally, we'll show you the ways of resetting selection.
 
@@ -51,7 +51,7 @@ The library provides you with the [`selectTask()`](api/methods/selecttask_method
 
 By default, the value of the **join** parameter is set to *false*. It means, that the method will select only the specified task without saving IDs of the previously selected tasks.
 
-Let's consider the following code snippet:
+Take a look at the following code snippet:
 
 ~~~js {19}
 const list = new ToDo("#root", {

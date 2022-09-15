@@ -58,7 +58,7 @@ The **list of tasks** is the main part of the To Do List interface intended for 
 - To select a task above/below the current one, press `Shift` + `Arrow Up`/ `Arrow Down` 
 
 :::info
-You can select the tasks only if they are visible on the page, i.e. tasks which stay visible after the filtering process or switching to the mode of hiding completed tasks.
+You can select the tasks only if they are visible on the page, i.e. tasks which stay visible after the filtering process or after switching to the mode of hiding completed tasks.
 :::
 
 ## Managing a task
