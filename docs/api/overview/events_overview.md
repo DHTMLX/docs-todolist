@@ -19,7 +19,9 @@ description: You can explore the API events in the documentation of the DHTMLX J
 | [](../events/copytask_event.md)           | @getshort(../events/copytask_event.md)           |
 | [](../events/deleteproject_event.md)      | @getshort(../events/deleteproject_event.md)      |
 | [](../events/deletetask_event.md)         | @getshort(../events/deletetask_event.md)         |
+| [](../events/drag_event.md)               | @getshort(../events/drag_event.md)               |
 | [](../events/edititem_event.md)           | @getshort(../events/edititem_event.md)           |
+| [](../events/enddrag_event.md)            | @getshort(../events/enddrag_event.md)            |
 | [](../events/expandtask_event.md)         | @getshort(../events/expandtask_event.md)         |
 | [](../events/hidecompletedtasks_event.md) | @getshort(../events/hidecompletedtasks_event.md) |
 | [](../events/indenttask_event.md)         | @getshort(../events/indenttask_event.md)         |
@@ -31,6 +33,7 @@ description: You can explore the API events in the documentation of the DHTMLX J
 | [](../events/setfilter_event.md)          | @getshort(../events/setfilter_event.md)          |
 | [](../events/setproject_event.md)         | @getshort(../events/setproject_event.md)         |
 | [](../events/showcompletedtasks_event.md) | @getshort(../events/showcompletedtasks_event.md) |
+| [](../events/startdrag_event.md)              | @getshort(../events/startdrag_event.md)              |
 | [](../events/unassignuser_event.md)       | @getshort(../events/unassignuser_event.md)       |
 | [](../events/unchecktask_event.md)        | @getshort(../events/unchecktask_event.md)        |
 | [](../events/unindenttask_event.md)       | @getshort(../events/unindenttask_event.md)       |

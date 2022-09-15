@@ -15,8 +15,8 @@ Released on
 ## New functionality
 
 - new `taskHide` option of the `completed` parameter of the [taskShape](api/configs/taskshape_config.md) property. 
-- The ability to initialize To Do List in the mode when [all completed tasks will be hidden](guides/hide_completed.md)
-- the ability to show or hide completed tasks via [Toolbar menu or API methods](guides/hide_completed.md)
+- The ability to initialize To Do List in the mode when [all completed tasks will be hidden](guides/hide_completed_tasks.md)
+- the ability to show or hide completed tasks via [Toolbar menu or API methods](guides/hide_completed_tasks.md)
 
 - new `hideCompleted` parameter of the [`hasChildren()`](api/methods/haschildren_method.md) method
 - new `hideCompleted` parameter of the [`getChildrenIds()`](api/methods/getchildrenids_method.md) method
@@ -78,6 +78,7 @@ Released on June 20, 2022
 - [Backend integration](guides/working_with_server.md) (Go and Node)
 - [Integration with other DHTMLX widgets](guides/integration.md)
 - Cross browser compatibility
+- Touch support
 
 ### API
 

@@ -9,6 +9,7 @@ description: You can learn about the To Do List Configuration in the documentati
 You can adjust the settings of DHTMLX To Do List according to your needs. The available configuration options allow you:
 - [to configure the appearance of the badge displaying the progress of task completion](#counter-of-completed-subtasks)
 - [to configure the format of dates](#date-format)
+- [to configure or disable drag-n-drop of tasks](#drag-n-drop)
 - [to disable validation for due dates of tasks](#due-date-validation)
 - [to change the mode used for marking tasks done](#mode-of-marking-tasks-complete)
 - [to configure the appearance of the toolbar](#toolbar)
@@ -63,6 +64,41 @@ const list = new ToDo("#root", {
 **Related sample:** [To do list. Subtask counter and date format](https://snippet.dhtmlx.com/magidhw8)
 
 Check [the list of available characters](api/configs/taskshape_config.md#list-of-characters).
+
+### Drag-n-drop
+
+The default configuration of To Do List includes the drag-n-drop functionality. You can [select one or several tasks](../../#selecting-tasks) and drag the selected tasks vertically at once. If you need to create a copy of the selected tasks, hold the *Alt* key during drag-n-drop.
+
+There is the [drag](api/configs/drag_config.md) property which allows you:
+
+- to configure the behavior of the collapsed tasks so that they don't expand when you hover them over during drag-n-drop:
+
+~~~js {8}
+const list = new ToDo("#root", {
+	tasks: [
+        { id: "1", text: "Task 1 #tag1" },
+		...
+    ],
+    drag: {
+        disable: false,
+        expand: false // true by default
+    }
+});
+~~~
+
+- to disable drag-n-drop:
+
+~~~js {7}
+const list = new ToDo("#root", {
+	tasks: [
+        { id: "1", text: "Task 1 #tag1" },
+		...
+    ],
+    drag: {
+        disable: true // false by default
+    }
+});
+~~~
 
 ### Due date validation
 
@@ -145,7 +181,7 @@ The property allows you to define which controls should be shown or hidden. Besi
 
 ## Mode of hiding completed tasks
 
-Read the details on how to hide completed tasks from To Do List in the [related section](guides/hide_completed.md).
+Read the details on how to hide completed tasks from To Do List in the [related section](guides/hide_completed_tasks.md).
 
 ## Read-only mode
 

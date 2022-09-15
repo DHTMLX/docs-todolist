@@ -128,7 +128,7 @@ Check the [**Localization**](guides/localization.md) article to learn how to pre
 **Related articles:** 
 
 - [Configuration](guides/configuration.md#tasks)
-- [Hiding completed tasks](guides/hide_completed.md)
+- [Show/hide completed tasks](guides/hide_completed_tasks.md)
 
 **Related samples:** 
 - [To do list. Subtask counter and date format](https://snippet.dhtmlx.com/magidhw8)

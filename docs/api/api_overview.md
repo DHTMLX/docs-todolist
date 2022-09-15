@@ -83,7 +83,9 @@ description: You can have an API overview of the DHTMLX JavaScript To Do List li
 | [](api/events/copytask_event.md)           | @getshort(api/events/copytask_event.md)           |
 | [](api/events/deleteproject_event.md)      | @getshort(api/events/deleteproject_event.md)      |
 | [](api/events/deletetask_event.md)         | @getshort(api/events/deletetask_event.md)         |
+| [](api/events/drag_event.md)               | @getshort(api/events/drag_event.md)               |
 | [](api/events/edititem_event.md)           | @getshort(api/events/edititem_event.md)           |
+| [](api/events/enddrag_event.md)            | @getshort(api/events/enddrag_event.md)            |
 | [](api/events/expandtask_event.md)         | @getshort(api/events/expandtask_event.md)         |
 | [](api/events/hidecompletedtasks_event.md) | @getshort(api/events/hidecompletedtasks_event.md) |
 | [](api/events/indenttask_event.md)         | @getshort(api/events/indenttask_event.md)         |
@@ -95,6 +97,7 @@ description: You can have an API overview of the DHTMLX JavaScript To Do List li
 | [](api/events/setfilter_event.md)          | @getshort(api/events/setfilter_event.md)          |
 | [](api/events/setproject_event.md)         | @getshort(api/events/setproject_event.md)         |
 | [](api/events/showcompletedtasks_event.md) | @getshort(api/events/showcompletedtasks_event.md) |
+| [](api/events/startdrag_event.md)          | @getshort(api/events/startdrag_event.md)          |
 | [](api/events/unassignuser_event.md)       | @getshort(api/events/unassignuser_event.md)       |
 | [](api/events/unchecktask_event.md)        | @getshort(api/events/unchecktask_event.md)        |
 | [](api/events/unindenttask_event.md)       | @getshort(api/events/unindenttask_event.md)       |
@@ -108,6 +111,7 @@ description: You can have an API overview of the DHTMLX JavaScript To Do List li
 | Name                                    | Description                                    |
 | :-------------------------------------- | :--------------------------------------------- |
 | [](api/configs/activeproject_config.md) | @getshort(api/configs/activeproject_config.md) |
+| [](api/configs/drag_config.md)          | @getshort(api/configs/drag_config.md)          |
 | [](api/configs/id_config.md)            | @getshort(api/configs/id_config.md)            |
 | [](api/configs/locale_config.md)        | @getshort(api/configs/locale_config.md)        |
 | [](api/configs/projects_config.md)      | @getshort(api/configs/projects_config.md)      |

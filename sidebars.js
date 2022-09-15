@@ -176,7 +176,9 @@ module.exports = {
 						"api/events/copytask_event",
 						"api/events/deleteproject_event",
 						"api/events/deletetask_event",
+						"api/events/drag_event",
 						"api/events/edititem_event",
+						"api/events/enddrag_event",
             			"api/events/expandtask_event",
             			"api/events/hidecompletedtasks_event",
             			"api/events/indenttask_event",
@@ -189,6 +191,7 @@ module.exports = {
 						"api/events/setfilter_event",
 						"api/events/setproject_event",
 						"api/events/showcompletedtasks_event",
+						"api/events/startdrag_event",
 						"api/events/unassignuser_event",
 						"api/events/unchecktask_event",
 						"api/events/unindenttask_event",
@@ -209,6 +212,7 @@ module.exports = {
 					items: [
 						// To Do List properties
 						"api/configs/activeproject_config",
+						"api/configs/drag_config",
 						"api/configs/id_config",
 						"api/configs/locale_config",
 						"api/configs/projects_config",
