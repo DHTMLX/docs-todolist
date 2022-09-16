@@ -42,6 +42,7 @@ description: You can have an API overview of the DHTMLX JavaScript To Do List li
 | [](api/methods/setlocale_method.md)          | @getshort(api/methods/setlocale_method.md)          |
 | [](api/methods/setfilter_method.md)          | @getshort(api/methods/setfilter_method.md)          |
 | [](api/methods/setproject_method.md)         | @getshort(api/methods/setproject_method.md)         |
+| [](api/methods/setsort_method.md)            | @getshort(api/methods/setsort_method.md)            |
 | [](api/methods/showcompletedtasks_method.md) | @getshort(api/methods/showcompletedtasks_method.md) |
 | [](api/methods/unassignuser_method.md)       | @getshort(api/methods/unassignuser_method.md)       |
 | [](api/methods/unchecktask_method.md)        | @getshort(api/methods/unchecktask_method.md)        |
@@ -96,6 +97,7 @@ description: You can have an API overview of the DHTMLX JavaScript To Do List li
 | [](api/events/selecttask_event.md)         | @getshort(api/events/selecttask_event.md)         |
 | [](api/events/setfilter_event.md)          | @getshort(api/events/setfilter_event.md)          |
 | [](api/events/setproject_event.md)         | @getshort(api/events/setproject_event.md)         |
+| [](api/events/setsort_event.md)            | @getshort(api/events/setsort_event.md)            |
 | [](api/events/showcompletedtasks_event.md) | @getshort(api/events/showcompletedtasks_event.md) |
 | [](api/events/startdrag_event.md)          | @getshort(api/events/startdrag_event.md)          |
 | [](api/events/unassignuser_event.md)       | @getshort(api/events/unassignuser_event.md)       |

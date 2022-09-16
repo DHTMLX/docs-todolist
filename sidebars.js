@@ -95,6 +95,7 @@ module.exports = {
 						"api/methods/setfilter_method",
 						"api/methods/setlocale_method",
 						"api/methods/setproject_method",
+						"api/methods/setsort_method",
 						"api/methods/showcompletedtasks_method",
 						"api/methods/unassignuser_method",
 						"api/methods/unchecktask_method",
@@ -190,6 +191,7 @@ module.exports = {
 						"api/events/selecttask_event",
 						"api/events/setfilter_event",
 						"api/events/setproject_event",
+						"api/events/setsort_event",
 						"api/events/showcompletedtasks_event",
 						"api/events/startdrag_event",
 						"api/events/unassignuser_event",
@@ -342,6 +344,7 @@ module.exports = {
 						"guides/task_operations",
 						"guides/multiselection",
 						"guides/task_users",
+						"guides/sorting_filtering_tasks",
 						"guides/hide_completed_tasks",
 						"guides/readonly_mode",
 					]

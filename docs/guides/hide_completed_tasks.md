@@ -1,5 +1,5 @@
 ---
-sidebar_label: Show/hide completed tasks
+sidebar_label: Hiding completed tasks
 title: Show/hide completed tasks
 description: You can learn about how to hide or show completed tasks in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
 ---

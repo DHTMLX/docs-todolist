@@ -32,6 +32,7 @@ description: You can explore the API events in the documentation of the DHTMLX J
 | [](../events/selecttask_event.md)         | @getshort(../events/selecttask_event.md)         |
 | [](../events/setfilter_event.md)          | @getshort(../events/setfilter_event.md)          |
 | [](../events/setproject_event.md)         | @getshort(../events/setproject_event.md)         |
+| [](../events/setsort_event.md)         | @getshort(../events/setsort_event.md)         |
 | [](../events/showcompletedtasks_event.md) | @getshort(../events/showcompletedtasks_event.md) |
 | [](../events/startdrag_event.md)              | @getshort(../events/startdrag_event.md)              |
 | [](../events/unassignuser_event.md)       | @getshort(../events/unassignuser_event.md)       |

@@ -40,6 +40,7 @@ description: You can explore the API methods in the documentation of the DHTMLX 
 | [](../methods/setfilter_method.md)          | @getshort(../methods/setfilter_method.md)          |
 | [](../methods/setlocale_method.md)          | @getshort(../methods/setlocale_method.md)          |
 | [](../methods/setproject_method.md)         | @getshort(../methods/setproject_method.md)         |
+| [](../methods/setsort_method.md)            | @getshort(../methods/setsort_method.md)            |
 | [](../methods/showcompletedtasks_method.md) | @getshort(../methods/showcompletedtasks_method.md) |
 | [](../methods/unassignuser_method.md)       | @getshort(../methods/unassignuser_method.md)       |
 | [](../methods/unchecktask_method.md)        | @getshort(../methods/unchecktask_method.md)        |
