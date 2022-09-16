@@ -45,7 +45,7 @@ The **list of tasks** is the main part of the To Do List interface intended for 
 
 - To add a new task into the beginning of the list, click on the **+ Add task** button in the top navigation panel
 
-- To add a new task under the necessary one, select the task and press `Space`
+- To add a new task under the necessary one, select the task and press `Enter`
 
 - To add a subtask, add a new task under the selected one and press `Tab`. Use `Shift + Tab` to promote the nesting level of the task
 
@@ -71,7 +71,7 @@ The **list of tasks** is the main part of the To Do List interface intended for 
 
 ### Moving tasks
 
-- To move a task withing a project, select the task and press `Arrow Up`/ `Arrow Down`
+- To move a task withing a project, select the task and press `Ctrl (Cmd)` + `Arrow Up`/ `Arrow Down`
 - To move a task to another project, open the task menu, hover **Move to** and select the necessary project in the dropdown list
 
 ### Deleting tasks

@@ -19,6 +19,8 @@ Released on July 5, 2022
 
 Released on June 20, 2022
 
+[Review of release on the blog](https://dhtmlx.com/blog/dhtmlx-list-1-0-advanced-task-assignment-inline-editing-handy-keyboard-navigation/)
+
 ### Initial functionality
 
 - The ability [to load data for **tasks**, **projects**, **users**, **tags**, **activeProject**](guides/loading_data.md)
