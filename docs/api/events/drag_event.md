@@ -8,7 +8,7 @@ description: You can learn about the drag event in the documentation of the DHTM
 
 ### Description
 
-@short: Fires when the user drags the tasks
+@short: Fires when the user is dragging the tasks
 
 ### Usage
 
@@ -55,3 +55,5 @@ list.api.on("drag", ({start, source, target}) => {
 ~~~
 
 **Change log:** Added in v1.1
+
+**Related article:** [Drag-n-drop](guides/configuration.md#drag-n-drop)

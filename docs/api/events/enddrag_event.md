@@ -8,7 +8,7 @@ description: You can learn about the end-drag event in the documentation of the 
 
 ### Description
 
-@short: Fires when the user has finished to drag the tasks and released the mouse button
+@short: Fires when dragging of tasks has been finished
 
 ### Usage
 
@@ -25,13 +25,13 @@ description: You can learn about the end-drag event in the documentation of the 
 The callback of the **end-drag** event can take an object with the following parameters:
 
 - `target` - (required) the ID of the task from which the dragging process has started
-- `dropPosition` - (required) the position of the tasks after the mouse button is released:
-    - `top` - the dragged tasks are dropped above the target task
-    - `bottom` - the dragged tasks are dropped below the target task
-    - `in` - the dragged tasks are dropped over the target task
+- `dropPosition` - (required) the position where the dragged tasks has been dropped:
+    - `top` - above the target task
+    - `bottom` - below the target task
+    - `in` - over the target task
 - `mode` - (required) the mode of drag-n-drop:
-    - `move` - the user moves the tasks
-    - `copy` - the user copies the tasks
+    - `move` - the move mode
+    - `copy` - the copy mode
 
 :::info
 To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods.md)
@@ -60,3 +60,5 @@ list.api.on("drag", ({ target, dropPosition, mode }) => {
 ~~~
 
 **Change log:** Added in v1.1
+
+**Related article:** [Drag-n-drop](guides/configuration.md#drag-n-drop)

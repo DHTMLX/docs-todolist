@@ -8,7 +8,7 @@ description: You can learn about the start-drag event in the documentation of th
 
 ### Description
 
-@short: Fires when the user starts dragging the tasks
+@short: Fires when the user starts to drag the tasks
 
 ### Usage
 
@@ -25,8 +25,8 @@ The callback of the **start-drag** event can take an object with the following p
 
 - `start` - (required) the ID of the task from which the dragging process has started
 - `mode` - (required) the mode of drag-n-drop:
-    - `move` - the user moves the tasks
-    - `copy` - the user copies the tasks
+    - `move` - the move mode
+    - `copy` - the copy mode
 
 :::info
 To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods.md)
@@ -55,3 +55,5 @@ list.api.on("start-drag", ({ start, mode }) => {
 ~~~
 
 **Change log:** Added in v1.1
+
+**Related article:** [Drag-n-drop](guides/configuration.md#drag-n-drop)
