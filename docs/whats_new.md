@@ -14,12 +14,29 @@ Released on
 
 ## New functionality
 
-- new `taskHide` option of the `completed` parameter of the [taskShape](api/configs/taskshape_config.md) property. 
-- The ability to initialize To Do List in the mode when [all completed tasks will be hidden](guides/hide_completed_tasks.md)
-- the ability to show or hide completed tasks via [Toolbar menu or API methods](guides/hide_completed_tasks.md)
+- The ability [to initialize To Do List with hidden completed tasks](guides/hide_completed_tasks.md#initial-mode)
+- The ability [to show/hide completed tasks](guides/hide_completed_tasks.md#switching-between-modes):
+    - new methods: [`hideCompletedTasks()`](api/methods/hidecompletedtasks_method.md), [`showCompletedTasks()`](api/methods/showcompletedtasks_method.md)
+    - new events: [`hide-completed-tasks`](api/events/hidecompletedtasks_event.md), [`show-completed-tasks`](api/events/showcompletedtasks_event.md)
+    - new `hideCompleted` parameter for the methods: [`hasChildren()`](api/methods/haschildren_method.md), [`getChildrenIds()`](api/methods/getchildrenids_method.md)
+- Multi-select:
+    - the ability to [select](../#selecting-multiple-tasks) and [manage](../#managing-multiple-tasks) multiple tasks using keyboard shortcuts
+    - the ability to [select and manage multiple tasks via API](guides/multiselection.md):
+        - new [`selected`](api/configs/selected_config.md) property
+        - new `join` parameter for the methods: [`selectTask()`](api/methods/selecttask_method.md), [`copyTask()`](api/methods/copytask_method.md)
+        - new `join` parameter for the events: [`select-task`](api/events/selecttask_event.md), [`copy-task`](api/events/copytask_event.md)
+        - new method: [`eachSelected()`](api/methods/eachselected_method.md)
+        - updated method: [`getSelection()`](api/methods/getselection_method.md) 
+    - the ability to unselect all tasks via the [`unselectTask()`](api/methods/unselecttask_method.md) method
+- Drag-n-drop:
+    - the ability to [configure or disable the functionality](guides/configuration.md#drag-n-drop)
+    - new events: [`start-drag`](api/events/startdrag_event.md), [`drag`](api/events/drag_event.md), [`end-drag`](api/events/enddrag_event.md)
+- [Sorting tasks via UI or through API](guides/sorting_filtering_tasks.md#sorting-tasks):
+    - new method: [`setSort()`](api/methods/setsort_method.md)
+    - new event: [`set-sort`](api/events/setsort_event.md)
+    - extended list of parameters of the [`tasks`](api/configs/tasks_config.md) property
+- New events for managing the menu: [`open-menu`](api/events/openmenu_event.md) and [`close-menu`](api/events/closemenu_event.md)
 
-- new `hideCompleted` parameter of the [`hasChildren()`](api/methods/haschildren_method.md) method
-- new `hideCompleted` parameter of the [`getChildrenIds()`](api/methods/getchildrenids_method.md) method
 
 ## Version 1.0.1
 
