@@ -80,6 +80,7 @@ description: You can have an API overview of the DHTMLX JavaScript To Do List li
 | [](api/events/checktask_event.md)          | @getshort(api/events/checktask_event.md)          |
 | [](api/events/clonetask_event.md)          | @getshort(api/events/clonetask_event.md)          |
 | [](api/events/closeinlineeditor_event.md)  | @getshort(api/events/closeinlineeditor_event.md)  |
+| [](api/events/closemenu_event.md)          | @getshort(api/events/closemenu_event.md)          |
 | [](api/events/collapsetask_event.md)       | @getshort(api/events/collapsetask_event.md)       |
 | [](api/events/copytask_event.md)           | @getshort(api/events/copytask_event.md)           |
 | [](api/events/deleteproject_event.md)      | @getshort(api/events/deleteproject_event.md)      |
@@ -93,6 +94,7 @@ description: You can have an API overview of the DHTMLX JavaScript To Do List li
 | [](api/events/keypressontodo_event.md)     | @getshort(api/events/keypressontodo_event.md)     |
 | [](api/events/movetask_event.md)           | @getshort(api/events/movetask_event.md)           |
 | [](api/events/openinlineeditor_event.md)   | @getshort(api/events/openinlineeditor_event.md)   |
+| [](api/events/openmenu_event.md)           | @getshort(api/events/openmenu_event.md)           |
 | [](api/events/pastetask_event.md)          | @getshort(api/events/pastetask_event.md)          |
 | [](api/events/selecttask_event.md)         | @getshort(api/events/selecttask_event.md)         |
 | [](api/events/setfilter_event.md)          | @getshort(api/events/setfilter_event.md)          |

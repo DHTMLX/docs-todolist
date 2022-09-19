@@ -15,6 +15,7 @@ description: You can explore the API events in the documentation of the DHTMLX J
 | [](../events/checktask_event.md)          | @getshort(../events/checktask_event.md)          |
 | [](../events/clonetask_event.md)          | @getshort(../events/clonetask_event.md)          |
 | [](../events/closeinlineeditor_event.md)  | @getshort(../events/closeinlineeditor_event.md)  |
+| [](../events/closemenu_event.md)          | @getshort(../events/closemenu_event.md)          |
 | [](../events/collapsetask_event.md)       | @getshort(../events/collapsetask_event.md)       |
 | [](../events/copytask_event.md)           | @getshort(../events/copytask_event.md)           |
 | [](../events/deleteproject_event.md)      | @getshort(../events/deleteproject_event.md)      |
@@ -28,13 +29,14 @@ description: You can explore the API events in the documentation of the DHTMLX J
 | [](../events/keypressontodo_event.md)     | @getshort(../events/keypressontodo_event.md)     |
 | [](../events/movetask_event.md)           | @getshort(../events/movetask_event.md)           |
 | [](../events/openinlineeditor_event.md)   | @getshort(../events/openinlineeditor_event.md)   |
+| [](../events/openmenu_event.md)           | @getshort(../events/openmenu_event.md)           |
 | [](../events/pastetask_event.md)          | @getshort(../events/pastetask_event.md)          |
 | [](../events/selecttask_event.md)         | @getshort(../events/selecttask_event.md)         |
 | [](../events/setfilter_event.md)          | @getshort(../events/setfilter_event.md)          |
 | [](../events/setproject_event.md)         | @getshort(../events/setproject_event.md)         |
-| [](../events/setsort_event.md)         | @getshort(../events/setsort_event.md)         |
+| [](../events/setsort_event.md)            | @getshort(../events/setsort_event.md)            |
 | [](../events/showcompletedtasks_event.md) | @getshort(../events/showcompletedtasks_event.md) |
-| [](../events/startdrag_event.md)              | @getshort(../events/startdrag_event.md)              |
+| [](../events/startdrag_event.md)          | @getshort(../events/startdrag_event.md)          |
 | [](../events/unassignuser_event.md)       | @getshort(../events/unassignuser_event.md)       |
 | [](../events/unchecktask_event.md)        | @getshort(../events/unchecktask_event.md)        |
 | [](../events/unindenttask_event.md)       | @getshort(../events/unindenttask_event.md)       |
