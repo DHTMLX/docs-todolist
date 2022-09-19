@@ -34,7 +34,15 @@ The **items** array can include the following parameters:
 
 - `"combo"` - the combo control for choosing a project
 - `"search"` - the search bar 
-- `"menu"` - the menu for adding/renaming/removing a project
+- `"menu"` - the menu with a set of options which allow you to:
+	- sort tasks in the ascending/descending order by the following criteria: 
+		- by text 
+		- by due date 
+		- by completion date 
+		- by creation date 
+		- by editing date 
+	- hide/show completed tasks
+	- to add a new project, rename or delete a currently active project
 - `"custom_item"` - a custom control specified either as a string or a function
 
 :::tip

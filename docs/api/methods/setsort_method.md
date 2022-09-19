@@ -58,4 +58,4 @@ list.setSort({
 
 **Change log:** Added in v1.1
 
-**Related article:** 
+**Related article:** [Sorting and filtering tasks](guides/sorting_filtering_tasks.md)

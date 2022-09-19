@@ -158,17 +158,9 @@ const list = new ToDo("#root", {
 
 ## Toolbar
 
-![toolbar](../assets/separate_toolbar.png)
-
 The toolbar is a top part of To Do List which is [initialized](guides/initialization.md#initialize-toolbar) and [configured](category/toolbar-properties.md) separately from To Do List.
 
-By default, there are the following controls in the toolbar:
-
-- the **"combo"** control which allows you to switch between projects or search for the necessary ones
-- the **"search"** control which provides the search bar
-- the **"menu"** control which allows you to add, remove, or delete a project
-
-To adjust the structure of the toolbar, use the [items](api/toolbar_api/configs/items_config.md) configuration property of the Toolbar component. 
+To change the default structure of the toolbar, use the [items](api/toolbar_api/configs/items_config.md) configuration property of the Toolbar component. 
 
 ~~~js
 const toolbar = new Toolbar("#toolbar", {

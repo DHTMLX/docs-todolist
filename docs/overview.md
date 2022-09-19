@@ -25,7 +25,15 @@ The interface of the To Do List component consists of two parts: [Toolbar](#tool
 
 ![toolbar](assets/search_field.png)
 
-- a **menu** for adding a new project, and renaming or deleting a currently active project
+- a **menu** with a set of controls which allow you to:
+    - sort tasks in the ascending/descending order by the following criteria:
+        - by text
+        - by due date
+        - by completion date
+        - by creation date
+        - by editing date
+    - hide/show completed tasks
+    - to add a new project, rename or delete a currently active project
 
 ![toolbar](assets/project_menu.png)
 
@@ -89,8 +97,6 @@ You can select the tasks only if they are visible on the page, i.e. tasks which 
 - To change the due date of the task, click the due date shown in the task and choose the necessary date 
 
 - To assign people to the task, open the task menu, hover **Assign to** and select the necessary people in the dropdown list. To unassign people from the task, unselect them in the dropdown list
-
-![menu](assets/menu.png)
 
 ### Moving a task
 

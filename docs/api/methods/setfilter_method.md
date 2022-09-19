@@ -56,4 +56,4 @@ list.setFilter({
 list.setFilter({ match: null });
 ~~~
 
-**Related article:** [Operations with tasks](guides/task_operations.md)
+**Related article:** [Sorting and filtering tasks](guides/sorting_filtering_tasks.md)
