@@ -31,7 +31,7 @@ const list = new ToDo("#root", {
 
 You may easily switch between these two modes after initialization of To Do List in two ways:
 
-- via the **Completed tasks -> Show/Hide** menu option of the Toolbar menu
+- via the **Completed tasks -> Show/Hide** option of the Toolbar menu
 
 ![Hide_show_completed_tasks](../assets/hideshow_completedtasks.png)
 

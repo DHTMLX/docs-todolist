@@ -69,6 +69,10 @@ The **list of tasks** is the main part of the To Do List interface intended for 
 You can select the tasks only if they are visible on the page, i.e. tasks which stay visible after the filtering process or after switching to the mode of hiding completed tasks.
 :::
 
+:::tip
+Check [the list of operations you can perform over selected tasks](#managing-multiple-tasks)
+:::
+
 ## Managing a task
 
 ### Adding a new task
