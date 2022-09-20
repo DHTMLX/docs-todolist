@@ -8,7 +8,7 @@ description: You can learn about operations with projects in the documentation o
 
 ## Changing the active project
 
-It is possible to change the currently active project via the [setProject()](../../api/methods/setproject_method/) method. It takes the id of a project as a parameter:
+It is possible to change the currently active project via the [`setProject()`](../../api/methods/setproject_method/) method. It takes the id of a project as a parameter:
 
 ~~~js {9,16}
 const projects = [
@@ -31,7 +31,7 @@ list.setProject({ id: "first" });
 
 ## Adding a new project
 
-You may create a new project via the [addProject()](../../api/methods/addproject_method/) method:
+You may create a new project via the [`addProject()`](../../api/methods/addproject_method/) method:
 
 ~~~js {13-18}
 const projects = [
@@ -56,7 +56,7 @@ list.addProject({
 
 ## Updating a project
 
-To dynamically update parameters of a project, apply the [updateProject()](../../api/methods/updateproject_method/) method. For instance, you can update the label of the project:
+To dynamically update parameters of a project, apply the [`updateProject()`](../../api/methods/updateproject_method/) method. For instance, you can update the label of the project:
 
 ~~~js {13-18}
 const projects = [
@@ -81,7 +81,7 @@ list.updateProject({
 
 ## Deleting a project
 
-To remove an unnecessary project, apply the [deleteProject()](../../api/methods/deleteproject_method/) method:
+To remove an unnecessary project, apply the [`deleteProject()`](../../api/methods/deleteproject_method/) method:
 
 ~~~js {17}
 const projects = [

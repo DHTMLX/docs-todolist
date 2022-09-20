@@ -8,7 +8,7 @@ description: You can learn about operations with tasks in the documentation of t
 
 ## Adding a new task
 
-To add a new task to the list, use the [addTask()](../../api/methods/addtask_method/) method:
+To add a new task to the list, use the [`addTask()`](../../api/methods/addtask_method/) method:
 
 ~~~js
 list.addTask({
@@ -27,7 +27,7 @@ list.addTask({
 
 ### Copy and paste
 
-The quickest way to copy and paste a task is use the [copyTask()](../../api/methods/copytask_method/) method. For that, it is necessary to pass the following parameters to the method: 
+The quickest way to copy and paste a task is use the [`copyTask()`](../../api/methods/copytask_method/) method. For that, it is necessary to pass the following parameters to the method: 
 - the ID of the task that you want to copy and paste
 - the ID of the future project (if it exists)
 - the ID of the target task where the copied task should be pasted
@@ -46,7 +46,7 @@ list.copyTask({
 
 ### Copy to the clipboard
 
-To copy a necessary task to the clipboard without its further pasting, pass the ID of the task to the [copyTask()](../../api/methods/copytask_method/) method:
+To copy a necessary task to the clipboard without its further pasting, pass the ID of the task to the [`copyTask()`](../../api/methods/copytask_method/) method:
 
 ~~~js
 list.copyTask({ 
@@ -57,12 +57,12 @@ list.copyTask({
 ### Saving IDs of other copies
 
 :::info
-If you want to copy the task and save other previously copied tasks, you need to pass the **join: true** parameter to the [copyTask()](../../api/methods/copytask_method/) method. Otherwise, only the specified task will be copied, all others copies created earlier will be reset.
+If you want to copy the task and save other previously copied tasks, you need to pass the **join: true** parameter to the [`copyTask()`](../../api/methods/copytask_method/) method. Otherwise, only the specified task will be copied, all others copies created earlier will be reset.
 :::
 
 ### Paste from the clipboard
 
-You can paste the copied task from the clipboard to the necessary place via the [pasteTask()](../../api/methods/pastetask_method/) method:
+You can paste the copied task from the clipboard to the necessary place via the [`pasteTask()`](../../api/methods/pastetask_method/) method:
 
 ~~~js
 list.pasteTask({ 
@@ -73,7 +73,7 @@ list.pasteTask({
 
 ## Updating a task
 
-To dynamically update parameters of a task, apply the [updateTask()](../../api/methods/updatetask_method/) method:
+To dynamically update parameters of a task, apply the [`updateTask()`](../../api/methods/updatetask_method/) method:
 
 ~~~js
 list.updateTask({ 
@@ -86,7 +86,7 @@ list.updateTask({
 
 ## Moving a task
 
-To move a task to another position, use the [moveTask()](../../api/methods/movetask_method/) method:
+To move a task to another position, use the [`moveTask()`](../../api/methods/movetask_method/) method:
 
 ~~~js
 list.moveTask({ 
@@ -104,7 +104,7 @@ If you move a parent task, it will be moved together with its subtasks.
 
 ## Deleting a task
 
-To delete a task, use the [deleteTask()](../../api/methods/deletetask_method/) method:
+To delete a task, use the [`deleteTask()`](../../api/methods/deletetask_method/) method:
 
 ~~~js
 list.deleteTask({ id: "1.2" });
@@ -116,14 +116,14 @@ The method removes the task with all its child tasks
 
 ## Expanding/collapsing a task
 
-To collapse a task, use the [collapseTask()](../../api/methods/collapsetask_method/) method. The method takes the ID of the task as a parameter:
+To collapse a task, use the [`collapseTask()`](../../api/methods/collapsetask_method/) method. The method takes the ID of the task as a parameter:
 
 ~~~js
 list.collapseTask({ id: "1.1" });
 
 ~~~
 
-To expand a collapsed task by its ID, use the [expandTask()](../../api/methods/expandtask_method/) method:
+To expand a collapsed task by its ID, use the [`expandTask()`](../../api/methods/expandtask_method/) method:
 
 ~~~js
 list.expandTask({ id: "1.1" });
@@ -131,7 +131,7 @@ list.expandTask({ id: "1.1" });
 
 ## Marking a task complete/incomplete
 
-You may mark the necessary task as complete/incomplete via the corresponding [checkTask()](../../api/methods/checktask_method/) and [uncheckTask()](../../api/methods/unchecktask_method/) methods:
+You may mark the necessary task as complete/incomplete via the corresponding [`checkTask()`](../../api/methods/checktask_method/) and [`uncheckTask()`](../../api/methods/unchecktask_method/) methods:
 
 ~~~js
 list.checkTask({ 
@@ -145,9 +145,9 @@ list.uncheckTask({
 });
 ~~~
 
-When `manual: false` is set, the result of applying the method depends on the value which is specified for the **behavior** attribute of the **completed** parameter of the [taskShape](api/configs/taskshape_config.md) property. 
+When `manual: false` is set, the result of applying the method depends on the value which is specified for the **behavior** attribute of the **completed** parameter of the [`taskShape`](api/configs/taskshape_config.md) property. 
 
-If the "auto" mode is specified via the **taskShape** property but you need to check/uncheck the task in the "manual" mode, set the **manual** parameter of the [checkTask()](../../api/methods/checktask_method/) or [uncheckTask()](../../api/methods/unchecktask_method/) method to *true*:
+If the "auto" mode is specified via the **taskShape** property but you need to check/uncheck the task in the "manual" mode, set the **manual** parameter of the [`checkTask()`](../../api/methods/checktask_method/) or [`uncheckTask()`](../../api/methods/unchecktask_method/) method to *true*:
 
 ~~~js
 list.checkTask({ 
@@ -165,7 +165,7 @@ list.uncheckTask({
 
 To change the nesting level of a task dynamically, use the following two methods:
 
-- [indentTask()](../../api/methods/indenttask_method/) - to demote the nesting level of a task to one lower level
+- [`indentTask()`](../../api/methods/indenttask_method/) - to demote the nesting level of a task to one lower level
 
 ~~~js
 const list = new ToDo("#root", {
@@ -182,7 +182,7 @@ list.indentTask({ id: "1.2" });
 console.log(list.getParentIds({ id: "1.2" })); //  ['1.1', '1']
 ~~~
 
-- [unindentTask()](../../api/methods/unindenttask_method/) - to promote the nesting level of the task to one higher level
+- [`unindentTask()`](../../api/methods/unindenttask_method/) - to promote the nesting level of the task to one higher level
 
 ~~~js
 const list = new ToDo("#root", {
@@ -205,7 +205,7 @@ The result of applying the methods depends on the structure of the list
 
 ## Filtering tasks
 
-You can find the tasks that match the specified criteria with the help of the [setFilter()](../../api/methods/setfilter_method/) method. The method supports the *strict* mode of filtering that allows you to filter tasks by the exact match.
+You can find the tasks that match the specified criteria with the help of the [`setFilter()`](../../api/methods/setfilter_method/) method. The method supports the *strict* mode of filtering that allows you to filter tasks by the exact match.
 
 ~~~js
 // filter data by the specified rules

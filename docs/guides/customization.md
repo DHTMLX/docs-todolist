@@ -8,7 +8,7 @@ description: You can learn about the To Do List Customization in the documentati
 
 ## Toolbar
 
-It is possible to customize the appearance of the toolbar. You can hide some default controls, add custom ones, and place them in the necessary order. To do that, use the [items](api/toolbar_api/configs/items_config.md) property of the Toolbar component. 
+It is possible to customize the appearance of the toolbar. You can hide some default controls, add custom ones, and place them in the necessary order. To do that, use the [`items`](api/toolbar_api/configs/items_config.md) property of the Toolbar component. 
 
 You can customize your toolbar as in:
 

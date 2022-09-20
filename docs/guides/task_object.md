@@ -8,7 +8,7 @@ description: You can learn about task object and task id in the documentation of
 
 ## Getting a task object
 
-To get a task object, use the [getTask()](api/methods/gettask_method.md) method:
+To get a task object, use the [`getTask()`](api/methods/gettask_method.md) method:
 
 ~~~js
 const tasks = [
@@ -24,7 +24,7 @@ list.getTask({ id: "1.2" }); // -> {id: '1.2', text: 'Task 1.2', parent: '1'}
 
 ## Checking if a task exists
 
-To check whether a task exists or not, use the [existsTask()](api/methods/existstask_method.md) method:
+To check whether a task exists or not, use the [`existsTask()`](api/methods/existstask_method.md) method:
 
 ~~~js
 const tasks = [
@@ -41,7 +41,7 @@ list.existsTask({ id: "1.2" }); // -> true
 
 ## Getting child Ids
 
-To get the children of a task, use the [getChildrenIds()](api/methods/getchildrenids_method.md) method:
+To get the children of a task, use the [`getChildrenIds()`](api/methods/getchildrenids_method.md) method:
 
 ~~~js
 const tasks = [
@@ -103,7 +103,7 @@ console.log(list.getChildrenIds({ id: "1", filtered: false, tree: true, hideComp
 
 ## Checking if a task has children
 
-To check whether a task has child tasks, apply the [hasChildren()](api/methods/haschildren_method.md) method:
+To check whether a task has child tasks, apply the [`hasChildren()`](api/methods/haschildren_method.md) method:
 
 ~~~js
 const tasks = [
@@ -144,7 +144,7 @@ console.log(list.hasChildren({ id: "1.1", hideCompleted: true })); // -> false
 
 ## Getting parent Ids
 
-To get the parents of a task, use the [getParentIds()](api/methods/getparentids_method.md) method:
+To get the parents of a task, use the [`getParentIds()`](api/methods/getparentids_method.md) method:
 
 ~~~js
 const tasks = [
@@ -161,7 +161,7 @@ console.log(list.getParentIds({ id: "1.1.1" })); //  ['1.1', '1']
 
 ## Getting Ids of selected tasks
 
-To get IDs of all currently selected tasks, use the [getSelection()](api/methods/getselection_method.md) method:
+To get IDs of all currently selected tasks, use the [`getSelection()`](api/methods/getselection_method.md) method:
 
 ~~~js
 const tasks = [

@@ -151,18 +151,18 @@ Check the full list of available operations you can perform over multiple tasks 
 
 Here is the full list of bulk operations you can perform over multiple selected tasks via API methods:
 
-- copying tasks via the [copyTask()](../../api/methods/copytask_method/) method
-- pasting tasks via the [pasteTask()](../../api/methods/pastetask_method/) method
-- moving tasks via the [moveTask()](../../api/methods/movetask_method/) method
-- deleting tasks via the [deleteTask()](../../api/methods/deletetask_method/) method
-- marking tasks complete/incomplete via the [checkTask()](../../api/methods/checktask_method/) and [uncheckTask()](../../api/methods/unchecktask_method/) methods
-- demoting and promoting the nesting level of tasks via the [indentTask()](../../api/methods/indenttask_method/) and [unindentTask()](../../api/methods/unindenttask_method/) methods
+- copying tasks via the [`copyTask()`](../../api/methods/copytask_method/) method
+- pasting tasks via the [`pasteTask()`](../../api/methods/pastetask_method/) method
+- moving tasks via the [`moveTask()`](../../api/methods/movetask_method/) method
+- deleting tasks via the [`deleteTask()`](../../api/methods/deletetask_method/) method
+- marking tasks complete/incomplete via the [`checkTask()`](../../api/methods/checktask_method/) and [`uncheckTask()`](../../api/methods/unchecktask_method/) methods
+- demoting and promoting the nesting level of tasks via the [`indentTask()`](../../api/methods/indenttask_method/) and [`unindentTask()`](../../api/methods/unindenttask_method/) methods
 
 ## Resetting selection
 
 ### Unselecting one task
 
-To remove selection from one selected task, pass the ID of the task as a parameter to the [unselectTask()](../../api/methods/unselecttask_method/) method:
+To remove selection from one selected task, pass the ID of the task as a parameter to the [`unselectTask()`](../../api/methods/unselecttask_method/) method:
 
 ~~~js
 list.unselectTask({ id: "1.1" });
@@ -170,7 +170,7 @@ list.unselectTask({ id: "1.1" });
 
 ### Unselecting all tasks
 
-To unselect all currently selected tasks, pass **id: null** to the [unselectTask()](../../api/methods/unselecttask_method/) method:
+To unselect all currently selected tasks, pass **id: null** to the [`unselectTask()`](../../api/methods/unselecttask_method/) method:
 
 ~~~js
 list.unselectTask({ id: null });

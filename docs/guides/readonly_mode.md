@@ -6,7 +6,7 @@ description: You can learn about the read-only mode in the documentation of the 
 
 # Read-only mode
 
-To make the To Do List read-only, set the [readonly](../../api/configs/readonly_config/) configuration property to *true*.
+To make the To Do List read-only, set the [`readonly`](../../api/configs/readonly_config/) configuration property to *true*.
 
 ~~~js {8}
 const { ToDo, Toolbar } = todo;

@@ -35,7 +35,7 @@ You may easily switch between these two modes after initialization of To Do List
 
 ![Hide_show_completed_tasks](../assets/hideshow_completedtasks.png)
 
-- via the related [hideCompletedTasks()](api/methods/hidecompletedtasks_method.md) and [showCompletedTasks()](api/methods/showcompletedtasks_method.md) methods:
+- via the related [`hideCompletedTasks()`](api/methods/hidecompletedtasks_method.md) and [`showCompletedTasks()`](api/methods/showcompletedtasks_method.md) methods:
 
 ~~~js
 list.hideCompletedTasks(); 
