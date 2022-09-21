@@ -29,7 +29,7 @@ $ yarn start
 
 [Download DHTMLX To Do List](https://dhtmlx.com/docs/products/dhtmlxTodo/download.shtml)
 
-[Live demos](https://snippet.dhtmlx.com/3vwlbwee?text=%23todolist)
+[Live demos](https://snippet.dhtmlx.com/3vwlbwee?tag=todolist)
 
 [Blog](https://dhtmlx.com/blog/tag/todo/)
 
