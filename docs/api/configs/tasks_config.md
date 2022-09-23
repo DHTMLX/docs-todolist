@@ -21,7 +21,7 @@ tasks: [
         text?: string,
         checked?: boolean,
         collapsed?: boolean,
-        assigned?: string[] | number[],
+        assigned?: (string | number)[],
         due_date?: Date | string,
         creation_date?: Date | string,
         completion_date?: Date | string,

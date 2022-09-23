@@ -13,7 +13,7 @@ description: You can learn about the selected config in the documentation of the
 ### Usage
 
 ~~~js
-selected?: string[] | number[];
+selected?: (string | number)[];
 ~~~
 
 ### Example
