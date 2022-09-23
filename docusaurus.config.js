@@ -192,7 +192,7 @@ module.exports = {
             },
             items: [{
                     label: 'Examples',
-                    href: 'https://snippet.dhtmlx.com/3vwlbwee?text=%23todolist', // Todo change before release
+                    href: 'https://snippet.dhtmlx.com/3vwlbwee?tag=todolist', // Todo change before release
                     position: 'right',
                 },
                 {
@@ -224,7 +224,7 @@ module.exports = {
                         },
                         {
                             label: 'Examples',
-                            href: 'https://snippet.dhtmlx.com/3vwlbwee?text=%23todolist', // Todo change before release
+                            href: 'https://snippet.dhtmlx.com/3vwlbwee?tag=todolist', // Todo change before release
                             position: 'right',
                         },
                         {
