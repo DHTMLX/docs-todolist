@@ -33,7 +33,7 @@ The interface of the To Do List component consists of two parts: [Toolbar](#tool
         - by creation date
         - by editing date
     - hide/show completed tasks
-    - to add a new project, rename or delete a currently active project
+    - add a new project, rename or delete a currently active project
 
 ![toolbar](assets/project_menu.png)
 
@@ -52,16 +52,13 @@ The **list of tasks** is the main part of the To Do List interface intended for 
 ### Selecting one task
 
 - To select a task just click on it
-
-- To move selection up to the previous task, press `ArrowUp`
-
-- To move selection down to the next task, press `ArrowDown`
+- To move selection up to the previous task, press `Arrow Up`
+- To move selection down to the next task, press `Arrow Down`
 
 ### Selecting multiple tasks
 
 - To select multiple tasks, you can apply the following combinations:
     - hold down the `Ctrl (Cmd)` key and click each task you'd like to select
-    - hold down the `Ctrl (Cmd) + Shift` keys and click each task you'd like to select
     - click on the first task, hold down the `Shift` key, then click on the last task and release `Shift`
 - To select a task above/below the current one, press `Shift` + `Arrow Up`/ `Arrow Down` 
 
@@ -78,11 +75,8 @@ Check [the list of operations you can perform over selected tasks](#managing-mul
 ### Adding a new task
 
 - To add a new task into the beginning of the list, click on the **+ Add task** button in the top navigation panel
-
 - To add a new task under the necessary one, select the task and press `Enter`
-
 - To add a subtask, add a new task under the selected one and press `Tab`. Use `Shift + Tab` to promote the nesting level of the task
-
 - To copy a task, click on it and press `Ctrl (Cmd) + C`. To paste a task, press `Ctrl (Cmd) + V`
 - To copy a task down, click on it and press `Ctrl (Cmd) + D`
 - To copy a task during drag-n-drop, press `Alt` while dragging-and-dropping it
@@ -93,18 +87,15 @@ Check [the list of operations you can perform over selected tasks](#managing-mul
 > It is possible to enter text, numbers, hashtags, dates. For more details, read [Supported formats of data](guides/inline_editing.md#supported-formats-of-data).
 
 - To mark a task as complete/incomplete, click on the checkbox to the left of the task or press `Space`
-
 - To collapse/expand a task with subtasks, click on the arrow icon to the left of the task or press `Arrow Left`/ `Arrow Right`
-
 - To set a due date for the task, open the task menu, select **Set due date** and choose the date via the date picker
-
 - To change the due date of the task, click the due date shown in the task and choose the necessary date 
-
 - To assign people to the task, open the task menu, hover **Assign to** and select the necessary people in the dropdown list. To unassign people from the task, unselect them in the dropdown list
 
 ### Moving a task
 
 - To move a task withing a project, select the task and press `Ctrl (Cmd)` + `Arrow Up`/ `Arrow Down` or use drag-n-drop
+- To demote/promote the nesting level of a task, select the task and press `Tab`/`Shift + Tab`
 - To move a task to another project, open the task menu, hover **Move to** and select the necessary project in the dropdown list
 
 ### Deleting a task
@@ -121,12 +112,8 @@ After you have selected [multiple tasks](#selecting-multiple-tasks), you can per
 - to drag-n-drop tasks
 - to copy tasks via pressing `Alt` while dragging-and-dropping them
 - to move tasks withing a project via `Ctrl (Cmd)` + `Arrow Up`/ `Arrow Down`
+- to demote/promote the nesting level of tasks via `Tab`/ `Shift + Tab`. Note, the nesting level of the tasks which are selected with their parent will not change
 - to mark tasks as complete/incomplete by pressing `Space`
-- to change the nesting level of tasks via `Tab`/ `Shift + Tab` 
-
-:::note
-The nesting level of the tasks which are selected with their parent will not change.
-:::
 
 :::info
 Read the [**keyboard shortcuts**](api/events/keypressontodo_event.md#keyboard-shortcuts) section for more detail
