@@ -73,21 +73,6 @@ There is the [`drag`](api/configs/drag_config.md) property which allows you:
 
 - to configure the behavior of the collapsed tasks so that they don't expand when you hover them over during drag-n-drop:
 
-~~~js {8}
-const list = new ToDo("#root", {
-	tasks: [
-        { id: "1", text: "Task 1 #tag1" },
-		...
-    ],
-    drag: {
-        disable: false,
-        expand: false // true by default
-    }
-});
-~~~
-
-- to disable drag-n-drop:
-
 ~~~js {7}
 const list = new ToDo("#root", {
 	tasks: [
@@ -95,8 +80,20 @@ const list = new ToDo("#root", {
 		...
     ],
     drag: {
-        disable: true // false by default
+        expand: false // true by default
     }
+});
+~~~
+
+- to disable drag-n-drop:
+
+~~~js {6}
+const list = new ToDo("#root", {
+	tasks: [
+        { id: "1", text: "Task 1 #tag1" },
+		...
+    ],
+    drag: false // true by default
 });
 ~~~
 

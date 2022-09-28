@@ -15,7 +15,8 @@ description: You can learn about the open-menu event in the documentation of the
 ~~~js
 "open-menu": ({
     id: string | number,
-    type: "task" | "user" | "toolbar"
+    type: "task" | "user" | "toolbar",
+    source?: (string | number)[]
 });
 ~~~
 
@@ -25,6 +26,7 @@ The callback of the **open-menu** event can take an object with the following pa
 
 - `id` - (required) the ID of an item for which menu is opened
 - `type` - (required) the type of a menu
+- `source` - (optional) an array with ID(s) of task(s) for which operation(s) will be performed
 
 ### Example
 
@@ -43,8 +45,8 @@ const toolbar = new Toolbar("#toolbar", {
 });
 
 // subscribe to the "open-menu" event
-list.api.on("open-menu", ({id, type}) => {
-    console.log("The menu is opened", id, type); 
+list.api.on("open-menu", ({id, type, source}) => {
+    console.log("The menu is opened", id, type, source); 
 });
 ~~~
 

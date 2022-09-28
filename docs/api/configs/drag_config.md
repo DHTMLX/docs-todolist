@@ -8,7 +8,7 @@ description: You can learn about the drag config in the documentation of the DHT
 
 ### Description
 
-@short: Optional. An object with settings for drag-n-drop
+@short: Optional. Specifies settings for drag-n-drop
 
 :::note
 There is 500ms delay when you drag-n-drop tasks on touch devices.
@@ -17,27 +17,35 @@ There is 500ms delay when you drag-n-drop tasks on touch devices.
 ### Usage
 
 ~~~js
+drag?: boolean;
+//or 
 drag?: {
-    disable?: boolean,
     expand?: boolean
 };
 ~~~
 
+### Parameters
+
+To configure drag-n-drop, you can use either the **short** or **extended** option.
+
+The **short** option:
+
+- `drag` - (optional) enables/disables drag-n-drop of tasks
+
+The **extended** option:
+
+- `drag` - (optional) an object with settings for drag-n-drop. The object can include the following parameter:
+    - `expand` - (optional) defines whether the collapsed tasks should expand when you hover them over during drag-n-drop
+
 ### Default config
 
 ~~~js
+drag: true
+// or
 drag: {
-    disable: false,
     expand: true
 }
 ~~~
-
-### Parameters
-
-To configure drag-n-drop, you can specify the following parameters in the **drag** object:
-
-- `disable` - (optional) allows disabling the drag-n-drop functionality 
-- `expand` - (optional) defines whether the collapsed tasks should expand when you hover them over during drag-n-drop
 
 ### Example
 
@@ -51,7 +59,7 @@ const list = new ToDo("#root", {
 		...
     ],
     drag: {
-        disable: true
+        expand: false
     }
 });
 
