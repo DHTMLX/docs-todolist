@@ -25,6 +25,7 @@ The new release introduces some changes to the `taskShape` property. Check the [
     - new `hideCompleted` parameter for the methods: [`hasChildren()`](api/methods/haschildren_method.md), [`getChildrenIds()`](api/methods/getchildrenids_method.md)
 - Multi-select:
     - the ability to [select](../#selecting-multiple-tasks) and [manage](../#managing-multiple-tasks) multiple tasks using keyboard shortcuts
+    - the ability to manage multiple tasks via menu
     - the ability to [select and manage multiple tasks via API](guides/multiselection.md):
         - new [`selected`](api/configs/selected_config.md) property
         - new `join` parameter for the methods: [`selectTask()`](api/methods/selecttask_method.md), [`copyTask()`](api/methods/copytask_method.md)

@@ -72,6 +72,14 @@ Check [the list of operations you can perform over selected tasks](#managing-mul
 
 ## Managing a task
 
+You can manage the selected task both via the context menu or keyboard navigation.
+
+### Context menu
+
+The **context menu** of a task contains a set of items and sub-items and looks like this:
+
+![context_menu_of_task](assets/task_context_menu.png)
+
 ### Adding a new task
 
 - To add a new task into the beginning of the list, click on the **+ Add task** button in the top navigation panel
@@ -88,9 +96,6 @@ Check [the list of operations you can perform over selected tasks](#managing-mul
 
 - To mark a task as complete/incomplete, click on the checkbox to the left of the task or press `Space`
 - To collapse/expand a task with subtasks, click on the arrow icon to the left of the task or press `Arrow Left`/ `Arrow Right`
-- To set a due date for the task, open the task menu, select **Set due date** and choose the date via the date picker
-- To change the due date of the task, click the due date shown in the task and choose the necessary date 
-- To assign people to the task, open the task menu, hover **Assign to** and select the necessary people in the dropdown list. To unassign people from the task, unselect them in the dropdown list
 
 ### Moving a task
 
@@ -105,6 +110,10 @@ Check [the list of operations you can perform over selected tasks](#managing-mul
 ## Managing multiple tasks
 
 After you have selected [multiple tasks](#selecting-multiple-tasks), you can perform a set of operations over them, namely:
+
+- to open a **context menu** for the selected tasks
+
+![context_menu_of_tasks](assets/tasks_context_menu.png)
 
 - to delete tasks by pressing `Backspace`/`Delete`
 - to copy tasks via `Ctrl (Cmd) + C` and paste them via `Ctrl (Cmd) + V`. The tasks which are selected in the chaotic order will be structured depending on the structure of the data
