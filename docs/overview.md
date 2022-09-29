@@ -96,6 +96,9 @@ The **context menu** of a task contains a set of items and sub-items and looks l
 
 - To mark a task as complete/incomplete, click on the checkbox to the left of the task or press `Space`
 - To collapse/expand a task with subtasks, click on the arrow icon to the left of the task or press `Arrow Left`/ `Arrow Right`
+- To set a due date for the task, open the task menu, select **Set due date** and choose the date via the date picker
+- To change the due date of the task, click the due date shown in the task and choose the necessary date 
+- To assign people to the task, open the task menu, hover **Assign to** and select the necessary people in the dropdown list. To unassign people from the task, unselect them in the dropdown list
 
 ### Moving a task
 
