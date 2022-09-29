@@ -12,6 +12,10 @@ If you are updating To Do List from an older version, check [Migration to newer 
 
 Released on
 
+### Breaking changes
+
+The new release introduces some changes to the `taskShape` property. Check the [Migration article](migration.md#10---11) to keep in step with the latest version.
+
 ## New functionality
 
 - The ability [to initialize To Do List with hidden completed tasks](guides/hide_completed_tasks.md#initial-mode)
@@ -37,6 +41,9 @@ Released on
     - extended list of parameters of the [`tasks`](api/configs/tasks_config.md) property
 - New events for managing the menu: [`open-menu`](api/events/openmenu_event.md) and [`close-menu`](api/events/closemenu_event.md)
 
+### Updates
+
+- [Extended list of locale options](guides/localization.md)
 
 ## Version 1.0.1
 
