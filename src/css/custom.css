@@ -93,7 +93,9 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 /* Link icons */
 
 .iconExternalLink_lCJq,
-.iconExternalLink_node_modules-\@docusaurus-theme-classic-lib-theme-IconExternalLink-styles-module {
+.iconExternalLink_node_modules-\@docusaurus-theme-classic-lib-theme-IconExternalLink-styles-module,
+.iconExternalLink_nPIU,
+.iconExternalLink_node_modules-\@docusaurus-theme-classic-lib-theme-Icon-ExternalLink-styles-module {
   display: none; /* hides the link icon */
 }
 
@@ -162,8 +164,8 @@ table {
 
 code {
     border-radius: 2px;
-    padding: 4px 6px;
-    font-weight: 500;
+    padding: 6px 8px;
+    font-weight: 600;
 }
 
 /* end small code block */
