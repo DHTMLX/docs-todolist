@@ -18,14 +18,10 @@ The new release introduces some changes to the `taskShape` property. Check the [
 
 ## New functionality
 
-- [To Do List with hidden completed tasks](guides/hide_completed_tasks.md#initial-mode)
-- [Showing/hiding completed tasks](guides/hide_completed_tasks.md#switching-between-modes):
-    - via Toolbar menu
-    - via API:
-        - new methods: [`hideCompletedTasks()`](api/methods/hidecompletedtasks_method.md), [`showCompletedTasks()`](api/methods/showcompletedtasks_method.md)
-        - new events: [`hide-completed-tasks`](api/events/hidecompletedtasks_event.md), [`show-completed-tasks`](api/events/showcompletedtasks_event.md)
-        - new `hideCompleted` parameter for the methods: [`hasChildren()`](api/methods/haschildren_method.md), [`getChildrenIds()`](api/methods/getchildrenids_method.md)
-- Multi-select:
+- Drag-n-drop:
+    - the ability to [configure or disable the functionality](guides/configuration.md#drag-n-drop)
+    - new events: [`start-drag`](api/events/startdrag_event.md), [`drag`](api/events/drag_event.md), [`end-drag`](api/events/enddrag_event.md)
+- Multi-select and bulk operations:
     - the ability to [select](../#selecting-multiple-tasks) and [manage](../#managing-multiple-tasks) multiple tasks using keyboard shortcuts
     - the ability to manage multiple tasks via menu
     - the ability to [select and manage multiple tasks via API](guides/multiselection.md):
@@ -35,9 +31,13 @@ The new release introduces some changes to the `taskShape` property. Check the [
         - new method: [`eachSelected()`](api/methods/eachselected_method.md)
         - updated method: [`getSelection()`](api/methods/getselection_method.md) 
     - the ability to unselect all tasks via the [`unselectTask()`](api/methods/unselecttask_method.md) method
-- Drag-n-drop:
-    - the ability to [configure or disable the functionality](guides/configuration.md#drag-n-drop)
-    - new events: [`start-drag`](api/events/startdrag_event.md), [`drag`](api/events/drag_event.md), [`end-drag`](api/events/enddrag_event.md)
+- [To Do List with hidden completed tasks](guides/hide_completed_tasks.md#initial-mode)
+- [Showing/hiding completed tasks](guides/hide_completed_tasks.md#switching-between-modes):
+    - via Toolbar menu
+    - via API:
+        - new methods: [`hideCompletedTasks()`](api/methods/hidecompletedtasks_method.md), [`showCompletedTasks()`](api/methods/showcompletedtasks_method.md)
+        - new events: [`hide-completed-tasks`](api/events/hidecompletedtasks_event.md), [`show-completed-tasks`](api/events/showcompletedtasks_event.md)
+        - new `hideCompleted` parameter for the methods: [`hasChildren()`](api/methods/haschildren_method.md), [`getChildrenIds()`](api/methods/getchildrenids_method.md)
 - [Task sorting](guides/sorting_filtering_tasks.md#sorting-tasks):
     - via Toolbar menu
     - via API:
