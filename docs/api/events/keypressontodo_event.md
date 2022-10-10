@@ -69,20 +69,24 @@ The key codes described below are not available if focus is set on the Search ba
 | Keyboard shortcut   |Key code| Description                                                          |
 | :--------- |--| :------------------------------------------------------------------- |
 | **Enter** |enter| Creates a new task on the same level as the selected one, moves selection to the created task and opens the editor |
-| **Space** |space| Marks a task as complete or incomplete depending on its initial state |
-| **Delete/<br>Backspace** |delete/<br>backspace | Removes the selected task by the following logic:<br> - after removing a child task, moves the selection down/up until it reaches the parent task <br>- after removing a parent task, moves the selection down to the next parent task if it's exist; otherwise, moves the selection up to the previous parent task |
 | **ArrowUp** |arrowup| Moves the selection up to the previous task |
 | **ArrowDown** |arrowdown| Moves the selection down to the next task |
-| **ArrowRight** |arrowright| Expands the collapsed parent task |
-| **ArrowLeft** |arrowleft| Collapses the expanded parent task. If the task is already collapsed or does not have child tasks, moves selection to the parent task | 
+| **Ctrl(Cmd)+Enter** |ctrl+enter| Opens the editor of the selected task |
+|**Ctrl(Cmd)+Click** /<br>**Ctrl(Cmd)+Shift+Click** <br> added in v1.1|ctrl /<br>ctrl+shift|Selects multiple tasks with all their children.<br> If the task is currently selected - unselects it, moreover:<br> - If the task has parents which are also selected - unselects the task together with its parents.<br> - If the task has children which are also selected - unselects only the task itself.|
+|**Shift+Click** <br> added in v1.1|shift|Selects a range of tasks|
+|**Shift+ArrowUp** <br> added in v1.1|shift+arrowup|Selects a task above the current one.<br> If the task above is currently selected - unselects it|
+|**Shift+ArrowDown** <br> added in v1.1|shift+arrowdown|Selects a task (and all its children) below the current one.<br> If the task below is currently selected - unselects it|
 | **Ctrl+ArrowUp** |ctrl+arrowup| Moves the selected task up within the same level |
-| **Ctrl+ArrowDown** |ctrl+arrowdown| Moves the selected task down within the same level | 
+| **Ctrl+ArrowDown** |ctrl+arrowdown| Moves the selected task down within the same level |
+| **Space** |space| Marks a task as complete or incomplete depending on its initial state |
+| **Delete/<br>Backspace** |delete/<br>backspace | Removes the selected task by the following logic:<br> - after removing a child task, moves the selection down/up until it reaches the parent task <br>- after removing a parent task, moves the selection down to the next parent task if it's exist; otherwise, moves the selection up to the previous parent task |
+| **ArrowRight** |arrowright| Expands the collapsed parent task |
+| **ArrowLeft** |arrowleft| Collapses the expanded parent task. If the task is already collapsed or does not have child tasks, moves selection to the parent task |
 | **Tab** |tab| Demotes the nesting level of the task to one lower level |
 | **Shift+Tab** |shift+tab| Promotes the nesting level of the task to one higher level|
-| **Ctrl(Cmd)+Enter** |ctrl+enter| Opens the editor of the selected task |
 | **Ctrl(Cmd)+D** |ctrl+d| Duplicates the selected task at the same level |
 | **Ctrl(Cmd)+C** |ctrl+c| Copies the selected task into the clipboard, including all child tasks |
-| **Ctrl(Cmd)+V** |ctrl+v| Pastes the copied tasks to the same level as the currently selected task. It is possible to paste a copied task to any level, the structure of the copied task is saved |
+| **Ctrl(Cmd)+V** |ctrl+v| Pastes the copied task to the same level as the currently selected task. It is possible to paste a copied task to any level, the structure of the copied task is saved |
 
 2\. Keyboard shortcuts **in the editing mode**
 

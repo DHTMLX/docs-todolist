@@ -14,17 +14,23 @@ description: You can learn about the selectTask method in the documentation of t
 
 ~~~js
 selectTask({
-    id: string | number | null
+    id: string | number,
+    join?: boolean // false by default
 }): void;
 ~~~
 
 ### Parameters
 
 - `id` - (required) the ID of a task
+- `join` - (optional) if **true**, adds the specified task to the collection of selected tasks, saving the IDs of previously selected tasks 
+
+:::info
+Calling the method with `join: false` invokes the [`unselect-task`](api/events/unselecttask_event.md) event for previously selected tasks
+:::
 
 ### Example
 
-~~~js {17-19}
+~~~js {10,17-20}
 const { ToDo, Toolbar } = todo;
 
 const list = new ToDo("#root", {
@@ -33,17 +39,24 @@ const list = new ToDo("#root", {
 		{ id: "1.1", text: "Task 1.1", parent: "1" },
         { id: "1.1.1", text: "Task 1.1.1", parent: "1.1" },
 		{ id: "1.2", text: "Task 1.2", parent: "1" },
-    ]
+    ],
+    selected: ["1.1"]
 });
 
 const toolbar = new Toolbar("#toolbar", {
 	api: list.api,
 });
 
-// select the task
+console.log(list.getSelection()); // -> ['1.1']
+
 list.selectTask({ 
-    id: "1.1",
+    id: "1.1.1",
+    join: true
 });
+
+console.log(list.getSelection()); // -> ['1.1', '1.1.1']
 ~~~
 
-**Related article:** [Operations with tasks](guides/task_operations.md)
+**Change log:** The `join` parameter was added in v1.1
+
+**Related article:** [Multiple select and bulk operations](guides/multiselection.md)

@@ -8,27 +8,46 @@ description: You can learn about the open-menu event in the documentation of the
 
 ### Description
 
-@short: Fires when opening the menu of a task/project
+@short: Fires when opening the menu
 
 ### Usage
 
 ~~~js
 "open-menu": ({
     id: string | number,
-    type: "task" | "user" | "project",
-    coords: { x: number, y: number }
-}) => void;
+    type: "task" | "user" | "toolbar",
+    source?: (string | number)[]
+});
 ~~~
 
 ### Parameters
 
 The callback of the **open-menu** event can take an object with the following parameters:
 
-- `id` - (required) the ID of a task/project
-- `type` - (required) the type of a menu. There are three types of menu:
-  - `task` (by default) - the task menu
-  - `user` - the user menu
-  - `project` - the project menu
-- `coords` - (required) an object with the x and y coordinates of the menu:
-    - `x` - (required) the value of the x coordinate
-    - `y` - (required) the value of the y coordinate
+- `id` - (required) the ID of an item for which menu is opened
+- `type` - (required) the type of a menu
+- `source` - (optional) an array with ID(s) of task(s) for which operation(s) will be performed
+
+### Example
+
+~~~js
+const { ToDo, Toolbar } = todo;
+const {tasks, projects, users} = getData();
+
+const list = new ToDo("#root", {
+	tasks,
+    projects,
+    users
+});
+
+const toolbar = new Toolbar("#toolbar", {
+	api: list.api,
+});
+
+// subscribe to the "open-menu" event
+list.api.on("open-menu", ({id, type, source}) => {
+    console.log("The menu is opened", id, type, source); 
+});
+~~~
+
+**Change log:** Added in v1.1

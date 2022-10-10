@@ -47,13 +47,13 @@ The appearance of the added dates depends on the specified [**locale**](api/conf
 
 You can manage the editor by using the API:
 
-To open the editor for a particular task/project, use the [openInlineEditor()](../../api/methods/openinlineeditor_method/) method:
+To open the editor for a particular task/project, use the [`openInlineEditor()`](../../api/methods/openinlineeditor_method/) method:
 
 ~~~js
 list.openInlineEditor({ id: "1.1.1" });
 ~~~
 
-To close the editor after finishing the editing of the item and save the changes made, pass the ID of the item to the [closeInlineEditor()](../../api/methods/closeinlineeditor_method/) method:
+To close the editor after finishing the editing of the item and save the changes made, pass the ID of the item to the [`closeInlineEditor()`](../../api/methods/closeinlineeditor_method/) method:
 
 ~~~js
 list.closeInlineEditor({ 

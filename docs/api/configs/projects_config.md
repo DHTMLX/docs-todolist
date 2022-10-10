@@ -24,6 +24,8 @@ projects?: [
 
 ### Parameters
 
+The **projects** property presents an array of project objects. Each object includes the following set of parameters:
+
 - `id` - (required) the id of a project
 - `label` - (required) the name of a project. It is displayed in the list of available projects
 

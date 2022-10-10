@@ -6,6 +6,49 @@ description: You can learn a new information about DHTMLX JavaScript To Do List 
 
 # What's new
 
+If you are updating To Do List from an older version, check [Migration to newer version](migration.md) for details.
+
+## Version 1.1
+
+Released on October 10, 2022
+
+### Breaking changes
+
+The new release introduces some changes to the `taskShape` property. Check the [Migration article](migration.md#10---11) to keep in step with the latest version.
+
+## New functionality
+
+- Drag-n-drop:
+    - the ability to [configure or disable the functionality](guides/configuration.md#drag-n-drop)
+    - new events: [`start-drag`](api/events/startdrag_event.md), [`drag`](api/events/drag_event.md), [`end-drag`](api/events/enddrag_event.md)
+- Multi-select and bulk operations:
+    - the ability to [select](../#selecting-multiple-tasks) and [manage](../#managing-multiple-tasks) multiple tasks using keyboard shortcuts
+    - the ability to manage multiple tasks via menu
+    - the ability to [select and manage multiple tasks via API](guides/multiselection.md):
+        - new [`selected`](api/configs/selected_config.md) property
+        - new `join` parameter for the methods: [`selectTask()`](api/methods/selecttask_method.md), [`copyTask()`](api/methods/copytask_method.md)
+        - new `join` parameter for the events: [`select-task`](api/events/selecttask_event.md), [`copy-task`](api/events/copytask_event.md)
+        - new method: [`eachSelected()`](api/methods/eachselected_method.md)
+        - updated method: [`getSelection()`](api/methods/getselection_method.md) 
+    - the ability to unselect all tasks via the [`unselectTask()`](api/methods/unselecttask_method.md) method
+- [To Do List with hidden completed tasks](guides/hide_completed_tasks.md#initial-mode)
+- [Showing/hiding completed tasks](guides/hide_completed_tasks.md#switching-between-modes):
+    - via Toolbar menu
+    - via API:
+        - new methods: [`hideCompletedTasks()`](api/methods/hidecompletedtasks_method.md), [`showCompletedTasks()`](api/methods/showcompletedtasks_method.md)
+        - new events: [`hide-completed-tasks`](api/events/hidecompletedtasks_event.md), [`show-completed-tasks`](api/events/showcompletedtasks_event.md)
+        - new `hideCompleted` parameter for the methods: [`hasChildren()`](api/methods/haschildren_method.md), [`getChildrenIds()`](api/methods/getchildrenids_method.md)
+- [Task sorting](guides/sorting_filtering_tasks.md#sorting-tasks):
+    - via Toolbar menu
+    - via API:
+        - new method: [`setSort()`](api/methods/setsort_method.md)
+        - new event: [`set-sort`](api/events/setsort_event.md)
+        - extended list of parameters of the [`tasks`](api/configs/tasks_config.md) property
+- New events for managing the menu: [`open-menu`](api/events/openmenu_event.md) and [`close-menu`](api/events/closemenu_event.md)
+
+### Updates
+
+- [Extended list of locale options](guides/localization.md)
 
 ## Version 1.0.1
 
@@ -47,7 +90,7 @@ Released on June 20, 2022
         - change the indent level of tasks: [indentTask()](api/methods/indenttask_method.md) / [unindentTask()](api/methods/unindenttask_method.md)
         - [assign](api/methods/assignuser_method.md) and [unassign](api/methods/unassignuser_method.md) users
         - [filter tasks](api/methods/setfilter_method.md)
-    - [via UI](../#managing-tasks):
+    - [via UI](../#managing-a-task):
         - add, copy and paste, select, move, indent/unindent, delete tasks
         - search for tasks (by symbols or hashtags)
         - edit tasks:
@@ -66,6 +109,7 @@ Released on June 20, 2022
 - [Backend integration](guides/working_with_server.md) (Go and Node)
 - [Integration with other DHTMLX widgets](guides/integration.md)
 - Cross browser compatibility
+- Touch support
 
 ### API
 

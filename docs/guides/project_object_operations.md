@@ -8,7 +8,7 @@ description: You can learn about project object in the documentation of the DHTM
 
 ## Getting a project object
 
-To get a project object, use the [getProject()](api/methods/getproject_method.md) method:
+To get a project object, use the [`getProject()`](api/methods/getproject_method.md) method:
 
 ~~~js {13}
 const projects = [
@@ -28,7 +28,7 @@ list.getProject({ id: "first" }); // -> {id: 'first', label: 'First project'}
 
 ## Checking if a project exists
 
-To check whether a project exists or not, use the [existsProject()](api/methods/existsproject_method.md) method:
+To check whether a project exists or not, use the [`existsProject()`](api/methods/existsproject_method.md) method:
 
 ~~~js {13-14}
 const projects = [

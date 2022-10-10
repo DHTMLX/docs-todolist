@@ -66,6 +66,23 @@ const en = {
 		"Rename project": "Rename project",
 		"Delete project": "Delete project",
 
+		// added in v1.1 (start)
+		"Completed tasks": "Completed tasks",
+		"Show": "Show",
+		"Hide": "Hide",
+		"Sort by": "Sort by",
+		"Text (a-z)": "Text (a-z)",
+		"Text (z-a)": "Text (z-a)",
+		"Due date (new to old)": "Due date (new to old)",
+		"Due date (old to new)": "Due date (old to new)",
+		"Completion date (new to old)": "Completion date (new to old)",
+		"Completion date (old to new)": "Completion date (old to new)",
+		"Created (new to old)": "Created (new to old)",
+		"Created (old to new)": "Created (old to new)",
+		"Edited (new to old)": "Edited (new to old)",
+		"Edited (old to new)": "Edited (old to new)",
+		// added in v1.1 (end)
+
 		// Task
 		"Add task below": "Add task below",
 		"Add subtask": "Add subtask",

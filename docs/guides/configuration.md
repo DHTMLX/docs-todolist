@@ -9,11 +9,12 @@ description: You can learn about the To Do List Configuration in the documentati
 You can adjust the settings of DHTMLX To Do List according to your needs. The available configuration options allow you:
 - [to configure the appearance of the badge displaying the progress of task completion](#counter-of-completed-subtasks)
 - [to configure the format of dates](#date-format)
+- [to configure or disable drag-n-drop of tasks](#drag-n-drop)
 - [to disable validation for due dates of tasks](#due-date-validation)
 - [to change the mode used for marking tasks done](#mode-of-marking-tasks-complete)
 - [to configure the appearance of the toolbar](#toolbar)
 
-You can also initialize To Do List in the [readonly](#read-only-mode) mode, if needed.
+You can also configure the mode of [hiding completed tasks](#mode-of-hiding-completed-tasks) as well as initialize To Do List in the [readonly](#read-only-mode) mode.
 
 ## Tasks
 
@@ -25,7 +26,7 @@ You can change the type of the counter which renders the progress of completion 
 
 By default, each parent task is equipped with the counter whose value is shown as a ratio of completed child tasks and the total number of the child tasks.
 
-If you want the value of the counter to be displayed as a percentage, specify the *type: "percentage"* attribute inside the **counter** parameter of the [taskShape](api/configs/taskshape_config.md) property:
+If you want the value of the counter to be displayed as a percentage, specify the *type: "percentage"* attribute inside the **counter** parameter of the [`taskShape`](api/configs/taskshape_config.md) property:
 
 ~~~js {5-9}
 const list = new ToDo("#root", {
@@ -44,7 +45,7 @@ const list = new ToDo("#root", {
 
 ### Date format
 
-By default, the To Do List displays dates in the "%d %M %Y" format (it looks like 09 Mar 2033). If you want to specify another format for dates, use the **date** parameter of the [taskShape](api/configs/taskshape_config.md) property:
+By default, the To Do List displays dates in the "%d %M %Y" format (it looks like 09 Mar 2033). If you want to specify another format for dates, use the **date** parameter of the [`taskShape`](api/configs/taskshape_config.md) property:
 
 ~~~js {5-10}
 const list = new ToDo("#root", {
@@ -64,6 +65,38 @@ const list = new ToDo("#root", {
 
 Check [the list of available characters](api/configs/taskshape_config.md#list-of-characters).
 
+### Drag-n-drop
+
+The default configuration of To Do List includes the drag-n-drop functionality. You can [select one or several tasks](../../#selecting-tasks) and drag the selected tasks vertically at once. If you need to create a copy of the selected tasks, hold the *Alt* key during drag-n-drop.
+
+There is the [`drag`](api/configs/drag_config.md) property which allows you:
+
+- to configure the behavior of the collapsed tasks so that they don't expand when you hover them over during drag-n-drop:
+
+~~~js {7}
+const list = new ToDo("#root", {
+	tasks: [
+        { id: "1", text: "Task 1 #tag1" },
+		...
+    ],
+    drag: {
+        expand: false // true by default
+    }
+});
+~~~
+
+- to disable drag-n-drop:
+
+~~~js {6}
+const list = new ToDo("#root", {
+	tasks: [
+        { id: "1", text: "Task 1 #tag1" },
+		...
+    ],
+    drag: false // true by default
+});
+~~~
+
 ### Due date validation
 
 If you specify a [due date](api/configs/tasks_config.md) for a task, the due date validation will track the completion of the task. The due date of the task has green color until the task becomes Overdue. 
@@ -76,7 +109,7 @@ The dates of the  tasks which have not been completed on the due date are highli
 
 This validation works by default.
 
-In case you want to disable this functionality, specify the **validate** setting inside the *date* parameter of the [taskShape](api/configs/taskshape_config.md) property to *false*:
+In case you want to disable this functionality, specify the **validate** setting inside the *date* parameter of the [`taskShape`](api/configs/taskshape_config.md) property to *false*:
 
 ~~~js {5-10}
 const list = new ToDo("#root", {
@@ -103,7 +136,7 @@ By default, the process of checking/unchecking tasks is implemented in the "auto
 - If you mark at least one child of a completed task as uncompleted, the task automatically becomes marked as uncompleted
 - If you mark the parent task as uncompleted, all its child automatically become uncompleted
 
-You can disable this behavior and activate the "manual" mode. For that, apply the **behavior: "manual"** setting of the **selectable** parameter of the [taskShape](api/configs/taskshape_config.md) property:
+You can disable this behavior and activate the "manual" mode. For that, apply the **behavior: "manual"** setting of the **completed** parameter of the [`taskShape`](api/configs/taskshape_config.md) property:
 
 ~~~js {5-9}
 const list = new ToDo("#root", {
@@ -111,7 +144,7 @@ const list = new ToDo("#root", {
     users,
     projects,
     taskShape: {
-        selectable: {
+        completed: {
             behavior: "manual" // "auto" by default
         }
     }
@@ -122,17 +155,9 @@ const list = new ToDo("#root", {
 
 ## Toolbar
 
-![toolbar](../assets/separate_toolbar.png)
-
 The toolbar is a top part of To Do List which is [initialized](guides/initialization.md#initialize-toolbar) and [configured](category/toolbar-properties.md) separately from To Do List.
 
-By default, there are the following controls in the toolbar:
-
-- the **"combo"** control which allows you to switch between projects or search for the necessary ones
-- the **"search"** control which provides the search bar
-- the **"menu"** control which allows you to add, remove, or delete a project
-
-To adjust the structure of the toolbar, use the [items](api/toolbar_api/configs/items_config.md) configuration property of the Toolbar component. 
+To change the default structure of the toolbar, use the [`items`](api/toolbar_api/configs/items_config.md) configuration property of the Toolbar component. 
 
 ~~~js
 const toolbar = new Toolbar("#toolbar", {
@@ -142,6 +167,10 @@ const toolbar = new Toolbar("#toolbar", {
 ~~~
 
 The property allows you to define which controls should be shown or hidden. Besides, you can enumerate the controls in the **items** array in the order you want to show them in the toolbar.
+
+## Mode of hiding completed tasks
+
+Read the details on how to hide completed tasks from To Do List in the [related section](guides/hide_completed_tasks.md).
 
 ## Read-only mode
 

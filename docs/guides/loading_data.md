@@ -159,7 +159,7 @@ const list = new ToDo("#root", {
 
 ### Loading data after initialization
 
-To load data from a local data source after initialization of the To Do List, use the [parse()](api/methods/parse_method.md) method:
+To load data from a local data source after initialization of the To Do List, use the [`parse()`](api/methods/parse_method.md) method:
 
 ~~~js {2,4,11-15} title="index.js"
 const { ToDo, Toolbar } = todo;
@@ -181,7 +181,7 @@ list.parse({
 
 ## Saving and restoring state
 
-To save the current state of a To Do, use the [serialize()](api/methods/serialize_method.md) method. It converts the data of the To Do List into a JSON object. 
+To save the current state of a To Do, use the [`serialize()`](api/methods/serialize_method.md) method. It converts the data of the To Do List into a JSON object. 
 
 ~~~js
 const state = list.serialize();
