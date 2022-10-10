@@ -10,7 +10,7 @@ If you are updating To Do List from an older version, check [Migration to newer 
 
 ## Version 1.1
 
-Released on
+Released on October 10, 2022
 
 ### Breaking changes
 
@@ -18,11 +18,13 @@ The new release introduces some changes to the `taskShape` property. Check the [
 
 ## New functionality
 
-- The ability [to initialize To Do List with hidden completed tasks](guides/hide_completed_tasks.md#initial-mode)
-- The ability [to show/hide completed tasks](guides/hide_completed_tasks.md#switching-between-modes):
-    - new methods: [`hideCompletedTasks()`](api/methods/hidecompletedtasks_method.md), [`showCompletedTasks()`](api/methods/showcompletedtasks_method.md)
-    - new events: [`hide-completed-tasks`](api/events/hidecompletedtasks_event.md), [`show-completed-tasks`](api/events/showcompletedtasks_event.md)
-    - new `hideCompleted` parameter for the methods: [`hasChildren()`](api/methods/haschildren_method.md), [`getChildrenIds()`](api/methods/getchildrenids_method.md)
+- [To Do List with hidden completed tasks](guides/hide_completed_tasks.md#initial-mode)
+- [Showing/hiding completed tasks](guides/hide_completed_tasks.md#switching-between-modes):
+    - via Toolbar menu
+    - via API:
+        - new methods: [`hideCompletedTasks()`](api/methods/hidecompletedtasks_method.md), [`showCompletedTasks()`](api/methods/showcompletedtasks_method.md)
+        - new events: [`hide-completed-tasks`](api/events/hidecompletedtasks_event.md), [`show-completed-tasks`](api/events/showcompletedtasks_event.md)
+        - new `hideCompleted` parameter for the methods: [`hasChildren()`](api/methods/haschildren_method.md), [`getChildrenIds()`](api/methods/getchildrenids_method.md)
 - Multi-select:
     - the ability to [select](../#selecting-multiple-tasks) and [manage](../#managing-multiple-tasks) multiple tasks using keyboard shortcuts
     - the ability to manage multiple tasks via menu
@@ -36,10 +38,12 @@ The new release introduces some changes to the `taskShape` property. Check the [
 - Drag-n-drop:
     - the ability to [configure or disable the functionality](guides/configuration.md#drag-n-drop)
     - new events: [`start-drag`](api/events/startdrag_event.md), [`drag`](api/events/drag_event.md), [`end-drag`](api/events/enddrag_event.md)
-- [Sorting tasks via UI or through API](guides/sorting_filtering_tasks.md#sorting-tasks):
-    - new method: [`setSort()`](api/methods/setsort_method.md)
-    - new event: [`set-sort`](api/events/setsort_event.md)
-    - extended list of parameters of the [`tasks`](api/configs/tasks_config.md) property
+- [Task sorting](guides/sorting_filtering_tasks.md#sorting-tasks):
+    - via Toolbar menu
+    - via API:
+        - new method: [`setSort()`](api/methods/setsort_method.md)
+        - new event: [`set-sort`](api/events/setsort_event.md)
+        - extended list of parameters of the [`tasks`](api/configs/tasks_config.md) property
 - New events for managing the menu: [`open-menu`](api/events/openmenu_event.md) and [`close-menu`](api/events/closemenu_event.md)
 
 ### Updates
