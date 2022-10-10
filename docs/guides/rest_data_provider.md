@@ -16,43 +16,6 @@ The To Do List has the **RestDataProvider** service that completely supports RES
 - **"move-task"**
 - **"clone-task"**
 
-## Requests to server
-
-:::info
-Request format required by the server is described in the [**Server routes**](guides/server_routes.md) section.
-:::
-
-In the **RestDataProvider** service requests to the server are made in the following way:
-
-- `GET` requests are impemented via the methods described below
-- Other request types `POST, PUT, DELETE` are implemened with the **send** function in the **event handlers**
-
-Example: 
-
-~~~js
-"move-task": {
-				debounce: 300,
-				handler: (ev: THandlersConfig["move-task"]) =>
-					this.send(`move/${ev.id}`, "PUT", ev),
-			},
-
-~~~
-:::info
-`GET tasks/projects` is the only `GET` request in the event handling. It is used to retrieve tasks that belong to the active project.
-~~~js
-"set-project": {
-				handler: (ev: THandlersConfig["set-project"]) =>
-					this.send(`tasks/projects/${ev.id}`, "GET").then(data => {
-						this._api.parse({
-							tasks: this.parseTasks(data as any[]),
-						});
-						return Promise.resolve();
-					}),
-~~~
-:::
-
-
-
 ## REST methods
 
 The **RestDataProvider** service includes the special REST methods for dynamic data loading:
