@@ -329,7 +329,22 @@ module.exports = {
 				"guides/initialization",
 				"guides/configuration",
 				"guides/loading_data",
-				"guides/working_with_server",
+				{
+					type: "category",
+					label: "Working with server",
+					collapsible: true,
+					collapsed: true,
+					link: {
+						type: 'doc',
+						id: 'guides/working_with_server',
+					},
+					
+					items: [
+						"guides/rest_data_provider",
+						"guides/server_routes",
+					
+					]
+				},
 				{
 					type: "category",
 					label: "Managing tasks",
