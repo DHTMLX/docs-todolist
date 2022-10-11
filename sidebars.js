@@ -308,6 +308,7 @@ module.exports = {
 					"api/rest_api/methods/gettasks_method",
 					"api/rest_api/methods/getusers_method",
 					"api/rest_api/methods/setapi_method",
+					"api/rest_api/methods/send_method",
 				]
 			}]
 		}]
@@ -329,22 +330,7 @@ module.exports = {
 				"guides/initialization",
 				"guides/configuration",
 				"guides/loading_data",
-				{
-					type: "category",
-					label: "Working with server",
-					collapsible: true,
-					collapsed: true,
-					link: {
-						type: 'doc',
-						id: 'guides/working_with_server',
-					},
-					
-					items: [
-						"guides/rest_data_provider",
-						"guides/server_routes",
-					
-					]
-				},
+				"guides/working_with_server",
 				{
 					type: "category",
 					label: "Managing tasks",
