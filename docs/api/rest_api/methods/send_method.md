@@ -10,7 +10,7 @@ description: You can learn about the send method of the RestDataProvider in the 
 
 @short:Sends a necessary HTTP request to the server and returns a promise with or without data depending on the request. 
 
-All requests to the server are made with the **send()** method which is a part of the **RestDataProvider** service.
+All requests to the server are made with the **send()** method which is a part of the [**RestDataProvider**](guides/working_with_server.md/#restdataprovider) service.
 
 ~~~js
 send(
@@ -29,9 +29,9 @@ send(
 | Name       | Type        | Description |
 | ----------- | ----------- | ----------- |
 | `url`         |  string     | *Required*. A path to the server where a request is made to.            |
-| `method`            |string             | *Required*. HTTP method type (Get, Post, Put, Delete, etc.)            |
-| `data`  | object        | *Optional*. Parameters that are sent to the server. By default, parameters of the fired event are sent.  But you are free to add additional parameters with the custom object. |
-| `header`  |string       | *Required*. The required header is the **Content-Type** header set to *application/json*. More optional headers can be added. |
+| `method`            |string             | *Required*. An HTTP method type (Get, Post, Put, Delete)            |
+| `data`  | object        | *Optional*. Parameters that are sent to the server. By default, parameters of the fired event are sent.  But you are free to add additional parameters with the custom object. See the [Example](#examples) below. |
+| `header`  |string       | *Required*. The required header is the **Content-Type** header set to *application/json*. More optional headers can be added. See the [Example](#examples) below. |
 
 ---
 
@@ -57,7 +57,7 @@ restDataProvider.send(url, method, data)
 
 ---
 
-### Example
+### Examples
 
 The example below shows how to send a request with additional parameters besides the default ones:
 
@@ -70,8 +70,6 @@ list.api.on("set-project", obj => {
     }),
 });
 ~~~
-
-
 
 The following example demonstrates how to add more headers to the **send** method:
 
