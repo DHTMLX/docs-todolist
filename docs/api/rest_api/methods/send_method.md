@@ -8,7 +8,7 @@ description: You can learn about the send method of the RestDataProvider in the 
 
 ### Description
 
-@short:Sends a necessary HTTP request to the server and returns a promise with the required data. 
+@short:Sends a necessary HTTP request to the server and returns a promise with or without data depending on the request. 
 
 All requests to the server are made with the **send()** method which is a part of the **RestDataProvider** service.
 
@@ -37,12 +37,23 @@ send(
 
 ### Response
 
-The method returns the promise object with the required data.
+The method returns the promise object with or without data depending on the request.
 
-Either of the two response types can be returned: 
+A promise is returned back to the success request status. In case of the failed request (response.status == 500), an exception with an error text is thrown.
 
-- a promise with data in JSON format in case of the success request status
-- a string with an error text is returned back to the failed request (server error) 
+You can configure what to return back. To handle a response to the failed request, use the **catch** method of the promise that is returned. 
+
+~~~js
+
+restDataProvider.send(url, method, data)
+.then(data => {
+   ... // success: do something with data
+})
+.catch(err => {
+    ... // error handler
+});
+
+~~~
 
 ---
 
@@ -65,9 +76,9 @@ list.api.on("set-project", obj => {
 The following example demonstrates how to add more headers to the **send** method:
 
 ~~~js
-customHeaders:
-{ "Authorization": "Bearer",
-"Custom header": "some value",
+const customHeaders = {
+     "Authorization": "Bearer",
+    "Custom header": "some value",
 };
 
 list.api.on("add-task", obj => {

@@ -36,7 +36,7 @@ The **RestDataProvider** service includes the special REST methods for dynamic d
 - [`getTasks()`](api/rest_api/methods/gettasks_method.md) - gets a promise with the **tasks data**
 - [`getUsers()`](api/rest_api/methods/getusers_method.md) - gets a promise with the **users data**
 - [`setAPI()`](api/rest_api/methods/setapi_method.md) - sets API of the To Do List component into RestDataProvider
-- [`send()`](api/rest_api/methods/send_method.md) - sends a necessary request to the server and gets a promise with the required data
+- [`send()`](api/rest_api/methods/send_method.md) - sends a necessary request to the server and gets a promise with or without data depending on the request
 
 
 ## Interacting with backend
