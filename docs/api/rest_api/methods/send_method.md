@@ -31,7 +31,7 @@ send(
 | `url`         |  string     | *Required*. A path to the server where a request is made to.            |
 | `method`            |string             | *Required*. An HTTP method type (Get, Post, Put, Delete)            |
 | `data`  | object        | *Optional*. Parameters that are sent to the server. By default, parameters of the fired event are sent.  But you are free to add additional parameters with the custom object. See the [Example](#examples) below. |
-| `headers`  |object       | *Optional*. The required header is the **Content-Type** header set to *application/json*. More optional headers can be added with the the **customHeaders** parameter . See the [Example](#examples) below. |
+| `headers`  |object       | *Optional*. A default header is the **Content-Type** header set to *application/json*. More optional headers can be added with the the **customHeaders** parameter . See the [Example](#examples) below. |
 
 ---
 
