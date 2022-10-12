@@ -19,7 +19,7 @@ The route handles the GET request made to the **'/tasks/projects{id}'** path and
 <tbody style="border: 1px solid white; border-collapse: collapse">
 <tr>
 <td>GET</td>
-<td>/tasks</td>
+<td>/tasks/projects</td>
 <td>id</td>
 </tr>
 </tbody>
