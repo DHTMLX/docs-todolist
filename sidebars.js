@@ -291,7 +291,8 @@ module.exports = {
 				keywords: ['rest api'],
 				image: '/img/docusaurus.png'
 			},
-			items: [{
+			items: [
+				{
 				type: "category",
                 label: "REST methods",
                 collapsed: true,
@@ -310,7 +311,43 @@ module.exports = {
 					"api/rest_api/methods/setapi_method",
 					"api/rest_api/methods/send_method",
 				]
-			}]
+				
+			},
+			{
+				type: "category",
+                label: "REST routes",
+                collapsed: true,
+                link: {
+                    type: 'generated-index',
+							title: "REST routes",
+				keywords: ['routes'],
+				image: '/img/docusaurus.png'				
+                   
+                },
+				items: [
+					{
+						type: "category",
+						label: "GET routes",
+						collapsed: true,
+						link: {
+							type: 'generated-index',
+							title: "GET routes",
+				keywords: ['routes'],
+				image: '/img/docusaurus.png'
+						},
+						items: [
+							"api/rest_api/routes/GET routes/Get_tasks",
+							"api/rest_api/routes/GET routes/Get_projecttasks",
+							"api/rest_api/routes/GET routes/Get_users",
+						]
+
+					}
+					
+				]
+				
+			}
+		
+		]
 		}]
 	},
 		{
