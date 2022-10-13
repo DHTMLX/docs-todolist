@@ -31,5 +31,7 @@ No input parameters are required.
 ### Response
 
 The route returns a promise with an array of all users objects. A default response format is JSON. <br/> 
-Look up for the users object parameters in the [users]("api/configs/users_config") section. <br/> 
-The HTTP status code shows if a request succeeds (response.status == 200) or fails (response.status == 500, in this case an exception with an error text is thrown).
+Look up the description of the users object parameters in the [users]("api/configs/users_config") section. <br/> 
+TThe HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500, in this case an exception with some error text is thrown).
+
+**Related articles**: [Working with Server](guides/working_with_server.md)

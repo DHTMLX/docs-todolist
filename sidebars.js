@@ -339,10 +339,48 @@ module.exports = {
 							"api/rest_api/routes/GET routes/Get_tasks",
 							"api/rest_api/routes/GET routes/Get_projecttasks",
 							"api/rest_api/routes/GET routes/Get_users",
+							"api/rest_api/routes/GET routes/Get_projects",
+							"api/rest_api/routes/GET routes/Get_tags",
+						]
+
+					},
+					{
+						type: "category",
+						label: "POST routes",
+						collapsed: true,
+						link: {
+							type: 'generated-index',
+							title: "POST routes",
+				keywords: ['routes'],
+				image: '/img/docusaurus.png'
+						},
+						items: [
+							"api/rest_api/routes/POST routes/Post_tasks",
+							"api/rest_api/routes/POST routes/Post_projects",
+							"api/rest_api/routes/POST routes/Post_clone",
+							
+						
+						]
+
+					},
+					{
+						type: "category",
+						label: "PUT routes",
+						collapsed: true,
+						link: {
+							type: 'generated-index',
+							title: "PUT routes",
+				keywords: ['routes'],
+				image: '/img/docusaurus.png'
+						},
+						items: [
+							"api/rest_api/routes/PUT routes/Put_tasks",
+							
+							
+						
 						]
 
 					}
-					
 				]
 				
 			}

@@ -31,7 +31,7 @@ No input parameters are required.
 ### Response
 
 The route returns a promise with an array of all tasks objects. A default response format is JSON. 
-You can look up for the tasks object parameters in the [tasks]("api/configs/tasks_config") section. <br/> 
-The HTTP status code shows if a request succeeds (response.status == 200) or fails (response.status == 500, in this case an exception with an error text is thrown).
+You can look up the description of the tasks object parameters in the [tasks]("api/configs/tasks_config") section. <br/> 
+The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500, in this case an exception with some error text is thrown).
 
-
+**Related articles**: [Working with Server](guides/working_with_server.md)
