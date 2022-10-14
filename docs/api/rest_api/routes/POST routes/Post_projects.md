@@ -27,7 +27,7 @@ The route handles the POST request made to the **'/projects'** path and sent by 
 
 ### Payload
 
-The object described in the [**add-project**](api/events/addproject_events.md) section is sent in the request body.
+The object described in the [**add-project**](api/events/addproject_event.md) section is sent in the request body.
 
 The following parameter is parsed on the server side:
 
