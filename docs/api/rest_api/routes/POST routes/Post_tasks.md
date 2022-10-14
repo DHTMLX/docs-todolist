@@ -27,7 +27,7 @@ The route handles the POST request made to the **'/tasks'** path and sent by the
 
 ### Payload
 
-The object described here [**add-task**](api/events/addtask_event.md) is sent in the request body in the JSON format.
+The object described in the [**add-task**](api/events/addtask_event.md) section is sent in the request body in the JSON format.
 
 The following parameters are parsed on the server side:
 
