@@ -27,22 +27,28 @@ The route handles the POST request made to the **'/tasks'** path and sent by the
 
 ### Payload
 
-The following request body parameters are sent in the JSON format:
+The object described here [**add-task**](api/events/addtask_event.md) is sent in the request body in the JSON format.
+
+The following parameters are parsed on the server side:
 
 | Name       | Type        | Description |
 | ----------- | ----------- | ----------- |
-| `targetid`       |  number   | *Required*. The ID of the future target task where the new task will be added.|
-| `parent`       |  number   | *Required*. The ID of the parent task.|
-| `project`       |  number   | *Required*. The ID of the project to which a new task should be added.|
+| `targetId`       |  number   | *Optional*. The ID of the future target task where the new task will be added.|
+| `parent`       |  number   | *Optional*. The ID of the parent task.|
+| `project`       |  number   | *Optional*. The ID of the project to which a new task should be added.|
+| `task`       |  object  | *Required*. The task object which is described here [**task**](api/configs/task_config.md).|
 
+All optional parameters, if not sent, are set to 0 by default.
 
 Example:
 
 ~~~json
 {
-targetId: 2,
-parent: 1,
-project: 1,
+   targetId: number,
+   parent: number,
+   project: number,
+   reverse: boolean,
+   task: object,
 }
 ~~~
 
@@ -50,9 +56,11 @@ project: 1,
 
 The route returns the ID of a new task in the JSON format. 
 
+Example:
+
 ~~~json
 {
-    id: 4:,
+    id: number,
 }
 ~~~
 

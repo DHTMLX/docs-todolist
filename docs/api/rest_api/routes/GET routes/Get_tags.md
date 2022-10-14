@@ -6,7 +6,7 @@ description: You can learn about the Get /tags route in the documentation of the
 
 ### Description
 
-@short:Returns an array of all default tags.
+@short:Returns a promise with an array of all default tags.
 
 The route handles the GET request made to the **'/tags'** path and sent by the [**getTags()**](api/rest_api/methods/gettags_method.md) method. 
 
@@ -32,7 +32,7 @@ No input parameters are required.
 ### Response
 
 The route returns a promise with an array of all default tags. 
-You can find the description of the object that is returned in the [tags]("api/configs/tags_config") section.
+You can find the description of the object that is returned in the [tags](api/configs/tags_config.md) section.
 
 The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500, in this case an exception with some error text is thrown).
 

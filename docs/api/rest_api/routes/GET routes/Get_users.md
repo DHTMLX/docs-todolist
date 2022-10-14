@@ -6,7 +6,7 @@ description: You can learn about the Get/users route in the documentation of the
 
 ### Description
 
-@short:Returns an array of all users objects.
+@short:Returns a promise with an array of all users objects.
 
 The route handles the GET request made to the **'/users'** path and sent by the [**getUsers()**](api/rest_api/methods/getusers_method.md) method. 
 
@@ -30,8 +30,8 @@ No input parameters are required.
 
 ### Response
 
-The route returns a promise with an array of all users objects. A default response format is JSON. <br/> 
-Look up the description of the users object parameters in the [users]("api/configs/users_config") section. <br/> 
+The route returns a promise with an array of all users objects. A response format is JSON. <br/> 
+Look up the description of the users object parameters in the [users](api/configs/users_config.md) section. <br/> 
 TThe HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500, in this case an exception with some error text is thrown).
 
 **Related articles**: [Working with Server](guides/working_with_server.md)

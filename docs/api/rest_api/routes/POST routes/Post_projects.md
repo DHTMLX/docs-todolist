@@ -50,7 +50,7 @@ Example:
 
 ~~~json
 {
-    id: 5:,
+    id: number,
 }
 ~~~
 

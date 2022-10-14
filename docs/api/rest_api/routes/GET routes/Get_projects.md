@@ -6,7 +6,7 @@ description: You can learn about the Get /projects route in the documentation of
 
 ### Description
 
-@short:Returns an array of all available projects objects.
+@short:Returns a promise with an array of all available projects objects.
 
 The route handles the GET request made to the **'/projects'** path and sent by the [**getProjects()**](api/rest_api/methods/getprojects_method.md) method. 
 
@@ -32,7 +32,7 @@ No input parameters are required.
 ### Response
 
 The route returns a promise with an array of all projects objects. 
-For the description of the object parameters, go to [projects]("api/configs/projects_config").
+For the description of the object parameters, go to [projects](api/configs/projects_config.md).
 
 The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500, in this case an exception with some error text is thrown).
 

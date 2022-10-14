@@ -31,14 +31,18 @@ Once the request is received, the following items are created on the server side
 
 ### Payload
 
-A JSON object with the following parameters is sent in the request body:
+The object described here [**clone-task**](api/events/clonetask_event.md) is sent in the request body.
+
+The following parameters are parsed on the server side:
 
 | Name       | Type        | Description |
 | ----------- | ----------- | ----------- |
-| `targetid`       |  number   | *Required*. The ID of the future target task where the cloned task will be added.|
-| `parent`       |  number   | *Required*. The ID of the parent task.|
-| `project`       |  number   | *Required*. The ID of the project to which a new task should be added.|
+| `targetId`       |  number   | *Optional*. The ID of the future target task where the cloned task will be added.|
+| `parent`       |  number   | *Optional*. The ID of the parent task.|
+| `project`       |  number   | *Optional*. The ID of the project to which a new task should be added.|
 | `batch`       |  object | *Required*. An array of objects of all tasks that are cloned. If a task has child items, they should be included into the object.|
+
+All optional parameters, if not sent, are set to 0 by default.
 
 Only tasks with the same parent ID/project ID will be processed per request. 
 
@@ -46,33 +50,35 @@ Example:
 
 ~~~json
 {
-   targetId: some,
-   parent: some,
-   project: some,
+   targetId: number,
+   parent: number,
+   project: number,
    batch: task[]
 }
 ~~~
 
 ### Response
 
-The route returns an object with the map of the "client task ID:server task ID" pair for each task that is cloned.  
-
-Example:
-
-~~~json
-{
-“clientId”: serverId,
-….
-}
-~~~
+The route returns the promise object with the map of the "client task ID:server task ID" pair for each task that is cloned.  
 
 Response items:
 
 | Name       | Type        | Description |
 | ----------- | ----------- | ----------- |
-| `clientId`       | string | *Required*. The client ID of the task being cloned.|
-| `serverId`       |  number   | *Required*. The server ID of the task being cloned.|
+| `clientId`       | string | The client ID of the task being cloned.|
+| `serverId`       |  number   | The server ID of the task being cloned.|
 
+Example:
+
+~~~json
+{
+"temp://1234567890120": 31,
+"temp://1234567890121": 32,
+"temp://1234567890122": 33,
+"temp://1234567890123": 34,
+...
+}
+~~~
 
 The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500, in this case an exception with an error text is thrown).
 

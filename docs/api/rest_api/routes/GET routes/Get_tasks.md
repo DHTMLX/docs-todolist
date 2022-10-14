@@ -6,7 +6,7 @@ description: You can learn about the Get/tasks route in the documentation of the
 
 ### Description
 
-@short:Returns an array of all tasks objects.
+@short:Returns promise with an array of all tasks objects.
 
 The route handles the GET request made to the **'/tasks'** path and sent by the [**getTasks()**](api/rest_api/methods/gettasks_method.md) method. 
 
@@ -30,8 +30,8 @@ No input parameters are required.
 
 ### Response
 
-The route returns a promise with an array of all tasks objects. A default response format is JSON. 
-You can look up the description of the tasks object parameters in the [tasks]("api/configs/tasks_config") section. <br/> 
+The route returns a promise with an array of all tasks objects. A response format is JSON. 
+You can look up the description of the tasks object parameters in the [tasks](api/configs/tasks_config.md) section. <br/> 
 The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500, in this case an exception with some error text is thrown).
 
 **Related articles**: [Working with Server](guides/working_with_server.md)
