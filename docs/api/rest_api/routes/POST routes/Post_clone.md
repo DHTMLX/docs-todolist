@@ -6,7 +6,7 @@ description: You can learn about the Post /clone route in the documentation of t
 
 ### Description
 
-@short:Returns an object with the map of the "client task ID:server task ID" pair.  
+@short:Returns an object with the map of the `clientId:string = serverId:number` format.
 
 The route handles the POST request made to the **'/clone'** path and sent by the [**send**](api/rest_api/methods/send_method.md) method to perform the **clone-task** operation (see [**clone-task**](api/methods/addproject_method.md)). 
  
@@ -59,7 +59,7 @@ Example:
 
 ### Response
 
-The route returns the promise object with the map in the following format `clientId:string = serverId:number`
+The route returns the promise object with the map in the following format `clientId:string = serverId:number`.
 
 Example:
 
