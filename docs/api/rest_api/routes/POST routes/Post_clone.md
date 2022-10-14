@@ -31,7 +31,7 @@ Once the request is received, the following items are created on the server side
 
 ### Payload
 
-The object described in the [**clone-task**](api/events/clonetask_event.md) section is sent in the request body.
+The object described in the [**clone-task**](api/events/clonetask_events.md) section is sent in the request body.
 
 The following parameters are parsed on the server side:
 
@@ -59,14 +59,7 @@ Example:
 
 ### Response
 
-The route returns the promise object with the map of the "client task ID:server task ID" pair for each task that is cloned.  
-
-Response items:
-
-| Name       | Type        | Description |
-| ----------- | ----------- | ----------- |
-| `clientId`       | string | The client ID of the task being cloned.|
-| `serverId`       |  number   | The server ID of the task being cloned.|
+The route returns the promise object with the map in the following format `clientId:string = serverId:number`
 
 Example:
 
