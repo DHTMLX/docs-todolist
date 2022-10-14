@@ -38,16 +38,15 @@ The following parameters are parsed on the server side:
 | `project`       |  number   | *Optional*. The ID of the project to which a new task should be added.|
 | `task`       |  object  | *Required*. The task object which is described here [**tasks**](api/configs/tasks_config.md).|
 
-All optional parameters, if not sent, are set to 0 by default.
+Optional parameters can be marked as *nullable* by adding `?` at the end of the property name:
 
 Example:
 
 ~~~json
 {
    targetId: number,
-   parent: number,
+   parent?: number,
    project: number,
-   reverse: boolean,
    task: object,
 }
 ~~~

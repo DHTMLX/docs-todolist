@@ -42,9 +42,9 @@ The following parameters are parsed on the server side:
 | `project`       |  number   | *Optional*. The ID of the project to which a new task should be added.|
 | `batch`       |  object | *Required*. An array of objects of all tasks that are cloned. If a task has child items, they should be included into the object.|
 
-All optional parameters, if not sent, are set to 0 by default.
-
 Only tasks with the same parent ID/project ID will be processed per request. 
+
+Optional parameters can be marked as *nullable* by adding `?` at the end of the property name:
 
 Example:
 
@@ -52,7 +52,7 @@ Example:
 {
    targetId: number,
    parent: number,
-   project: number,
+   project?: number,
    batch: task[]
 }
 ~~~
