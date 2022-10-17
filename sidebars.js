@@ -382,6 +382,25 @@ module.exports = {
 						
 						]
 
+					},
+
+					{
+						type: "category",
+						label: "DELETE routes",
+						collapsed: true,
+						link: {
+							type: 'generated-index',
+							title: "DELETE routes",
+				keywords: ['routes'],
+				image: '/img/docusaurus.png'
+						},
+						items: [
+							"api/rest_api/routes/DELETE routes/Delete_tasks",
+							"api/rest_api/routes/DELETE routes/Delete_projects",
+												
+						
+						]
+
 					}
 				]
 				
