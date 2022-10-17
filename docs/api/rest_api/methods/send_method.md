@@ -12,6 +12,9 @@ description: You can learn about the send method of the RestDataProvider in the 
 
 All requests to the server are made with the **send()** method which is a part of the [**RestDataProvider**](guides/working_with_server.md/#restdataprovider) service.
 
+
+### Usage
+
 ~~~js
 send(
     url: string,

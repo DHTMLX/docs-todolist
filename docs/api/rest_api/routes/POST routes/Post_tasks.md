@@ -47,6 +47,7 @@ Example:
    targetId: number,
    parent?: number,
    project: number,
+   reverse?: boolean,
    task: object,
 }
 ~~~

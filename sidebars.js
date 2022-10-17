@@ -376,7 +376,7 @@ module.exports = {
 						items: [
 							"api/rest_api/routes/PUT routes/Put_tasks",
 							"api/rest_api/routes/PUT routes/Put_projects",
-							
+							"api/rest_api/routes/PUT routes/Put_move",
 							
 						
 						]
