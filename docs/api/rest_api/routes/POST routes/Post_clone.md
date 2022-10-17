@@ -4,6 +4,8 @@ title: Post /clone
 description: You can learn about the Post /clone route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
 ---
 
+# Post /clone
+
 ### Description
 
 @short:Returns an object with the map of the `clientId:string = serverId:number` format.
@@ -74,5 +76,7 @@ Example:
 ~~~
 
 The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500, in this case an exception with an error text is thrown).
+
+---
 
 **Related articles**: [Working with Server](guides/working_with_server.md)

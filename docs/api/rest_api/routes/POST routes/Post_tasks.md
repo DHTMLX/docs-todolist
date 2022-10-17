@@ -4,6 +4,8 @@ title: Post /tasks
 description: You can learn about the Post /tasks route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
 ---
 
+# Post /tasks
+
 ### Description
 
 @short:Returns a new task object with the ID of a new task.
@@ -66,5 +68,7 @@ Example:
 
  
 The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500, in this case an exception with an error text is thrown).
+
+---
 
 **Related articles**: [Working with Server](guides/working_with_server.md)

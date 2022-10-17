@@ -4,6 +4,8 @@ title: Put /projects
 description: You can learn about the Put /projects route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
 ---
 
+# Put /projects
+
 ### Description
 
 @short:Returns an empty promise object in case the project object is modified as requested.
@@ -53,5 +55,7 @@ You can find the project object description in the [**projects**](api/configs/pr
 The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500, in this case an exception with an error text is thrown).
 
 In case of the success status, an empty JSON object is returned back. 
+
+---
 
 **Related articles**: [Working with Server](guides/working_with_server.md)

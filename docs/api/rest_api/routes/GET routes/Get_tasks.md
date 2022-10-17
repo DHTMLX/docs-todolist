@@ -4,6 +4,8 @@ title: Get /tasks
 description: You can learn about the Get/tasks route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
 ---
 
+# Get /tasks
+
 ### Description
 
 @short:Returns promise with an array of all tasks objects.
@@ -33,5 +35,7 @@ No input parameters are required.
 The route returns a promise with an array of all tasks objects. A response format is JSON. 
 You can look up the description of the tasks object parameters in the [tasks](api/configs/tasks_config.md) section. <br/> 
 The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500, in this case an exception with some error text is thrown).
+
+---
 
 **Related articles**: [Working with Server](guides/working_with_server.md)

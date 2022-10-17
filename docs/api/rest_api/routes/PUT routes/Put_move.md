@@ -4,6 +4,8 @@ title: Put /move
 description: You can learn about the Put /move route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
 ---
 
+# Put /move
+
 ### Description
 
 @short:Returns an empty promise in case the task objects are successfully moved as requested.
@@ -162,5 +164,7 @@ Now we can list each task parameters in the **opbatch** array of the <b>Operatio
 The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500, in this case an exception with an error text is thrown).
 
 In case of the success status, an empty JSON object is returned back. 
+
+---
 
 **Related articles**: [Working with Server](guides/working_with_server.md)

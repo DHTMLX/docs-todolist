@@ -4,6 +4,8 @@ title: Get /users
 description: You can learn about the Get/users route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
 ---
 
+# Get /users
+
 ### Description
 
 @short:Returns a promise with an array of all users objects.
@@ -33,5 +35,7 @@ No input parameters are required.
 The route returns a promise with an array of all users objects. A response format is JSON. <br/> 
 Look up the description of the users object parameters in the [users](api/configs/users_config.md) section. <br/> 
 TThe HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500, in this case an exception with some error text is thrown).
+
+---
 
 **Related articles**: [Working with Server](guides/working_with_server.md)
