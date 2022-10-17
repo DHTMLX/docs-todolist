@@ -71,9 +71,6 @@ Optional parameters can be marked as nullable by adding `?` at the end of the pr
 
 Examples of different operation types:
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 <details>
   <summary>operation == null || operation == "move-task"</summary>
   If an operation type is not specified, the <b>move-task</b> operation is applied by default.<br/>
