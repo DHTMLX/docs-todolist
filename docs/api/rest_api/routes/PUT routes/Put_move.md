@@ -8,12 +8,8 @@ description: You can learn about the Put /move route in the documentation of the
 
 @short:Returns an empty promise in case the task objects are successfully moved as requested.
 
-The route handles the PUT request made to the **'/move{id}'** path and sent by the [**send**](api/rest_api/methods/send_method.md) method to perform one of the following operations: 
-- **move-task** - see [**move-task**](api/methods/movetask_method.md)
-- **indent-task** - see [**indent-task**](api/methods/indenttask_method.md)
-- **unindent-task** - see [**unindent-task**](api/methods/unindenttask_method.md)
-- **project** - a task is moved to another project
-
+The route handles the PUT request made to the **'/move{id}'** path and sent by the [**send**](api/rest_api/methods/send_method.md) method to move, indent or unindent tasks.<br/>
+For more details about available operations, see the description of the **operation** parameter sent in the request body (see the **Payload** section below). 
 
 <table style="border: 1px solid white; border-collapse: collapse; width:50%">
 <thead style="border: 1px solid white; border-collapse: collapse;">
@@ -49,9 +45,9 @@ The request body parameters parsed on the server are the following:
 | `parent`       |  number   | *Optional*. The ID of the parent task.|
 | `project`       |  number   | *Optional*. The ID of the project to which a task belongs to.|
 | `targetId`       |  number   | *Optional*. The ID of the target task where the current task will be moved.|
-| `operation`       |  string  | *Required*. The operation type which is set to "move-task" by default. Available operation types: [**"move-task"**](api/methods/movetask_method.md), [**"indent"**](api/methods/indenttask_method.md), [**"unindent"**](api/methods/unindenttask_method.md), **"project"**(a task is moved to another project).|
+| `operation`       |  string  | *Required*. The operation type. Available operation types: "null" (default) - moves a task to a specified position (see [**"move-task"**](api/methods/movetask_method.md)), [**"indent"**](api/methods/indenttask_method.md), [**"unindent"**](api/methods/unindenttask_method.md), **"project"** - moves a task to another project (see [**"move-task"**](api/methods/movetask_method.md)).|
 | `reverse`       | boolean   | *Optional*. The position where the moved task will be moved: before the target task (true) or after it (false by default).|
-| `batch`       |  object  | *Required*. An array of IDs of all tasks that are moved. If a task has child items, onlythe task parent ID is included into the object.|
+| `batch`       |  object  | *Required*. An array of IDs of all tasks that are moved. If a task has child items, only the task parent ID is included into the object.|
 
 
 Optional parameters can be marked as nullable by adding `?` at the end of the property name:
@@ -72,11 +68,9 @@ Optional parameters can be marked as nullable by adding `?` at the end of the pr
 Examples of different operation types:
 
 <details>
-  <summary>operation == null || operation == "move-task"</summary>
-  If an operation type is not specified, the <b>move-task</b> operation is applied by default.<br/>
+  <summary>operation == null </summary>
   In case one task is moved, its ID is sent in the request line.<br/> 
   If multiple tasks are moved, the ID value in the request line is set to 0, and all tasks IDs are specified in the <b>batch</b> array. <br/>
-  In case of multiple tasks, make sure that these tasks have the same project ID/parent ID. 
   
 
   ~~~json
@@ -115,7 +109,7 @@ Examples of different operation types:
   <summary>multiple indent/unindent operations</summary>
   In case the request is sent to indent or unindent multiple tasks, the ID value in the request line is set to 0, each task ID with other parameters are listed in the <b>opbatch</b> array of task objects.
 
-Let's denote each task object as the <b>MoveInfo</b> object:
+Let's denote each operation object as the <b>Operation</b> object:
 
 ~~~json
 
@@ -130,13 +124,13 @@ Let's denote each task object as the <b>MoveInfo</b> object:
 
 ~~~
 
-Now we can list each task parameters in the **opbatch** array of the <b>MoveInfo</b> objects: 
+Now we can list each task parameters in the **opbatch** array of the <b>Operation</b> objects: 
 
 ~~~json
 {
-    opbatch: MoveInfo[]
+    opbatch: Operation[]
 }
-// where MoveInfo is defined in the previous example
+// where Operation is defined in the previous example
 
 ~~~
 
