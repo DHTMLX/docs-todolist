@@ -38,7 +38,7 @@ The query parameter in the request line:
 | `id`       |  number   | *Required*. The ID of the task to be updated.|
 
 
-The **task object** with all task parameters (both unchanged and new/modified) are sent in the **request body**.
+The **task object** with all task parameters (both unchanged and new/modified) is sent in the **request body**.
 
 You can find the task object description in the [**tasks**](api/configs/tasks_config.md) section.
 

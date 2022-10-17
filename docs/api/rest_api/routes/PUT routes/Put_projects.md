@@ -38,7 +38,7 @@ The query parameter in the request line:
 | `id`       |  number   | *Required*. The ID of the project to be updated.|
 
 
-The **project object** with all project parameters (both unchanged and new/modified) are sent in the **request body**.
+The **project object** with all project parameters (both unchanged and new/modified) is sent in the **request body**.
 
 You can find the project object description in the [**projects**](api/configs/projects_config.md) section.
 
