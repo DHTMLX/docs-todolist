@@ -42,7 +42,9 @@ The **task object** with all task parameters (both unchanged and new/modified) i
 
 You can find the task object description in the [**tasks**](api/configs/tasks_config.md) section.
 
-~~~json
+To update multiple tasks, you can add an array of tasks objects with necessary changes to the **batch** object in the request body:
+
+~~~json {13}
 {
         parent?: number,
         project?: number,
@@ -54,7 +56,8 @@ You can find the task object description in the [**tasks**](api/configs/tasks_co
         creation_date?: Date | string,
         completion_date?: Date | string,
         edited_date?: Date | string,
-        [key: string]?: any
+        [key: string]?: any,
+        batch?: task[]
     }
 ~~~
 

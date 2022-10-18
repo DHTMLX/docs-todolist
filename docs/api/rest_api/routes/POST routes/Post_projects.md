@@ -43,7 +43,7 @@ Example:
 
 ~~~json
 {
-   label: "Project name",
+   label: string,
 }
 ~~~
 

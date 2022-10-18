@@ -43,7 +43,7 @@ The request body parameters parsed on the server are the following:
 
 | Name       | Type        | Description |
 | ----------- | ----------- | ----------- |
-| `id`| number|*Required*. The ID of the moved task. The parameter is required for the **indent**/**unindent** operation types.|
+| `id`| number|*Optional*. The ID of the moved task. The parameter is required for the **indent**/**unindent** operation types.|
 | `parent`       |  number   | *Optional*. The ID of the parent task.|
 | `project`       |  number   | *Optional*. The ID of the project to which a task belongs to.|
 | `targetId`       |  number   | *Optional*. The ID of the target task where the moved task will be pasted.|
@@ -57,7 +57,7 @@ Optional parameters can be marked as nullable by adding `?` at the end of the pr
 ~~~json
  
  {
-   id: number,
+   id?: number,
    parent?: number,
    project?: number,
    targetId?: number,
@@ -126,7 +126,7 @@ Let's denote each operation object as the <b>Operation</b> object:
 
 ~~~
 
-Now we can list each task parameters in the **opbatch** array of the <b>Operation</b> objects: 
+Now we can list operation parameters in the **opbatch** array of the <b>Operation</b> objects: 
 
 ~~~json
 {
