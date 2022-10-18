@@ -15,7 +15,9 @@ description: You can learn about the update-task event in the documentation of t
 ~~~js
 "update-task": ({
     id: string | number,
-    task: object
+    task: object,
+    skipProvider?: boolean,
+    batch?: object[]
 }) => void;
 ~~~
 
@@ -25,6 +27,9 @@ The callback of the **update-task** event can take an object with the following 
 
 - `id` - (required) the id of the updated task
 - `task` - (required) the object of the updated task
+- Additional parameters that can be applied to the [RestDataProvider](guides/working_with_server.md) work:
+  - `skipProvider` - (optional) allows tracking and skipping the events sent to RestDataProvider; values: **true (default)** - the skipping is allowed, **false** - avoid skipping
+  - `batch` - (optional) an array of updated tasks objects
 
 :::info
 To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods.md)
@@ -51,5 +56,6 @@ list.api.on("update-task", ({id, task}) => {
     console.log("The", id, "task is updated. New task object is", task);
 });
 ~~~
+
 
 **Related article:** [Operations with tasks](guides/task_operations.md#updating-a-task)

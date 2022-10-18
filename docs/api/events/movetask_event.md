@@ -18,7 +18,9 @@ description: You can learn about the move-task event in the documentation of the
     parent?: string | number | null,
     project?: string | number | null,
     targetId?: string | number,
-    reverse?: boolean
+    reverse?: boolean,
+    operation?: "indent" | "unindent" | "project",
+    batch?: (string| number)[]
 }) => void;
 ~~~
 
@@ -31,6 +33,9 @@ The callback of the **move-task** event can take an object with the following pa
 - `project` - (optional) the ID of the project
 - `targetId` - (optional) the ID of the target task
 - `reverse` - (optional) **true**, if the task is pasted before the target task; otherwise, **false**
+- Additional parameters that can be applied to the [RestDataProvider](guides/working_with_server.md) work:
+    - `operation` - (optional) an operation type performed with a task; values: **indent** - demoting the task nesting level by one, **unindent** - promoting the task nesting level by one, **project** - moving a task to another project; if no value is set, it indicates changing a task position within a project it belongs to
+    - `batch` - (optional) an array of IDs of the tasks for which an operation is perfromed 
 
 :::info
 To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods.md)
