@@ -8,7 +8,7 @@ description: You can learn about the Put /move route in the documentation of the
 
 ### Description
 
-@short:Returns an empty promise in case the task objects are successfully moved as requested.
+@short:Returns an empty promise in case tasks are successfully moved as requested.
 
 The route handles the PUT request made to the **'/move{id}'** path and sent by the [**send**](api/rest_api/methods/send_method.md) method to move, indent or unindent tasks.<br/>
 For more details about available operations, see the description of the **operation** parameter sent in the request body (see the **Payload** section below). 
@@ -35,7 +35,7 @@ The query parameter in the request line:
 
 | Name       | Type        | Description |
 | ----------- | ----------- | ----------- |
-| `id`       |  number   | *Required*. The ID of the task to be moved. In case multiple tasks are requested to be moved, id is set to 0|
+| `id`       |  number   | *Required*. The ID of the task to be moved. In case multiple tasks are requested to be moved, the id is set to 0|
 
 The object described in the [**move-task**](api/events/movetask_event.md) section is sent to the server in the **request body**.
 
@@ -43,6 +43,7 @@ The request body parameters parsed on the server are the following:
 
 | Name       | Type        | Description |
 | ----------- | ----------- | ----------- |
+| `id`| number|*Required*. The ID of the moved task. The parameter is required for the **indent**/**unindent** operation types.|
 | `parent`       |  number   | *Optional*. The ID of the parent task.|
 | `project`       |  number   | *Optional*. The ID of the project to which a task belongs to.|
 | `targetId`       |  number   | *Optional*. The ID of the target task where the moved task will be pasted.|
@@ -69,8 +70,8 @@ Optional parameters can be marked as nullable by adding `?` at the end of the pr
 Examples of different operation types:
 
 <details>
-  <summary>operation == null </summary>
-  In case one task is moved, its ID is sent in the request line.<br/> 
+  <summary>operation === null </summary>
+  In case one task is moved within the current project, its ID is sent in the request line.<br/> 
   If multiple tasks are moved, the ID value in the request line is set to 0, and all tasks IDs are specified in the <b>batch</b> array. <br/>
   
 
@@ -86,7 +87,7 @@ Examples of different operation types:
   </details>  
 
   <details>
-  <summary>operation == "indent" || operation == "unindent" </summary>
+  <summary>operation === "indent" || operation === "unindent" </summary>
   
   
    In case the request is sent for one <b>indent/unindent</b> operation, its ID is sent in the request line and other task parameters are sent in the request body as below:
@@ -139,7 +140,7 @@ Now we can list each task parameters in the **opbatch** array of the <b>Operatio
 
 <details>
 
-<summary>operation == "project"</summary>
+<summary>operation === "project"</summary>
   In case one task is moved, its ID is sent in the request line.<br/> 
   If multiple tasks are moved to another project, the ID value in the request line is set to 0, and all tasks IDs are specified in the <b>batch</b> array.<br/> 
   If you move a task with child items, only the ID of its parent is specified in the <b>batch</b> array.<br/>
