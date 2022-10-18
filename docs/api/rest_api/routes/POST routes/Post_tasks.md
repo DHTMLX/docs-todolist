@@ -46,9 +46,9 @@ Example:
 
 ~~~json
 {
-   targetId: number,
+   targetId?: number,
    parent?: number,
-   project: number,
+   project?: number,
    reverse?: boolean,
    task: object,
 }

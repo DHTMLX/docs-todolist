@@ -35,7 +35,7 @@ The query parameter in the request line:
 
 | Name       | Type        | Description |
 | ----------- | ----------- | ----------- |
-| `id`       |  number   | *Required*. The ID of the task to be moved. In case multiple tasks are requested to be moved, id == 0|
+| `id`       |  number   | *Required*. The ID of the task to be moved. In case multiple tasks are requested to be moved, id is set to 0|
 
 The object described in the [**move-task**](api/events/movetask_event.md) section is sent to the server in the **request body**.
 
@@ -43,11 +43,10 @@ The request body parameters parsed on the server are the following:
 
 | Name       | Type        | Description |
 | ----------- | ----------- | ----------- |
-| `id`       |  number   | *Required*. The ID of the future task where the new moved task will be added.|
 | `parent`       |  number   | *Optional*. The ID of the parent task.|
 | `project`       |  number   | *Optional*. The ID of the project to which a task belongs to.|
-| `targetId`       |  number   | *Optional*. The ID of the target task where the current task will be moved.|
-| `operation`       |  string  | *Required*. The operation type. Available operation types: "null" (default) - moves a task to a specified position (see [**"move-task"**](api/methods/movetask_method.md)), [**"indent"**](api/methods/indenttask_method.md), [**"unindent"**](api/methods/unindenttask_method.md), **"project"** - moves a task to another project (see [**"move-task"**](api/methods/movetask_method.md)).|
+| `targetId`       |  number   | *Optional*. The ID of the target task where the moved task will be pasted.|
+| `operation`       |  string  | *Required*. Server-specific parameter. It indicates the operation type. Available operation types: "null" - moves a task to a specified position within the current project (see [**"move-task"**](api/methods/movetask_method.md)), [**"indent"**](api/methods/indenttask_method.md), [**"unindent"**](api/methods/unindenttask_method.md), **"project"** - moves a task to another project (see [**"move-task"**](api/methods/movetask_method.md)).|
 | `reverse`       | boolean   | *Optional*. The position where the moved task will be moved: before the target task (true) or after it (false by default).|
 | `batch`       |  object  | *Required*. An array of IDs of all tasks that are moved. If a task has child items, only the task parent ID is included into the object.|
 
@@ -58,9 +57,9 @@ Optional parameters can be marked as nullable by adding `?` at the end of the pr
  
  {
    id: number,
-   parent: number,
-   project: number,
-   targetId: number,
+   parent?: number,
+   project?: number,
+   targetId?: number,
    operation: string,
    reverse?: boolean,
    batch: number[]
