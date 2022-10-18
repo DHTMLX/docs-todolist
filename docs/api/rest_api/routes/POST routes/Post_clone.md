@@ -52,8 +52,8 @@ Example:
 
 ~~~json
 {
-   targetId: number,
-   parent: number,
+   targetId?: number,
+   parent?: number,
    project?: number,
    batch: task[]
 }
