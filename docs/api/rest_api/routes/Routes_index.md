@@ -97,7 +97,7 @@ This page gives you the list of all REST routes with their short description and
 </table> 
   </TabItem>
   
-    <TabItem value="DELETE" label="DELETE">
+<TabItem value="DELETE" label="DELETE">
   <table>
 <thead>
 <tr>
