@@ -8,9 +8,9 @@ description: You can learn about the Post /clone route in the documentation of t
 
 ### Description
 
-@short:Returns an object with the map of the `clientId:string = serverId:number` format.
+@short:Returns an object with the map of the `clientId:string = serverId:number` format
 
-The route handles the POST request made to the **'/clone'** path and sent by the [**send**](api/rest_api/methods/send_method.md) method to perform the **clone-task** operation (see [**clone-task**](api/methods/addproject_method.md)). 
+The route handles the POST request made to the **'/clone'** path and sent by the [**send**](api/rest_api/methods/send_method.md) method to perform the **clone-task** operation (see [**copy-task**](api/methods/copytask_method.md),  [**paste-task**](api/methods/pastetask_method.md), and [**clone-task**](api/events/clonetask_event.md)). 
  
 
 <table style="border: 1px solid white; border-collapse: collapse; width:50%">
@@ -39,7 +39,7 @@ The following parameters are parsed on the server side:
 
 | Name       | Type        | Description |
 | ----------- | ----------- | ----------- |
-| `targetId`       |  number   | *Optional*. The ID of the future target task where the cloned task will be added.|
+| `targetId`       |  number   | *Optional*. The ID of the target task where the cloned task will be added.|
 | `parent`       |  number   | *Optional*. The ID of the parent task.|
 | `project`       |  number   | *Optional*. The ID of the project to which a new task should be added.|
 | `batch`       |  object | *Required*. An array of objects of all tasks that are cloned. If a task has child items, they should be included into the object.|

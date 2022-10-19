@@ -8,7 +8,7 @@ description: You can learn about the Delete /tasks route in the documentation of
 
 ### Description
 
-@short:Returns an empty promise object in case a task is successfully removed.
+@short:Returns an empty promise object in case a task is successfully removed
 
 The route handles the DELETE request made to the **'/tasks{id}'** path and sent by the [**send**](api/rest_api/methods/send_method.md) method to perform the **delete-task** operation (see [**delete-task**](api/methods/deletetask_method.md)). 
 

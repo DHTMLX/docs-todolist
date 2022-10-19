@@ -8,7 +8,7 @@ description: You can learn about the Get /tags route in the documentation of the
 
 ### Description
 
-@short:Returns a promise with an array of all default tags.
+@short:Returns a promise with an array of all default tags
 
 The route handles the GET request made to the **'/tags'** path and sent by the [**getTags()**](api/rest_api/methods/gettags_method.md) method. 
 

@@ -8,7 +8,7 @@ description: You can learn about the Get/tasks/projects route in the documentati
 
 ### Description
 
-@short:Returns a promise with an array of all tasks objects for the specified project.
+@short:Returns a promise with an array of all tasks objects for the specified project
 
 The route handles the GET request made to the **'/tasks/projects{id}'** path and sent by the [**getProjectTasks()**](api/rest_api/methods/getprojecttasks_method.md) method. 
 

@@ -8,7 +8,7 @@ description: You can learn about the Put /sort route in the documentation of the
 
 ### Description
 
-@short:Returns an empty promise object in case tasks are sorted as requested.
+@short:Returns an empty promise object in case tasks are sorted as requested
 
 The route handles the PUT request made to the **'/sort'** path and sent by the [**send**](api/rest_api/methods/send_method.md) method to perform the **set-sort** operation (see [**set-sort**](api/methods/setsort_method.md)).
 
@@ -28,7 +28,7 @@ The route handles the PUT request made to the **'/sort'** path and sent by the [
 
 ### Payload
 
-The object that is sent in the request body is described here: [**set-sort**](api/methods/setsort_method.md).
+The object that is sent in the request body is described here: [**set-sort**](api/events/setsort_event.md).
 
 The parameters that are parsed on the server side are the following:
 

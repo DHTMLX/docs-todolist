@@ -8,7 +8,7 @@ description: You can learn about the Post /tasks route in the documentation of t
 
 ### Description
 
-@short:Returns a new task object with the ID of a new task.
+@short:Returns a new task object with the ID of a new task
 
 The route handles the POST request made to the **'/tasks'** path and sent by the [**send**](api/rest_api/methods/send_method.md) method to perform the **add-task** operation (see [**add-task**](api/methods/addtask_method.md)). 
 
@@ -35,7 +35,7 @@ The following parameters are parsed on the server side:
 
 | Name       | Type        | Description |
 | ----------- | ----------- | ----------- |
-| `targetId`       |  number   | *Optional*. The ID of the future target task where the new task will be added.|
+| `targetId`       |  number   | *Optional*. The ID of the future target task where a new task will be added.|
 | `parent`       |  number   | *Optional*. The ID of the parent task.|
 | `project`       |  number   | *Optional*. The ID of the project to which a new task should be added.|
 | `task`       |  object  | *Required*. The task object which is described here [**tasks**](api/configs/tasks_config.md).|

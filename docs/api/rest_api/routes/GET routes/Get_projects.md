@@ -8,7 +8,7 @@ description: You can learn about the Get /projects route in the documentation of
 
 ### Description
 
-@short:Returns a promise with an array of all available projects objects.
+@short:Returns a promise with an array of all available projects objects
 
 The route handles the GET request made to the **'/projects'** path and sent by the [**getProjects()**](api/rest_api/methods/getprojects_method.md) method. 
 

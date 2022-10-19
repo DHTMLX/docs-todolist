@@ -8,7 +8,7 @@ description: You can learn about the Put /tasks route in the documentation of th
 
 ### Description
 
-@short:Returns an empty object in case a task is modified as requested.
+@short:Returns an empty object in case a task is modified as requested
 
 The route handles the PUT request made to the **'/tasks{id}'** path and sent by the [**send**](api/rest_api/methods/send_method.md) method to perform the **update-task** operation (see [**update-task**](api/methods/updatetask_method.md)). 
 
@@ -42,7 +42,7 @@ The **task object** with all task parameters (both unchanged and new/modified) i
 
 You can find the task object description in the [**tasks**](api/configs/tasks_config.md) section.
 
-To update multiple tasks, you can add an array of tasks objects with necessary changes to the **batch** object in the request body:
+To update multiple tasks with one request, you can add an array of tasks objects with necessary changes to the **batch** object in the request body. In this case the task id in the request line is also mandatory with all its parameters that precede the **batch** object in the request body.
 
 ~~~json {13}
 {

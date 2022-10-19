@@ -8,7 +8,7 @@ description: You can learn about the Put /projects route in the documentation of
 
 ### Description
 
-@short:Returns an empty promise object in case a project is modified as requested.
+@short:Returns an empty promise object in case a project is modified as requested
 
 The route handles the PUT request made to the **'/projects{id}'** path and sent by the [**send**](api/rest_api/methods/send_method.md) method to perform the **update-project** operation (see [**update-project**](api/methods/updateproject_method.md)). 
 

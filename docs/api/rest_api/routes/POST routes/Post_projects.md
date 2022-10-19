@@ -8,7 +8,7 @@ description: You can learn about the Post /projects route in the documentation o
 
 ### Description
 
-@short:Returns a new project object with the project ID in it.
+@short:Returns a new project object with the project ID in it
 
 The route handles the POST request made to the **'/projects'** path and sent by the [**send**](api/rest_api/methods/send_method.md) method to perform the **add-project** operation (see [**add-project**](api/methods/addproject_method.md)). 
 

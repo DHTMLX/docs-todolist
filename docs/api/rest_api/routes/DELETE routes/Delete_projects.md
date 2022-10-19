@@ -8,7 +8,7 @@ description: You can learn about the Delete /projects route in the documentation
 
 ### Description
 
-@short:Returns an empty promise object in case a project is successfully removed.
+@short:Returns an empty promise object in case a project is successfully removed
 
 The route handles the DELETE request made to the **'/projects{id}'** path and sent by the [**send**](api/rest_api/methods/send_method.md) method to perform the **delete-project** operation (see [**delete-project**](api/methods/deleteproject_method.md)). 
 
