@@ -318,12 +318,12 @@ module.exports = {
                 label: "REST routes",
                 collapsed: true,
                 link: {
-                    type: 'generated-index',
-							title: "REST routes",
-				keywords: ['routes'],
-				image: '/img/docusaurus.png'				
-                   
+                    type: 'doc',
+					id: 'api/rest_api/routes/Routes_index'
+						
+					
                 },
+				
 				items: [
 					{
 						type: "category",

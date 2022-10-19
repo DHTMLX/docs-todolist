@@ -8,7 +8,7 @@ description: You can learn about the Put /tasks route in the documentation of th
 
 ### Description
 
-@short:Returns an empty object in case a task is modified as requested
+@short:Returns an empty promise in case a task is modified as requested
 
 The route handles the PUT request made to the **'/tasks{id}'** path and sent by the [**send**](api/rest_api/methods/send_method.md) method to perform the **update-task** operation (see [**update-task**](api/methods/updatetask_method.md)). 
 

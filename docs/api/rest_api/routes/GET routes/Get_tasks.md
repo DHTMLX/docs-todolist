@@ -8,7 +8,7 @@ description: You can learn about the Get/tasks route in the documentation of the
 
 ### Description
 
-@short:Returns promise with an array of all tasks objects
+@short:Returns a promise with an array of all tasks objects
 
 The route handles the GET request made to the **'/tasks'** path and sent by the [**getTasks()**](api/rest_api/methods/gettasks_method.md) method. 
 
