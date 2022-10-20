@@ -72,7 +72,7 @@ Examples of different operation types:
 <details>
   <summary>operation === null </summary>
   In case one task is moved within the current project, its ID is sent in the request line.<br/> 
-  If multiple tasks are moved, the **id** value in the request line is set to 0, and all tasks IDs are specified in the <b>batch</b> array. <br/>
+  If multiple tasks are moved, the <b>id</b> value in the request line is set to 0, and all tasks IDs are specified in the <b>batch</b> array. <br/>
   
 
   ~~~json
@@ -109,7 +109,7 @@ Examples of different operation types:
 
   <details>
   <summary>multiple indent/unindent operations</summary>
-  In case the request is sent to indent or unindent multiple tasks, the **id** value in the request line is set to 0, each task ID with other parameters are listed in the <b>opbatch</b> array of task objects.
+  In case the request is sent to indent or unindent multiple tasks, the <b>id</b> value in the request line is set to 0, each task ID with other parameters are listed in the <b>opbatch</b> array of task objects.
 
 Let's denote each operation object as the <b>Operation</b> object:
 
@@ -142,7 +142,7 @@ Now we can list operation parameters in the **opbatch** array of the <b>Operatio
 
 <summary>operation === "project"</summary>
   In case one task is moved, its ID is sent in the request line.<br/> 
-  If multiple tasks are moved to another project, the **id** value in the request line is set to 0, and all tasks IDs are specified in the <b>batch</b> array.<br/> 
+  If multiple tasks are moved to another project, the <b>id</b> value in the request line is set to 0, and all tasks IDs are specified in the <b>batch</b> array.<br/> 
   If you move a task with child items, only the ID of its parent is specified in the <b>batch</b> array.<br/>
   
   The <b>project</b> parameter is the ID of a project where tasks are moved. 
