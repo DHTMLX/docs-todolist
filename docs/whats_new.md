@@ -12,6 +12,8 @@ If you are updating To Do List from an older version, check [Migration to newer 
 
 Released on October 10, 2022
 
+[Review of release on the blog](https://dhtmlx.com/blog/dhtmlx-to-do-list-1-1/)
+
 ### Breaking changes
 
 The new release introduces some changes to the `taskShape` property. Check the [Migration article](migration.md#10---11) to keep in step with the latest version.
