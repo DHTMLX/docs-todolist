@@ -34,7 +34,7 @@ No input parameters are required.
 ### Response
 
 The route returns a promise with an array of all projects objects. 
-For the description of the object parameters, go to [projects](api/configs/projects_config.md).
+For the description of the object parameters, go to [**projects**](api/configs/projects_config.md).
 
 The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500, in this case an exception with some error text is thrown).
 

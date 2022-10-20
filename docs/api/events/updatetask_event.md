@@ -28,7 +28,7 @@ The callback of the **update-task** event can take an object with the following 
 - `id` - (required) the id of the updated task
 - `task` - (required) the object of the updated task
 - Additional parameters that can be applied to the [RestDataProvider](guides/working_with_server.md) work:
-  - `skipProvider` - (optional) allows tracking and skipping the events sent to RestDataProvider; values: **true (default)** - the skipping is allowed, **false** - avoid skipping
+  - `skipProvider` - (optional) allows skipping events sent to RestDataProvider; if **false (default)**, RestDataProvider works with the event, **true** - RestDataProvider skips the event
   - `batch` - (optional) an array of updated tasks objects
 
 :::info
