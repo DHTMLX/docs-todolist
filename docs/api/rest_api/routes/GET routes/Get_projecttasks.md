@@ -30,7 +30,7 @@ The route handles the GET request made to the **'/tasks/projects{id}'** path and
 
 ### Payload
 
-The following parameter is sent in the request of the [getProjectTasks()](api/rest_api/methods/getprojecttasks_method.md) method:
+The following parameter is sent in the request of the [**getProjectTasks()**](api/rest_api/methods/getprojecttasks_method.md) method:
 
 | Name       | Type        | Description |
 | ----------- | ----------- | ----------- |
@@ -40,7 +40,7 @@ The following parameter is sent in the request of the [getProjectTasks()](api/re
 ### Response
 
 The route returns a promise with an array that contains data for all tasks of the specified project in the JSON format. 
-You can find the description of the object that is returned here: [tasks](api/configs/tasks_config.md).
+You can find the description of the object that is returned here: [**tasks**](api/configs/tasks_config.md).
 
 The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500, in this case an exception with some error text is thrown).
 

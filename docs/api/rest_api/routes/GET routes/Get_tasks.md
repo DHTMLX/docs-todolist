@@ -33,7 +33,7 @@ No input parameters are required.
 ### Response
 
 The route returns a promise with an array of all tasks objects. A response format is JSON. 
-You can look up the description of the tasks object parameters in the [tasks](api/configs/tasks_config.md) section. <br/> 
+You can look up the description of the tasks object parameters in the [**tasks**](api/configs/tasks_config.md) section. <br/> 
 The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500, in this case an exception with some error text is thrown).
 
 ---

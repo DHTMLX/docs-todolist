@@ -34,7 +34,7 @@ No input parameters are required.
 ### Response
 
 The route returns a promise with an array of all default tags. 
-You can find the description of the object that is returned in the [tags](api/configs/tags_config.md) section.
+You can find the description of the object that is returned in the [**tags**](api/configs/tags_config.md) section.
 
 The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500, in this case an exception with some error text is thrown).
 
