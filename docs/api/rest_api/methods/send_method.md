@@ -65,7 +65,6 @@ list.api.on("set-project", obj => {
         list.api.parse({ tasks: data });
         return Promise.resolve();
     }),
-});
 ~~~
 
 The following example demonstrates how to add more headers to the **send** method:
