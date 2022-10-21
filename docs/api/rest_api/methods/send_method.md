@@ -58,14 +58,41 @@ restDataProvider.send(url, method, data)
 
 The example below shows how to send a request with additional parameters besides the default ones:
 
-~~~js
-list.api.on("set-project", obj => {
+~~~js {20-25}
+const { ToDo, Toolbar, RestDataProvider } = todo;
+
+const activeProject = null;
+const url = "http://localhost:3000";
+const restProvider = new RestDataProvider(url);
+
+Promise.all([
+    restProvider.getProjectTasks(activeProject),
+    restProvider.getProjects(),
+]).then(([tasks, projects]) => {
+    const list = new ToDo("#root", {
+        tasks,
+        projects,
+        activeProject,
+    });
+    const toolbar = new Toolbar("#toolbar", {
+        api: list.api,
+    });
+
+    list.api.on("set-project", obj => {
     obj.custom = "custom event";
     restDataProvider.send(`tasks/projects/0`, "GET", obj).then(data => {
         list.api.parse({ tasks: data });
         return Promise.resolve();
     }),
+
+    list.api.setNext(restProvider);
+    restProvider.setAPI(list.api);
+});
+
 ~~~
+
+
+
 
 The following example demonstrates how to add more headers to the **send** method:
 
@@ -80,5 +107,7 @@ list.api.on("add-task", obj => {
 });
 
 ~~~
+
+---
 
 **Related articles**: [Working with Server](guides/working_with_server.md)

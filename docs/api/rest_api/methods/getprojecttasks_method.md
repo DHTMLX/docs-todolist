@@ -20,13 +20,15 @@ The **getProjectTasks()** method is a part of the **RestDataProvider** service i
 getProjectTasks(id: string | number | null): Promise<obj[]>;
 ~~~
 
-### Parameters:
+### Parameters
 
-- `id` - (required) the ID of the project
+| Name       | Type        | Description |
+| ----------- | ----------- | ----------- |
+| `id`       |  string, number, null    | *Required*. The ID of the project |
 
-### Returns
+### Response
 
-The **getProjectTasks()** method sends a request to the server by the **GET** method and returns **a promise** with data of the tasks of the specified project 
+The **getProjectTasks()** method sends a request to the server by the **GET** method and returns **a promise** with data on the tasks of the specified project.
 
 
 ### Example
@@ -55,5 +57,6 @@ Promise.all([
     restProvider.setAPI(list.api);
 });
 ~~~
+---
 
 **Related articles**: [Working with Server](guides/working_with_server.md)

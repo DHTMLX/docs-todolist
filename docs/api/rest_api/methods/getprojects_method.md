@@ -20,9 +20,9 @@ The **getProjects()** method is a part of the **RestDataProvider** service inten
 getProjects(): Promise<obj[]>;
 ~~~
 
-### Returns
+### Response
 
-The **getProjects()** method sends a request to the server by the **GET** method and returns **a promise** with data of the projects
+The **getProjects()** method sends a request to the server by the **GET** method and returns **a promise** with data on projects.
 
 
 ### Example
@@ -51,5 +51,6 @@ Promise.all([
     restProvider.setAPI(list.api);
 });
 ~~~
+---
 
 **Related articles**: [Working with Server](guides/working_with_server.md)

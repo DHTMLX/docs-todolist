@@ -20,9 +20,9 @@ The **getUsers()** method is a part of the **RestDataProvider** service intended
 getUsers(): Promise<obj[]>;
 ~~~
 
-### Returns
+### Response
 
-The **getUsers()** method sends a request to the server by the **GET** method and returns **a promise** with the users data
+The **getUsers()** method sends a request to the server by the **GET** method and returns **a promise** with the users data.
 
 
 ### Example
@@ -53,5 +53,7 @@ Promise.all([
     restProvider.setAPI(list.api);
 });
 ~~~
+
+---
 
 **Related articles**: [Working with Server](guides/working_with_server.md)

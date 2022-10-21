@@ -20,9 +20,9 @@ The **getTags()** method is a part of the **RestDataProvider** service intended 
 getTags(): Promise<string[]>;
 ~~~
 
-### Returns
+### Response
 
-The **getTags()** method sends a request to the server by the **GET** method and returns **a promise** with the list of tags which are set by default 
+The **getTags()** method sends a request to the server by the **GET** method and returns **a promise** with the list of tags which are set by default.
 
 
 ### Example
@@ -53,5 +53,6 @@ Promise.all([
     restProvider.setAPI(list.api);
 });
 ~~~
+---
 
 **Related articles**: [Working with Server](guides/working_with_server.md)

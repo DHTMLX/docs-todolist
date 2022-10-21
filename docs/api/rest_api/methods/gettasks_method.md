@@ -20,9 +20,9 @@ The **getTasks()** method is a part of the **RestDataProvider** service intended
 getTasks(): Promise<obj[]>;
 ~~~
 
-### Returns
+### Response
 
-The **getTasks()** method sends a request to the server by the **GET** method and returns **a promise** with the tasks data
+The **getTasks()** method sends a request to the server by the **GET** method and returns **a promise** with the tasks data.
 
 
 ### Example
@@ -50,5 +50,6 @@ Promise.all([
     restProvider.setAPI(list.api);
 });
 ~~~
+---
 
 **Related articles**: [Working with Server](guides/working_with_server.md)
