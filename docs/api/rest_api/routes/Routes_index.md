@@ -10,7 +10,7 @@ import TabItem from '@theme/TabItem';
 This page gives you the list of all REST routes with their short description and links to pages with more details. Before you dive into each route description, it's recommended to read about [Working with Server](guides/working_with_server.md).
 
 <Tabs>
-  <TabItem value="GET" label="GET">
+<TabItem value="GET" label="GET">
 <table>
 <thead>
 <tr>
