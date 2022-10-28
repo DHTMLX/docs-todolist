@@ -319,7 +319,7 @@ module.exports = {
                 collapsed: true,
                 link: {
                     type: 'doc',
-					id: 'api/rest_api/routes/Routes_index'
+					id: 'api/rest_api/routes/REST_routes_overview'
 						
 					
                 },
