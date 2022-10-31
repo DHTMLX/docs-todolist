@@ -8,29 +8,36 @@ description: You can learn about the Put /sort route in the documentation of the
 
 ### Description
 
-@short:Returns an empty promise in case tasks are sorted as requested
+@short:Sorts all tasks of an active project by the specified parameters and returns an empty json object
 
-The route handles the PUT request made to the **'/sort'** path and sent by the [**send**](api/rest_api/methods/send_method.md) method to perform the **set-sort** operation (see [**set-sort**](api/methods/setsort_method.md)).
+The route handles the PUT request made to the **'/sort/{id}'** path.
 
 <table style="border: 1px solid white; border-collapse: collapse; width:50%">
 <thead style="border: 1px solid white; border-collapse: collapse;">
 <th style="width:25%">HTTP method</th>
 <th style="width:25%">Route</th>
+<th style="width:25%">Query parameter</th>
 </thead>
 <tbody style="border: 1px solid white; border-collapse: collapse">
 <tr>
 <td>PUT</td>
 <td>/sort</td>
+<td>id</td>
 </tr>
 </tbody>
 </table>
 
+### Query parameters
+
+The query parameter that is sent in the request line:
+
+| Name       | Type        | Description |
+| ----------- | ----------- | ----------- |
+| `id`       |  number   | *Required*. The ID of the active project for which tasks will be sorted.|
 
 ### Payload
 
-The object that is sent in the request body is described here: [**set-sort**](api/events/setsort_event.md).
-
-The parameters that are parsed on the server side are the following:
+The server expects a json object with the next properties:
 
 | Name       | Type        | Description |
 | ----------- | ----------- | ----------- |
@@ -38,19 +45,21 @@ The parameters that are parsed on the server side are the following:
 | `dir`       |  string   | *Required*. The direction of sorting: "asc" or "desc".|
 
 ~~~json
-
 {
-    by: string,
-    dir: string,
+
+    "by": due_date,
+    "dir": asc,
 }
 ~~~
 
 ### Response
   
-The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500, in this case an exception with an error text is thrown).
-
-In case of the success status, an empty JSON object is returned back. 
+In case of the success status, an empty json object is returned. 
+The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500).
 
 ---
 
-**Related articles**: [Working with Server](guides/working_with_server.md)
+**Related articles**:
+- [send()](api/rest_api/methods/send_method.md)
+- [set-sort()](api/methods/setsort_method.md)
+- [Working with Server](guides/working_with_server.md)

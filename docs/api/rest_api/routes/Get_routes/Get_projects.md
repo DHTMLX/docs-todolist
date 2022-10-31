@@ -8,9 +8,9 @@ description: You can learn about the Get /projects route in the documentation of
 
 ### Description
 
-@short:Returns a promise with an array of all available projects objects
+@short:Gets data on all available projects and returns a json object with an array of projects objects
 
-The route handles the GET request made to the **'/projects'** path and sent by the [**getProjects()**](api/rest_api/methods/getprojects_method.md) method. 
+The route handles the GET request made to the **'/projects'** path.
 
 <table style="border: 1px solid white; border-collapse: collapse; width:50%">
 <thead style="border: 1px solid white; border-collapse: collapse;">
@@ -28,16 +28,19 @@ The route handles the GET request made to the **'/projects'** path and sent by t
 
 ### Payload
 
-No input parameters are required.
+No input data is required.
 
 
 ### Response
 
-The route returns a promise with an array of all projects objects. 
-For the description of the object parameters, go to [**projects**](api/configs/projects_config.md).
+The route returns a json object with an array of all projects objects. 
+For an example of the returned object, go to [**projects**](api/configs/projects_config.md).
 
-The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500, in this case an exception with some error text is thrown).
+The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500).
 
 ---
 
-**Related articles**: [Working with Server](guides/working_with_server.md)
+**Related articles**: 
+
+- [getProjects()](api/rest_api/methods/getprojects_method.md)
+- [Working with Server](guides/working_with_server.md)

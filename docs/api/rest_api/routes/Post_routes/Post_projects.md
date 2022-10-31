@@ -8,9 +8,9 @@ description: You can learn about the Post /projects route in the documentation o
 
 ### Description
 
-@short:Returns a new project object with the project ID in it
+@short:Creates a new project and returns a project object with the project ID in it
 
-The route handles the POST request made to the **'/projects'** path and sent by the [**send**](api/rest_api/methods/send_method.md) method to perform the **add-project** operation (see [**add-project**](api/methods/addproject_method.md)). 
+The route handles the POST request made to the **'/projects'** path. 
 
 
 <table style="border: 1px solid white; border-collapse: collapse; width:50%">
@@ -29,10 +29,7 @@ The route handles the POST request made to the **'/projects'** path and sent by 
 
 ### Payload
 
-The object described in the [**add-project**](api/events/addproject_event.md) section is sent in the request body.
-For the project object description, see here: [**projects**](api/configs/projects_config.md).
-
-The following parameter is parsed on the server side:
+The server needs to receive a json object with one property:
 
 | Name       | Type        | Description |
 | ----------- | ----------- | ----------- |
@@ -43,25 +40,29 @@ Example:
 
 ~~~json
 {
-   label: string,
+    "label": "New Project"
 }
 ~~~
 
 ### Response
 
-The route returns the ID of a new project in the JSON format. 
+The route returns a json object with the ID of a new project. 
 
 Example:
 
 ~~~json
 {
-    id: number,
+    id: 3,
 }
 ~~~
 
  
-The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500, in this case an exception with an error text is thrown).
+The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500).
 
 ---
 
-**Related articles**: [Working with Server](guides/working_with_server.md)
+**Related articles**: 
+
+- [send()](api/rest_api/methods/send_method.md)
+- [add-project()](api/methods/addproject_method.md)
+- [Working with Server](guides/working_with_server.md)

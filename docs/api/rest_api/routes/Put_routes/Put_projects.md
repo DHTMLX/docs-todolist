@@ -8,9 +8,9 @@ description: You can learn about the Put /projects route in the documentation of
 
 ### Description
 
-@short:Returns an empty promise in case a project is modified as requested
+@short:Updates data on a project and returns an empty json object
 
-The route handles the PUT request made to the **'/projects{id}'** path and sent by the [**send**](api/rest_api/methods/send_method.md) method to perform the **update-project** operation (see [**update-project**](api/methods/updateproject_method.md)). 
+The route handles the PUT request made to the **'/projects/{id}'** path. 
 
 
 <table style="border: 1px solid white; border-collapse: collapse; width:50%">
@@ -28,34 +28,39 @@ The route handles the PUT request made to the **'/projects{id}'** path and sent 
 </tbody>
 </table>
 
+### Query parameters
 
-### Payload
-
-The query parameter in the request line:
+The query parameter sent in the request line is the following:
 
 | Name       | Type        | Description |
 | ----------- | ----------- | ----------- |
 | `id`       |  number   | *Required*. The ID of the project to be updated.|
 
 
-The **project object** with all project parameters (both unchanged and new/modified) is sent in the **request body**.
+
+### Payload
+
+The server needs to receive a json object with all project properties (both unchanged and new/modified). 
 
 You can find the project object description in the [**projects**](api/configs/projects_config.md) section.
 
+Example:
+
 ~~~json
 {
-    label: string,
+    "label": "My Project"
 }
 ~~~
 
 
 ### Response
 
+In case of the success status, an empty json object is returned back. 
   
-The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500, in this case an exception with an error text is thrown).
-
-In case of the success status, an empty JSON object is returned back. 
+The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500).
 
 ---
 
 **Related articles**: [Working with Server](guides/working_with_server.md)
+
+nd sent by the [**send**](api/rest_api/methods/send_method.md) method to perform the **update-project** operation (see [**update-project**](api/methods/updateproject_method.md))

@@ -327,7 +327,7 @@ module.exports = {
 				items: [
 					{
 						type: "category",
-						label: "GET routes",
+						label: "Get_routes",
 						collapsed: true,
 						link: {
 							type: 'generated-index',
@@ -336,17 +336,17 @@ module.exports = {
 				image: '/img/docusaurus.png'
 						},
 						items: [
-							"api/rest_api/routes/GET routes/Get_tasks",
-							"api/rest_api/routes/GET routes/Get_projecttasks",
-							"api/rest_api/routes/GET routes/Get_users",
-							"api/rest_api/routes/GET routes/Get_projects",
-							"api/rest_api/routes/GET routes/Get_tags",
+							"api/rest_api/routes/Get_routes/Get_projects",
+							"api/rest_api/routes/Get_routes/Get_tasks",
+							"api/rest_api/routes/Get_routes/Get_projecttasks",
+							"api/rest_api/routes/Get_routes/Get_users",
+							"api/rest_api/routes/Get_routes/Get_tags",
 						]
 
 					},
 					{
 						type: "category",
-						label: "POST routes",
+						label: "Post_routes",
 						collapsed: true,
 						link: {
 							type: 'generated-index',
@@ -355,9 +355,9 @@ module.exports = {
 				image: '/img/docusaurus.png'
 						},
 						items: [
-							"api/rest_api/routes/POST routes/Post_tasks",
-							"api/rest_api/routes/POST routes/Post_projects",
-							"api/rest_api/routes/POST routes/Post_clone",
+							"api/rest_api/routes/Post_routes/Post_tasks",
+							"api/rest_api/routes/Post_routes/Post_projects",
+							"api/rest_api/routes/Post_routes/Post_clone",
 							
 						
 						]
@@ -365,7 +365,7 @@ module.exports = {
 					},
 					{
 						type: "category",
-						label: "PUT routes",
+						label: "Put_routes",
 						collapsed: true,
 						link: {
 							type: 'generated-index',
@@ -374,10 +374,10 @@ module.exports = {
 				image: '/img/docusaurus.png'
 						},
 						items: [
-							"api/rest_api/routes/PUT routes/Put_tasks",
-							"api/rest_api/routes/PUT routes/Put_projects",
-							"api/rest_api/routes/PUT routes/Put_move",
-							"api/rest_api/routes/PUT routes/Put_sort",
+							"api/rest_api/routes/Put_routes/Put_tasks",
+							"api/rest_api/routes/Put_routes/Put_projects",
+							"api/rest_api/routes/Put_routes/Put_move",
+							"api/rest_api/routes/Put_routes/Put_sort",
 							
 						
 						]
@@ -386,7 +386,7 @@ module.exports = {
 
 					{
 						type: "category",
-						label: "DELETE routes",
+						label: "Delete_routes",
 						collapsed: true,
 						link: {
 							type: 'generated-index',
@@ -395,8 +395,8 @@ module.exports = {
 				image: '/img/docusaurus.png'
 						},
 						items: [
-							"api/rest_api/routes/DELETE routes/Delete_tasks",
-							"api/rest_api/routes/DELETE routes/Delete_projects",
+							"api/rest_api/routes/Delete_routes/Delete_tasks",
+							"api/rest_api/routes/Delete_routes/Delete_projects",
 												
 						
 						]

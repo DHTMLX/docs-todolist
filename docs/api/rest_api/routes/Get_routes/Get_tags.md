@@ -8,9 +8,9 @@ description: You can learn about the Get /tags route in the documentation of the
 
 ### Description
 
-@short:Returns a promise with an array of all default tags
+@short:Gets data on all tags and returns a json object with an array of these tags
 
-The route handles the GET request made to the **'/tags'** path and sent by the [**getTags()**](api/rest_api/methods/gettags_method.md) method. 
+The route handles the GET request made to the **'/tags'** path.
 
 <table style="border: 1px solid white; border-collapse: collapse; width:50%">
 <thead style="border: 1px solid white; border-collapse: collapse;">
@@ -33,11 +33,14 @@ No input parameters are required.
 
 ### Response
 
-The route returns a promise with an array of all default tags. 
-You can find the description of the object that is returned in the [**tags**](api/configs/tags_config.md) section.
+The route returns a json object with an array of all default tags. 
+You can find an example of the object that is returned in the [**tags**](api/configs/tags_config.md) section.
 
-The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500, in this case an exception with some error text is thrown).
+The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500).
 
 ---
 
-**Related articles**: [Working with Server](guides/working_with_server.md)
+**Related articles**: 
+
+- [getTags()](api/rest_api/methods/gettags_method.md)
+- [Working with Server](guides/working_with_server.md)

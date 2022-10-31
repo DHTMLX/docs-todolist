@@ -8,9 +8,9 @@ description: You can learn about the Get/tasks route in the documentation of the
 
 ### Description
 
-@short:Returns a promise with an array of all tasks objects
+@short:Gets data on all tasks and returns a json object with an array of tasks objects
 
-The route handles the GET request made to the **'/tasks'** path and sent by the [**getTasks()**](api/rest_api/methods/gettasks_method.md) method. 
+The route handles the GET request made to the **'/tasks'** path. 
 
 <table style="border: 1px solid white; border-collapse: collapse; width:50%">
 <thead style="border: 1px solid white; border-collapse: collapse;">
@@ -32,10 +32,13 @@ No input parameters are required.
 
 ### Response
 
-The route returns a promise with an array of all tasks objects. A response format is JSON. 
-You can look up the description of the tasks object parameters in the [**tasks**](api/configs/tasks_config.md) section. <br/> 
-The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500, in this case an exception with some error text is thrown).
+The route returns a json object with an array of all tasks objects.
+You can look up an example of the tasks object in the [**tasks**](api/configs/tasks_config.md) section. <br/> 
+The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500).
 
 ---
 
-**Related articles**: [Working with Server](guides/working_with_server.md)
+**Related articles**: 
+
+- [getTasks()](api/rest_api/methods/gettasks_method.md)
+- [Working with Server](guides/working_with_server.md)

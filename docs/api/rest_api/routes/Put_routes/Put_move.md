@@ -8,10 +8,10 @@ description: You can learn about the Put /move route in the documentation of the
 
 ### Description
 
-@short:Returns an empty promise in case tasks are successfully moved as requested
+@short:Moves a task to the specified position and returns an empty json object
 
-The route handles the PUT request made to the **'/move{id}'** path and sent by the [**send**](api/rest_api/methods/send_method.md) method to move, indent or unindent tasks.<br/>
-For more details about available operations, see the description of the **operation** parameter sent in the request body (see the **Payload** section below). 
+The route handles the PUT request made to the **'/move/{id}'** path.
+For more details about available operations, see the description of the **operation** property sent in the request body (see the **Payload** section below). 
 
 <table style="border: 1px solid white; border-collapse: collapse; width:50%">
 <thead style="border: 1px solid white; border-collapse: collapse;">
@@ -28,18 +28,17 @@ For more details about available operations, see the description of the **operat
 </tbody>
 </table>
 
+### Query parameters
 
-### Payload
-
-The query parameter in the request line:
+The query parameter sent in the request line is the following:
 
 | Name       | Type        | Description |
 | ----------- | ----------- | ----------- |
 | `id`       |  number   | *Required*. The ID of the task to be moved. In case multiple tasks are requested to be moved, the id is set to 0|
 
-The object described in the [**move-task**](api/events/movetask_event.md) section is sent to the server in the **request body**.
+### Payload
 
-The request body parameters parsed on the server are the following:
+The server expects to receive a json object with the next properties:
 
 | Name       | Type        | Description |
 | ----------- | ----------- | ----------- |
@@ -52,19 +51,16 @@ The request body parameters parsed on the server are the following:
 | `batch`       |  object  | *Required*. An array of IDs of all tasks that are moved. If a task has child items, only the task parent ID is included into the object.|
 
 
-Optional parameters can be marked as nullable by adding `?` at the end of the property name:
+Example:
 
 ~~~json
  
  {
-   id?: number,
-   parent?: number,
-   project?: number,
-   targetId?: number,
-   operation: string,
-   reverse?: boolean,
-   batch: number[]
- }
+    "id": 5,
+    "targetId": 2,
+    "reverse": false,
+    "batch": null
+}
 ~~~ 
 
 Examples of different operation types:
@@ -76,11 +72,22 @@ Examples of different operation types:
   
 
   ~~~json
-  {
-    targetId: number,
-    reverse: boolean,
-    batch?: number[],
-    operation?: string,
+ {
+    "id": 3,
+    "targetId": 1,
+    "reverse": true,
+    "batch": null
+}
+~~~
+
+To move multiple tasks you need to add the batch property that contains IDs of tasks to be moved:
+
+~~~json
+{
+    "id": 3,
+    "targetId": 1,
+    "reverse": true,
+    "batch": [1, 2, 3]
 }
 ~~~
     
@@ -95,12 +102,11 @@ Examples of different operation types:
 ~~~json
 
    {
-    id: number,
-    targetId: number,
-    reverse: boolean,
-    operation: string,
-    parent?: number,
-} 
+    "id": 4,
+    "parent": 2,
+    "targetId": 2,
+    "operation": "indent"
+}
 
 ~~~
 
@@ -114,25 +120,38 @@ Examples of different operation types:
 Let's denote each operation object as the <b>Operation</b> object:
 
 ~~~json
-
-   {
+{
+    opbatch: Operation[
+      {
     id: number,
     targetId: number,
     reverse: boolean,
     operation: string,
     parent?: number,
-} 
-
-
+     } 
+   ]
+}
 ~~~
 
 Now we can list operation parameters in the **opbatch** array of the <b>Operation</b> objects: 
 
 ~~~json
 {
-    opbatch: Operation[]
+    "opbatch": [
+        {
+            "id": 1,
+            "parent": 3,
+            "targetId": 3,
+            "operation": "indent"
+        },
+        {
+            "id": 53,
+            "parent": 3,
+            "targetId": 3,
+            "operation": "indent"
+        }
+    ]
 }
-// where Operation is defined in the previous example
 
 ~~~
 
@@ -148,12 +167,11 @@ Now we can list operation parameters in the **opbatch** array of the <b>Operatio
   The <b>project</b> parameter is the ID of a project where tasks are moved. 
 
 ~~~json
-{
-    project: number,
-    operation: string,
-    batch?: number[],
-}
-
+    {
+    "project": null,
+    "operation": "project",
+    "batch": [3]
+    }
 ~~~
 
 </details>
@@ -161,10 +179,13 @@ Now we can list operation parameters in the **opbatch** array of the <b>Operatio
 ### Response
 
   
-The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500, in this case an exception with an error text is thrown).
+The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500).
 
 In case of the success status, an empty JSON object is returned back. 
 
 ---
 
-**Related articles**: [Working with Server](guides/working_with_server.md)
+**Related articles**: 
+- [move-task()](api/events/movetask_event.md)
+- [send()](api/rest_api/methods/send_method.md)
+- [Working with Server](guides/working_with_server.md)

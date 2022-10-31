@@ -8,9 +8,9 @@ description: You can learn about the Post /tasks route in the documentation of t
 
 ### Description
 
-@short:Returns a new task object with the ID of a new task
+@short:Creates a new task and returns a task object with the ID of a new task
 
-The route handles the POST request made to the **'/tasks'** path and sent by the [**send**](api/rest_api/methods/send_method.md) method to perform the **add-task** operation (see [**add-task**](api/methods/addtask_method.md)). 
+The route handles the POST request made to the **'/tasks'** path.
 
 
 <table style="border: 1px solid white; border-collapse: collapse; width:50%">
@@ -29,46 +29,51 @@ The route handles the POST request made to the **'/tasks'** path and sent by the
 
 ### Payload
 
-The object described in the [**add-task**](api/events/addtask_event.md) section is sent in the request body in the JSON format.
-
-The following parameters are parsed on the server side:
+The server side expects to receive a json object with the next properties:
 
 | Name       | Type        | Description |
 | ----------- | ----------- | ----------- |
 | `targetId`       |  number   | *Optional*. The ID of the future target task where a new task will be added.|
 | `parent`       |  number   | *Optional*. The ID of the parent task.|
 | `project`       |  number   | *Optional*. The ID of the project to which a new task should be added.|
-| `task`       |  object  | *Required*. The task object which is described here [**tasks**](api/configs/tasks_config.md).|
-
-Optional parameters can be marked as *nullable* by adding `?` at the end of the property name:
+| `reverse`| boolean | *Optional*. Defines the position where a new task will be added: **true**, if the task is added before the target task; otherwise, **false** (default).|
+| `task`       |  object  | *Required*. The task object an example of which you can find here [**tasks**](api/configs/tasks_config.md).|
 
 Example:
 
 ~~~json
 {
-   targetId?: number,
-   parent?: number,
-   project?: number,
-   reverse?: boolean,
-   task: object,
+    "parent": 10,
+    "project": 1,
+    "reverse": false,
+    "targetId": 10,
+    "task": {
+        "text": "My task",
+        ...other values, 
+    }
 }
 ~~~
 
 ### Response
 
-The route returns the ID of a new task in the JSON format. 
+The route returns a json object with the ID of a new task. 
 
 Example:
 
 ~~~json
 {
-    id: number,
+    id: 12,
 }
 ~~~
 
- 
-The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500, in this case an exception with an error text is thrown).
+The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500).
 
 ---
 
-**Related articles**: [Working with Server](guides/working_with_server.md)
+**Related articles**:
+- [send()](api/rest_api/methods/send_method.md)
+- [add-task()](api/methods/addtask_method.md)
+- [Working with Server](guides/working_with_server.md)
+
+
+
