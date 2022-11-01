@@ -27,6 +27,7 @@ For quick navigation you can use either of the two tabs:
 <TabItem value="name" label="Routes by data objects">
 <Tabs>
 <TabItem value="tasks" label="tasks">
+<p>Use the next routes to perform operations on tasks:</p>
 <table>
 <thead>
 <tr>
@@ -54,7 +55,7 @@ For quick navigation you can use either of the two tabs:
 <tr>
 <td>POST</td>
 <td><a href="/api/rest_api/routes/POST routes/Post_clone"> /clone</a></td>
-<td>Creates a copy of a task and returns an object with the client task ID and duplicated task ID of the server</td>
+<td>Creates a copy of a task and returns a json object with the client task ID and duplicated task ID of the server</td>
 </tr>
 <tr>
 <td>PUT</td>
@@ -81,6 +82,7 @@ For quick navigation you can use either of the two tabs:
 </table>
 </TabItem>
 <TabItem value="projects" label="projects">
+<p>Use the next routes to perform operations on projects:</p>
 <table>
 <thead>
 <tr>
@@ -115,6 +117,7 @@ For quick navigation you can use either of the two tabs:
 </TabItem>
 
 <TabItem value="users" label="users">
+<p>Use the next routes to perform operations on users:</p>
 <table>
 <thead>
 <tr>
@@ -134,6 +137,7 @@ For quick navigation you can use either of the two tabs:
 </TabItem>
 
 <TabItem value="tags" label="tags">
+<p>Use the next routes to perform operations on tags:</p>
 <table>
 <thead>
 <tr>

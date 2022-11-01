@@ -8,7 +8,7 @@ description: You can learn about the Post /clone route in the documentation of t
 
 ### Description
 
-@short:Creates a copy of a task and returns an object with the client task ID and duplicated task ID of the server
+@short:Creates a copy of a task and returns a json object with the client task ID and duplicated task ID of the server
 
 The route handles the POST request made to the **'/clone'** path.
 
@@ -83,7 +83,8 @@ Example:
 
 ### Response
 
-The route returns a json object with the client task ID and duplicated task ID of the server.
+The route returns a json object with the client task ID and duplicated task ID of the server.<br>
+Client task IDs are temporary IDs received in the requests and values are new tasks IDs generated during data saving.
 
 Example:
 
