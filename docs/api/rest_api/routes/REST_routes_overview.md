@@ -22,8 +22,8 @@ For quick navigation you can use either of the two tabs:
 - **Routes by methods** to have a quick grasp of routes by http methods and what the server returns back
 
 :::
-
-<Tabs style="background-color: blue">
+<div style="border: solid #F8F8F8">
+<Tabs>
 <TabItem value="name" label="Routes by data objects">
 <Tabs>
 <TabItem value="tasks" label="tasks">
@@ -156,7 +156,9 @@ For quick navigation you can use either of the two tabs:
 </tbody>
 </table>
 </TabItem>
+
 </Tabs>
+
 </TabItem>
 
 
@@ -270,5 +272,7 @@ For quick navigation you can use either of the two tabs:
 
 </TabItem>
 </Tabs>
+
 </TabItem>
 </Tabs>
+</div>
