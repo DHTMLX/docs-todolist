@@ -33,7 +33,7 @@ The following parameter is sent in the request line:
 
 | Name       | Type        | Description |
 | ----------- | ----------- | ----------- |
-| `id`       |  string     | *Required*. The ID of the project for which tasks are requested. It's sent as the request query parameter.|
+| `id`       |  string     | *Required*. The ID of the project for which tasks are requested.|
 
 
 ### Payload

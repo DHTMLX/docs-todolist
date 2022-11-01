@@ -117,23 +117,9 @@ To move multiple tasks you need to add the batch property that contains IDs of t
   <summary>multiple indent/unindent operations</summary>
   In case the request is sent to indent or unindent multiple tasks, the <b>id</b> value in the request line is set to 0, each task ID with other parameters are listed in the <b>opbatch</b> array of task objects.
 
-Let's denote each operation object as the <b>Operation</b> object:
+In other words, to move multiple tasks, the request should contain the <b>opbatch</b> array of tasks objects with the operations data.
 
-~~~json
-{
-    opbatch: Operation[
-      {
-    id: number,
-    targetId: number,
-    reverse: boolean,
-    operation: string,
-    parent?: number,
-     } 
-   ]
-}
-~~~
-
-Now we can list operation parameters in the **opbatch** array of the <b>Operation</b> objects: 
+Example:
 
 ~~~json
 {
@@ -181,7 +167,7 @@ Now we can list operation parameters in the **opbatch** array of the <b>Operatio
   
 The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500).
 
-In case of the success status, an empty JSON object is returned back. 
+In case of the success status, an empty json object is returned. 
 
 ---
 
