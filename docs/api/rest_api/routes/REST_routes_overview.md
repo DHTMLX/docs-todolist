@@ -84,7 +84,7 @@ For quick navigation you can use either of the two tabs:
 <table>
 <thead>
 <tr>
-<th>Name</th>
+<th>HTTP method</th>
 <th>Route</th>
 <th>Description</th>
 
@@ -118,7 +118,7 @@ For quick navigation you can use either of the two tabs:
 <table>
 <thead>
 <tr>
-<th>Name</th>
+<th>HTTP method</th>
 <th>Route</th>
 <th>Description</th>
 </tr>
@@ -137,7 +137,7 @@ For quick navigation you can use either of the two tabs:
 <table>
 <thead>
 <tr>
-<th >Name</th>
+<th >HTTP method</th>
 <th>Route</th>
 <th >Description</th>
 </tr>
