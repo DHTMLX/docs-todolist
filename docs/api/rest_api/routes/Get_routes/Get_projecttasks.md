@@ -38,7 +38,7 @@ The following parameter is sent in the request line:
 
 ### Payload
 
-No body parameters are required.
+No payload is required.
 
 ### Response
 

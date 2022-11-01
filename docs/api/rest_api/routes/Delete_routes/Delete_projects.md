@@ -8,9 +8,9 @@ description: You can learn about the Delete /projects route in the documentation
 
 ### Description
 
-@short:Returns an empty promise object in case a project is successfully removed
+@short:Deletes data on a project and returns an empty json object
 
-The route handles the DELETE request made to the **'/projects{id}'** path and sent by the [**send**](api/rest_api/methods/send_method.md) method to perform the **delete-project** operation (see [**delete-project**](api/methods/deleteproject_method.md)). 
+The route handles the DELETE request made to the **'/projects/{id}'** path 
 
 Only one project can be removed per request. All project tasks, if any, are also removed. 
 
@@ -30,8 +30,7 @@ Only one project can be removed per request. All project tasks, if any, are also
 </tbody>
 </table>
 
-
-### Payload
+### Query parameters
 
 The ID of a task to be removed is sent in the request line.
 
@@ -39,14 +38,20 @@ The ID of a task to be removed is sent in the request line.
 | ----------- | ----------- | ----------- |
 | `id`       |  number  | *Required*. The id of a project to be removed.|
 
+### Payload
 
+No payload is required.
 
 ### Response
 
-The route returns an empty promise object in case of a successful request.
+The route returns an empty json object in case of a successful request.
  
-The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500, in this case an exception with an error text is thrown).
+The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500).
 
 ---
 
-**Related articles**: [Working with Server](guides/working_with_server.md)
+**Related articles**:
+
+- [send()](api/rest_api/methods/send_method.md)
+- [delete-project()](api/methods/deleteproject_method.md)
+- [Working with Server](guides/working_with_server.md)

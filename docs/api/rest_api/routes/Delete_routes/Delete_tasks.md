@@ -8,9 +8,9 @@ description: You can learn about the Delete /tasks route in the documentation of
 
 ### Description
 
-@short:Returns an empty promise object in case a task is successfully removed
+@short:Deletes data on a task and returns an empty json object
 
-The route handles the DELETE request made to the **'/tasks{id}'** path and sent by the [**send**](api/rest_api/methods/send_method.md) method to perform the **delete-task** operation (see [**delete-task**](api/methods/deletetask_method.md)). 
+The route handles the DELETE request made to the **'/tasks/{id}'** path.
 
 Only one task can be removed per request. All child tasks, if any, are also removed. 
 
@@ -30,23 +30,28 @@ Only one task can be removed per request. All child tasks, if any, are also remo
 </tbody>
 </table>
 
+### Query parameters
 
-### Payload
-
-The ID of a task to be removed is sent in the request line.
+The ID of a task that should be removed is sent in the request line.
 
 | Name       | Type        | Description |
 | ----------- | ----------- | ----------- |
 | `id`       |  number  | *Required*. The id of a task to be removed.|
 
+### Payload
 
+No payload is required.
 
 ### Response
 
-The route returns an empty promise object in case of a successful request.
+The route returns an empty json object in case of a successful request.
  
-The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500, in this case an exception with an error text is thrown).
+The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500).
 
 ---
 
-**Related articles**: [Working with Server](guides/working_with_server.md)
+**Related articles**: 
+
+- [send()](api/rest_api/methods/send_method.md)
+- [delete-tasks()](api/methods/deletetask_method.md)
+- [Working with Server](guides/working_with_server.md)

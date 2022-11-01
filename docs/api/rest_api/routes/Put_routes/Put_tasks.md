@@ -8,7 +8,7 @@ description: You can learn about the Put /tasks route in the documentation of th
 
 ### Description
 
-@short:Updates data on the specified task(s) and returns an empty json object.
+@short:Updates data on the specified task(s) and returns an empty json object
 
 The route handles the PUT request made to the **'/tasks/{id}'** path.
 
@@ -105,6 +105,6 @@ The HTTP status code shows whether the request succeeds (response.status == 200)
 
 **Related articles**:
 
-and sent by the [**send**](api/rest_api/methods/send_method.md) method to perform the **update-task** operation (see [**update-task**](api/methods/updatetask_method.md)). 
-
- [Working with Server](guides/working_with_server.md)
+- [update-task()](api/methods/updatetask_method.md)
+- [send()](api/rest_api/methods/send_method.md)
+- [Working with Server](guides/working_with_server.md)

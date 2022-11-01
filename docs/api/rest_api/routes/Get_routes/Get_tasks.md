@@ -28,7 +28,7 @@ The route handles the GET request made to the **'/tasks'** path.
 
 ### Payload
 
-No input parameters are required. 
+No payload is required.
 
 ### Response
 

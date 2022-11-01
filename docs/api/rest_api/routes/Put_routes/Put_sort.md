@@ -37,18 +37,20 @@ The query parameter that is sent in the request line:
 
 ### Payload
 
-The server expects a json object with the next properties:
+The server expects to receive a json object with the next properties:
 
 | Name       | Type        | Description |
 | ----------- | ----------- | ----------- |
 | `by`       |  string   | *Required*. The field by which to sort.|
 | `dir`       |  string   | *Required*. The direction of sorting: "asc" or "desc".|
 
+Example: 
+
 ~~~json
 {
 
-    "by": due_date,
-    "dir": asc,
+    "by": "due_date",
+    "dir": "asc",
 }
 ~~~
 
