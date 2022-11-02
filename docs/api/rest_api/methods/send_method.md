@@ -106,7 +106,7 @@ list.api.on("add-task", obj => {
 
 Or you can add headers in the way as below by redefining RestDataProvider, which can give you more control of the data you send to the server: 
 
-~~~js
+~~~js {6-11}
 const { ToDo, Toolbar, RestDataProvider } = todo;
 ...
 // ToDo initialization
@@ -120,6 +120,7 @@ class MyDataProvider extends RestDataProvider {
 }
 
 list.api.setNext(new MyDataProvider(url));
+MyDataProvider.setAPI(list.api);
 ~~~ 
 ---
 
