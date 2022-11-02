@@ -30,11 +30,15 @@ For more details about available operations, see the description of the **operat
 
 ### Query parameters
 
-The query parameter sent in the request line is the following:
+The query parameter is sent in the request line:
 
 | Name       | Type        | Description |
 | ----------- | ----------- | ----------- |
-| `id`       |  number   | *Required*. The ID of the task to be moved. In case multiple tasks are requested to be moved, the id is set to 0|
+| `id`       |  number   | *Required*. The ID of the task to be moved. In case multiple tasks are requested to be moved, the id should be set to 0|
+
+:::info
+When you move multiple tasks, make sure that the `id` is set to 0, otherwise (if set to another value), only one task (with this specified id value) will be moved.
+:::
 
 ### Payload
 
@@ -67,24 +71,27 @@ Examples of different operation types:
 
 <details>
   <summary>operation === null </summary>
-  In case one task is moved within the current project, its ID is sent in the request line.<br/> 
-  If multiple tasks are moved, the <b>id</b> value in the request line is set to 0, and all tasks IDs are specified in the <b>batch</b> array. <br/>
-  
+  In case one task is moved within the current project, its ID is sent in the request line and other properties are sent in the request body.<br/> 
+    
+  Payload example: 
 
   ~~~json
  {
-    "id": 3,
     "targetId": 1,
     "reverse": true,
     "batch": null
 }
 ~~~
 
-To move multiple tasks you need to add the batch property that contains IDs of tasks to be moved:
+To move multiple tasks within the same project:
+- In the request line, set the task ID value to 0
+- In the request body, add the <b>batch</b> property that contains IDs of tasks to be moved
+- Add other necessary properties in the request body
+
+Payload example: 
 
 ~~~json
 {
-    "id": 3,
     "targetId": 1,
     "reverse": true,
     "batch": [1, 2, 3]
@@ -97,12 +104,13 @@ To move multiple tasks you need to add the batch property that contains IDs of t
   <summary>operation === "indent" || operation === "unindent" </summary>
   
   
-   In case the request is sent for one <b>indent/unindent</b> operation, its ID is sent in the request line and other task parameters are sent in the request body:
+   In case the request is sent for one <b>indent/unindent</b> operation, the task ID is sent in the request line and other task properties are sent in the request body.
+
+   Example:
 
 ~~~json
 
    {
-    "id": 4,
     "parent": 2,
     "targetId": 2,
     "operation": "indent"
@@ -115,9 +123,10 @@ To move multiple tasks you need to add the batch property that contains IDs of t
 
   <details>
   <summary>multiple indent/unindent operations</summary>
-  In case the request is sent to indent or unindent multiple tasks, the <b>id</b> value in the request line is set to 0, each task ID with other parameters are listed in the <b>opbatch</b> array of task objects.
 
-In other words, to move multiple tasks, the request should contain the <b>opbatch</b> array of tasks objects with the operations data.
+In case the request is sent to indent or unindent multiple tasks, the <b>ID</b> value in the request line is set to 0, each task ID with other parameters should be listed in the <b>opbatch</b> array of task objects.
+
+In other words, to move multiple tasks, a json object in the request body should contain the <b>opbatch</b> array of tasks objects with the operations data.
 
 Example:
 
@@ -146,17 +155,39 @@ Example:
 <details>
 
 <summary>operation === "project"</summary>
-  In case one task is moved, its ID is sent in the request line.<br/> 
-  If multiple tasks are moved to another project, the <b>id</b> value in the request line is set to 0, and all tasks IDs are specified in the <b>batch</b> array.<br/> 
-  If you move a task with child items, only the ID of its parent is specified in the <b>batch</b> array.<br/>
-  
-  The <b>project</b> parameter is the ID of a project where tasks are moved. 
+
+  To move one task to another project:
+
+  - Send the task ID as a query parameter in the request line<br/>
+    OR<br/>
+    Set this query parameter to 0 and add the task ID as the value of the <b>batch</b> property in the request body
+  - In the request body:
+    - Set the <b>operation</b> property value to <b>project</b>
+    - Add the value of the <b>project</b> property which is the ID of a project where a task is moved
+    - Add the task ID as the value of the <b>batch</b> property if the ID is set to 0 in the request line
+
+  Example:
 
 ~~~json
     {
-    "project": null,
+    "project": 2,
     "operation": "project",
     "batch": [3]
+    }
+~~~
+
+  If multiple tasks are moved to another project, the <b>ID</b> value in the request line is set to 0, and all tasks IDs are specified in the <b>batch</b> array.<br/> 
+  If you move a task with child items, only the ID of its parent is specified in the <b>batch</b> array.<br/>
+  The <b>batch</b> property can contain any number of tasks IDs.
+
+
+  Example:
+
+~~~json
+    {
+    "project": 2,
+    "operation": "project",
+    "batch": [3, 5, 8, 9]
     }
 ~~~
 
