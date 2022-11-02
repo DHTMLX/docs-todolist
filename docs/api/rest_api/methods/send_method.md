@@ -91,10 +91,7 @@ Promise.all([
 
 ~~~
 
-
-
-
-The following example demonstrates how to add more headers to the **send** method:
+The following examples demonstrate how to add more headers to the **send** method.
 
 ~~~js
 const customHeaders = {
@@ -105,9 +102,25 @@ const customHeaders = {
 list.api.on("add-task", obj => {
     restDataProvider.send("tasks", "POST", obj, customHeaders);
 });
-
 ~~~
 
+Or you can add headers in the way as below by redefining RestDataProvider, which can give you more control of the data you send to the server: 
+
+~~~js
+const { ToDo, Toolbar, RestDataProvider } = todo;
+...
+// ToDo initialization
+...
+
+class MyDataProvider extends RestDataProvider {
+  send(url, method, data, headers) {
+      headers = { ...headers, "SomeToken": "abc" };
+      return super.send(url, methods, data, headers);
+  }
+}
+
+list.api.setNext(new MyDataProvider(url));
+~~~ 
 ---
 
 **Related articles**: [Working with Server](guides/working_with_server.md)

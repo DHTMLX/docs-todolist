@@ -14,9 +14,9 @@ This page gives you the list of all REST routes with their short description and
 
 ---
 
-:::note
+:::info
 
-For quick navigation you can use either of the two tabs:
+For quick navigation you can use either of the two tabs below:
 
 - **Routes by data objects** to get the idea which routes to use for which operations 
 - **Routes by methods** to have a quick grasp of routes by http methods and what the server returns back
