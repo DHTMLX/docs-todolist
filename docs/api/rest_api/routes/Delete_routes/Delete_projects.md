@@ -32,7 +32,7 @@ Only one project can be removed per request. All project tasks, if any, are also
 
 ### Query parameters
 
-The ID of a task to be removed is sent in the request line.
+The ID of a project to be removed is sent in the request line.
 
 | Name       | Type        | Description |
 | ----------- | ----------- | ----------- |
