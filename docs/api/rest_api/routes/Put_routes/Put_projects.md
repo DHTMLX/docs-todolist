@@ -42,8 +42,6 @@ The query parameter sent in the request line is the following:
 
 The server needs to receive a json object with all project properties (both unchanged and new/modified). 
 
-You can find the project object description in the [**projects**](api/configs/projects_config.md) section.
-
 Example:
 
 ~~~json
@@ -51,6 +49,9 @@ Example:
     "label": "My Project"
 }
 ~~~
+
+You can find another example of the project object in the [**projects**](api/configs/projects_config.md) section.
+
 
 
 ### Response
@@ -61,6 +62,9 @@ The HTTP status code shows whether the request succeeds (response.status == 200)
 
 ---
 
-**Related articles**: [Working with Server](guides/working_with_server.md)
+**Related articles**: 
 
-nd sent by the [**send**](api/rest_api/methods/send_method.md) method to perform the **update-project** operation (see [**update-project**](api/methods/updateproject_method.md))
+- [update-project()](api/methods/updateproject_method.md)
+- [send()](api/rest_api/methods/send_method.md)
+- [Working with Server](guides/working_with_server.md)
+

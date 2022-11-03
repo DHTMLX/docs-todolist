@@ -62,7 +62,7 @@ To update multiple tasks with one request, you should add an array of tasks obje
 
 Example:
 
-~~~json {13}
+~~~json 
 {
     "text": "Greetings, everyone! 👋 \nI'm DHTMLX To Do List.",
     "checked": false,
