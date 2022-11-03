@@ -57,8 +57,6 @@ The server expects to receive a json object with the next properties:
 
 Example:
 
-
-
 ~~~json
  
  {
@@ -105,8 +103,7 @@ Payload example:
 
   <details>
   <summary>operation === "indent" || operation === "unindent" </summary>
-  
-  
+    
    In case the request is sent for one <b>indent/unindent</b> operation, the task ID is sent in the request line and other task properties are sent in the request body.
 
    Example:

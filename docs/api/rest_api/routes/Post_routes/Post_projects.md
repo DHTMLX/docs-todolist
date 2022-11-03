@@ -52,7 +52,7 @@ Example:
 
 ~~~json
 {
-    id: 3,
+    "id": 3
 }
 ~~~
 

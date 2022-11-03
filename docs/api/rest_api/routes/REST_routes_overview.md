@@ -39,42 +39,42 @@ For quick navigation you can use either of the two tabs below:
 <tbody>
 <tr>
 <td>GET</td>
-<td><a href="/api/rest_api/routes/GET routes/Get_tasks"> /tasks</a></td>
+<td><a href="/api/rest_api/routes/Get_routes/Get_tasks"> /tasks</a></td>
 <td>Gets data on all tasks and returns a json object with an array of tasks objects</td>
 </tr>
 <tr>
 <td>GET</td>
-<td><a href="/api/rest_api/routes/GET routes/Get_projecttasks"> /project/tasks</a></td>
+<td><a href="/api/rest_api/routes/Get_routes/Get_projecttasks"> /project/tasks</a></td>
 <td>Gets data on all tasks of the specified project and returns a json object with an array of all tasks objects for this specified project</td>
 </tr>
 <tr>
 <td>POST</td>
-<td><a href="/api/rest_api/routes/POST routes/Post_tasks"> /tasks</a></td>
+<td><a href="/api/rest_api/routes/Post_routes/Post_tasks"> /tasks</a></td>
 <td>Creates a new task and returns a task object with the ID of a new task</td>
 </tr>
 <tr>
 <td>POST</td>
-<td><a href="/api/rest_api/routes/POST routes/Post_clone"> /clone</a></td>
+<td><a href="/api/rest_api/routes/Post_routes/Post_clone"> /clone</a></td>
 <td>Creates a copy of a task and returns a json object with the client task ID and duplicated task ID of the server</td>
 </tr>
 <tr>
 <td>PUT</td>
-<td><a href="/api/rest_api/routes/PUT routes/Put_tasks"> /tasks</a></td>
+<td><a href="/api/rest_api/routes/Put_routes/Put_tasks"> /tasks</a></td>
 <td>Updates data on the specified task(s) and returns an empty json object</td>
 </tr>
 <tr>
 <td>PUT</td>
-<td><a href="/api/rest_api/routes/PUT routes/Put_move"> /move</a></td>
+<td><a href="/api/rest_api/routes/Put_routes/Put_move"> /move</a></td>
 <td>Moves a task to the specified position and returns an empty json object</td>
 </tr>
 <tr>
 <td>PUT</td>
-<td><a href="/api/rest_api/routes/PUT routes/Put_sort"> /sort</a></td>
+<td><a href="/api/rest_api/routes/Put_routes/Put_sort"> /sort</a></td>
 <td>Sorts all tasks of an active project by the specified parameters and returns an empty json object</td>
 </tr>
 <tr>
 <td>DELETE</td>
-<td><a href="/api/rest_api/routes/DELETE routes/Delete_tasks"> /tasks</a></td>
+<td><a href="/api/rest_api/routes/Delete_routes/Delete_tasks"> /tasks</a></td>
 <td>Deletes data on a task and returns an empty json object</td>
 </tr>
 
@@ -95,21 +95,21 @@ For quick navigation you can use either of the two tabs below:
 <tbody>
 <tr>
 <td>GET</td>
-<td><a href="/api/rest_api/routes/GET routes/Get_projects"> /projects</a></td>
+<td><a href="/api/rest_api/routes/Get_routes/Get_projects"> /projects</a></td>
 <td>Gets data on all projects and returns a json object with an array of projects objects</td>
 </tr>
 <tr>
 <td>POST</td>
-<td ><a href="/api/rest_api/routes/POST routes/Post_projects"> /projects</a></td>
+<td ><a href="/api/rest_api/routes/Post_routes/Post_projects"> /projects</a></td>
 <td>Creates a new project and returns a project object with the project ID in it</td>
 </tr>
 <tr>
 <td>PUT</td>
-<td><a href="/api/rest_api/routes/PUT routes/Put_projects"> /projects</a></td><td>Updates data on a project and returns an empty json object</td>
+<td><a href="/api/rest_api/routes/Put_routes/Put_projects"> /projects</a></td><td>Updates data on a project and returns an empty json object</td>
 </tr>
 <tr>
 <td>DELETE</td>
-<td><a href="/api/rest_api/routes/DELETE routes/Delete_projects"> /projects</a></td>
+<td><a href="/api/rest_api/routes/Delete_routes/Delete_projects"> /projects</a></td>
 <td>Deletes data on a project and returns an empty json object</td>
 </tr>
 </tbody>
@@ -129,7 +129,7 @@ For quick navigation you can use either of the two tabs below:
 <tbody>
 <tr>
 <td>GET</td>
-<td><a href="/api/rest_api/routes/Get_users"> /users</a></td>
+<td><a href="/api/rest_api/routes/Get_routes/Get_users"> /users</a></td>
 <td>Gets data on all users and returns a json object with an array of users objects</td>
 </tr>
 </tbody>
@@ -149,7 +149,7 @@ For quick navigation you can use either of the two tabs below:
 <tbody>
 <tr>
 <td>GET</td>
-<td><a href="/api/rest_api/routes/GET routes/Get_tags"> /tags</a></td>
+<td><a href="/api/rest_api/routes/Get_routes/Get_tags"> /tags</a></td>
 <td>Gets data on all tags and returns a json object with an array of these tags</td>
 </tr>
 
@@ -174,23 +174,23 @@ For quick navigation you can use either of the two tabs below:
 </thead>
 <tbody>
 <tr>
-<td><a href="/api/rest_api/routes/Get_users">Get /users</a></td>
+<td><a href="/api/rest_api/routes/Get_routes/Get_users">Get /users</a></td>
 <td>Returns a json object with an array of all users objects</td>
 </tr>
 <tr>
-<td><a href="/api/rest_api/routes/GET routes/Get_tasks">Get /tasks</a></td>
+<td><a href="/api/rest_api/routes/Get_routes/Get_tasks">Get /tasks</a></td>
 <td>Returns a json object with an array of all tasks objects</td>
 </tr>
 <tr>
-<td><a href="/api/rest_api/routes/GET routes/Get_projects">Get /projects</a></td>
+<td><a href="/api/rest_api/routes/Get_routes/Get_projects">Get /projects</a></td>
 <td>Returns a json object with an array of all available projects objects</td>
 </tr>
 <tr>
-<td><a href="/api/rest_api/routes/GET routes/Get_tags">Get /tags</a></td>
+<td><a href="/api/rest_api/routes/Get_routes/Get_tags">Get /tags</a></td>
 <td>Returns a json object with an array of all default tags</td>
 </tr>
 <tr>
-<td><a href="/api/rest_api/routes/GET routes/Get_projecttasks">Get /project/tasks</a></td>
+<td><a href="/api/rest_api/routes/Get_routes/Get_projecttasks">Get /project/tasks</a></td>
 <td>Returns a json object with an array of all tasks objects for the specified project</td>
 </tr>
 </tbody>
@@ -208,15 +208,15 @@ For quick navigation you can use either of the two tabs below:
 </thead>
 <tbody>
 <tr>
-<td ><a href="/api/rest_api/routes/POST routes/Post_clone">Post /clone</a></td>
+<td ><a href="/api/rest_api/routes/Post_routes/Post_clone">Post /clone</a></td>
 <td >Returns a json object with the client task ID and duplicated task ID of the server.</td>
 </tr>
 <tr>
-<td><a href="/api/rest_api/routes/POST routes/Post_projects">Post /projects</a></td>
+<td><a href="/api/rest_api/routes/Post_routes/Post_projects">Post /projects</a></td>
 <td>Returns a new project object with the project ID in it</td>
 </tr>
 <tr>
-<td><a href="/api/rest_api/routes/POST routes/Post_tasks">Post /tasks</a></td>
+<td><a href="/api/rest_api/routes/Post_routes/Post_tasks">Post /tasks</a></td>
 <td>Returns a new task object with the ID of a new task</td>
 </tr>
 </tbody>
@@ -232,19 +232,19 @@ For quick navigation you can use either of the two tabs below:
 </thead>
 <tbody>
 <tr>
-<td ><a href="/api/rest_api/routes/PUT routes/Put_move">Put /move</a></td>
+<td ><a href="/api/rest_api/routes/Put_routes/Put_move">Put /move</a></td>
 <td >Returns an empty json object in case tasks are successfully moved as requested</td>
 </tr>
 <tr>
-<td ><a href="/api/rest_api/routes/PUT routes/Put_sort">Put /sort</a></td>
+<td ><a href="/api/rest_api/routes/Put_routes/Put_sort">Put /sort</a></td>
 <td >Returns an empty json object in case tasks are sorted as requested</td>
 </tr>
 <tr>
-<td><a href="/api/rest_api/routes/PUT routes/Put_tasks">Put /tasks</a></td>
+<td><a href="/api/rest_api/routes/Put_routes/Put_tasks">Put /tasks</a></td>
 <td>Returns an empty json object in case a task is modified as requested</td>
 </tr>
 <tr>
-<td><a href="/api/rest_api/routes/PUT routes/Put_projects">Put /projects</a></td><td>Returns an empty json object in case a project is modified as requested</td>
+<td><a href="/api/rest_api/routes/Put_routes/Put_projects">Put /projects</a></td><td>Returns an empty json object in case a project is modified as requested</td>
 </tr>
 </tbody>
 </table> 
@@ -260,11 +260,11 @@ For quick navigation you can use either of the two tabs below:
 </thead>
 <tbody>
 <tr>
-<td><a href="/api/rest_api/routes/DELETE routes/Delete_tasks">Delete /tasks</a></td>
+<td><a href="/api/rest_api/routes/Delete_routes/Delete_tasks">Delete /tasks</a></td>
 <td>Returns an empty json object in case a task is successfully removed</td>
 </tr>
 <tr>
-<td ><a href="/api/rest_api/routes/DELETE routes/Delete_projects">Delete /projects</a></td>
+<td ><a href="/api/rest_api/routes/Delete_routes/Delete_projects">Delete /projects</a></td>
 <td >Returns an empty json object in case a project is successfully removed</td>
 </tr>
 </tbody>
