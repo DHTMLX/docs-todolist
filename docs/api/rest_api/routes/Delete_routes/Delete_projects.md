@@ -8,7 +8,7 @@ description: You can learn about the Delete /projects route in the documentation
 
 ### Description
 
-@short:Deletes data on a project and returns an empty json object
+@short: Deletes data on a project and returns an empty json object
 
 The route handles the DELETE request made to the **'/projects/{id}'** path 
 

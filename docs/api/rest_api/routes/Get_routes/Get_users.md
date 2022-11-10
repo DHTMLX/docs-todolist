@@ -8,7 +8,7 @@ description: You can learn about the Get/users route in the documentation of the
 
 ### Description
 
-@short:Gets data on all users and returns a json object with an array of users objects
+@short: Gets data on all users and returns a json object with an array of users objects
 
 The route handles the GET request made to the **'/users'** path. 
 

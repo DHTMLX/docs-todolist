@@ -8,7 +8,7 @@ description: You can learn about the Put /tasks route in the documentation of th
 
 ### Description
 
-@short:Updates data on the specified task(s) and returns an empty json object
+@short: Updates data on the specified task(s) and returns an empty json object
 
 The route handles the PUT request made to the **'/tasks/{id}'** path.
 

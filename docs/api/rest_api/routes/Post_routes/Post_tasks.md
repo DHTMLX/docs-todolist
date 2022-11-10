@@ -8,7 +8,7 @@ description: You can learn about the Post /tasks route in the documentation of t
 
 ### Description
 
-@short:Creates a new task and returns a task object with the ID of a new task
+@short: Creates a new task and returns a task object with the ID of a new task
 
 The route handles the POST request made to the **'/tasks'** path.
 

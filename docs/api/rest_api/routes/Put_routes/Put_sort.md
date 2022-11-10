@@ -8,7 +8,7 @@ description: You can learn about the Put /sort route in the documentation of the
 
 ### Description
 
-@short:Sorts all tasks of an active project by the specified parameters and returns an empty json object
+@short: Sorts all tasks of an active project by the specified parameters and returns an empty json object
 
 The route handles the PUT request made to the **'/sort/{id}'** path.
 

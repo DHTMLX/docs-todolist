@@ -8,7 +8,7 @@ description: You can learn about the Put /move route in the documentation of the
 
 ### Description
 
-@short:Moves a task to the specified position and returns an empty json object
+@short: Moves a task to the specified position and returns an empty json object
 
 The route handles the PUT request made to the **'/move/{id}'** path.
 For more details about available operations, see the description of the **operation** property sent in the request body (see the **Payload** section below). 

@@ -8,7 +8,7 @@ description: You can learn about the Post /projects route in the documentation o
 
 ### Description
 
-@short:Creates a new project and returns a project object with the project ID in it
+@short: Creates a new project and returns a project object with the project ID in it
 
 The route handles the POST request made to the **'/projects'** path. 
 

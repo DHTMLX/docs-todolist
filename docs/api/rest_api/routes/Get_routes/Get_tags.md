@@ -8,7 +8,7 @@ description: You can learn about the Get /tags route in the documentation of the
 
 ### Description
 
-@short:Gets data on all tags and returns a json object with an array of these tags
+@short: Gets data on all tags and returns a json object with an array of these tags
 
 The route handles the GET request made to the **'/tags'** path.
 

@@ -8,7 +8,7 @@ description: You can learn about the Put /projects route in the documentation of
 
 ### Description
 
-@short:Updates data on a project and returns an empty json object
+@short: Updates data on a project and returns an empty json object
 
 The route handles the PUT request made to the **'/projects/{id}'** path. 
 

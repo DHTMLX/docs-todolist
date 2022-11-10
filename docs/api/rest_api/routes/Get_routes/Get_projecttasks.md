@@ -8,7 +8,7 @@ description: You can learn about the Get/tasks/projects route in the documentati
 
 ### Description
 
-@short:Gets data on all tasks of the specified project and returns a json object with an array of all tasks objects for this specified project
+@short: Gets data on all tasks of the specified project and returns a json object with an array of all tasks objects for this specified project
 
 The route handles the GET request made to the **'/tasks/projects/{id}'** path.
 

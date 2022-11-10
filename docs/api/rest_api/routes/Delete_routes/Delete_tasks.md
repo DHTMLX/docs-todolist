@@ -8,7 +8,7 @@ description: You can learn about the Delete /tasks route in the documentation of
 
 ### Description
 
-@short:Deletes data on a task and returns an empty json object
+@short: Deletes data on a task and returns an empty json object
 
 The route handles the DELETE request made to the **'/tasks/{id}'** path.
 

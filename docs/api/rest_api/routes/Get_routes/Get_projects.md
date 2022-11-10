@@ -8,7 +8,7 @@ description: You can learn about the Get /projects route in the documentation of
 
 ### Description
 
-@short:Gets data on all projects and returns a json object with an array of projects objects
+@short: Gets data on all projects and returns a json object with an array of projects objects
 
 The route handles the GET request made to the **'/projects'** path.
 
