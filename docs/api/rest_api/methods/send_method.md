@@ -83,7 +83,8 @@ Promise.all([
     restDataProvider.send(`tasks/projects/0`, "GET", obj).then(data => {
         list.api.parse({ tasks: data });
         return Promise.resolve();
-    }),
+    });
+});
 
     list.api.setNext(restProvider);
     restProvider.setAPI(list.api);
