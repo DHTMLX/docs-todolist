@@ -327,7 +327,7 @@ module.exports = {
 				items: [
 					{
 						type: "category",
-						label: "Get routes",
+						label: "GET routes",
 						collapsed: true,
 						link: {
 							type: 'generated-index',
@@ -346,7 +346,7 @@ module.exports = {
 					},
 					{
 						type: "category",
-						label: "Post routes",
+						label: "POST routes",
 						collapsed: true,
 						link: {
 							type: 'generated-index',
@@ -365,7 +365,7 @@ module.exports = {
 					},
 					{
 						type: "category",
-						label: "Put routes",
+						label: "PUT routes",
 						collapsed: true,
 						link: {
 							type: 'generated-index',
@@ -386,7 +386,7 @@ module.exports = {
 
 					{
 						type: "category",
-						label: "Delete routes",
+						label: "DELETE routes",
 						collapsed: true,
 						link: {
 							type: 'generated-index',
