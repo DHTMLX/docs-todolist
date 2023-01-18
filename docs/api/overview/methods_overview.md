@@ -48,3 +48,4 @@ description: You can explore the API methods in the documentation of the DHTMLX 
 | [](../methods/unselecttask_method.md)       | @getshort(../methods/unselecttask_method.md)       |
 | [](../methods/updateproject_method.md)      | @getshort(../methods/updateproject_method.md)      |
 | [](../methods/updatetask_method.md)         | @getshort(../methods/updatetask_method.md)         |
+

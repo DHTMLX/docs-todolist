@@ -126,35 +126,3 @@ description: You can have an API overview of the DHTMLX JavaScript To Do List li
 | [](api/configs/taskshape_config.md)     | @getshort(api/configs/taskshape_config.md)     |
 | [](api/configs/users_config.md)         | @getshort(api/configs/users_config.md)         |
 
-## RestDataProvider API
-
-### RestDataProvider methods
-
-| Name                                                                  | Description                                                                  |
-| --------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| [](api/rest_api/methods/getprojects_method.md) | @getshort(api/rest_api/methods/getprojects_method.md) |
-| [](api/rest_api/methods/getprojecttasks_method.md)    | @getshort(api/rest_api/methods/getprojecttasks_method.md)    |
-| [](api/rest_api/methods/gettags_method.md)         | @getshort(api/rest_api/methods/gettags_method.md)         |
-| [](api/rest_api/methods/gettasks_method.md)         | @getshort(api/rest_api/methods/gettasks_method.md)         |
-| [](api/rest_api/methods/getusers_method.md)         | @getshort(api/rest_api/methods/getusers_method.md)         |
-| [](api/rest_api/methods/send_method.md)         | @getshort(api/rest_api/methods/send_method.md)         |
-| [](api/rest_api/methods/setapi_method.md)         | @getshort(api/rest_api/methods/setapi_method.md)         |
-
-### RestDataProvider routes
-
-| Name                                                                  | Description                                                                  |
-| --------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| [](api/rest_api/routes/get_routes/get_projects.md) | @getshort(aapi/rest_api/routes/get_routes/get_projects.md) |
-| [](api/rest_api/routes/get_routes/get_projecttasks.md) | @getshort(aapi/rest_api/routes/get_routes/get_projecttasks.md) |
-| [](api/rest_api/routes/get_routes/get_tags.md) | @getshort(api/rest_api/routes/get_routes/get_tags.md) |
-| [](api/rest_api/routes/get_routes/get_tasks.md) | @getshort(api/rest_api/routes/get_routes/get_tasks.md) |
-| [](api/rest_api/routes/get_routes/get_users.md) | @getshort(api/rest_api/routes/get_routes/get_users.md) |
-| [](api/rest_api/routes/post_routes/post_clone.md) | @getshort(api/rest_api/routes/post_routes/post_clone.md) |
-| [](api/rest_api/routes/post_routes/post_projetcs.md) | @getshort(api/rest_api/routes/post_routes/post_projects.md) |
-| [](api/rest_api/routes/post_routes/post_tasks.md) | @getshort(api/rest_api/routes/post_routes/post_tasks.md)  |
-| [](api/rest_api/routes/put_routes/put_move.md) | @getshort(api/rest_api/routes/put_routes/put_move.md)  |
-| [](api/rest_api/routes/put_routes/put_projects.md) | @getshort(api/rest_api/routes/put_routes/put_projects.md)  |
-| [](api/rest_api/routes/put_routes/put_sort.md) | @getshort(api/rest_api/routes/put_routes/put_sort.md)  |
-| [](api/rest_api/routes/put_routes/put_tasks.md) | @getshort(api/rest_api/routes/put_routes/put_tasks.md)  |
-| [](api/rest_api/routes/delete_routes/delete_projects.md) | @getshort(api/rest_api/routes/delete_routes/delete_projects.md)  |
-| [](api/rest_api/routes/delete_routes/delete_tasks.md) | @getshort(api/rest_api/routes/delete_routes/delete_tasks.md)  |
