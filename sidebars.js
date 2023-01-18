@@ -319,7 +319,7 @@ module.exports = {
                 collapsed: true,
                 link: {
                     type: 'doc',
-					id: 'api/rest_api/routes/REST_routes_overview'
+					id: 'api/rest_api/routes/rest_routes_overview'
 						
 					
                 },
@@ -336,11 +336,11 @@ module.exports = {
 				image: '/img/docusaurus.png'
 						},
 						items: [
-							"api/rest_api/routes/Get_routes/Get_projects",
-							"api/rest_api/routes/Get_routes/Get_tasks",
-							"api/rest_api/routes/Get_routes/Get_projecttasks",
-							"api/rest_api/routes/Get_routes/Get_users",
-							"api/rest_api/routes/Get_routes/Get_tags",
+							"api/rest_api/routes/get_routes/get_projects",
+							"api/rest_api/routes/get_routes/get_tasks",
+							"api/rest_api/routes/get_routes/get_projecttasks",
+							"api/rest_api/routes/get_routes/get_users",
+							"api/rest_api/routes/get_routes/get_tags",
 						]
 
 					},
@@ -355,9 +355,9 @@ module.exports = {
 				image: '/img/docusaurus.png'
 						},
 						items: [
-							"api/rest_api/routes/Post_routes/Post_tasks",
-							"api/rest_api/routes/Post_routes/Post_projects",
-							"api/rest_api/routes/Post_routes/Post_clone",
+							"api/rest_api/routes/post_routes/post_tasks",
+							"api/rest_api/routes/post_routes/post_projects",
+							"api/rest_api/routes/post_routes/post_clone",
 							
 						
 						]
@@ -374,10 +374,10 @@ module.exports = {
 				image: '/img/docusaurus.png'
 						},
 						items: [
-							"api/rest_api/routes/Put_routes/Put_tasks",
-							"api/rest_api/routes/Put_routes/Put_projects",
-							"api/rest_api/routes/Put_routes/Put_move",
-							"api/rest_api/routes/Put_routes/Put_sort",
+							"api/rest_api/routes/put_routes/put_tasks",
+							"api/rest_api/routes/put_routes/put_projects",
+							"api/rest_api/routes/put_routes/put_move",
+							"api/rest_api/routes/put_routes/put_sort",
 							
 						
 						]
@@ -395,8 +395,8 @@ module.exports = {
 				image: '/img/docusaurus.png'
 						},
 						items: [
-							"api/rest_api/routes/Delete_routes/Delete_tasks",
-							"api/rest_api/routes/Delete_routes/Delete_projects",
+							"api/rest_api/routes/delete_routes/delete_tasks",
+							"api/rest_api/routes/delete_routes/delete_projects",
 												
 						
 						]

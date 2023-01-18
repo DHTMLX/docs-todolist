@@ -1,10 +1,10 @@
 ---
-sidebar_label: Get /projects
-title: Get /projects
-description: You can learn about the Get /projects route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
+sidebar_label: GET /projects
+title: GET /projects
+description: You can learn about the GET /projects route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
 ---
 
-# Get /projects
+# GET /projects
 
 ### Description
 

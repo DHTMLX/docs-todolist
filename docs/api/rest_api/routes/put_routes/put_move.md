@@ -1,10 +1,10 @@
 ---
-sidebar_label: Put /move
-title: Put /move
-description: You can learn about the Put /move route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
+sidebar_label: PUT /move
+title: PUT /move
+description: You can learn about the PUT /move route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
 ---
 
-# Put /move
+# PUT /move
 
 ### Description
 

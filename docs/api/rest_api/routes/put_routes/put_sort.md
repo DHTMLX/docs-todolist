@@ -1,10 +1,10 @@
 ---
-sidebar_label: Put /sort
-title: Put /sort
-description: You can learn about the Put /sort route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
+sidebar_label: PUT /sort
+title: PUT /sort
+description: You can learn about the PUT /sort route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
 ---
 
-# Put /sort
+# PUT /sort
 
 ### Description
 

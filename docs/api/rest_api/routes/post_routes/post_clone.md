@@ -1,10 +1,10 @@
 ---
-sidebar_label: Post /clone
-title: Post /clone
-description: You can learn about the Post /clone route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
+sidebar_label: POST /clone
+title: POST /clone
+description: You can learn about the POST /clone route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
 ---
 
-# Post /clone
+# POST /clone
 
 ### Description
 

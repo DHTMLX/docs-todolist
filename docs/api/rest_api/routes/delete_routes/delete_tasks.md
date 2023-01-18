@@ -1,18 +1,18 @@
 ---
-sidebar_label: Delete /projects
-title: Delete /projects
-description: You can learn about the Delete /projects route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
+sidebar_label: DELETE /tasks
+title: DELETE /tasks
+description: You can learn about the DELETE /tasks route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
 ---
 
-# Delete /projects
+# DELETE /tasks
 
 ### Description
 
-@short: Deletes data on a project and returns an empty json object
+@short: Deletes data on a task and returns an empty json object
 
-The route handles the DELETE request made to the **'/projects/{id}'** path 
+The route handles the DELETE request made to the **'/tasks/{id}'** path.
 
-Only one project can be removed per request. All project tasks, if any, are also removed. 
+Only one task can be removed per request. All child tasks, if any, are also removed. 
 
 
 <table style="border: 1px solid white; border-collapse: collapse; width:50%">
@@ -24,7 +24,7 @@ Only one project can be removed per request. All project tasks, if any, are also
 <tbody style="border: 1px solid white; border-collapse: collapse">
 <tr>
 <td>DELETE</td>
-<td>/projects</td>
+<td>/tasks</td>
 <td>id</td>
 </tr>
 </tbody>
@@ -32,11 +32,11 @@ Only one project can be removed per request. All project tasks, if any, are also
 
 ### Query parameters
 
-The ID of a project to be removed is sent in the request line.
+The ID of a task that should be removed is sent in the request line.
 
 | Name       | Type        | Description |
 | ----------- | ----------- | ----------- |
-| `id`       |  number  | *Required*. The id of a project to be removed.|
+| `id`       |  number  | *Required*. The id of a task to be removed.|
 
 ### Payload
 
@@ -50,8 +50,8 @@ The HTTP status code shows whether the request succeeds (response.status == 200)
 
 ---
 
-**Related articles**:
+**Related articles**: 
 
 - [send()](api/rest_api/methods/send_method.md)
-- [delete-project()](api/methods/deleteproject_method.md)
+- [delete-tasks()](api/methods/deletetask_method.md)
 - [Working with Server](guides/working_with_server.md)

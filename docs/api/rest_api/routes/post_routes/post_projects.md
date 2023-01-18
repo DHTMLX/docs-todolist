@@ -1,10 +1,10 @@
 ---
-sidebar_label: Post /projects
-title: Post /projects
-description: You can learn about the Post /projects route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
+sidebar_label: POST /projects
+title: POST /projects
+description: You can learn about the POST /projects route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
 ---
 
-# Post /projects
+# POST /projects
 
 ### Description
 
