@@ -1,10 +1,10 @@
 ---
-sidebar_label: Put /tasks
-title: Put /tasks
-description: You can learn about the Put /tasks route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
+sidebar_label: PUT /tasks
+title: PUT /tasks
+description: You can learn about the PUT /tasks route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
 ---
 
-# Put /tasks
+# PUT /tasks
 
 ### Description
 
@@ -35,7 +35,6 @@ The query parameter that is sent in the request line:
 | ----------- | ----------- | ----------- |
 | `id`       |  number   | *Required*. The ID of the task to be updated.|
 
-
 ### Payload
 
 The server needs to receive a json object with all task properties (both unchanged and new/modified).
@@ -43,7 +42,6 @@ The server needs to receive a json object with all task properties (both unchang
 Example:
 
 ~~~json
-
 {
     "text": "You can assign task performers and due dates using the menu.",
     "checked": true,
@@ -62,7 +60,7 @@ To update multiple tasks with one request, you should add an array of tasks obje
 
 Example:
 
-~~~json 
+~~~json
 {
     "text": "Greetings, everyone! 👋 \nI'm DHTMLX To Do List.",
     "checked": false,
@@ -92,19 +90,16 @@ Example:
 }
 ~~~
 
-
 ### Response
   
-In case of the success status, an empty json object is returned back. 
+In case of the success status, an empty json object is returned back.
 
 The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500).
-
-
 
 ---
 
 **Related articles**:
 
-- [update-task()](api/methods/updatetask_method.md)
+- [updateTask()](api/methods/updatetask_method.md)
 - [send()](api/rest_api/methods/send_method.md)
 - [Working with Server](guides/working_with_server.md)

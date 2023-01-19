@@ -1,10 +1,10 @@
 ---
-sidebar_label: Get /tasks/projects
-title: Get /tasks/projects
-description: You can learn about the Get/tasks/projects route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
+sidebar_label: GET /tasks/projects
+title: GET /tasks/projects
+description: You can learn about the GET/tasks/projects route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
 ---
 
-# Get /tasks/projects
+# GET /tasks/projects
 
 ### Description
 
@@ -35,7 +35,6 @@ The following parameter is sent in the request line:
 | ----------- | ----------- | ----------- |
 | `id`       |  string     | *Required*. The ID of the project for which tasks are requested.|
 
-
 ### Payload
 
 No payload is required.
@@ -49,7 +48,7 @@ The HTTP status code shows whether the request succeeds (response.status == 200)
 
 ---
 
-**Related articles**: 
+**Related articles**:
 
 - [getProjectTasks()](api/rest_api/methods/getprojecttasks_method.md)
 - [Working with Server](guides/working_with_server.md)

@@ -1,17 +1,17 @@
 ---
-sidebar_label: Put /move
-title: Put /move
-description: You can learn about the Put /move route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
+sidebar_label: PUT /move
+title: PUT /move
+description: You can learn about the PUT /move route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
 ---
 
-# Put /move
+# PUT /move
 
 ### Description
 
 @short: Moves a task to the specified position and returns an empty json object
 
 The route handles the PUT request made to the **'/move/{id}'** path.
-For more details about available operations, see the description of the **operation** property sent in the request body (see the **Payload** section below). 
+For more details about available operations, see the description of the **operation** property sent in the request body (see the **Payload** section below).
 
 <table style="border: 1px solid white; border-collapse: collapse; width:50%">
 <thead style="border: 1px solid white; border-collapse: collapse;">
@@ -54,33 +54,31 @@ The server expects to receive a json object with the next properties:
 | `reverse`       | boolean   | *Optional*. The position where a task will be moved: before the target task (true) or after it (false by default).|
 | `batch`       |  object  | *Required*. An array of IDs of all tasks that are moved. If a task has child items, only the task parent ID is included into the object.|
 
-
 Example:
 
 ~~~json
- 
- {
-    "id": 5,
-    "targetId": 2,
-    "reverse": false,
-    "operation": null,
-    "batch": null
+{
+  "id": 5,
+  "targetId": 2,
+  "reverse": false,
+  "operation": null,
+  "batch": null
 }
-~~~ 
+~~~
 
 Examples of different operation types:
 
 <details>
   <summary>operation === null </summary>
-  In case one task is moved within the current project, its ID is sent in the request line and other properties are sent in the request body.<br/> If a task is moved within one project, the operation property is not mandatory in the payload. 
-    
-  Payload example: 
+  In case one task is moved within the current project, its ID is sent in the request line and other properties are sent in the request body.<br/> If a task is moved within one project, the operation property is not mandatory in the payload.
 
-  ~~~json
- {
-    "targetId": 1,
-    "reverse": true,
-    "batch": null
+  Payload example:
+
+~~~json
+{
+  "targetId": 1,
+  "reverse": true,
+  "batch": null
 }
 ~~~
 
@@ -89,39 +87,35 @@ To move multiple tasks within the same project:
 - In the request body, add the <b>batch</b> property that contains IDs of tasks to be moved
 - Add other necessary properties in the request body
 
-Payload example: 
+Payload example:
 
 ~~~json
 {
-    "targetId": 1,
-    "reverse": true,
-    "batch": [1, 2, 3]
+  "targetId": 1,
+  "reverse": true,
+  "batch": [1, 2, 3]
 }
 ~~~
-    
-  </details>  
+</details>  
 
-  <details>
+<details>
   <summary>operation === "indent" || operation === "unindent" </summary>
-    
    In case the request is sent for one <b>indent/unindent</b> operation, the task ID is sent in the request line and other task properties are sent in the request body.
 
    Example:
 
 ~~~json
-
-   {
-    "parent": 2,
-    "targetId": 2,
-    "operation": "indent"
+{
+  "parent": 2,
+  "targetId": 2,
+  "operation": "indent"
 }
 
 ~~~
 
-  </details>
+</details>
   
-
-  <details>
+<details>
   <summary>multiple indent/unindent operations</summary>
 
 In case the request is sent to indent or unindent multiple tasks, the <b>ID</b> value in the request line is set to 0, each task ID with other parameters should be listed in the <b>opbatch</b> array of task objects.
@@ -132,25 +126,25 @@ Example:
 
 ~~~json
 {
-    "opbatch": [
-        {
-            "id": 1,
-            "parent": 3,
-            "targetId": 3,
-            "operation": "indent"
-        },
-        {
-            "id": 53,
-            "parent": 3,
-            "targetId": 3,
-            "operation": "indent"
-        }
-    ]
+  "opbatch": [
+    {
+      "id": 1,
+      "parent": 3,
+      "targetId": 3,
+      "operation": "indent"
+    },
+    {
+      "id": 53,
+      "parent": 3,
+      "targetId": 3,
+      "operation": "indent"
+    }
+  ]
 }
 
 ~~~
 
-  </details>
+</details>
 
 <details>
 
@@ -180,29 +174,27 @@ Example:
   If you move a task with child items, only the ID of its parent is specified in the <b>batch</b> array.<br/>
   The <b>batch</b> property can contain any number of tasks IDs.
 
-
   Example:
 
 ~~~json
-    {
+  {
     "project": 2,
     "operation": "project",
     "batch": [3, 5, 8, 9]
-    }
+  }
 ~~~
 
 </details>
 
 ### Response
 
-  
 The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500).
 
 In case of the success status, an empty json object is returned. 
 
 ---
 
-**Related articles**: 
-- [move-task()](api/events/movetask_event.md)
+**Related articles**:
+- [move-task](api/events/movetask_event.md)
 - [send()](api/rest_api/methods/send_method.md)
 - [Working with Server](guides/working_with_server.md)

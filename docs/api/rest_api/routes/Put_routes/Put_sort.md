@@ -1,10 +1,10 @@
 ---
-sidebar_label: Put /sort
-title: Put /sort
-description: You can learn about the Put /sort route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
+sidebar_label: PUT /sort
+title: PUT /sort
+description: You can learn about the PUT /sort route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
 ---
 
-# Put /sort
+# PUT /sort
 
 ### Description
 
@@ -44,11 +44,10 @@ The server expects to receive a json object with the next properties:
 | `by`       |  string   | *Required*. The field by which to sort.|
 | `dir`       |  string   | *Required*. The direction of sorting: "asc" or "desc".|
 
-Example: 
+Example:
 
 ~~~json
 {
-
     "by": "due_date",
     "dir": "asc",
 }
@@ -63,5 +62,5 @@ The HTTP status code shows whether the request succeeds (response.status == 200)
 
 **Related articles**:
 - [send()](api/rest_api/methods/send_method.md)
-- [set-sort()](api/methods/setsort_method.md)
+- [setSort()](api/methods/setsort_method.md)
 - [Working with Server](guides/working_with_server.md)

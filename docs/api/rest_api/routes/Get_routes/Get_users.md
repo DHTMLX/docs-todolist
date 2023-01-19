@@ -1,16 +1,16 @@
 ---
-sidebar_label: Get /users
-title: Get /users
-description: You can learn about the Get/users route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
+sidebar_label: GET /users
+title: GET /users
+description: You can learn about the GET/users route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
 ---
 
-# Get /users
+# GET /users
 
 ### Description
 
 @short: Gets data on all users and returns a json object with an array of users objects
 
-The route handles the GET request made to the **'/users'** path. 
+The route handles the GET request made to the **'/users'** path.
 
 <table style="border: 1px solid white; border-collapse: collapse; width:50%">
 <thead style="border: 1px solid white; border-collapse: collapse;">
@@ -25,7 +25,6 @@ The route handles the GET request made to the **'/users'** path.
 </tbody>
 </table>
 
-
 ### Payload
 
 No payload is required.
@@ -38,7 +37,7 @@ The HTTP status code shows whether the request succeeds (response.status == 200)
 
 ---
 
-**Related articles**: 
+**Related articles**:
 
 - [getUsers()](api/rest_api/methods/getusers_method.md)
 - [Working with Server](guides/working_with_server.md)

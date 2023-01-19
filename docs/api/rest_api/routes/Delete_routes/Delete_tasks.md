@@ -1,10 +1,10 @@
 ---
-sidebar_label: Delete /tasks
-title: Delete /tasks
-description: You can learn about the Delete /tasks route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
+sidebar_label: DELETE /tasks
+title: DELETE /tasks
+description: You can learn about the DELETE /tasks route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
 ---
 
-# Delete /tasks
+# DELETE /tasks
 
 ### Description
 
@@ -12,8 +12,7 @@ description: You can learn about the Delete /tasks route in the documentation of
 
 The route handles the DELETE request made to the **'/tasks/{id}'** path.
 
-Only one task can be removed per request. All child tasks, if any, are also removed. 
-
+Only one task can be removed per request. All child tasks, if any, are also removed.
 
 <table style="border: 1px solid white; border-collapse: collapse; width:50%">
 <thead style="border: 1px solid white; border-collapse: collapse;">
@@ -45,13 +44,13 @@ No payload is required.
 ### Response
 
 The route returns an empty json object in case of a successful request.
- 
+
 The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500).
 
 ---
 
-**Related articles**: 
+**Related articles**:
 
 - [send()](api/rest_api/methods/send_method.md)
-- [delete-tasks()](api/methods/deletetask_method.md)
+- [deleteTasks()](api/methods/deletetask_method.md)
 - [Working with Server](guides/working_with_server.md)

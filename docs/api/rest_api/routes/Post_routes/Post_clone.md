@@ -1,10 +1,10 @@
 ---
-sidebar_label: Post /clone
-title: Post /clone
-description: You can learn about the Post /clone route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
+sidebar_label: POST /clone
+title: POST /clone
+description: You can learn about the POST /clone route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
 ---
 
-# Post /clone
+# POST /clone
 
 ### Description
 
@@ -78,7 +78,7 @@ Example:
             "id": "temp://1667215197029"
         }
     ]
- }
+}
 ~~~
 
 ### Response
@@ -90,11 +90,11 @@ Example:
 
 ~~~json
 {
-//“clientId”: serverId,
+    //“clientId”: serverId,
     "temp://1667215197027": 62,
     "temp://1667215197028": 63,
-    "temp://1667215197029": 65
-...
+    "temp://1667215197029": 65,
+    //...
 }
 ~~~
 
@@ -102,9 +102,9 @@ The HTTP status code shows whether the request succeeds (response.status == 200)
 
 ---
 
-**Related articles**: 
-- [clone-task()](api/events/clonetask_event.md)
-- [copy-task()](api/methods/copytask_method.md)
-- [paste-task()](api/methods/pastetask_method.md)
-- [send()](api/rest_api/methods/send_method.md) 
+**Related articles**:
+- [clone-task](api/events/clonetask_event.md)
+- [copyTask()](api/methods/copytask_method.md)
+- [pasteTask()](api/methods/pastetask_method.md)
+- [send()](api/rest_api/methods/send_method.md)
 - [Working with Server](guides/working_with_server.md)

@@ -1,10 +1,10 @@
 ---
-sidebar_label: Get /tags
-title: Get /tags
-description: You can learn about the Get /tags route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
+sidebar_label: GET /tags
+title: GET /tags
+description: You can learn about the GET /tags route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
 ---
 
-# Get /tags
+# GET /tags
 
 ### Description
 
@@ -25,11 +25,9 @@ The route handles the GET request made to the **'/tags'** path.
 </tbody>
 </table>
 
-
 ### Payload
 
 No payload is required.
-
 
 ### Response
 
@@ -40,7 +38,7 @@ The HTTP status code shows whether the request succeeds (response.status == 200)
 
 ---
 
-**Related articles**: 
+**Related articles**:
 
 - [getTags()](api/rest_api/methods/gettags_method.md)
 - [Working with Server](guides/working_with_server.md)
