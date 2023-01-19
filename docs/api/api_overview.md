@@ -125,3 +125,4 @@ description: You can have an API overview of the DHTMLX JavaScript To Do List li
 | [](api/configs/tasks_config.md)         | @getshort(api/configs/tasks_config.md)         |
 | [](api/configs/taskshape_config.md)     | @getshort(api/configs/taskshape_config.md)     |
 | [](api/configs/users_config.md)         | @getshort(api/configs/users_config.md)         |
+
