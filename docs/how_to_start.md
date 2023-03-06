@@ -25,7 +25,6 @@ You need to include the following two files:
 - the JS file of To Do List
 - the CSS file of To Do List
 
-
 ~~~html title="index.html" {5-6}
 <!DOCTYPE html>
 <html>
@@ -41,6 +40,23 @@ You need to include the following two files:
     </body>
 </html>
 ~~~
+
+:::info
+You can also import To Do List into your project using `yarn` or `npm` commands. To get the trial version of To Do List, run the following commands:
+
+~~~jsx {2-3,6-7}
+// npm
+npm config set @dhx:registry https://npm.dhtmlx.com
+npm i @dhx/trial-todolist
+
+// yarn
+yarn config set @dhx:registry https://npm.dhtmlx.com
+yarn add @dhx/trial-todolist
+~~~
+
+To get PRO version of To Do List, refer to **[Support Center](https://dhtmlx.com/docs/technical-support.shtml)**!
+:::
+
 ## Step 2. Create To Do List
 
 Now you can add a To Do List to the page. For this, you should create two DIV containers to place the To Do List and its Toolbar into. So, your steps are:
