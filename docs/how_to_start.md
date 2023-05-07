@@ -54,7 +54,7 @@ yarn config set @dhx:registry https://npm.dhtmlx.com
 yarn add @dhx/trial-todolist
 ~~~
 
-To get PRO version of To Do List, refer to **[Support Center](https://dhtmlx.com/docs/technical-support.shtml)**!
+To get To Do List under the proprietary license, refer to **[Support Center](https://dhtmlx.com/docs/technical-support.shtml)**!
 :::
 
 ## Step 2. Create To Do List
