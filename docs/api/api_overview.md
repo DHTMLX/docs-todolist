@@ -118,6 +118,7 @@ description: You can have an API overview of the DHTMLX JavaScript To Do List li
 | [](api/configs/drag_config.md)          | @getshort(api/configs/drag_config.md)          |
 | [](api/configs/id_config.md)            | @getshort(api/configs/id_config.md)            |
 | [](api/configs/locale_config.md)        | @getshort(api/configs/locale_config.md)        |
+| [](api/configs/priorities_config.md)    | @getshort(api/configs/priorities_config.md)    |
 | [](api/configs/projects_config.md)      | @getshort(api/configs/projects_config.md)      |
 | [](api/configs/readonly_config.md)      | @getshort(api/configs/readonly_config.md)      |
 | [](api/configs/selected_config.md)      | @getshort(api/configs/selected_config.md)      |

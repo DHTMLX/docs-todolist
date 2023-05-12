@@ -13,6 +13,7 @@ There are the following types of information which can be loaded into DHTMLX To 
 - [**tasks**](api/configs/tasks_config.md)
 - [**projects**](api/configs/projects_config.md)
 - [**users**](api/configs/users_config.md)
+- [**priorities**](api/configs/priorities_config.md)
 - [**tags**](api/configs/tags_config.md)
 - [**activeProject**](api/configs/activeproject_config.md)
 
@@ -90,6 +91,19 @@ function getData() {
         // more task objects
     ];
 
+    // data for projects
+    const projects = [
+        {
+            "id": "introduction",
+            "label": "Introduction to DHTMLX To Do List"
+        },
+        {
+            "id": "widgets",
+            "label": "Our widgets"
+        },
+        // more project objects
+    ];
+
     // data for users
     const users = [
         {
@@ -110,20 +124,32 @@ function getData() {
         // more user objects
     ];
 
-    // data for projects
-    const projects = [
+    // data for priorities
+    const priorities = [
         {
-            "id": "introduction",
-            "label": "Introduction to DHTMLX To Do List"
+            id: 1,
+            label: "Critical",
+            color: "#f33",
         },
         {
-            "id": "widgets",
-            "label": "Our widgets"
+            id: 2,
+            label: "Major",
+            color: "rgba(255, 225, 0, 1)",
         },
-        // more project objects
+        {
+            id: 3,
+            label: "Normal",
+            color: "hsla(170, 100%, 40%, 1)",
+        },
+        {
+            id: 4,
+            label: "Minor",
+            hotkey: "Alt+M",
+        },
+        // more priority objects
     ];
 
-    return { projects, users, tasks };
+    return { tasks, projects, users, priorities };
 }
 ~~~
 
@@ -139,21 +165,21 @@ And apply the object destructuring:
 const { tasks, users, projects } = getData();
 ~~~
 
-
 ## Loading from local source
 
 ### Loading data on initialization
 
 You can load [a predefined data](guides/loading_data.md#preparing-data-to-load) into To Do List on the initialization stage in the following way:
 
-~~~js {2,4-8} title="index.js"
+~~~js {2,5-8} title="index.js"
 const { ToDo, Toolbar } = todo;
-const { tasks, users, projects } = getData();
+const { tasks, users, projects, priorities } = getData();
 
 const list = new ToDo("#root", {
     tasks,
     users,
-    projects
+    projects,
+    priorities
 });
 ~~~
 
@@ -161,9 +187,10 @@ const list = new ToDo("#root", {
 
 To load data from a local data source after initialization of the To Do List, use the [`parse()`](api/methods/parse_method.md) method:
 
-~~~js {2,4,11-15} title="index.js"
+~~~js {3,5,12-17} title="index.js"
 const { ToDo, Toolbar } = todo;
-const { users, projects, tasks } = getData();
+
+const { users, projects, tasks, priorities } = getData();
 
 const list = new ToDo("#root", {});
 
@@ -175,13 +202,14 @@ const toolbar = new Toolbar("#toolbar", {
 list.parse({
     tasks,
     users,
-    projects
+    projects,
+    priorities
 });
 ~~~
 
 ## Saving and restoring state
 
-To save the current state of a To Do, use the [`serialize()`](api/methods/serialize_method.md) method. It converts the data of the To Do List into a JSON object. 
+To save the current state of a To Do, use the [`serialize()`](api/methods/serialize_method.md) method. It converts the data of the To Do List into a JSON object.
 
 ~~~js
 const state = list.serialize();
@@ -189,6 +217,7 @@ const state = list.serialize();
 //    tasks: [{...}, {...}, ...],
 //    users: [{...}, {...}, ...],
 //    projects: [{...}, {...}, ...],
+//    priorities: [{...}, {...}, ...],
 //    tags: [],
 //    activeProject: string,
 // }
