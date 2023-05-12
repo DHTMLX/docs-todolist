@@ -26,7 +26,7 @@ tasks: [
         creation_date?: Date | string,
         completion_date?: Date | string,
         edited_date?: Date | string,
-        priority?: number | null;
+        priority?: number | null,
         [key: string]?: any
     },
     {...} // more task objects
@@ -55,12 +55,12 @@ If you don't specify the project ID for the root task or set it to *null* or *un
 - `creation_date` - (optional) the date of the task creation (auto-generated)
 - `completion_date` - (optional) the date of the task completion (auto-generated when you mark a task as complete; auto-removed when you mark a task as incomplete)
 - `edited_date` - (optional) the date of the task editing (auto-generated when you change the text of the task)
-- `priority` - (optional) the priority of the task
+- `priority` - (optional) the priority of the task. To set the priorities, use the [priorities](api/configs/priorities_config.md) property
 - `[key: string]`- (optional) a set of custom properties
 
 ### Example
 
-~~~js {3-27,39}
+~~~js {3-30,42}
 const { ToDo, Toolbar } = todo;
 
 const tasks = [
