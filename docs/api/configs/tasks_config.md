@@ -26,6 +26,7 @@ tasks: [
         creation_date?: Date | string,
         completion_date?: Date | string,
         edited_date?: Date | string,
+        priority?: number | null;
         [key: string]?: any
     },
     {...} // more task objects
@@ -38,11 +39,14 @@ The **tasks** property presents an array of task objects. Each object includes t
 
 - `id` - (optional) the id of a task
 - `parent` - (optional) the id of the parent task. The value of the parameter is **null | undefined** for root tasks
-- `project` - (optional) the id of the project where the task should be rendered. To initialize the projects, use the [projects](api/configs/projects_config.md) property.<br>
+- `project` - (optional) the id of the project where the task should be rendered. To initialize the projects, use the [projects](api/configs/projects_config.md) property.
+
 :::info
-If there are projects initialized, specify the ID of the necessary project for the root task to display it in this project.<br><br>
+If there are projects initialized, specify the ID of the necessary project for the root task to display it in this project.
+
 If you don't specify the project ID for the root task or set it to *null* or *undefined*, the task will belong to the *No project* section.
-:::<br>
+:::
+
 - `text` - (optional) the text of the task
 - `checked` - (optional) marks the task as completed
 - `collapsed` - (optional) defines whether the task is collapsed initially (in case the task has subtasks)
@@ -51,6 +55,7 @@ If you don't specify the project ID for the root task or set it to *null* or *un
 - `creation_date` - (optional) the date of the task creation (auto-generated)
 - `completion_date` - (optional) the date of the task completion (auto-generated when you mark a task as complete; auto-removed when you mark a task as incomplete)
 - `edited_date` - (optional) the date of the task editing (auto-generated when you change the text of the task)
+- `priority` - (optional) the priority of the task
 - `[key: string]`- (optional) a set of custom properties
 
 ### Example
@@ -65,7 +70,8 @@ const tasks = [
         // parent: null,
         text: "Read books",
         collapsed: false,
-        due_date: new Date()
+        due_date: new Date(),
+        priority: 1
     },
     {
         id: "2",
@@ -73,6 +79,7 @@ const tasks = [
         parent: "1",
         text: "Don Quixote",
         assigned: [ "user_1" ],
+        priority: 2
     },
     {
         id: "3",
@@ -81,16 +88,17 @@ const tasks = [
         text: "The Great Gatsby",
         assigned: [ "user_2" ],
         checked: true,
+        priority: null
     },
 ];
 
 const users = [
-    { "id": "user_1", "label": "John" },
-    { "id": "user_2", "label": "Kate" },
+    { id: "user_1", label: "John" },
+    { id: "user_2", label: "Kate" },
 ];
 
 const projects = [
-    { "id": "books", "label": "Books" },
+    { id: "books", label: "Books" },
 ];
 
 const list = new ToDo("#root", {
@@ -104,8 +112,8 @@ const toolbar = new Toolbar("#toolbar", {
 });
 ~~~
 
-**Change log:** The `creation_date`, `completion_date`, `edited_date` parameters were added in v1.1
+**Change log:** The `priority` parameter was added in v1.2
 
-**Related articles:** 
+**Related articles:**
 - [Loading and storing data](guides/loading_data.md)
 - [Managing tasks](guides/task_index.md)
