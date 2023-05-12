@@ -8,7 +8,7 @@ description: You can learn about the users config in the documentation of the DH
 
 ### Description
 
-@short: Optional. An array of assignees objects 
+@short: Optional. Specifies an array of objects containing the users data
 
 ### Usage
 
@@ -31,7 +31,8 @@ The **users** property presents an array of people objects. Each object includes
 - `id` - (required) the id of a person
 - `label` - (required) the description of the person
 - `avatar` - (optional) a path to the image of the person
-- `color` - (optional) the color of the icon if the image isn't uploaded<br>
+- `color` - (optional) the color of the icon if the image isn't uploaded
+
 :::info
 If the **color** parameter is not specified, the color from the default set of colors will be applied.
 :::
