@@ -30,7 +30,7 @@ The **priorities** property presents an array of priorities objects. Each object
 
 - `id` - (required) the priority id
 - `label` - (required) the priority label
-- `hotkey` - (optional) the name of a keyboard shortcut to apply a priority. To define a shortcut combination, you need to handle a custom event as shown in the example below
+- `hotkey` - (optional) the name of custom keyboard shortcut to apply a priority. To define a custom shortcut combination, you need to handle a custom event as shown in the example below
 - `color` - (optional) the priority color
 
 :::info
@@ -49,16 +49,19 @@ const priorities: [
         id: 1,
         label: "High",
         color: "#ff5252",
+        hotkey: "Alt+1"
     },
     {
         id: 2,
         label: "Medium",
         color: "#ffc975",
+        hotkey: "Alt+2"
     },
     {
         id: 3,
         label: "Low",
         color: "#0ab169",
+        hotkey: "Alt+3"
     },
 ];
 ~~~
