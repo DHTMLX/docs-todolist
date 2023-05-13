@@ -57,6 +57,10 @@ yarn add @dhx/trial-todolist
 To get To Do List under the proprietary license, refer to **[Support Center](https://dhtmlx.com/docs/technical-support.shtml)**!
 :::
 
+:::tip
+If you want to integrate JavaScript Kanban into the React, Angular or Vue project, refer to the corresponding [**Examples on Replit**](https://replit.com/@dhtmlx) for more information.
+:::
+
 ## Step 2. Create To Do List
 
 Now you can add a To Do List to the page. For this, you should create two DIV containers to place the To Do List and its Toolbar into. So, your steps are:
