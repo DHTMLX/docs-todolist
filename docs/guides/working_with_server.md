@@ -3,7 +3,6 @@ sidebar_label: Working with server
 title: Working with server
 description: You can learn about working with server in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
 ---
-
 # Working with server
 
 DHTMLX To Do List allows working both with the client and server data. The widget doesn't have any special requirements for the backend. It can be easily connected with any backend platform which supports the REST API (RESTful API).
@@ -11,7 +10,6 @@ DHTMLX To Do List allows working both with the client and server data. The widge
 :::info
 By default, the widget comes with the built-in [**Go**](https://github.com/web-widgets/todo-go) and [**Node**](https://github.com/web-widgets/todo-node) backend. But you can use your custom server scripts as well.
 :::
-
 ## RestDataProvider
 
 The To Do List has the **RestDataProvider** service that completely supports REST API for dealing with the backend. It allows interacting with the server and perform the following data operations:
@@ -25,7 +23,6 @@ The To Do List has the **RestDataProvider** service that completely supports RES
 - **"set-project"**
 - **"move-task"**
 - **"clone-task"**
-
 ## REST methods
 
 The **RestDataProvider** service includes the special REST methods for dynamic data loading:
@@ -37,7 +34,6 @@ The **RestDataProvider** service includes the special REST methods for dynamic d
 - [`getUsers()`](api/rest_api/methods/getusers_method.md) - gets a promise with the **users data**
 - [`setAPI()`](api/rest_api/methods/setapi_method.md) - sets API of the To Do List component into RestDataProvider
 - [`send()`](api/rest_api/methods/send_method.md) - sends a necessary request to the server and gets a promise with or without data depending on the request
-
 
 ## Interacting with backend
 
@@ -82,8 +78,77 @@ Promise.all([
 You need to include **RestDataProvider** into the **Event Bus** order via the [`api.setNext()`](api/internal/setnext_method.md) method to perform operations with data (*adding, deleting,* etc) and send the corresponding requests to the server
 :::
 
-## Example
+### Example
 
 The snippet below shows you how to connect **RestDataProvider** to the backend and load server data dynamically:
 
 <iframe src="https://snippet.dhtmlx.com/hnk06gm7?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
+
+## Multiuser backend
+
+Task management tools, such as our To Do list, are highly sought after by businesses of all sizes. Considering this, it is crucial to provide a seamless user experience for all users, regardless of the number. Our new feature allows multiple users to efficiently manage the same tasks on the list in real-time, without the need for page reloads. As a result, users can collaborate and stay up-to-date with one another's actions, enhancing productivity and overall user satisfaction.
+
+To implement a multiuser backend, you need to get authorization on the server before the To Do List initialization. For this, you can create the `login()` function:
+
+~~~js {}
+const login = (url) => {
+    const token = sessionStorage.getItem("login-token");
+    if (token) {
+        return Promise.resolve(token);
+    }
+    return fetch(url + "/login?id=1")
+        .then(raw => raw.text())
+        .then(token => {
+            sessionStorage.setItem("login-token", token);
+            return token;
+        });
+}
+~~~
+
+The `login()` function returns the server token that is crucial for all subsequent interactions with the server. The token is included in each request as the value of the **Remote-Token** header in the following way:
+
+~~~js {}
+login(url).then(token => {
+    const restProvider = new todo.RestDataProvider(url);
+    restProvider.setHeaders({
+        "Remote-Token": token,
+    });
+~~~
+
+After the initialization, you need to add WebSocket aimed to listen for events from the server. It can be done in the following way:
+
+~~~js {14-16,18-24}
+Promise.all([
+	restProvider.getProjectTasks(activeProject),
+	restProvider.getUsers(),
+	restProvider.getProjects(),
+	restProvider.getTags(),
+]).then(([tasks, users, projects, tags]) => {
+	const list = new todo.ToDo("#root", {
+		tasks, users, projects, tags, activeProject,
+	});
+	const toolbar = new todo.Toolbar("#toolbar", {
+		api: list.api,
+	});
+
+	// save data from client to server
+	list.api.setNext(restProvider);
+	restProvider.setAPI(list.api);
+
+	// get updates from server to client
+	const events = new todo.RemoteEvents(url + "/api/v1", token);
+	const handlers = todo.todoUpdates(
+		list.api,
+		restProvider.getIDResolver()
+	);
+	events.on(handlers);
+});
+~~~
+
+After integrating the multiuser backend into your app, you can simplify collaboration between users and enable them to keep track of any changes via the UI in a real time.
+
+### Example
+
+The snippet below shows how to configure the multiuser backend to track changes of other users in a real time:
+
+<iframe src="https://snippet.dhtmlx.com/82ayq2lk?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
