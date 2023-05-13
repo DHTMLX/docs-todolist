@@ -96,6 +96,12 @@ const en = {
 		"Paste": "Paste",
 		"Delete": "Delete",
 
+		// Priorities (added in v1.2)
+		"Priority (high to low)": "Priority (high to low)",
+		"Priority (low to high)": "Priority (low to high)",
+		"Set priority": "Set priority",
+		"Reset priority": "Reset priority",
+
 		// Shortcut
 		"Enter": "Enter",
 		"Tab": "Tab",

@@ -34,7 +34,11 @@ The **priorities** property presents an array of priorities objects. Each object
 - `color` - (optional) the priority color
 
 :::info
-If the **color** parameter is not specified, the color from the default set of colors will be applied.
+If the **color** parameter is not specified, the widget will apply one of the default colors:
+
+`"#ff5252", "#ffc975", "#0ab169", "#607D8B", "#00C7B5",` 
+
+` "#03A9F4", "#9575CD", "#F06292", "#FF9800"`
 :::
 
 ### Default config
