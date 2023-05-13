@@ -24,7 +24,11 @@ taskShape?: {
     completed?: {
         behavior: "manual" | "auto",
         taskHide: boolean
-    }
+    },
+    priority?: {
+		cover: boolean,
+		label: boolean
+	}
 };
 ~~~
 
@@ -42,7 +46,11 @@ taskShape: {
     completed: {
         behavior: "auto",
         taskHide: false
-    }
+    },
+    priority: {
+		cover: true,
+		label: true
+	}
 }
 ~~~
 
@@ -54,10 +62,10 @@ To configure the task's appearance, you can specify the following parameters in 
     - `type` - (required) the type of display of the counter. There are two types:
         - *"number"* - the value of the counter is displayed as a ratio between two numbers: the number of completed subtasks and the total number of subtasks
         - *"percentage"* - the value of the counter is displayed as a percentage
-- `date` - (optional) an object with date settings: 
+- `date` - (optional) an object with date settings:
     - `format` - (required) defines the format of displaying dates. By default, "%d %M %Y". The full list of available characters is given [below](#list-of-characters)
     - `validate` - (required) defines whether the **due_date** property of the [task object](api/configs/tasks_config.md) should be validated
-- `completed` - (optional) an objet with settings for managing the marking and display of completed tasks. It takes one parameter:
+- `completed` - (optional) an object with settings for managing the marking and display of completed tasks. It takes one parameter:
     - `behavior` - (required) sets behavior for the parent and child tasks when marking them as completed/uncompleted. There are two options:
         - *"auto"* - enables the **"auto"** mode:
             - When you mark all child tasks as completed, the parent task automatically becomes marked  as completed
@@ -66,30 +74,37 @@ To configure the task's appearance, you can specify the following parameters in 
             - If you mark the parent task as uncompleted, all its child automatically become uncompleted
         - *"manual"* - enables the **"manual"** mode. You need to manually mark each task (be it a child task or its parent) as completed
     - `taskHide` - (required) enables/disables the mode of hiding completed tasks from the list
-
+- `priority` - (optional) - an object with settings that defines a priority appearance. Here you can specify the following parameters:
+    - `cover` - (required) - specifies whether to show a priority cover
+    - `label` - (required) - specifies whether to show a priority label
 
 ### Example
 
-~~~js {9-21}
+~~~js {10-26}
 const { ToDo, Toolbar } = todo;
-const { tasks, users, projects } = getData();
+const { tasks, users, projects, priorities } = getData();
 
 // create To do list
 const list = new ToDo("#root", {
     tasks,
     users,
 	projects,
+    priorities,
     taskShape: {
         counter: {
-            type: "percentage"
+            type: "percentage",
         },
         date: {
             format: "%d %m %Y",
-            validate: false
+            validate: false,
         },
         completed: {
             behavior: "manual",
-            taskHide: true
+            taskHide: true,
+        },
+        priority: {
+            cover: true,
+            label: false,
         }
     }
 });
@@ -98,7 +113,6 @@ const toolbar = new Toolbar("#toolbar", {
     api: list.api,
 });
 ~~~
-
 
 ### List of characters
 
@@ -122,14 +136,13 @@ Check the [**Localization**](guides/localization.md) article to learn how to pre
 
 **Change log:**
 
-- The `selectable` parameter was renamed to `completed` in v1.1
-- The `taskHide` option of the `completed` parameter was added in v1.1
+- The `priority` parameter was added in v1.2
 
-**Related articles:** 
+**Related articles:**
 
 - [Configuration](guides/configuration.md#tasks)
 - [Show/hide completed tasks](guides/hide_completed_tasks.md)
 
-**Related samples:** 
+**Related samples:**
 - [To do list. Subtask counter and date format](https://snippet.dhtmlx.com/magidhw8)
 - [To do list. Two variants of marking a parent task done](https://snippet.dhtmlx.com/5892fcr2)
