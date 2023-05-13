@@ -16,8 +16,9 @@ Released on May Day, 2023
 
 ## New functionality
 
-- Priority. Starting from v1.2, you can prioritize your tasks using context menu or the corresponding API
-- Multiuser backend
+- You can prioritize your tasks using context menu or the corresponding API ([Example](https://snippet.dhtmlx.com/5cymicwt))
+- [Multiuser backend](../guides/working_with_server/#multiuser-backend) allows you to track changes of other users in a real time ([Example](https://snippet.dhtmlx.com/82ayq2lk))
+- Displaying To Do List tasks in a Table view. Integration with the [JavaScript DataGrid](https://dhtmlx.com/docs/products/dhtmlxGrid/) component ([Example](https://snippet.dhtmlx.com/e97idjs8))
 
 ### New API
 

@@ -144,5 +144,6 @@ Check the [**Localization**](guides/localization.md) article to learn how to pre
 - [Show/hide completed tasks](guides/hide_completed_tasks.md)
 
 **Related samples:**
-- [To do list. Subtask counter and date format](https://snippet.dhtmlx.com/magidhw8)
-- [To do list. Two variants of marking a parent task done](https://snippet.dhtmlx.com/5892fcr2)
+- [To do list. Subtask counter and date format](https://snippet.dhtmlx.com/magidhw8?tag=todolist)
+- [To do list. Two variants of marking a parent task done](https://snippet.dhtmlx.com/5892fcr2?tag=todolist)
+- [To do list. Custom hotkeys for setting priorities](https://snippet.dhtmlx.com/5cymicwt?tag=todolist)
