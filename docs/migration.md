@@ -6,6 +6,56 @@ description: You can learn about the Migration to Newer Versions in the document
 
 # Migration to newer versions
 
+1.1 -> 1.2
+---------------
+
+The [`taskShape`](../api/configs/taskshape_config) property of To do list was updated in the following way:
+
+~~~js {} title="Before v1.2"
+taskShape: {
+    counter: { ... },
+    date: { ... },
+    completed: { ... },
+}
+~~~
+
+~~~js {5-8} title="From v1.2"
+taskShape: {
+    counter: { ... },
+    date: { ... },
+    completed: { ... },
+    priority: {
+        cover: true,
+        label: true
+    }
+}
+~~~
+
+The [`tasks`](../api/configs/tasks_config) property of To do list was updated in the following way:
+
+~~~js {} title="Before v1.2"
+tasks: [
+    {
+        id: ...,
+        parent: ...,
+        project: ...,
+        ...,
+    }, { ... }
+]
+~~~
+
+~~~js {6} title="From v1.2"
+tasks: [
+    {
+        id: ...,
+        parent: ...,
+        project: ...,
+        priority: 1,
+        ...,
+    }, { ... }
+]
+~~~
+
 1.0 -> 1.1
 ---------------
 

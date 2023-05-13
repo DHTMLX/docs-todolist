@@ -8,6 +8,29 @@ description: You can learn a new information about DHTMLX JavaScript To Do List 
 
 If you are updating To Do List from an older version, check [Migration to newer version](migration.md) for details.
 
+## Version 1.2
+
+Released on May Day, 2023
+
+[Review of release on the blog](https://dhtmlx.com/blog/dhtmlx-to-do-list-1-2/)
+
+## New functionality
+
+- Priority. Starting from v1.2, you can prioritize your tasks using context menu or the corresponding API
+- Multiuser backend
+
+### New API
+
+The [`priorities`](../api/configs/priorities_config) property allows you to apply an initial priority to the tasks
+
+### Updates
+
+- The [`tasks`](../api/configs/tasks_config) and [`taskShape`](../api/configs/taskshape_config) properties were extended by the ***priority*** parameter
+- The extended list of [localized options](guides/localization.md)
+### Fixes
+
+- Setting users without **users[].avatar** property invokes an error
+
 ## Version 1.1
 
 Released on October 10, 2022
