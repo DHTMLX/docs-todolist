@@ -17,8 +17,8 @@ priorities?: [
     {
         id: number,
         label: string,
-        color?: string,
         hotkey?: string,
+        color?: string,
     },
     { ... } // more priorities items
 ];
@@ -30,21 +30,21 @@ The **priorities** property presents an array of priorities objects. Each object
 
 - `id` - (required) the priority id
 - `label` - (required) the priority label
-- `hotkey` - (optional) a hotkey combination to apply a priority
+- `hotkey` - (optional) the name of a keyboard shortcut to apply a priority. To define a shortcut combination, you need to handle a custom event as shown in the example below
 - `color` - (optional) the priority color
 
 :::info
 If the **color** parameter is not specified, the widget will apply one of the default colors:
 
-`"#ff5252", "#ffc975", "#0ab169", "#607D8B", "#00C7B5",` 
+`"#ff5252" "#ffc975" "#0ab169" "#607D8B" "#00C7B5",`
 
-` "#03A9F4", "#9575CD", "#F06292", "#FF9800"`
+`"#03A9F4" "#9575CD" "#F06292" "#FF9800"`
 :::
 
 ### Default config
 
 ~~~jsx {}
-const defaultPriorities: [
+const priorities: [
     {
         id: 1,
         label: "High",
@@ -65,7 +65,7 @@ const defaultPriorities: [
 
 ### Example
 
-~~~js {7-28,34}
+~~~js {7-28,34,37-47}
 const { ToDo } = todo;
 
 const tasks = [ ... ];
@@ -91,7 +91,7 @@ const priorities = [
     {
         id: 4,
         label: "Minor",
-        hotkey: "Alt+M",
+        hotkey: "Alt+M", // Handle the "keydown" event to define the "Alt+M" combination
     },
 ];
 
@@ -100,6 +100,18 @@ const list = new ToDo ("#root", {
 	users,
 	projects,
     priorities
+});
+
+// Custom event handler for hotkey: "Alt+M"
+document.addEventListener("keydown", event => {
+    if (event.altKey && event.key.toLocaleLowerCase() === "m") {
+        list.eachSelected(id => {
+            list.updateTask({
+                id,
+                task: { priority: 4 }
+            });
+        });
+    }
 });
 ~~~
 
