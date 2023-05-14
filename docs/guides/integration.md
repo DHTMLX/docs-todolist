@@ -6,7 +6,7 @@ description: You can learn about integration with other widgets in the documenta
 
 # To Do List integrations
 
-You can integrate DHTMLX To Do List with other DHTMLX widgets (for instance, [Gantt](https://docs.dhtmlx.com/gantt/), [Scheduler](https://docs.dhtmlx.com/scheduler/), [Kanban](https://docs.dhtmlx.com/kanban/)). Check the examples below.
+You can integrate DHTMLX To Do List with other DHTMLX widgets (for instance, [Gantt](https://docs.dhtmlx.com/gantt/), [Scheduler](https://docs.dhtmlx.com/scheduler/), [Kanban](https://docs.dhtmlx.com/kanban/), [Grid](https://docs.dhtmlx.com/suite/grid/)). Check the examples below.
 
 ## Integration with DHTMLX Gantt
  
@@ -25,3 +25,7 @@ You can integrate DHTMLX To Do List with other DHTMLX widgets (for instance, [Ga
 ### Example with projects
 
 <iframe src="https://snippet.dhtmlx.com/ddqphcz2?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="700"></iframe>
+
+## Integration with DHTMLX DataGrid
+
+<iframe src="https://snippet.dhtmlx.com/e97idjs8?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="700"></iframe>
