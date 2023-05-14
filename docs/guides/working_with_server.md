@@ -86,7 +86,7 @@ The snippet below shows you how to connect **RestDataProvider** to the backend a
 
 ## Multiuser backend
 
-Task management tools, such as our To Do list, are highly sought after by businesses of all sizes. Considering this, it is crucial to provide a seamless user experience for all users, regardless of the number. Our new feature allows multiple users to efficiently manage the same tasks on the list in real-time, without the need for page reloads. As a result, users can collaborate and stay up-to-date with one another's actions, enhancing productivity and overall user satisfaction.
+Task management tools, such as our To Do List, are highly sought after by businesses of all sizes. Considering this, it is crucial to provide a seamless user experience for all users, regardless of the number. Our new feature allows multiple users to efficiently manage the same tasks on the list in real-time, without the need for page reloads. As a result, users can collaborate and stay up-to-date with one another's actions, enhancing productivity and overall user satisfaction.
 
 To implement a multiuser backend, you need to get authorization on the server before the To Do List initialization. For this, you can create the `login()` function:
 

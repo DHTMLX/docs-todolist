@@ -28,6 +28,7 @@ The interface of the To Do List component consists of two parts: [Toolbar](#tool
 - a **menu** with a set of controls which allow you to:
     - sort tasks in the ascending/descending order by the following criteria:
         - by text
+        - by priority
         - by due date
         - by completion date
         - by creation date
@@ -109,6 +110,13 @@ The **context menu** of a task contains a set of items and sub-items and looks l
 ### Deleting a task
 
 - To delete a task, select it and press `Backspace`/`Delete`
+
+### Prioritizing a task
+
+- To set a **High** priority, select the task and press `Alt + 1`
+- To set a **Medium** priority, select the task and press `Alt + 2`
+- To set a **Low** priority, select the task and press `Alt + 3`
+- To set a **Reset** priority, select the task and press `Alt + 0`
 
 ## Managing multiple tasks
 
