@@ -17,6 +17,7 @@ Released on May Day, 2023
 ## New functionality
 
 - You can prioritize your tasks using context menu or the corresponding API ([Example](https://snippet.dhtmlx.com/5cymicwt))
+- You can sort tasks by priorities
 - [Multiuser backend](../guides/working_with_server/#multiuser-backend) allows you to track changes of other users in a real time ([Example](https://snippet.dhtmlx.com/82ayq2lk))
 - Displaying To Do List tasks in a Table view. Integration with the [JavaScript DataGrid](https://dhtmlx.com/docs/products/dhtmlxGrid/) component ([Example](https://snippet.dhtmlx.com/e97idjs8))
 
@@ -26,7 +27,8 @@ The [`priorities`](../api/configs/priorities_config) property allows you to appl
 
 ### Updates
 
-- The [`tasks`](../api/configs/tasks_config) and [`taskShape`](../api/configs/taskshape_config) properties were extended by the ***priority*** parameter
+- The [`tasks`](../api/configs/tasks_config) property was extended by the ***priority*** parameter. This parameter allows users to specify an initial priority
+- The [`taskShape`](../api/configs/taskshape_config) property was extended by the ***priority*** parameter. This parameter allows user to manage the priority appearance of the card
 - The extended list of [localized options](guides/localization.md)
 ### Fixes
 
