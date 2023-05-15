@@ -32,7 +32,7 @@ The [`priorities`](../api/configs/priorities_config) property allows you to appl
 - The extended list of [localized options](guides/localization.md)
 ### Fixes
 
-- Setting users without **users[].avatar** property invokes an error
+- Setting users without **users[n].avatar** property invokes an error
 
 ## Version 1.1
 
