@@ -10,7 +10,7 @@ If you are updating To Do List from an older version, check [Migration to newer 
 
 ## Version 1.2
 
-Released on May Day, 2023
+Released on May 16, 2023
 
 [Review of release on the blog](https://dhtmlx.com/blog/dhtmlx-to-do-list-1-2/)
 
