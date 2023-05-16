@@ -152,3 +152,81 @@ After integrating the multiuser backend into your app, you can simplify collabor
 The snippet below shows how to configure the multiuser backend to track changes of other users in a real time:
 
 <iframe src="https://snippet.dhtmlx.com/82ayq2lk?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
+
+## Customization of server events
+
+You can define your own logic for handling server events. For this purpose, you need to pass the **handlers** object to the `RemoteEvents.on(handlers)` method. The **handlers** object should have the following structure:
+
+~~~js {}
+{
+    "tasks": tasksHandler: function(obj: any),
+    "projects": projectsHandler: function(obj: any)
+}
+~~~
+
+When any change occurs on the server, it returns the name of the modified element. These names can vary depending on the server logic.
+
+The data updated on the client side will be placed in the **obj** argument of the `function(obj: any)` function. To specify an operation, there is a `type: string` field. It can take the following values:
+
+- For **tasks**: `"add-task"`, `"update-task"`, `"delete-task"`, `"move-task"`, `"clone-task"`
+- For **projects**: `"add-project"`, `"update-project"`, `"delete-project"`, `"move-project"`, `"clone-project"`
+
+In the following code snippet you can see the implementation details:
+
+~~~js {}
+const todoInstance = new todo.ToDo("#root", config);
+const restProvider = new todo.RestProvider(url);
+const idResolver = restProvider.getIDResolver();
+const TaskID = 1;
+const ProjID = 2;
+
+const resolveTask = (data: any) => {
+    for (const key in obj) {
+        if (typeof obj[key] == "object") {
+            resolveTask(obj[key]);
+            continue;
+        }
+        if (key == "id" || key == "targetId" || key == "parent") {
+            obj[key] = idResolver(obj[key], TaskID) || null;
+        }
+        if (key == "project") {
+            obj[key] = idResolver(obj[key], ProjID) || null;
+        }
+    }
+    return obj;
+};
+
+const tasksHandler = (obj: any) => {
+    resolveTask(obj); // synchronize client ids with the server ids
+    switch (obj.type) {
+        "add-task":
+            todoInstance.api.exec("add-task", {
+                id: obj.data.id,
+                project: obj.data.project,
+                parent: obj.data.parent,
+                targetId: obj.data.targetId,
+                reverse: obj.data.reverse,
+                task: { ...obj.data },
+                skipProvider: true, // prevent the client from sending request to the server
+            })
+            break;
+        // other operations
+    }
+};
+
+const handlers = {
+	tasks: tasksHandler,
+};
+
+const remoteEvents = new todo.RemoteEvents(remoteEventsURL, token);
+remoteEvents.on(handlers);
+~~~
+
+The `RestDataProvider.getIDResolver()` method returns a function that is necessary to synchronize client IDs with server IDs. When a new object (*task/project*) is created on the client side, the received object will have a temporary ID and its corresponding server ID in `RestDataProvider`. The `idResolver()` function allows synchronizing the client ID with the server ID. This function has the following format: `idResolver(id: TID, type: number)`
+
+The `type` argument is the type of model that takes the following values:
+
+- `TaskID` - 1
+- `ProjID` - 2
+
+To prevent the request from being sent to the server, you need to use the `skipProvider: true` flag when calling the `todoInstance.api.exec()` method.
