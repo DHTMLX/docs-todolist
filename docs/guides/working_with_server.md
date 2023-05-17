@@ -175,7 +175,7 @@ In the following code snippet you can see the implementation details:
 
 ~~~js {}
 const todoInstance = new todo.ToDo("#root", config);
-const restProvider = new todo.RestProvider(url);
+const restProvider = new todo.RestDataProvider(url);
 const idResolver = restProvider.getIDResolver();
 const TaskID = 1;
 const ProjID = 2;
@@ -199,7 +199,7 @@ const resolveTask = (data: any) => {
 const tasksHandler = (obj: any) => {
     resolveTask(obj); // synchronize client ids with the server ids
     switch (obj.type) {
-        "add-task":
+        case "add-task":
             todoInstance.api.exec("add-task", {
                 id: obj.data.id,
                 project: obj.data.project,
