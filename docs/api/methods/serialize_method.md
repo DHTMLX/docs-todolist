@@ -26,21 +26,23 @@ The method returns serialized data of the To Do List
     users: [],
     projects: [],
     tags: [],
+    priorities: [],
     activeProject: string,
 }
 ~~~
 
 ### Example
 
-~~~js {12}
+~~~js {13}
 const { ToDo, Toolbar } = todo;
-const { tasks, users, projects, tags } = getData();
+const { tasks, users, projects, tags, priorities } = getData();
 
 const list = new ToDo("#root", {
     tasks,
     users,
     projects,
-    tags
+    tags,
+    priorities
 });
 
 // get an object with data of To Do List
@@ -48,3 +50,5 @@ list.serialize();
 ~~~
 
 **Related article:** [Loading and storing data](guides/loading_data.md)
+
+**Change log**: The **priorities** data are available from v1.3
