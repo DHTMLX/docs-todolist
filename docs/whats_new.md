@@ -8,13 +8,34 @@ description: You can learn a new information about DHTMLX JavaScript To Do List 
 
 If you are updating To Do List from an older version, check [Migration to newer version](migration.md) for details.
 
+## Version 1.3
+
+Released on Month Day, 2023
+
+### New functionality
+
+- An ability to serialize priorities via the [serialize()](../api/methods/serialize_method) method
+- An ability to load the priorities data via the [parse()](../api/methods/parse_method) method
+
+### New API
+
+- ...
+
+### Updates
+
+The [`serialize()`](../api/methods/serialize_method) and [`parse()`](../api/methods/parse_method) methods of To Do List are updated
+
+### Fixes
+
+- ...
+
 ## Version 1.2
 
 Released on May 16, 2023
 
 [Review of release on the blog](https://dhtmlx.com/blog/dhtmlx-to-do-list-1-2/)
 
-## New functionality
+### New functionality
 
 - You can prioritize your tasks using context menu or the corresponding API ([Example](https://snippet.dhtmlx.com/5cymicwt))
 - You can sort tasks by priorities
@@ -44,7 +65,7 @@ Released on October 10, 2022
 
 The new release introduces some changes to the `taskShape` property. Check the [Migration article](migration.md#10---11) to keep in step with the latest version.
 
-## New functionality
+### New functionality
 
 - Drag-n-drop:
     - the ability to [configure or disable the functionality](guides/configuration.md#drag-n-drop)
