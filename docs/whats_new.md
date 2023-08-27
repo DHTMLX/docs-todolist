@@ -17,17 +17,15 @@ Released on Month Day, 2023
 - An ability to serialize priorities via the [serialize()](../api/methods/serialize_method) method
 - An ability to load the priorities data via the [parse()](../api/methods/parse_method) method
 
-### New API
-
-- ...
-
 ### Updates
 
 The [`serialize()`](../api/methods/serialize_method) and [`parse()`](../api/methods/parse_method) methods of To Do List are updated
 
 ### Fixes
 
-- ...
+- Allow scrolling a context menu and move a datepicker to the top level
+- When opening the calendar in a task, the task text displays above the calendar
+- Wrong menu positioning
 
 ## Version 1.2
 
@@ -174,8 +172,3 @@ Released on June 20, 2022
     - [properties](category/toolbar-properties.md)
 - **RestDataProvider API**:
     - [REST methods](category/rest-methods.md)
-
-
-
-
-

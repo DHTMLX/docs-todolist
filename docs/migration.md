@@ -6,8 +6,53 @@ description: You can learn about the Migration to Newer Versions in the document
 
 # Migration to newer versions
 
-1.1 -> 1.2
----------------
+## 1.2 -> 1.3
+
+The [`parse`](../api/methods/parse_method) method of To do list was updated in the following way:
+
+~~~js {} title="Before v1.3"
+list.parse({
+    tasks,
+    users,
+    projects,
+    tags,
+    activeProject
+});
+~~~
+
+~~~js {6} title="From v1.3"
+list.parse({
+    tasks,
+    users,
+    projects,
+    tags,
+    priorities,
+    activeProject
+});
+~~~
+
+The [`serialize`](../api/methods/serialize_method) method of To do list was updated in the following way:
+
+~~~js {} title="Before v1.3"
+list.serialize();
+// -> tasks
+// -> users
+// -> projects
+// -> tags
+// -> activeProject
+~~~
+
+~~~js {6} title="From v1.3"
+list.serialize();
+// -> tasks
+// -> users
+// -> projects
+// -> tags
+// -> priorities
+// -> activeProject
+~~~
+
+## 1.1 -> 1.2
 
 The [`taskShape`](../api/configs/taskshape_config) property of To do list was updated in the following way:
 
@@ -56,8 +101,7 @@ tasks: [
 ]
 ~~~
 
-1.0 -> 1.1
----------------
+## 1.0 -> 1.1
 
 In the version 1.1 the `selectable` parameter of the [`taskShape`](api/configs/taskshape_config.md) property is renamed to `completed`. Besides, the parameter is extended by the new `taskHide` option.
 
