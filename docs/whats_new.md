@@ -8,6 +8,16 @@ description: You can learn a new information about DHTMLX JavaScript To Do List 
 
 If you are updating To Do List from an older version, check [Migration to newer version](migration.md) for details.
 
+## Version 1.2.1
+
+Released on August 28, 2023
+
+### Fixes
+
+- Move a datepicker to the top level
+- When opening the calendar in a task, the task text displays above the calendar
+- When opening a context menu, it has wrong positioning
+
 ## Version 1.2
 
 Released on May 16, 2023
