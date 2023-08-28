@@ -6,11 +6,11 @@ description: You can learn about the Migration to Newer Versions in the document
 
 # Migration to newer versions
 
-## 1.2 -> 1.3
+## 1.2 -> 2.0
 
 The [`parse`](../api/methods/parse_method) method of To do list was updated in the following way:
 
-~~~js {} title="Before v1.3"
+~~~js {} title="Before v2.0"
 list.parse({
     tasks,
     users,
@@ -20,7 +20,7 @@ list.parse({
 });
 ~~~
 
-~~~js {6} title="From v1.3"
+~~~js {6} title="From v2.0"
 list.parse({
     tasks,
     users,
@@ -33,7 +33,7 @@ list.parse({
 
 The [`serialize`](../api/methods/serialize_method) method of To do list was updated in the following way:
 
-~~~js {} title="Before v1.3"
+~~~js {} title="Before v2.0"
 list.serialize();
 // -> tasks
 // -> users
@@ -42,7 +42,7 @@ list.serialize();
 // -> activeProject
 ~~~
 
-~~~js {6} title="From v1.3"
+~~~js {6} title="From v2.0"
 list.serialize();
 // -> tasks
 // -> users

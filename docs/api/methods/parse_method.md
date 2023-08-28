@@ -54,4 +54,4 @@ list.parse({
 
 **Related article:** [Loading and storing data](guides/loading_data.md)
 
-**Change log**: The **priorities** parameter was added in v1.3
+**Change log**: The **priorities** parameter was added in v2.0

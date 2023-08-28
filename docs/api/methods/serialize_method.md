@@ -51,4 +51,4 @@ list.serialize();
 
 **Related article:** [Loading and storing data](guides/loading_data.md)
 
-**Change log**: The **priorities** data are available from v1.3
+**Change log**: The **priorities** data are available from v2.0
