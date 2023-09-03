@@ -21,6 +21,16 @@ Released on Month Day, 2023
 
 The [`serialize()`](../api/methods/serialize_method) and [`parse()`](../api/methods/parse_method) methods of To Do List are updated
 
+## Version 1.2.1
+
+Released on August 28, 2023
+
+### Fixes
+
+- Move a datepicker to the top level
+- When opening the calendar in a task, the task text displays above the calendar
+- When opening a context menu, it has wrong positioning
+
 ## Version 1.2
 
 Released on May 16, 2023
