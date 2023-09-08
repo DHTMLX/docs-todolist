@@ -19,12 +19,16 @@ setLocale(
 ~~~
 
 ### Parameters
- 
+
 - `locale` - (required) an object of the locale
+
+:::important
+The `setLocale()` method destroys the current component and initialize a new one. If you use the component with **Toolbar**, you need to call the [`setLocale()`](api/toolbar_api/methods/setlocale_method.md) method of **Toolbar**, to change its locale. See the example below!
+:::
 
 ### Example
 
-~~~js {97-98}
+~~~js {97-98,100-102}
 const { ToDo, Toolbar } = todo;
 const { tasks, users, projects, tags } = getData();
 
@@ -127,9 +131,5 @@ list.setLocale(de);
 // change locale of Toolbar (read Info)
 toolbar.setLocale(de, list.api);
 ~~~
-
-:::info
-The Toolbar of To Do List is a separate component. To change its locale, you must apply its own [`setLocale()`](api/toolbar_api/methods/setlocale_method.md) method
-:::
 
 **Related article:** [Localization](guides/localization.md)
