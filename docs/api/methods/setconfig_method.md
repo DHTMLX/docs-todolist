@@ -10,14 +10,6 @@ description: You can learn about the setConfig method in the documentation of th
 
 @short: Sets a new configuration for the To Do List
 
-:::tip
-Using this method, you can change configuration of the To Do List widget. The method changes only the parameters you passed
-:::
-
-:::info
-It is also possible to load data into the To Do List via the method, but we recommend that you use the [`parse()`](api/methods/parse_method.md) method for this purpose
-:::
-
 ### Usage
 
 ~~~js
@@ -26,11 +18,19 @@ setConfig(config: object): void;
 
 ### Parameters
 
-- `config` - (required) an object with new configuration of To Do List. See the full list of properties [here](api/api_overview.md#to-do-list-properties) 
+- `config` - (required) an object with new configuration of To Do List. See the full list of properties [here](api/api_overview.md#to-do-list-properties)
+
+:::tip
+The method changes only the parameters you passed. It is also possible to load data into the To Do List via the method, but we recommend that you use the [`parse()`](api/methods/parse_method.md) method for this purpose.
+:::
+
+:::important
+The `setConfig()` method destroys the current component and initialize a new one. If you use the component with **Toolbar**, you need to call the [`setConfig()`](api/toolbar_api/methods/setconfig_method.md) method of **Toolbar**, because it uses the internal API of To Do List. See the example below!
+:::
 
 ### Example
 
-~~~js {17-19,21-23}
+~~~js {16-19,21-24}
 const { ToDo, Toolbar } = todo;
 
 const list = new ToDo("#root", {
@@ -51,11 +51,8 @@ list.setConfig({
 	activeProject: "second"
 });
 
+// update configuration parameters of Toolbar
 toolbar.setConfig({
 	api: list.api,
 });
 ~~~
-
-:::info
-The To Do List won't be rendered correctly until you call the [`setConfig()`](api/toolbar_api/methods/setconfig_method.md) method of the Toolbar component
-:::
