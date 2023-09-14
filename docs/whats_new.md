@@ -8,19 +8,6 @@ description: You can learn a new information about DHTMLX JavaScript To Do List 
 
 If you are updating To Do List from an older version, check [Migration to newer version](migration.md) for details.
 
-## Version 2.0
-
-Released on Month Day, 2023
-
-### New functionality
-
-- An ability to serialize priorities via the [serialize()](../api/methods/serialize_method) method
-- An ability to load the priorities data via the [parse()](../api/methods/parse_method) method
-
-### Updates
-
-The [`serialize()`](../api/methods/serialize_method) and [`parse()`](../api/methods/parse_method) methods of To Do List are updated
-
 ## Version 1.2.1
 
 Released on August 28, 2023
