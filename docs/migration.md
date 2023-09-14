@@ -6,52 +6,6 @@ description: You can learn about the Migration to Newer Versions in the document
 
 # Migration to newer versions
 
-## 1.2 -> 2.0
-
-The [`parse`](../api/methods/parse_method) method of To do list was updated in the following way:
-
-~~~js {} title="Before v2.0"
-list.parse({
-    tasks,
-    users,
-    projects,
-    tags,
-    activeProject
-});
-~~~
-
-~~~js {6} title="From v2.0"
-list.parse({
-    tasks,
-    users,
-    projects,
-    tags,
-    priorities,
-    activeProject
-});
-~~~
-
-The [`serialize`](../api/methods/serialize_method) method of To do list was updated in the following way:
-
-~~~js {} title="Before v2.0"
-list.serialize();
-// -> tasks
-// -> users
-// -> projects
-// -> tags
-// -> activeProject
-~~~
-
-~~~js {6} title="From v2.0"
-list.serialize();
-// -> tasks
-// -> users
-// -> projects
-// -> tags
-// -> priorities
-// -> activeProject
-~~~
-
 ## 1.1 -> 1.2
 
 The [`taskShape`](../api/configs/taskshape_config) property of To do list was updated in the following way:

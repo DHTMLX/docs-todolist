@@ -18,7 +18,6 @@ parse({
     users?: [],
     projects?: [],
     tags?: [],
-    priorities?: [],
     activeProject?: string
 }): void;
 ~~~
@@ -29,12 +28,11 @@ parse({
 - [`users`](api/configs/users_config.md) - (optional) an array of objects with users data
 - [`projects`](api/configs/projects_config.md) - (optional) an array of objects with projects data
 - [`tags`](api/configs/tags_config.md) - (optional) an array with a list of tags
-- [`priorities`](api/configs/priorities_config.md) - (optional) an array of objects containing the priorities data
 - [`activeProject`](api/configs/activeproject_config.md) - (optional) the ID of the active project
 
 ### Example
 
-~~~js {3,10-15}
+~~~js {3,10-14}
 const { ToDo, Toolbar } = todo;
 
 const list = new ToDo("#root", {});
@@ -48,10 +46,7 @@ list.parse({
     tasks,
     users,
     projects,
-    priorities
 });
 ~~~
 
 **Related article:** [Loading and storing data](guides/loading_data.md)
-
-**Change log**: The **priorities** parameter was added in v2.0
