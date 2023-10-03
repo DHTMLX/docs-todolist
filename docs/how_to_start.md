@@ -58,7 +58,7 @@ To get To Do List under the proprietary license, refer to **[Support Center](htt
 :::
 
 :::tip
-If you want to integrate JavaScript Kanban into the React, Angular or Vue project, refer to the corresponding [**Examples on Replit**](https://replit.com/@dhtmlx) for more information.
+If you want to integrate JavaScript To Do List into React, Angular or Vue projects, refer to the corresponding [**Examples on CodeSandbox**](https://codesandbox.io/u/DHTMLX) for more information.
 :::
 
 ## Step 2. Create To Do List
