@@ -109,7 +109,6 @@ description: You can have an API overview of the DHTMLX JavaScript To Do List li
 | [](api/events/updateproject_event.md)      | @getshort(api/events/updateproject_event.md)      |
 | [](api/events/updatetask_event.md)         | @getshort(api/events/updatetask_event.md)         |
 
-
 ## To Do List properties
 
 | Name                                    | Description                                    |
