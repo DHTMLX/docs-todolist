@@ -8,6 +8,14 @@ description: You can learn a new information about DHTMLX JavaScript To Do List 
 
 If you are updating To Do List from an older version, check [Migration to newer version](migration.md) for details.
 
+## Version 1.2.4
+
+Released on December 7, 2023
+
+### Updates
+
+- Moving items between new projects doesn't work
+
 ## Version 1.2.3
 
 Released on September 13, 2023
