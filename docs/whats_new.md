@@ -12,7 +12,7 @@ If you are updating To Do List from an older version, check [Migration to newer 
 
 Released on December 7, 2023
 
-### Updates
+### Fixes
 
 - Moving items between new projects doesn't work
 
@@ -20,7 +20,7 @@ Released on December 7, 2023
 
 Released on September 13, 2023
 
-### Updates
+### Fixes
 
 - An ability to import component as ES module
 
