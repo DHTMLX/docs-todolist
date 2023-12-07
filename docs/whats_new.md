@@ -20,7 +20,7 @@ Released on December 7, 2023
 
 Released on September 13, 2023
 
-### Fixes
+### Updates
 
 - An ability to import component as ES module
 
