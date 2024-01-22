@@ -179,8 +179,8 @@ module.exports = {
             //... other Algolia params
         },*/
         prism: {
-            theme: require('prism-react-renderer/themes/github'),
-            darkTheme: require('prism-react-renderer/themes/dracula'),
+            // theme: require('prism-react-renderer/themes/github'),
+            // darkTheme: require('prism-react-renderer/themes/dracula'),
         },
         navbar: {
             title: 'To Do List Documentation',

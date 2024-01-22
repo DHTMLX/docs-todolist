@@ -4,13 +4,13 @@ title: DELETE /projects
 description: You can learn about the DELETE /projects route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
 ---
 
-# DELETE /projects
+# DELETE `/projects`
 
 ### Description
 
 @short: Deletes data on a project and returns an empty json object
 
-The route handles the DELETE request made to the **'/projects/{id}'** path.
+The route handles the DELETE request made to the `/projects/{id}` path.
 
 Only one project can be removed per request. All project tasks, if any, are also removed.
 
@@ -34,8 +34,8 @@ Only one project can be removed per request. All project tasks, if any, are also
 The ID of a project to be removed is sent in the request line.
 
 | Name       | Type        | Description |
-| ----------- | ----------- | ----------- |
-| `id`       |  number  | *Required*. The id of a project to be removed.|
+| ---------- | ----------- | ----------- |
+| `id`       |  number     | *Required*. The id of a project to be removed.|
 
 ### Payload
 

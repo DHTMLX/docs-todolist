@@ -4,13 +4,13 @@ title: DELETE /tasks
 description: You can learn about the DELETE /tasks route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
 ---
 
-# DELETE /tasks
+# DELETE `/tasks`
 
 ### Description
 
 @short: Deletes data on a task and returns an empty json object
 
-The route handles the DELETE request made to the **'/tasks/{id}'** path.
+The route handles the DELETE request made to the `/tasks/{id}` path.
 
 Only one task can be removed per request. All child tasks, if any, are also removed.
 
@@ -34,8 +34,8 @@ Only one task can be removed per request. All child tasks, if any, are also remo
 The ID of a task that should be removed is sent in the request line.
 
 | Name       | Type        | Description |
-| ----------- | ----------- | ----------- |
-| `id`       |  number  | *Required*. The id of a task to be removed.|
+| ---------- | ----------- | ----------- |
+| `id`       |  number     | *Required*. The id of a task to be removed.|
 
 ### Payload
 

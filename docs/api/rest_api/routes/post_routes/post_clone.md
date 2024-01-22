@@ -4,13 +4,13 @@ title: POST /clone
 description: You can learn about the POST /clone route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
 ---
 
-# POST /clone
+# POST `/clone`
 
 ### Description
 
 @short: Creates a copy of a task and returns a json object with the client task ID and duplicated task ID of the server
 
-The route handles the POST request made to the **'/clone'** path.
+The route handles the POST request made to the `/clone` path.
 
 <table style="border: 1px solid white; border-collapse: collapse; width:50%">
 <thead style="border: 1px solid white; border-collapse: collapse;">

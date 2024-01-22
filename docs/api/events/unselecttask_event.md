@@ -50,5 +50,5 @@ list.api.on("unselect-task", ({id}) => {
 ~~~
 
 **Related articles:**
-- [Operations with tasks](guides/task_operations.md#selectingunselecting-a-task)
+- [Operations with tasks](guides/task_operations.md)
 - [Multiple select and bulk operations](guides/multiselection.md)

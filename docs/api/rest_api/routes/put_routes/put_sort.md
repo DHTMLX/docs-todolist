@@ -4,13 +4,13 @@ title: PUT /sort
 description: You can learn about the PUT /sort route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
 ---
 
-# PUT /sort
+# PUT `/sort`
 
 ### Description
 
 @short: Sorts all tasks of an active project by the specified parameters and returns an empty json object
 
-The route handles the PUT request made to the **'/sort/{id}'** path.
+The route handles the PUT request made to the `/sort/{id}` path.
 
 <table style="border: 1px solid white; border-collapse: collapse; width:50%">
 <thead style="border: 1px solid white; border-collapse: collapse;">
@@ -32,17 +32,17 @@ The route handles the PUT request made to the **'/sort/{id}'** path.
 The query parameter that is sent in the request line:
 
 | Name       | Type        | Description |
-| ----------- | ----------- | ----------- |
-| `id`       |  number   | *Required*. The ID of the active project for which tasks will be sorted.|
+| ---------- | ----------- | ----------- |
+| `id`       |  number     | *Required*. The ID of the active project for which tasks will be sorted.|
 
 ### Payload
 
 The server expects to receive a json object with the next properties:
 
 | Name       | Type        | Description |
-| ----------- | ----------- | ----------- |
-| `by`       |  string   | *Required*. The field by which to sort.|
-| `dir`       |  string   | *Required*. The direction of sorting: "asc" or "desc".|
+| ---------- | ----------- | ----------- |
+| `by`       |  string     | *Required*. The field by which to sort.|
+| `dir`      |  string     | *Required*. The direction of sorting: "asc" or "desc".|
 
 Example:
 
@@ -55,7 +55,7 @@ Example:
 
 ### Response
   
-In case of the success status, an empty json object is returned. 
+In case of the success status, an empty json object is returned.
 The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500).
 
 ---

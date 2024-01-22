@@ -4,13 +4,13 @@ title: PUT /projects
 description: You can learn about the PUT /projects route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
 ---
 
-# PUT /projects
+# PUT `/projects`
 
 ### Description
 
 @short: Updates data on a project and returns an empty json object
 
-The route handles the PUT request made to the **'/projects/{id}'** path.
+The route handles the PUT request made to the `/projects/{id}` path.
 
 <table style="border: 1px solid white; border-collapse: collapse; width:50%">
 <thead style="border: 1px solid white; border-collapse: collapse;">
@@ -32,12 +32,12 @@ The route handles the PUT request made to the **'/projects/{id}'** path.
 The query parameter sent in the request line is the following:
 
 | Name       | Type        | Description |
-| ----------- | ----------- | ----------- |
-| `id`       |  number   | *Required*. The ID of the project to be updated.|
+| ---------- | ----------- | ----------- |
+| `id`       |  number     | *Required*. The ID of the project to be updated.|
 
 ### Payload
 
-The server needs to receive a json object with all project properties (both unchanged and new/modified). 
+The server needs to receive a json object with all project properties (both unchanged and new/modified).
 
 Example:
 

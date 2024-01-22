@@ -4,13 +4,13 @@ title: POST /tasks
 description: You can learn about the POST /tasks route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
 ---
 
-# POST /tasks
+# POST `/tasks`
 
 ### Description
 
 @short: Creates a new task and returns a task object with the ID of a new task
 
-The route handles the POST request made to the **'/tasks'** path.
+The route handles the POST request made to the `/tasks` path.
 
 <table style="border: 1px solid white; border-collapse: collapse; width:50%">
 <thead style="border: 1px solid white; border-collapse: collapse;">
