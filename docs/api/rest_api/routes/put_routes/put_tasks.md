@@ -4,13 +4,13 @@ title: PUT /tasks
 description: You can learn about the PUT /tasks route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
 ---
 
-# PUT /tasks
+# PUT `/tasks`
 
 ### Description
 
 @short: Updates data on the specified task(s) and returns an empty json object
 
-The route handles the PUT request made to the **'/tasks/{id}'** path.
+The route handles the PUT request made to the `/tasks/{id}` path.
 
 <table style="border: 1px solid white; border-collapse: collapse; width:50%">
 <thead style="border: 1px solid white; border-collapse: collapse;">
@@ -32,8 +32,8 @@ The route handles the PUT request made to the **'/tasks/{id}'** path.
 The query parameter that is sent in the request line:
 
 | Name       | Type        | Description |
-| ----------- | ----------- | ----------- |
-| `id`       |  number   | *Required*. The ID of the task to be updated.|
+| ---------- | ----------- | ----------- |
+| `id`       |  number     | *Required*. The ID of the task to be updated.|
 
 ### Payload
 

@@ -4,13 +4,13 @@ title: GET /tags
 description: You can learn about the GET /tags route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
 ---
 
-# GET /tags
+# GET `/tags`
 
 ### Description
 
 @short: Gets data on all tags and returns a json object with an array of these tags
 
-The route handles the GET request made to the **'/tags'** path.
+The route handles the GET request made to the `/tags` path.
 
 <table style="border: 1px solid white; border-collapse: collapse; width:50%">
 <thead style="border: 1px solid white; border-collapse: collapse;">

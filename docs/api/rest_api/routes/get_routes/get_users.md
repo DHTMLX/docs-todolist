@@ -4,13 +4,13 @@ title: GET /users
 description: You can learn about the GET /users route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
 ---
 
-# GET /users
+# GET `/users`
 
 ### Description
 
 @short: Gets data on all users and returns a json object with an array of users objects
 
-The route handles the GET request made to the **'/users'** path.
+The route handles the GET request made to the `/users` path.
 
 <table style="border: 1px solid white; border-collapse: collapse; width:50%">
 <thead style="border: 1px solid white; border-collapse: collapse;">

@@ -4,13 +4,13 @@ title: GET /projects
 description: You can learn about the GET /projects route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
 ---
 
-# GET /projects
+# GET `/projects`
 
 ### Description
 
 @short: Gets data on all projects and returns a json object with an array of projects objects
 
-The route handles the GET request made to the **'/projects'** path.
+The route handles the GET request made to the `/projects` path.
 
 <table style="border: 1px solid white; border-collapse: collapse; width:50%">
 <thead style="border: 1px solid white; border-collapse: collapse;">
