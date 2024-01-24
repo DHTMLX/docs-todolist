@@ -34,25 +34,25 @@ The `setConfig()` method destroys the current component and initialize a new one
 const { ToDo, Toolbar } = todo;
 
 const list = new ToDo("#root", {
-	projects: [
-		{ id: "first", label: "First project" },
-		{ id: "second", label: "Second project" },
-		{ id: "third", label: "Third project" },
-	],
-	activeProject: "first"
+    projects: [
+        { id: "first", label: "First project" },
+        { id: "second", label: "Second project" },
+        { id: "third", label: "Third project" },
+    ],
+    activeProject: "first"
 });
-			
+            
 const toolbar = new Toolbar("#toolbar", {
-	api: list.api,
+    api: list.api,
 });
 
 // change configuration of To Do List
 list.setConfig({
-	activeProject: "second"
+    activeProject: "second"
 });
 
 // update configuration parameters of Toolbar
 toolbar.setConfig({
-	api: list.api,
+    api: list.api,
 });
 ~~~

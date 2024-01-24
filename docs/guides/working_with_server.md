@@ -57,24 +57,24 @@ const activeProject = null;
 const url = "https://some_backend_url";
 const restProvider = new RestDataProvider(url);
 Promise.all([
-	restProvider.getProjectTasks(activeProject),
-	restProvider.getUsers(),
-	restProvider.getProjects(),
-	restProvider.getTags(),
+    restProvider.getProjectTasks(activeProject),
+    restProvider.getUsers(),
+    restProvider.getProjects(),
+    restProvider.getTags(),
 ]).then(([tasks, users, projects, tags]) => {
-	const list = new ToDo("#root", {
-		tasks,
-		users,
-		projects,
-		tags,
-		activeProject,
-	});
-	const toolbar = new Toolbar("#toolbar", {
-		api: list.api,
-	});
+    const list = new ToDo("#root", {
+        tasks,
+        users,
+        projects,
+        tags,
+        activeProject,
+    });
+    const toolbar = new Toolbar("#toolbar", {
+        api: list.api,
+    });
 
-	list.api.setNext(restProvider);
-	restProvider.setAPI(list.api);
+    list.api.setNext(restProvider);
+    restProvider.setAPI(list.api);
 });
 ~~~
 
@@ -123,29 +123,29 @@ After the initialization, you need to add WebSocket aimed to listen for events f
 
 ~~~js {14-16,18-24}
 Promise.all([
-	restProvider.getProjectTasks(activeProject),
-	restProvider.getUsers(),
-	restProvider.getProjects(),
-	restProvider.getTags(),
+    restProvider.getProjectTasks(activeProject),
+    restProvider.getUsers(),
+    restProvider.getProjects(),
+    restProvider.getTags(),
 ]).then(([tasks, users, projects, tags]) => {
-	const list = new todo.ToDo("#root", {
-		tasks, users, projects, tags, activeProject,
-	});
-	const toolbar = new todo.Toolbar("#toolbar", {
-		api: list.api,
-	});
+    const list = new todo.ToDo("#root", {
+        tasks, users, projects, tags, activeProject,
+    });
+    const toolbar = new todo.Toolbar("#toolbar", {
+        api: list.api,
+    });
 
-	// save data from client to server
-	list.api.setNext(restProvider);
-	restProvider.setAPI(list.api);
+    // save data from client to server
+    list.api.setNext(restProvider);
+    restProvider.setAPI(list.api);
 
-	// get updates from server to client
-	const events = new todo.RemoteEvents(url + "/api/v1", token);
-	const handlers = todo.todoUpdates(
-		list.api,
-		restProvider.getIDResolver()
-	);
-	events.on(handlers);
+    // get updates from server to client
+    const events = new todo.RemoteEvents(url + "/api/v1", token);
+    const handlers = todo.todoUpdates(
+        list.api,
+        restProvider.getIDResolver()
+    );
+    events.on(handlers);
 });
 ~~~
 
@@ -219,7 +219,7 @@ const tasksHandler = (obj: any) => {
 };
 
 const handlers = {
-	tasks: tasksHandler,
+    tasks: tasksHandler,
 };
 
 const remoteEvents = new todo.RemoteEvents(remoteEventsURL, token);

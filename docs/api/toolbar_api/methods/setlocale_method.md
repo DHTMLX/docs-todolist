@@ -109,7 +109,7 @@ const de = {
         // Other
         "Search": "Suche",
         "Add task": "Aufgabe hinzufügen",
-	    "New project": "Neues Projekt"
+        "New project": "Neues Projekt"
     },
 };
 

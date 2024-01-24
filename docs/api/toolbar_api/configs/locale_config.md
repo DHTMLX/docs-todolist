@@ -32,15 +32,15 @@ const { ToDo, Toolbar} = todo;
 const { tasks, users, projects, tags } = getData();
 
 const list = new ToDo("#root", {
-	tasks,
-	users,
-	projects,
-	locale: de // sets the "de" locale in the To Do List component (read Info below)
+    tasks,
+    users,
+    projects,
+    locale: de // sets the "de" locale in the To Do List component (read Info below)
 });
 
 const toolbar = new Toolbar("#toolbar", {
-	api: list.api,
-	locale: de // sets the "de" locale in the Toolbar
+    api: list.api,
+    locale: de // sets the "de" locale in the Toolbar
 });
 ~~~
 

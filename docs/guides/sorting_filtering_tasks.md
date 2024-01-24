@@ -33,9 +33,9 @@ You can find the tasks that match the specified criteria in 2 ways:
 ~~~js
 // filter data by the specified rules
 list.setFilter({
-	match: "#tag1",
-	highlight: true,
-	strict: true
+    match: "#tag1",
+    highlight: true,
+    strict: true
 });
 ~~~
 

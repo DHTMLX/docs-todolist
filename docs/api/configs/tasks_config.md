@@ -102,9 +102,9 @@ const projects = [
 ];
 
 const list = new ToDo("#root", {
-	tasks,
-	users,
-	projects
+    tasks,
+    users,
+    projects
 });
 
 const toolbar = new Toolbar("#toolbar", {

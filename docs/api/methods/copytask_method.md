@@ -53,13 +53,13 @@ You can copy a task only one time during one operation
 const { ToDo, Toolbar } = todo;
 
 const list = new ToDo("#root", {
-	tasks: [
+    tasks: [
         { id: "1", text: "Task 1", project: "p_1"},
-		{ id: "1.1", text: "Task 1.1", parent: "1", project: "p_1" },
+        { id: "1.1", text: "Task 1.1", parent: "1", project: "p_1" },
         { id: "2", text: "Task 2", project: "p_2" },
         { id: "2.1", text: "Task 2.1", parent: "2", project: "p_2" },
-		{ id: "2.1.1", text: "Task 2.1.1", parent: "2.1", project: "p_2" },
-		{ id: "2.1.2", text: "Task 2.1.2", parent: "2.1", project: "p_2" },
+        { id: "2.1.1", text: "Task 2.1.1", parent: "2.1", project: "p_2" },
+        { id: "2.1.2", text: "Task 2.1.2", parent: "2.1", project: "p_2" },
     ],
     projects: [
         { "id": "p_1", "label": "Project 1" },
@@ -68,7 +68,7 @@ const list = new ToDo("#root", {
 });
 
 const toolbar = new Toolbar("#toolbar", {
-	api: list.api,
+    api: list.api,
 });
 
 // copy "Task 1.1" to the "Project 2" and paste it before "Task 2.1.2"
@@ -83,13 +83,13 @@ list.copyTask({
 
 ~~~js title="Example 2. Copying multiple tasks"
 const list = new ToDo("#root", {
-	tasks: [
+    tasks: [
         { id: "1", text: "Task 1"},
-		{ id: "1.1", text: "Task 1.1", parent: "1" },
+        { id: "1.1", text: "Task 1.1", parent: "1" },
         { id: "2", text: "Task 2"},
         { id: "2.1", text: "Task 2.1", parent: "2" },
-		{ id: "2.1.1", text: "Task 2.1.1", parent: "2.1" },
-		{ id: "2.1.2", text: "Task 2.1.2", parent: "2.1" },
+        { id: "2.1.1", text: "Task 2.1.1", parent: "2.1" },
+        { id: "2.1.2", text: "Task 2.1.2", parent: "2.1" },
         { id: "3", text: "Task 3" },
     ],
     selected: ["2", "3"]

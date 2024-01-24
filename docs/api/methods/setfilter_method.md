@@ -40,16 +40,16 @@ const { tasks, users, projects, tags } = getData();
 
 // create To do list
 const list = new ToDo("#root", {
-	tasks,
-	users,
-	projects,
-	tags,
+    tasks,
+    users,
+    projects,
+    tags,
 });
 
 // filter data by the specified rules
 list.setFilter({
-	match: "ran",
-	highlight: true
+    match: "ran",
+    highlight: true
 });
 
 // reset filtering

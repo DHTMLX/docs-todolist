@@ -12,116 +12,116 @@ You can present the interface of DHTMLX To Do List in any language. The library 
 
 ~~~js
 const en = {
-	// calendar
-	calendar:{
-		monthFull: [
-			"January",
-			"February",
-			"March",
-			"April",
-			"May",
-			"June",
-			"July",
-			"August",
-			"September",
-			"October",
-			"November",
-			"December",
-		],
-		monthShort: [
-			"Jan",
-			"Feb",
-			"Mar",
-			"Apr",
-			"May",
-			"Jun",
-			"Jul",
-			"Aug",
-			"Sep",
-			"Oct",
-			"Nov",
-			"Dec",
-		],
-		dayFull: [
-			"Sunday",
-			"Monday",
-			"Tuesday",
-			"Wednesday",
-			"Thursday",
-			"Friday",
-			"Saturday",
-		],
-		dayShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
-	
-		clear: "Clear",
-		done: "Done",
-		today: "Today",
-	},
-	// To Do List
-	todo: {
-		// Toolbar
-		"No project": "No project",
-		"Search project": "Search project",
-		"Add project": "Add project",
-		"Rename project": "Rename project",
-		"Delete project": "Delete project",
+    // calendar
+    calendar:{
+        monthFull: [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December",
+        ],
+        monthShort: [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec",
+        ],
+        dayFull: [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+        ],
+        dayShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+    
+        clear: "Clear",
+        done: "Done",
+        today: "Today",
+    },
+    // To Do List
+    todo: {
+        // Toolbar
+        "No project": "No project",
+        "Search project": "Search project",
+        "Add project": "Add project",
+        "Rename project": "Rename project",
+        "Delete project": "Delete project",
 
-		// added in v1.1 (start)
-		"Completed tasks": "Completed tasks",
-		"Show": "Show",
-		"Hide": "Hide",
-		"Sort by": "Sort by",
-		"Text (a-z)": "Text (a-z)",
-		"Text (z-a)": "Text (z-a)",
-		"Due date (new to old)": "Due date (new to old)",
-		"Due date (old to new)": "Due date (old to new)",
-		"Completion date (new to old)": "Completion date (new to old)",
-		"Completion date (old to new)": "Completion date (old to new)",
-		"Created (new to old)": "Created (new to old)",
-		"Created (old to new)": "Created (old to new)",
-		"Edited (new to old)": "Edited (new to old)",
-		"Edited (old to new)": "Edited (old to new)",
-		// added in v1.1 (end)
+        // added in v1.1 (start)
+        "Completed tasks": "Completed tasks",
+        "Show": "Show",
+        "Hide": "Hide",
+        "Sort by": "Sort by",
+        "Text (a-z)": "Text (a-z)",
+        "Text (z-a)": "Text (z-a)",
+        "Due date (new to old)": "Due date (new to old)",
+        "Due date (old to new)": "Due date (old to new)",
+        "Completion date (new to old)": "Completion date (new to old)",
+        "Completion date (old to new)": "Completion date (old to new)",
+        "Created (new to old)": "Created (new to old)",
+        "Created (old to new)": "Created (old to new)",
+        "Edited (new to old)": "Edited (new to old)",
+        "Edited (old to new)": "Edited (old to new)",
+        // added in v1.1 (end)
 
-		// Task
-		"Add task below": "Add task below",
-		"Add subtask": "Add subtask",
-		"Set due date": "Set due date",
-		"Indent": "Indent",
-		"Unindent": "Unindent",
-		"Assign to": "Assign to",
-		"Move to": "Move to",
-		"Duplicate": "Duplicate",
-		"Copy": "Copy",
-		"Paste": "Paste",
-		"Delete": "Delete",
+        // Task
+        "Add task below": "Add task below",
+        "Add subtask": "Add subtask",
+        "Set due date": "Set due date",
+        "Indent": "Indent",
+        "Unindent": "Unindent",
+        "Assign to": "Assign to",
+        "Move to": "Move to",
+        "Duplicate": "Duplicate",
+        "Copy": "Copy",
+        "Paste": "Paste",
+        "Delete": "Delete",
 
-		// Priorities (added in v1.2)
-		"Priority (high to low)": "Priority (high to low)",
-		"Priority (low to high)": "Priority (low to high)",
-		"Set priority": "Set priority",
-		"Reset priority": "Reset priority",
+        // Priorities (added in v1.2)
+        "Priority (high to low)": "Priority (high to low)",
+        "Priority (low to high)": "Priority (low to high)",
+        "Set priority": "Set priority",
+        "Reset priority": "Reset priority",
 
-		// Shortcut
-		"Enter": "Enter",
-		"Tab": "Tab",
-		"Shift+Tab": "Shift+Tab",
-		"Ctrl+D": "Ctrl+D",
-		"Ctrl+C": "Ctrl+C",
-		"Ctrl+V": "Ctrl+V",
-		// For Mac OS
-		"CMD+D": "CMD+D",
-		"CMD+C": "CMD+C",
-		"CMD+V": "CMD+V",
+        // Shortcut
+        "Enter": "Enter",
+        "Tab": "Tab",
+        "Shift+Tab": "Shift+Tab",
+        "Ctrl+D": "Ctrl+D",
+        "Ctrl+C": "Ctrl+C",
+        "Ctrl+V": "Ctrl+V",
+        // For Mac OS
+        "CMD+D": "CMD+D",
+        "CMD+C": "CMD+C",
+        "CMD+V": "CMD+V",
 
-		// Editor
-		"Type you want": "Type you want",
+        // Editor
+        "Type you want": "Type you want",
 
-		// Other
-		"Search": "Search",
-		"Add task": "Add task",
-		"New project": "New project",
-	}
+        // Other
+        "Search": "Search",
+        "Add task": "Add task",
+        "New project": "New project",
+    }
 };
 ~~~
 

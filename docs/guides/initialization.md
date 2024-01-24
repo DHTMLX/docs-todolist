@@ -28,7 +28,7 @@ Make sure that you set correct relative paths to the source files:
 
 ~~~html title="index.html"
 <script type="text/javascript" src="./dist/todo.js"></script>  
-<link rel="stylesheet" href="./dist/todo.css">	
+<link rel="stylesheet" href="./dist/todo.css">    
 ~~~
 
 ## Create containers

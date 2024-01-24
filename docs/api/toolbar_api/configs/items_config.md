@@ -35,14 +35,14 @@ The **items** array can include the following parameters:
 - `"combo"` - the combo control for choosing a project
 - `"search"` - the search bar 
 - `"menu"` - the menu with a set of options which allow you to:
-	- sort tasks in the ascending/descending order by the following criteria: 
-		- by text 
-		- by due date 
-		- by completion date 
-		- by creation date 
-		- by editing date 
-	- hide/show completed tasks
-	- to add a new project, rename or delete a currently active project
+    - sort tasks in the ascending/descending order by the following criteria: 
+        - by text 
+        - by due date 
+        - by completion date 
+        - by creation date 
+        - by editing date 
+    - hide/show completed tasks
+    - to add a new project, rename or delete a currently active project
 - `"custom_item"` - a custom control specified either as a string or a function
 
 :::tip
@@ -56,19 +56,19 @@ const { ToDo, Toolbar } = todo;
 const { tasks, users, projects, tags } = getData();
 
 const list = new ToDo("#root", {
-	tasks,
-	users,
-	projects,
-	tags,
+    tasks,
+    users,
+    projects,
+    tags,
 });
 const toolbar = new Toolbar("#toolbar", {
-	api: list.api,
-	items: [
-		`<div style="font-weight:500;font-size:18px;padding:0 10px; width: 100%">Logo<div/>`,
-		"search",
-		"menu",
-		`<div style="margin-left: auto; padding-left: 10px;"><button class="g-btn g-btn--sm">Custom button</button></div>`,
-	],
+    api: list.api,
+    items: [
+        `<div style="font-weight:500;font-size:18px;padding:0 10px; width: 100%">Logo<div/>`,
+        "search",
+        "menu",
+        `<div style="margin-left: auto; padding-left: 10px;"><button class="g-btn g-btn--sm">Custom button</button></div>`,
+    ],
 });
 ~~~
 

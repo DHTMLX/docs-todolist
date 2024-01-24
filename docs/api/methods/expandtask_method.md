@@ -28,16 +28,16 @@ expandTask({
 const { ToDo, Toolbar } = todo;
 
 const list = new ToDo("#root", {
-	tasks: [
+    tasks: [
         { id: "1", text: "Task 1 #tag1" },
-		{ id: "1.1", text: "Task 1.1", parent: "1" },
+        { id: "1.1", text: "Task 1.1", parent: "1" },
         { id: "1.1.1", text: "Task 1.1.1", parent: "1.1" },
-		{ id: "1.2", text: "Task 1.2", parent: "1" },
+        { id: "1.2", text: "Task 1.2", parent: "1" },
     ]
 });
 
 const toolbar = new Toolbar("#toolbar", {
-	api: list.api,
+    api: list.api,
 });
 
 // collapse the task

@@ -31,10 +31,10 @@ const { ToDo, Toolbar } = todo;
 const { tasks, users, projects } = getData();
 
 const list = new ToDo("#root", {
-	tasks,
-	users,
-	projects,
-	tags: ["urgent", "normal"]
+    tasks,
+    users,
+    projects,
+    tags: ["urgent", "normal"]
 });
 
 const toolbar = new Toolbar("#toolbar", {

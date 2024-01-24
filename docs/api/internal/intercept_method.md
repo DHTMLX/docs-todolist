@@ -40,7 +40,7 @@ const { tasks, users, projects } = getData();
 const list = new ToDo("#root", {
     tasks,
     users,
-	projects
+    projects
 });
 
 // forbid removing a project with the "first" ID

@@ -24,12 +24,12 @@ const { ToDo, Toolbar } = todo;
 const { task, projects } = getData();
 
 const list = new ToDo("#root", {
-	tasks,
-	projects
+    tasks,
+    projects
 });
 
 const toolbar = new Toolbar("#toolbar", {
-	api: list.api,
+    api: list.api,
 });
 
 list.showCompletedTasks(); 

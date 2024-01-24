@@ -33,9 +33,9 @@ const { ToDo, Toolbar } = todo;
 const list = new ToDo("#root", {
     tasks: [
         { id: "1", text: "Task 1" },
-		{ id: "1.1", text: "Task 1.1", parent: "1"},
+        { id: "1.1", text: "Task 1.1", parent: "1"},
         { id: "1.1.1", text: "Task 1.1.1", parent: "1.1" },
-		{ id: "1.2", text: "Task 1.2", parent: "1" },
+        { id: "1.2", text: "Task 1.2", parent: "1" },
     ],
     users: [
         { "id": "user_1", "label": "John" },
@@ -49,7 +49,7 @@ const toolbar = new Toolbar("#toolbar", {
 
 // assign a user to the task
 list.assignUser({
-	id: "1.1",
+    id: "1.1",
     userId: "user_2"
 });
 ~~~

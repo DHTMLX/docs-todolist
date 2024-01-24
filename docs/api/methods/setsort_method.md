@@ -32,12 +32,12 @@ setSort({
 const { ToDo, Toolbar } = todo;
 
 const list = new ToDo("#root", {
-	tasks: [
+    tasks: [
         { id: "a", text: "A" },
-		{ id: "ac", text: "C", parent: "a" },
-		{ id: "ad", text: "D", parent: "a" },
-		{ id: "aa", text: "A", parent: "a" },
-		{ id: "ab", text: "B", parent: "a" },
+        { id: "ac", text: "C", parent: "a" },
+        { id: "ad", text: "D", parent: "a" },
+        { id: "aa", text: "A", parent: "a" },
+        { id: "ab", text: "B", parent: "a" },
         { id: "c", text: "C" },
         { id: "d", text: "D" },
         { id: "b", text: "B" },
@@ -45,7 +45,7 @@ const list = new ToDo("#root", {
 });
 
 const toolbar = new Toolbar("#toolbar", {
-	api: list.api,
+    api: list.api,
 });
 
 // sort tasks in ascending order by the "text" parameter

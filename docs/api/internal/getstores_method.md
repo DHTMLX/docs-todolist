@@ -34,7 +34,7 @@ const { tasks, users, projects } = getData();
 const list = new ToDo("#root", {
     tasks,
     users,
-	projects
+    projects
 });
 
 const stores = list.api.getStores();
