@@ -35,13 +35,13 @@ const { ToDo, Toolbar } = todo;
 const {tasks, projects, users} = getData();
 
 const list = new ToDo("#root", {
-	tasks,
+    tasks,
     projects,
     users
 });
 
 const toolbar = new Toolbar("#toolbar", {
-	api: list.api,
+    api: list.api,
 });
 
 // subscribe to the "unindent-task" event

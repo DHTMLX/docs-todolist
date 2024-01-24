@@ -28,16 +28,16 @@ setProject({
 const { ToDo, Toolbar } = todo;
 
 const list = new ToDo("#root", {
-	projects: [
-		{ id: "first", label: "First project" },
-		{ id: "second", label: "Second project" },
-		{ id: "third", label: "Third project" },
-	],
+    projects: [
+        { id: "first", label: "First project" },
+        { id: "second", label: "Second project" },
+        { id: "third", label: "Third project" },
+    ],
     activeProject: "second"
 });
 
 const toolbar = new Toolbar("#toolbar", {
-	api: list.api,
+    api: list.api,
 });
 
 // change an active project

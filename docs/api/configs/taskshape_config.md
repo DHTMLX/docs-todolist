@@ -26,9 +26,9 @@ taskShape?: {
         taskHide: boolean
     },
     priority?: {
-		cover: boolean,
-		label: boolean
-	}
+        cover: boolean,
+        label: boolean
+    }
 };
 ~~~
 
@@ -48,9 +48,9 @@ taskShape: {
         taskHide: false
     },
     priority: {
-		cover: true,
-		label: true
-	}
+        cover: true,
+        label: true
+    }
 }
 ~~~
 
@@ -88,7 +88,7 @@ const { tasks, users, projects, priorities } = getData();
 const list = new ToDo("#root", {
     tasks,
     users,
-	projects,
+    projects,
     priorities,
     taskShape: {
         counter: {

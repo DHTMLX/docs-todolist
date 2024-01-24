@@ -41,12 +41,12 @@ To move a task to the *No project* section, specify the value of the parameter t
 const { ToDo, Toolbar } = todo;
 
 const list = new ToDo("#root", {
-	tasks: [
+    tasks: [
         { id: "1", text: "Task 1", project: "p_1"},
-		{ id: "1.1", text: "Task 1.1", parent: "1", project: "p_1" },
+        { id: "1.1", text: "Task 1.1", parent: "1", project: "p_1" },
         { id: "2", text: "Task 2", project: "p_2" },
         { id: "2.1", text: "Task 2.1", parent: "2", project: "p_2" },
-		{ id: "2.1.1", text: "Task 2.1.1", parent: "2.1", project: "p_2" },
+        { id: "2.1.1", text: "Task 2.1.1", parent: "2.1", project: "p_2" },
     ],
     projects: [
         { "id": "p_1", "label": "Project 1" },
@@ -55,7 +55,7 @@ const list = new ToDo("#root", {
 });
 
 const toolbar = new Toolbar("#toolbar", {
-	api: list.api,
+    api: list.api,
 });
 
 // move "Task 1.1" to "Project 2" and place it before "Task 2.1.1" as a child of "Task 2.1"
@@ -108,15 +108,15 @@ list.moveTask({
 
 ~~~js title="Example 2. Moving multiple tasks"
 const list = new ToDo("#root", {
-	tasks: [
+    tasks: [
         { id: "1", text: "Task 1" },
-		{ id: "1.1", text: "Task 1.1" },
+        { id: "1.1", text: "Task 1.1" },
         { id: "1.1.1", text: "Task 1.1.1", parent: "1.1" },
-		{ id: "1.2", text: "Task 1.2", parent: "1" },
+        { id: "1.2", text: "Task 1.2", parent: "1" },
         { id: "2", text: "Task 2" },
-		{ id: "2.1", text: "Task 2.1", parent: "2" },
+        { id: "2.1", text: "Task 2.1", parent: "2" },
         { id: "2.1.1", text: "Task 2.1.1", parent: "2.1" },
-		{ id: "2.2", text: "Task 2.2" },
+        { id: "2.2", text: "Task 2.2" },
     ],
     selected: ["1.1", "2.2"],
 });

@@ -24,15 +24,15 @@ If you want to create a To Do List with initially selected tasks, use the [`sele
 
 ~~~js {12}
 const list = new ToDo("#root", {
-	tasks: [
+    tasks: [
         { id: "1", text: "Task 1" },
-		{ id: "1.1", text: "Task 1.1", parent: "1" },
+        { id: "1.1", text: "Task 1.1", parent: "1" },
         { id: "1.1.1", text: "Task 1.1.1", parent: "1.1" },
-		{ id: "1.2", text: "Task 1.2", parent: "1" },
+        { id: "1.2", text: "Task 1.2", parent: "1" },
         { id: "2", text: "Task 2" },
-		{ id: "2.1", text: "Task 2.1", parent: "2" },
+        { id: "2.1", text: "Task 2.1", parent: "2" },
         { id: "2.1.1", text: "Task 2.1.1", parent: "2.1" },
-		{ id: "2.2", text: "Task 2.2", parent: "2" },
+        { id: "2.2", text: "Task 2.2", parent: "2" },
     ],
     selected: ["1.1", "1.2", "2.2"],
 });
@@ -55,15 +55,15 @@ Take a look at the following code snippet:
 
 ~~~js {19}
 const list = new ToDo("#root", {
-	tasks: [
+    tasks: [
         { id: "1", text: "Task 1" },
-		{ id: "1.1", text: "Task 1.1", parent: "1" },
+        { id: "1.1", text: "Task 1.1", parent: "1" },
         { id: "1.1.1", text: "Task 1.1.1", parent: "1.1" },
-		{ id: "1.2", text: "Task 1.2", parent: "1" },
+        { id: "1.2", text: "Task 1.2", parent: "1" },
         { id: "2", text: "Task 2" },
-		{ id: "2.1", text: "Task 2.1", parent: "2" },
+        { id: "2.1", text: "Task 2.1", parent: "2" },
         { id: "2.1.1", text: "Task 2.1.1", parent: "2.1" },
-		{ id: "2.2", text: "Task 2.2", parent: "2" },
+        { id: "2.2", text: "Task 2.2", parent: "2" },
     ],
     selected: ["1.1", "1.2", "2.2"],
 });
@@ -86,15 +86,15 @@ The most convenient way to select several tasks at once is shown below:
 
 ~~~js {14-18}
 const list = new ToDo("#root", {
-	tasks: [
+    tasks: [
         { id: "1", text: "Task 1" },
-		{ id: "1.1", text: "Task 1.1", parent: "1" },
+        { id: "1.1", text: "Task 1.1", parent: "1" },
         { id: "1.1.1", text: "Task 1.1.1", parent: "1.1" },
-		{ id: "1.2", text: "Task 1.2", parent: "1" },
+        { id: "1.2", text: "Task 1.2", parent: "1" },
         { id: "2", text: "Task 2" },
-		{ id: "2.1", text: "Task 2.1", parent: "2" },
+        { id: "2.1", text: "Task 2.1", parent: "2" },
         { id: "2.1.1", text: "Task 2.1.1", parent: "2.1" },
-		{ id: "2.2", text: "Task 2.2", parent: "2" },
+        { id: "2.2", text: "Task 2.2", parent: "2" },
     ]
 });
 

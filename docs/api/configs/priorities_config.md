@@ -99,9 +99,9 @@ const priorities = [
 ];
 
 const list = new ToDo ("#root", {
-	tasks,
-	users,
-	projects,
+    tasks,
+    users,
+    projects,
     priorities
 });
 

@@ -44,7 +44,7 @@ const { tasks, users, projects } = getData();
 const list = new ToDo("#root", {
     tasks,
     users,
-	projects
+    projects
 });
 
 // subscribe to the task selection

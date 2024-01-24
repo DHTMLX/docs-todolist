@@ -31,17 +31,17 @@ const { ToDo, Toolbar } = todo;
 const { tasks, users } = getData();
 
 const list = new ToDo("#root", {
-	tasks,
-	users,
-	projects: [
-		{ id: "first", label: "First project" },
-		{ id: "second", label: "Second project" },
-		{ id: "third", label: "Third project" },
-	]
+    tasks,
+    users,
+    projects: [
+        { id: "first", label: "First project" },
+        { id: "second", label: "Second project" },
+        { id: "third", label: "Third project" },
+    ]
 });
 
 const toolbar = new Toolbar("#toolbar", {
-	api: list.api,
+    api: list.api,
 });
 
 // get the data object of the project

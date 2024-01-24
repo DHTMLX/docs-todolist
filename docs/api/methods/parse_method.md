@@ -38,7 +38,7 @@ const { ToDo, Toolbar } = todo;
 const list = new ToDo("#root", {});
 
 const toolbar = new Toolbar("#toolbar", {
-	api: list.api,
+    api: list.api,
 });
 
 // parse prepared data into the component

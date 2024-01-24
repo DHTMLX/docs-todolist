@@ -32,15 +32,15 @@ deleteProject({
 const { ToDo, Toolbar } = todo;
 
 const list = new ToDo("#root", {
-	projects: [
-		{ id: "first", label: "First project" },
-		{ id: "second", label: "Second project" },
-		{ id: "third", label: "Third project" },
-	]
+    projects: [
+        { id: "first", label: "First project" },
+        { id: "second", label: "Second project" },
+        { id: "third", label: "Third project" },
+    ]
 });
 
 const toolbar = new Toolbar("#toolbar", {
-	api: list.api,
+    api: list.api,
 });
 
 // remove a project

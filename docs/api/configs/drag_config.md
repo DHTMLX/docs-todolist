@@ -54,9 +54,9 @@ const { ToDo, Toolbar } = todo;
 
 // create To do list
 const list = new ToDo("#root", {
-	tasks: [
+    tasks: [
         { id: "1", text: "Task 1 #tag1" },
-		...
+        ...
     ],
     drag: {
         expand: false

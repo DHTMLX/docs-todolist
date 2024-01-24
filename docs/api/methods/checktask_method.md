@@ -30,16 +30,16 @@ checkTask({
 const { ToDo, Toolbar } = todo;
 
 const list = new ToDo("#root", {
-	tasks: [
+    tasks: [
         { id: "1", text: "Task 1" },
-		{ id: "1.1", text: "Task 1.1", parent: "1" },
+        { id: "1.1", text: "Task 1.1", parent: "1" },
         { id: "1.1.1", text: "Task 1.1.1", parent: "1.1" },
-		{ id: "1.2", text: "Task 1.2", parent: "1" },
+        { id: "1.2", text: "Task 1.2", parent: "1" },
     ]
 });
 
 const toolbar = new Toolbar("#toolbar", {
-	api: list.api,
+    api: list.api,
 });
 
 // mark the specified task as completed
@@ -51,15 +51,15 @@ list.checkTask({
 
 ~~~js title="Example 2. Checking multiple tasks"
 const list = new ToDo("#root", {
-	tasks: [
+    tasks: [
         { id: "1", text: "Task 1" },
-		{ id: "1.1", text: "Task 1.1", parent: "1" },
+        { id: "1.1", text: "Task 1.1", parent: "1" },
         { id: "1.1.1", text: "Task 1.1.1", parent: "1.1" },
-		{ id: "1.2", text: "Task 1.2", parent: "1" },
+        { id: "1.2", text: "Task 1.2", parent: "1" },
         { id: "2", text: "Task 2" },
-		{ id: "2.1", text: "Task 2.1", parent: "2" },
+        { id: "2.1", text: "Task 2.1", parent: "2" },
         { id: "2.1.1", text: "Task 2.1.1", parent: "2.1" },
-		{ id: "2.2", text: "Task 2.2", parent: "2" },
+        { id: "2.2", text: "Task 2.2", parent: "2" },
     ],
     selected: ["1.1", "2.2"],
 });

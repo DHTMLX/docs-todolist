@@ -48,14 +48,14 @@ const { ToDo, Toolbar } = todo;
 const list = new ToDo("#root", {
     tasks: [
         { id: "1", text: "Task 1", project: "first" },
-		{ id: "1.1", text: "Task 1.1", parent: "1", project: "first" },
+        { id: "1.1", text: "Task 1.1", parent: "1", project: "first" },
         { id: "1.1.2", text: "Task 1.1.2", parent: "1.1", project: "first" },
-		{ id: "1.2", text: "Task 1.2", parent: "1", project: "first" },
+        { id: "1.2", text: "Task 1.2", parent: "1", project: "first" },
     ],
     projects: [
-		{ id: "first", label: "First project" },
-		{ id: "second", label: "Second project" },
-	]
+        { id: "first", label: "First project" },
+        { id: "second", label: "Second project" },
+    ]
 });
 
 const toolbar = new Toolbar("#toolbar", {
@@ -64,7 +64,7 @@ const toolbar = new Toolbar("#toolbar", {
 
 // add a new task
 list.addTask({
-	id: "1.1.1",
+    id: "1.1.1",
     project: "first",
     parent: "1.1",
     targetId: "1.1.2",

@@ -42,7 +42,7 @@ const projects = [
 
 // create To do list
 const list = new ToDo("#root", {
-	projects,
+    projects,
     activeProject: "films"
 });
 

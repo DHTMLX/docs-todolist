@@ -84,12 +84,12 @@ Now you can add a To Do List to the page. For this, you should create two DIV co
             const { ToDo, Toolbar } = todo; // apply the object destructuring
             
             const list = new ToDo("#root", {
-				// configuration properties 
-			});
-			const toolbar = new Toolbar("#toolbar", {
-				api: list.api,
+                // configuration properties 
+            });
+            const toolbar = new Toolbar("#toolbar", {
+                api: list.api,
                 // more configuration properties  
-			});
+            });
         </script>
     </body>
 </html>
@@ -205,14 +205,14 @@ Now, you can populate the To Do List with data. For that, specify the related pr
             const { ToDo, Toolbar } = todo;
             const { tasks, users, projects } = getData();
 
-			const list = new ToDo("#root", {
-				tasks,
-				users,
-				projects
-			});
-			const toolbar = new Toolbar("#toolbar", {
-				api: list.api,
-			});
+            const list = new ToDo("#root", {
+                tasks,
+                users,
+                projects
+            });
+            const toolbar = new Toolbar("#toolbar", {
+                api: list.api,
+            });
         </script>
     </body>
 </html>
@@ -233,15 +233,15 @@ As an example, let's enable the *readonly* mode for your To Do List, specify an 
 
 ~~~js {5-6,11}
 const list = new ToDo("#root", {
-	tasks,
-	users,
-	projects,
+    tasks,
+    users,
+    projects,
     activeProject: "introduction",
     readonly: true
 });
 
 const toolbar = new Toolbar("#toolbar", {
-	api: list.api,
+    api: list.api,
     items: ["search"]
 });
 ~~~

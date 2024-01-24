@@ -40,7 +40,7 @@ const { tasks, users, projects } = getData();
 const list = new ToDo("#root", {
     tasks,
     users,
-	projects
+    projects
 });
 
 // output the project data to console when you remove it

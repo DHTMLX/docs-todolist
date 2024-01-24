@@ -25,12 +25,12 @@ const { ToDo, Toolbar } = todo;
 const { tasks, users, projects, tags } = getData();
 
 const list = new ToDo("#root", {
-	tasks,
-	users,
-	projects,
+    tasks,
+    users,
+    projects,
 });
 const toolbar = new Toolbar("#toolbar", {
-	api: list.api,
+    api: list.api,
 });
 
 // remove List
