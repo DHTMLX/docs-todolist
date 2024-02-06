@@ -8,6 +8,16 @@ description: You can learn a new information about DHTMLX JavaScript To Do List 
 
 If you are updating To Do List from an older version, check [Migration to newer version](migration.md) for details.
 
+## Version 1.2.7
+
+Released on February 6, 2024
+
+### Fixes
+
+- Problem with pressing Enter when renaming a project
+- Problem with pressing Enter when searching for projects
+- Overriding wx styles when using with complex widgets. Refer to the [Stylization](guides/stylization.md) guide for details
+
 ## Version 1.2.5
 
 Released on December 7, 2023

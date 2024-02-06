@@ -19,8 +19,10 @@ New versions of the To Do List can bring some changes for the variables and thei
 
 ~~~html
 <style>
-    .wx-material-theme,
-    .wx-portal {
+    .wx-material-theme .wx-todo,
+    .wx-material-theme .wx-todo_toolbar,
+    .wx-material-theme .wx-todo_menu,
+    .wx-material-theme.wx-portal {
 
     /* WX library CSS variables */
 
@@ -100,4 +102,3 @@ In this snippet you can see how to apply a custom style to To Do List:
 <iframe src="https://snippet.dhtmlx.com/thmx9921?mode=html" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 **Related articles:** [Customization](../customization)
-
