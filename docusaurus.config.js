@@ -131,53 +131,12 @@ module.exports = {
     baseUrl: '/todolist/',
     onBrokenLinks: 'warn',
     onBrokenMarkdownLinks: 'warn',
+    onBrokenAnchors: 'warn',
     favicon: 'img/favicon.ico',
-    organizationName: 'DHTMLX', // Usually your GitHub org/user name
-    projectName: 'docs-todolist', // Usually your repo name
+    organizationName: 'DHTMLX',
+    projectName: 'docs-todolist',
     trailingSlash: true,
     themeConfig: {
-        /*colorMode: {
-            // "light" | "dark"
-            defaultMode: 'light',
-
-            // Hides the switch in the navbar
-            // Useful if you want to support a single color mode
-            disableSwitch: false,
-
-            // Should we use the prefers-color-scheme media-query,
-            // using user system preferences, instead of the hardcoded defaultMode
-            respectPrefersColorScheme: true,
-
-            // Dark/light switch icon options
-            switchConfig: {
-                darkIcon: '🌙',
-                darkIconStyle: {
-                    marginLeft: '0px',
-                },
-                lightIcon: '☀️',
-                lightIconStyle: {
-                    marginLeft: '0px',
-                },
-            },
-        },*/
-
-        // This part can be deleted after release
-        /*algolia: {
-            // This is a read-only, search-only key served directly by the front-end, managed by Algolia via their
-            // free DocSearch program. The key is not sensitive. See https://docsearch.algolia.com/ for more details.
-            //appId: '123', // TODO: change it
-            appId: '123', // TODO: change it
-            apiKey: '123', // TODO: change it
-            indexName: 'todolistalt', // TODO: change it
-
-            // Optional: see doc section bellow
-            contextualSearch: true,
-
-            // Optional: Algolia search parameters
-            searchParameters: {},
-
-            //... other Algolia params
-        },*/
         prism: {
             // theme: require('prism-react-renderer/themes/github'),
             // darkTheme: require('prism-react-renderer/themes/dracula'),
@@ -187,101 +146,101 @@ module.exports = {
             logo: {
                 alt: 'DHTMLX To Do List Logo',
                 src: 'img/dhtmlx_logo.svg',
-                href: 'https://docs.dhtmlx.com/',
-
+                href: 'https://docs.dhtmlx.com/'
             },
-            items: [{
+            items: [
+                {
                     label: 'Examples',
-                    href: 'https://snippet.dhtmlx.com/3vwlbwee?tag=todolist', // Todo change before release
-                    position: 'right',
+                    href: 'https://snippet.dhtmlx.com/3vwlbwee?tag=todolist',
+                    position: 'right'
                 },
                 {
                     label: 'Forum',
-                    href: 'https://forum.dhtmlx.com/c/todo', // Todo change before release
+                    href: 'https://forum.dhtmlx.com/c/todo',
                     position: 'right'
                 },
                 {
                     label: 'Support',
                     href: 'https://dhtmlx.com/docs/technical-support.shtml',
-                    position: 'right',
+                    position: 'right'
                 },
                 {
                     label: 'Download',
-                    href: 'https://dhtmlx.com/docs/products/dhtmlxTodo/download.shtml', // Todo change before release
-                    position: 'right',
-                },
-            ],
+                    href: 'https://dhtmlx.com/docs/products/dhtmlxTodo/download.shtml',
+                    position: 'right'
+                }
+            ]
         },
         footer: {
             style: 'dark',
             links: [
                 {
                     title: 'Development center',
-                    items: [{
+                    items: [
+                        {
                             label: 'Download To Do List',
-                            href: 'https://dhtmlx.com/docs/products/dhtmlxTodo/download.shtml', // Todo change before release
-                            position: 'right',
+                            href: 'https://dhtmlx.com/docs/products/dhtmlxTodo/download.shtml',
+                            position: 'right'
                         },
                         {
                             label: 'Examples',
-                            href: 'https://snippet.dhtmlx.com/3vwlbwee?tag=todolist', // Todo change before release
-                            position: 'right',
+                            href: 'https://snippet.dhtmlx.com/3vwlbwee?tag=todolist',
+                            position: 'right'
                         },
                         {
                             label: 'Blog',
-                            href: 'https://dhtmlx.com/blog/tag/to-do-list/',
+                            href: 'https://dhtmlx.com/blog/tag/to-do-list/'
                         },
                         {
                             label: 'Forum',
-                            href: 'https://forum.dhtmlx.com/c/todo', // Todo change before release
+                            href: 'https://forum.dhtmlx.com/c/todo',
                             position: 'right'
-                        },
-                    ],
+                        }
+                    ]
                 },
                 {
                     title: 'Community',
                     items: [{
                             label: 'GitHub',
-                            href: 'https://github.com/DHTMLX',
+                            href: 'https://github.com/DHTMLX'
                         },
 
                         {
                             label: 'Youtube',
-                            href: 'https://www.youtube.com/user/dhtmlx',
+                            href: 'https://www.youtube.com/user/dhtmlx'
                         },
                         {
                             label: 'Facebook',
-                            href: 'https://www.facebook.com/dhtmlx',
+                            href: 'https://www.facebook.com/dhtmlx'
                         },
                         {
                             label: 'Twitter',
-                            href: 'https://twitter.com/dhtmlx',
+                            href: 'https://twitter.com/dhtmlx'
                         },
                         {
                             label: 'Linkedin',
-                            href: 'https://www.linkedin.com/groups/3345009/',
-                        },
-
-                    ],
+                            href: 'https://www.linkedin.com/groups/3345009/'
+                        }
+                    ]
                 },
                 {
                     title: 'Company',
                     items: [{
                             label: 'About us',
-                            href: 'https://dhtmlx.com/docs/company.shtml',
+                            href: 'https://dhtmlx.com/docs/company.shtml'
                         },
                         {
                             label: 'Contact us',
-                            href: 'https://dhtmlx.com/docs/contact.shtml',
+                            href: 'https://dhtmlx.com/docs/contact.shtml'
                         },
                         {
                             label: 'Licensing',
-                            href: 'https://dhtmlx.com/docs/products/dhtmlxTodo/#licensing', // Todo change before release
-                        },
-                    ],
-                },
-            ],
-        },
+                            href: 'https://dhtmlx.com/docs/products/dhtmlxTodo/#licensing'
+                        }
+                    ]
+                }
+            ]
+        }
     },
     presets: [
         [
@@ -289,24 +248,18 @@ module.exports = {
             {
                 docs: {
                     sidebarPath: require.resolve('./sidebars.js'),
-                    // Please change this to your repo.
                     editUrl: 'https://github.com/DHTMLX/docs-todolist/edit/master/',
-                    routeBasePath: '/',
+                    routeBasePath: '/'
                 },
-                // blog: {
-                //     showReadingTime: true,
-                //     // Please change this to your repo.
-                //     editUrl: 'https://github.com/facebook/docusaurus/edit/master/website/blog/',
-                // },
                 theme: {
-                    customCss: require.resolve('./src/css/custom.css'),
+                    customCss: require.resolve('./src/css/custom.css')
                 },
                 sitemap: {
                     changefreq: 'daily',
-                    priority: 0.5,
-                },
-            },
-        ],
+                    priority: 0.5
+                }
+            }
+        ]
     ],
     plugins: [
         'docusaurus-plugin-sass',
@@ -323,7 +276,7 @@ module.exports = {
         [
             require.resolve('docusaurus-gtm-plugin'),
             {
-              id: 'GTM-5M5RCSJ',
+              id: 'GTM-5M5RCSJ'
             }
         ]
     ],
@@ -338,7 +291,7 @@ module.exports = {
                removeDefaultStemmer: true,
                removeDefaultStopWordFilter: true,
                explicitSearchResultPath: true
-           },
-       ],
+           }
+       ]
     ]
 };
