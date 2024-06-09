@@ -6,6 +6,268 @@ description: You can learn about the integration with React in the documentation
 
 # Integration with React
 
-DHTMLX To Do List is compatible with **React**. We have prepared code examples of how to use DHTMLX To Do List with **React**. To check online samples, please refer to the corresponding [**Examples on CodeSandbox**](https://codesandbox.io/u/DHTMLX).
+:::tip
+You should be familiar with the basic concepts and patterns of [**React**](https://react.dev) before reading this documentation. To refresh your knowledge, please refer to the [**React documentation**](https://reactjs.org/docs/getting-started.html).
+:::
 
-<iframe src="https://codesandbox.io/s/dhtmlx-to-do-list-with-react-kj4d6s" frameborder="0" class="snippet_iframe" width="100%" height="700"></iframe>
+DHTMLX To Do List is compatible with **React**. We have prepared code examples on how to use DHTMLX To Do List with **React**. For more information, refer to the corresponding [**Example on GitHub**](https://github.com/DHTMLX/react-todolist-demo).
+
+## Creating a project
+
+:::info
+Before you start to create a new project, install [**Vite**](https://vitejs.dev/) (optional) and [**Node.js**](https://nodejs.org/en/).
+:::
+
+You can create a basic **React** project or use **React with Vite**:
+
+~~~json
+npx create-vite my-react-todo-app --template react
+~~~
+
+### Installation of dependencies
+
+Go to the app directory. Let's name the project as **my-react-todo-app** and run:
+
+~~~json
+cd my-react-todo-app
+~~~
+
+Install dependencies and start the dev server. For this, use a package manager:
+
+- if you use [**yarn**](https://yarnpkg.com/), run the following commands:
+
+~~~json
+yarn install
+yarn dev
+~~~
+
+- if you use [**npm**](https://www.npmjs.com/), run the following commands:
+
+~~~json
+npm install
+npm run dev
+~~~
+
+The app should run on a localhost (for instance `http://localhost:3000`).
+
+## Creating To Do List
+
+Now you should get the DHTMLX To Do List code. First of all, stop the app and proceed with installing the To Do List package.
+
+### Step 1. Package installation
+
+Download the [**trial To Do List package**](/how_to_start/#installing-to-do-list-via-npm-and-yarn) and follow steps mentioned in the README file. Note that trial To Do List is available 30 days only.
+
+### Step 2. Component creation
+
+Now you need to create a React component, to add a To Do List into the application. Create a new file in the ***src/*** directory and name it ***ToDo.jsx***.
+
+#### Importing source files
+
+Open the ***ToDo.jsx*** file and import To Do List source files. Note that:
+
+- if you use PRO version and install the To Do List package from a local folder, the import paths look like this:
+
+~~~jsx title="ToDo.jsx"
+import { ToDo } from 'dhx-todolist-package';
+import 'dhx-todolist-package/dist/todo.css';
+~~~
+
+Note that depending on the used package, the source files can be minified. In this case make sure that you are importing the CSS file as **todo.min.css**.
+
+- if you use the trial version of To Do List, specify the following paths:
+
+~~~jsx title="ToDo.jsx"
+import { ToDo } from '@dhx/trial-todolist';
+import "@dhx/trial-todolist/dist/todo.css";
+~~~
+
+In this tutorial you can see how to configure the **trial** version of To Do List.
+
+#### Setting the container and adding To Do List
+
+To display To Do List on the page, you need to set the container to render the component inside. Check the code below:
+
+~~~jsx title="ToDo.jsx"
+import { useEffect, useRef } from "react";
+import { ToDo } from '@dhx/trial-todolist';
+import '@dhx/trial-todolist/dist/todo.css';
+
+// eslint-disable-next-line react/prop-types
+const ToDoComponent = () => {
+    let container = useRef();
+
+    return <div ref={container} style={{ width: "100%", height: "100%" }}></div>;
+};
+
+export default ToDoComponent;
+~~~
+
+Then you need to add To Do List into the container. For this purpose, import the `useEffect()` method of React and use it to render the To Do List instance and destruct when it is no longer needed:
+
+~~~jsx {2,8-12} title="ToDo.jsx"
+// ...
+import { useEffect, useRef} from "react";
+
+// eslint-disable-next-line react/prop-types
+const ToDoComponent = () => {
+    let container = useRef();
+
+    useEffect(() => {
+        new ToDo(container.current, {});
+
+        return () => (container.current.innerHTML = "");
+    }, []);
+    
+    return <div ref={container} style={{ width: "100%", height: "100%" }}></div>;
+};
+
+export default ToDoComponent;
+~~~
+
+#### Loading data
+
+To add data into the To Do List, you need to provide a data set. You can create the ***data.js*** file in the ***src/*** directory and add some data into it:
+
+~~~jsx title="data.js"
+export function getData() {
+    const tasks = [
+        {
+            id: "temp://1652991560212",
+            project: "introduction",
+            text: "Greetings, everyone! \u{1F44B} \nI'm DHTMLX To Do List.",
+            priority: 1,
+        },
+        {
+            id: "1652374122964",
+            project: "introduction",
+            text: "You can assign task performers and due dates using the menu.",
+            assigned: ["user_4", "user_1", "user_2", "user_3"],
+            due_date: "2033-03-08T21:00:00.000Z",
+            priority: 2,
+        },
+        // ...
+    ];
+    const users = [
+        {
+            id: "user_1",
+            label: "Don Smith",
+            avatar:
+                "https://snippet.dhtmlx.com/codebase/data/common/img/02/avatar_61.jpg",
+        },
+        // ...
+    ];
+    const projects = [
+        {
+            id: "introduction",
+            label: "Introduction to DHTMLX To Do List"
+        },
+        {
+            id: "widgets",
+            label: "Our widgets"
+        }
+    ];
+    return { tasks, users, projects };
+}
+~~~
+
+Then open the ***App.js*** file and import data. After this you can pass data into the new created `<ToDo/>` components as **props**:
+
+~~~jsx {2,5-6} title="App.jsx"
+import ToDo from "./ToDo";
+import { getData } from "./data";
+
+function App() {
+  const { tasks, users, projects } = getData();
+  return <ToDo tasks={tasks} users={users} projects={projects} />;
+}
+
+export default App;
+~~~
+
+Open the ***ToDo.jsx*** file and apply the passed **props** to the To Do List configuration object:
+
+~~~jsx {4,8-10} title="ToDo.jsx"
+const ToDoComponent = ({ props }) => {
+    let container = useRef();
+
+    const { tasks, users, projects } = props;
+
+    useEffect(() => {
+        new ToDo(container.current, {
+            tasks,
+            users,
+            projects
+        });
+        return () => (container.current.innerHTML = "");
+    }, []);
+    
+    return <div ref={container}></div>;
+};
+
+export default ToDoComponent;
+~~~
+
+You can also use the `parse()` method inside the `useEffect()` method of React to load data into To Do List:
+
+~~~jsx {4,9} title="ToDo.jsx"
+const ToDoComponent = ({ props }) => {
+    let container = useRef();
+
+    const { tasks, users, projects } = props;
+
+    useEffect(() => {
+        const todo = new ToDo(container.current, {});
+
+        todo.parse({tasks, users, projects});
+
+        return () => (container.current.innerHTML = "");
+    }, []);
+    
+    return <div ref={container}></div>;
+};
+~~~
+
+The `todo.parse(data);` line provides data reloading on each applied change.
+
+Now the To Do List component is ready. When the element will be added to the page, it will initialize the To Do List object with data. You can provide necessary configuration settings as well. Visit our [To Do List API docs](/api/overview/configs_overview/) to check the full list of available properties.
+
+#### Handling events
+
+When a user makes some action in the To Do List, it invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](/api/overview/events_overview/).
+
+Open **ToDo.jsx** and complete the `useEffect()` method in the following way:
+
+~~~jsx {4-6} title="ToDo.jsx"
+useEffect(() => {
+    const todo = new ToDo(container.current, {});
+
+    todo.events.on("add-task", (obj) => {
+        console.log("A new task is added", obj);
+    });
+    
+    return () => (container.current.innerHTML = "");
+  }, []);
+~~~
+
+### Step 3. Adding To Do List into the app
+
+To add the component into our app, open the **App.jsx** file and replace the default code with the following one:
+
+~~~jsx title="App.jsx"
+import ToDo from "./ToDo";
+import { getData } from "./data";
+
+function App() {
+    const { tasks, users, projects } = getData();
+    return <ToDo tasks={tasks} users={users} projects={projects} />;
+}
+
+export default App;
+~~~
+
+After that, when you can start the app to see To Do List loaded with data on a page.
+
+![To Do List initialization](../assets/trial_todolist.png)
+
+Now you know how to integrate DHTMLX To Do List with React. You can customize the code according to your specific requirements. The final example you can find on [**GitHub**](https://github.com/DHTMLX/react-todolist-demo).
