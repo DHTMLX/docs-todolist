@@ -249,7 +249,7 @@ platformBrowserDynamic()
     .catch((err) => console.error(err));
 ~~~
 
-After that, when you can start the app to see To Do List loaded with data on a page.
+After that, you can start the app to see To Do List loaded with data on a page.
 
 ![To Do List initialization](../assets/trial_todolist.png)
 

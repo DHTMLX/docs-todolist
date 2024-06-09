@@ -255,7 +255,7 @@ To add the component into the app, open the **App.svelte** file and replace the 
 <ToDo {users} {tasks} {projects} />
 ~~~
 
-After that, when we start the app, we should see To Do List loaded with data on a page.
+After that, you can start the app to see To Do List loaded with data on a page.
 
 ![To Do List initialization](../assets/trial_todolist.png)
 
