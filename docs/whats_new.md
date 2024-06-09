@@ -8,6 +8,15 @@ description: You can learn a new information about DHTMLX JavaScript To Do List 
 
 If you are updating To Do List from an older version, check [Migration to newer version](migration.md) for details.
 
+## Version 1.2.9
+
+Released on June 11, 2024
+
+### Fixes
+
+- Script error when sorting an empty project
+- The submenus (Completed task -> Hide/Show) don't work on touch devices
+
 ## Version 1.2.8
 
 Released on February 29, 2024
