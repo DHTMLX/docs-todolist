@@ -208,7 +208,7 @@ const ToDoComponent = ({ props }) => {
 export default ToDoComponent;
 ~~~
 
-You can also use the `parse()` method inside the `useEffect()` method of React to load data into To Do List:
+You can also use the [`parse()`](/api/methods/parse_method/) method inside the `useEffect()` method of React to load data into To Do List:
 
 ~~~jsx {4,9} title="ToDo.jsx"
 const ToDoComponent = ({ props }) => {

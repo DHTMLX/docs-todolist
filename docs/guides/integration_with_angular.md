@@ -173,7 +173,7 @@ ngOnInit() {
 }
 ~~~
 
-You can also use the `parse()` method inside the `ngOnInit()` method of Angular to load data into To Do List. It will reload data on each applied change.
+You can also use the [`parse()`](/api/methods/parse_method/) method inside the `ngOnInit()` method of Angular to load data into To Do List. It will reload data on each applied change.
 
 ~~~jsx {8} title="todo.component.ts"
 // importing the data file
