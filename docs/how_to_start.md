@@ -6,7 +6,7 @@ description: You can learn about how to start working with DHTMLX To Do List in 
 
 # How to start
 
-This tutorial will teach you how to create a fully featured To Do List and add it into your web application. 
+This tutorial will teach you how to create a fully featured To Do List and add it into your web application.
 
 ![how_to_start](assets/todolist.png)
 
@@ -41,24 +41,20 @@ You need to include the following two files:
 </html>
 ~~~
 
+### Installing To Do List via npm and yarn
+
+You can import JavaScript To Do List into your project using `yarn` or `npm` package manager.
+
+#### Installing trial To Do List via npm and yarn
+
 :::info
-You can also import To Do List into your project using `yarn` or `npm` commands. To get the trial version of To Do List, run the following commands:
-
-~~~jsx {2-3,6-7}
-// npm
-npm config set @dhx:registry https://npm.dhtmlx.com
-npm i @dhx/trial-todolist
-
-// yarn
-yarn config set @dhx:registry https://npm.dhtmlx.com
-yarn add @dhx/trial-todolist
-~~~
-
-To get To Do List under the proprietary license, refer to **[Support Center](https://dhtmlx.com/docs/technical-support.shtml)**!
+If you want to use trial version of To Do List, download the [**trial To Do List package**](https://dhtmlx.com/docs/products/dhtmlxTodo/download.shtml) and follow steps mentioned in the *README* file. Note that trial To Do List is available 30 days only.
 :::
 
-:::tip
-If you want to integrate JavaScript To Do List into React, Angular or Vue projects, refer to the corresponding [**Examples on CodeSandbox**](https://codesandbox.io/u/DHTMLX) for more information.
+#### Installing PRO To Do List via npm and yarn
+
+:::info
+If you have already own To Do List under the proprietary license, send your **license number** on the *contact@dhtmlx.com* email to receive *login* and *password* for private **npm** as well as detailed guide on how to install To Do List. Note that private **npm** is available before the expiration of the proprietary To Do List license.
 :::
 
 ## Step 2. Create To Do List
