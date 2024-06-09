@@ -187,7 +187,7 @@ ngOnInit() {
 }
 ~~~
 
-Now the To Do List component is ready. When the element will be added to the page, it will initialize the To Do List object with data. You can provide necessary configuration settings as well. Visit our [To Do List API docs](/api/overview/properties_overview/) to check the full list of available properties.
+Now the To Do List component is ready. When the element will be added to the page, it will initialize the To Do List object with data. You can provide necessary configuration settings as well. Visit our [To Do List API docs](/api/overview/configs_overview/) to check the full list of available properties.
 
 #### Handling events
 
@@ -251,6 +251,6 @@ platformBrowserDynamic()
 
 After that, when you can start the app to see To Do List loaded with data on a page.
 
-![To Do List initialization](../assets/trial_todo.png)
+![To Do List initialization](../assets/trial_todolist.png)
 
 Now you know how to integrate DHTMLX To Do List with Angular. You can customize the code according to your specific requirements. The final example you can find on [**GitHub**](https://github.com/DHTMLX/angular-todolist-demo).
