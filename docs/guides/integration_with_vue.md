@@ -263,7 +263,7 @@ Open ***ToDo.vue*** and complete the `mounted()` method:
         // ...
         mounted() {
             this.todo = new ToDo(this.$refs.cont, {});
-            this.todo.events.on("add-card", (obj) => {
+            this.todo.api.on("add-card", (obj) => {
                 console.log(obj.columnId);
             });
         }
@@ -277,24 +277,28 @@ To add the component into the app, open the **App.vue** file and replace the def
 
 ~~~html title="App.vue"
 <script>
-    import ToDo from "./components/ToDo.vue";
-    import { getData } from "./data";
+import ToDo from "./components/ToDo.vue";
+import { getData } from "./data";
 
-    export default {
-        components: { ToDo },
-        data() {
-            const { columns, cards } = getData();
-            return { columns, cards };
-        }
-    };
+export default {
+    components: { ToDo },
+    data() {
+        const { users, projects, tasks } = getData();
+        return {
+            users,
+            projects,
+            tasks
+        };
+    }
+};
 </script>
 
 <template>
-    <ToDo :columns="columns" :cards="cards" />
+  <ToDo :users="users" :tasks="tasks" :projects="projects" />
 </template>
 ~~~
 
-After that, when you can start the app to see To Do List loaded with data on a page.
+After that, you can start the app to see To Do List loaded with data on a page.
 
 ![To Do List initialization](../assets/trial_todolist.png)
 

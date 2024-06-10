@@ -199,7 +199,7 @@ Open the **todo.component.ts** file and complete the `ngOnInit()` method as in:
 ngOnInit() {
     const todo = new ToDo(this.container.nativeElement,{ /*...*/ });
 
-    todo.events.on("add-task", (obj) => {
+    todo.api.on("add-task", (obj) => {
         console.log("A new task is added", obj);
     });
 }

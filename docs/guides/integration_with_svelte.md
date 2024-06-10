@@ -234,7 +234,7 @@ Open ***ToDo.svelte*** and complete the `onMount()` method as in:
 ~~~jsx title="ToDo.svelte"
 onMount(() => {
     const todo = new ToDo(container, { columns, cards });
-    todo.events.on("add-task", (obj) => {
+    todo.api.on("add-task", (obj) => {
         console.log("A new task is added", obj);
     });
 });

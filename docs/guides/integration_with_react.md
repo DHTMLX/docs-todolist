@@ -242,7 +242,7 @@ Open **ToDo.jsx** and complete the `useEffect()` method in the following way:
 useEffect(() => {
     const todo = new ToDo(container.current, {});
 
-    todo.events.on("add-task", (obj) => {
+    todo.api.on("add-task", (obj) => {
         console.log("A new task is added", obj);
     });
     
