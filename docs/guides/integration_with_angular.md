@@ -37,7 +37,7 @@ cd my-angular-todo-app
 Run the app with the following commands:
 
 ~~~json
-yarn install
+yarn
 yarn start
 ~~~
 
@@ -61,13 +61,13 @@ Open the file and import To Do List source files. Note that:
 
 - if you use PRO version and install the To Do List package from a local folder, the imported paths look like this:
 
-~~~jsx
+~~~jsx title="todo.components.ts"
 import { ToDo } from 'dhx-todolist-package';
 ~~~
 
 - if you use the trial version of To Do List, specify the following paths:
 
-~~~jsx
+~~~jsx title="todo.components.ts"
 import { ToDo } from '@dhx/trial-todolist';
 ~~~
 
@@ -80,27 +80,28 @@ To display To Do List on the page, you need to set the container to render the c
 ~~~jsx title="todo.component.ts"
 import { ToDo } from '@dhx/trial-todolist';
 import { Component, ElementRef, OnInit, ViewChild, OnDestroy} from '@angular/core';
-
+// ...
 @Component({
     selector: 'todo',
     template: '<div #container></div>'
 })
 export class ToDoComponent implements OnInit {
     @ViewChild('container', { static: true }) container!: ElementRef;
+    // ...
 }
 ~~~
 
 Then you need to render our To Do List in the container. To do that, use the `ngOnInit()` method of Angular:
 
-~~~jsx {6-9} title="todo.component.ts"
+~~~jsx {7-9} title="todo.component.ts"
+// ...
 export class ToDoComponent implements OnInit, OnDestroy {
     @ViewChild('container', { static: true }) container!: ElementRef;
 
     private _todo!: ToDo;
 
     ngOnInit() {
-        const todo = new ToDo(this.container.nativeElement,{});
-        this._todo = todo;
+        this._todo = new ToDo(this.container.nativeElement,{});
     }
 
     ngOnDestroy() {
@@ -122,7 +123,7 @@ export function getData() {
             id: "temp://1652991560212",
             project: "introduction",
             text: "Greetings, everyone! \u{1F44B} \nI'm DHTMLX To Do List.",
-            priority: 1,
+            priority: 1
         },
         {
             id: "1652374122964",
@@ -130,7 +131,7 @@ export function getData() {
             text: "You can assign task performers and due dates using the menu.",
             assigned: ["user_4", "user_1", "user_2", "user_3"],
             due_date: "2033-03-08T21:00:00.000Z",
-            priority: 2,
+            priority: 2
         },
         // ...
     ];
@@ -139,7 +140,7 @@ export function getData() {
             id: "user_1",
             label: "Don Smith",
             avatar:
-                "https://snippet.dhtmlx.com/codebase/data/common/img/02/avatar_61.jpg",
+                "https://snippet.dhtmlx.com/codebase/data/common/img/02/avatar_61.jpg"
         },
         // ...
     ];
@@ -159,32 +160,34 @@ export function getData() {
 
 Then open the ***todo.component.ts*** file. Import the file with data and specify the corresponding data properties to the configuration object of To Do List within the `ngOnInit()` method, as shown below.
 
-~~~jsx {2,6-9} title="todo.component.ts"
+~~~jsx {2,5,7-9} title="todo.component.ts"
 // importing the data file
 import { getData } from './data';
-
+// ...
 ngOnInit() {
     const { users, tasks, projects } = getData();
-    const todo = new ToDo(this.container.nativeElement, {
+    this._todo = new ToDo(this.container.nativeElement, {
         users,
         tasks,
         projects
     });
 }
+// ...
 ~~~
 
 You can also use the [`parse()`](/api/methods/parse_method/) method inside the `ngOnInit()` method of Angular to load data into To Do List. It will reload data on each applied change.
 
-~~~jsx {8} title="todo.component.ts"
+~~~jsx {5,8} title="todo.component.ts"
 // importing the data file
 import { getData } from './data';
+// ...
+    ngOnInit() {
+        const { users, tasks, projects } = getData();
+        const todo = new ToDo(this.container.nativeElement, {});
 
-ngOnInit() {
-    const { users, tasks, projects } = getData();
-    const todo = new ToDo(this.container.nativeElement, {});
-
-    todo.parse({users, tasks, projects});
-}
+        todo.parse({users, tasks, projects});
+    }
+// ...
 ~~~
 
 Now the To Do List component is ready. When the element will be added to the page, it will initialize the To Do List object with data. You can provide necessary configuration settings as well. Visit our [To Do List API docs](/api/overview/configs_overview/) to check the full list of available properties.
@@ -196,13 +199,14 @@ When a user makes some action in the To Do List, it invokes an event. You can us
 Open the **todo.component.ts** file and complete the `ngOnInit()` method as in:
 
 ~~~jsx {4-6} title="todo.component.ts"
+// ...
 ngOnInit() {
-    const todo = new ToDo(this.container.nativeElement,{ /*...*/ });
-
-    todo.api.on("add-task", (obj) => {
-        console.log("A new task is added", obj);
+    // ... ToDoList initialization, data loading, and other...
+    this._todo.api.on("add-task", ({ id }) => {
+        console.log("A new task is added", id);
     });
 }
+// ...
 ~~~
 
 ### Step 3. Adding To Do List into the app

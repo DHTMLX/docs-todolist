@@ -41,7 +41,7 @@ Install dependencies and start the dev server. For this, use a package manager:
 - if you use [**yarn**](https://yarnpkg.com/), run the following commands:
 
 ~~~json
-yarn install
+yarn
 yarn dev
 ~~~
 
@@ -73,8 +73,10 @@ Open the ***ToDo.vue*** file and import ToDo source files. Note that:
 - if you use PRO version and install the To Do List package from a local folder, the import paths look like this:
 
 ~~~html title="ToDo.vue"
-import { ToDo } from 'dhx-todolist-package';
-import 'dhx-todolist-package/dist/todo.css';
+<script>
+    import { ToDo } from 'dhx-todolist-package';
+    import 'dhx-todolist-package/dist/todo.css';
+</script>
 ~~~
 
 Note that depending on the used package, the source files can be minified. In this case make sure that you are importing the CSS file as **todo.min.css**.
@@ -82,8 +84,10 @@ Note that depending on the used package, the source files can be minified. In th
 - if you use the trial version of To Do List, specify the following paths:
 
 ~~~html title="ToDo.vue"
-import { ToDo } from '@dhx/trial-todolist';
-import '@dhx/trial-todolist/dist/todo.css';
+<script>
+    import { ToDo } from '@dhx/trial-todolist';
+    import '@dhx/trial-todolist/dist/todo.css';
+</script>
 ~~~
 
 In this tutorial you can see how to configure the **trial** version of To Do List.
@@ -92,10 +96,11 @@ In this tutorial you can see how to configure the **trial** version of To Do Lis
 
 To display To Do List on the page, you need to set the container to render the component inside. Check the code below:
 
-~~~html {6-8} title="ToDo.vue"
+~~~html {7-9} title="ToDo.vue"
 <script>
     import { ToDo } from "@dhx/trial-todolist";
     import "@dhx/trial-todolist/dist/todo.css";
+    // ...
 </script>
 
 <template>
@@ -122,8 +127,9 @@ Then you need to render To Do List in the container. Use the `new ToDo()` constr
 
 To clear the component as it has unmounted, use the `todo.destructor()` method and remove the container inside the `unmounted()` method of ***Vue.js***, as follows:
 
-~~~html {7-10} title="ToDo.vue"
+~~~html {8-11} title="ToDo.vue"
 <script>
+    // ...
     export default {
         mounted: function() {
             this.todo = new ToDo(this.$refs.container, {});
@@ -191,7 +197,7 @@ Then open the ***App.vue*** file, import data, and initialize it via the inner `
 
 ~~~html {3,7-14,19} title="App.vue"
 <script>
-    // ...
+    import ToDo from "./components/ToDo.vue";
     import { getData } from "./data";
 
     export default {
@@ -208,14 +214,15 @@ Then open the ***App.vue*** file, import data, and initialize it via the inner `
 </script>
 
 <template>
-    <ToDo :columns="columns" :cards="cards" />
+    <ToDo :users="users" :tasks="tasks" :projects="projects" />
 </template>
 ~~~
 
 Open the ***ToDo.vue*** file and apply the passed **props** to the To Do List configuration object:
 
-~~~html {3,7-8} title="ToDo.vue"
+~~~html {4,8-10} title="ToDo.vue"
 <script>
+    // ...
     export default {
         props: ["tasks", "users", "projects"],
 
@@ -228,12 +235,15 @@ Open the ***ToDo.vue*** file and apply the passed **props** to the To Do List co
         }
     }
 </script>
+
+<!--...-->
 ~~~
 
 You can also use the [`parse()`](/api/methods/parse_method/) method inside the `mounted()` method of Vue to load data into To Do List:
 
-~~~html {7} title="ToDo.vue"
+~~~html {4,8-12} title="ToDo.vue"
 <script>
+    // ...
     export default {
         props: ["tasks", "users", "projects"],
 
@@ -247,6 +257,8 @@ You can also use the [`parse()`](/api/methods/parse_method/) method inside the `
         }
     }
 </script>
+
+<!--...-->
 ~~~
 
 Now the To Do List component is ready. When the element will be added to the page, it will initialize the To Do List object with data. You can provide necessary configuration settings as well. Visit our [To Do List API docs](/api/overview/configs_overview/) to check the full list of available properties.
@@ -257,18 +269,21 @@ When a user makes some action in the To Do List, it invokes an event. You can us
 
 Open ***ToDo.vue*** and complete the `mounted()` method:
 
-~~~html {6-8} title="ToDo.vue"
+~~~html {7-9} title="ToDo.vue"
 <script>
+    // ...
     export default {
         // ...
         mounted() {
             this.todo = new ToDo(this.$refs.cont, {});
-            this.todo.api.on("add-card", (obj) => {
-                console.log(obj.columnId);
+            this.todo.api.on("add-task", ({ id }) => {
+                console.log("A new task is added", id);
             });
         }
     }
 </script>
+
+<!--...-->
 ~~~
 
 ### Step 3. Adding To Do List into the app

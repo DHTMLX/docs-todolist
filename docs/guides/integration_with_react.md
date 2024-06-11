@@ -37,7 +37,7 @@ Install dependencies and start the dev server. For this, use a package manager:
 - if you use [**yarn**](https://yarnpkg.com/), run the following commands:
 
 ~~~json
-yarn install
+yarn
 yarn dev
 ~~~
 
@@ -96,7 +96,7 @@ import '@dhx/trial-todolist/dist/todo.css';
 // eslint-disable-next-line react/prop-types
 const ToDoComponent = () => {
     let container = useRef();
-
+    // ...
     return <div ref={container} style={{ width: "100%", height: "100%" }}></div>;
 };
 
@@ -187,7 +187,8 @@ export default App;
 
 Open the ***ToDo.jsx*** file and apply the passed **props** to the To Do List configuration object:
 
-~~~jsx {4,8-10} title="ToDo.jsx"
+~~~jsx {5,9-11} title="ToDo.jsx"
+// ...
 const ToDoComponent = ({ props }) => {
     let container = useRef();
 
@@ -210,7 +211,8 @@ export default ToDoComponent;
 
 You can also use the [`parse()`](/api/methods/parse_method/) method inside the `useEffect()` method of React to load data into To Do List:
 
-~~~jsx {4,9} title="ToDo.jsx"
+~~~jsx {5,10} title="ToDo.jsx"
+// ...
 const ToDoComponent = ({ props }) => {
     let container = useRef();
 
@@ -226,6 +228,8 @@ const ToDoComponent = ({ props }) => {
     
     return <div ref={container}></div>;
 };
+
+export default ToDoComponent;
 ~~~
 
 The `todo.parse(data);` line provides data reloading on each applied change.
@@ -239,6 +243,7 @@ When a user makes some action in the To Do List, it invokes an event. You can us
 Open **ToDo.jsx** and complete the `useEffect()` method in the following way:
 
 ~~~jsx {4-6} title="ToDo.jsx"
+// ...
 useEffect(() => {
     const todo = new ToDo(container.current, {});
 
@@ -247,7 +252,8 @@ useEffect(() => {
     });
     
     return () => (container.current.innerHTML = "");
-  }, []);
+}, []);
+// ...
 ~~~
 
 ### Step 3. Adding To Do List into the app

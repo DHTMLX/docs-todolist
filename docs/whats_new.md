@@ -15,8 +15,8 @@ Released on June 11, 2024
 ### Fixes
 
 - Script error when sorting an empty project
-- The submenus (Completed task -> Hide/Show) don't work on touch devices
-- TS. Incorect types for api object
+- The submenus don't work on touch devices
+- Incorrect types for "api" object
 
 ## Version 1.2.8
 

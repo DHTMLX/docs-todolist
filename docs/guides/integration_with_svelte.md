@@ -45,7 +45,7 @@ Install dependencies and run the app. For this, use a package manager:
 - if you use [**yarn**](https://yarnpkg.com/), run the following commands:
 
 ~~~json
-yarn install
+yarn
 yarn dev
 ~~~
 
@@ -77,8 +77,10 @@ Open the ***ToDo.svelte*** file and import To Do List source files. Note that:
 - if you use PRO version and install the To Do List package from a local folder, the import paths look like this:
 
 ~~~html title="ToDo.svelte"
-import { ToDo } from 'dhx-todolist-package';
-import 'dhx-todolist-package/dist/todo.css';
+<script>
+    import { ToDo } from 'dhx-todolist-package';
+    import 'dhx-todolist-package/dist/todo.css';
+</script>
 ~~~
 
 Note that depending on the used package, the source files can be minified. In this case make sure that you are importing the CSS file as **todo.min.css**.
@@ -86,8 +88,10 @@ Note that depending on the used package, the source files can be minified. In th
 - if you use the trial version of To Do List, specify the following paths:
 
 ~~~html title="ToDo.svelte"
-import { ToDo } from '@dhx/trial-todolist';
-import '@dhx/trial-todolist/dist/todo.css';
+<script>
+    import { ToDo } from '@dhx/trial-todolist';
+    import '@dhx/trial-todolist/dist/todo.css';
+</script>
 ~~~
 
 In this tutorial you can see how to configure the **trial** version of To Do List.
@@ -96,12 +100,13 @@ In this tutorial you can see how to configure the **trial** version of To Do Lis
 
 To display To Do List on the page, you need to set the container to render the component inside. Check the code below:
 
-~~~html {5,8} title="ToDo.svelte"
+~~~html {5,9} title="ToDo.svelte"
 <script>
     import { ToDo } from "@dhx/trial-todolist";
     import "@dhx/trial-todolist/dist/todo.css"
     
     let container;
+    // ...
 </script>
 
 <div bind:this={container} style="width: 100%; height: 100%;"></div>
@@ -109,7 +114,7 @@ To display To Do List on the page, you need to set the container to render the c
 
 Then you need to render To Do List in the container. Use the `new ToDo()` constructor inside the `onMount()` method of Svelte, to initialize To Do List inside of the container:
 
-~~~html {4,8-10} title="ToDo.svelte"
+~~~html {4,8-12} title="ToDo.svelte"
 <script>
     import { ToDo } from "@dhx/trial-todolist";
     import "@dhx/trial-todolist/dist/todo.css";
@@ -118,7 +123,9 @@ Then you need to render To Do List in the container. Use the `new ToDo()` constr
     let container;
 
     onMount(() => {
-        new ToDo(container,{}); 
+        new ToDo(container,{
+            // ...
+        }); 
     });
 </script>
 
@@ -136,7 +143,7 @@ export function getData() {
             id: "temp://1652991560212",
             project: "introduction",
             text: "Greetings, everyone! \u{1F44B} \nI'm DHTMLX To Do List.",
-            priority: 1,
+            priority: 1
         },
         {
             id: "1652374122964",
@@ -144,7 +151,7 @@ export function getData() {
             text: "You can assign task performers and due dates using the menu.",
             assigned: ["user_4", "user_1", "user_2", "user_3"],
             due_date: "2033-03-08T21:00:00.000Z",
-            priority: 2,
+            priority: 2
         },
         // ...
     ];
@@ -153,7 +160,7 @@ export function getData() {
             id: "user_1",
             label: "Don Smith",
             avatar:
-                "https://snippet.dhtmlx.com/codebase/data/common/img/02/avatar_61.jpg",
+                "https://snippet.dhtmlx.com/codebase/data/common/img/02/avatar_61.jpg"
         },
         // ...
     ];
@@ -175,7 +182,7 @@ Then open the ***App.svelte*** file, import data, and pass it into the new creat
 
 ~~~html {3-4,7} title="App.svelte"
 <script>
-    // ...
+    import ToDo from "./ToDo.svelte";
     import { getData } from "./data.js";
     const { users, tasks, projects } = getData();
 </script>
@@ -185,7 +192,7 @@ Then open the ***App.svelte*** file, import data, and pass it into the new creat
 
 Open the ***ToDo.svelte*** file and apply the passed **props** to the To Do List configuration object:
 
-~~~html {3-5,10-12} title="App.svelte"
+~~~html {3-5,10-12} title="ToDo.svelte"
 <script>
     // ...
     export let users;
@@ -220,7 +227,8 @@ You can also use the [`parse()`](/api/methods/parse_method/) method inside the `
         todo.parse({ users, tasks, projects });
     });
 </script>
-<!-- ... -->
+
+<div bind:this={container} style="width: 100%; height: 100%;"></div>
 ~~~
 
 Now the To Do List component is ready. When the element will be added to the page, it will initialize the To Do List object with data. You can provide necessary configuration settings as well. Visit our [To Do List API docs](/api/overview/configs_overview/) to check the full list of available properties.
@@ -231,13 +239,18 @@ When a user makes some action in the To Do List, it invokes an event. You can us
 
 Open ***ToDo.svelte*** and complete the `onMount()` method as in:
 
-~~~jsx title="ToDo.svelte"
-onMount(() => {
-    const todo = new ToDo(container, { columns, cards });
-    todo.api.on("add-task", (obj) => {
-        console.log("A new task is added", obj);
+~~~html title="ToDo.svelte"
+<script>
+    // ...
+    onMount(() => {
+        const todo = new ToDo(container, { users, tasks, projects });
+        todo.api.on("add-task", (obj) => {
+            console.log("A new task is added", obj);
+        });
     });
-});
+</script>
+
+<div bind:this={container} style="width: 100%; height: 100%;"></div>
 ~~~
 
 ### Step 3. Adding To Do List into the app
