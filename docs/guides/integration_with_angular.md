@@ -110,7 +110,7 @@ export class ToDoComponent implements OnInit, OnDestroy {
 }
 ~~~
 
-In the above code you also specified the `ngOnDestroy()` method that contains the `_todo.destructor()` expression to clear the component when it is no longer needed.
+In the above code you also specified the `ngOnDestroy()` method that contains the `this._todo.destructor()` expression to clear the component when it is no longer needed.
 
 #### Loading data
 
@@ -181,12 +181,12 @@ You can also use the [`parse()`](/api/methods/parse_method/) method inside the `
 // importing the data file
 import { getData } from './data';
 // ...
-    ngOnInit() {
-        const { users, tasks, projects } = getData();
-        const todo = new ToDo(this.container.nativeElement, {});
+ngOnInit() {
+    const { users, tasks, projects } = getData();
+    const todo = new ToDo(this.container.nativeElement, {});
 
-        todo.parse({users, tasks, projects});
-    }
+    todo.parse({users, tasks, projects});
+}
 // ...
 ~~~
 

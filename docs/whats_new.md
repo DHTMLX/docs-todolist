@@ -10,7 +10,7 @@ If you are updating To Do List from an older version, check [Migration to newer 
 
 ## Version 1.2.9
 
-Released on June 11, 2024
+Released on June DAY, 2024
 
 ### Fixes
 

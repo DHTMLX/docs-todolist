@@ -125,7 +125,7 @@ Then you need to render To Do List in the container. Use the `new ToDo()` constr
 </template>
 ~~~
 
-To clear the component as it has unmounted, use the `todo.destructor()` method and remove the container inside the `unmounted()` method of ***Vue.js***, as follows:
+To clear the component as it has unmounted, use the `this.todo.destructor()` method and remove the container inside the `unmounted()` method of ***Vue.js***, as follows:
 
 ~~~html {8-11} title="ToDo.vue"
 <script>

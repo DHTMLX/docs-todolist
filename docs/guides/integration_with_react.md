@@ -136,7 +136,7 @@ export function getData() {
             id: "temp://1652991560212",
             project: "introduction",
             text: "Greetings, everyone! \u{1F44B} \nI'm DHTMLX To Do List.",
-            priority: 1,
+            priority: 1
         },
         {
             id: "1652374122964",
@@ -144,7 +144,7 @@ export function getData() {
             text: "You can assign task performers and due dates using the menu.",
             assigned: ["user_4", "user_1", "user_2", "user_3"],
             due_date: "2033-03-08T21:00:00.000Z",
-            priority: 2,
+            priority: 2
         },
         // ...
     ];
@@ -153,7 +153,7 @@ export function getData() {
             id: "user_1",
             label: "Don Smith",
             avatar:
-                "https://snippet.dhtmlx.com/codebase/data/common/img/02/avatar_61.jpg",
+                "https://snippet.dhtmlx.com/codebase/data/common/img/02/avatar_61.jpg"
         },
         // ...
     ];
