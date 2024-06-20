@@ -10,7 +10,7 @@ description: You can learn about the integration with Angular in the documentati
 You should be familiar with basic concepts and patterns of **Angular** before reading this documentation. To refresh your knowledge, please refer to the [**Angular documentation**](https://angular.io/docs).
 :::
 
-DHTMLX To Do List is compatible with **Angular**. We have prepared code examples on how to use DHTMLX To Do List with **Angular**. For more information, refer to the corresponding [**Example on GitHub**](https://github.com/DHTMLX/angular-todolist-demo).
+DHTMLX To Do List is compatible with **Angular**. We prepared code examples on how to use DHTMLX To Do List with **Angular**. For more information, refer to the corresponding [**Example on GitHub**](https://github.com/DHTMLX/angular-todolist-demo).
 
 ## Creating a project
 
@@ -18,7 +18,7 @@ DHTMLX To Do List is compatible with **Angular**. We have prepared code examples
 Before you start to create a new project, install [**Angular CLI**](https://angular.io/cli) and [**Node.js**](https://nodejs.org/en/).
 :::
 
-Create a new **my-angular-todo-app** project using Angular CLI. Run the following command for this purpose:
+Create a new **my-angular-todo-app** project using Angular CLI. For this purpose, run the following command:
 
 ~~~json
 ng new my-angular-todo-app
@@ -53,11 +53,11 @@ Download the [**trial To Do List package**](/how_to_start/#installing-to-do-list
   
 ### Step 2. Component creation
 
-Now you need to create a component, to add a To Do List into the application. Create the **todo** folder in the **src/app/todo** directory, add a new file into it and name it **todo.component.ts**. Then complete the steps described below.
+Now you need to create a component, to add a To Do List into the application. Create the **todo** folder in the **src/app/** directory, add a new file into it and name it **todo.component.ts**. Then complete the steps described below.
 
-#### Importing source files
+#### Import source files
 
-Open the file and import To Do List source files. Note that:
+Open the **todo.component.ts** file and import To Do List source files. Note that:
 
 - if you use PRO version and install the To Do List package from a local folder, the imported paths look like this:
 
@@ -73,50 +73,43 @@ import { ToDo } from '@dhx/trial-todolist';
 
 In this tutorial you can see how to configure the **trial** version of To Do List.
 
-#### Setting the container and adding To Do List
+#### Set the container and initialize the To Do List component
 
-To display To Do List on the page, you need to set the container to render the component inside. Use the code below:
+To display To Do List on the page, you need to set the container and initialize the component within the container:
 
-~~~jsx title="todo.component.ts"
-import { ToDo } from '@dhx/trial-todolist';
+~~~jsx {7,11-12,16-19} title="todo.component.ts"
+import { ToDo } from '@dhx/trial-todolist'; 
 import { Component, ElementRef, OnInit, ViewChild, OnDestroy} from '@angular/core';
-// ...
+
 @Component({
-    selector: 'todo',
-    template: '<div #container></div>'
+    selector: "todo", // a template name used in the "app.component.ts" file as <todo />
+    styleUrls: ["./todo.component.css"], // include a css file
+    template: `<div #here class="widget"></div>`,
 })
-export class ToDoComponent implements OnInit {
-    @ViewChild('container', { static: true }) container!: ElementRef;
-    // ...
-}
-~~~
 
-Then you need to render our To Do List in the container. To do that, use the `ngOnInit()` method of Angular:
-
-~~~jsx {7-9} title="todo.component.ts"
-// ...
 export class ToDoComponent implements OnInit, OnDestroy {
-    @ViewChild('container', { static: true }) container!: ElementRef;
+    // set the container where the To Do List will be initialized
+    @ViewChild("here", { static: true }) container!: ElementRef;
 
-    private _todo!: ToDo;
+    private _todo!: any;
 
     ngOnInit() {
-        this._todo = new ToDo(this.container.nativeElement,{});
+        // initialize the To Do List component
+        this._todo = new ToDo(this.container.nativeElement, { /* configuration properties */ });
     }
 
-    ngOnDestroy() {
+    ngOnDestroy(): void {
+        // destruct the To Do List component
         this._todo.destructor();
     }
 }
 ~~~
 
-In the above code you also specified the `ngOnDestroy()` method that contains the `this._todo.destructor()` expression to clear the component when it is no longer needed.
-
 #### Loading data
 
-To add data into To Do List, you need to provide a data set. You can create the **data.ts** file in the **src/app/todo/** directory and add some data into it:
+To load data into To Do List, you need to provide a data set. You can create the **data.ts** file in the **src/app/todo/** directory and add some data into it:
 
-~~~jsx title="data.ts"
+~~~jsx {2,19,28,38} title="data.ts"
 export function getData() {
     const tasks = [
         {
@@ -158,36 +151,72 @@ export function getData() {
 }
 ~~~
 
-Then open the ***todo.component.ts*** file. Import the file with data and specify the corresponding data properties to the configuration object of To Do List within the `ngOnInit()` method, as shown below.
+Then open the ***todo.component.ts*** file. Import the file with data and specify the corresponding data properties to the configuration object of To Do List within the `ngOnInit()` method, as shown below:
 
-~~~jsx {2,5,7-9} title="todo.component.ts"
-// importing the data file
-import { getData } from './data';
-// ...
-ngOnInit() {
-    const { users, tasks, projects } = getData();
-    this._todo = new ToDo(this.container.nativeElement, {
-        users,
-        tasks,
-        projects
-    });
+~~~jsx {1,17,19-21} title="todo.component.ts"
+import { getData } from './data'; // import the data file
+import { ToDo } from '@dhx/trial-todolist';
+import { Component, ElementRef, OnInit, ViewChild, OnDestroy} from '@angular/core';
+
+@Component({
+    selector: "todo", 
+    styleUrls: ["./todo.component.css"],
+    template: `<div #here class="widget"></div>`,
+})
+
+export class ToDoComponent implements OnInit, OnDestroy {
+    @ViewChild("here", { static: true }) container!: ElementRef;
+
+    private _todo!: any;
+
+    ngOnInit() {
+        const { users, tasks, projects } = getData(); // initialize the data items
+        this._todo = new ToDo(this.container.nativeElement, {
+            users, // apply user data
+            tasks, // apply task data
+            projects // apply project data
+        });
+    }
+
+    ngOnDestroy(): void {
+        this._todo.destructor();
+    }
 }
-// ...
 ~~~
 
 You can also use the [`parse()`](/api/methods/parse_method/) method inside the `ngOnInit()` method of Angular to load data into To Do List. It will reload data on each applied change.
 
-~~~jsx {5,8} title="todo.component.ts"
-// importing the data file
-import { getData } from './data';
-// ...
-ngOnInit() {
-    const { users, tasks, projects } = getData();
-    const todo = new ToDo(this.container.nativeElement, {});
+~~~jsx {1,17,19-24} title="todo.component.ts"
+import { getData } from './data'; // import the data file
+import { ToDo } from '@dhx/trial-todolist';
+import { Component, ElementRef, OnInit, ViewChild, OnDestroy} from '@angular/core';
 
-    todo.parse({users, tasks, projects});
+@Component({
+    selector: "todo",
+    styleUrls: ["./todo.component.css"],
+    template: `<div #here class="widget"></div>`,
+})
+
+export class ToDoComponent implements OnInit, OnDestroy {
+    @ViewChild("here", { static: true }) container!: ElementRef;
+
+    private _todo!: any;
+
+    ngOnInit() {
+        const { users, tasks, projects } = getData(); // initialize the data items
+        this._todo = new ToDo(this.container.nativeElement, {});
+        // apply the data items via the parse() method
+        this._todo.parse({ 
+            users, 
+            tasks, 
+            projects 
+        }); 
+    }
+
+    ngOnDestroy(): void {
+        this._todo.destructor();
+    }
 }
-// ...
 ~~~
 
 Now the To Do List component is ready. When the element will be added to the page, it will initialize the To Do List object with data. You can provide necessary configuration settings as well. Visit our [To Do List API docs](/api/overview/configs_overview/) to check the full list of available properties.
@@ -198,36 +227,56 @@ When a user makes some action in the To Do List, it invokes an event. You can us
 
 Open the **todo.component.ts** file and complete the `ngOnInit()` method as in:
 
-~~~jsx {4-6} title="todo.component.ts"
-// ...
-ngOnInit() {
-    // ... ToDoList initialization, data loading, and other...
-    this._todo.api.on("add-task", ({ id }) => {
-        console.log("A new task is added", id);
-    });
+~~~jsx {19-22} title="todo.component.ts"
+import { getData } from './data';
+import { ToDo } from '@dhx/trial-todolist';
+import { Component, ElementRef, OnInit, ViewChild, OnDestroy} from '@angular/core';
+
+@Component({
+    selector: "todo",
+    styleUrls: ["./todo.component.css"],
+    template: `<div #here class="widget"></div>`,
+})
+
+export class ToDoComponent implements OnInit, OnDestroy {
+    @ViewChild("here", { static: true }) container!: ElementRef;
+
+    private _todo!: any;
+
+    ngOnInit() {
+        const { users, tasks, projects } = getData();
+        this._todo = new ToDo(this.container.nativeElement, { users, tasks, projects });
+        // subscribe on the "add-task" event
+        this._todo.events.on("add-task", (obj) => {
+            console.log("Angular", obj);
+        });
+    }
+
+    ngOnDestroy(): void {
+        this._todo.destructor();
+    }
 }
-// ...
 ~~~
 
 ### Step 3. Adding To Do List into the app
 
 Now it's time to add the component into your app. Open ***src/app/app.component.ts*** and use *ToDoComponent* instead of the default content by inserting the code below:
 
-~~~jsx title="app.component.ts"
+~~~jsx {5} title="app.component.ts"
 import { Component } from "@angular/core";
 
 @Component({
     selector: "app-root",
-    template: `<todo/>`
+    template: `<todo/>` // a template created in the "todo.component.ts" file 
 })
 export class AppComponent {
     name = "";
 }
 ~~~
 
-Then create the ***app.module.ts*** file in the ***src/app/*** directory and insert the *ToDoComponent* as provided below:
+Then create the ***app.module.ts*** file in the ***src/app/*** directory and insert the *ToDoComponent* as shown below:
 
-~~~jsx title="app.module.ts"
+~~~jsx {4-5,8} title="app.module.ts"
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 
@@ -237,7 +286,6 @@ import { ToDoComponent } from "./todo/todo.component";
 @NgModule({
     declarations: [AppComponent, ToDoComponent],
     imports: [BrowserModule],
-    providers: [],
     bootstrap: [AppComponent]
 })
 export class AppModule {}
