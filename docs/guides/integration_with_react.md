@@ -86,7 +86,7 @@ In this tutorial you can see how to configure the **trial** version of To Do Lis
 
 #### Setting containers and adding To Do List with Toolbar
 
-To display To Do List with Toolbar on the page, you need to create containers for To Do List and Toolbar, and initialize this components using the corresponding constructors:
+To display To Do List with Toolbar on the page, you need to create containers for To Do List and Toolbar, and initialize these components using the corresponding constructors:
 
 ~~~jsx {2,6-7,10-11,13-17} title="ToDo.jsx"
 import { useEffect, useRef } from "react";
@@ -219,7 +219,7 @@ export default function ToDoComponent(props) {
 
 You can also use the [`parse()`](/api/methods/parse_method/) method inside the `useEffect()` method of React to load data into To Do List:
 
-~~~jsx {17} title="ToDo.jsx"
+~~~jsx {9-11,21} title="ToDo.jsx"
 import { useEffect, useRef } from "react";
 import { ToDo, Toolbar } from "@dhx/trial-todolist";
 import "@dhx/trial-todolist/dist/todo.css";
@@ -227,6 +227,10 @@ import "@dhx/trial-todolist/dist/todo.css";
 export default function ToDoComponent(props) {
     let todo_container = useRef();
     let toolbar_container = useRef();
+
+    let tasks = props.tasks; 
+    let users = props.users; 
+    let projects = props.users;
 
     useEffect(() => {
         const todo = new ToDo(todo_container.current, {});
@@ -279,7 +283,7 @@ useEffect(() => {
 
 ### Step 3. Adding To Do List into the app
 
-To add the component into our app, open the ***App.jsx*** file and replace the default code with the following one:
+To add the component into the app, open the ***App.jsx*** file and replace the default code with the following one:
 
 ~~~jsx title="App.jsx"
 import ToDo from "./ToDo";
