@@ -60,76 +60,71 @@ Download the [**trial To Do List package**](/how_to_start/#installing-to-do-list
 
 ### Step 2. Component creation
 
-Now you need to create a React component, to add a To Do List into the application. Create a new file in the ***src/*** directory and name it ***ToDo.jsx***.
+Now you need to create a React component, to add a To Do List with Toolbar into the application. Create a new file in the ***src/*** directory and name it ***ToDo.jsx***.
 
-#### Importing source files
+#### Import source files
 
 Open the ***ToDo.jsx*** file and import To Do List source files. Note that:
 
 - if you use PRO version and install the To Do List package from a local folder, the import paths look like this:
 
 ~~~jsx title="ToDo.jsx"
-import { ToDo } from 'dhx-todolist-package';
+import { ToDo, Toolbar } from 'dhx-todolist-package';
 import 'dhx-todolist-package/dist/todo.css';
 ~~~
 
-Note that depending on the used package, the source files can be minified. In this case make sure that you are importing the CSS file as **todo.min.css**.
+Note that depending on the used package, the source files can be minified. In this case make sure that you are importing the CSS file as ***todo.min.css***.
 
 - if you use the trial version of To Do List, specify the following paths:
 
 ~~~jsx title="ToDo.jsx"
-import { ToDo } from '@dhx/trial-todolist';
+import { ToDo, Toolbar } from '@dhx/trial-todolist';
 import "@dhx/trial-todolist/dist/todo.css";
 ~~~
 
 In this tutorial you can see how to configure the **trial** version of To Do List.
 
-#### Setting the container and adding To Do List
+#### Setting containers and adding To Do List with Toolbar
 
-To display To Do List on the page, you need to set the container to render the component inside. Check the code below:
+To display To Do List with Toolbar on the page, you need to create containers for To Do List and Toolbar, and initialize this components using the corresponding constructors:
 
-~~~jsx title="ToDo.jsx"
+~~~jsx {2,6-7,10-11,13-17} title="ToDo.jsx"
 import { useEffect, useRef } from "react";
-import { ToDo } from '@dhx/trial-todolist';
-import '@dhx/trial-todolist/dist/todo.css';
+import { ToDo, Toolbar } from "@dhx/trial-todolist";
+import "@dhx/trial-todolist/dist/todo.css";
 
-// eslint-disable-next-line react/prop-types
-const ToDoComponent = () => {
-    let container = useRef();
-    // ...
-    return <div ref={container} style={{ width: "100%", height: "100%" }}></div>;
-};
-
-export default ToDoComponent;
-~~~
-
-Then you need to add To Do List into the container. For this purpose, import the `useEffect()` method of React and use it to render the To Do List instance and destruct when it is no longer needed:
-
-~~~jsx {2,8-12} title="ToDo.jsx"
-// ...
-import { useEffect, useRef} from "react";
-
-// eslint-disable-next-line react/prop-types
-const ToDoComponent = () => {
-    let container = useRef();
+export default function ToDoComponent(props) {
+    let toolbar_container = useRef(); // initialize container for Toolbar
+    let todo_container = useRef(); // initialize container for To Do List 
 
     useEffect(() => {
-        new ToDo(container.current, {});
+        // initialize the To Do List component
+        const todo = new ToDo(todo_container.current, {});
 
-        return () => (container.current.innerHTML = "");
+        // initialize the Toolbar component
+        const toolbar = new Toolbar(toolbar_container.current, {
+            api: todo.api, // provide To Do List inner API
+            // other configuration properties
+        });
+
+        return () => {
+            todo.destructor(); // destruct To Do List
+            toolbar.destructor(); // destruct Toolbar
+        };
     }, []);
-    
-    return <div ref={container} style={{ width: "100%", height: "100%" }}></div>;
-};
 
-export default ToDoComponent;
+    return  <div>
+                <div ref={toolbar_container}></div>
+                <div ref={todo_container} style={{ width: "100%", height: "100%" }}></div>
+            </div>
+}
 ~~~
 
 #### Loading data
 
 To add data into the To Do List, you need to provide a data set. You can create the ***data.js*** file in the ***src/*** directory and add some data into it:
 
-~~~jsx title="data.js"
+~~~jsx {2,19,28,38} title="data.js"
 export function getData() {
     const tasks = [
         {
@@ -171,68 +166,92 @@ export function getData() {
 }
 ~~~
 
-Then open the ***App.js*** file and import data. After this you can pass data into the new created `<ToDo/>` components as **props**:
+Then open the ***App.js*** file and import data. After this you can pass data into the `<ToDo/>` component as **props**:
 
 ~~~jsx {2,5-6} title="App.jsx"
 import ToDo from "./ToDo";
 import { getData } from "./data";
 
 function App() {
-  const { tasks, users, projects } = getData();
+  const { tasks, users, projects } = getData(); 
   return <ToDo tasks={tasks} users={users} projects={projects} />;
 }
 
 export default App;
 ~~~
 
-Open the ***ToDo.jsx*** file and apply the passed **props** to the To Do List configuration object:
+Go to the ***ToDo.jsx*** file and apply the passed **props** to the To Do List configuration object:
 
-~~~jsx {5,9-11} title="ToDo.jsx"
-// ...
-const ToDoComponent = ({ props }) => {
-    let container = useRef();
+~~~jsx {5,11-13} title="ToDo.jsx"
+import { useEffect, useRef } from "react";
+import { ToDo, Toolbar } from "@dhx/trial-todolist";
+import "@dhx/trial-todolist/dist/todo.css";
 
-    const { tasks, users, projects } = props;
+export default function ToDoComponent(props) {
+    let todo_container = useRef();
+    let toolbar_container = useRef();
 
     useEffect(() => {
-        new ToDo(container.current, {
-            tasks,
-            users,
-            projects
+        const todo = new ToDo(todo_container.current, {
+            users: props.users, // apply user data
+            tasks: props.tasks, // apply task data
+            projects: props.projects, // apply project data
+            // other configuration properties
         });
-        return () => (container.current.innerHTML = "");
-    }, []);
-    
-    return <div ref={container}></div>;
-};
 
-export default ToDoComponent;
+        const toolbar = new Toolbar(toolbar_container.current, {
+            api: todo.api,
+            // other configuration properties
+        });
+
+        return () => {
+            todo.destructor();
+            toolbar.destructor();
+        };
+    }, []);
+
+    return  <div>
+                <div ref={toolbar_container}></div>
+                <div ref={todo_container} style={{ width: "100%", height: "100%" }}></div>
+            </div>
+}
 ~~~
 
 You can also use the [`parse()`](/api/methods/parse_method/) method inside the `useEffect()` method of React to load data into To Do List:
 
-~~~jsx {5,10} title="ToDo.jsx"
-// ...
-const ToDoComponent = ({ props }) => {
-    let container = useRef();
+~~~jsx {17} title="ToDo.jsx"
+import { useEffect, useRef } from "react";
+import { ToDo, Toolbar } from "@dhx/trial-todolist";
+import "@dhx/trial-todolist/dist/todo.css";
 
-    const { tasks, users, projects } = props;
+export default function ToDoComponent(props) {
+    let todo_container = useRef();
+    let toolbar_container = useRef();
 
     useEffect(() => {
-        const todo = new ToDo(container.current, {});
+        const todo = new ToDo(todo_container.current, {});
 
-        todo.parse({tasks, users, projects});
-
-        return () => (container.current.innerHTML = "");
-    }, []);
+        const toolbar = new Toolbar(toolbar_container.current, {
+            api: todo.api,
+            // other configuration properties
+        });
     
-    return <div ref={container}></div>;
-};
+        todo.parse({ tasks, users, projects });
 
-export default ToDoComponent;
+        return () => {
+            todo.destructor();
+            toolbar.destructor();
+        };
+    }, []);
+
+    return  <div>
+                <div ref={toolbar_container}></div>
+                <div ref={todo_container} style={{ width: "100%", height: "100%" }}></div>
+            </div>
+}
 ~~~
 
-The `todo.parse(data);` line provides data reloading on each applied change.
+The `todo.parse(data)` method provides data reloading on each applied change.
 
 Now the To Do List component is ready. When the element will be added to the page, it will initialize the To Do List object with data. You can provide necessary configuration settings as well. Visit our [To Do List API docs](/api/overview/configs_overview/) to check the full list of available properties.
 
@@ -240,25 +259,27 @@ Now the To Do List component is ready. When the element will be added to the pag
 
 When a user makes some action in the To Do List, it invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](/api/overview/events_overview/).
 
-Open **ToDo.jsx** and complete the `useEffect()` method in the following way:
+Open ***ToDo.jsx*** and complete the `useEffect()` method in the following way:
 
-~~~jsx {4-6} title="ToDo.jsx"
+~~~jsx {5-7} title="ToDo.jsx"
 // ...
 useEffect(() => {
-    const todo = new ToDo(container.current, {});
+    const todo = new ToDo(todo_container.current, {});
 
     todo.api.on("add-task", (obj) => {
         console.log("A new task is added", obj);
     });
     
-    return () => (container.current.innerHTML = "");
+    return () => {
+        todo.destructor();
+    };
 }, []);
 // ...
 ~~~
 
 ### Step 3. Adding To Do List into the app
 
-To add the component into our app, open the **App.jsx** file and replace the default code with the following one:
+To add the component into our app, open the ***App.jsx*** file and replace the default code with the following one:
 
 ~~~jsx title="App.jsx"
 import ToDo from "./ToDo";
