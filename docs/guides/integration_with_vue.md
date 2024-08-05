@@ -64,18 +64,18 @@ Download the [**trial To Do List package**](/how_to_start/#installing-to-do-list
 
 ### Step 2. Component creation
 
-Now you need to create a Vue component, to add a To Do List into the application. Create a new file in the ***src/components/*** directory and name it ***ToDo.vue***.
+Now you need to create a Vue component, to add a To Do List with Toolbar into the application. Create a new file in the ***src/components/*** directory and name it ***ToDo.vue***.
 
-#### Importing source files
+#### Import source files
 
-Open the ***ToDo.vue*** file and import ToDo source files. Note that:
+Open the ***ToDo.vue*** file and import To Do List source files. Note that:
 
 - if you use PRO version and install the To Do List package from a local folder, the import paths look like this:
 
 ~~~html title="ToDo.vue"
 <script>
-    import { ToDo } from 'dhx-todolist-package';
-    import 'dhx-todolist-package/dist/todo.css';
+import { ToDo, Toolbar } from 'dhx-todolist-package';
+import 'dhx-todolist-package/dist/todo.css';
 </script>
 ~~~
 
@@ -85,65 +85,46 @@ Note that depending on the used package, the source files can be minified. In th
 
 ~~~html title="ToDo.vue"
 <script>
-    import { ToDo } from '@dhx/trial-todolist';
-    import '@dhx/trial-todolist/dist/todo.css';
+import { ToDo, Toolbar } from '@dhx/trial-todolist';
+import '@dhx/trial-todolist/dist/todo.css';
 </script>
 ~~~
 
 In this tutorial you can see how to configure the **trial** version of To Do List.
 
-#### Setting the container and adding To Do List
+#### Setting containers and adding To Do List with Toolbar
 
-To display To Do List on the page, you need to set the container to render the component inside. Check the code below:
+To display To Do List with Toolbar on the page, you need to create containers for To Do List and Toolbar, and initialize these components using the corresponding constructors:
 
-~~~html {7-9} title="ToDo.vue"
+~~~html {2,7-8,10-14} title="ToDo.vue"
 <script>
-    import { ToDo } from "@dhx/trial-todolist";
-    import "@dhx/trial-todolist/dist/todo.css";
-    // ...
-</script>
+import { ToDo, Toolbar } from "@dhx/trial-todolist";
+import "@dhx/trial-todolist/dist/todo.css";
 
-<template>
-    <div ref="container" style="width: 100%; height: 100%;"></div>
-</template>
-~~~
+export default {
+    mounted() {
+        // initialize the To Do List component
+        this.todo = new ToDo(this.$refs.todo_container, {});
 
-Then you need to render To Do List in the container. Use the `new ToDo()` constructor inside the `mounted()` method of Vue to initialize To Do List inside of the container:
+        // initialize the Toolbar component
+        this.toolbar = new Toolbar(this.$refs.toolbar_container, {
+            api: this.todo.api, // provide To Do List inner API
+            // other configuration properties
+        });
+    },
 
-~~~html title="ToDo.vue"
-<script>
-    // ...
-    export default {
-        mounted: function() {
-            this.todo = new ToDo(this.$refs.container, {});
-        }
-    };
-</script>
-
-<template>
-    <div ref="container" style="width: 100%; height: 100%; "></div>
-</template>
-~~~
-
-To clear the component as it has unmounted, use the `this.todo.destructor()` method and remove the container inside the `unmounted()` method of ***Vue.js***, as follows:
-
-~~~html {8-11} title="ToDo.vue"
-<script>
-    // ...
-    export default {
-        mounted: function() {
-            this.todo = new ToDo(this.$refs.container, {});
-        },
-
-        unmounted() {
-            this.todo.destructor();
-            this.$refs.container.innerHTML = "";
-        }
+    unmounted() {
+        this.todo.destructor(); // destruct To Do List
+        this.toolbar.destructor(); // destruct Toolbar
     }
+};
 </script>
 
 <template>
-    <div ref="container" style="width: 100%; height: 100%; "></div>
+    <div class="component_container">
+        <div ref="toolbar_container"></div>
+        <div ref="todo_container" style="height: calc(100% - 56px);"></div>
+    </div>
 </template>
 ~~~
 
@@ -151,7 +132,7 @@ To clear the component as it has unmounted, use the `this.todo.destructor()` met
 
 To add data into the To Do List, you need to provide a data set. You can create the ***data.js*** file in the ***src/*** directory and add some data into it:
 
-~~~jsx title="data.js"
+~~~jsx {2,19,28,38} title="data.js"
 export function getData() {
     const tasks = [
         {
@@ -197,20 +178,20 @@ Then open the ***App.vue*** file, import data, and initialize it via the inner `
 
 ~~~html {3,7-14,19} title="App.vue"
 <script>
-    import ToDo from "./components/ToDo.vue";
-    import { getData } from "./data";
+import ToDo from "./components/ToDo.vue";
+import { getData } from "./data";
 
-    export default {
-        // ...
-        data() {
-            const { users, projects, tasks } = getData();
-            return {
-                users,
-                projects,
-                tasks
-            };
-        }
-    };
+export default {
+    components: { ToDo },
+    data() {
+        const { users, projects, tasks } = getData();
+        return {
+            users,
+            projects,
+            tasks
+        };
+    }
+};
 </script>
 
 <template>
@@ -218,48 +199,86 @@ Then open the ***App.vue*** file, import data, and initialize it via the inner `
 </template>
 ~~~
 
-Open the ***ToDo.vue*** file and apply the passed **props** to the To Do List configuration object:
+Go to the ***ToDo.vue*** file and apply the passed **props** to the To Do List configuration object:
 
-~~~html {4,8-10} title="ToDo.vue"
+~~~html {6,10-12} title="ToDo.vue"
 <script>
-    // ...
-    export default {
-        props: ["tasks", "users", "projects"],
+import { ToDo, Toolbar } from "@dhx/trial-todolist";
+import "@dhx/trial-todolist/dist/todo.css";
 
-        mounted() {
-            this.todo = new ToDo(this.$refs.container, {
-                users: this.users,
-                tasks: this.tasks,
-                projects: this.projects
-            });
-        }
+export default {
+    props: ["tasks", "users", "projects"],
+
+    mounted() {
+        this.todo = new ToDo(this.$refs.todo_container, {
+            users: this.users,
+            tasks: this.tasks,
+            projects: this.projects,
+            // other configuration properties
+        });
+
+        this.toolbar = new Toolbar(this.$refs.toolbar_container, {
+            api: this.todo.api,
+            // other configuration properties
+        });
+    },
+
+    unmounted() {
+        this.todo.destructor();
+        this.toolbar.destructor();
     }
+};
 </script>
 
-<!--...-->
+<template>
+    <div class="component_container">
+        <div ref="toolbar_container"></div>
+        <div ref="todo_container" style="height: calc(100% - 56px);"></div>
+    </div>
+</template>
 ~~~
 
 You can also use the [`parse()`](/api/methods/parse_method/) method inside the `mounted()` method of Vue to load data into To Do List:
 
-~~~html {4,8-12} title="ToDo.vue"
+~~~html {6,16-20} title="ToDo.vue"
 <script>
-    // ...
-    export default {
-        props: ["tasks", "users", "projects"],
+import { ToDo, Toolbar } from "@dhx/trial-todolist";
+import "@dhx/trial-todolist/dist/todo.css";
 
-        mounted() {
-            this.todo = new ToDo(this.$refs.cont, {});
-            this.todo.parse({ 
-                users: this.users, 
-                tasks: this.tasks, 
-                projects: this.projects 
-            });
-        }
+export default {
+    props: ["tasks", "users", "projects"],
+
+    mounted() {
+        this.todo = new ToDo(this.$refs.todo_container, {});
+
+        this.toolbar = new Toolbar(this.$refs.toolbar_container, {
+            api: this.todo.api,
+            // other configuration properties
+        });
+
+        this.todo.parse({ 
+            users: this.users, 
+            tasks: this.tasks, 
+            projects: this.projects 
+        });
+    },
+
+    unmounted() {
+        this.todo.destructor();
+        this.toolbar.destructor();
     }
+};
 </script>
 
-<!--...-->
+<template>
+    <div class="component_container">
+        <div ref="toolbar_container"></div>
+        <div ref="todo_container" style="height: calc(100% - 56px);"></div>
+    </div>
+</template>
 ~~~
+
+The `this.todo.parse(data)` method provides data reloading on each applied change.
 
 Now the To Do List component is ready. When the element will be added to the page, it will initialize the To Do List object with data. You can provide necessary configuration settings as well. Visit our [To Do List API docs](/api/overview/configs_overview/) to check the full list of available properties.
 
@@ -269,18 +288,23 @@ When a user makes some action in the To Do List, it invokes an event. You can us
 
 Open ***ToDo.vue*** and complete the `mounted()` method:
 
-~~~html {7-9} title="ToDo.vue"
+~~~html {8-10} title="ToDo.vue"
 <script>
+// ...
+export default {
     // ...
-    export default {
-        // ...
-        mounted() {
-            this.todo = new ToDo(this.$refs.cont, {});
-            this.todo.api.on("add-task", ({ id }) => {
-                console.log("A new task is added", id);
-            });
-        }
+    mounted() {
+        this.todo = new ToDo(this.$refs.todo_container, {});
+
+        this.todo.api.on("add-task", ({ id }) => {
+            console.log("A new task is added", id);
+        });
+    },
+
+    unmounted() {
+        this.todo.destructor();
     }
+}
 </script>
 
 <!--...-->
@@ -309,7 +333,7 @@ export default {
 </script>
 
 <template>
-  <ToDo :users="users" :tasks="tasks" :projects="projects" />
+    <ToDo :users="users" :tasks="tasks" :projects="projects" />
 </template>
 ~~~
 

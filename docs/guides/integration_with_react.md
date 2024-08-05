@@ -115,7 +115,7 @@ export default function ToDoComponent(props) {
 
     return  <div>
                 <div ref={toolbar_container}></div>
-                <div ref={todo_container} style={{ width: "100%", height: "100%" }}></div>
+                <div ref={todo_container} style={{ height: "calc(100% - 56px)" }}></div>
             </div>
 }
 ~~~
@@ -173,8 +173,8 @@ import ToDo from "./ToDo";
 import { getData } from "./data";
 
 function App() {
-  const { tasks, users, projects } = getData(); 
-  return <ToDo tasks={tasks} users={users} projects={projects} />;
+    const { tasks, users, projects } = getData(); 
+    return <ToDo tasks={tasks} users={users} projects={projects} />;
 }
 
 export default App;
@@ -212,7 +212,7 @@ export default function ToDoComponent(props) {
 
     return  <div>
                 <div ref={toolbar_container}></div>
-                <div ref={todo_container} style={{ width: "100%", height: "100%" }}></div>
+                <div ref={todo_container} style={{ height: "calc(100% - 56px)" }}></div>
             </div>
 }
 ~~~
@@ -250,7 +250,7 @@ export default function ToDoComponent(props) {
 
     return  <div>
                 <div ref={toolbar_container}></div>
-                <div ref={todo_container} style={{ width: "100%", height: "100%" }}></div>
+                <div ref={todo_container} style={{ height: "calc(100% - 56px)" }}></div>
             </div>
 }
 ~~~
