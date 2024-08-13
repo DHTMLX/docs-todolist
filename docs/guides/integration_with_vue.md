@@ -307,7 +307,7 @@ export default {
 }
 </script>
 
-<!--...-->
+// ...
 ~~~
 
 ### Step 3. Adding To Do List into the app
