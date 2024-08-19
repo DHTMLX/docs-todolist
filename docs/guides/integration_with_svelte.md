@@ -18,7 +18,7 @@ DHTMLX To Do List is compatible with **Svelte**. We have prepared code examples 
 Before you start to create a new project, install [**Vite**](https://vitejs.dev/) (optional) and [**Node.js**](https://nodejs.org/en/).
 :::
 
-There are several ways of creating a project:
+There are several ways of creating a **Svelte** project:
 
 - you can use the [**SvelteKit**](https://kit.svelte.dev/)
 
@@ -40,13 +40,13 @@ Let's name the project as **my-svelte-todo-app** and go to the app directory:
 cd my-svelte-todo-app
 ~~~
 
-Install dependencies and run the app. For this, use a package manager:
+Install dependencies and start the dev server. For this, use a package manager:
 
 - if you use [**yarn**](https://yarnpkg.com/), run the following commands:
 
 ~~~json
 yarn
-yarn dev
+yarn start
 ~~~
 
 - if you use [**npm**](https://www.npmjs.com/), run the following commands:
@@ -60,7 +60,7 @@ The app should run on a localhost (for instance `http://localhost:3000`).
 
 ## Creating To Do List
 
-Now you should get the DHTMLX To Do List code. First of all, stop the app and proceed with installing the To Do List package.
+Now you should get the DHTMLX To Do List source code. First of all, stop the app and proceed with installing the To Do List package.
 
 ### Step 1. Package installation
 
@@ -68,9 +68,9 @@ Download the [**trial To Do List package**](/how_to_start/#installing-to-do-list
 
 ### Step 2. Component creation
 
-Now you need to create a Svelte component, to add a To Do List into the application. Let's create a new file in the ***src/*** directory and name it ***ToDo.svelte***.
+Now you need to create a Svelte component, to add To Do List with Toolbar into the application. Let's create a new file in the ***src/*** directory and name it ***ToDo.svelte***.
 
-#### Importing source files
+#### Import source file
 
 Open the ***ToDo.svelte*** file and import To Do List source files. Note that:
 
@@ -78,8 +78,8 @@ Open the ***ToDo.svelte*** file and import To Do List source files. Note that:
 
 ~~~html title="ToDo.svelte"
 <script>
-    import { ToDo } from 'dhx-todolist-package';
-    import 'dhx-todolist-package/dist/todo.css';
+import { ToDo, Toolbar } from 'dhx-todolist-package';
+import 'dhx-todolist-package/dist/todo.css';
 </script>
 ~~~
 
@@ -89,54 +89,54 @@ Note that depending on the used package, the source files can be minified. In th
 
 ~~~html title="ToDo.svelte"
 <script>
-    import { ToDo } from '@dhx/trial-todolist';
-    import '@dhx/trial-todolist/dist/todo.css';
+import { ToDo, Toolbar } from '@dhx/trial-todolist';
+import '@dhx/trial-todolist/dist/todo.css';
 </script>
 ~~~
 
 In this tutorial you can see how to configure the **trial** version of To Do List.
 
-#### Setting the container and adding To Do List
+#### Setting containers and adding To Do List with Toolbar
 
-To display To Do List on the page, you need to set the container to render the component inside. Check the code below:
+To display To Do List with Toolbar on the page, you need to create containers for To Do List and Toolbar, and initialize these components using the corresponding constructors:
 
-~~~html {5,9} title="ToDo.svelte"
+~~~html {3,6,10-11,13-17,27-28} title="ToDo.svelte"
 <script>
-    import { ToDo } from "@dhx/trial-todolist";
-    import "@dhx/trial-todolist/dist/todo.css"
-    
-    let container;
-    // ...
+import { onMount, onDestroy } from "svelte";
+import { ToDo, Toolbar } from "@dhx/trial-todolist";
+import "@dhx/trial-todolist/dist/todo.css";
+
+let toolbar_container, todo_container; // initialize containers for To Do List and Toolbar
+let todo, toolbar;
+
+onMount(() => {
+    // initialize the To Do List component
+    todo = new ToDo(todo_container, {})
+
+    // initialize the Toolbar component
+    toolbar = new Toolbar(toolbar_container, {
+        api: todo.api, // provide To Do List inner API
+        // other configuration properties
+    })
+});
+
+onDestroy(() => {
+    todo.destructor(); // destruct To Do List
+    toolbar.destructor(); // destruct Toolbar
+});
 </script>
 
-<div bind:this={container} style="width: 100%; height: 100%;"></div>
-~~~
-
-Then you need to render To Do List in the container. Use the `new ToDo()` constructor inside the `onMount()` method of Svelte, to initialize To Do List inside of the container:
-
-~~~html {4,8-12} title="ToDo.svelte"
-<script>
-    import { ToDo } from "@dhx/trial-todolist";
-    import "@dhx/trial-todolist/dist/todo.css";
-    import { onMount } from "svelte";
-
-    let container;
-
-    onMount(() => {
-        new ToDo(container,{
-            // ...
-        }); 
-    });
-</script>
-
-<div bind:this={container} style="width: 100%; height: 100%;"></div>
+<div class="component_container">
+    <div bind:this={toolbar_container}></div>
+    <div bind:this={todo_container} style="height: calc(100% - 56px);"></div>
+</div>
 ~~~
 
 #### Loading data
 
 To add data into the To Do List, we need to provide a data set. You can create the ***data.js*** file in the ***src/*** directory and add some data into it:
 
-~~~jsx title="data.js"
+~~~jsx {2,19,28,38} title="data.js"
 export function getData() {
     const tasks = [
         {
@@ -180,77 +180,125 @@ export function getData() {
 
 Then open the ***App.svelte*** file, import data, and pass it into the new created `<ToDo/>` components as **props**:
 
-~~~html {3-4,7} title="App.svelte"
+~~~html {3,5,8} title="App.svelte"
 <script>
-    import ToDo from "./ToDo.svelte";
-    import { getData } from "./data.js";
-    const { users, tasks, projects } = getData();
+import ToDo from "./ToDo.svelte";
+import { getData } from "./data.js";
+
+const { users, tasks, projects } = getData();
 </script>
 
 <ToDo {users} {tasks} {projects} />
 ~~~
 
-Open the ***ToDo.svelte*** file and apply the passed **props** to the To Do List configuration object:
+Go to the ***ToDo.svelte*** file and apply the passed **props** to the To Do List configuration object:
 
-~~~html {3-5,10-12} title="ToDo.svelte"
+~~~html {6-8,15-17} title="ToDo.svelte"
 <script>
-    // ...
-    export let users;
-    export let tasks;
-    export let projects;
+import { onMount, onDestroy } from "svelte";
+import { ToDo, Toolbar } from "@dhx/trial-todolist";
+import "@dhx/trial-todolist/dist/todo.css";
 
-    let container;
-    onMount(() => {
-        new ToDo(container, {
-            users, 
-            tasks, 
-            projects
-        })
-    });
+export let users;
+export let tasks;
+export let projects;
+
+let toolbar_container, todo_container;
+let todo, toolbar;
+
+onMount(() => {
+    todo = new ToDo(todo_container, {
+        users, // apply user data
+        tasks, // apply task data
+        projects, // apply project data
+        // other configuration properties
+    })
+
+    toolbar = new Toolbar(toolbar_container, {
+        api: todo.api, 
+        // other configuration properties
+    })
+});
+
+onDestroy(() => {
+    todo.destructor(); 
+    toolbar.destructor(); 
+});
 </script>
 
-<div bind:this={container} style="width: 100%; height: 100%;"></div>
+<div class="component_container">
+    <div bind:this={toolbar_container}></div>
+    <div bind:this={todo_container} style="height: calc(100% - 56px);"></div>
+</div>
 ~~~
 
 You can also use the [`parse()`](/api/methods/parse_method/) method inside the `onMount()` method of Svelte to load data into To Do List:
 
-~~~html {3-5,10} title="ToDo.svelte"
+~~~html {6-8,21} title="ToDo.svelte"
 <script>
-    // ...
-    export let users;
-    export let tasks;
-    export let projects;
+import { onMount, onDestroy } from "svelte";
+import { ToDo, Toolbar } from "@dhx/trial-todolist";
+import "@dhx/trial-todolist/dist/todo.css";
 
-    let container;
-    onMount(() => {
-        const todo = new ToDo(container, {});
-        todo.parse({ users, tasks, projects });
-    });
+export let users;
+export let tasks;
+export let projects;
+
+let toolbar_container, todo_container;
+let todo, toolbar;
+
+onMount(() => {
+    todo = new ToDo(todo_container, {})
+
+    toolbar = new Toolbar(toolbar_container, {
+        api: todo.api,
+        // other configuration properties
+    })
+
+    todo.parse({ tasks, users, projects });
+});
+
+onDestroy(() => {
+    todo.destructor(); 
+    toolbar.destructor(); 
+});
 </script>
 
-<div bind:this={container} style="width: 100%; height: 100%;"></div>
+<div class="component_container">
+    <div bind:this={toolbar_container}></div>
+    <div bind:this={todo_container} style="height: calc(100% - 56px);"></div>
+</div>
 ~~~
 
-Now the To Do List component is ready. When the element will be added to the page, it will initialize the To Do List object with data. You can provide necessary configuration settings as well. Visit our [To Do List API docs](/api/overview/configs_overview/) to check the full list of available properties.
+The `parse(data)` method provides data reloading on each applied change.
+
+Now the To Do List component is ready to use. When the element will be added to the page, it will initialize the To Do List with data. You can provide necessary configuration settings as well. Visit our [To Do List API docs](/api/overview/configs_overview/) to check the full list of available properties.
 
 #### Handling events
 
 When a user makes some action in the To Do List, it invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](/api/overview/events_overview/).
 
-Open ***ToDo.svelte*** and complete the `onMount()` method as in:
+Open ***ToDo.svelte*** and complete the `onMount()` method in the following way:
 
-~~~html title="ToDo.svelte"
+~~~html {8-10} title="ToDo.svelte"
 <script>
-    // ...
-    onMount(() => {
-        const todo = new ToDo(container, { users, tasks, projects });
-        todo.api.on("add-task", (obj) => {
-            console.log("A new task is added", obj);
-        });
+// ...
+let todo;
+
+onMount(() => {
+    todo = new ToDo(todo_container, {});
+
+    todo.api.on("add-task", (obj) => {
+        console.log("A new task is added", obj);
     });
+});
+
+onDestroy(() => {
+    todo.destructor();
+});
 </script>
 
-<div bind:this={container} style="width: 100%; height: 100%;"></div>
+// ...
 ~~~
 
 ### Step 3. Adding To Do List into the app
@@ -259,10 +307,10 @@ To add the component into the app, open the **App.svelte** file and replace the 
 
 ~~~html title="App.svelte"
 <script>
-    import ToDo from "./ToDo.svelte";
-    import { getData } from "./data.js";
-    
-    const { users, tasks, projects } = getData();
+import ToDo from "./ToDo.svelte";
+import { getData } from "./data.js";
+
+const { users, tasks, projects } = getData();
 </script>
 
 <ToDo {users} {tasks} {projects} />

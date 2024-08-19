@@ -42,7 +42,7 @@ Install dependencies and start the dev server. For this, use a package manager:
 
 ~~~json
 yarn
-yarn dev
+yarn start
 ~~~
 
 - if you use [**npm**](https://www.npmjs.com/), run the following commands:
@@ -56,7 +56,7 @@ The app should run on a localhost (for instance `http://localhost:3000`).
 
 ## Creating To Do List
 
-Now you should get the DHTMLX To Do List code. First of all, stop the app and proceed with installing the To Do List package.
+Now you should get the DHTMLX To Do List source code. First of all, stop the app and proceed with installing the To Do List package.
 
 ### Step 1. Package installation
 
@@ -64,7 +64,7 @@ Download the [**trial To Do List package**](/how_to_start/#installing-to-do-list
 
 ### Step 2. Component creation
 
-Now you need to create a Vue component, to add a To Do List with Toolbar into the application. Create a new file in the ***src/components/*** directory and name it ***ToDo.vue***.
+Now you need to create a Vue component, to add To Do List with Toolbar into the application. Create a new file in the ***src/components/*** directory and name it ***ToDo.vue***.
 
 #### Import source files
 
@@ -174,7 +174,7 @@ export function getData() {
 }
 ~~~
 
-Then open the ***App.vue*** file, import data, and initialize it via the inner `data()` method. After this you can pass data into the new created `<ToDo/>` components as **props**:
+Then open the ***App.vue*** file, import data, and initialize it via the inner `data()` method. After this you can pass data into the new created `<ToDo/>` component as **props**:
 
 ~~~html {3,7-14,19} title="App.vue"
 <script>
@@ -278,9 +278,9 @@ export default {
 </template>
 ~~~
 
-The `this.todo.parse(data)` method provides data reloading on each applied change.
+The `parse(data)` method provides data reloading on each applied change.
 
-Now the To Do List component is ready. When the element will be added to the page, it will initialize the To Do List object with data. You can provide necessary configuration settings as well. Visit our [To Do List API docs](/api/overview/configs_overview/) to check the full list of available properties.
+Now the To Do List component is ready to use. When the element will be added to the page, it will initialize the To Do List with data. You can provide necessary configuration settings as well. Visit our [To Do List API docs](/api/overview/configs_overview/) to check the full list of available properties.
 
 #### Handling events
 

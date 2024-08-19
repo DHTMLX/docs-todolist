@@ -18,7 +18,7 @@ DHTMLX To Do List is compatible with **React**. We have prepared code examples o
 Before you start to create a new project, install [**Vite**](https://vitejs.dev/) (optional) and [**Node.js**](https://nodejs.org/en/).
 :::
 
-You can create a basic **React** project or use **React with Vite**:
+You can create a basic **React** project or use **React with Vite**. Let's name the project as **my-react-todo-app**:
 
 ~~~json
 npx create-vite my-react-todo-app --template react
@@ -26,7 +26,7 @@ npx create-vite my-react-todo-app --template react
 
 ### Installation of dependencies
 
-Go to the app directory. Let's name the project as **my-react-todo-app** and run:
+Go to the new created app directory:
 
 ~~~json
 cd my-react-todo-app
@@ -38,7 +38,7 @@ Install dependencies and start the dev server. For this, use a package manager:
 
 ~~~json
 yarn
-yarn dev
+yarn start
 ~~~
 
 - if you use [**npm**](https://www.npmjs.com/), run the following commands:
@@ -52,7 +52,7 @@ The app should run on a localhost (for instance `http://localhost:3000`).
 
 ## Creating To Do List
 
-Now you should get the DHTMLX To Do List code. First of all, stop the app and proceed with installing the To Do List package.
+Now you should get the DHTMLX To Do List source code. First of all, stop the app and proceed with installing the To Do List package.
 
 ### Step 1. Package installation
 
@@ -168,7 +168,7 @@ export function getData() {
 
 Then open the ***App.js*** file and import data. After this you can pass data into the `<ToDo/>` component as **props**:
 
-~~~jsx {2,5-6} title="App.jsx"
+~~~jsx {2,5-6} title="App.js"
 import ToDo from "./ToDo";
 import { getData } from "./data";
 
@@ -255,9 +255,9 @@ export default function ToDoComponent(props) {
 }
 ~~~
 
-The `todo.parse(data)` method provides data reloading on each applied change.
+The `parse(data)` method provides data reloading on each applied change.
 
-Now the To Do List component is ready. When the element will be added to the page, it will initialize the To Do List object with data. You can provide necessary configuration settings as well. Visit our [To Do List API docs](/api/overview/configs_overview/) to check the full list of available properties.
+Now the To Do List component is ready to use. When the element will be added to the page, it will initialize the To Do List with data. You can provide necessary configuration settings as well. Visit our [To Do List API docs](/api/overview/configs_overview/) to check the full list of available properties.
 
 #### Handling events
 
@@ -283,9 +283,9 @@ useEffect(() => {
 
 ### Step 3. Adding To Do List into the app
 
-To add the component into the app, open the ***App.jsx*** file and replace the default code with the following one:
+To add the component into the app, open the ***App.js*** file and replace the default code with the following one:
 
-~~~jsx title="App.jsx"
+~~~jsx title="App.js"
 import ToDo from "./ToDo";
 import { getData } from "./data";
 

@@ -45,7 +45,7 @@ The app should run on a localhost (for instance `http://localhost:3000`).
 
 ## Creating To Do List
 
-Now you should get the DHTMLX To Do List code. First of all, stop the app and proceed with installing the To Do List package.
+Now you should get the DHTMLX To Do List source code. First of all, stop the app and proceed with installing the To Do List package.
 
 ### Step 1. Package installation
 
@@ -53,13 +53,13 @@ Download the [**trial To Do List package**](/how_to_start/#installing-to-do-list
   
 ### Step 2. Component creation
 
-Now you need to create an Angular component, to add a To Do List with Toolbar into the application. Create the **todo** folder in the **src/app/** directory, add a new file into it and name it **todo.component.ts**.
+Now you need to create an Angular component, to add To Do List with Toolbar into the application. Create the **todo** folder in the **src/app/** directory, add a new file into it and name it **todo.component.ts**.
 
 #### Import source files
 
 Open the **todo.component.ts** file and import To Do List source files. Note that:
 
-- if you use PRO version and install the To Do List package from a local folder, the imported path look like this:
+- if you use PRO version and install the To Do List package from a local folder, the imported path looks like this:
 
 ~~~jsx title="todo.components.ts"
 import { ToDo, Toolbar } from 'dhx-todolist-package';
@@ -84,7 +84,7 @@ import { Component, ElementRef, OnInit, ViewChild, OnDestroy, ViewEncapsulation}
 @Component({
     encapsulation: ViewEncapsulation.None,
     selector: "todo", // a template name used in the "app.component.ts" file as <todo />
-    styleUrls: ["./todo.component.css"], // include a css file
+    styleUrls: ["./todo.component.css"], // include the css file
     template:  `<main class="component_container">
                     <div #toolbar_container></div>
                     <div #todo_container style="height: calc(100% - 56px);"></div>
@@ -173,8 +173,8 @@ import { Component, ElementRef, OnInit, ViewChild, OnDestroy, ViewEncapsulation}
 
 @Component({
     encapsulation: ViewEncapsulation.None,
-    selector: "todo", // a template name used in the "app.component.ts" file as <todo />
-    styleUrls: ["./todo.component.css"], // include a css file
+    selector: "todo", 
+    styleUrls: ["./todo.component.css"], 
     template:  `<main class="component_container">
                     <div #toolbar_container></div>
                     <div #todo_container style="height: calc(100% - 56px);"></div>
@@ -189,7 +189,7 @@ export class ToDoComponent implements OnInit, OnDestroy {
     private _toolbar!: Toolbar;
 
     ngOnInit() {
-        const { users, tasks, projects } = getData();
+        const { users, tasks, projects } = getData(); // initialize data properties
         this._todo = new ToDo(this.todo_container.nativeElement, {
             users, // apply user data
             tasks, // apply task data
@@ -219,8 +219,8 @@ import { Component, ElementRef, OnInit, ViewChild, OnDestroy, ViewEncapsulation}
 
 @Component({
     encapsulation: ViewEncapsulation.None,
-    selector: "todo", // a template name used in the "app.component.ts" file as <todo />
-    styleUrls: ["./todo.component.css"], // include a css file
+    selector: "todo", 
+    styleUrls: ["./todo.component.css"], 
     template:  `<main class="component_container">
                     <div #toolbar_container></div>
                     <div #todo_container style="height: calc(100% - 56px);"></div>
@@ -235,7 +235,7 @@ export class ToDoComponent implements OnInit, OnDestroy {
     private _toolbar!: Toolbar;
 
     ngOnInit() {
-        const { users, tasks, projects } = getData();
+        const { users, tasks, projects } = getData(); // initialize data properties
         this._todo = new ToDo(this.todo_container.nativeElement, {});
 
         this._toolbar = new Toolbar(this.toolbar_container.nativeElement, {
@@ -258,9 +258,9 @@ export class ToDoComponent implements OnInit, OnDestroy {
 }
 ~~~
 
-The `this._todo.parse(data)` method provides data reloading on each applied change.
+The `parse(data)` method provides data reloading on each applied change.
 
-Now the To Do List component is ready. When the element will be added to the page, it will initialize the To Do List object with data. You can provide necessary configuration settings as well. Visit our [To Do List API docs](/api/overview/configs_overview/) to check the full list of available properties.
+Now the To Do List component is ready to use. When the element will be added to the page, it will initialize the To Do List with data. You can provide necessary configuration settings as well. Visit our [To Do List API docs](/api/overview/configs_overview/) to check the full list of available properties.
 
 #### Handling events
 
