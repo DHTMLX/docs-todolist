@@ -10,13 +10,13 @@ If you are updating To Do List from an older version, check [Migration to newer 
 
 ## Version 1.2.9
 
-Released on June DAY, 2024
+Released on August 26, 2024
 
 ### Fixes
 
 - Script error when sorting an empty project
-- The submenus don't work on touch devices
-- Incorrect types for "api" object
+- Submenus don't work on touch devices
+- Incorrect types for the `api` object
 
 ## Version 1.2.8
 
