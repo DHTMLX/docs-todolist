@@ -21,7 +21,7 @@ Before you start to create a new project, install [**Vite**](https://vitejs.dev/
 You can create a basic **React** project or use **React with Vite**. Let's name the project as **my-react-todo-app**:
 
 ~~~json
-npx create-vite my-react-todo-app --template react
+npx create-react-app my-react-todo-app
 ~~~
 
 ### Installation of dependencies
@@ -91,7 +91,7 @@ To display To Do List with Toolbar on the page, you need to create containers fo
 ~~~jsx {2,6-7,10-11,13-17} title="ToDo.jsx"
 import { useEffect, useRef } from "react";
 import { ToDo, Toolbar } from "@dhx/trial-todolist";
-import "@dhx/trial-todolist/dist/todo.css";
+import "@dhx/trial-todolist/dist/todo.css"; // include To Do List styles
 
 export default function ToDoComponent(props) {
     let toolbar_container = useRef(); // initialize container for Toolbar
