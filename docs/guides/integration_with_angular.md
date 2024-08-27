@@ -89,9 +89,9 @@ import { Component, ElementRef, OnInit, ViewChild, OnDestroy, ViewEncapsulation}
     encapsulation: ViewEncapsulation.None,
     selector: "todo", // a template name used in the "app.component.ts" file as <todo />
     styleUrls: ["./todo.component.css"], // include the css file
-    template:  `<main class="component_container">
+    template:  `<main class = "component_container">
                     <div #toolbar_container></div>
-                    <div #todo_container style="height: calc(100% - 56px);"></div>
+                    <div #todo_container class = "widget"></div>
                 </main>`
 })
 
@@ -132,18 +132,23 @@ To display To Do List correctly, you need to provide the corresponding styles. F
 
 /* specify styles for initial page */
 html,
-body {
-    margin: 0;
-    padding: 0;
+body{
     height: 100%;
+    padding: 0;
+    margin: 0;
     background-color: #f7f7f7;
 }
 
-/* specify styles for the To Do List container */
+/* specify styles for To Do List and Toolbar container*/
 .component_container {
     height: 100%; 
     max-width: 800px; 
     margin: 0 auto;
+}
+
+/* specify styles for To Do List container */
+.widget {
+    height: calc(100% - 56px);
 }
 ~~~
 
@@ -204,9 +209,9 @@ import { Component, ElementRef, OnInit, ViewChild, OnDestroy, ViewEncapsulation}
     encapsulation: ViewEncapsulation.None,
     selector: "todo", 
     styleUrls: ["./todo.component.css"], 
-    template:  `<main class="component_container">
+    template:  `<main class = "component_container">
                     <div #toolbar_container></div>
-                    <div #todo_container style="height: calc(100% - 56px);"></div>
+                    <div #todo_container class = "widget"></div>
                 </main>`
 })
 
@@ -250,9 +255,9 @@ import { Component, ElementRef, OnInit, ViewChild, OnDestroy, ViewEncapsulation}
     encapsulation: ViewEncapsulation.None,
     selector: "todo", 
     styleUrls: ["./todo.component.css"], 
-    template:  `<main class="component_container">
+    template:  `<main class = "component_container">
                     <div #toolbar_container></div>
-                    <div #todo_container style="height: calc(100% - 56px);"></div>
+                    <div #todo_container class = "widget"></div>
                 </main>`
 })
 
