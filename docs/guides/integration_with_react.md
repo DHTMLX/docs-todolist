@@ -113,10 +113,38 @@ export default function ToDoComponent(props) {
         };
     }, []);
 
-    return  <div>
+    return  <div className="component_container">
                 <div ref={toolbar_container}></div>
-                <div ref={todo_container} style={{ height: "calc(100% - 56px)" }}></div>
+                <div ref={todo_container} className="widget"></div>
             </div>
+}
+~~~
+
+#### Adding styles
+
+To display To Do List correctly, you need to provide the corresponding styles. You can use the **index.css** file to specify important styles for To Do List and its containers:
+
+~~~css title="index.css"
+/* specify styles for initial page */
+html,
+body,
+#root {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #f7f7f7;
+}
+
+/* specify styles for To Do List and Toolbar container*/
+.component_container {
+    height: 100%; 
+    max-width: 800px; 
+    margin: 0 auto;
+}
+
+/* specify styles for To Do List container*/
+.widget {
+    height: calc(100% - 56px);
 }
 ~~~
 
@@ -210,9 +238,9 @@ export default function ToDoComponent(props) {
         };
     }, []);
 
-    return  <div>
+    return  <div className="component_container">
                 <div ref={toolbar_container}></div>
-                <div ref={todo_container} style={{ height: "calc(100% - 56px)" }}></div>
+                <div ref={todo_container} className="widget"></div>
             </div>
 }
 ~~~
@@ -248,9 +276,9 @@ export default function ToDoComponent(props) {
         };
     }, []);
 
-    return  <div>
+    return  <div className="component_container">
                 <div ref={toolbar_container}></div>
-                <div ref={todo_container} style={{ height: "calc(100% - 56px)" }}></div>
+                <div ref={todo_container} className="widget"></div>
             </div>
 }
 ~~~
