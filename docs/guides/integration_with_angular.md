@@ -89,6 +89,7 @@ import { Component, ElementRef, OnInit, ViewChild, OnDestroy, ViewEncapsulation}
     encapsulation: ViewEncapsulation.None,
     selector: "todo", // a template name used in the "app.component.ts" file as <todo />
     styleUrls: ["./todo.component.css"], // include the css file
+
     template:  `<main class = "component_container">
                     <div #toolbar_container></div>
                     <div #todo_container class = "widget"></div>
