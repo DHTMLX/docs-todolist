@@ -8,6 +8,14 @@ description: You can learn a new information about DHTMLX JavaScript To Do List 
 
 If you are updating To Do List from an older version, check [Migration to newer version](migration.md) for details.
 
+## Version 1.2.10
+
+Released on September 19, 2024
+
+### Fixes
+
+- RestDataProvider API. Incorrect processing of temp IDs stored in arrays before sending to the server
+
 ## Version 1.2.9
 
 Released on August 26, 2024
