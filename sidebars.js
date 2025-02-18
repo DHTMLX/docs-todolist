@@ -216,6 +216,7 @@ module.exports = {
                                 "api/configs/drag_config",
                                 "api/configs/id_config",
                                 "api/configs/locale_config",
+                                "api/configs/menu_config",
                                 "api/configs/priorities_config",
                                 "api/configs/projects_config",
                                 "api/configs/readonly_config",
