@@ -22,15 +22,16 @@ The method returns an object with the following properties:
 
 ~~~js
 {
-    activeProject: {set: any, update: any, subscribe: any}
-    tasks: {...}
-    id: {...}
-    projects: {...}
-    readonly: {...}
-    tags: {...}
-    taskShape: {...}
-    selected: {...}
-    users: {...}
+    activeProject: object,
+    tasks: object,
+    id: object,
+    projects: object,
+    readonly: object,
+    tags: object,
+    taskShape: object,
+    selected: object,
+    users: object,
+    historyState: object
 }
 ~~~
 
@@ -53,3 +54,5 @@ list.api.getReactiveState().selected.subscribe((value) => {
     // other actions
 });
 ~~~
+
+**Change log:** The `historyState` parameter was added in v1.3
