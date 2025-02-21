@@ -36,10 +36,10 @@ If you want to *modify* a context menu, set the `menu` config to a callback that
 
 ~~~js
 config: {
-    store: object,
     type: "user" | "toolbar" | "task",
     id?: string | number,
-    source?: (string | number)[]
+    source?: (string | number)[],
+    store: object
 };
 ~~~
 
@@ -47,13 +47,13 @@ config: {
 
 The `config` object may include the following parameters:
 
-- `store` - (required) the readonly DataStore, that should be passed to the `getMenuOptions()` method
 - `type` - (required) the type of the context menu. Here you can specify one of the following values:
     - `"user"` - the context menu related to users
     - `"toolbar"` - the context menu related to toolbar
     - `"task"` - the context menu related to tasks
 - `id` - (optional|required) the ID of the project. This parameter is required if `type: "toolbar"`
 - `source` - (optional|required) an array that include the IDs of tasks. This parameter is required if `type: "task"`
+- `store` - (required) the readonly *DataStore*, that should be passed to the `getMenuOptions()` method
 
 **Returns**
 
@@ -221,11 +221,11 @@ const menu = function (config) {
                     list.updateTask({
                         id,
                         task: {
-                            due_date: new Date(),
-                        },
+                            due_date: new Date()
+                        }
                     });
                 });
-            },
+            }
         });
         const task = store.getTask(source[0]);
         if (task.checked) {
@@ -236,9 +236,9 @@ const menu = function (config) {
                 id: "uncheck",
                 handler: () => {
                     list.uncheckTask({
-                        id,
+                        id
                     });
-                },
+                }
             });
         } else {
             options.push({
@@ -249,10 +249,10 @@ const menu = function (config) {
                 handler: () => {
                     source.forEach(id => {
                         list.checkTask({
-                            id,
+                            id
                         });
                     });
-                },
+                }
             });
         }
     }
