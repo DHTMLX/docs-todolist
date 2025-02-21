@@ -260,13 +260,15 @@ const menu = function (config) {
     return options;
 };
 
-const list = new ToDo("#root", {
+new ToDo("#root", {
     tasks,
     users,
     projects,
     menu
 });
 ~~~
+
+**Change log:** The `menu` config was added in v1.3
 
 **Related samples:**
     - [To do list. Menu customization. Adding and removing options](https://snippet.dhtmlx.com/slpjstbb)
