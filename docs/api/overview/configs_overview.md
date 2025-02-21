@@ -10,6 +10,7 @@ description: You can explore the API properties of To Do List in the documentati
 | :------------------------------------- | :-------------------------------------------- |
 | [](../configs/activeproject_config.md) | @getshort(../configs/activeproject_config.md) |
 | [](../configs/drag_config.md)          | @getshort(../configs/drag_config.md)          |
+| [](../configs/history_config.md)       | @getshort(../configs/history_config.md)       |
 | [](../configs/id_config.md)            | @getshort(../configs/id_config.md)            |
 | [](../configs/locale_config.md)        | @getshort(../configs/locale_config.md)        |
 | [](../configs/menu_config.md)          | @getshort(../configs/menu_config.md)          |

@@ -34,6 +34,7 @@ description: You can explore the API methods in the documentation of the DHTMLX 
 | [](../methods/openinlineeditor_method.md)   | @getshort(../methods/openinlineeditor_method.md)   |
 | [](../methods/parse_method.md)              | @getshort(../methods/parse_method.md)              |
 | [](../methods/pastetask_method.md)          | @getshort(../methods/pastetask_method.md)          |
+| [](../methods/redo_method.md)               | @getshort(../methods/redo_method.md)               |
 | [](../methods/selecttask_method.md)         | @getshort(../methods/selecttask_method.md)         |
 | [](../methods/serialize_method.md)          | @getshort(../methods/serialize_method.md)          |
 | [](../methods/setconfig_method.md)          | @getshort(../methods/setconfig_method.md)          |
@@ -44,6 +45,7 @@ description: You can explore the API methods in the documentation of the DHTMLX 
 | [](../methods/showcompletedtasks_method.md) | @getshort(../methods/showcompletedtasks_method.md) |
 | [](../methods/unassignuser_method.md)       | @getshort(../methods/unassignuser_method.md)       |
 | [](../methods/unchecktask_method.md)        | @getshort(../methods/unchecktask_method.md)        |
+| [](../methods/undo_method.md)               | @getshort(../methods/undo_method.md)               |
 | [](../methods/unindenttask_method.md)       | @getshort(../methods/unindenttask_method.md)       |
 | [](../methods/unselecttask_method.md)       | @getshort(../methods/unselecttask_method.md)       |
 | [](../methods/updateproject_method.md)      | @getshort(../methods/updateproject_method.md)      |

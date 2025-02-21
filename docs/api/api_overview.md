@@ -36,6 +36,7 @@ description: You can have an API overview of the DHTMLX JavaScript To Do List li
 | [](api/methods/openinlineeditor_method.md)   | @getshort(api/methods/openinlineeditor_method.md)   |
 | [](api/methods/parse_method.md)              | @getshort(api/methods/parse_method.md)              |
 | [](api/methods/pastetask_method.md)          | @getshort(api/methods/pastetask_method.md)          |
+| [](api/methods/redo_method.md)               | @getshort(api/methods/redo_method.md)               |
 | [](api/methods/selecttask_method.md)         | @getshort(api/methods/selecttask_method.md)         |
 | [](api/methods/serialize_method.md)          | @getshort(api/methods/serialize_method.md)          |
 | [](api/methods/setconfig_method.md)          | @getshort(api/methods/setconfig_method.md)          |
@@ -46,6 +47,7 @@ description: You can have an API overview of the DHTMLX JavaScript To Do List li
 | [](api/methods/showcompletedtasks_method.md) | @getshort(api/methods/showcompletedtasks_method.md) |
 | [](api/methods/unassignuser_method.md)       | @getshort(api/methods/unassignuser_method.md)       |
 | [](api/methods/unchecktask_method.md)        | @getshort(api/methods/unchecktask_method.md)        |
+| [](api/methods/undo_method.md)               | @getshort(api/methods/undo_method.md)               |
 | [](api/methods/unindenttask_method.md)       | @getshort(api/methods/unindenttask_method.md)       |
 | [](api/methods/unselecttask_method.md)       | @getshort(api/methods/unselecttask_method.md)       |
 | [](api/methods/updateproject_method.md)      | @getshort(api/methods/updateproject_method.md)      |
@@ -115,6 +117,7 @@ description: You can have an API overview of the DHTMLX JavaScript To Do List li
 | :-------------------------------------- | :--------------------------------------------- |
 | [](api/configs/activeproject_config.md) | @getshort(api/configs/activeproject_config.md) |
 | [](api/configs/drag_config.md)          | @getshort(api/configs/drag_config.md)          |
+| [](api/configs/history_config.md)       | @getshort(api/configs/history_config.md)       |
 | [](api/configs/id_config.md)            | @getshort(api/configs/id_config.md)            |
 | [](api/configs/locale_config.md)        | @getshort(api/configs/locale_config.md)        |
 | [](api/configs/menu_config.md)          | @getshort(api/configs/menu_config.md)          |
@@ -126,4 +129,3 @@ description: You can have an API overview of the DHTMLX JavaScript To Do List li
 | [](api/configs/tasks_config.md)         | @getshort(api/configs/tasks_config.md)         |
 | [](api/configs/taskshape_config.md)     | @getshort(api/configs/taskshape_config.md)     |
 | [](api/configs/users_config.md)         | @getshort(api/configs/users_config.md)         |
-

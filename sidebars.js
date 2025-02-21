@@ -88,6 +88,7 @@ module.exports = {
                                 //"api/methods/openmenu_method",
                                 "api/methods/parse_method",
                                 "api/methods/pastetask_method",
+                                "api/methods/redo_method",
                                 "api/methods/selecttask_method",
                                 "api/methods/serialize_method",
                                 "api/methods/setconfig_method",
@@ -98,6 +99,7 @@ module.exports = {
                                 "api/methods/showcompletedtasks_method",
                                 "api/methods/unassignuser_method",
                                 "api/methods/unchecktask_method",
+                                "api/methods/undo_method",
                                 "api/methods/unindenttask_method",
                                 "api/methods/unselecttask_method",
                                 "api/methods/updateproject_method",
@@ -214,6 +216,7 @@ module.exports = {
                                 // To Do List properties
                                 "api/configs/activeproject_config",
                                 "api/configs/drag_config",
+                                "api/configs/history_config",
                                 "api/configs/id_config",
                                 "api/configs/locale_config",
                                 "api/configs/menu_config",
