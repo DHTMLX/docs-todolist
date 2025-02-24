@@ -12,9 +12,21 @@ If you are updating To Do List from an older version, check [Migration to newer 
 
 Released on February DAY, 2025
 
-### Fixes
+### New functionality
 
-- ...
+- You can manage the history of changes in a separate project or in the whole app via the [`history`](../api/configs/history_config) property and [`undo()`](../api/methods/undo_method)/[`redo()`](../api/methods/redo_method) methods
+- You can customize a context menu via the [`menu`](../api/configs/menu_config) property ([Example](https://snippet.dhtmlx.com/slpjstbb))
+
+### New API
+
+- The [`history`](../api/configs/history_config) property allows you to enable/disable the history of changes in a separate projects or in the whole app and limit the number of stored actions
+- The [`undo()`](../api/methods/undo_method)/[`redo()`](../api/methods/redo_method) methods allows you to manage the history of changes
+- The [`menu`](../api/configs/menu_config) property allows you to customize a context menu (([Example](https://snippet.dhtmlx.com/cmfqmg00))
+
+### Updates
+
+- The [`getState()`](../api/internal/getstate_method) and [`getReactiveState()`](../api/internal/getreactivestate_method) methods return the `historyState` object
+- The [`items`](../api/toolbar_api/configs/items_config) property was extended by `"undo"` and `"redo"` parameters that allow you to display controls for managing history of changes
 
 ## Version 1.2.12
 
