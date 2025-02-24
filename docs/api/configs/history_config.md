@@ -8,7 +8,7 @@ description: You can learn about the history config in the documentation of the 
 
 ### Description
 
-@short: Optional. Enables/disables managing history
+@short: Optional. Enables/disables managing the history of changes
 
 :::info
 Using the `history` property you can enable/disable managing history of To Do List. If you set it to **false**, you will not be able to manage history using [`undo()`](api/methods/undo_method.md)/[`redo()`](api/methods/redo_method.md) methods and controls on Toolbar.
