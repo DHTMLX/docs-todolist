@@ -10,6 +10,10 @@ description: You can learn about the undo method in the documentation of the DHT
 
 @short: Reverts the last operation in To Do List
 
+:::info
+If you set the [`history.projects`](api/configs/history_config.md) parameter to `true`, you will be able to manage history of changes for each project separately; otherwise, you will be able to manage history for whole app.
+:::
+
 ### Usage
 
 ~~~js
@@ -18,7 +22,7 @@ undo(): void;
 
 ### Example
 
-~~~js {10,13}
+~~~js {10,14}
 const { ToDo, Toolbar } = todo;
 const { tasks, users, projects, tags } = getData();
 
@@ -31,6 +35,7 @@ const list = new ToDo("#root", {
     history: { projects: false, limit: 10 }
 });
 
+list.addTask({ text: "New task 1 });
 list.undo();
 ~~~
 
