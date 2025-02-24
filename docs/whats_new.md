@@ -26,7 +26,7 @@ Released on February DAY, 2025
 ### Updates
 
 - The [`getState()`](../api/internal/getstate_method) and [`getReactiveState()`](../api/internal/getreactivestate_method) methods return the `historyState` object
-- The [`items`](../api/toolbar_api/configs/items_config) property was extended by `"undo"` and `"redo"` parameters that allow you to display controls for managing history of changes
+- The [`items`](../api/toolbar_api/configs/items_config) property of Toolbar was extended by `"undo"` and `"redo"` parameters that allow you to display controls for managing history of changes
 
 ## Version 1.2.12
 
