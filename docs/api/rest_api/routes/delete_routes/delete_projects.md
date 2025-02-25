@@ -10,6 +10,10 @@ description: You can learn about the DELETE /projects route in the documentation
 
 @short: Deletes data on a project and returns an empty json object
 
+:::note
+The tasks linked to the project won't be removed. They will be moved to the *"No project"* section.
+:::
+
 The route handles the DELETE request made to the `/projects/{id}` path.
 
 Only one project can be removed per request. All project tasks, if any, are also removed.

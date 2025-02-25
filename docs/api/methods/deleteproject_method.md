@@ -11,7 +11,7 @@ description: You can learn about the deleteProject method in the documentation o
 @short: Removes a project
 
 :::note
-The tasks linked to the project won't be removed.They will be moved to the *"No project"* section
+The tasks linked to the project won't be removed. They will be moved to the *"No project"* section.
 :::
 
 ### Usage

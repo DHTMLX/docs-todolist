@@ -10,9 +10,9 @@ description: You can learn about the DELETE /tasks route in the documentation of
 
 @short: Deletes data on a task and returns an empty json object
 
-The route handles the DELETE request made to the `/tasks/{id}` path.
+The route handles the DELETE request made to the `/tasks/{id}` or `/tasks` path.
 
-Only one task can be removed per request. All child tasks, if any, are also removed.
+One or multiple tasks can be deleted in one request. All child tasks, if any, are also deleted.
 
 <table style="border: 1px solid white; border-collapse: collapse; width:50%">
 <thead style="border: 1px solid white; border-collapse: collapse;">
@@ -35,11 +35,23 @@ The ID of a task that should be removed is sent in the request line.
 
 | Name       | Type        | Description |
 | ---------- | ----------- | ----------- |
-| `id`       |  number     | *Required*. The id of a task to be removed.|
+| `id`       |  number     | *Optional*. The ID of a task to be removed.|
 
 ### Payload
 
-No payload is required.
+The server needs to receive a json object with one property:
+
+| Name       | Type        | Description |
+| ---------- | ----------- | ----------- |
+| `batch`    | array       | *Required*. The list of task IDs to be removed.|
+
+Example:
+
+~~~json
+{
+    "batch": [1, 2, 3]
+}
+~~~
 
 ### Response
 
@@ -48,6 +60,8 @@ The route returns an empty json object in case of a successful request.
 The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500).
 
 ---
+
+**Change log**: The `batch` payload was added in v1.3
 
 **Related articles**:
 

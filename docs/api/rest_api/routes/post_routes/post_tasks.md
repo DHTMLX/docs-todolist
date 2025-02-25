@@ -29,18 +29,20 @@ The route handles the POST request made to the `/tasks` path.
 
 The server side expects to receive a json object with the next properties:
 
-| Name       | Type        | Description |
+| Name        | Type        | Description |
 | ----------- | ----------- | ----------- |
-| `targetId`       |  number   | *Optional*. The ID of the future target task where a new task will be added.|
-| `parent`       |  number   | *Optional*. The ID of the parent task.|
-| `project`       |  number   | *Optional*. The ID of the project to which a new task should be added.|
-| `reverse`| boolean | *Optional*. Defines the position where a new task will be added: **true**, if the task is added before the target task; otherwise, **false** (default).|
-| `task`       |  object  | *Required*. The task object an example of which you can find here [**tasks**](api/configs/tasks_config.md).|
+| `id`        | number      | *Optional*. The ID of a new task.|
+| `targetId`  | number      | *Optional*. The ID of the future target task where a new task will be added.|
+| `parent`    | number      | *Optional*. The ID of the parent task.|
+| `project`   | number      | *Optional*. The ID of the project to which a new task should be added.|
+| `reverse`   | boolean     | *Optional*. Defines the position where a new task will be added: **true**, if the task is added before the target task; otherwise, **false** (default).|
+| `task`      | object      | *Required*. The task object an example of which you can find here [**tasks**](api/configs/tasks_config.md).|
 
 Example:
 
 ~~~json
 {
+    "id": 26,
     "parent": 10,
     "project": 1,
     "reverse": false,
@@ -67,6 +69,8 @@ Example:
 The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500).
 
 ---
+
+**Change log**: The `id` parameter was added in v1.3
 
 **Related articles**:
 - [send()](api/rest_api/methods/send_method.md)
