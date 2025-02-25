@@ -12,6 +12,8 @@ If you are updating To Do List from an older version, check [Migration to newer 
 
 Released on February 26, 2025
 
+[Review of release on the blog](https://dhtmlx.com/blog/dhtmlx-to-do-list-1-3/)
+
 ### New functionality
 
 - You can manage the history of changes in a separate project or in the whole app via the [`history`](../api/configs/history_config) property and [`undo()`](../api/methods/undo_method)/[`redo()`](../api/methods/redo_method) methods
