@@ -41,7 +41,7 @@ The method returns an object with the following properties:
 const { ToDo, Toolbar } = todo;
 const { tasks, users, projects } = getData();
 
-// create To do list
+// create To Do List
 const list = new ToDo("#root", {
     tasks,
     users,

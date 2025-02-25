@@ -11,7 +11,7 @@ description: You can learn about the redo method in the documentation of the DHT
 @short: Repeats the action that was reverted by the undo action
 
 :::info
-If you set the [`history.projects`](api/configs/history_config.md) parameter to `true`, you will be able to manage history of changes for each project separately; otherwise, you will be able to manage history for whole app.
+If you set the [`history.projects`](api/configs/history_config.md) parameter to `true`, you will be able to manage the history of changes for each project separately; otherwise, you will be able to manage the history of changes for the whole app.
 :::
 
 ### Usage
@@ -23,10 +23,10 @@ redo(): void;
 ### Example
 
 ~~~js {10,15}
-const { ToDo, Toolbar } = todo;
+const { ToDo } = todo;
 const { tasks, users, projects, tags } = getData();
 
-// create To do list
+// create To Do List
 const list = new ToDo("#root", {
     tasks,
     users,

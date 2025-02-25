@@ -10,7 +10,7 @@ If you are updating To Do List from an older version, check [Migration to newer 
 
 ## Version 1.3
 
-Released on February DAY, 2025
+Released on February 26, 2025
 
 ### New functionality
 
@@ -19,9 +19,9 @@ Released on February DAY, 2025
 
 ### New API
 
-- The [`history`](../api/configs/history_config) property allows you to enable/disable the history of changes in a separate projects or in the whole app and limit the number of stored actions
+- The [`history`](../api/configs/history_config) property allows you to enable/disable the history of changes in a separate project or in the whole app and limit the number of stored actions
 - The [`undo()`](../api/methods/undo_method)/[`redo()`](../api/methods/redo_method) methods allows you to manage the history of changes
-- The [`menu`](../api/configs/menu_config) property allows you to customize a context menu (([Example](https://snippet.dhtmlx.com/cmfqmg00))
+- The [`menu`](../api/configs/menu_config) property allows you to customize a context menu ([Example](https://snippet.dhtmlx.com/cmfqmg00))
 
 ### Updates
 

@@ -51,15 +51,15 @@ The `config` object may include the following parameters:
     - `"user"` - the context menu related to users
     - `"toolbar"` - the context menu related to toolbar
     - `"task"` - the context menu related to tasks
-- `id` - (optional|required) the ID of the project. This parameter is required if `type: "toolbar"`
-- `source` - (optional|required) an array that include the IDs of tasks. This parameter is required if `type: "task"`
+- `id` - (optional | required) the ID of the project. This parameter is required if `type: "toolbar"`
+- `source` - (optional | required) the array that includes the IDs of tasks. This parameter is required if `type: "task"`
 - `store` - (required) the readonly *DataStore*, that should be passed to the `getMenuOptions()` method
 
 **Returns**
 
 The callback should return one of the following values:
 
-- `boolean` - `true` to display a default context menu; `false` to hide context menu
+- `boolean` - `true` to display a default context menu; `false` to hide a context menu
 - `object[]` - the array of objects that store data for context menu items. Each object may have the following structure:
 
     ~~~js
@@ -72,7 +72,7 @@ The callback should return one of the following values:
         data?: object[],
         handler?: function,
         css?: string,
-        type?: string,
+        type?: string
     }
     ~~~
 
@@ -193,7 +193,7 @@ The callback should return one of the following values:
 ### Example
 
 ~~~js {3-66,72}
-const { Toolbar, getMenuOptions } = todo;
+const { ToDo, Toolbar, getMenuOptions } = todo;
 
 const menu = function (config) {
     let options = getMenuOptions(config);
