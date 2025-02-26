@@ -35,7 +35,7 @@ The ID of a task that should be removed is sent in the request line.
 
 | Name       | Type        | Description |
 | ---------- | ----------- | ----------- |
-| `id`       |  number     | *Optional*. The ID of a task to be removed.|
+| `id`       | number      | *Optional*. The ID of a task to be removed.|
 
 ### Payload
 
@@ -43,7 +43,7 @@ The server needs to receive a json object with one property:
 
 | Name       | Type        | Description |
 | ---------- | ----------- | ----------- |
-| `batch`    | array       | *Required*. The list of task IDs to be removed.|
+| `batch`    | array       | *Optional*. The list of task IDs to be removed.|
 
 Example:
 
