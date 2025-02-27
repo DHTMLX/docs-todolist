@@ -10,7 +10,7 @@ If you are updating To Do List from an older version, check [Migration to newer 
 
 ## Version 1.3
 
-Released on February 26, 2025
+Released on February 27, 2025
 
 [Review of release on the blog](https://dhtmlx.com/blog/dhtmlx-to-do-list-1-3/)
 
@@ -31,6 +31,10 @@ Released on February 26, 2025
 - The [`items`](../api/toolbar_api/configs/items_config) property of Toolbar was extended by `"undo"` and `"redo"` parameters that allow you to display controls for managing history of changes
 - The **POST** [`/tasks`](../api/rest_api/routes/post_routes/post_tasks) and [`/projects`](../api/rest_api/routes/post_routes/post_projects) routes were extended by the `id` parameter, that allows you to manage history changes on backend
 - The **DELETE** [`/tasks`](../api/rest_api/routes/delete_routes/delete_tasks) route was extended by the `batch` payload. The `id` parameter related to the task to be deleted become optional. You can delete multiple tasks by once
+
+### Fixes
+
+- Careless dragging of tasks can leave clones all over the window
 
 ## Version 1.2.12
 
