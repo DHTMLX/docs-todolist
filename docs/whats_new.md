@@ -35,6 +35,8 @@ Released on February 27, 2025
 ### Fixes
 
 - Careless dragging of tasks can leave clones all over the window
+- Tasks of a new project are not displayed after switch to another project
+- Calendar popup for the due date does not close on click outside
 
 ## Version 1.2.12
 
