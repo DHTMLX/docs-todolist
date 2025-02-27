@@ -8,7 +8,7 @@ description: You can learn about the getState method in the documentation of the
 
 ### Description
 
-@short: Gets an object with the current properties of the DataStore of To Do List 
+@short: Gets an object with the current properties of the DataStore of To Do List
 
 ### Usage
 
@@ -22,15 +22,16 @@ The method returns an object with the following properties:
 
 ~~~js
 {
-    activeProject: {set: any, update: any, subscribe: any}
-    tasks: {...}
-    id: {...}
-    projects: {...}
-    readonly: {...}
-    tags: {...}
-    taskShape: {...}
-    selected: {...}
-    users: {...}
+    activeProject: object,
+    tasks: object,
+    id: object,
+    projects: object,
+    readonly: object,
+    tags: object,
+    taskShape: object,
+    selected: object,
+    users: object,
+    historyState: object
 }
 ~~~
 
@@ -50,3 +51,5 @@ const list = new ToDo("#root", {
 const state = list.api.getState();
 console.log(state);
 ~~~
+
+**Change log:** The `historyState` parameter was added in v1.3

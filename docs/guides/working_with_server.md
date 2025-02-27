@@ -210,8 +210,8 @@ const tasksHandler = (obj: any) => {
                 parent: obj.data.parent,
                 targetId: obj.data.targetId,
                 reverse: obj.data.reverse,
-                task: { ...obj.data },
-                skipProvider: true, // prevent the client from sending request to the server
+                task: { ...obj.data.task },
+                skipProvider: true // prevent the client from sending request to the server
             })
             break;
         // other operations
@@ -219,7 +219,7 @@ const tasksHandler = (obj: any) => {
 };
 
 const handlers = {
-    tasks: tasksHandler,
+    tasks: tasksHandler
 };
 
 const remoteEvents = new todo.RemoteEvents(remoteEventsURL, token);

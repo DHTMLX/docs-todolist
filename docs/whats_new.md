@@ -8,6 +8,36 @@ description: You can learn a new information about DHTMLX JavaScript To Do List 
 
 If you are updating To Do List from an older version, check [Migration to newer version](migration.md) for details.
 
+## Version 1.3
+
+Released on February 27, 2025
+
+[Review of release on the blog](https://dhtmlx.com/blog/dhtmlx-to-do-list-1-3/)
+
+### New functionality
+
+- You can manage the history of changes in a separate project or in the whole app via the [`history`](../api/configs/history_config) property and [`undo()`](../api/methods/undo_method)/[`redo()`](../api/methods/redo_method) methods
+- You can customize a context menu via the [`menu`](../api/configs/menu_config) property ([Example](https://snippet.dhtmlx.com/slpjstbb))
+
+### New API
+
+- The [`history`](../api/configs/history_config) property allows you to enable/disable the history of changes in a separate project or in the whole app and limit the number of stored actions
+- The [`undo()`](../api/methods/undo_method)/[`redo()`](../api/methods/redo_method) methods allows you to manage the history of changes
+- The [`menu`](../api/configs/menu_config) property allows you to customize a context menu ([Example](https://snippet.dhtmlx.com/cmfqmg00))
+
+### Updates
+
+- The [`getState()`](../api/internal/getstate_method) and [`getReactiveState()`](../api/internal/getreactivestate_method) methods return the `historyState` object
+- The [`items`](../api/toolbar_api/configs/items_config) property of Toolbar was extended by `"undo"` and `"redo"` parameters that allow you to display controls for managing history of changes
+- The **POST** [`/tasks`](../api/rest_api/routes/post_routes/post_tasks) and [`/projects`](../api/rest_api/routes/post_routes/post_projects) routes were extended by the `id` parameter, that allows you to manage history changes on backend
+- The **DELETE** [`/tasks`](../api/rest_api/routes/delete_routes/delete_tasks) route was extended by the `batch` payload. The `id` parameter related to the task to be deleted become optional. You can delete multiple tasks by once
+
+### Fixes
+
+- Careless dragging of tasks can leave clones all over the window
+- Tasks of a new project are not displayed after switch to another project
+- Calendar popup for the due date does not close on click outside
+
 ## Version 1.2.12
 
 Released on November 15, 2024

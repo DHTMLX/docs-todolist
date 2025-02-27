@@ -31,12 +31,14 @@ The server needs to receive a json object with one property:
 
 | Name       | Type        | Description |
 | ---------- | ----------- | ----------- |
-| `label`    |  string     | *Required*. The name of a new project to be added.|
+| `id`       | number      | *Optional*. The ID of a new project.|
+| `label`    | string      | *Required*. The name of a new project to be added.|
 
 Example:
 
 ~~~json
 {
+    "id": 1,
     "label": "New Project"
 }
 ~~~
@@ -56,6 +58,8 @@ Example:
 The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500).
 
 ---
+
+**Change log**: The `id` parameter was added in v1.3
 
 **Related articles**:
 
