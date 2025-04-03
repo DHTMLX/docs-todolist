@@ -14,7 +14,7 @@ Released on April 3, 2025
 
 ### Fixes
 
-- The dist folder does not include the *.dts* files of imported libraries
+- The build does not include the *todo.es.d.ts* and *todo.d.ts* files of imported libraries
 
 ## Version 1.3
 
