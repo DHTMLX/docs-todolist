@@ -8,6 +8,14 @@ description: You can learn a new information about DHTMLX JavaScript To Do List 
 
 If you are updating To Do List from an older version, check [Migration to newer version](migration.md) for details.
 
+## Version 1.3.1
+
+Released on April 3, 2025
+
+### Fixes
+
+- The build does not include the *todo.es.d.ts* and *todo.d.ts* files of imported libraries
+
 ## Version 1.3
 
 Released on February 27, 2025
