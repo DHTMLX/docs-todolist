@@ -41,20 +41,20 @@ You need to include the following two files:
 </html>
 ~~~
 
-### Installing To Do List via npm and yarn
+### Installing To Do List via npm or yarn
 
 You can import JavaScript To Do List into your project using `yarn` or `npm` package manager.
 
-#### Installing trial To Do List via npm and yarn
+#### Installing trial To Do List via npm or yarn
 
 :::info
 If you want to use trial version of To Do List, download the [**trial To Do List package**](https://dhtmlx.com/docs/products/dhtmlxTodo/download.shtml) and follow steps mentioned in the *README* file. Note that trial To Do List is available 30 days only.
 :::
 
-#### Installing PRO To Do List via npm and yarn
+#### Installing PRO To Do List via npm or yarn
 
 :::info
-If you have already own To Do List under the proprietary license, send your **license number** on the *contact@dhtmlx.com* email to receive *login* and *password* for private **npm** as well as detailed guide on how to install To Do List. Note that private **npm** is available before the expiration of the proprietary To Do List license.
+You can access the DHTMLX private **npm** directly in the [Client's Area](https://dhtmlx.com/clients/) by generating your login and password for **npm**. A detailed installation guide is also available there. Please note that access to the private **npm** is available only while your proprietary To Do List license is active.
 :::
 
 ## Step 2. Create To Do List

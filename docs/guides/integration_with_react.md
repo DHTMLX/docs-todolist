@@ -56,7 +56,7 @@ Now you should get the DHTMLX To Do List source code. First of all, stop the app
 
 ### Step 1. Package installation
 
-Download the [**trial To Do List package**](/how_to_start/#installing-to-do-list-via-npm-and-yarn) and follow steps mentioned in the README file. Note that trial To Do List is available 30 days only.
+Download the [**trial To Do List package**](/how_to_start/#installing-to-do-list-via-npm-or-yarn) and follow steps mentioned in the README file. Note that trial To Do List is available 30 days only.
 
 ### Step 2. Component creation
 
