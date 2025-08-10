@@ -12,50 +12,30 @@ You can present the interface of DHTMLX To Do List in any language. The library 
 
 ~~~js
 const en = {
-    // calendar
-    calendar:{
+    calendar:{ // translations and settings of the calendar
         monthFull: [
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December",
+            "January", "February", "March",
+            "April", "May", "June", 
+            "July", "August", "September", 
+            "October", "November", "December"
         ],
         monthShort: [
-            "Jan",
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
-            "Oct",
-            "Nov",
-            "Dec",
+            "Jan", "Feb", "Mar",
+            "Apr", "May", "Jun",
+            "Jul", "Aug", "Sep",
+            "Oct", "Nov", "Dec"
         ],
         dayFull: [
-            "Sunday",
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday",
+            "Sunday", "Monday", "Tuesday",
+            "Wednesday", "Thursday", "Friday", "Saturday"
         ],
         dayShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
     
         clear: "Clear",
         done: "Done",
         today: "Today",
+
+        weekStart: 1 // defines a first day of week (Monday by default)
     },
     // To Do List
     todo: {
@@ -109,6 +89,7 @@ const en = {
         "Ctrl+D": "Ctrl+D",
         "Ctrl+C": "Ctrl+C",
         "Ctrl+V": "Ctrl+V",
+        
         // For Mac OS
         "CMD+D": "CMD+D",
         "CMD+C": "CMD+C",
@@ -120,7 +101,7 @@ const en = {
         // Other
         "Search": "Search",
         "Add task": "Add task",
-        "New project": "New project",
+        "New project": "New project"
     }
 };
 ~~~
@@ -138,7 +119,7 @@ const de = {
     },
     todo: {
         // translations for To Do List labels
-    },
+    }
 };
 ~~~
 
@@ -153,9 +134,9 @@ You can download [**a repository from GitHub**](https://github.com/web-widgets/w
 - French (**fr**)
 - German (**de**)
 - English (**en**)
-- Italian (**it**) 
-- Japanese (**jp**) 
-- Portuguese (**pt**) 
+- Italian (**it**)
+- Japanese (**jp**)
+- Portuguese (**pt**)
 - Russian (**ru**)
 - Spanish (**es**)
 
