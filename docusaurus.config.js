@@ -130,8 +130,12 @@ module.exports = {
     url: 'https://docs.dhtmlx.com',
     baseUrl: '/todolist/',
     onBrokenLinks: 'warn',
-    onBrokenMarkdownLinks: 'warn',
     onBrokenAnchors: 'warn',
+    markdown: {
+		hooks: {
+			onBrokenMarkdownLinks: 'warn',
+		}
+	},
     favicon: 'img/favicon.ico',
     organizationName: 'DHTMLX',
     projectName: 'docs-todolist',
