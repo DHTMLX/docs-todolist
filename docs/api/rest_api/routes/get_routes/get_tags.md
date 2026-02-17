@@ -32,7 +32,7 @@ No payload is required.
 ### Response
 
 The route returns a json object with an array of all default tags. 
-You can find an example of the object that is returned in the [**tags**](api/configs/tags_config.md) section.
+You can find an example of the object that is returned in the [**tags**](../../../../../api/configs/tags_config) section.
 
 The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500).
 
@@ -40,5 +40,5 @@ The HTTP status code shows whether the request succeeds (response.status == 200)
 
 **Related articles**:
 
-- [getTags()](api/rest_api/methods/gettags_method.md)
-- [Working with Server](guides/working_with_server.md)
+- [getTags()](../../../../../api/rest_api/methods/gettags_method)
+- [Working with Server](../../../../../guides/working_with_server)

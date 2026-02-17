@@ -75,4 +75,4 @@ console.log(list.getChildrenIds({ id: "1", filtered: true, hideCompleted: true }
 
 **Change log:** The `hideCompleted` parameter was added in v1.1
 
-**Related article:** [Task object/Id](guides/task_object.md)
+**Related article:** [Task object/Id](../../../guides/task_object.md)

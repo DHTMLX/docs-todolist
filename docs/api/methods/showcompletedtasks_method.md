@@ -37,4 +37,4 @@ list.showCompletedTasks();
 
 **Change log:** Added in v1.1
 
-**Related article:** [Show/hide completed tasks](guides/hide_completed_tasks.md)
+**Related article:** [Show/hide completed tasks](../../../guides/hide_completed_tasks.md)
