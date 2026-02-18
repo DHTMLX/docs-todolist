@@ -33,7 +33,7 @@ The callback of the **move-task** event can take an object with the following pa
 - `project` - (optional) the ID of the project
 - `targetId` - (optional) the ID of the target task
 - `reverse` - (optional) **true**, if the task is pasted before the target task; otherwise, **false**
-- Additional parameters that can be applied to the [RestDataProvider](guides/working_with_server.md) work:
+- Additional parameters that can be applied to the [RestDataProvider](../../../guides/working_with_server/) work:
     - `operation` - (optional) an operation type performed on a task; values:
         - **indent** - demoting the task nesting level by one
         - **unindent** - promoting the task nesting level by one
@@ -42,7 +42,7 @@ The callback of the **move-task** event can take an object with the following pa
     - `batch` - (optional) an array of IDs of the tasks on which an operation is perfromed 
 
 :::info
-To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods.md)
+To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods/)
 :::
 
 ### Example
@@ -67,4 +67,4 @@ list.api.on("move-task", ({id}) => {
 });
 ~~~ 
 
-**Related article:** [Operations with tasks](guides/task_operations.md#moving-a-task)
+**Related article:** [Operations with tasks](../../../guides/task_operations/#moving-a-task)

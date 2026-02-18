@@ -25,7 +25,7 @@ The callback of the **indent-task** event can take an object with the following 
 - `id` - (required) the id of a task
 
 :::info
-To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods.md)
+To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods/)
 :::
 
 ### Example
@@ -50,4 +50,4 @@ list.api.on("indent-task", ({id}) => {
 });
 ~~~ 
 
-**Related article:** [Operations with tasks](guides/task_operations.md#changing-the-indent-level-of-a-task)
+**Related article:** [Operations with tasks](../../../guides/task_operations/#changing-the-indent-level-of-a-task)

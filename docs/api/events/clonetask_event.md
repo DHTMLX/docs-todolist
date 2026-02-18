@@ -10,7 +10,7 @@ description: You can learn about the clone-task event in the documentation of th
 
 @short: Fires when a task is pasted from the clipboard into the specified position 
 
-The event fires after the [paste-task](api/events/pastetask_event.md) event
+The event fires after the [paste-task](api/events/pastetask_event/) event
 
 ### Usage
 
@@ -33,7 +33,7 @@ The callback of the **clone-task** event can take an object with the following p
 - `batch` - (required) an array of objects that were created on copying and then pasted
 
 :::info
-To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods.md)
+To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods/)
 :::
 
 ### Example
@@ -58,4 +58,4 @@ list.api.on("clone-task", (obj) => {
 });
 ~~~
 
-**Related article:** [Operations with tasks](guides/task_operations.md#copyingpasting-a-task)
+**Related article:** [Operations with tasks](../../../guides/task_operations/#copyingpasting-a-task)

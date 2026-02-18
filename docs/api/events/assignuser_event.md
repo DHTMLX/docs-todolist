@@ -27,7 +27,7 @@ The callback of the **assign-user** event can take an object with the following 
 - `userId` - (required) the id of the user assigned to the task
 
 :::info
-To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods.md)
+To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods/)
 :::
 
 ### Example
@@ -52,4 +52,4 @@ list.api.on("assign-user", ({id, userId}) => {
 });
 ~~~
 
-**Related article:** [Task users](guides/task_users.md)
+**Related article:** [Task users](../../../guides/task_users/)

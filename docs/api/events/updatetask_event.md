@@ -27,12 +27,12 @@ The callback of the **update-task** event can take an object with the following 
 
 - `id` - (required) the id of the updated task
 - `task` - (required) the object of the updated task
-- Additional parameters that can be applied to the [RestDataProvider](guides/working_with_server.md) work:
+- Additional parameters that can be applied to the [RestDataProvider](../../../guides/working_with_server/) work:
   - `skipProvider` - (optional) allows skipping events sent to RestDataProvider; if **false (default)**, RestDataProvider works with the event, **true** - RestDataProvider skips the event
   - `batch` - (optional) an array of updated tasks objects
 
 :::info
-To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods.md)
+To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods/)
 :::
 
 ### Example
@@ -58,4 +58,4 @@ list.api.on("update-task", ({id, task}) => {
 ~~~
 
 
-**Related article:** [Operations with tasks](guides/task_operations.md#updating-a-task)
+**Related article:** [Operations with tasks](../../../guides/task_operations/#updating-a-task)

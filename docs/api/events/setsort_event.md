@@ -24,12 +24,12 @@ description: You can learn about the set-sort event in the documentation of the 
 
 The callback of the **set-sort** event can take an object with the following parameters:
 
-- `by` - (optional) the search criterion (either the key of the [task attribute](api/configs/tasks_config.md#parameters) or a search function which returns a string)
+- `by` - (optional) the search criterion (either the key of the [task attribute](api/configs/tasks_config/#parameters) or a search function which returns a string)
 - `dir` - (optional) the direction of sorting: "asc" or "desc"
 - `tree` - (optional) defines whether sorting for child tasks is enabled
 
 :::info
-To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods.md)
+To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods/)
 :::
 
 ### Example
@@ -54,4 +54,4 @@ list.api.on("set-sort", ({ by, dir, tree }) => {
 });
 ~~~
 
-**Related article:** [Sorting and filtering tasks](guides/sorting_filtering_tasks.md)
+**Related article:** [Sorting and filtering tasks](../../../guides/sorting_filtering_tasks/)

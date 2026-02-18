@@ -27,7 +27,7 @@ The callback of the **check-task** event can take an object with the following p
 - `manual` - (optional) **true** if the task is marked as completed in the "manual" mode
 
 :::info
-To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods.md)
+To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods/)
 :::
 
 ### Example
@@ -52,4 +52,4 @@ list.api.on("check-task", ({id}) => {
 });
 ~~~
 
-**Related article:** [Operations with tasks](guides/task_operations.md#marking-a-task-completeincomplete)
+**Related article:** [Operations with tasks](../../../guides/task_operations/#marking-a-task-completeincomplete)

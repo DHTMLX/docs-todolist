@@ -25,7 +25,7 @@ The callback of the **delete-project** event can take an object with the followi
 - `id` - (required) the ID of a project
 
 :::info
-To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods.md)
+To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods/)
 :::
 
 ### Example
@@ -50,4 +50,4 @@ list.api.on("delete-project", ({id}) => {
 });
 ~~~
 
-**Related article:** [Operations with projects](guides/project_operations.md#deleting-a-project)
+**Related article:** [Operations with projects](../../../guides/project_operations/#deleting-a-project)
