@@ -50,7 +50,7 @@ Thus, create **two containers** to place a List and Toolbar into and give them I
 After that, initialize List with the **new ToDo()** constructor. It takes two parameters:
 
 - a container to place a List into. The one we have created at the previous step
-- an object with configuration properties. [See the full list here](api/overview/configs_overview.md)
+- an object with configuration properties. [See the full list here](../../api/overview/configs_overview/)
 
 ~~~js title="index.js"
 const { ToDo, Toolbar } = todo; // apply the object destructuring
@@ -94,7 +94,7 @@ You don't need this step if you will use the **new todo.ToDo()** and **new todo.
 
 ## Loading data into To Do List
 
-Detailed information on loading data into DHTMLX To Do is given in the [Data loading](guides/loading_data.md) article.
+Detailed information on loading data into DHTMLX To Do is given in the [Data loading](../../guides/loading_data/) article.
 
 ## Example
 

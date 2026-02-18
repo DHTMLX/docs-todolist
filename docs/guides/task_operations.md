@@ -145,7 +145,7 @@ list.uncheckTask({
 });
 ~~~
 
-When `manual: false` is set, the result of applying the method depends on the value which is specified for the **behavior** attribute of the **completed** parameter of the [`taskShape`](api/configs/taskshape_config.md) property. 
+When `manual: false` is set, the result of applying the method depends on the value which is specified for the **behavior** attribute of the **completed** parameter of the [`taskShape`](../../api/configs/taskshape_config/) property. 
 
 If the "auto" mode is specified via the **taskShape** property but you need to check/uncheck the task in the "manual" mode, set the **manual** parameter of the [`checkTask()`](../../api/methods/checktask_method/) or [`uncheckTask()`](../../api/methods/unchecktask_method/) method to *true*:
 

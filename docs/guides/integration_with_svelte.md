@@ -232,7 +232,7 @@ onDestroy(() => {
 </div>
 ~~~
 
-You can also use the [`parse()`](/api/methods/parse_method/) method inside the `onMount()` method of Svelte to load data into To Do List:
+You can also use the [`parse()`](../../api/methods/parse_method/) method inside the `onMount()` method of Svelte to load data into To Do List:
 
 ~~~html {6-8,21} title="ToDo.svelte"
 <script>
@@ -272,11 +272,11 @@ onDestroy(() => {
 
 The `parse(data)` method provides data reloading on each applied change.
 
-Now the To Do List component is ready to use. When the element will be added to the page, it will initialize the To Do List with data. You can provide necessary configuration settings as well. Visit our [To Do List API docs](/api/overview/configs_overview/) to check the full list of available properties.
+Now the To Do List component is ready to use. When the element will be added to the page, it will initialize the To Do List with data. You can provide necessary configuration settings as well. Visit our [To Do List API docs](../../api/overview/configs_overview/) to check the full list of available properties.
 
 #### Handling events
 
-When a user makes some action in the To Do List, it invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](/api/overview/events_overview/).
+When a user makes some action in the To Do List, it invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](../../api/overview/events_overview/).
 
 Open ***ToDo.svelte*** and complete the `onMount()` method in the following way:
 

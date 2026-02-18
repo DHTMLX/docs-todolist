@@ -20,7 +20,7 @@ Learn how to [select](../../#selecting-tasks) and [manage multiple tasks](../../
 
 ## Initially selected tasks
 
-If you want to create a To Do List with initially selected tasks, use the [`selected`](api/configs/selected_config.md) configuration property of To Do List:
+If you want to create a To Do List with initially selected tasks, use the [`selected`](../../api/configs/selected_config/) configuration property of To Do List:
 
 ~~~js {12}
 const list = new ToDo("#root", {
@@ -42,7 +42,7 @@ console.log(list.getSelection()); // ["1.1", "1.2", "2.2"]
 
 ## Selecting tasks
 
-The library provides you with the [`selectTask()`](api/methods/selecttask_method.md) method which lets you select tasks after To Do List initialization. The method has two parameters:
+The library provides you with the [`selectTask()`](../../api/methods/selecttask_method/) method which lets you select tasks after To Do List initialization. The method has two parameters:
 
 - `id` - the ID of the task to select
 - `join` - defines whether To Do List should join the specified task to the previously selected tasks
@@ -119,7 +119,7 @@ console.log(list.getSelection()) // ["1.1", "1.2", "2.2", "2.1"]
 
 ## Getting all selected tasks
 
-To get all tasks that are currently selected, use the [`getSelection()`](api/methods/getselection_method.md) method:
+To get all tasks that are currently selected, use the [`getSelection()`](../../api/methods/getselection_method/) method:
 
 ~~~js
 // sorted - disable;
@@ -135,7 +135,7 @@ Enable the **sorted** parameter if you need to get IDs of the selected tasks in 
 
 After you have selected multiple tasks, you may apply different operations to them at once. 
 
-For this purpose, the library includes the [`eachSelected()`](api/methods/eachselected_method.md) method that allows iterating over all selected tasks. The additional parameters of the method - **sorted** and **reversed** - let you define whether the tasks should be sorted or not and specify the direction of iteration.
+For this purpose, the library includes the [`eachSelected()`](../../api/methods/eachselected_method/) method that allows iterating over all selected tasks. The additional parameters of the method - **sorted** and **reversed** - let you define whether the tasks should be sorted or not and specify the direction of iteration.
 
 For example, you can apply the method to delete all selected tasks:
 

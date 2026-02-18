@@ -101,7 +101,7 @@ You don't need this step if you use the **new todo.ToDo()** and **new todo.Toolb
 Toolbar is an optional part of the To Do List interface. To create a To Do List without the Toolbar, you can specify only one DIV container and initialize List via the **new ToDo()** constructor
 :::
 
-For more information about initialization of To Do List read the [Initialization](guides/initialization.md) article.
+For more information about initialization of To Do List read the [Initialization](../guides/initialization/) article.
 
 ## Step 3. Load data into To Do List
 
@@ -111,7 +111,7 @@ As you can see, we've initialized the To Do List but it is still empty. At this 
 You can skip this step if you want to display an empty component on the page
 :::
 
-At first, you should prepare data to load into the component. The data can include the following sets of information: [**tasks**](api/configs/tasks_config.md), [**projects**](api/configs/projects_config.md), [**users**](api/configs/users_config.md), [**tags**](api/configs/tags_config.md), and [**activeProject**](api/configs/activeproject_config.md)
+At first, you should prepare data to load into the component. The data can include the following sets of information: [**tasks**](../api/configs/tasks_config/), [**projects**](../api/configs/projects_config/), [**users**](../api/configs/users_config/), [**tags**](../api/configs/tags_config/), and [**activeProject**](../api/configs/activeproject_config/)
 
 The most convenient way is to prepare data in a separate file, for example:
 
@@ -214,7 +214,7 @@ Now, you can populate the To Do List with data. For that, specify the related pr
 </html>
 ~~~
 
-You can find more information on loading data into To Do List in the [Data loading](guides/loading_data.md) article.
+You can find more information on loading data into To Do List in the [Data loading](../guides/loading_data/) article.
 
 ## Step 4. Configure To Do List
 
@@ -222,7 +222,7 @@ Now, you can define the desired configuration of the To Do list.
 
 As you already know, To Do List consists of two separate interfaces: List and Toolbar. And each of them possesses a separate list of configuration options:
 
-- check the list of [To Do List properties](api/overview/configs_overview.md)
+- check the list of [To Do List properties](../api/overview/configs_overview/)
 - check the list of [Toolbar properties](category/toolbar-properties.md)
 
 As an example, let's enable the *readonly* mode for your To Do List, specify an active project, and show only the search bar in the toolbar:
