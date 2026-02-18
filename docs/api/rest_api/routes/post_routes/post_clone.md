@@ -90,7 +90,7 @@ Example:
 
 ~~~json
 {
-    //“clientId”: serverId,
+    //"clientId": serverId,
     "temp://1667215197027": 62,
     "temp://1667215197028": 63,
     "temp://1667215197029": 65,
@@ -103,8 +103,8 @@ The HTTP status code shows whether the request succeeds (response.status == 200)
 ---
 
 **Related articles**:
-- [clone-task](api/events/clonetask_event.md)
-- [copyTask()](api/methods/copytask_method.md)
-- [pasteTask()](api/methods/pastetask_method.md)
-- [send()](api/rest_api/methods/send_method.md)
-- [Working with Server](guides/working_with_server.md)
+- [clone-task](../../../../../api/events/clonetask_event/)
+- [copyTask()](../../../../../api/methods/copytask_method/)
+- [pasteTask()](../../../../../api/methods/pastetask_method/)
+- [send()](../../../../../api/rest_api/methods/send_method/)
+- [Working with Server](../../../../../guides/working_with_server/)

@@ -23,7 +23,7 @@ setLocale(
 - `locale` - (required) an object of the locale
 
 :::important
-The `setLocale()` method destroys the current component and initialize a new one. If you use the component with **Toolbar**, you need to call the [`setLocale()`](../../../api/toolbar_../../../api/methods/setlocale_method.md) method of **Toolbar**, to change its locale. See the example below!
+The `setLocale()` method destroys the current component and initialize a new one. If you use the component with **Toolbar**, you need to call the [`setLocale()`](../../../api/toolbar_api/methods/setlocale_method/) method of **Toolbar**, to change its locale. See the example below!
 :::
 
 ### Example
@@ -132,4 +132,4 @@ list.setLocale(de);
 toolbar.setLocale(de, list.api);
 ~~~
 
-**Related article:** [Localization](../../../guides/localization.md)
+**Related article:** [Localization](../../../guides/localization/)

@@ -38,4 +38,4 @@ const toolbar = new Toolbar("#toolbar", {
 ~~~
 
 **Related article:**
-- [Initialization](guides/initialization.md)
+- [Initialization](../../../../guides/initialization/)

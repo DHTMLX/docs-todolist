@@ -36,7 +36,7 @@ The server side expects to receive a json object with the next properties:
 | `parent`    | number      | *Optional*. The ID of the parent task.|
 | `project`   | number      | *Optional*. The ID of the project to which a new task should be added.|
 | `reverse`   | boolean     | *Optional*. Defines the position where a new task will be added: **true**, if the task is added before the target task; otherwise, **false** (default).|
-| `task`      | object      | *Required*. The task object an example of which you can find here [**tasks**](api/configs/tasks_config.md).|
+| `task`      | object      | *Required*. The task object an example of which you can find here [**tasks**](../../../../../api/configs/tasks_config/).|
 
 Example:
 
@@ -73,6 +73,6 @@ The HTTP status code shows whether the request succeeds (response.status == 200)
 **Change log**: The `id` parameter was added in v1.3
 
 **Related articles**:
-- [send()](api/rest_api/methods/send_method.md)
-- [addTask()](api/methods/addtask_method.md)
-- [Working with Server](guides/working_with_server.md)
+- [send()](../../../../../api/rest_api/methods/send_method/)
+- [addTask()](../../../../../api/methods/addtask_method/)
+- [Working with Server](../../../../../guides/working_with_server/)

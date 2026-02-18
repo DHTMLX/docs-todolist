@@ -9,7 +9,7 @@ description: You can have the REST routes overview of the DHTMLX JavaScript To D
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-This page gives you the list of all REST routes with their short description and links to pages with more details.<br> Before you dive into each route description, it's recommended to read about [Working with Server](guides/working_with_server.md).
+This page gives you the list of all REST routes with their short description and links to pages with more details.<br> Before you dive into each route description, it's recommended to read about [Working with Server](../../../../guides/working_with_server/).
 
 ---
 

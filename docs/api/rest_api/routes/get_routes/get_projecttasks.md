@@ -42,7 +42,7 @@ No payload is required.
 ### Response
 
 The route returns a json object with an array that contains data for all tasks of the specified project.
-You can find an example of the object that is returned here: [**tasks**](api/configs/tasks_config.md).
+You can find an example of the object that is returned here: [**tasks**](../../../../../api/configs/tasks_config/).
 
 The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500).
 
@@ -50,5 +50,5 @@ The HTTP status code shows whether the request succeeds (response.status == 200)
 
 **Related articles**:
 
-- [getProjectTasks()](api/rest_api/methods/getprojecttasks_method.md)
-- [Working with Server](guides/working_with_server.md)
+- [getProjectTasks()](../../../../../api/rest_api/methods/getprojecttasks_method/)
+- [Working with Server](../../../../../guides/working_with_server/)

@@ -50,7 +50,7 @@ The server expects to receive a json object with the next properties:
 | `parent`   |  number     | *Optional*. The ID of the parent task.|
 | `project`  |  number     | *Optional*. The ID of the project to which a task belongs to.|
 | `targetId` |  number     | *Optional*. The ID of the target task where the moved task will be pasted.|
-| `operation`|  string     | *Required*. A server-specific parameter. It indicates the operation type. Available operation types: "null" - moves a task to a specified position within the current project (see [**"move-task"**](api/methods/movetask_method.md)), [**"indent"**](api/methods/indenttask_method.md), [**"unindent"**](api/methods/unindenttask_method.md), **"project"** - moves a task to another project (see [**"move-task"**](api/methods/movetask_method.md)).<br/>If a task is moved within one project (operation === null), the operation property is not mandatory in the payload.|
+| `operation`|  string     | *Required*. A server-specific parameter. It indicates the operation type. Available operation types: "null" - moves a task to a specified position within the current project (see [**"move-task"**](../../../../../api/methods/movetask_method/)), [**"indent"**](../../../../../api/methods/indenttask_method/), [**"unindent"**](../../../../../api/methods/unindenttask_method/), **"project"** - moves a task to another project (see [**"move-task"**](../../../../../api/methods/movetask_method/)).<br/>If a task is moved within one project (operation === null), the operation property is not mandatory in the payload.|
 | `reverse`       | boolean   | *Optional*. The position where a task will be moved: before the target task (true) or after it (false by default).|
 | `batch`       |  object  | *Required*. An array of IDs of all tasks that are moved. If a task has child items, only the task parent ID is included into the object.|
 
@@ -193,6 +193,6 @@ In case of the success status, an empty json object is returned.
 ---
 
 **Related articles**:
-- [move-task](api/events/movetask_event.md)
-- [send()](api/rest_api/methods/send_method.md)
-- [Working with Server](guides/working_with_server.md)
+- [move-task](../../../../../api/events/movetask_event/)
+- [send()](../../../../../api/rest_api/methods/send_method/)
+- [Working with Server](../../../../../guides/working_with_server/)
