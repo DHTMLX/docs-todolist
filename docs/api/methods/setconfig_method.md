@@ -18,14 +18,14 @@ setConfig(config: object): void;
 
 ### Parameters
 
-- `config` - (required) an object with new configuration of To Do List. See the full list of properties [here](../../../api/api_overview.md#to-do-list-properties)
+- `config` - (required) an object with new configuration of To Do List. See the full list of properties [here](/api/api_overview/#to-do-list-properties)
 
 :::tip
-The method changes only the parameters you passed. It is also possible to load data into the To Do List via the method, but we recommend that you use the [`parse()`](../../../api/methods/parse_method.md) method for this purpose.
+The method changes only the parameters you passed. It is also possible to load data into the To Do List via the method, but we recommend that you use the [`parse()`](/api/methods/parse_method/) method for this purpose.
 :::
 
 :::important
-The `setConfig()` method destroys the current component and initialize a new one. If you use the component with **Toolbar**, you need to call the [`setConfig()`](../../../api/toolbar_../../../api/methods/setconfig_method.md) method of **Toolbar**, because it uses the internal API of To Do List. See the example below!
+The `setConfig()` method destroys the current component and initialize a new one. If you use the component with **Toolbar**, you need to call the [`setConfig()`](/api/toolbar_api/methods/setconfig_method/) method of **Toolbar**, because it uses the internal API of To Do List. See the example below!
 :::
 
 ### Example

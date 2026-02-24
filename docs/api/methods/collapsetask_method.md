@@ -46,4 +46,4 @@ list.collapseTask({
 });
 ~~~
 
-**Related article:** [Operations with tasks](../../../guides/task_operations.md)
+**Related article:** [Operations with tasks](/guides/task_operations/)

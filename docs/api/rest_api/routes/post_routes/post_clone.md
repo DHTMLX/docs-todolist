@@ -103,8 +103,8 @@ The HTTP status code shows whether the request succeeds (response.status == 200)
 ---
 
 **Related articles**:
-- [clone-task](../../../../../api/events/clonetask_event/)
-- [copyTask()](../../../../../api/methods/copytask_method/)
-- [pasteTask()](../../../../../api/methods/pastetask_method/)
-- [send()](../../../../../api/rest_api/methods/send_method/)
-- [Working with Server](../../../../../guides/working_with_server/)
+- [clone-task](/api/events/clonetask_event/)
+- [copyTask()](/api/methods/copytask_method/)
+- [pasteTask()](/api/methods/pastetask_method/)
+- [send()](/api/rest_api/methods/send_method/)
+- [Working with Server](/guides/working_with_server/)

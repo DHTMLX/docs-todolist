@@ -27,7 +27,7 @@ The callback of the **keypress-on-todo** event can take an object with the follo
 - `event` - (required) a native [event object](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent) 
 
 :::info
-To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods/)
+To handle the inner events, you can use the [**Event Bus methods**](/category/event-bus-methods/)
 :::
 
 ### Example
@@ -71,8 +71,8 @@ The key codes described below are not available if focus is set on the Search ba
 | **Enter** |enter| Creates a new task on the same level as the selected one, moves selection to the created task and opens the editor |
 | **ArrowUp** |arrowup| Moves the selection up to the previous task |
 | **ArrowDown** |arrowdown| Moves the selection down to the next task |
-| **Ctrl(/)+Enter** |ctrl+enter| Opens the editor of the selected task |
-|**Ctrl(/)+Click** /<br>**Ctrl(/)+Shift+Click** <br> added in v1.1|ctrl /<br>ctrl+shift|Selects multiple tasks with all their children.<br> If the task is currently selected - unselects it, moreover:<br> - If the task has parents which are also selected - unselects the task together with its parents.<br> - If the task has children which are also selected - unselects only the task itself.|
+| **Ctrl(Cmd)+Enter** |ctrl+enter| Opens the editor of the selected task |
+|**Ctrl(Cmd)+Click** /<br>**Ctrl(Cmd)+Shift+Click** <br> added in v1.1|ctrl /<br>ctrl+shift|Selects multiple tasks with all their children.<br> If the task is currently selected - unselects it, moreover:<br> - If the task has parents which are also selected - unselects the task together with its parents.<br> - If the task has children which are also selected - unselects only the task itself.|
 |**Shift+Click** <br> added in v1.1|shift|Selects a range of tasks|
 |**Shift+ArrowUp** <br> added in v1.1|shift+arrowup|Selects a task above the current one.<br> If the task above is currently selected - unselects it|
 |**Shift+ArrowDown** <br> added in v1.1|shift+arrowdown|Selects a task (and all its children) below the current one.<br> If the task below is currently selected - unselects it|
@@ -84,9 +84,9 @@ The key codes described below are not available if focus is set on the Search ba
 | **ArrowLeft** |arrowleft| Collapses the expanded parent task. If the task is already collapsed or does not have child tasks, moves selection to the parent task |
 | **Tab** |tab| Demotes the nesting level of the task to one lower level |
 | **Shift+Tab** |shift+tab| Promotes the nesting level of the task to one higher level|
-| **Ctrl(/)+D** |ctrl+d| Duplicates the selected task at the same level |
-| **Ctrl(/)+C** |ctrl+c| Copies the selected task into the clipboard, including all child tasks |
-| **Ctrl(/)+V** |ctrl+v| Pastes the copied task to the same level as the currently selected task. It is possible to paste a copied task to any level, the structure of the copied task is saved |
+| **Ctrl(Cmd)+D** |ctrl+d| Duplicates the selected task at the same level |
+| **Ctrl(Cmd)+C** |ctrl+c| Copies the selected task into the clipboard, including all child tasks |
+| **Ctrl(Cmd)+V** |ctrl+v| Pastes the copied task to the same level as the currently selected task. It is possible to paste a copied task to any level, the structure of the copied task is saved |
 
 2\. Keyboard shortcuts **in the editing mode**
 

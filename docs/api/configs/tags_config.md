@@ -43,5 +43,5 @@ const toolbar = new Toolbar("#toolbar", {
 ~~~
 
 **Related articles:** 
-- [Loading and storing data](../../../guides/loading_data/)
-- [Inline editing](../../../guides/inline_editing/)
+- [Loading and storing data](/guides/loading_data/)
+- [Inline editing](/guides/inline_editing/)

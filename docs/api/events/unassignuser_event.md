@@ -27,7 +27,7 @@ The callback of the **unassign-user** event can take an object with the followin
 - `userId` - (required) the id of the user unassigned from the task
 
 :::info
-To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods/)
+To handle the inner events, you can use the [**Event Bus methods**](/category/event-bus-methods/)
 :::
 
 ### Example
@@ -52,4 +52,4 @@ list.api.on("unassign-user", ({id, userId}) => {
 });
 ~~~
 
-**Related article:** [Task users](../../../guides/task_users/)
+**Related article:** [Task users](/guides/task_users/)

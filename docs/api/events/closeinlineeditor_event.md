@@ -27,7 +27,7 @@ The callback of the **close-inline-editor** event can take an object with the fo
 - `save` - (required) **true** if the made changes have been saved after closing the editor; otherwise, **false**
 
 :::info
-To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods/)
+To handle the inner events, you can use the [**Event Bus methods**](/category/event-bus-methods/)
 :::
 
 ### Example
@@ -52,4 +52,4 @@ list.api.on("close-inline-editor", ({id, save}) => {
 });
 ~~~
 
-**Related article:** [Inline editing](../../../guides/inline_editing/#working-with-editor)
+**Related article:** [Inline editing](/guides/inline_editing/#working-with-editor)

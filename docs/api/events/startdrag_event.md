@@ -29,7 +29,7 @@ The callback of the **start-drag** event can take an object with the following p
     - `copy` - the copy mode
 
 :::info
-To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods/)
+To handle the inner events, you can use the [**Event Bus methods**](/category/event-bus-methods/)
 :::
 
 ### Example
@@ -56,4 +56,4 @@ list.api.on("start-drag", ({ start, mode }) => {
 
 **Change log:** Added in v1.1
 
-**Related article:** [Drag-n-drop](../../../guides/configuration/#drag-n-drop)
+**Related article:** [Drag-n-drop](/guides/configuration/#drag-n-drop)

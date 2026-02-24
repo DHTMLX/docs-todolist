@@ -24,7 +24,7 @@ The callback of the **unselect-task** event can take an object with the followin
 - `id` - (required) the id of a task
 
 :::info
-To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods/)
+To handle the inner events, you can use the [**Event Bus methods**](/category/event-bus-methods/)
 :::
 
 ### Example
@@ -50,5 +50,5 @@ list.api.on("unselect-task", ({id}) => {
 ~~~
 
 **Related articles:**
-- [Operations with tasks](../../../guides/task_operations/)
-- [Multiple select and bulk operations](../../../guides/multiselection/)
+- [Operations with tasks](/guides/task_operations/)
+- [Multiple select and bulk operations](/guides/multiselection/)

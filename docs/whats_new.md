@@ -258,14 +258,14 @@ Released on June 20, 2022
 ### API
 
 - **To Do List API**: 
-    - [methods](api/overview/methods_overview.md)
+    - [methods](/api/overview/methods_overview/)
     - internal API:
-        - [Event Bus methods](category/event-bus-methods.md)
-        - [State methods](category/state-methods.md)
-    - [events](api/overview/events_overview.md)
-    - [properties](api/overview/configs_overview.md)
+        - [Event Bus methods](/category/event-bus-methods/)
+        - [State methods](/category/state-methods/)
+    - [events](/api/overview/events_overview/)
+    - [properties](/api/overview/configs_overview/)
 - **Toolbar API**:
-    - [methods](category/toolbar-methods.md)
-    - [properties](category/toolbar-properties.md)
+    - [methods](/category/toolbar-methods/)
+    - [properties](/category/toolbar-properties/)
 - **RestDataProvider API**:
-    - [REST methods](category/rest-methods.md)
+    - [REST methods](/category/rest-methods/)

@@ -19,7 +19,7 @@ setConfig(config: object): void;
 
 ### Parameters
  
-- `config` - (required) an object with Toolbar configurations. See the full list of properties [here](category/toolbar-properties.md)
+- `config` - (required) an object with Toolbar configurations. See the full list of properties [here](/category/toolbar-properties/)
 
 ### Example
 

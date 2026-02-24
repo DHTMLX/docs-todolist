@@ -28,7 +28,7 @@ The callback of the **add-project** event can take an object with the following 
   - `label` - (optional) the name of the project
 
 :::info
-To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods/)
+To handle the inner events, you can use the [**Event Bus methods**](/category/event-bus-methods/)
 :::
 
 ### Example
@@ -53,4 +53,4 @@ list.api.on("add-project", ({id, project}) => {
 });
 ~~~
 
-**Related article:** [Operations with projects](../../../guides/project_operations/#adding-a-new-project)
+**Related article:** [Operations with projects](/guides/project_operations/#adding-a-new-project)

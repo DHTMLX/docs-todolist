@@ -25,7 +25,7 @@ selectTask({
 - `join` - (optional) if **true**, adds the specified task to the collection of selected tasks, saving the IDs of previously selected tasks 
 
 :::info
-Calling the method with `join: false` invokes the [`unselect-task`](../../../api/events/unselecttask_event.md) event for previously selected tasks
+Calling the method with `join: false` invokes the [`unselect-task`](/api/events/unselecttask_event/) event for previously selected tasks
 :::
 
 ### Example
@@ -47,16 +47,16 @@ const toolbar = new Toolbar("#toolbar", {
     api: list.api,
 });
 
-console.log(list.getSelection()); // -> ['1.1']
+console.log(list.getSelection()); // -> ['1.1']
 
 list.selectTask({ 
     id: "1.1.1",
     join: true
 });
 
-console.log(list.getSelection()); // -> ['1.1', '1.1.1']
+console.log(list.getSelection()); // -> ['1.1', '1.1.1']
 ~~~
 
 **Change log:** The `join` parameter was added in v1.1
 
-**Related article:** [Multiple select and bulk operations](../../../guides/multiselection.md)
+**Related article:** [Multiple select and bulk operations](/guides/multiselection/)

@@ -39,7 +39,7 @@ The **tasks** property presents an array of task objects. Each object includes t
 
 - `id` - (optional) the id of a task
 - `parent` - (optional) the id of the parent task. The value of the parameter is **null | undefined** for root tasks
-- `project` - (optional) the id of the project where the task should be rendered. To initialize the projects, use the [projects](../../../api/configs/projects_config/) property.
+- `project` - (optional) the id of the project where the task should be rendered. To initialize the projects, use the [projects](/api/configs/projects_config/) property.
 
 :::info
 If there are projects initialized, specify the ID of the necessary project for the root task to display it in this project.
@@ -50,12 +50,12 @@ If you don't specify the project ID for the root task or set it to *null* or *un
 - `text` - (optional) the text of the task
 - `checked` - (optional) marks the task as completed
 - `collapsed` - (optional) defines whether the task is collapsed initially (in case the task has subtasks)
-- `assigned` - (optional) an array with ID(s) of the people assigned to the task. To initialize the list of assignees, use the [users](../../../api/configs/users_config/) property.
+- `assigned` - (optional) an array with ID(s) of the people assigned to the task. To initialize the list of assignees, use the [users](/api/configs/users_config/) property.
 - `due_date` - (optional) the date when the task must be completed
 - `creation_date` - (optional) the date of the task creation (auto-generated)
 - `completion_date` - (optional) the date of the task completion (auto-generated when you mark a task as complete; auto-removed when you mark a task as incomplete)
 - `edited_date` - (optional) the date of the task editing (auto-generated when you change the text of the task)
-- `priority` - (optional) the priority of the task. To set the priorities, use the [priorities](../../../api/configs/priorities_config/) property
+- `priority` - (optional) the priority of the task. To set the priorities, use the [priorities](/api/configs/priorities_config/) property
 - `[key: string]`- (optional) a set of custom properties
 
 ### Example
@@ -115,5 +115,5 @@ const toolbar = new Toolbar("#toolbar", {
 **Change log:** The `priority` parameter was added in v1.2
 
 **Related articles:**
-- [Loading and storing data](../../../guides/loading_data/)
-- [Managing tasks](../../../guides/task_index/)
+- [Loading and storing data](/guides/loading_data/)
+- [Managing tasks](/guides/task_index/)

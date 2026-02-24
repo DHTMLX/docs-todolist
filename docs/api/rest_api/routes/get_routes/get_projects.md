@@ -32,7 +32,7 @@ No payload is required.
 ### Response
 
 The route returns a json object with an array of all projects objects.
-For an example of the returned object, go to [**projects**](../../../../../api/configs/projects_config/).
+For an example of the returned object, go to [**projects**](/api/configs/projects_config/).
 
 The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500).
 
@@ -40,5 +40,5 @@ The HTTP status code shows whether the request succeeds (response.status == 200)
 
 **Related articles**:
 
-- [getProjects()](../../../../../api/rest_api/methods/getprojects_method/)
-- [Working with Server](../../../../../guides/working_with_server/)
+- [getProjects()](/api/rest_api/methods/getprojects_method/)
+- [Working with Server](/guides/working_with_server/)

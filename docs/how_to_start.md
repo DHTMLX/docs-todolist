@@ -223,7 +223,7 @@ Now, you can define the desired configuration of the To Do list.
 As you already know, To Do List consists of two separate interfaces: List and Toolbar. And each of them possesses a separate list of configuration options:
 
 - check the list of [To Do List properties](../api/overview/configs_overview/)
-- check the list of [Toolbar properties](category/toolbar-properties.md)
+- check the list of [Toolbar properties](/category/toolbar-properties/)
 
 As an example, let's enable the *readonly* mode for your To Do List, specify an active project, and show only the search bar in the toolbar:
 
@@ -249,5 +249,5 @@ Now you have a ready To Do List. You can load your own set of data, and configur
 If you feel like diving deeper into the world of To Do List, these are suggestions for further studying:
 
 - [To Do List overview](../)
-- [Guides](category/guides.md)
-- [API](category/api.md)
+- [Guides](/category/guides/)
+- [API](/category/api/)

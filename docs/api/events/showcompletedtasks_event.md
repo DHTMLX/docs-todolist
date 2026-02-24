@@ -17,7 +17,7 @@ description: You can learn about the show-completed-tasks event in the documenta
 ~~~
 
 :::info
-To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods/)
+To handle the inner events, you can use the [**Event Bus methods**](/category/event-bus-methods/)
 :::
 
 ### Example
@@ -44,4 +44,4 @@ list.api.on("show-completed-tasks", () => {
 
 **Change log:** Added in v1.1
 
-**Related article:** [Show/hide completed tasks](../../../guides/hide_completed_tasks/)
+**Related article:** [Show/hide completed tasks](/guides/hide_completed_tasks/)

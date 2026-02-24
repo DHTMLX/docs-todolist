@@ -65,6 +65,6 @@ The HTTP status code shows whether the request succeeds (response.status == 200)
 
 **Related articles**:
 
-- [send()](../../../../../api/rest_api/methods/send_method/)
-- [deleteTasks()](../../../../../api/methods/deletetask_method/)
-- [Working with Server](../../../../../guides/working_with_server/)
+- [send()](/api/rest_api/methods/send_method/)
+- [deleteTasks()](/api/methods/deletetask_method/)
+- [Working with Server](/guides/working_with_server/)

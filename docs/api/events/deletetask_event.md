@@ -25,7 +25,7 @@ The callback of the **delete-task** event can take an object with the following 
 - `id` - (required) the ID of a removed task
 
 :::info
-To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods/)
+To handle the inner events, you can use the [**Event Bus methods**](/category/event-bus-methods/)
 :::
 
 ### Example
@@ -50,4 +50,4 @@ list.api.on("delete-task", ({id}) => {
 });
 ~~~
 
-**Related article:** [Operations with tasks](../../../guides/task_operations/#deleting-a-task)
+**Related article:** [Operations with tasks](/guides/task_operations/#deleting-a-task)

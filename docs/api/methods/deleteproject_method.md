@@ -47,4 +47,4 @@ const toolbar = new Toolbar("#toolbar", {
 list.deleteProject({ id: "first" });
 ~~~
 
-**Related article:** [Operations with projects](../../../guides/project_operations.md)
+**Related article:** [Operations with projects](/guides/project_operations/)

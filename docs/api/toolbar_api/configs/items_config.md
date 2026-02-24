@@ -80,5 +80,5 @@ const toolbar = new Toolbar("#toolbar", {
 **Change log:** The `"undo"` and `"redo"` parameters were added in v1.3
 
 **Related articles:**
-- [Configuration](../../../../guides/configuration/#toolbar)
-- [Customization](../../../../guides/customization/#toolbar)
+- [Configuration](/guides/configuration/#toolbar)
+- [Customization](/guides/customization/#toolbar)

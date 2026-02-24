@@ -40,7 +40,7 @@ In case the copied task is also pasted from the clipboard into another position,
 - `reverse` - (optional) **true**, if the copied task is pasted before the target task; otherwise, **false**
 
 :::info
-To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods/)
+To handle the inner events, you can use the [**Event Bus methods**](/category/event-bus-methods/)
 :::
 
 ### Example
@@ -67,4 +67,4 @@ list.api.on("copy-task", ({id}) => {
 
 **Change log:** The `join` parameter was added in v1.1
 
-**Related article:** [Operations with tasks](../../../guides/task_operations/#copyingpasting-a-task)
+**Related article:** [Operations with tasks](/guides/task_operations/#copyingpasting-a-task)

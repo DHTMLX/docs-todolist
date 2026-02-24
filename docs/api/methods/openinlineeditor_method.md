@@ -48,4 +48,4 @@ list.openInlineEditor({
 });
 ~~~
 
-**Related article:** [Inline editing](../../../guides/inline_editing.md)
+**Related article:** [Inline editing](/guides/inline_editing/)

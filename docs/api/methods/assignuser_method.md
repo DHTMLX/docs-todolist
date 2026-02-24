@@ -54,4 +54,4 @@ list.assignUser({
 });
 ~~~
 
-**Related article:** [Task assignees](../../../guides/task_users.md)
+**Related article:** [Task assignees](/guides/task_users/)

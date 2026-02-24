@@ -11,7 +11,7 @@ description: You can learn about the redo method in the documentation of the DHT
 @short: Repeats the action that was reverted by the undo action
 
 :::info
-If you set the [`history.projects`](../../../api/configs/history_config.md) parameter to `true`, you will be able to manage the history of changes for each project separately; otherwise, you will be able to manage the history of changes for the whole app.
+If you set the [`history.projects`](/api/configs/history_config/) parameter to `true`, you will be able to manage the history of changes for each project separately; otherwise, you will be able to manage the history of changes for the whole app.
 :::
 
 ### Usage
@@ -43,5 +43,5 @@ list.redo();
 **Change log:** The `redo()` method was added in v1.3
 
 **Related API:**
-    - [`history`](../../../api/configs/history_config.md)
-    - [`undo`](../../../api/methods/undo_method.md)
+    - [`history`](/api/configs/history_config/)
+    - [`undo`](/api/methods/undo_method/)

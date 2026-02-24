@@ -245,7 +245,7 @@ export class ToDoComponent implements OnInit, OnDestroy {
 }
 ~~~
 
-You can also use the [`parse()`](../../api/methods/parse_method/) method inside the `ngOnInit()` method of Angular to load data into To Do List.
+You can also use the [`parse()`](/api/methods/parse_method/) method inside the `ngOnInit()` method of Angular to load data into To Do List.
 
 ~~~jsx {2,23,31-36} title="todo.component.ts"
 import { ToDo, Toolbar } from '@dhx/trial-todolist';
@@ -295,11 +295,11 @@ export class ToDoComponent implements OnInit, OnDestroy {
 
 The `parse(data)` method provides data reloading on each applied change.
 
-Now the To Do List component is ready to use. When the element will be added to the page, it will initialize the To Do List with data. You can provide necessary configuration settings as well. Visit our [To Do List API docs](../../api/overview/configs_overview/) to check the full list of available properties.
+Now the To Do List component is ready to use. When the element will be added to the page, it will initialize the To Do List with data. You can provide necessary configuration settings as well. Visit our [To Do List API docs](/api/overview/configs_overview/) to check the full list of available properties.
 
 #### Handling events
 
-When a user makes some action in the To Do List, it invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](../../api/overview/events_overview/).
+When a user makes some action in the To Do List, it invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](/api/overview/events_overview/).
 
 Open the **todo.component.ts** file and complete the `ngOnInit()` method in the following way:
 

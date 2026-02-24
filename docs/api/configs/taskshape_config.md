@@ -64,7 +64,7 @@ To configure the task's appearance, you can specify the following parameters in 
         - *"percentage"* - the value of the counter is displayed as a percentage
 - `date` - (optional) an object with date settings:
     - `format` - (required) defines the format of displaying dates. By default, "%d %M %Y". The full list of available characters is given [below](#list-of-characters)
-    - `validate` - (required) defines whether the **due_date** property of the [task object](../../../api/configs/tasks_config/) should be validated
+    - `validate` - (required) defines whether the **due_date** property of the [task object](/api/configs/tasks_config/) should be validated
 - `completed` - (optional) an object with settings for managing the marking and display of completed tasks. It takes one parameter:
     - `behavior` - (required) sets behavior for the parent and child tasks when marking them as completed/uncompleted. There are two options:
         - *"auto"* - enables the **"auto"** mode:
@@ -131,7 +131,7 @@ DHTMLX To Do List uses the following characters for setting a date format:
 | **%Y**    | year as a number, 4 digits                        |
 
 :::tip
-Check the [**Localization**](../../../guides/localization/) article to learn how to present the date labels in the necessary language
+Check the [**Localization**](/guides/localization/) article to learn how to present the date labels in the necessary language
 :::
 
 **Change log:**
@@ -140,8 +140,8 @@ Check the [**Localization**](../../../guides/localization/) article to learn how
 
 **Related articles:**
 
-- [Configuration](../../../guides/configuration/#tasks)
-- [Show/hide completed tasks](../../../guides/hide_completed_tasks/)
+- [Configuration](/guides/configuration/#tasks)
+- [Show/hide completed tasks](/guides/hide_completed_tasks/)
 
 **Related samples:**
 - [To do list. Subtask counter and date format](https://snippet.dhtmlx.com/magidhw8?tag=todolist)

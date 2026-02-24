@@ -50,4 +50,4 @@ const toolbar = new Toolbar("#toolbar", {
 });
 ~~~
 
-**Related article:** [Managing projects](../../../guides/project_index/)
+**Related article:** [Managing projects](/guides/project_index/)

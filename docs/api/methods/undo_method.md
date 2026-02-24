@@ -11,7 +11,7 @@ description: You can learn about the undo method in the documentation of the DHT
 @short: Reverts the last operation in To Do List
 
 :::info
-If you set the [`history.projects`](../../../api/configs/history_config.md) parameter to `true`, you will be able to manage the history of changes for each project separately; otherwise, you will be able to manage the history of changes for the whole app.
+If you set the [`history.projects`](/api/configs/history_config/) parameter to `true`, you will be able to manage the history of changes for each project separately; otherwise, you will be able to manage the history of changes for the whole app.
 :::
 
 ### Usage
@@ -42,5 +42,5 @@ list.undo();
 **Change log:** The `undo()` method was added in v1.3
 
 **Related API:**
-    - [`history`](../../../api/configs/history_config.md)
-    - [`redo`](../../../api/methods/redo_method.md)
+    - [`history`](/api/configs/history_config/)
+    - [`redo`](/api/methods/redo_method/)

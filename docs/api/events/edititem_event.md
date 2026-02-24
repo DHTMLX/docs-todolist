@@ -27,7 +27,7 @@ The callback of the **edit-item** event can take an object with the following pa
 - `currentValue` - (required) the current (but not saved) value of the task/project
 
 :::info
-To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods/)
+To handle the inner events, you can use the [**Event Bus methods**](/category/event-bus-methods/)
 :::
 
 ### Example
@@ -52,4 +52,4 @@ list.api.on("edit-item", ({id, currentValue}) => {
 });
 ~~~
 
-**Related article:** [Inline editing](../../../guides/inline_editing/)
+**Related article:** [Inline editing](/guides/inline_editing/)

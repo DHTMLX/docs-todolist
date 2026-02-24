@@ -10,12 +10,12 @@ description: You can learn about loading and storing data in the documentation o
 
 There are the following types of information which can be loaded into DHTMLX To Do List:
 
-- [**tasks**](../../api/configs/tasks_config/)
-- [**projects**](../../api/configs/projects_config/)
-- [**users**](../../api/configs/users_config/)
-- [**priorities**](../../api/configs/priorities_config/)
-- [**tags**](../../api/configs/tags_config/)
-- [**activeProject**](../../api/configs/activeproject_config/)
+- [**tasks**](/api/configs/tasks_config/)
+- [**projects**](/api/configs/projects_config/)
+- [**users**](/api/configs/users_config/)
+- [**priorities**](/api/configs/priorities_config/)
+- [**tags**](/api/configs/tags_config/)
+- [**activeProject**](/api/configs/activeproject_config/)
 
 You can prepare data in a separate file. Here is an example of an appropriate data set:
 
@@ -194,7 +194,7 @@ const list = new ToDo("#root", {
 
 ### Loading data after initialization
 
-To load data from a local data source after initialization of the To Do List, use the [`parse()`](../../api/methods/parse_method/) method:
+To load data from a local data source after initialization of the To Do List, use the [`parse()`](/api/methods/parse_method/) method:
 
 ~~~js {3,5,12-17} title="index.js"
 const { ToDo, Toolbar } = todo;
@@ -218,7 +218,7 @@ list.parse({
 
 ## Saving and restoring state
 
-To save the current state of a To Do, use the [`serialize()`](../../api/methods/serialize_method/) method. It converts the data of the To Do List into a JSON object.
+To save the current state of a To Do, use the [`serialize()`](/api/methods/serialize_method/) method. It converts the data of the To Do List into a JSON object.
 
 ~~~js
 const state = list.serialize();

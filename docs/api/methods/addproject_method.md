@@ -51,4 +51,4 @@ list.addProject({
 });
 ~~~
 
-**Related article:** [Operations with projects](../../../guides/project_operations/)
+**Related article:** [Operations with projects](/guides/project_operations/)
