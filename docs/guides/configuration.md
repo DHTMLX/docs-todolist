@@ -22,7 +22,7 @@ You can also configure the mode of [hiding completed tasks](#mode-of-hiding-comp
 
 You can change the type of the counter which renders the progress of completion of the child tasks.
 
-![counter](../assets/counter.png)
+![counter](/assets/counter.png)
 
 By default, each parent task is equipped with the counter whose value is shown as a ratio of completed child tasks and the total number of the child tasks.
 
@@ -101,11 +101,11 @@ const list = new ToDo("#root", {
 
 If you specify a [due date](/api/configs/tasks_config/) for a task, the due date validation will track the completion of the task. The due date of the task has green color until the task becomes Overdue. 
 
-![due_date](../assets/due_date.png)
+![due_date](/assets/due_date.png)
 
 The dates of the  tasks which have not been completed on the due date are highlighted in red.  
 
-![due_date](../assets/overdue_task.png)
+![due_date](/assets/overdue_task.png)
 
 This validation works by default.
 

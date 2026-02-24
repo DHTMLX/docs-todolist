@@ -50,7 +50,7 @@ const list = new ToDo("#root", {
 
 As a result, the assigned people will be displayed to the right of the task.
 
-![users](../assets/users.png)
+![users](/assets/users.png)
 
 To view the list of people assigned to a task, click on the people avatars. To close the opened list, click outside it.
 

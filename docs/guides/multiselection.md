@@ -12,7 +12,7 @@ In this article we'll discuss the details on how to initialize To Do List with s
 
 We'll consider how to perform bulk operations over the selected tasks and provide you with a list of available operations. And, finally, we'll show you the ways of resetting selection.
 
-![Multiselection](../assets/multiselection.png)
+![Multiselection](/assets/multiselection.png)
 
 :::info
 Learn how to [select](../../#selecting-tasks) and [manage multiple tasks](../../#managing-multiple-tasks) via UI

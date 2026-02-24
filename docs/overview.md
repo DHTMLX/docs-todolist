@@ -19,11 +19,11 @@ The interface of the To Do List component consists of two parts: [Toolbar](#tool
 
 - a **combo** control for switching between projects, and searching for the necessary project
 
-![toolbar](assets/toolbar.png)
+![toolbar](/assets/toolbar.png)
 
 - a **search bar** for searching for the needed tasks
 
-![toolbar](assets/search_field.png)
+![toolbar](/assets/search_field.png)
 
 - a **menu** with a set of controls which allow you to:
     - sort tasks in the ascending/descending order by the following criteria:
@@ -36,17 +36,17 @@ The interface of the To Do List component consists of two parts: [Toolbar](#tool
     - hide/show completed tasks
     - add a new project, rename or delete a currently active project
 
-![toolbar](assets/project_menu.png)
+![toolbar](/assets/project_menu.png)
 
 :::info
-You can change the toolbar structure by adding custom elements or changing the order of the built-in controls. Read more in the [**Configuration**](guides/configuration.md#toolbar) and [**Customization**](guides/customization.md#toolbar) sections.
+You can change the toolbar structure by adding custom elements or changing the order of the built-in controls. Read more in the [**Configuration**](/guides/configuration/#toolbar) and [**Customization**](/guides/customization/#toolbar) sections.
 :::
 
 ### List
 
-The **list of tasks** is the main part of the To Do List interface intended for adding new tasks, editing, or deleting the existing ones. You can easily configure the appearance of tasks. Read more in the [Configuration](guides/configuration.md) section. 
+The **list of tasks** is the main part of the To Do List interface intended for adding new tasks, editing, or deleting the existing ones. You can easily configure the appearance of tasks. Read more in the [Configuration](/guides/configuration/) section. 
 
-![list](assets/list.png)
+![list](/assets/list.png)
 
 ## Selecting tasks
 
@@ -79,7 +79,7 @@ You can manage the selected task both via the context menu or keyboard navigatio
 
 The **context menu** of a task contains a set of items and sub-items and looks like this:
 
-![context_menu_of_task](assets/task_context_menu.png)
+![context_menu_of_task](/assets/task_context_menu.png)
 
 ### Adding a new task
 
@@ -93,7 +93,7 @@ The **context menu** of a task contains a set of items and sub-items and looks l
 ### Editing a task
 
 - To edit a task, double-click on the task record in the list or press `Ctrl (Cmd) + Enter`. Then, make the changes and press `Enter`
-> It is possible to enter text, numbers, hashtags, dates. For more details, read [Supported formats of data](guides/inline_editing.md#supported-formats-of-data).
+> It is possible to enter text, numbers, hashtags, dates. For more details, read [Supported formats of data](/guides/inline_editing/#supported-formats-of-data).
 
 - To mark a task as complete/incomplete, click on the checkbox to the left of the task or press `Space`
 - To collapse/expand a task with subtasks, click on the arrow icon to the left of the task or press `Arrow Left`/ `Arrow Right`
@@ -124,7 +124,7 @@ After you have selected [multiple tasks](#selecting-multiple-tasks), you can per
 
 - to open a **context menu** for the selected tasks
 
-![context_menu_of_tasks](assets/tasks_context_menu.png)
+![context_menu_of_tasks](/assets/tasks_context_menu.png)
 
 - to delete tasks by pressing `Backspace`/`Delete`
 - to copy tasks via `Ctrl (Cmd) + C` and paste them via `Ctrl (Cmd) + V`. The tasks which are selected in the chaotic order will be structured depending on the structure of the data
@@ -136,9 +136,9 @@ After you have selected [multiple tasks](#selecting-multiple-tasks), you can per
 - to mark tasks as complete/incomplete by pressing `Space`
 
 :::info
-Read the [**keyboard shortcuts**](api/events/keypressontodo_event.md#keyboard-shortcuts) section for more detail
+Read the [**keyboard shortcuts**](/api/events/keypressontodo_event/#keyboard-shortcuts) section for more detail
 :::
 
 ## What's next
 
-Once you have a short overview of To Do List you are ready to learn how to display the component on the page. Follow the directions given in the [How to start](how_to_start/) article. 
+Once you have a short overview of To Do List you are ready to learn how to display the component on the page. Follow the directions given in the [How to start](/how_to_start/) article. 

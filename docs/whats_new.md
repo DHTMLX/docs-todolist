@@ -6,7 +6,7 @@ description: You can learn a new information about DHTMLX JavaScript To Do List 
 
 # What's new
 
-If you are updating To Do List from an older version, check [Migration to newer version](migration.md) for details.
+If you are updating To Do List from an older version, check [Migration to newer version](/migration/) for details.
 
 ## Version 1.3.1
 
@@ -24,21 +24,21 @@ Released on February 27, 2025
 
 ### New functionality
 
-- You can manage the history of changes in a separate project or in the whole app via the [`history`](../api/configs/history_config) property and [`undo()`](../api/methods/undo_method)/[`redo()`](../api/methods/redo_method) methods
-- You can customize a context menu via the [`menu`](../api/configs/menu_config) property ([Example](https://snippet.dhtmlx.com/slpjstbb))
+- You can manage the history of changes in a separate project or in the whole app via the [`history`](/api/configs/history_config) property and [`undo()`](/api/methods/undo_method)/[`redo()`](/api/methods/redo_method) methods
+- You can customize a context menu via the [`menu`](/api/configs/menu_config) property ([Example](https://snippet.dhtmlx.com/slpjstbb))
 
 ### New API
 
-- The [`history`](../api/configs/history_config) property allows you to enable/disable the history of changes in a separate project or in the whole app and limit the number of stored actions
-- The [`undo()`](../api/methods/undo_method)/[`redo()`](../api/methods/redo_method) methods allows you to manage the history of changes
-- The [`menu`](../api/configs/menu_config) property allows you to customize a context menu ([Example](https://snippet.dhtmlx.com/cmfqmg00))
+- The [`history`](/api/configs/history_config) property allows you to enable/disable the history of changes in a separate project or in the whole app and limit the number of stored actions
+- The [`undo()`](/api/methods/undo_method)/[`redo()`](/api/methods/redo_method) methods allows you to manage the history of changes
+- The [`menu`](/api/configs/menu_config) property allows you to customize a context menu ([Example](https://snippet.dhtmlx.com/cmfqmg00))
 
 ### Updates
 
-- The [`getState()`](../api/internal/getstate_method) and [`getReactiveState()`](../api/internal/getreactivestate_method) methods return the `historyState` object
-- The [`items`](../api/toolbar_api/configs/items_config) property of Toolbar was extended by `"undo"` and `"redo"` parameters that allow you to display controls for managing history of changes
-- The **POST** [`/tasks`](../api/rest_api/routes/post_routes/post_tasks) and [`/projects`](../api/rest_api/routes/post_routes/post_projects) routes were extended by the `id` parameter, that allows you to manage history changes on backend
-- The **DELETE** [`/tasks`](../api/rest_api/routes/delete_routes/delete_tasks) route was extended by the `batch` payload. The `id` parameter related to the task to be deleted become optional. You can delete multiple tasks by once
+- The [`getState()`](/api/internal/getstate_method) and [`getReactiveState()`](/api/internal/getreactivestate_method) methods return the `historyState` object
+- The [`items`](/api/toolbar_api/configs/items_config) property of Toolbar was extended by `"undo"` and `"redo"` parameters that allow you to display controls for managing history of changes
+- The **POST** [`/tasks`](/api/rest_api/routes/post_routes/post_tasks) and [`/projects`](/api/rest_api/routes/post_routes/post_projects) routes were extended by the `id` parameter, that allows you to manage history changes on backend
+- The **DELETE** [`/tasks`](/api/rest_api/routes/delete_routes/delete_tasks) route was extended by the `batch` payload. The `id` parameter related to the task to be deleted become optional. You can delete multiple tasks by once
 
 ### Fixes
 
@@ -88,7 +88,7 @@ Released on February 6, 2024
 
 - Problem with pressing Enter when renaming a project
 - Problem with pressing Enter when searching for projects
-- Overriding wx styles when using with complex widgets. Refer to the [Stylization](guides/stylization.md) guide for details
+- Overriding wx styles when using with complex widgets. Refer to the [Stylization](/guides/stylization/) guide for details
 
 ## Version 1.2.5
 
@@ -134,18 +134,18 @@ Released on May 16, 2023
 
 - You can prioritize your tasks using context menu or the corresponding API ([Example](https://snippet.dhtmlx.com/5cymicwt))
 - You can sort tasks by priorities
-- [Multiuser backend](../guides/working_with_server/#multiuser-backend) allows you to track changes of other users in a real time ([Example](https://snippet.dhtmlx.com/82ayq2lk))
+- [Multiuser backend](/guides/working_with_server/#multiuser-backend) allows you to track changes of other users in a real time ([Example](https://snippet.dhtmlx.com/82ayq2lk))
 - Displaying To Do List tasks in a Table view. Integration with the [JavaScript DataGrid](https://dhtmlx.com/docs/products/dhtmlxGrid/) component ([Example](https://snippet.dhtmlx.com/e97idjs8))
 
 ### New API
 
-The [`priorities`](../api/configs/priorities_config) property allows you to apply an initial priority to the tasks
+The [`priorities`](/api/configs/priorities_config) property allows you to apply an initial priority to the tasks
 
 ### Updates
 
-- The [`tasks`](../api/configs/tasks_config) property was extended by the ***priority*** parameter. This parameter allows users to specify an initial priority
-- The [`taskShape`](../api/configs/taskshape_config) property was extended by the ***priority*** parameter. This parameter allows user to manage the priority appearance of the card
-- The extended list of [localized options](guides/localization.md)
+- The [`tasks`](/api/configs/tasks_config) property was extended by the ***priority*** parameter. This parameter allows users to specify an initial priority
+- The [`taskShape`](/api/configs/taskshape_config) property was extended by the ***priority*** parameter. This parameter allows user to manage the priority appearance of the card
+- The extended list of [localized options](/guides/localization/)
 ### Fixes
 
 - Setting users without **users[n].avatar** property invokes an error
@@ -158,41 +158,41 @@ Released on October 10, 2022
 
 ### Breaking changes
 
-The new release introduces some changes to the `taskShape` property. Check the [Migration article](migration.md#10---11) to keep in step with the latest version.
+The new release introduces some changes to the `taskShape` property. Check the [Migration article](/migration/#10---11) to keep in step with the latest version.
 
 ### New functionality
 
 - Drag-n-drop:
-    - the ability to [configure or disable the functionality](guides/configuration.md#drag-n-drop)
-    - new events: [`start-drag`](api/events/startdrag_event.md), [`drag`](api/events/drag_event.md), [`end-drag`](api/events/enddrag_event.md)
+    - the ability to [configure or disable the functionality](/guides/configuration/#drag-n-drop)
+    - new events: [`start-drag`](/api/events/startdrag_event/), [`drag`](/api/events/drag_event/), [`end-drag`](/api/events/enddrag_event/)
 - Multi-select and bulk operations:
     - the ability to [select](../#selecting-multiple-tasks) and [manage](../#managing-multiple-tasks) multiple tasks using keyboard shortcuts
     - the ability to manage multiple tasks via menu
-    - the ability to [select and manage multiple tasks via API](guides/multiselection.md):
-        - new [`selected`](api/configs/selected_config.md) property
-        - new `join` parameter for the methods: [`selectTask()`](api/methods/selecttask_method.md), [`copyTask()`](api/methods/copytask_method.md)
-        - new `join` parameter for the events: [`select-task`](api/events/selecttask_event.md), [`copy-task`](api/events/copytask_event.md)
-        - new method: [`eachSelected()`](api/methods/eachselected_method.md)
-        - updated method: [`getSelection()`](api/methods/getselection_method.md) 
-    - the ability to unselect all tasks via the [`unselectTask()`](api/methods/unselecttask_method.md) method
-- [To Do List with hidden completed tasks](guides/hide_completed_tasks.md#initial-mode)
-- [Showing/hiding completed tasks](guides/hide_completed_tasks.md#switching-between-modes):
+    - the ability to [select and manage multiple tasks via API](/guides/multiselection/):
+        - new [`selected`](/api/configs/selected_config/) property
+        - new `join` parameter for the methods: [`selectTask()`](/api/methods/selecttask_method/), [`copyTask()`](/api/methods/copytask_method/)
+        - new `join` parameter for the events: [`select-task`](/api/events/selecttask_event/), [`copy-task`](/api/events/copytask_event/)
+        - new method: [`eachSelected()`](/api/methods/eachselected_method/)
+        - updated method: [`getSelection()`](/api/methods/getselection_method/) 
+    - the ability to unselect all tasks via the [`unselectTask()`](/api/methods/unselecttask_method/) method
+- [To Do List with hidden completed tasks](/guides/hide_completed_tasks/#initial-mode)
+- [Showing/hiding completed tasks](/guides/hide_completed_tasks/#switching-between-modes):
     - via Toolbar menu
     - via API:
-        - new methods: [`hideCompletedTasks()`](api/methods/hidecompletedtasks_method.md), [`showCompletedTasks()`](api/methods/showcompletedtasks_method.md)
-        - new events: [`hide-completed-tasks`](api/events/hidecompletedtasks_event.md), [`show-completed-tasks`](api/events/showcompletedtasks_event.md)
-        - new `hideCompleted` parameter for the methods: [`hasChildren()`](api/methods/haschildren_method.md), [`getChildrenIds()`](api/methods/getchildrenids_method.md)
-- [Task sorting](guides/sorting_filtering_tasks.md#sorting-tasks):
+        - new methods: [`hideCompletedTasks()`](/api/methods/hidecompletedtasks_method/), [`showCompletedTasks()`](/api/methods/showcompletedtasks_method/)
+        - new events: [`hide-completed-tasks`](/api/events/hidecompletedtasks_event/), [`show-completed-tasks`](/api/events/showcompletedtasks_event/)
+        - new `hideCompleted` parameter for the methods: [`hasChildren()`](/api/methods/haschildren_method/), [`getChildrenIds()`](/api/methods/getchildrenids_method/)
+- [Task sorting](/guides/sorting_filtering_tasks/#sorting-tasks):
     - via Toolbar menu
     - via API:
-        - new method: [`setSort()`](api/methods/setsort_method.md)
-        - new event: [`set-sort`](api/events/setsort_event.md)
-        - extended list of parameters of the [`tasks`](api/configs/tasks_config.md) property
-- New events for managing the menu: [`open-menu`](api/events/openmenu_event.md) and [`close-menu`](api/events/closemenu_event.md)
+        - new method: [`setSort()`](/api/methods/setsort_method/)
+        - new event: [`set-sort`](/api/events/setsort_event/)
+        - extended list of parameters of the [`tasks`](/api/configs/tasks_config/) property
+- New events for managing the menu: [`open-menu`](/api/events/openmenu_event/) and [`close-menu`](/api/events/closemenu_event/)
 
 ### Updates
 
-- [Extended list of locale options](guides/localization.md)
+- [Extended list of locale options](/guides/localization/)
 
 ## Version 1.0.1
 
@@ -210,48 +210,48 @@ Released on June 20, 2022
 
 ### Initial functionality
 
-- The ability [to load data for **tasks**, **projects**, **users**, **tags**, **activeProject**](guides/loading_data.md)
+- The ability [to load data for **tasks**, **projects**, **users**, **tags**, **activeProject**](/guides/loading_data/)
 - The ability to work with **projects** in the following ways:
-    - [via API](guides/project_index.md):
-        - [change the active project](api/methods/setproject_method.md)
-        - [add new projects](api/methods/addproject_method.md)
-        - [update projects](api/methods/updateproject_method.md)
-        - [delete projects](api/methods/deleteproject_method.md)
+    - [via API](/guides/project_index/):
+        - [change the active project](/api/methods/setproject_method/)
+        - [add new projects](/api/methods/addproject_method/)
+        - [update projects](/api/methods/updateproject_method/)
+        - [delete projects](/api/methods/deleteproject_method/)
     - [via UI](../#toolbar):
         - switch between projects
         - add, rename, or delete projects
         - search for the necessary projects
 - The ability to work with **tasks** in the following ways:
-    - [via API](guides/task_index.md):
-        - [add new tasks](api/methods/addtask_method.md)
-        - [update tasks](api/methods/updatetask_method.md)
-        - [delete tasks](api/methods/deletetask_method.md)
-        - [move tasks](api/methods/movetask_method.md)
-        - [copy](api/methods/copytask_method.md) and [paste](api/methods/pastetask_method.md) tasks
-        - [check](api/methods/checktask_method.md) and [uncheck](api/methods/unchecktask_method.md) tasks
-        - [collapse](api/methods/collapsetask_method.md) and [expand](api/methods/expandtask_method.md) tasks
-        - [select](api/methods/selecttask_method.md) and [unselect](api/methods/unselecttask_method.md) tasks
-        - change the indent level of tasks: [indentTask()](api/methods/indenttask_method.md) / [unindentTask()](api/methods/unindenttask_method.md)
-        - [assign](api/methods/assignuser_method.md) and [unassign](api/methods/unassignuser_method.md) users
-        - [filter tasks](api/methods/setfilter_method.md)
+    - [via API](/guides/task_index/):
+        - [add new tasks](/api/methods/addtask_method/)
+        - [update tasks](/api/methods/updatetask_method/)
+        - [delete tasks](/api/methods/deletetask_method/)
+        - [move tasks](/api/methods/movetask_method/)
+        - [copy](/api/methods/copytask_method/) and [paste](/api/methods/pastetask_method/) tasks
+        - [check](/api/methods/checktask_method/) and [uncheck](/api/methods/unchecktask_method/) tasks
+        - [collapse](/api/methods/collapsetask_method/) and [expand](/api/methods/expandtask_method/) tasks
+        - [select](/api/methods/selecttask_method/) and [unselect](/api/methods/unselecttask_method/) tasks
+        - change the indent level of tasks: [indentTask()](/api/methods/indenttask_method/) / [unindentTask()](/api/methods/unindenttask_method/)
+        - [assign](/api/methods/assignuser_method/) and [unassign](/api/methods/unassignuser_method/) users
+        - [filter tasks](/api/methods/setfilter_method/)
     - [via UI](../#managing-a-task):
         - add, copy and paste, select, move, indent/unindent, delete tasks
         - search for tasks (by symbols or hashtags)
         - edit tasks:
-            - [edit the content of a task by double-click on it](guides/inline_editing.md): enter text, numbers, hashtags, dates
+            - [edit the content of a task by double-click on it](/guides/inline_editing/): enter text, numbers, hashtags, dates
             - assign/unassign users
             - set due date
 - The ability to configure **tasks appearance and behavior**:
-    - [counter of completed subtasks](guides/configuration.md#counter-of-completed-subtasks)
-    - [date format](guides/configuration.md#date-format)
-    - [due date validation](guides/configuration.md#due-date-validation)
-    - [mode of marking tasks complete](guides/configuration.md#mode-of-marking-tasks-complete)
-- The ability to [configure](guides/configuration.md#toolbar) and [customize](guides/customization.md#toolbar) **Toolbar**
-- [Keyboard navigation](api/events/keypressontodo_event.md#keyboard-shortcuts)
-- [Read-only mode](guides/readonly_mode.md)
-- [Localization](guides/localization.md)
-- [Backend integration](guides/working_with_server.md) (Go and Node)
-- [Integration with other DHTMLX widgets](guides/integration.md)
+    - [counter of completed subtasks](/guides/configuration/#counter-of-completed-subtasks)
+    - [date format](/guides/configuration/#date-format)
+    - [due date validation](/guides/configuration/#due-date-validation)
+    - [mode of marking tasks complete](/guides/configuration/#mode-of-marking-tasks-complete)
+- The ability to [configure](/guides/configuration/#toolbar) and [customize](/guides/customization/#toolbar) **Toolbar**
+- [Keyboard navigation](/api/events/keypressontodo_event/#keyboard-shortcuts)
+- [Read-only mode](/guides/readonly_mode/)
+- [Localization](/guides/localization/)
+- [Backend integration](/guides/working_with_server/) (Go and Node)
+- [Integration with other DHTMLX widgets](/guides/integration/)
 - Cross browser compatibility
 - Touch support
 
