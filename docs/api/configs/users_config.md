@@ -97,5 +97,5 @@ const toolbar = new Toolbar("#toolbar", {
 ~~~
 
 **Related articles:**
-- [Loading and storing data](guides/loading_data.md)
-- [Task users](guides/task_users.md)
+- [Loading and storing data](/guides/loading_data/)
+- [Task users](/guides/task_users/)

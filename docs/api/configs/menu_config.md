@@ -101,7 +101,7 @@ The callback should return one of the following values:
                 ]
             }
             ~~~
-            ![Context menu item](../../assets/menu_item.png)
+            ![Context menu item](/assets/menu_item.png)
         </details>
 
         - `"separator"` - the line for separating menu items
@@ -147,7 +147,7 @@ The callback should return one of the following values:
         }
         ~~~
 
-        ![Context menu item](../../assets/menu_priorities.png)
+        ![Context menu item](/assets/menu_priorities.png)
         </details>
 
         - `"datepicker"` - the menu item intended for setting dates
@@ -166,7 +166,7 @@ The callback should return one of the following values:
         }
         ~~~
 
-        ![Context menu item](../../assets/menu_datepicker.png)
+        ![Context menu item](/assets/menu_datepicker.png)
         </details>
 
         - `"user"` - the menu item intended for assigning users to tasks
@@ -187,7 +187,7 @@ The callback should return one of the following values:
         }
         ~~~
 
-        ![Context menu item](../../assets/menu_users.png)
+        ![Context menu item](/assets/menu_users.png)
         </details>
 
 ### Example

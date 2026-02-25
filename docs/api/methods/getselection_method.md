@@ -57,5 +57,5 @@ console.log(list.getSelection({ sorted: true })); // ["1.1", "1.2", "2.1", "2.2"
 **Change log:** The `sorted` parameter was added in v1.1
 
 **Related article:** 
-- [Task object/Id](guides/task_object.md)
-- [Multiple select and bulk operations](guides/multiselection.md)
+- [Task object/Id](/guides/task_object/)
+- [Multiple select and bulk operations](/guides/multiselection/)

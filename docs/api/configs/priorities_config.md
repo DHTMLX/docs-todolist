@@ -119,6 +119,6 @@ document.addEventListener("keydown", event => {
 ~~~
 
 **Related articles:**
-- [Loading and storing data](guides/loading_data.md)
+- [Loading and storing data](/guides/loading_data/)
 
 **Related sample:** [To do list. Custom hotkeys for setting priorities](https://snippet.dhtmlx.com/5cymicwt?tag=todolist)

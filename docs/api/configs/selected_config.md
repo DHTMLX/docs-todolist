@@ -39,4 +39,4 @@ const toolbar = new Toolbar("#toolbar", {
 
 **Change log:** Added in v1.1
 
-**Related article:** [Multiple select and bulk operations](guides/multiselection.md)
+**Related article:** [Multiple select and bulk operations](/guides/multiselection/)

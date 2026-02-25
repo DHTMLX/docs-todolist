@@ -22,7 +22,7 @@ updateTask({
 ### Parameters
 
 - `id` - (required) the id of the task to be updated
-- `task` - (required) an object with a hash of task's properties which need to be updated. The full list of the task parameters can be found [here](api/configs/tasks_config.md)
+- `task` - (required) an object with a hash of task's properties which need to be updated. The full list of the task parameters can be found [here](/api/configs/tasks_config/)
 
 ### Example
 
@@ -51,4 +51,4 @@ list.updateTask({
 });
 ~~~
 
-**Related article:** [Operations with tasks](guides/task_operations.md)
+**Related article:** [Operations with tasks](/guides/task_operations/)

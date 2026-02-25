@@ -50,4 +50,4 @@ list.existsTask({ id: "2" }); // -> false
 list.existsTask({ id: "1.2" }); // -> true
 ~~~
 
-**Related article:** [Task object/Id](guides/task_object.md)
+**Related article:** [Task object/Id](/guides/task_object/)

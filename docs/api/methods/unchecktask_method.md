@@ -22,7 +22,7 @@ uncheckTask({
 ### Parameters
 
 - `id` - (required) the id of a task
-- `manual` - (optional) if `true`, marks the task in the "manual" mode. If `false`, the result of applying the method depends on the value which is specified for the **behavior** attribute of the **completed** parameter of the [taskShape](api/configs/taskshape_config.md) property
+- `manual` - (optional) if `true`, marks the task in the "manual" mode. If `false`, the result of applying the method depends on the value which is specified for the **behavior** attribute of the **completed** parameter of the [taskShape](/api/configs/taskshape_config/) property
 
 ### Example
 
@@ -76,5 +76,5 @@ list.eachSelected(id => {
 ~~~
 
 **Related articles:**
-- [Operations with tasks](guides/task_operations.md)
-- [Multiple select and bulk operations](guides/multiselection.md)
+- [Operations with tasks](/guides/task_operations/)
+- [Multiple select and bulk operations](/guides/multiselection/)

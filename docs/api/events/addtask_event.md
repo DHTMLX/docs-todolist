@@ -35,7 +35,7 @@ The callback of the **add-task** event can take an object with the following par
 - `task` - (required) the object of the added task
 
 :::info
-To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods.md)
+To handle the inner events, you can use the [**Event Bus methods**](/category/event-bus-methods/)
 :::
 
 ### Example
@@ -60,4 +60,4 @@ list.api.on("add-task", (obj) => {
 });
 ~~~
 
-**Related article:** [Operations with tasks](guides/task_operations.md#adding-a-new-task)
+**Related article:** [Operations with tasks](/guides/task_operations/#adding-a-new-task)

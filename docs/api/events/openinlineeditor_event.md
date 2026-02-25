@@ -27,7 +27,7 @@ The callback of the **open-inline-editor** event can take an object with the fol
 - `type` - (required) the type of the item: "task" or "project"
 
 :::info
-To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods.md)
+To handle the inner events, you can use the [**Event Bus methods**](/category/event-bus-methods/)
 :::
 
 ### Example
@@ -52,4 +52,4 @@ list.api.on("open-inline-editor", ({id, type}) => {
 });
 ~~~
 
-**Related article:** [Inline editing](guides/inline_editing.md#working-with-editor)
+**Related article:** [Inline editing](/guides/inline_editing/#working-with-editor)

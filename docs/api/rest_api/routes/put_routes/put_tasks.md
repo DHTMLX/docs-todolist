@@ -54,9 +54,9 @@ Example:
 }
 ~~~
 
-You can find another example of the task object in the [**tasks**](api/configs/tasks_config.md) section.
+You can find another example of the task object in the [**tasks**](/api/configs/tasks_config/) section.
 
-To update multiple tasks with one request, you should add an array of tasks objects with necessary changes to the **batch** object in the request body.<br> In this case the task ID in the request line is also mandatory with all task parameters that precede the **batch** object in the request body.
+To update multiple tasks with one request, you should add an array of tasks objects with necessary changes to the **batch** object in the request body.<br /> In this case the task ID in the request line is also mandatory with all task parameters that precede the **batch** object in the request body.
 
 Example:
 
@@ -100,6 +100,6 @@ The HTTP status code shows whether the request succeeds (response.status == 200)
 
 **Related articles**:
 
-- [updateTask()](api/methods/updatetask_method.md)
-- [send()](api/rest_api/methods/send_method.md)
-- [Working with Server](guides/working_with_server.md)
+- [updateTask()](/api/methods/updatetask_method/)
+- [send()](/api/rest_api/methods/send_method/)
+- [Working with Server](/guides/working_with_server/)

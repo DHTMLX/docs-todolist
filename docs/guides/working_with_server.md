@@ -27,13 +27,13 @@ The To Do List has the **RestDataProvider** service that completely supports RES
 
 The **RestDataProvider** service includes the special REST methods for dynamic data loading:
 
-- [`getProjects()`](api/rest_api/methods/getprojects_method.md) - gets a promise with the **projects data**
-- [`getProjectTasks()`](api/rest_api/methods/getprojecttasks_method.md) - gets a promise with the **tasks data** of the specified **project**
-- [`getTags()`](api/rest_api/methods/gettags_method.md) - gets a promise with a list of **default tags**
-- [`getTasks()`](api/rest_api/methods/gettasks_method.md) - gets a promise with the **tasks data**
-- [`getUsers()`](api/rest_api/methods/getusers_method.md) - gets a promise with the **users data**
-- [`setAPI()`](api/rest_api/methods/setapi_method.md) - sets API of the To Do List component into RestDataProvider
-- [`send()`](api/rest_api/methods/send_method.md) - sends a necessary request to the server and gets a promise with or without data depending on the request
+- [`getProjects()`](/api/rest_api/methods/getprojects_method/) - gets a promise with the **projects data**
+- [`getProjectTasks()`](/api/rest_api/methods/getprojecttasks_method/) - gets a promise with the **tasks data** of the specified **project**
+- [`getTags()`](/api/rest_api/methods/gettags_method/) - gets a promise with a list of **default tags**
+- [`getTasks()`](/api/rest_api/methods/gettasks_method/) - gets a promise with the **tasks data**
+- [`getUsers()`](/api/rest_api/methods/getusers_method/) - gets a promise with the **users data**
+- [`setAPI()`](/api/rest_api/methods/setapi_method/) - sets API of the To Do List component into RestDataProvider
+- [`send()`](/api/rest_api/methods/send_method/) - sends a necessary request to the server and gets a promise with or without data depending on the request
 
 ## Interacting with backend
 
@@ -45,7 +45,7 @@ To interact with the server, you need to connect **RestDataProvider** to the cor
 or you can create a custom one.
 
 :::tip
-If you use custom backend, refer to the [**REST API routes**](../../api/rest_api/routes/rest_routes_overview/) topic for more information!
+If you use custom backend, refer to the [**REST API routes**](/api/rest_api/routes/rest_routes_overview/) topic for more information!
 :::
 
 To connect **RestDataProvider** to the backend, you need to call the **new RestDataProvider()** constructor by passing the corresponding **URL** as a parameter.
@@ -79,7 +79,7 @@ Promise.all([
 ~~~
 
 :::info
-You need to include **RestDataProvider** into the **Event Bus** order via the [`api.setNext()`](api/internal/setnext_method.md) method to perform operations with data (*adding, deleting,* etc) and send the corresponding requests to the server
+You need to include **RestDataProvider** into the **Event Bus** order via the [`api.setNext()`](/api/internal/setnext_method/) method to perform operations with data (*adding, deleting,* etc) and send the corresponding requests to the server
 :::
 
 ### Example

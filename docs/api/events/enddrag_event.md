@@ -34,7 +34,7 @@ The callback of the **end-drag** event can take an object with the following par
     - `copy` - the copy mode
 
 :::info
-To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods.md)
+To handle the inner events, you can use the [**Event Bus methods**](/category/event-bus-methods/)
 :::
 
 ### Example
@@ -61,4 +61,4 @@ list.api.on("drag", ({ target, dropPosition, mode }) => {
 
 **Change log:** Added in v1.1
 
-**Related article:** [Drag-n-drop](guides/configuration.md#drag-n-drop)
+**Related article:** [Drag-n-drop](/guides/configuration/#drag-n-drop)

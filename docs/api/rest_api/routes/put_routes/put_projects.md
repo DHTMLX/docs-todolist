@@ -47,7 +47,7 @@ Example:
 }
 ~~~
 
-You can find another example of the project object in the [**projects**](api/configs/projects_config.md) section.
+You can find another example of the project object in the [**projects**](/api/configs/projects_config/) section.
 
 ### Response
 
@@ -59,6 +59,6 @@ The HTTP status code shows whether the request succeeds (response.status == 200)
 
 **Related articles**:
 
-- [updateProject()](api/methods/updateproject_method.md)
-- [send()](api/rest_api/methods/send_method.md)
-- [Working with Server](guides/working_with_server.md)
+- [updateProject()](/api/methods/updateproject_method/)
+- [send()](/api/rest_api/methods/send_method/)
+- [Working with Server](/guides/working_with_server/)

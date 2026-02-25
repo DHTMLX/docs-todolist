@@ -27,7 +27,7 @@ api.intercept(
 ### Events
 
 :::info
-The full list of the To Do List internal events can be found [**here**](api/overview/events_overview.md)
+The full list of the To Do List internal events can be found [**here**](/api/overview/events_overview/)
 :::
 
 ### Example

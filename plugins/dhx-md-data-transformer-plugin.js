@@ -35,7 +35,7 @@ module.exports = (context, options) => {
           ],
         },
         resolveLoader: {
-          modules: ['node_modules', path.resolve(siteDir, 'loaders')]
+          modules: ['node_modules', path.resolve(siteDir, 'loaders'), path.resolve(siteDir, 'i18n')]
         }
       };
     }

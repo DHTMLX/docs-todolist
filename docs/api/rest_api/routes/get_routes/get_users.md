@@ -32,12 +32,12 @@ No payload is required.
 ### Response
 
 The route returns a json object with an array of all users objects. <br/> 
-Look up an example of the users object in the [**users**](api/configs/users_config.md) section. <br/> 
+Look up an example of the users object in the [**users**](/api/configs/users_config/) section. <br/> 
 The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500).
 
 ---
 
 **Related articles**:
 
-- [getUsers()](api/rest_api/methods/getusers_method.md)
-- [Working with Server](guides/working_with_server.md)
+- [getUsers()](/api/rest_api/methods/getusers_method/)
+- [Working with Server](/guides/working_with_server/)

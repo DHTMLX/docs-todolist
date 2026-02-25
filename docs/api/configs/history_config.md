@@ -11,7 +11,7 @@ description: You can learn about the history config in the documentation of the 
 @short: Optional. Enables/disables managing the history of changes
 
 :::info
-Using the `history` property you can enable/disable managing the history of changes in To Do List. If you set the `history` property  to `false`, you will not be able to manage the history of changes using [`undo()`](api/methods/undo_method.md)/[`redo()`](api/methods/redo_method.md) methods and controls on Toolbar.
+Using the `history` property you can enable/disable managing the history of changes in To Do List. If you set the `history` property  to `false`, you will not be able to manage the history of changes using [`undo()`](/api/methods/undo_method/)/[`redo()`](/api/methods/redo_method/) methods and controls on Toolbar.
 :::
 
 ### Usage
@@ -67,5 +67,5 @@ new ToDo("#root", {
 **Change log:** The `history` config was added in v1.3
 
 **Related API:**
-    - [`redo`](api/methods/redo_method.md)
-    - [`undo`](api/methods/undo_method.md)
+    - [`redo`](/api/methods/redo_method/)
+    - [`undo`](/api/methods/undo_method/)

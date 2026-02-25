@@ -31,7 +31,7 @@ The callback of the **paste-task** event can take an object with the following p
 - `reverse` - (optional) **true**, if the task is pasted before the target task; otherwise, **false**
 
 :::info
-To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods.md)
+To handle the inner events, you can use the [**Event Bus methods**](/category/event-bus-methods/)
 :::
 
 ### Example
@@ -56,4 +56,4 @@ list.api.on("paste-task", (obj) => {
 });
 ~~~ 
 
-**Related article:** [Operations with tasks](guides/task_operations.md#copyingpasting-a-task)
+**Related article:** [Operations with tasks](/guides/task_operations/#copyingpasting-a-task)

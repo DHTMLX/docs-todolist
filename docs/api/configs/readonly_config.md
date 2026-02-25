@@ -47,4 +47,4 @@ const toolbar = new Toolbar("#toolbar", {
 });
 ~~~
 
-**Related article:** [Read-only mode](guides/readonly_mode.md)
+**Related article:** [Read-only mode](/guides/readonly_mode/)

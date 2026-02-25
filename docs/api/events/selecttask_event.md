@@ -29,7 +29,7 @@ The callback of the **select-task** event can take an object with the following 
     - **false** - single selection mode
 
 :::info
-To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods.md)
+To handle the inner events, you can use the [**Event Bus methods**](/category/event-bus-methods/)
 :::
 
 ### Example
@@ -58,5 +58,5 @@ list.api.on("select-task", ({id, join}) => {
 **Change log:** The `join` parameter was added in v1.1
 
 **Related articles:**
-- [Operations with tasks](guides/task_operations.md)
-- [Multiple select and bulk operations](guides/multiselection.md)
+- [Operations with tasks](/guides/task_operations/)
+- [Multiple select and bulk operations](/guides/multiselection/)

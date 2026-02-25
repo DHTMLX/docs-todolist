@@ -12,7 +12,7 @@ In this article we'll discuss the details on how to initialize To Do List with s
 
 We'll consider how to perform bulk operations over the selected tasks and provide you with a list of available operations. And, finally, we'll show you the ways of resetting selection.
 
-![Multiselection](../assets/multiselection.png)
+![Multiselection](/assets/multiselection.png)
 
 :::info
 Learn how to [select](../../#selecting-tasks) and [manage multiple tasks](../../#managing-multiple-tasks) via UI
@@ -20,7 +20,7 @@ Learn how to [select](../../#selecting-tasks) and [manage multiple tasks](../../
 
 ## Initially selected tasks
 
-If you want to create a To Do List with initially selected tasks, use the [`selected`](api/configs/selected_config.md) configuration property of To Do List:
+If you want to create a To Do List with initially selected tasks, use the [`selected`](/api/configs/selected_config/) configuration property of To Do List:
 
 ~~~js {12}
 const list = new ToDo("#root", {
@@ -42,7 +42,7 @@ console.log(list.getSelection()); // ["1.1", "1.2", "2.2"]
 
 ## Selecting tasks
 
-The library provides you with the [`selectTask()`](api/methods/selecttask_method.md) method which lets you select tasks after To Do List initialization. The method has two parameters:
+The library provides you with the [`selectTask()`](/api/methods/selecttask_method/) method which lets you select tasks after To Do List initialization. The method has two parameters:
 
 - `id` - the ID of the task to select
 - `join` - defines whether To Do List should join the specified task to the previously selected tasks
@@ -119,7 +119,7 @@ console.log(list.getSelection()) // ["1.1", "1.2", "2.2", "2.1"]
 
 ## Getting all selected tasks
 
-To get all tasks that are currently selected, use the [`getSelection()`](api/methods/getselection_method.md) method:
+To get all tasks that are currently selected, use the [`getSelection()`](/api/methods/getselection_method/) method:
 
 ~~~js
 // sorted - disable;
@@ -135,7 +135,7 @@ Enable the **sorted** parameter if you need to get IDs of the selected tasks in 
 
 After you have selected multiple tasks, you may apply different operations to them at once. 
 
-For this purpose, the library includes the [`eachSelected()`](api/methods/eachselected_method.md) method that allows iterating over all selected tasks. The additional parameters of the method - **sorted** and **reversed** - let you define whether the tasks should be sorted or not and specify the direction of iteration.
+For this purpose, the library includes the [`eachSelected()`](/api/methods/eachselected_method/) method that allows iterating over all selected tasks. The additional parameters of the method - **sorted** and **reversed** - let you define whether the tasks should be sorted or not and specify the direction of iteration.
 
 For example, you can apply the method to delete all selected tasks:
 
@@ -151,18 +151,18 @@ Check the full list of available operations you can perform over multiple tasks 
 
 Here is the full list of bulk operations you can perform over multiple selected tasks via API methods:
 
-- copying tasks via the [`copyTask()`](../../api/methods/copytask_method/) method
-- pasting tasks via the [`pasteTask()`](../../api/methods/pastetask_method/) method
-- moving tasks via the [`moveTask()`](../../api/methods/movetask_method/) method
-- deleting tasks via the [`deleteTask()`](../../api/methods/deletetask_method/) method
-- marking tasks complete/incomplete via the [`checkTask()`](../../api/methods/checktask_method/) and [`uncheckTask()`](../../api/methods/unchecktask_method/) methods
-- demoting and promoting the nesting level of tasks via the [`indentTask()`](../../api/methods/indenttask_method/) and [`unindentTask()`](../../api/methods/unindenttask_method/) methods
+- copying tasks via the [`copyTask()`](/api/methods/copytask_method/) method
+- pasting tasks via the [`pasteTask()`](/api/methods/pastetask_method/) method
+- moving tasks via the [`moveTask()`](/api/methods/movetask_method/) method
+- deleting tasks via the [`deleteTask()`](/api/methods/deletetask_method/) method
+- marking tasks complete/incomplete via the [`checkTask()`](/api/methods/checktask_method/) and [`uncheckTask()`](/api/methods/unchecktask_method/) methods
+- demoting and promoting the nesting level of tasks via the [`indentTask()`](/api/methods/indenttask_method/) and [`unindentTask()`](/api/methods/unindenttask_method/) methods
 
 ## Resetting selection
 
 ### Unselecting one task
 
-To remove selection from one selected task, pass the ID of the task as a parameter to the [`unselectTask()`](../../api/methods/unselecttask_method/) method:
+To remove selection from one selected task, pass the ID of the task as a parameter to the [`unselectTask()`](/api/methods/unselecttask_method/) method:
 
 ~~~js
 list.unselectTask({ id: "1.1" });
@@ -170,7 +170,7 @@ list.unselectTask({ id: "1.1" });
 
 ### Unselecting all tasks
 
-To unselect all currently selected tasks, pass **id: null** to the [`unselectTask()`](../../api/methods/unselecttask_method/) method:
+To unselect all currently selected tasks, pass **id: null** to the [`unselectTask()`](/api/methods/unselecttask_method/) method:
 
 ~~~js
 list.unselectTask({ id: null });

@@ -10,12 +10,12 @@ description: You can learn about loading and storing data in the documentation o
 
 There are the following types of information which can be loaded into DHTMLX To Do List:
 
-- [**tasks**](api/configs/tasks_config.md)
-- [**projects**](api/configs/projects_config.md)
-- [**users**](api/configs/users_config.md)
-- [**priorities**](api/configs/priorities_config.md)
-- [**tags**](api/configs/tags_config.md)
-- [**activeProject**](api/configs/activeproject_config.md)
+- [**tasks**](/api/configs/tasks_config/)
+- [**projects**](/api/configs/projects_config/)
+- [**users**](/api/configs/users_config/)
+- [**priorities**](/api/configs/priorities_config/)
+- [**tags**](/api/configs/tags_config/)
+- [**activeProject**](/api/configs/activeproject_config/)
 
 You can prepare data in a separate file. Here is an example of an appropriate data set:
 
@@ -178,7 +178,7 @@ const { tasks, users, projects, priorities } = getData();
 
 ### Loading data on initialization
 
-You can load [a predefined data](guides/loading_data.md#preparing-data-to-load) into To Do List on the initialization stage in the following way:
+You can load [a predefined data](#preparing-data-to-load) into To Do List on the initialization stage in the following way:
 
 ~~~js {2,5-8} title="index.js"
 const { ToDo } = todo;
@@ -194,7 +194,7 @@ const list = new ToDo("#root", {
 
 ### Loading data after initialization
 
-To load data from a local data source after initialization of the To Do List, use the [`parse()`](api/methods/parse_method.md) method:
+To load data from a local data source after initialization of the To Do List, use the [`parse()`](/api/methods/parse_method/) method:
 
 ~~~js {3,5,12-17} title="index.js"
 const { ToDo, Toolbar } = todo;
@@ -218,7 +218,7 @@ list.parse({
 
 ## Saving and restoring state
 
-To save the current state of a To Do, use the [`serialize()`](api/methods/serialize_method.md) method. It converts the data of the To Do List into a JSON object.
+To save the current state of a To Do, use the [`serialize()`](/api/methods/serialize_method/) method. It converts the data of the To Do List into a JSON object.
 
 ~~~js
 const state = list.serialize();

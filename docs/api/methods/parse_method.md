@@ -24,11 +24,11 @@ parse({
 
 ### Parameters
 
-- [`tasks`](api/configs/tasks_config.md) - (optional) an array of objects with tasks data
-- [`users`](api/configs/users_config.md) - (optional) an array of objects with users data
-- [`projects`](api/configs/projects_config.md) - (optional) an array of objects with projects data
-- [`tags`](api/configs/tags_config.md) - (optional) an array with a list of tags
-- [`activeProject`](api/configs/activeproject_config.md) - (optional) the ID of the active project
+- [`tasks`](/api/configs/tasks_config/) - (optional) an array of objects with tasks data
+- [`users`](/api/configs/users_config/) - (optional) an array of objects with users data
+- [`projects`](/api/configs/projects_config/) - (optional) an array of objects with projects data
+- [`tags`](/api/configs/tags_config/) - (optional) an array with a list of tags
+- [`activeProject`](/api/configs/activeproject_config/) - (optional) the ID of the active project
 
 ### Example
 
@@ -49,4 +49,4 @@ list.parse({
 });
 ~~~
 
-**Related article:** [Loading and storing data](guides/loading_data.md)
+**Related article:** [Loading and storing data](/guides/loading_data/)

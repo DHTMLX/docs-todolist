@@ -59,4 +59,4 @@ Promise.all([
 ~~~
 ---
 
-**Related articles**: [Working with Server](guides/working_with_server.md)
+**Related articles**: [Working with Server](/guides/working_with_server/)

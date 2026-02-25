@@ -339,6 +339,6 @@ export default {
 
 After that, you can start the app to see To Do List loaded with data on a page.
 
-![To Do List initialization](../assets/trial_todolist.png)
+![To Do List initialization](/assets/trial_todolist.png)
 
 Now you know how to integrate DHTMLX To Do List with Vue. You can customize the code according to your specific requirements. The final example you can find on [**GitHub**](https://github.com/DHTMLX/vue-todolist-demo).

@@ -23,7 +23,7 @@ unselectTask({
 - `id` - (required) the id of the task to be unselected
 
 :::info
-Passing `id: null` to the method unselects all selected tasks and invokes the [`unselect-task`](api/events/unselecttask_event.md) event for each of them
+Passing `id: null` to the method unselects all selected tasks and invokes the [`unselect-task`](/api/events/unselecttask_event/) event for each of them
 :::
 
 
@@ -54,4 +54,4 @@ list.unselectTask({ id: "1.1" });
 
 **Change log:** The ability to pass `id: null` to the method was added in v1.1
 
-**Related article:** [Multiple select and bulk operations](guides/multiselection.md)
+**Related article:** [Multiple select and bulk operations](/guides/multiselection/)
