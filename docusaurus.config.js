@@ -130,6 +130,16 @@ module.exports = {
     tagline: 'DHTMLX JavaScript To Do List Docs',
     url: 'https://docs.dhtmlx.com',
     baseUrl: '/todolist/',
+    i18n: {
+        defaultLocale: 'en',
+        locales: ['en', 'de', 'ru', 'zh', 'ko'],
+        localeConfigs: {
+            zh: {
+                htmlLang: 'zh-CN',
+                label: '中文'
+            },
+        }
+    },
     onBrokenLinks: 'warn',
     onBrokenAnchors: 'warn',
     markdown: {
@@ -173,6 +183,10 @@ module.exports = {
                     label: 'Download',
                     href: 'https://dhtmlx.com/docs/products/dhtmlxTodo/download.shtml',
                     position: 'right'
+                },
+                {
+                    type: 'localeDropdown',
+                    position: 'right',
                 }
             ]
         },
