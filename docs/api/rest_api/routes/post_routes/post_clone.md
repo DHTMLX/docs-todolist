@@ -83,7 +83,7 @@ Example:
 
 ### Response
 
-The route returns a json object with the client task ID and duplicated task ID of the server.<br>
+The route returns a json object with the client task ID and duplicated task ID of the server.<br />
 Client tasks IDs are temporary IDs received in the requests and values are new tasks IDs generated during data saving.
 
 Example:

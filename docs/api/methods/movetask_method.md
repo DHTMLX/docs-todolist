@@ -27,7 +27,7 @@ moveTask({
 ### Parameters
 
 - `id` - (optional) the ID of the task to be moved
-- `project` - (optional) the ID of the project<br>
+- `project` - (optional) the ID of the project<br />
 :::info
 To move a task to the *No project* section, specify the value of the parameter to **null**
 :::

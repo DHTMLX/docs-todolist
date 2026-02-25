@@ -56,7 +56,7 @@ Example:
 
 You can find another example of the task object in the [**tasks**](/api/configs/tasks_config/) section.
 
-To update multiple tasks with one request, you should add an array of tasks objects with necessary changes to the **batch** object in the request body.<br> In this case the task ID in the request line is also mandatory with all task parameters that precede the **batch** object in the request body.
+To update multiple tasks with one request, you should add an array of tasks objects with necessary changes to the **batch** object in the request body.<br /> In this case the task ID in the request line is also mandatory with all task parameters that precede the **batch** object in the request body.
 
 Example:
 
