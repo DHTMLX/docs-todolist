@@ -7,70 +7,70 @@ description: You can learn about the integration with Vue in the documentation o
 # Integration with Vue
 
 :::tip
-You should be familiar with the basic concepts and patterns of [**Vue**](https://vuejs.org/) before reading this documentation. To refresh your knowledge, please refer to the [**Vue 3 documentation**](https://vuejs.org/guide/introduction.html#getting-started).
+Familiarize yourself with basic Vue concepts and patterns before reading this guide. Refer to the [Vue 3 documentation](https://vuejs.org/guide/introduction.html#getting-started) to refresh your knowledge.
 :::
 
-DHTMLX To Do List is compatible with **Vue**. We have prepared code examples on how to use DHTMLX To Do List with **Vue 3**. For more information, refer to the corresponding [**Example on GitHub**](https://github.com/DHTMLX/vue-todolist-demo).
+DHTMLX To Do List is compatible with Vue 3. For a complete example, see the [demo on GitHub](https://github.com/DHTMLX/vue-todolist-demo).
 
-## Creating a project
+## Create a project
 
 :::info
-Before you start to create a new project, install [**Node.js**](https://nodejs.org/en/).
+Before creating a new project, install [Node.js](https://nodejs.org/en/).
 :::
 
-To create a **Vue** project, run the following command:
+Create a Vue project:
 
 ~~~json
 npm create vue@latest
 ~~~
 
-This command installs and executes `create-vue`, the official **Vue** project scaffolding tool. Check the details in the [Vue.js Quick Start](https://vuejs.org/guide/quick-start.html#creating-a-vue-application).
+This command installs and executes `create-vue`, the official Vue scaffolding tool. See the [Vue.js Quick Start](https://vuejs.org/guide/quick-start.html#creating-a-vue-application) for details.
 
-Let's name the project as **my-vue-todo-app**.
+Name the project `my-vue-todo-app`.
 
-### Installation of dependencies
+### Install dependencies
 
-Go to the app directory:
+Navigate to the app directory:
 
 ~~~json
 cd my-vue-todo-app
 ~~~
 
-Install dependencies and start the dev server. For this, use a package manager:
+Install dependencies and start the dev server using your package manager:
 
-- if you use [**yarn**](https://yarnpkg.com/), run the following commands:
+- With [yarn](https://yarnpkg.com/):
 
 ~~~json
 yarn
 yarn start
 ~~~
 
-- if you use [**npm**](https://www.npmjs.com/), run the following commands:
+- With [npm](https://www.npmjs.com/):
 
 ~~~json
 npm install
 npm run dev
 ~~~
 
-The app should run on a localhost (for instance `http://localhost:3000`).
+The app runs on a local server (for example, `http://localhost:3000`).
 
-## Creating To Do List
+## Create To Do List
 
-Now you should get the DHTMLX To Do List source code. First of all, stop the app and proceed with installing the To Do List package.
+Stop the app and install the To Do List package.
 
-### Step 1. Package installation
+### Step 1. Install the package
 
-Download the [**trial To Do List package**](/how_to_start/#installing-to-do-list-via-npm-or-yarn) and follow steps mentioned in the README file. Note that trial To Do List is available 30 days only.
+Download the [trial To Do List package](/how_to_start/#installing-to-do-list-via-npm-or-yarn) and follow the README instructions. The trial is available for 30 days.
 
-### Step 2. Component creation
+### Step 2. Create the component
 
-Now you need to create a Vue component, to add To Do List with Toolbar into the application. Create a new file in the ***src/components/*** directory and name it ***ToDo.vue***.
+Create a new file in `src/components/` and name it `ToDo.vue`.
 
 #### Import source files
 
-Open the ***ToDo.vue*** file and import To Do List source files. Note that:
+Open `ToDo.vue` and import To Do List source files. The import path depends on the version you use:
 
-- if you use PRO version and install the To Do List package from a local folder, the import paths look like this:
+- For the PRO version installed from a local folder, use these import paths:
 
 ~~~html title="ToDo.vue"
 <script>
@@ -79,9 +79,9 @@ import 'dhx-todolist-package/dist/todo.css';
 </script>
 ~~~
 
-Note that depending on the used package, the source files can be minified. In this case make sure that you are importing the CSS file as **todo.min.css**.
+If the package is minified, import `todo.min.css` instead.
 
-- if you use the trial version of To Do List, specify the following paths:
+- For the trial version, use these import paths:
 
 ~~~html title="ToDo.vue"
 <script>
@@ -90,11 +90,11 @@ import '@dhx/trial-todolist/dist/todo.css';
 </script>
 ~~~
 
-In this tutorial you can see how to configure the **trial** version of To Do List.
+This guide uses the trial version.
 
-#### Setting containers and adding To Do List with Toolbar
+#### Set containers and initialize To Do List
 
-To display To Do List with Toolbar on the page, you need to create containers for To Do List and Toolbar, and initialize these components using the corresponding constructors:
+The following code snippet sets up the component and initializes To Do List and Toolbar in `mounted()`:
 
 ~~~html {2,7-8,10-14} title="ToDo.vue"
 <script>
@@ -103,19 +103,19 @@ import "@dhx/trial-todolist/dist/todo.css";
 
 export default {
     mounted() {
-        // initialize the To Do List component
+        // initialize To Do List
         this.todo = new ToDo(this.$refs.todo_container, {});
 
-        // initialize the Toolbar component
+        // initialize Toolbar
         this.toolbar = new Toolbar(this.$refs.toolbar_container, {
-            api: this.todo.api, // provide To Do List inner API
+            api: this.todo.api, // connect To Do List to Toolbar
             // other configuration properties
         });
     },
 
     unmounted() {
-        this.todo.destructor(); // destruct To Do List
-        this.toolbar.destructor(); // destruct Toolbar
+        this.todo.destructor(); // remove To Do List
+        this.toolbar.destructor(); // remove Toolbar
     }
 };
 </script>
@@ -128,9 +128,31 @@ export default {
 </template>
 ~~~
 
-#### Loading data
+#### Add styles
 
-To add data into the To Do List, you need to provide a data set. You can create the ***data.js*** file in the ***src/*** directory and add some data into it:
+Add global styles for To Do List and its containers to your stylesheet (for example, `src/assets/main.css`):
+
+~~~css
+/* specify styles for the initial page */
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #f7f7f7;
+}
+
+/* specify styles for To Do List and Toolbar container */
+.component_container {
+    height: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+~~~
+
+#### Load data
+
+Create `data.js` in `src/` with sample data:
 
 ~~~jsx {2,19,28,38} title="data.js"
 export function getData() {
@@ -174,7 +196,7 @@ export function getData() {
 }
 ~~~
 
-Then open the ***App.vue*** file, import data, and initialize it via the inner `data()` method. After this you can pass data into the new created `<ToDo/>` component as **props**:
+Open `App.vue`, import the data, and pass it to `<ToDo/>` as props:
 
 ~~~html {3,7-14,19} title="App.vue"
 <script>
@@ -199,7 +221,7 @@ export default {
 </template>
 ~~~
 
-Go to the ***ToDo.vue*** file and apply the passed **props** to the To Do List configuration object:
+Open `ToDo.vue` and apply the props to the To Do List configuration:
 
 ~~~html {6,10-12} title="ToDo.vue"
 <script>
@@ -238,7 +260,7 @@ export default {
 </template>
 ~~~
 
-You can also use the [`parse()`](/api/methods/parse_method/) method inside the `mounted()` method of Vue to load data into To Do List:
+Use the [`parse()`](/api/methods/parse_method/) method inside `mounted()` to load data instead:
 
 ~~~html {6,16-20} title="ToDo.vue"
 <script>
@@ -278,15 +300,15 @@ export default {
 </template>
 ~~~
 
-The `parse(data)` method provides data reloading on each applied change.
+Call `parse()` again at any point to reload data with new values.
 
-Now the To Do List component is ready to use. When the element will be added to the page, it will initialize the To Do List with data. You can provide necessary configuration settings as well. Visit our [To Do List API docs](/api/overview/configs_overview/) to check the full list of available properties.
+The component is ready. When added to the page, it initializes To Do List with data. See the [API docs](/api/overview/configs_overview/) for the full list of configuration properties.
 
-#### Handling events
+#### Handle events
 
-When a user makes some action in the To Do List, it invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](/api/overview/events_overview/).
+To Do List fires an event on each user action. Use these events to react to changes. See the [full list of events](/api/overview/events_overview/).
 
-Open ***ToDo.vue*** and complete the `mounted()` method:
+The following code snippet handles the `add-task` event inside `mounted()`:
 
 ~~~html {8-10} title="ToDo.vue"
 <script>
@@ -310,9 +332,9 @@ export default {
 // ...
 ~~~
 
-### Step 3. Adding To Do List into the app
+### Step 3. Add To Do List to the app
 
-To add the component into the app, open the **App.vue** file and replace the default code with the following one:
+Open `App.vue` and replace the default code:
 
 ~~~html title="App.vue"
 <script>
@@ -337,8 +359,8 @@ export default {
 </template>
 ~~~
 
-After that, you can start the app to see To Do List loaded with data on a page.
+Start the app to see To Do List loaded with data.
 
 ![To Do List initialization](/assets/trial_todolist.png)
 
-Now you know how to integrate DHTMLX To Do List with Vue. You can customize the code according to your specific requirements. The final example you can find on [**GitHub**](https://github.com/DHTMLX/vue-todolist-demo).
+Customize the code to fit your requirements. Find the complete example on [GitHub](https://github.com/DHTMLX/vue-todolist-demo).

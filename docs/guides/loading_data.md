@@ -6,18 +6,18 @@ description: You can learn about loading and storing data in the documentation o
 
 # Loading and storing data
 
-## Preparing data to load
+## Prepare data to load
 
-There are the following types of information which can be loaded into DHTMLX To Do List:
+Load the following data types into To Do List:
 
-- [**tasks**](/api/configs/tasks_config/)
-- [**projects**](/api/configs/projects_config/)
-- [**users**](/api/configs/users_config/)
-- [**priorities**](/api/configs/priorities_config/)
-- [**tags**](/api/configs/tags_config/)
-- [**activeProject**](/api/configs/activeproject_config/)
+- [`tasks`](/api/configs/tasks_config/) — array of task objects
+- [`projects`](/api/configs/projects_config/) — array of project objects
+- [`users`](/api/configs/users_config/) — array of user objects
+- [`priorities`](/api/configs/priorities_config/) — array of priority objects
+- [`tags`](/api/configs/tags_config/) — list of tag strings
+- [`activeProject`](/api/configs/activeproject_config/) — ID of the initially active project
 
-You can prepare data in a separate file. Here is an example of an appropriate data set:
+The following code snippet shows a sample data file with tasks, projects, users, and priorities:
 
 ~~~js title="data.js"
 function getData() {
@@ -162,23 +162,23 @@ function getData() {
 }
 ~~~
 
-To be able to load and operate the data in your project, include the file on the page:
+Include the data file on your page:
 
 ~~~html title="index.html"
 <script src="../data.js"></script>
 ~~~
 
-And apply the object destructuring:
+Apply object destructuring to extract the data:
 
 ~~~js title="index.js"
 const { tasks, users, projects, priorities } = getData();
 ~~~
 
-## Loading from local source
+## Load from a local source
 
-### Loading data on initialization
+### Load data on initialization
 
-You can load [a predefined data](#preparing-data-to-load) into To Do List on the initialization stage in the following way:
+The following code snippet passes [predefined data](#prepare-data-to-load) to the constructor on initialization:
 
 ~~~js {2,5-8} title="index.js"
 const { ToDo } = todo;
@@ -192,9 +192,9 @@ const list = new ToDo("#root", {
 });
 ~~~
 
-### Loading data after initialization
+### Load data after initialization
 
-To load data from a local data source after initialization of the To Do List, use the [`parse()`](/api/methods/parse_method/) method:
+Use the [`parse()`](/api/methods/parse_method/) method to load data after initialization:
 
 ~~~js {3,5,12-17} title="index.js"
 const { ToDo, Toolbar } = todo;
@@ -207,7 +207,7 @@ const toolbar = new Toolbar("#toolbar", {
     api: list.api,
 });
 
-// parse data into the component
+// load data into To Do List
 list.parse({
     tasks,
     users,
@@ -216,9 +216,9 @@ list.parse({
 });
 ~~~
 
-## Saving and restoring state
+## Save and restore state
 
-To save the current state of a To Do, use the [`serialize()`](/api/methods/serialize_method/) method. It converts the data of the To Do List into a JSON object.
+Use the [`serialize()`](/api/methods/serialize_method/) method to save the current state. It converts To Do List data into a JSON object:
 
 ~~~js
 const state = list.serialize();
@@ -226,18 +226,17 @@ const state = list.serialize();
 //    tasks: [{...}, {...}, ...],
 //    users: [{...}, {...}, ...],
 //    projects: [{...}, {...}, ...],
-//    priorities: [{...}, {...}, ...],
 //    tags: [],
 //    activeProject: string,
 // }
 ~~~
 
-Then you can parse the data stored in the saved state array to a different To Do List. For example:
+The following code snippet loads the saved state into a new To Do List instance:
 
 ~~~js
-// creating a new To Do
+// create a new To Do List
 const list2 =  new ToDo("#root2", {});
 
-// parsing the state of To Do List into another To Do List
+// load the saved state into the new list
 list2.parse(state);
 ~~~

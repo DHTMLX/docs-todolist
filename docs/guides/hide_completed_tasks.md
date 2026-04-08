@@ -1,19 +1,19 @@
 ---
-sidebar_label: Hiding completed tasks
+sidebar_label: Hide completed tasks
 title: Show/hide completed tasks
 description: You can learn about how to hide or show completed tasks in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
 ---
 
 # Show/hide completed tasks
 
-## Initial mode
+## Set the initial mode
 
-There are two modes of displaying tasks in To Do List:
+To Do List supports two display modes:
 
-- when all tasks are shown on the page (*default*)
-- when completed tasks are hidden from the page
+- all tasks are visible (default)
+- completed tasks are hidden
 
-You may initialize To Do List in the mode when all completed tasks will be hidden from the page. It will let you focus only on those tasks which yet need to be done. For that, you need to enable the **taskHide** setting of the **completed** parameter of the [`taskShape`](/api/configs/taskshape_config/) property, as in:  
+To initialize To Do List with completed tasks hidden, set `taskHide` to `true` in the `completed` parameter of [`taskShape`](/api/configs/taskshape_config/):
 
 ~~~js {6}
 const list = new ToDo("#root", {
@@ -27,16 +27,31 @@ const list = new ToDo("#root", {
 });
 ~~~
 
-## Switching between modes
+## Switch between modes
 
-You may easily switch between these two modes after initialization of To Do List in two ways:
+Switch between modes after initialization in two ways:
 
-- via the **Completed tasks -> Show/Hide** option of the [Toolbar menu](../../#toolbar)
+- Select **Completed tasks → Show/Hide** in the [Toolbar menu](../../#toolbar).
+- Use the [`hideCompletedTasks()`](/api/methods/hidecompletedtasks_method/) and [`showCompletedTasks()`](/api/methods/showcompletedtasks_method/) methods to switch programmatically.
 
-- via the related [`hideCompletedTasks()`](/api/methods/hidecompletedtasks_method/) and [`showCompletedTasks()`](/api/methods/showcompletedtasks_method/) methods:
+The following code snippet demonstrates switching modes programmatically:
 
 ~~~js
-list.hideCompletedTasks(); 
+list.hideCompletedTasks();
 // or
-list.showCompletedTasks(); 
+list.showCompletedTasks();
+~~~
+
+## React to mode changes
+
+Use the `hide-completed-tasks` and `show-completed-tasks` events to track when the display mode changes:
+
+~~~js
+list.api.on("hide-completed-tasks", () => {
+    console.log("Completed tasks are now hidden");
+});
+
+list.api.on("show-completed-tasks", () => {
+    console.log("Completed tasks are now visible");
+});
 ~~~

@@ -6,54 +6,56 @@ description: You can learn about inline editing in the documentation of the DHTM
 
 # Inline editing
 
-Inline editing lets you edit the content of a task/project directly by double-clicking on it. The functionality is enabled by default.
+Inline editing lets you edit task and project content directly by double-clicking. It is enabled by default.
 
 :::tip
-When you enable the [**readonly**](/api/configs/readonly_config/) mode of To Do List, inline editing becomes unavailable. 
+If you enable [readonly](/api/configs/readonly_config/) mode, inline editing becomes unavailable.
 :::
 
-## Supported formats of data
+## Supported data formats
 
-It is possible to type and edit the following data via the inline editor:
+Edit the following types of data in the inline editor:
 
-1\. **Text, numbers**
+### Text and numbers
 
-2\. **Hashtags**
+Type plain text or numeric values directly into the editor.
 
-Use hashtags to categorize tasks and make them more searchable. Here are some simple rules to know:
+### Hashtags
 
-- Hashtag is a combination of the `#` symbol and any letters, numbers (for instance, **#sport**)
-- To create a hashtag, enter `#` and at least one symbol after it (for instance, **#t**), and press Enter
-- You can use unlimited number of hashtags in To Do List. Separate the tags by spaces (for instance, **#tag #tag1**) 
-- All created hashtags are accessible in all projects
-- To view the list of all hashtags you've already created, enter the `#` symbol. Click the necessary hashtag to add it to the task
-- To activate strict filtering, click a hashtag or enter it in the search bar in the toolbar
+Use hashtags to categorize tasks and make them searchable:
+
+- A hashtag combines the `#` symbol with letters and numbers (for example, `#sport`).
+- To create a hashtag, type `#` followed by at least one character (for example, `#t`) and press Enter.
+- Use any number of hashtags, separated by spaces (for example, `#tag #tag1`).
+- Hashtags are available across all projects.
+- To view all existing hashtags, type `#`. Click a hashtag to add it to the task.
+- To filter tasks by a hashtag, click it or enter it in the toolbar search bar.
 
 :::info
-You can create a default list of tags via the [`tags`](/api/configs/tags_config/) property
+Use the [`tags`](/api/configs/tags_config/) property to set a default list of tags.
 :::
 
-3\. **Dates**
+### Dates
 
-To enter a date via the inline editor, type the `!` symbol and the built-in date picker will appear on the page.
-    
-You can also wrap some text in the special symbols - `!()` - for instance, **!(Enter Booking date)**, and press Enter to close the editor. In the future, clicking on this text will open the date picker. 
+To enter a date, type `!` in the inline editor. The built-in date picker appears.
+
+Wrap text in `!()` — for example, `!(Enter Booking date)` — and press Enter to close the editor. Clicking the text later opens the date picker.
 
 :::info
-The appearance of the added dates depends on the specified [**locale**](/api/configs/locale_config/) and [**date format**](/api/configs/taskshape_config/)
+Date appearance depends on the configured [`locale`](/api/configs/locale_config/) and [`date format`](/api/configs/taskshape_config/).
 :::
 
-## Working with editor
+## Work with the editor
 
-You can manage the editor by using the API:
+Use the following methods to open and close the inline editor programmatically.
 
-To open the editor for a particular task/project, use the [`openInlineEditor()`](/api/methods/openinlineeditor_method/) method:
+To open the editor for a task, pass the task ID to [`openInlineEditor()`](/api/methods/openinlineeditor_method/). Pass `"project"` as the optional `type` parameter to open the editor for a project instead of a task:
 
 ~~~js
 list.openInlineEditor({ id: "1.1.1" });
 ~~~
 
-To close the editor after finishing the editing of the item and save the changes made, pass the ID of the item to the [`closeInlineEditor()`](/api/methods/closeinlineeditor_method/) method:
+To close the editor and save changes, pass the item ID to [`closeInlineEditor()`](/api/methods/closeinlineeditor_method/):
 
 ~~~js
 list.closeInlineEditor({ 
@@ -61,12 +63,25 @@ list.closeInlineEditor({
 });
 ~~~
 
-If you don't need to save the changes after closing the editor, set the second **save** parameter of the method to *false*:
+To discard changes on close, set `save` to `false`:
 
 ~~~js
 list.closeInlineEditor({ 
     id: "1.1.1",
     save: false
 });
-~~~~
+~~~
 
+## Track editor state
+
+Use the `open-inline-editor` and `close-inline-editor` events to react when the inline editor opens or closes:
+
+~~~js
+list.api.on("open-inline-editor", ({id, type}) => {
+    console.log("Editor opened for", type, "with ID:", id);
+});
+
+list.api.on("close-inline-editor", ({id, save}) => {
+    console.log("Editor closed for item", id, "saved:", save);
+});
+~~~

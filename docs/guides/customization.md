@@ -6,19 +6,18 @@ description: You can learn about the To Do List Customization in the documentati
 
 # Customization
 
-## Toolbar
+## Customize the toolbar
 
-It is possible to customize the appearance of the toolbar. You can hide some default controls, add custom ones, and place them in the necessary order. To do that, use the [`items`](/api/toolbar_api/configs/items_config/) property of the Toolbar component. 
+Use the [`items`](/api/toolbar_api/configs/items_config/) property of the Toolbar component to hide default controls, add custom ones, and reorder them.
 
-You can customize your toolbar as in:
+The following example shows a customized toolbar with hidden and reordered controls:
 
 <iframe src="https://snippet.dhtmlx.com/jrnestbk?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
 
-## Styling To Do List
+## Style To Do List
 
-You can change the look and feel of To Do List by changing values of the [**CSS variables provided by the library**](/guides/stylization/).
+Change the look and feel of To Do List with the [CSS variables provided by the library](/guides/stylization/).
 
-Check the example:
+The following example shows To Do List with custom CSS variable values:
 
 <iframe src="https://snippet.dhtmlx.com/thmx9921?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="700"></iframe>
-

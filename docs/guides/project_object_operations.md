@@ -6,9 +6,9 @@ description: You can learn about project object in the documentation of the DHTM
 
 # Project object
 
-## Getting a project object
+## Get a project object
 
-To get a project object, use the [`getProject()`](/api/methods/getproject_method/) method:
+Use the [`getProject()`](/api/methods/getproject_method/) method to retrieve a project object by its ID:
 
 ~~~js {13}
 const projects = [
@@ -26,9 +26,9 @@ const toolbar = new Toolbar("#toolbar", {
 list.getProject({ id: "first" }); // -> {id: 'first', label: 'First project'}
 ~~~
 
-## Checking if a project exists
+## Check if a project exists
 
-To check whether a project exists or not, use the [`existsProject()`](/api/methods/existsproject_method/) method:
+Use the [`existsProject()`](/api/methods/existsproject_method/) method to check whether a project with the given ID exists:
 
 ~~~js {13-14}
 const projects = [
