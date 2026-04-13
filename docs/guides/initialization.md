@@ -20,10 +20,10 @@ To display To Do List on the page, follow these steps:
 
 Add the following two source files to your page:
 
-- `todo.js`
-- `todo.css`
+- *todo.js*
+- *todo.css*
 
-The following snippet includes the source files using relative paths to the `dist` folder:
+The following snippet includes the source files using relative paths to the *dist* folder:
 
 ~~~html title="index.html"
 <script type="text/javascript" src="./dist/todo.js"></script>  
@@ -47,7 +47,7 @@ Initialize the List and Toolbar using their respective constructors.
 
 ### Initialize List
 
-Initialize the List with the `ToDo()` constructor. It takes two parameters:
+Initialize the List with the `ToDo()` constructor. The constructor takes two parameters:
 
 - a container for the List (created in the previous step)
 - an object with [configuration properties](/api/overview/configs_overview/)
@@ -65,7 +65,7 @@ const list = new ToDo("#root", {
 
 ### Initialize Toolbar
 
-Initialize the Toolbar with the `Toolbar()` constructor, passing `list.api` as the required `api` property. It takes two parameters:
+Initialize the Toolbar with the `Toolbar()` constructor, passing `list.api` as the required `api` property. The constructor takes two parameters:
 
 - a container for the Toolbar (created in the previous step)
 - an object with [configuration properties](/category/toolbar-properties/)
@@ -74,7 +74,7 @@ Initialize the Toolbar with the `Toolbar()` constructor, passing `list.api` as t
 Toolbar initialization is optional. Skip this step if you do not need the Toolbar.
 :::
 
-The following code snippet shows a complete initialization of List and Toolbar:
+The following code snippet initializes List and Toolbar:
 
 ~~~js {9-11} title="index.js"
 const { ToDo, Toolbar } = todo; // unpack the todo global object
@@ -101,5 +101,7 @@ Skip this step if you use the `todo.ToDo()` and `todo.Toolbar()` constructors di
 See the [Data loading](/guides/loading_data/) guide for details.
 
 ## Example
+
+The example below demonstrates a basic To Do List initialization with List and Toolbar.
 
 <iframe src="https://snippet.dhtmlx.com/3vwlbwee?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="450"></iframe>

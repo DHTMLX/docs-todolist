@@ -71,7 +71,7 @@ Check [the list of available characters](/api/configs/taskshape_config/#list-of-
 
 ### Configure drag-n-drop
 
-To Do List includes drag-n-drop by default. [Select one or several tasks](../../#selecting-tasks) and drag them vertically. To copy the selected tasks, hold *Alt* during drag-n-drop.
+To Do List includes drag-n-drop by default. [Select one or several tasks](../../#selecting-tasks) and drag the tasks vertically. To copy the selected tasks, hold *Alt* during drag-n-drop.
 
 Use the [`drag`](/api/configs/drag_config/) property to configure drag-n-drop behavior.
 
@@ -111,7 +111,7 @@ If you specify a [due date](/api/configs/tasks_config/) for a task, due date val
 
 ![due_date](/assets/due_date.png)
 
-Overdue task dates are highlighted in red.
+The widget highlights overdue task dates in red.
 
 ![due_date](/assets/overdue_task.png)
 

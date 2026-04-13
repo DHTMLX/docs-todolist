@@ -11,7 +11,7 @@ The To Do List library allows you to select multiple tasks and manage them at on
 ![Multiselection](/assets/multiselection.png)
 
 :::info
-Learn how to [select](../../#selecting-tasks) and [manage multiple tasks](../../#managing-multiple-tasks) via UI
+Learn how to [select](../../#selecting-tasks) and [manage multiple tasks](../../#managing-multiple-tasks) via the UI.
 :::
 
 ## Set initially selected tasks
@@ -158,7 +158,7 @@ Use the following methods to perform bulk operations on selected tasks:
 
 ### Unselect one task
 
-To unselect a specific task, pass its ID to the [`unselectTask()`](/api/methods/unselecttask_method/) method:
+To unselect a specific task, pass the task ID to the [`unselectTask()`](/api/methods/unselecttask_method/) method:
 
 ~~~js
 list.unselectTask({ id: "1.1" });
@@ -174,7 +174,7 @@ list.unselectTask({ id: null });
 
 ## React to selection changes
 
-To Do List fires events when tasks are selected or unselected. Use these events to react to changes.
+To Do List fires events when you select or unselect tasks. Use these events to react to changes.
 
 - [`select-task`](/api/events/selecttask_event/) — fires when a task is selected
 - [`unselect-task`](/api/events/unselecttask_event/) — fires when a task is unselected

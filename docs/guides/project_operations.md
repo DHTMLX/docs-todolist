@@ -6,9 +6,9 @@ description: You can learn about operations with projects in the documentation o
 
 # Operations with projects
 
-## Changing the active project
+## Change the active project
 
-It is possible to change the currently active project via the [`setProject()`](/api/methods/setproject_method/) method. It takes the id of a project as a parameter:
+Change the active project with the [`setProject()`](/api/methods/setproject_method/) method, passing the project ID as a parameter:
 
 ~~~js {9,16}
 const projects = [
@@ -29,9 +29,9 @@ const toolbar = new Toolbar("#toolbar", {
 list.setProject({ id: "first" });
 ~~~
 
-## Adding a new project
+## Add a new project
 
-You may create a new project via the [`addProject()`](/api/methods/addproject_method/) method:
+Add a new project with the [`addProject()`](/api/methods/addproject_method/) method:
 
 ~~~js {13-18}
 const projects = [
@@ -54,9 +54,9 @@ list.addProject({
 });
 ~~~
 
-## Updating a project
+## Update a project
 
-To dynamically update parameters of a project, apply the [`updateProject()`](/api/methods/updateproject_method/) method. For instance, you can update the label of the project:
+To update project parameters, use the [`updateProject()`](/api/methods/updateproject_method/) method. The following example updates the project label:
 
 ~~~js {13-18}
 const projects = [
@@ -79,9 +79,9 @@ list.updateProject({
 });
 ~~~
 
-## Deleting a project
+## Delete a project
 
-To remove an unnecessary project, apply the [`deleteProject()`](/api/methods/deleteproject_method/) method:
+To delete a project, use the [`deleteProject()`](/api/methods/deleteproject_method/) method:
 
 ~~~js {17}
 const projects = [
@@ -104,7 +104,7 @@ list.deleteProject({ id: "first" });
 ~~~
 
 :::note
-The tasks linked to the project won't be removed. They will be moved to the *"No project"* section
+The tasks linked to the deleted project are not removed. The widget moves the tasks to the *"No project"* section.
 
 ~~~js
 console.log(list.getTask({id: "1"})); // -> {id: '1', text: 'Task 1', project: null}

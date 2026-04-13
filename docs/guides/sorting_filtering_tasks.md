@@ -1,18 +1,18 @@
 ---
-sidebar_label: Sorting and filtering tasks
-title: Sorting and filtering tasks
+sidebar_label: Sort and filter tasks
+title: Sort and filter tasks
 description: You can learn about sorting and filtering of tasks in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
 ---
 
-# Sorting and filtering tasks
+# Sort and filter tasks
 
-## Sorting tasks
+## Sort tasks
 
-The library allows you to sort tasks in the list after initialization of To Do List. There are two ways to view the tasks in the sorted order:
+Sort tasks in the list with one of the following options:
 
-- via the **Sort by** option of the [Toolbar menu](../../#toolbar). You may sort tasks by *text*, *due date*, *completion date*, *creation date*, or *editing date*
+- through the **Sort by** option in the [Toolbar menu](../../#toolbar) — sort by *text*, *due date*, *completion date*, *creation date*, or *editing date*
 
-- via the [`setSort()`](/api/methods/setsort_method/) method. You may specify your own search function  or implement sorting by a [task attribute](/api/configs/tasks_config/#parameters). For instance:
+- with the [`setSort()`](/api/methods/setsort_method/) method — specify a custom sort function or sort by a [task attribute](/api/configs/tasks_config/#parameters):
 
 ~~~js
 list.setSort({
@@ -22,13 +22,13 @@ list.setSort({
 });
 ~~~
 
-## Filtering tasks
+## Filter tasks
 
-You can find the tasks that match the specified criteria in 2 ways:
+Find tasks that match specified criteria with one of the following options:
 
-- via the [search bar](../../#toolbar) of Toolbar
+- through the [search bar](../../#toolbar) in the Toolbar
 
-- through the [`setFilter()`](/api/methods/setfilter_method/) method. The method supports the *strict* mode of filtering that allows you to filter tasks by the exact match.
+- with the [`setFilter()`](/api/methods/setfilter_method/) method — supports `strict` mode to match tasks by exact value:
 
 ~~~js
 // filter data by the specified rules

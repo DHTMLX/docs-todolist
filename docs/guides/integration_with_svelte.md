@@ -65,11 +65,11 @@ Download the [trial To Do List package](/how_to_start/#installing-to-do-list-via
 
 ### Step 2. Create the component
 
-Create a new file in `src/` and name it `ToDo.svelte`.
+Create a new file in *src/* and name it *ToDo.svelte*.
 
 #### Import source files
 
-Open `ToDo.svelte` and import To Do List source files. The import path depends on the version you use:
+Open *ToDo.svelte* and import To Do List source files. The import path depends on the version you use:
 
 - For the PRO version installed from a local folder, use these import paths:
 
@@ -80,7 +80,7 @@ import 'dhx-todolist-package/dist/todo.css';
 </script>
 ~~~
 
-If the package is minified, import `todo.min.css` instead.
+If the package is minified, import *todo.min.css* instead.
 
 - For the trial version, use these import paths:
 
@@ -131,7 +131,7 @@ onDestroy(() => {
 
 #### Add styles
 
-Add global styles for To Do List and its containers to your stylesheet (for example, `src/app.css`):
+Add global styles for To Do List and its containers to your stylesheet (for example, *src/app.css*):
 
 ~~~css
 /* specify styles for the initial page */
@@ -153,7 +153,7 @@ body {
 
 #### Load data
 
-Create `data.js` in `src/` with sample data:
+Create *data.js* in *src/* with sample data:
 
 ~~~jsx {2,19,28,38} title="data.js"
 export function getData() {
@@ -197,7 +197,7 @@ export function getData() {
 }
 ~~~
 
-Open `App.svelte`, import the data, and pass it to `<ToDo/>` as props:
+Open *App.svelte*, import the data, and pass the data to `<ToDo/>` as props:
 
 ~~~html {3,5,8} title="App.svelte"
 <script>
@@ -210,7 +210,7 @@ const { users, tasks, projects } = getData();
 <ToDo {users} {tasks} {projects} />
 ~~~
 
-Open `ToDo.svelte` and apply the props to the To Do List configuration:
+Open *ToDo.svelte* and apply the props to the To Do List configuration:
 
 ~~~html {6-8,15-17} title="ToDo.svelte"
 <script>
@@ -291,7 +291,7 @@ onDestroy(() => {
 
 Call `parse()` again at any point to reload data with new values.
 
-The component is ready. When added to the page, it initializes To Do List with data. See the [API docs](/api/overview/configs_overview/) for the full list of configuration properties.
+The component is ready. When added to the page, the component initializes To Do List with data. See the [API docs](/api/overview/configs_overview/) for the full list of configuration properties.
 
 #### Handle events
 
@@ -322,7 +322,7 @@ onDestroy(() => {
 
 ### Step 3. Add To Do List to the app
 
-Open `App.svelte` and replace the default code:
+Open *App.svelte* and replace the default code:
 
 ~~~html title="App.svelte"
 <script>

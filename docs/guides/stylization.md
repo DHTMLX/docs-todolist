@@ -6,15 +6,17 @@ description: You can learn about the To Do List Stylization in the documentation
 
 # Stylization
 
-You can stylize any part of the interface of DHTMLX To Do List to meet your project requirements. For this, the library provides a wide range of CSS variables. Note, that To Do List includes **two** types of CSS variables:
+Stylize any part of the DHTMLX To Do List interface with CSS variables. The library provides two types of CSS variables:
 
 - variables related to To Do List style
 - variables related to the WX library style (font, icons, checkboxes, etc)
 
 ## Default style
 
+The following CSS variables define the default appearance of To Do List.
+
 :::tip Note
-New versions of the To Do List can bring some changes for the variables and their names. So, please, do not forget to check the names after updating to the newest version and promptly modify them in your code to avoid problems with display of the component
+New versions of To Do List may change variable names. Check variable names after updating to avoid display issues.
 :::
 
 ~~~html
@@ -95,9 +97,9 @@ New versions of the To Do List can bring some changes for the variables and thei
 
 ## Custom style
 
-To customize the appearance of To Do List, just change the values of the necessary CSS variables. 
+To customize the appearance of To Do List, change the values of the CSS variables.
 
-In this snippet you can see how to apply a custom style to To Do List:
+The example below applies a custom style to To Do List:
 
 <iframe src="https://snippet.dhtmlx.com/thmx9921?mode=html" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 

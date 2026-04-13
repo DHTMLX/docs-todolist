@@ -6,10 +6,10 @@ description: You can learn about inline editing in the documentation of the DHTM
 
 # Inline editing
 
-Inline editing lets you edit task and project content directly by double-clicking. It is enabled by default.
+Inline editing lets you edit task and project content directly by double-clicking. The feature is enabled by default.
 
 :::tip
-If you enable [readonly](/api/configs/readonly_config/) mode, inline editing becomes unavailable.
+If you enable [`readonly`](/api/configs/readonly_config/) mode, inline editing becomes unavailable.
 :::
 
 ## Supported data formats

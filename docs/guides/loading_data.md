@@ -218,7 +218,7 @@ list.parse({
 
 ## Save and restore state
 
-Use the [`serialize()`](/api/methods/serialize_method/) method to save the current state. It converts To Do List data into a JSON object:
+Use the [`serialize()`](/api/methods/serialize_method/) method to save the current state. The method converts To Do List data into a JSON object:
 
 ~~~js
 const state = list.serialize();

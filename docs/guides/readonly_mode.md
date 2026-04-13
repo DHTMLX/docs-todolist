@@ -6,12 +6,12 @@ description: You can learn about the read-only mode in the documentation of the 
 
 # Read-only mode
 
-To make the To Do List read-only, set the [`readonly`](/api/configs/readonly_config/) configuration property to *true*.
+To make To Do List read-only, set the [`readonly`](/api/configs/readonly_config/) property to `true`:
 
 ~~~js {8}
 const { ToDo, Toolbar } = todo;
 
-// create To do list
+// create To Do List
 const list = new ToDo("#root", {
     tasks,
     users,
@@ -25,9 +25,11 @@ const toolbar = new Toolbar("#toolbar", {
 ~~~
 
 :::info
-In this mode, the tasks are non-editable. You will be able only to select a task and mark it as complete or incomplete.
+In this mode, tasks are non-editable. You can only select a task and mark it as complete or incomplete.
 :::
 
 ## Example
+
+The example below demonstrates the read-only mode.
 
 <iframe src="https://snippet.dhtmlx.com/ru1q1p7y?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="520"></iframe>

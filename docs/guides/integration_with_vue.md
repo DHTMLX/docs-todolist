@@ -64,11 +64,11 @@ Download the [trial To Do List package](/how_to_start/#installing-to-do-list-via
 
 ### Step 2. Create the component
 
-Create a new file in `src/components/` and name it `ToDo.vue`.
+Create a new file in *src/components/* and name it *ToDo.vue*.
 
 #### Import source files
 
-Open `ToDo.vue` and import To Do List source files. The import path depends on the version you use:
+Open *ToDo.vue* and import To Do List source files. The import path depends on the version you use:
 
 - For the PRO version installed from a local folder, use these import paths:
 
@@ -79,7 +79,7 @@ import 'dhx-todolist-package/dist/todo.css';
 </script>
 ~~~
 
-If the package is minified, import `todo.min.css` instead.
+If the package is minified, import *todo.min.css* instead.
 
 - For the trial version, use these import paths:
 
@@ -130,7 +130,7 @@ export default {
 
 #### Add styles
 
-Add global styles for To Do List and its containers to your stylesheet (for example, `src/assets/main.css`):
+Add global styles for To Do List and its containers to your stylesheet (for example, *src/assets/main.css*):
 
 ~~~css
 /* specify styles for the initial page */
@@ -152,7 +152,7 @@ body {
 
 #### Load data
 
-Create `data.js` in `src/` with sample data:
+Create *data.js* in *src/* with sample data:
 
 ~~~jsx {2,19,28,38} title="data.js"
 export function getData() {
@@ -196,7 +196,7 @@ export function getData() {
 }
 ~~~
 
-Open `App.vue`, import the data, and pass it to `<ToDo/>` as props:
+Open *App.vue*, import the data, and pass the data to `<ToDo/>` as props:
 
 ~~~html {3,7-14,19} title="App.vue"
 <script>
@@ -221,7 +221,7 @@ export default {
 </template>
 ~~~
 
-Open `ToDo.vue` and apply the props to the To Do List configuration:
+Open *ToDo.vue* and apply the props to the To Do List configuration:
 
 ~~~html {6,10-12} title="ToDo.vue"
 <script>
@@ -302,7 +302,7 @@ export default {
 
 Call `parse()` again at any point to reload data with new values.
 
-The component is ready. When added to the page, it initializes To Do List with data. See the [API docs](/api/overview/configs_overview/) for the full list of configuration properties.
+The component is ready. When added to the page, the component initializes To Do List with data. See the [API docs](/api/overview/configs_overview/) for the full list of configuration properties.
 
 #### Handle events
 
@@ -334,7 +334,7 @@ export default {
 
 ### Step 3. Add To Do List to the app
 
-Open `App.vue` and replace the default code:
+Open *App.vue* and replace the default code:
 
 ~~~html title="App.vue"
 <script>

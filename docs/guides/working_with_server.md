@@ -1,54 +1,57 @@
 ---
-sidebar_label: Working with server
-title: Working with server
+sidebar_label: Work with server
+title: Work with server
 description: You can learn about working with server in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
 ---
-# Working with server
 
-DHTMLX To Do List allows working both with the client and server data. The widget doesn't have any special requirements for the backend. It can be easily connected with any backend platform which supports the REST API (RESTful API).
+# Work with server
+
+To Do List works with both client-side and server-side data. The widget has no special backend requirements and connects to any backend platform that supports REST API.
 
 :::info
-By default, the widget comes with the built-in [**Go**](https://github.com/web-widgets/todo-go) and [**Node**](https://github.com/web-widgets/todo-node) backend. But you can use your custom server scripts as well.
+By default, the widget comes with the built-in [**Go**](https://github.com/web-widgets/todo-go) and [**Node**](https://github.com/web-widgets/todo-node) backend. You can also use custom server scripts.
 :::
+
 ## RestDataProvider
 
-The To Do List has the **RestDataProvider** service that completely supports REST API for dealing with the backend. It allows interacting with the server and perform the following data operations:
+The `RestDataProvider` service fully supports REST API for backend communication and handles the following data operations:
 
-- **"add-task"**
-- **"update-task"**
-- **"delete-task"**
-- **"add-project"**
-- **"update-project"**
-- **"delete-project"**
-- **"set-project"**
-- **"move-task"**
-- **"clone-task"**
+- `"add-task"`
+- `"update-task"`
+- `"delete-task"`
+- `"add-project"`
+- `"update-project"`
+- `"delete-project"`
+- `"set-project"`
+- `"move-task"`
+- `"clone-task"`
+
 ## REST methods
 
-The **RestDataProvider** service includes the special REST methods for dynamic data loading:
+The `RestDataProvider` service provides the following REST methods for dynamic data loading:
 
-- [`getProjects()`](/api/rest_api/methods/getprojects_method/) - gets a promise with the **projects data**
-- [`getProjectTasks()`](/api/rest_api/methods/getprojecttasks_method/) - gets a promise with the **tasks data** of the specified **project**
-- [`getTags()`](/api/rest_api/methods/gettags_method/) - gets a promise with a list of **default tags**
-- [`getTasks()`](/api/rest_api/methods/gettasks_method/) - gets a promise with the **tasks data**
-- [`getUsers()`](/api/rest_api/methods/getusers_method/) - gets a promise with the **users data**
-- [`setAPI()`](/api/rest_api/methods/setapi_method/) - sets API of the To Do List component into RestDataProvider
-- [`send()`](/api/rest_api/methods/send_method/) - sends a necessary request to the server and gets a promise with or without data depending on the request
+- [`getProjects()`](/api/rest_api/methods/getprojects_method/) — get projects data
+- [`getProjectTasks()`](/api/rest_api/methods/getprojecttasks_method/) — get tasks data for a specified project
+- [`getTags()`](/api/rest_api/methods/gettags_method/) — get a list of default tags
+- [`getTasks()`](/api/rest_api/methods/gettasks_method/) — get tasks data
+- [`getUsers()`](/api/rest_api/methods/getusers_method/) — get users data
+- [`setAPI()`](/api/rest_api/methods/setapi_method/) — set the To Do List API in RestDataProvider
+- [`send()`](/api/rest_api/methods/send_method/) — send a request to the server and get a promise with or without data
 
-## Interacting with backend
+## Connect to a backend
 
-To interact with the server, you need to connect **RestDataProvider** to the corresponding server scripts. If you want to use the built-in backend, you can find the needed scripts in the following repositories:
+Connect `RestDataProvider` to the server scripts. To use the built-in backend, find the scripts in the following repositories:
 
 - [**Go**](https://github.com/web-widgets/todo-go) backend
 - [**Node**](https://github.com/web-widgets/todo-node) backend
 
-or you can create a custom one.
+You can also create a custom backend.
 
 :::tip
-If you use custom backend, refer to the [**REST API routes**](/api/rest_api/routes/rest_routes_overview/) topic for more information!
+To use a custom backend, see the [**REST API routes**](/api/rest_api/routes/rest_routes_overview/) topic for details.
 :::
 
-To connect **RestDataProvider** to the backend, you need to call the **new RestDataProvider()** constructor by passing the corresponding **URL** as a parameter.
+Connect `RestDataProvider` to the backend with the `new RestDataProvider()` constructor, passing the server URL:
 
 ~~~js {4-5,23-24}
 const { ToDo, Toolbar, RestDataProvider } = todo;
@@ -79,20 +82,20 @@ Promise.all([
 ~~~
 
 :::info
-You need to include **RestDataProvider** into the **Event Bus** order via the [`api.setNext()`](/api/internal/setnext_method/) method to perform operations with data (*adding, deleting,* etc) and send the corresponding requests to the server
+Include `RestDataProvider` in the Event Bus with the [`api.setNext()`](/api/internal/setnext_method/) method to perform data operations (adding, deleting, etc.) and send requests to the server.
 :::
 
 ### Example
 
-The snippet below shows you how to connect **RestDataProvider** to the backend and load server data dynamically:
+The snippet below connects `RestDataProvider` to the backend and loads server data:
 
 <iframe src="https://snippet.dhtmlx.com/hnk06gm7?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
 
 ## Multiuser backend
 
-Task management tools, such as our To Do List, are highly sought after by businesses of all sizes. Considering this, it is crucial to provide a seamless user experience for all users, regardless of the number. Our new feature allows multiple users to efficiently manage the same tasks on the list in real-time, without the need for page reloads. As a result, users can collaborate and stay up-to-date with one another's actions, enhancing productivity and overall user satisfaction.
+To Do List supports real-time collaboration, letting multiple users manage the same tasks without page reloads.
 
-To implement a multiuser backend, you need to get authorization on the server before the To Do List initialization. For this, you can create the `login()` function:
+To implement a multiuser backend, authenticate with the server before To Do List initialization. Create a `login()` function to handle authentication:
 
 ~~~js {}
 const login = (url) => {
@@ -109,7 +112,7 @@ const login = (url) => {
 }
 ~~~
 
-The `login()` function returns the server token that is crucial for all subsequent interactions with the server. The token is included in each request as the value of the **Remote-Token** header in the following way:
+The `login()` function returns a server token used for all subsequent requests. Include the token in each request as the `Remote-Token` header value:
 
 ~~~js {}
 login(url).then(token => {
@@ -119,7 +122,7 @@ login(url).then(token => {
     });
 ~~~
 
-After the initialization, you need to add WebSocket aimed to listen for events from the server. It can be done in the following way:
+After initialization, add a WebSocket listener to receive server events:
 
 ~~~js {14-16,18-24}
 Promise.all([
@@ -149,17 +152,17 @@ Promise.all([
 });
 ~~~
 
-After integrating the multiuser backend into your app, you can simplify collaboration between users and enable them to keep track of any changes via the UI in a real time.
+With the multiuser backend in place, users can track each other's changes in the UI in real time.
 
 ### Example
 
-The snippet below shows how to configure the multiuser backend to track changes of other users in a real time:
+The snippet below configures the multiuser backend to track changes in real time:
 
 <iframe src="https://snippet.dhtmlx.com/82ayq2lk?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
 
-## Customization of server events
+## Customize server events
 
-You can define your own logic for handling server events. For this purpose, you need to pass the **handlers** object to the `RemoteEvents.on(handlers)` method. The **handlers** object should have the following structure:
+Define custom logic for server events by passing a `handlers` object to the `RemoteEvents.on(handlers)` method. The `handlers` object uses the following structure:
 
 ~~~js {}
 {
@@ -168,14 +171,14 @@ You can define your own logic for handling server events. For this purpose, you 
 }
 ~~~
 
-When any change occurs on the server, it returns the name of the modified element. These names can vary depending on the server logic.
+When any change occurs, the server returns the name of the modified element. Names vary depending on the server logic.
 
-The data updated on the client side will be placed in the **obj** argument of the `function(obj: any)` function. To specify an operation, there is a `type: string` field. It can take the following values:
+Client-side data updates appear in the `obj` argument of the `function(obj: any)` function. Use the `type: string` field to specify the operation. The field accepts the following values:
 
 - For **tasks**: `"add-task"`, `"update-task"`, `"delete-task"`, `"move-task"`, `"clone-task"`
 - For **projects**: `"add-project"`, `"update-project"`, `"delete-project"`, `"move-project"`, `"clone-project"`
 
-In the following code snippet you can see the implementation details:
+The following code snippet implements custom server event handling:
 
 ~~~js {}
 const todoInstance = new todo.ToDo("#root", config);
@@ -226,11 +229,11 @@ const remoteEvents = new todo.RemoteEvents(remoteEventsURL, token);
 remoteEvents.on(handlers);
 ~~~
 
-The `RestDataProvider.getIDResolver()` method returns a function that is necessary to synchronize client IDs with server IDs. When a new object (*task/project*) is created on the client side, the received object will have a temporary ID and its corresponding server ID in `RestDataProvider`. The `idResolver()` function allows synchronizing the client ID with the server ID. This function has the following format: `idResolver(id: TID, type: number)`
+The `RestDataProvider.getIDResolver()` method returns a function that synchronizes client IDs with server IDs. When a new task or project is created on the client side, the object has a temporary ID with a corresponding server ID in `RestDataProvider`. Use `idResolver()` to synchronize client and server IDs. The function uses the following format: `idResolver(id: TID, type: number)`.
 
-The `type` argument is the type of model that takes the following values:
+The `type` argument accepts the following values:
 
-- `TaskID` - 1
-- `ProjID` - 2
+- `TaskID` — 1
+- `ProjID` — 2
 
-To prevent the request from being sent to the server, you need to use the `skipProvider: true` flag when calling the `todoInstance.api.exec()` method.
+To prevent sending a request to the server, set `skipProvider: true` when calling `todoInstance.api.exec()`.

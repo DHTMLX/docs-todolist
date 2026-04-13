@@ -10,7 +10,7 @@ Present the To Do List interface in any language. The library includes predefine
 
 ## Default locale
 
-The default English locale defines calendar labels, toolbar labels, task menu items, keyboard shortcuts, and editor placeholder text.
+The following code snippet defines the default English locale with all available labels:
 
 ~~~js
 const en = {
@@ -145,7 +145,7 @@ Download a [locale repository from GitHub](https://github.com/web-widgets/wx-tod
 The files do not include Calendar label translations — add them manually.
 :::
 
-- Apply the locale to both To Do List and Toolbar via the `locale` property:
+- Apply the `locale` property to both To Do List and Toolbar:
 
 ~~~js {8,13}
 const { ToDo, Toolbar} = todo;

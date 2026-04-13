@@ -60,11 +60,11 @@ Download the [trial To Do List package](/how_to_start/#installing-to-do-list-via
 
 ### Step 2. Create the component
 
-Create a new file in `src/` and name it `ToDo.jsx`.
+Create a new file in *src/* and name it *ToDo.jsx*.
 
 #### Import source files
 
-Open `ToDo.jsx` and import To Do List source files. The import path depends on the version you use:
+Open *ToDo.jsx* and import To Do List source files. The import path depends on the version you use:
 
 - For the PRO version installed from a local folder, use these import paths:
 
@@ -73,7 +73,7 @@ import { ToDo, Toolbar } from 'dhx-todolist-package';
 import 'dhx-todolist-package/dist/todo.css';
 ~~~
 
-If the package is minified, import `todo.min.css` instead.
+If the package is minified, import *todo.min.css* instead.
 
 - For the trial version, use these import paths:
 
@@ -122,7 +122,7 @@ export default function ToDoComponent(props) {
 
 #### Add styles
 
-Add styles for To Do List and its containers to `index.css`:
+Add styles for To Do List and its containers to *index.css*:
 
 ~~~css title="index.css"
 /* specify styles for initial page */
@@ -150,7 +150,7 @@ body,
 
 #### Load data
 
-Create `data.js` in `src/` with sample data:
+Create *data.js* in *src/* with sample data:
 
 ~~~jsx {2,19,28,38} title="data.js"
 export function getData() {
@@ -194,7 +194,7 @@ export function getData() {
 }
 ~~~
 
-Open `App.js`, import the data, and pass it to the `<ToDo/>` component as props:
+Open *App.js*, import the data, and pass the data to the `<ToDo/>` component as props:
 
 ~~~jsx {2,5-6} title="App.js"
 import ToDo from "./ToDo";
@@ -208,7 +208,7 @@ function App() {
 export default App;
 ~~~
 
-Open `ToDo.jsx` and apply the props to the To Do List configuration:
+Open *ToDo.jsx* and apply the props to the To Do List configuration:
 
 ~~~jsx {5,11-13} title="ToDo.jsx"
 import { useEffect, useRef } from "react";
@@ -285,7 +285,7 @@ export default function ToDoComponent(props) {
 
 Call `parse()` again at any point to reload data with new values.
 
-The component is ready. When added to the page, it initializes To Do List with data. See the [API docs](/api/overview/configs_overview/) for the full list of configuration properties.
+The component is ready. When added to the page, the component initializes To Do List with data. See the [API docs](/api/overview/configs_overview/) for the full list of configuration properties.
 
 #### Handle events
 
@@ -311,7 +311,7 @@ useEffect(() => {
 
 ### Step 3. Add To Do List to the app
 
-Open `App.js` and replace the default code:
+Open *App.js* and replace the default code:
 
 ~~~jsx title="App.js"
 import ToDo from "./ToDo";

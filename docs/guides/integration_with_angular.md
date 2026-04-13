@@ -57,11 +57,11 @@ Download the [trial To Do List package](/how_to_start/#installing-to-do-list-via
 
 ### Step 2. Create the component
 
-Create the `todo` folder in `src/app/`, then add a new file named `todo.component.ts`.
+Create the *todo* folder in *src/app/*, then add a new file named *todo.component.ts*.
 
 #### Import source files
 
-Open `todo.component.ts` and import To Do List source files. The import path depends on the version you use:
+Open *todo.component.ts* and import To Do List source files. The import path depends on the version you use:
 
 - For the PRO version installed from a local folder, use this import path:
 
@@ -125,7 +125,7 @@ export class ToDoComponent implements OnInit, OnDestroy {
 
 #### Add styles
 
-Create `todo.component.css` in `src/app/todo/` and add styles for To Do List and its container:
+Create *todo.component.css* in *src/app/todo/* and add styles for To Do List and its container:
 
 ~~~css title="todo.component.css"
 /* import To Do List styles */
@@ -155,7 +155,7 @@ body{
 
 #### Load data
 
-Create `data.ts` in `src/app/todo/` with sample data:
+Create *data.ts* in *src/app/todo/* with sample data:
 
 ~~~jsx {2,19,28,38} title="data.ts"
 export function getData() {
@@ -199,7 +199,7 @@ export function getData() {
 }
 ~~~
 
-Open `todo.component.ts`, import the data file, and pass data properties to the To Do List constructor in `ngOnInit()`:
+Open *todo.component.ts*, import the data file, and pass data properties to the To Do List constructor in `ngOnInit()`:
 
 ~~~jsx {2,23,25-27} title="todo.component.ts"
 import { ToDo, Toolbar } from '@dhx/trial-todolist';
@@ -295,7 +295,7 @@ export class ToDoComponent implements OnInit, OnDestroy {
 
 Call `parse()` again at any point to reload data with new values.
 
-The component is ready. When added to the page, it initializes To Do List with data. See the [API docs](/api/overview/configs_overview/) for the full list of configuration properties.
+The component is ready. When added to the page, the component initializes To Do List with data. See the [API docs](/api/overview/configs_overview/) for the full list of configuration properties.
 
 #### Handle events
 
@@ -320,7 +320,7 @@ ngOnDestroy(): void {
 
 ### Step 3. Add To Do List to the app
 
-Open `src/app/app.component.ts` and replace the default code:
+Open *src/app/app.component.ts* and replace the default code:
 
 ~~~jsx {5} title="app.component.ts"
 import { Component } from "@angular/core";
@@ -334,7 +334,7 @@ export class AppComponent {
 }
 ~~~
 
-Create `app.module.ts` in `src/app/` and register the components:
+Create *app.module.ts* in *src/app/* and register the components:
 
 ~~~jsx {4-5,8} title="app.module.ts"
 import { NgModule } from "@angular/core";
@@ -351,7 +351,7 @@ import { ToDoComponent } from "./todo/todo.component";
 export class AppModule {}
 ~~~
 
-Open `src/main.ts` and replace the existing code to bootstrap the application:
+Open *src/main.ts* and replace the existing code to bootstrap the application:
 
 ~~~jsx title="main.ts"
 import { platformBrowserDynamic } from "@angular/platform-browser-dynamic";

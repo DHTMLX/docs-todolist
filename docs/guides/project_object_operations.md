@@ -8,7 +8,7 @@ description: You can learn about project object in the documentation of the DHTM
 
 ## Get a project object
 
-Use the [`getProject()`](/api/methods/getproject_method/) method to retrieve a project object by its ID:
+Use the [`getProject()`](/api/methods/getproject_method/) method to retrieve a project object by ID:
 
 ~~~js {13}
 const projects = [
