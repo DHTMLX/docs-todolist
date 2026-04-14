@@ -6,11 +6,7 @@ description: You can learn about selection of multiple tasks in the documentatio
 
 # Multiple select and bulk operations
 
-The To Do List library allows you to select multiple tasks and manage them at once.
-
-In this article we'll discuss the details on how to initialize To Do List with selected tasks, how to select one or several tasks after the initialization stage, how to get IDs of all selected tasks. 
-
-We'll consider how to perform bulk operations over the selected tasks and provide you with a list of available operations. And, finally, we'll show you the ways of resetting selection.
+To Do List lets you select multiple tasks and manage them at once. This guide covers how to initialize To Do List with pre-selected tasks, select tasks after initialization, retrieve selected task IDs, perform bulk operations, and reset selection.
 
 ![Multiselection](../assets/multiselection.png)
 
@@ -18,9 +14,9 @@ We'll consider how to perform bulk operations over the selected tasks and provid
 Learn how to [select](../../#selecting-tasks) and [manage multiple tasks](../../#managing-multiple-tasks) via UI
 :::
 
-## Initially selected tasks
+## Set initially selected tasks
 
-If you want to create a To Do List with initially selected tasks, use the [`selected`](api/configs/selected_config.md) configuration property of To Do List:
+Use the [`selected`](api/configs/selected_config.md) configuration property to initialize To Do List with pre-selected tasks:
 
 ~~~js {12}
 const list = new ToDo("#root", {
@@ -40,18 +36,18 @@ const list = new ToDo("#root", {
 console.log(list.getSelection()); // ["1.1", "1.2", "2.2"]
 ~~~
 
-## Selecting tasks
+## Select tasks
 
-The library provides you with the [`selectTask()`](api/methods/selecttask_method.md) method which lets you select tasks after To Do List initialization. The method has two parameters:
+Use the [`selectTask()`](api/methods/selecttask_method.md) method to select tasks after initialization. The method takes two parameters:
 
-- `id` - the ID of the task to select
-- `join` - defines whether To Do List should join the specified task to the previously selected tasks
+- `id` — the ID of the task to select
+- `join` — defines whether To Do List adds the task to the existing selection or replaces it
 
-### Selecting one task
+### Select one task
 
-By default, the value of the **join** parameter is set to *false*. It means, that the method will select only the specified task without saving IDs of the previously selected tasks.
+By default, `join` is `false`. The method selects only the specified task and clears the previous selection.
 
-Take a look at the following code snippet:
+The following code snippet demonstrates single-task selection:
 
 ~~~js {19}
 const list = new ToDo("#root", {
@@ -78,11 +74,11 @@ list.selectTask({
 console.log(list.getSelection()) // ["2.1"]
 ~~~
 
-### Selecting multiple tasks
+### Select multiple tasks
 
-In order to select multiple tasks, you need to set the value of the **join** parameter to *true*. In this case, the `selectTask()` method will select the specified task and will not reset selection of earlier selected tasks.
+Set `join` to `true` to add a task to the existing selection without clearing previously selected tasks.
 
-The most convenient way to select several tasks at once is shown below:
+The following code snippet selects several tasks at once:
 
 ~~~js {14-18}
 const list = new ToDo("#root", {
@@ -107,7 +103,7 @@ for (id of selected) {
 console.log(list.getSelection()) // ["1.1", "1.2", "2.2"]
 ~~~
 
-And here is an example of how you can select one more task:
+The following code snippet adds one more task to an existing selection:
 
 ~~~js {3}
 console.log(list.getSelection()) // ["1.1", "1.2", "2.2"]
@@ -117,27 +113,25 @@ list.selectTask({ id: "2.1", join: true });
 console.log(list.getSelection()) // ["1.1", "1.2", "2.2", "2.1"]
 ~~~
 
-## Getting all selected tasks
+## Get all selected tasks
 
-To get all tasks that are currently selected, use the [`getSelection()`](api/methods/getselection_method.md) method:
+Use the [`getSelection()`](api/methods/getselection_method.md) method to retrieve the IDs of all currently selected tasks:
 
 ~~~js
-// sorted - disable;
+// sorted - disabled
 list.getSelection({ sorted: false }); // ["1.2", "1.1", "2.2", "2.1"]
 
-// sorted - enable;
+// sorted - enabled
 list.getSelection({ sorted: true }); // ["1.1", "1.2", "2.1", "2.2"]
 ~~~
 
-Enable the **sorted** parameter if you need to get IDs of the selected tasks in the order they are displayed in List.
+Set `sorted` to `true` to return task IDs in the order they appear in the list.
 
-## Managing selected tasks
+## Manage selected tasks
 
-After you have selected multiple tasks, you may apply different operations to them at once. 
+Use the [`eachSelected()`](api/methods/eachselected_method.md) method to iterate over all selected tasks and apply an operation to each one. The `sorted` and `reversed` parameters control the iteration order.
 
-For this purpose, the library includes the [`eachSelected()`](api/methods/eachselected_method.md) method that allows iterating over all selected tasks. The additional parameters of the method - **sorted** and **reversed** - let you define whether the tasks should be sorted or not and specify the direction of iteration.
-
-For example, you can apply the method to delete all selected tasks:
+The following code snippet deletes all selected tasks:
 
 ~~~js
 list.eachSelected(id => {
@@ -145,32 +139,30 @@ list.eachSelected(id => {
 }, true);
 ~~~
 
-Check the full list of available operations you can perform over multiple tasks [below](#list-of-available-operations).
+The following API methods support bulk operations on multiple selected tasks:
 
-### List of available operations
+### Available bulk operations
 
-Here is the full list of bulk operations you can perform over multiple selected tasks via API methods:
+- [`copyTask()`](../../api/methods/copytask_method/) — copy tasks
+- [`pasteTask()`](../../api/methods/pastetask_method/) — paste tasks
+- [`moveTask()`](../../api/methods/movetask_method/) — move tasks
+- [`deleteTask()`](../../api/methods/deletetask_method/) — delete tasks
+- [`checkTask()`](../../api/methods/checktask_method/), [`uncheckTask()`](../../api/methods/unchecktask_method/) — mark tasks complete or incomplete
+- [`indentTask()`](../../api/methods/indenttask_method/), [`unindentTask()`](../../api/methods/unindenttask_method/) — change the nesting level of tasks
 
-- copying tasks via the [`copyTask()`](../../api/methods/copytask_method/) method
-- pasting tasks via the [`pasteTask()`](../../api/methods/pastetask_method/) method
-- moving tasks via the [`moveTask()`](../../api/methods/movetask_method/) method
-- deleting tasks via the [`deleteTask()`](../../api/methods/deletetask_method/) method
-- marking tasks complete/incomplete via the [`checkTask()`](../../api/methods/checktask_method/) and [`uncheckTask()`](../../api/methods/unchecktask_method/) methods
-- demoting and promoting the nesting level of tasks via the [`indentTask()`](../../api/methods/indenttask_method/) and [`unindentTask()`](../../api/methods/unindenttask_method/) methods
+## Reset selection
 
-## Resetting selection
+### Unselect one task
 
-### Unselecting one task
-
-To remove selection from one selected task, pass the ID of the task as a parameter to the [`unselectTask()`](../../api/methods/unselecttask_method/) method:
+To remove a task from the selection, pass the task ID to the [`unselectTask()`](../../api/methods/unselecttask_method/) method:
 
 ~~~js
 list.unselectTask({ id: "1.1" });
 ~~~
 
-### Unselecting all tasks
+### Unselect all tasks
 
-To unselect all currently selected tasks, pass **id: null** to the [`unselectTask()`](../../api/methods/unselecttask_method/) method:
+To clear the entire selection, pass `id: null` to the [`unselectTask()`](../../api/methods/unselecttask_method/) method:
 
 ~~~js
 list.unselectTask({ id: null });

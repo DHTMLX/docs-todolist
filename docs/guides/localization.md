@@ -6,9 +6,11 @@ description: You can learn about the To Do List localization in the documentatio
 
 # Localization
 
-You can present the interface of DHTMLX To Do List in any language. The library provides a number of predefined locales and gives the ability to create custom ones. By default, DHTMLX To Do List uses [English locale](#default-locale).
+To Do List supports multiple interface languages through predefined and custom locales. By default, DHTMLX To Do List uses the [English locale](#default-locale).
 
 ## Default locale
+
+The code below shows the full structure of the default English locale:
 
 ~~~js
 const en = {
@@ -106,11 +108,11 @@ const en = {
 };
 ~~~
 
-## Custom locale
+## Create a custom locale
 
-To initialize the To Do List component in non-English language, you need to:
+To initialize To Do List in a non-English language, follow these steps:
 
-- define necessary language settings: provide translations for all text labels (it can be any language you need)
+- Define the language settings by providing translations for all text labels:
 
 ~~~js
 const de = {
@@ -124,11 +126,11 @@ const de = {
 ~~~
 
 :::tip
-To create a custom locale, you can make a copy of the default ([English](#default-locale)) locale, and translate text labels from it into the required language.
+Copy the default [English locale](#default-locale) and translate the text labels into the required language.
 :::
 
 :::info
-You can download [**a repository from GitHub**](https://github.com/web-widgets/wx-todo-locales/tree/master/locales) which includes locales of the To Do List for the following languages: 
+Download [a repository from GitHub](https://github.com/web-widgets/wx-todo-locales/tree/master/locales) with ready-made locales for the following languages:
 
 - Chinese (**cn**)
 - French (**fr**)
@@ -140,10 +142,10 @@ You can download [**a repository from GitHub**](https://github.com/web-widgets/w
 - Russian (**ru**)
 - Spanish (**es**)
 
-*The files don't include translations for the Calendar labels, therefore you will need to add them yourself.*
+*The files do not include translations for the Calendar labels. Add them manually.*
 :::
 
-- apply the necessary locale to the To Do List component and its Toolbar via the corresponding **locale** properties:
+- Apply the locale to To Do List and its Toolbar via the `locale` property:
 
 ~~~js {8,13}
 const { ToDo, Toolbar} = todo;
@@ -163,11 +165,11 @@ const toolbar = new Toolbar("#toolbar", {
 ~~~
 
 :::tip
-To change the locale dynamically, use the related `setLocale()` methods of the [To Do List](api/methods/setlocale_method.md) and [Toolbar](api/toolbar_api/methods/setlocale_method.md)
+To change the locale dynamically, use the `setLocale()` methods of [To Do List](api/methods/setlocale_method.md) and [Toolbar](api/toolbar_api/methods/setlocale_method.md).
 :::
 
 ## Example
 
-In this snippet you can see how to switch between the EN and DE locales:
+The example below demonstrates switching between the EN and DE locales:
 
 <iframe src="https://snippet.dhtmlx.com/kzjwvuq5?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>

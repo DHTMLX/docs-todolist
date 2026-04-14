@@ -6,17 +6,23 @@ description: You can learn about integration with other widgets in the documenta
 
 # Integration with DHTMLX widgets
 
-You can integrate DHTMLX To Do List with other DHTMLX widgets (for instance, [Gantt](https://docs.dhtmlx.com/gantt/), [Scheduler](https://docs.dhtmlx.com/scheduler/), [Kanban](https://docs.dhtmlx.com/kanban/), [Grid](https://docs.dhtmlx.com/suite/grid/)). Check the examples below.
+Integrate DHTMLX To Do List with other DHTMLX widgets, for example [Gantt](https://docs.dhtmlx.com/gantt/), [Scheduler](https://docs.dhtmlx.com/scheduler/), [Kanban](https://docs.dhtmlx.com/kanban/), and [Grid](https://docs.dhtmlx.com/suite/grid/).
 
 ## Integration with DHTMLX Gantt
- 
+
+The example below demonstrates To Do List integrated with DHTMLX Gantt:
+
 <iframe src="https://snippet.dhtmlx.com/i8qy8tp0?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="700"></iframe>
 
 ## Integration with DHTMLX Kanban
 
+The example below demonstrates To Do List integrated with DHTMLX Kanban:
+
 <iframe src="https://snippet.dhtmlx.com/id05kedo?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="750"></iframe>
 
 ## Integration with DHTMLX Scheduler
+
+The examples below demonstrate To Do List integrated with DHTMLX Scheduler.
 
 ### Example without projects
 
@@ -27,5 +33,7 @@ You can integrate DHTMLX To Do List with other DHTMLX widgets (for instance, [Ga
 <iframe src="https://snippet.dhtmlx.com/ddqphcz2?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="700"></iframe>
 
 ## Integration with DHTMLX DataGrid
+
+The example below demonstrates To Do List integrated with DHTMLX DataGrid:
 
 <iframe src="https://snippet.dhtmlx.com/e97idjs8?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="700"></iframe>

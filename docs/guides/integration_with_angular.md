@@ -10,12 +10,12 @@ description: You can learn about the integration with Angular in the documentati
 You should be familiar with basic concepts and patterns of **Angular** before reading this documentation. To refresh your knowledge, please refer to the [**Angular documentation**](https://v17.angular.io/docs).
 :::
 
-DHTMLX To Do List is compatible with **Angular**. We prepared code examples on how to use DHTMLX To Do List with **Angular**. For more information, refer to the corresponding [**Example on GitHub**](https://github.com/DHTMLX/angular-todolist-demo).
+DHTMLX To Do List is compatible with Angular. For a working example, see the [Example on GitHub](https://github.com/DHTMLX/angular-todolist-demo).
 
-## Creating a project
+## Create a project
 
 :::info
-Before you start to create a new project, install [**Angular CLI**](https://v17.angular.io/cli) and [**Node.js**](https://nodejs.org/en/).
+Before creating a new project, install [Angular CLI](https://v17.angular.io/cli) and [Node.js](https://nodejs.org/en/).
 :::
 
 Create a new **my-angular-todo-app** project using Angular CLI. For this purpose, run the following command:
@@ -25,14 +25,14 @@ ng new my-angular-todo-app
 ~~~
 
 :::note
-If you want to follow this guide, disable Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering) when creating new Angular app!
+Disable Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering) when creating the Angular app.
 :::
 
-The command above installs all the necessary tools, so you don't need to run any additional commands.
+The command installs all necessary tools. No additional commands are required.
 
-### Installation of dependencies
+### Install dependencies
 
-Go to the new created app directory:
+Go to the newly created app directory:
 
 ~~~json
 cd my-angular-todo-app
@@ -45,23 +45,23 @@ yarn
 yarn start
 ~~~
 
-The app should run on a localhost (for instance `http://localhost:3000`).
+The app runs on localhost (for example `http://localhost:3000`).
 
-## Creating To Do List
+## Create To Do List
 
-Now you should get the DHTMLX To Do List source code. First of all, stop the app and proceed with installing the To Do List package.
+Stop the app and install the To Do List package before continuing.
 
-### Step 1. Package installation
+### Step 1. Install the package
 
-Download the [**trial To Do List package**](/how_to_start/#installing-to-do-list-via-npm-or-yarn) and follow steps mentioned in the README file. Note that trial To Do List is available 30 days only.
-  
-### Step 2. Component creation
+Download the [trial To Do List package](/how_to_start/#installing-to-do-list-via-npm-or-yarn) and follow the steps in the README file. The trial version is available for 30 days.
 
-Now you need to create an Angular component, to add To Do List with Toolbar into the application. Create the **todo** folder in the **src/app/** directory, add a new file into it and name it **todo.component.ts**.
+### Step 2. Create the component
+
+Create an Angular component to add To Do List with Toolbar to the application. Create the *todo* folder in the *src/app/* directory, add a new file, and name it *todo.component.ts*.
 
 #### Import source files
 
-Open the **todo.component.ts** file and import To Do List source files. Note that:
+Open *todo.component.ts* and import To Do List source files. Note that:
 
 - if you use PRO version and install the To Do List package from a local folder, the imported path looks like this:
 
@@ -75,11 +75,11 @@ import { ToDo, Toolbar } from 'dhx-todolist-package';
 import { ToDo, Toolbar } from '@dhx/trial-todolist';
 ~~~
 
-In this tutorial you can see how to configure the **trial** version of To Do List.
+This tutorial uses the **trial** version of To Do List.
 
-#### Set containers and initialize the To Do List with Toolbar
+#### Set containers and initialize To Do List with Toolbar
 
-To display To Do List with Toolbar on the page, you need to set containers for To Do List and Toolbar, and initialize these components using the corresponding constructors:
+To display To Do List with Toolbar on the page, create containers for both components and initialize them with the corresponding constructors:
 
 ~~~jsx {1,8-11,15-18,24-31} title="todo.component.ts"
 import { ToDo, Toolbar } from '@dhx/trial-todolist'; 
@@ -123,9 +123,9 @@ export class ToDoComponent implements OnInit, OnDestroy {
 }
 ~~~
 
-#### Adding styles
+#### Add styles
 
-To display To Do List correctly, you need to provide the corresponding styles. For this purpose, you can create the **todo.component.css** file in the **src/app/todo/** directory and specify important styles for To Do List and its container:
+Provide the styles for To Do List and its containers. Create *todo.component.css* in the *src/app/todo/* directory and specify the required styles:
 
 ~~~css title="todo.component.css"
 /* import To Do List styles */
@@ -153,9 +153,9 @@ body{
 }
 ~~~
 
-#### Loading data
+#### Load data
 
-To add data into To Do List, you need to provide a data set. You can create the **data.ts** file in the **src/app/todo/** directory and add some data into it:
+Create *data.ts* in the *src/app/todo/* directory and add your data:
 
 ~~~jsx {2,19,28,38} title="data.ts"
 export function getData() {
@@ -199,7 +199,7 @@ export function getData() {
 }
 ~~~
 
-Then open the ***todo.component.ts*** file. Import the file with data and specify the corresponding data properties to the configuration object of To Do List within the `ngOnInit()` method, as shown below:
+Open *todo.component.ts*, import the data file, and pass the data to the To Do List configuration object in `ngOnInit()`:
 
 ~~~jsx {2,23,25-27} title="todo.component.ts"
 import { ToDo, Toolbar } from '@dhx/trial-todolist';
@@ -293,15 +293,15 @@ export class ToDoComponent implements OnInit, OnDestroy {
 }
 ~~~
 
-The `parse(data)` method provides data reloading on each applied change.
+The `parse(data)` method reloads data on each applied change.
 
-Now the To Do List component is ready to use. When the element will be added to the page, it will initialize the To Do List with data. You can provide necessary configuration settings as well. Visit our [To Do List API docs](/api/overview/configs_overview/) to check the full list of available properties.
+The To Do List component is ready to use. When added to the page, the component initializes with data. See the [To Do List API docs](/api/overview/configs_overview/) for the full list of available properties.
 
-#### Handling events
+#### Handle events
 
-When a user makes some action in the To Do List, it invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](/api/overview/events_overview/).
+When a user performs an action in To Do List, the action triggers an event. Use events to detect actions and run custom code. See the [full list of events](/api/overview/events_overview/).
 
-Open the **todo.component.ts** file and complete the `ngOnInit()` method in the following way:
+Open *todo.component.ts* and extend the `ngOnInit()` method:
 
 ~~~jsx {5-7} title="todo.component.ts"
 // ...
@@ -318,9 +318,9 @@ ngOnDestroy(): void {
 }
 ~~~
 
-### Step 3. Adding To Do List into the app
+### Step 3. Add To Do List to the app
 
-To add the ***ToDoComponent*** component into the app, open the ***src/app/app.component.ts*** file and replace the default code with the following one:
+Open *src/app/app.component.ts* and replace the default code:
 
 ~~~jsx {5} title="app.component.ts"
 import { Component } from "@angular/core";
@@ -334,7 +334,7 @@ export class AppComponent {
 }
 ~~~
 
-Then create the ***app.module.ts*** file in the ***src/app/*** directory and specify the *ToDoComponent* as shown below:
+Create *app.module.ts* in the *src/app/* directory and specify `ToDoComponent`:
 
 ~~~jsx {4-5,8} title="app.module.ts"
 import { NgModule } from "@angular/core";
@@ -351,7 +351,7 @@ import { ToDoComponent } from "./todo/todo.component";
 export class AppModule {}
 ~~~
 
-The last step is to open the ***src/main.ts*** file and replace the existing code with the following one:
+Open *src/main.ts* and replace the existing code:
 
 ~~~jsx title="main.ts"
 import { platformBrowserDynamic } from "@angular/platform-browser-dynamic";
@@ -361,8 +361,8 @@ platformBrowserDynamic()
     .catch((err) => console.error(err));
 ~~~
 
-After that, you can start the app to see To Do List loaded with data on a page.
+Start the app to see To Do List loaded with data.
 
 ![To Do List initialization](../assets/trial_todolist.png)
 
-Now you know how to integrate DHTMLX To Do List with Angular. You can customize the code according to your specific requirements. The final example you can find on [**GitHub**](https://github.com/DHTMLX/angular-todolist-demo).
+The integration is complete. Customize the code to match your requirements. Find the final example on [GitHub](https://github.com/DHTMLX/angular-todolist-demo).

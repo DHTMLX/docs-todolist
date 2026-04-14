@@ -8,15 +8,14 @@ description: You can learn how to manage projects in the documentation of the DH
 
 
 :::info
-To configure projects, use the [`projects`](api/configs/projects_config.md) property of To Do List.
+Use the [`projects`](api/configs/projects_config.md) property to configure projects.
 
-To define what project a task will belong to, you need to pass the id of the necessary project to the **project** parameter of the related [`task`](api/configs/tasks_config.md) object
+Pass the project ID to the `project` parameter of the [`task`](api/configs/tasks_config.md) object to assign a task to a project.
 
-To make a certain project active on initialization of To Do List, use the [`activeProject`](api/configs/activeproject_config.md) property.
+Use the [`activeProject`](api/configs/activeproject_config.md) property to set the active project on initialization.
 :::
 
-
-The next guides will teach you how to work with the object of a project and how to implement basic operations with the projects via API.
+The guides below cover the project object structure and basic project operations available through the API.
 
 import DocCardList from '@theme/DocCardList';
 import {useCurrentSidebarCategory} from '@docusaurus/theme-common';

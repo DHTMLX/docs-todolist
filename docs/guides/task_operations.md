@@ -6,9 +6,9 @@ description: You can learn about operations with tasks in the documentation of t
 
 # Operations with tasks
 
-## Adding a new task
+## Add a task
 
-To add a new task to the list, use the [`addTask()`](../../api/methods/addtask_method/) method:
+Use the [`addTask()`](../../api/methods/addtask_method/) method to add a task to the list:
 
 ~~~js
 list.addTask({
@@ -23,30 +23,31 @@ list.addTask({
 });
 ~~~
 
-## Copying/pasting a task
+## Copy and paste a task
 
 ### Copy and paste
 
-The quickest way to copy and paste a task is use the [`copyTask()`](../../api/methods/copytask_method/) method. For that, it is necessary to pass the following parameters to the method: 
-- the ID of the task that you want to copy and paste
-- the ID of the future project (if it exists)
-- the ID of the target task where the copied task should be pasted
+Use the [`copyTask()`](../../api/methods/copytask_method/) method to copy and paste a task. Pass the following parameters:
+
+- the ID of the task to copy and paste
+- the ID of the target project (if applicable)
+- the ID of the target task where the copy is pasted
 - other parameters are optional
 
 ~~~js
 list.copyTask({ 
     id: "1.1", // ID of the task to copy
-    join: false, // resets copies of other tasks and copies only this task
-    project: "p_2", // ID of the future project (if exists)
-    parent: "2.1", // ID of the future parent
+    join: false, // reset other copies and copy only this task
+    project: "p_2", // ID of the target project (if applicable)
+    parent: "2.1", // ID of the target parent
     targetId: "2.1.2", // ID of the target task
-    reverse: true // the task will be pasted before the target one
+    reverse: true // paste the task before the target
 });
 ~~~
 
 ### Copy to the clipboard
 
-To copy a necessary task to the clipboard without its further pasting, pass the ID of the task to the [`copyTask()`](../../api/methods/copytask_method/) method:
+To copy a task to the clipboard without pasting, pass only the task ID to [`copyTask()`](../../api/methods/copytask_method/):
 
 ~~~js
 list.copyTask({ 
@@ -54,15 +55,15 @@ list.copyTask({
 });
 ~~~
 
-### Saving IDs of other copies
+### Save IDs of other copies
 
 :::info
-If you want to copy the task and save other previously copied tasks, you need to pass the **join: true** parameter to the [`copyTask()`](../../api/methods/copytask_method/) method. Otherwise, only the specified task will be copied, all others copies created earlier will be reset.
+To copy a task and preserve previously copied tasks, pass `join: true` to the [`copyTask()`](../../api/methods/copytask_method/) method. If you do not pass this parameter, only the specified task is copied and earlier copies are reset.
 :::
 
 ### Paste from the clipboard
 
-You can paste the copied task from the clipboard to the necessary place via the [`pasteTask()`](../../api/methods/pastetask_method/) method:
+Paste the copied task to the target position with the [`pasteTask()`](../../api/methods/pastetask_method/) method:
 
 ~~~js
 list.pasteTask({ 
@@ -71,9 +72,9 @@ list.pasteTask({
 });
 ~~~
 
-## Updating a task
+## Update a task
 
-To dynamically update parameters of a task, apply the [`updateTask()`](../../api/methods/updatetask_method/) method:
+Use the [`updateTask()`](../../api/methods/updatetask_method/) method to update task parameters:
 
 ~~~js
 list.updateTask({ 
@@ -84,54 +85,53 @@ list.updateTask({
 });
 ~~~
 
-## Moving a task
+## Move a task
 
-To move a task to another position, use the [`moveTask()`](../../api/methods/movetask_method/) method:
+Use the [`moveTask()`](../../api/methods/movetask_method/) method to move a task to another position:
 
 ~~~js
 list.moveTask({ 
     id: "1.1", // ID of the task to move
-    project:"p_2", // ID of the future project (if exists)
-    parent: "2", // ID of the future parent
+    project: "p_2", // ID of the target project (if applicable)
+    parent: "2", // ID of the target parent
     targetId: "2.1", // ID of the target task
-    reverse: true // the task will be placed before the target one
+    reverse: true // place the task before the target
 });
 ~~~
 
 :::note
-If you move a parent task, it will be moved together with its subtasks.
+A parent task moves together with its subtasks.
 :::
 
-## Deleting a task
+## Delete a task
 
-To delete a task, use the [`deleteTask()`](../../api/methods/deletetask_method/) method:
+Use the [`deleteTask()`](../../api/methods/deletetask_method/) method to delete a task:
 
 ~~~js
 list.deleteTask({ id: "1.2" });
 ~~~
 
 :::note
-The method removes the task with all its child tasks
+The method removes the task together with all its child tasks.
 :::
 
-## Expanding/collapsing a task
+## Expand or collapse a task
 
-To collapse a task, use the [`collapseTask()`](../../api/methods/collapsetask_method/) method. The method takes the ID of the task as a parameter:
+Use the [`collapseTask()`](../../api/methods/collapsetask_method/) method to collapse a task:
 
 ~~~js
 list.collapseTask({ id: "1.1" });
-
 ~~~
 
-To expand a collapsed task by its ID, use the [`expandTask()`](../../api/methods/expandtask_method/) method:
+Use the [`expandTask()`](../../api/methods/expandtask_method/) method to expand a collapsed task:
 
 ~~~js
 list.expandTask({ id: "1.1" });
 ~~~
 
-## Marking a task complete/incomplete
+## Mark a task complete or incomplete
 
-You may mark the necessary task as complete/incomplete via the corresponding [`checkTask()`](../../api/methods/checktask_method/) and [`uncheckTask()`](../../api/methods/unchecktask_method/) methods:
+Use the [`checkTask()`](../../api/methods/checktask_method/) and [`uncheckTask()`](../../api/methods/unchecktask_method/) methods to mark a task as complete or incomplete:
 
 ~~~js
 list.checkTask({ 
@@ -145,9 +145,9 @@ list.uncheckTask({
 });
 ~~~
 
-When `manual: false` is set, the result of applying the method depends on the value which is specified for the **behavior** attribute of the **completed** parameter of the [`taskShape`](api/configs/taskshape_config.md) property. 
+With `manual: false`, the result depends on the `behavior` value in the `completed` parameter of [`taskShape`](api/configs/taskshape_config.md).
 
-If the "auto" mode is specified via the **taskShape** property but you need to check/uncheck the task in the "manual" mode, set the **manual** parameter of the [`checkTask()`](../../api/methods/checktask_method/) or [`uncheckTask()`](../../api/methods/unchecktask_method/) method to *true*:
+To check or uncheck a task in `"manual"` mode when `taskShape` uses `"auto"` mode, set the `manual` parameter to `true`:
 
 ~~~js
 list.checkTask({ 
@@ -161,11 +161,11 @@ list.uncheckTask({
 });
 ~~~
 
-## Changing the indent level of a task
+## Change the indent level of a task
 
-To change the nesting level of a task dynamically, use the following two methods:
+Use the following methods to change the nesting level of a task:
 
-- [`indentTask()`](../../api/methods/indenttask_method/) - to demote the nesting level of a task to one lower level
+- [`indentTask()`](../../api/methods/indenttask_method/) — demote the task one nesting level down
 
 ~~~js
 const list = new ToDo("#root", {
@@ -182,7 +182,7 @@ list.indentTask({ id: "1.2" });
 console.log(list.getParentIds({ id: "1.2" })); //  ['1.1', '1']
 ~~~
 
-- [`unindentTask()`](../../api/methods/unindenttask_method/) - to promote the nesting level of the task to one higher level
+- [`unindentTask()`](../../api/methods/unindenttask_method/) — promote the task one nesting level up
 
 ~~~js
 const list = new ToDo("#root", {
@@ -200,12 +200,12 @@ console.log(list.getParentIds({ id: "1.2" })); //  []
 ~~~
 
 :::info
-The result of applying the methods depends on the structure of the list
+Results depend on the list structure.
 :::
 
-## Filtering tasks
+## Filter tasks
 
-You can find the tasks that match the specified criteria with the help of the [`setFilter()`](../../api/methods/setfilter_method/) method. The method supports the *strict* mode of filtering that allows you to filter tasks by the exact match.
+Use the [`setFilter()`](../../api/methods/setfilter_method/) method to find tasks that match specific criteria. The `strict` mode filters tasks by exact match.
 
 ~~~js
 // filter data by the specified rules
