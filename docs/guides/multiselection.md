@@ -176,8 +176,8 @@ To unselect all currently selected tasks, pass **id: null** to the [`unselectTas
 list.unselectTask({ id: null });
 ~~~
 
+## Keyboard shortcuts
 
-
-
-
-
+:::info
+Refer to the [**Keyboard navigation**](guides/keyboard_navigation.md) guide for more information.
+:::
