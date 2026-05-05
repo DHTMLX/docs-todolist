@@ -50,49 +50,50 @@ const toolbar = new Toolbar("#toolbar", {
 list.api.on("keypress-on-todo", ({code, event}) => {
     console.log("The", code, "key is pressed"); 
 });
-~~~ 
+~~~
 
-## Keyboard shortcuts 
+## Keyboard shortcuts
 
-There are two groups of keyboard shortcuts:
+### Default mode
 
-1\. Keyboard shortcuts **in the default mode**, i.e. when the editing mode of a task is not activated
+The following shortcuts work when the inline editor is **closed**.
 
-| Keyboard shortcut   |Key code| Description                                                          |
-| :--------- |--| :------------------------------------------------------------------- |
-| **Escape** |escape| Closes the menu if it is opened for the task when the key is pressed. Pressing again will close the editor, reset filtering, and collapse search results in the Toolbar|
+| Keyboard shortcut | Key code | Description                                                          |
+| :---------------- | -------- | :------------------------------------------------------------------- |
+| <kbd>Escape</kbd> | `escape` | Closes the menu if it is opened for the task when the key is pressed. Pressing again will close the editor, reset filtering, and collapse search results in the Toolbar |
 
 :::tip
-The key codes described below are not available if focus is set on the Search bar of the Toolbar.
+The **key codes** described below are not available if focus is set on the Search bar of the Toolbar.
 :::
 
-| Keyboard shortcut   |Key code| Description                                                          |
-| :--------- |--| :------------------------------------------------------------------- |
-| **Enter** |enter| Creates a new task on the same level as the selected one, moves selection to the created task and opens the editor |
-| **ArrowUp** |arrowup| Moves the selection up to the previous task |
-| **ArrowDown** |arrowdown| Moves the selection down to the next task |
-| **Ctrl(Cmd)+Enter** |ctrl+enter| Opens the editor of the selected task |
-|**Ctrl(Cmd)+Click** /<br>**Ctrl(Cmd)+Shift+Click** <br> added in v1.1|ctrl /<br>ctrl+shift|Selects multiple tasks with all their children.<br> If the task is currently selected - unselects it, moreover:<br> - If the task has parents which are also selected - unselects the task together with its parents.<br> - If the task has children which are also selected - unselects only the task itself.|
-|**Shift+Click** <br> added in v1.1|shift|Selects a range of tasks|
-|**Shift+ArrowUp** <br> added in v1.1|shift+arrowup|Selects a task above the current one.<br> If the task above is currently selected - unselects it|
-|**Shift+ArrowDown** <br> added in v1.1|shift+arrowdown|Selects a task (and all its children) below the current one.<br> If the task below is currently selected - unselects it|
-| **Ctrl+ArrowUp** |ctrl+arrowup| Moves the selected task up within the same level |
-| **Ctrl+ArrowDown** |ctrl+arrowdown| Moves the selected task down within the same level |
-| **Space** |space| Marks a task as complete or incomplete depending on its initial state |
-| **Delete/<br>Backspace** |delete/<br>backspace | Removes the selected task by the following logic:<br> - after removing a child task, moves the selection down/up until it reaches the parent task <br>- after removing a parent task, moves the selection down to the next parent task if it's exist; otherwise, moves the selection up to the previous parent task |
-| **ArrowRight** |arrowright| Expands the collapsed parent task |
-| **ArrowLeft** |arrowleft| Collapses the expanded parent task. If the task is already collapsed or does not have child tasks, moves selection to the parent task |
-| **Tab** |tab| Demotes the nesting level of the task to one lower level |
-| **Shift+Tab** |shift+tab| Promotes the nesting level of the task to one higher level|
-| **Ctrl(Cmd)+D** |ctrl+d| Duplicates the selected task at the same level |
-| **Ctrl(Cmd)+C** |ctrl+c| Copies the selected task into the clipboard, including all child tasks |
-| **Ctrl(Cmd)+V** |ctrl+v| Pastes the copied task to the same level as the currently selected task. It is possible to paste a copied task to any level, the structure of the copied task is saved |
+| Keyboard shortcut | Key code | Description                                                          |
+| :---------------- | -------- | :------------------------------------------------------------------- |
+| <kbd>Enter</kbd> | `enter` | Creates a new task on the same level as the selected one, moves selection to the created task and opens the editor |
+| <kbd>ArrowUp</kbd> | `arrowup` | Moves the selection up to the previous task |
+| <kbd>ArrowDown</kbd> | `arrowdown` | Moves the selection down to the next task |
+| <kbd>Ctrl(Cmd)</kbd>+<kbd>Enter</kbd> | `ctrl+enter` | Opens the editor of the selected task |
+| <kbd>Ctrl(Cmd)</kbd>+<kbd>Click</kbd> /<br> <kbd>Ctrl(Cmd)</kbd>+<kbd>Shift</kbd>+<kbd>Click</kbd> <br> added in v1.1 | `ctrl` /<br> `ctrl+shift` | Selects multiple tasks with all their children.<br> If the task is currently selected - unselects it, moreover:<br> - If the task has parents which are also selected - unselects the task together with its parents.<br> - If the task has children which are also selected - unselects only the task itself.|
+| <kbd>Shift</kbd>+<kbd>Click</kbd> <br> added in v1.1| `shift` |Selects a range of tasks|
+| <kbd>Shift</kbd>+<kbd>ArrowUp</kbd> <br> added in v1.1| `shift+arrowup` |Selects a task above the current one.<br> If the task above is currently selected - unselects it|
+| <kbd>Shift</kbd>+<kbd>ArrowDown</kbd> <br> added in v1.1| `shift+arrowdown` |Selects a task (and all its children) below the current one.<br> If the task below is currently selected - unselects it|
+| <kbd>Ctrl</kbd>+<kbd>ArrowUp</kbd> | `ctrl+arrowup` | Moves the selected task up within the same level |
+| <kbd>Ctrl</kbd>+<kbd>ArrowDown</kbd> | `ctrl+arrowdown` | Moves the selected task down within the same level |
+| <kbd>Space</kbd> | `space` | Marks a task as complete or incomplete depending on its initial state |
+| <kbd>Delete</kbd> /<br><kbd>Backspace</kbd> | `delete` /<br>`backspace` | Removes the selected task by the following logic:<br> - after removing a child task, moves the selection down/up until it reaches the parent task <br>- after removing a parent task, moves the selection down to the next parent task if it's exist; otherwise, moves the selection up to the previous parent task |
+| <kbd>ArrowRight</kbd> | `arrowright` | Expands the collapsed parent task |
+| <kbd>ArrowLeft</kbd> | `arrowleft` | Collapses the expanded parent task. If the task is already collapsed or does not have child tasks, moves selection to the parent task |
+| <kbd>Tab</kbd> | `tab` | Demotes the nesting level of the task to one lower level |
+| <kbd>Shift</kbd>+<kbd>Tab</kbd> | `shift+tab` | Promotes the nesting level of the task to one higher level|
+| <kbd>Ctrl(Cmd)</kbd>+<kbd>D</kbd> | `ctrl+d` | Duplicates the selected task at the same level |
+| <kbd>Ctrl(Cmd)</kbd>+<kbd>C</kbd> | `ctrl+c` | Copies the selected task into the clipboard, including all child tasks |
+| <kbd>Ctrl(Cmd)</kbd>+<kbd>V</kbd> | `ctrl+v` | Pastes the copied task to the same level as the currently selected task. It is possible to paste a copied task to any level, the structure of the copied task is saved |
 
-2\. Keyboard shortcuts **in the editing mode**
+### Editing mode
 
-| Keyboard shortcut |Key code| Description |
-| :---------------- |--| :---------- |
-| **Escape** |escape| Closes the editor without saving any changes you've made |
-| **Enter** |enter| Closes the editor and saves the changes |
-| **Shift+Enter** |shift+enter| Creates a new paragraph |
- 
+The following shortcuts work when the inline editor is **open**.
+
+| Keyboard shortcut | Key code | Description |
+| :---------------- | -------- | :---------- |
+| <kbd>Escape</kbd> | `escape` | Closes the editor without saving any changes you've made |
+| <kbd>Enter</kbd> | `enter` | Closes the editor and saves the changes |
+| <kbd>Shift</kbd>+<kbd>Enter</kbd> | `shift+enter` | Creates a new paragraph |

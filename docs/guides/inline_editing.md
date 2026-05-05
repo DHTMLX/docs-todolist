@@ -70,3 +70,8 @@ list.closeInlineEditor({
 });
 ~~~~
 
+## Keyboard shortcuts
+
+:::info
+Refer to the [**Keyboard navigation**](guides/keyboard_navigation.md) guide for more information.
+:::
