@@ -483,6 +483,7 @@ module.exports = {
                     ]
                 },
                 "guides/inline_editing",
+                "guides/keyboard_navigation",
                 "guides/localization",
                 "guides/customization",
                 "guides/stylization",
