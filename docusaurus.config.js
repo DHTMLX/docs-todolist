@@ -142,6 +142,14 @@ module.exports = {
     projectName: 'docs-todolist',
     trailingSlash: true,
     themeConfig: {
+        image: 'img/og-default-todolist.png',
+        metadata: [
+            { property: 'og:type', content: 'website' },
+            { property: 'og:site_name', content: 'DHTMLX To Do List Docs' },
+            { property: 'og:locale', content: 'en_US' },
+            { name: 'twitter:card', content: 'summary_large_image' },
+            { name: 'twitter:site', content: '@dhtmlx' }
+        ],
         prism: {
             // theme: require('prism-react-renderer/themes/github'),
             // darkTheme: require('prism-react-renderer/themes/dracula'),
