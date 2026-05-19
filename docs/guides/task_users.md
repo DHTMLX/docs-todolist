@@ -6,11 +6,11 @@ description: You can learn about task assignees in the documentation of the DHTM
 
 # Task assignees
 
-You can delegate tasks to one or several people.
+Delegate tasks to one or several people.
 
-## Configuring task assignees
+## Configure task assignees
 
-The list of assignees is specified via the [`users`](../../api/configs/users_config/) configuration property of To Do List.
+Specify the list of assignees through the [`users`](api/configs/users_config.md) configuration property of the To Do List. The example below defines four users:
 
 ~~~js
 const users = [
@@ -23,9 +23,9 @@ const users = [
 const list = new ToDo("#root", { users });
 ~~~
 
-## Setting assignees on initialization stage
+## Set assignees on initialization
 
-To assign people to the necessary task on the initialization stage, pass the id(s) of the assignees to the **assigned** parameter of the related [`task`](../../api/configs/tasks_config/) object:
+To assign people to a task on the initialization stage, pass the ids of the assignees to the `assigned` parameter of the related [`task`](api/configs/tasks_config.md) object. The snippet below assigns four users to a task:
 
 ~~~js {11}
 const users = [
@@ -48,18 +48,20 @@ const list = new ToDo("#root", {
 });
 ~~~
 
-As a result, the assigned people will be displayed to the right of the task.
+The assigned people appear to the right of the task.
 
 ![users](../assets/users.png)
 
 To view the list of people assigned to a task, click on the people avatars. To close the opened list, click outside it.
 
-## Changing task assignees
+## Change task assignees
 
-You can re-assign or remove a task assignee after initialization of To Do List in the following ways:
+Reassign or remove a task assignee after the To Do List initialization in two ways:
 
-- via the **Assign to** option of the task menu
-- via the corresponding [`assignUser()`](../../api/methods/assignuser_method/) and [`unassignUser()`](../../api/methods/unassignuser_method/) methods, for example:
+- through the **Assign to** option of the task menu
+- through the [`assignUser()`](api/methods/assignuser_method.md) and [`unassignUser()`](api/methods/unassignuser_method.md) methods
+
+The example below assigns a user to one task and removes a user from another:
 
 ~~~js
 // assign a person to the task

@@ -6,7 +6,7 @@ description: You can learn about keyboard navigation in the documentation of the
 
 # Keyboard navigation
 
-DHTMLX To Do List supports full keyboard navigation, so you can create, manage, and organize tasks without a mouse.
+DHTMLX To Do List supports full keyboard navigation. Create, manage, and organize tasks without a mouse.
 
 Keyboard shortcuts work only when a task is focused. To focus a task, click on it or use <kbd>ArrowUp</kbd> / <kbd>ArrowDown</kbd> to navigate through the list.
 

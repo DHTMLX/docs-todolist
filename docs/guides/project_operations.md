@@ -6,9 +6,9 @@ description: You can learn about operations with projects in the documentation o
 
 # Operations with projects
 
-## Changing the active project
+## Change the active project {#changing-the-active-project}
 
-It is possible to change the currently active project via the [`setProject()`](../../api/methods/setproject_method/) method. It takes the id of a project as a parameter:
+To change the currently active project, use the [`setProject()`](api/methods/setproject_method.md) method. The method takes the project id as a parameter. The example below switches the active project after initialization:
 
 ~~~js {9,16}
 const projects = [
@@ -29,9 +29,9 @@ const toolbar = new Toolbar("#toolbar", {
 list.setProject({ id: "first" });
 ~~~
 
-## Adding a new project
+## Add a new project {#adding-a-new-project}
 
-You may create a new project via the [`addProject()`](../../api/methods/addproject_method/) method:
+To create a new project, use the [`addProject()`](api/methods/addproject_method.md) method. The snippet below adds a fourth project:
 
 ~~~js {13-18}
 const projects = [
@@ -54,9 +54,9 @@ list.addProject({
 });
 ~~~
 
-## Updating a project
+## Update a project {#updating-a-project}
 
-To dynamically update parameters of a project, apply the [`updateProject()`](../../api/methods/updateproject_method/) method. For instance, you can update the label of the project:
+To update parameters of a project dynamically, apply the [`updateProject()`](api/methods/updateproject_method.md) method. The example below renames a project label:
 
 ~~~js {13-18}
 const projects = [
@@ -79,9 +79,9 @@ list.updateProject({
 });
 ~~~
 
-## Deleting a project
+## Delete a project {#deleting-a-project}
 
-To remove an unnecessary project, apply the [`deleteProject()`](../../api/methods/deleteproject_method/) method:
+To remove a project, apply the [`deleteProject()`](api/methods/deleteproject_method.md) method. The snippet below deletes a project:
 
 ~~~js {17}
 const projects = [
@@ -104,7 +104,7 @@ list.deleteProject({ id: "first" });
 ~~~
 
 :::note
-The tasks linked to the project won't be removed. They will be moved to the *"No project"* section
+Tasks linked to the project are not removed. The tasks move to the *"No project"* section.
 
 ~~~js
 console.log(list.getTask({id: "1"})); // -> {id: '1', text: 'Task 1', project: null}

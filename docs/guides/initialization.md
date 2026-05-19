@@ -6,25 +6,24 @@ description: You can learn about initialization of the DHTMLX JavaScript To Do L
 
 # Initialization
 
-
-To create or, in other words, to display To Do List on the page, you need to take the following steps:
+To display the To Do List on the page, follow these steps:
 
 1\. [Include the To Do List source files on a page](#include-source-files)
 
-2\. [Create two containers](#create-containers): one for List and another one for Toolbar
+2\. [Create two containers](#create-containers): one for List and another for Toolbar
 
 3\. [Initialize List and Toolbar](#initialize-to-do-list)
 
 ## Include source files
 
-[Download the To Do List package](https://dhtmlx.com/docs/products/dhtmlxTodo/download.shtml) and unpack it into a folder of your project.
+Download the To Do List package and unpack it into a folder of your project. The download page is available [here](https://dhtmlx.com/docs/products/dhtmlxTodo/download.shtml).
 
-To create To Do List, you need to include 2 source files on your page:
+Include the following source files on your page:
 
 - *todo.js*
 - *todo.css*
 
-Make sure that you set correct relative paths to the source files:
+Set correct relative paths to the source files. The example below adds both files from the *dist* folder:
 
 ~~~html title="index.html"
 <script type="text/javascript" src="./dist/todo.js"></script>  
@@ -33,24 +32,25 @@ Make sure that you set correct relative paths to the source files:
 
 ## Create containers
 
-The To Do List widget consists of two separate components: a List and a Toolbar. 
+The To Do List widget consists of two separate components: a List and a Toolbar.
 
-Thus, create **two containers** to place a List and Toolbar into and give them IDs, for instance, **"root"** and **"toolbar"**:
-
+Create **two containers** for the List and the Toolbar, and assign them IDs (for example, **"root"** and **"toolbar"**). The following snippet declares both containers:
 
 ~~~html title="index.html"
-<div id="toolbar"></div> // the container for Toolbar (if you need to create To Do List with its Toolbar)
-<div id="root"></div> // the container for List
+<div id="toolbar"></div> <!-- container for Toolbar (optional) -->
+<div id="root"></div> <!-- container for List -->
 ~~~
 
 ## Initialize To Do List
 
 ### Initialize List
 
-After that, initialize List with the **new ToDo()** constructor. It takes two parameters:
+Initialize the List with the `new ToDo()` constructor. The constructor takes two parameters:
 
-- a container to place a List into. The one we have created at the previous step
-- an object with configuration properties. [See the full list here](api/overview/configs_overview.md)
+- a container to place the List into (the container created at the previous step)
+- an object with configuration properties (see the full list in the [configs overview](api/overview/configs_overview.md))
+
+The following code snippet creates a List inside the `#root` container:
 
 ~~~js title="index.js"
 const { ToDo, Toolbar } = todo; // apply the object destructuring
@@ -63,14 +63,16 @@ const list = new ToDo("#root", {
 
 ### Initialize Toolbar
 
-Next, initialize Toolbar with the **new Toolbar()** constructor. The constructor also takes two parameters:
+Initialize the Toolbar with the `new Toolbar()` constructor. The constructor takes two parameters:
 
-- a container to place a Toolbar into. The one we have created at the previous step
-- an object with configuration properties. [See the full list here](category/toolbar-properties.md)
+- a container to place the Toolbar into (the container created at the previous step)
+- an object with configuration properties (see the full list in the [toolbar properties](category/toolbar-properties.md))
 
 :::info
-Initialization of the Toolbar is optional. You can skip this step if you don't need the Toolbar in your application
+Toolbar initialization is optional. Skip this step if you do not need the Toolbar in your application.
 :::
+
+The code snippet below creates the Toolbar and links it to the List through the `api` property:
 
 ~~~js {9-11} title="index.js"
 const { ToDo, Toolbar } = todo; // apply the object destructuring
@@ -87,16 +89,15 @@ const toolbar = new Toolbar("#toolbar", {
 ~~~
 
 :::note
-You should apply the object destructuring to "unpack" the **todo** global object into two variables: ToDo and Toolbar. 
+Apply the object destructuring to unpack the `todo` global object into two variables: `ToDo` and `Toolbar`.
 
-You don't need this step if you will use the **new todo.ToDo()** and **new todo.Toolbar()** constructors.
+Skip this step if you use the `new todo.ToDo()` and `new todo.Toolbar()` constructors directly.
 :::
 
-## Loading data into To Do List
+## Load data into To Do List
 
-Detailed information on loading data into DHTMLX To Do is given in the [Data loading](guides/loading_data.md) article.
+The [Data loading](guides/loading_data.md) article describes how to load data into the DHTMLX To Do List.
 
 ## Example
 
 <iframe src="https://snippet.dhtmlx.com/3vwlbwee?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="450"></iframe>
-

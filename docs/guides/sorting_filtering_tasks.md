@@ -6,13 +6,14 @@ description: You can learn about sorting and filtering of tasks in the documenta
 
 # Sorting and filtering tasks
 
-## Sorting tasks
+## Sort tasks {#sorting-tasks}
 
-The library allows you to sort tasks in the list after initialization of To Do List. There are two ways to view the tasks in the sorted order:
+Sort tasks in the list after the To Do List initialization in two ways:
 
-- via the **Sort by** option of the [Toolbar menu](../../#toolbar). You may sort tasks by *text*, *due date*, *completion date*, *creation date*, or *editing date*
+- through the **Sort by** option of the [Toolbar menu](../../#toolbar) — sort tasks by *text*, *due date*, *completion date*, *creation date*, or *editing date*
+- through the [`setSort()`](api/methods/setsort_method.md) method — specify a custom sort function or sort by a [task attribute](api/configs/tasks_config.md#parameters)
 
-- via the [`setSort()`](api/methods/setsort_method.md) method. You may specify your own search function  or implement sorting by a [task attribute](api/configs/tasks_config.md#parameters). For instance:
+The example below sorts tasks by id in ascending order:
 
 ~~~js
 list.setSort({
@@ -22,13 +23,14 @@ list.setSort({
 });
 ~~~
 
-## Filtering tasks
+## Filter tasks
 
-You can find the tasks that match the specified criteria in 2 ways:
+Find tasks that match the specified criteria in two ways:
 
-- via the [search bar](../../#toolbar) of Toolbar
+- through the [search bar](../../#toolbar) of the Toolbar
+- through the [`setFilter()`](api/methods/setfilter_method.md) method — supports the *strict* mode for exact-match filtering
 
-- through the [`setFilter()`](api/methods/setfilter_method.md) method. The method supports the *strict* mode of filtering that allows you to filter tasks by the exact match.
+The snippet below filters tasks by a specific hashtag in strict mode:
 
 ~~~js
 // filter data by the specified rules
@@ -39,9 +41,9 @@ list.setFilter({
 });
 ~~~
 
-To reset filtering, call the method without parameters:
+To reset filtering, pass `match: null`:
 
 ~~~js
 // reset filtering
-list.setFilter({});
+list.setFilter({ match: null });
 ~~~
