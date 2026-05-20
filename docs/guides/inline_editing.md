@@ -6,7 +6,7 @@ description: You can learn about inline editing in the documentation of the DHTM
 
 # Inline editing
 
-Inline editing lets you edit the content of a task or project directly by double-clicking on it. This functionality is enabled by default.
+Double-click a task or project to edit it inline. Inline editing is on by default.
 
 :::tip
 When you enable the [`readonly`](api/configs/readonly_config.md) mode of the To Do List, inline editing becomes unavailable.
@@ -27,8 +27,9 @@ Use hashtags to categorize tasks and make them more searchable. Follow these rul
 - a hashtag combines the `#` symbol with letters and numbers (for example, `#sport`)
 - to create a hashtag, enter `#` followed by at least one symbol (for example, `#t`) and press Enter
 - the To Do List supports an unlimited number of hashtags — separate them by spaces (for example, `#tag #tag1`)
-- all created hashtags are accessible in all projects
-- to view the list of created hashtags, enter the `#` symbol — click a hashtag to add it to the task
+- all hashtags are accessible in all projects
+- to view the list of hashtags, enter the `#` symbol
+- to add a hashtag to a task, click it in the list
 - to activate strict filtering, click a hashtag or enter it in the search bar in the toolbar
 
 :::info
@@ -39,15 +40,13 @@ Create a default list of tags through the [`tags`](api/configs/tags_config.md) p
 
 To enter a date through the inline editor, type the `!` symbol — the built-in date picker appears on the page.
 
-You can also wrap text in the special symbols `!()`. For example, type `!(Enter Booking date)` and press Enter to close the editor. Clicking this text later reopens the date picker.
+You can also wrap text in the special symbols `!()`. For example, type `!(Enter Booking date)` and press Enter to close the editor. Click this text later to reopen the date picker.
 
 :::info
-The appearance of the added dates depends on the specified [`locale`](api/configs/locale_config.md) and [date format](api/configs/taskshape_config.md).
+Date appearance depends on the [`locale`](api/configs/locale_config.md) and [date format](api/configs/taskshape_config.md).
 :::
 
 ## Work with the editor {#working-with-editor}
-
-Manage the editor through API methods.
 
 To open the editor for a particular task or project, use the [`openInlineEditor()`](api/methods/openinlineeditor_method.md) method. The snippet below opens the editor for a specific task:
 
@@ -58,7 +57,7 @@ list.openInlineEditor({ id: "1.1.1" });
 To close the editor and save the changes, pass the item id to the [`closeInlineEditor()`](api/methods/closeinlineeditor_method.md) method:
 
 ~~~js
-list.closeInlineEditor({ 
+list.closeInlineEditor({
     id: "1.1.1"
 });
 ~~~
@@ -66,7 +65,7 @@ list.closeInlineEditor({
 To close the editor without saving the changes, set the `save` parameter to `false`. The example below discards the changes on close:
 
 ~~~js
-list.closeInlineEditor({ 
+list.closeInlineEditor({
     id: "1.1.1",
     save: false
 });
@@ -74,7 +73,7 @@ list.closeInlineEditor({
 
 ## Track editor changes
 
-Subscribe to the [`edit-item`](api/events/edititem_event.md) event to track the value typed into the inline editor before it is saved. The event fires on every change of the current (unsaved) value.
+Subscribe to the [`edit-item`](api/events/edititem_event.md) event to track the value typed into the inline editor. The event fires as the user types, before the value is saved.
 
 The snippet below logs the current editor value for a task or project:
 

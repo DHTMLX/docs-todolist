@@ -56,7 +56,7 @@ list.addProject({
 
 ## Update a project {#updating-a-project}
 
-To update parameters of a project dynamically, apply the [`updateProject()`](api/methods/updateproject_method.md) method. The example below renames a project label:
+To update parameters of a project dynamically, use the [`updateProject()`](api/methods/updateproject_method.md) method. The example below renames a project label:
 
 ~~~js {13-18}
 const projects = [
@@ -81,7 +81,7 @@ list.updateProject({
 
 ## Delete a project {#deleting-a-project}
 
-To remove a project, apply the [`deleteProject()`](api/methods/deleteproject_method.md) method. The snippet below deletes a project:
+To remove a project, use the [`deleteProject()`](api/methods/deleteproject_method.md) method. The snippet below deletes a project:
 
 ~~~js {17}
 const projects = [

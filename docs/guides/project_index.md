@@ -11,10 +11,10 @@ To configure projects, use the [`projects`](api/configs/projects_config.md) prop
 
 To assign a task to a project, pass the project id to the `project` parameter of the related [`task`](api/configs/tasks_config.md) object.
 
-To set a project as active on the To Do List initialization, use the [`activeProject`](api/configs/activeproject_config.md) property.
+To set a project as active at initialization, use the [`activeProject`](api/configs/activeproject_config.md) property.
 :::
 
-The guides in this section cover the project object and basic project operations through the API.
+These guides cover the project object and basic project operations via the API.
 
 import DocCardList from '@theme/DocCardList';
 import {useCurrentSidebarCategory} from '@docusaurus/theme-common';

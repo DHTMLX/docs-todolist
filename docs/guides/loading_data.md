@@ -168,7 +168,7 @@ Include the file on the page so the project can use the data:
 <script src="../data.js"></script>
 ~~~
 
-Apply the object destructuring to access the data sets:
+Destructure the returned object to access individual data sets:
 
 ~~~js title="index.js"
 const { tasks, users, projects, priorities } = getData();
@@ -178,7 +178,7 @@ const { tasks, users, projects, priorities } = getData();
 
 ### Load data on initialization
 
-Load [predefined data](guides/loading_data.md#prepare-data-to-load) into the To Do List on the initialization stage. The example below passes data through configuration properties:
+Load [predefined data](guides/loading_data.md#prepare-data-to-load) into the To Do List at initialization. The example below passes data through configuration properties:
 
 ~~~js {2,5-8} title="index.js"
 const { ToDo } = todo;
@@ -194,7 +194,7 @@ const list = new ToDo("#root", {
 
 ### Load data after initialization
 
-To load data from a local source after initialization of the To Do List, use the [`parse()`](api/methods/parse_method.md) method. The following code snippet parses data into an already initialized List:
+To load data into an initialized To Do List, use the [`parse()`](api/methods/parse_method.md) method. The following code snippet parses data into an already initialized List:
 
 ~~~js {3,5,12-17} title="index.js"
 const { ToDo, Toolbar } = todo;
@@ -218,7 +218,7 @@ list.parse({
 
 ## Save and restore state
 
-To save the current state of a To Do List, use the [`serialize()`](api/methods/serialize_method.md) method. The method converts the data of the To Do List into a JSON object. The snippet below stores the serialized state:
+To save the current state, use the [`serialize()`](api/methods/serialize_method.md) method. It converts the current data into a JSON object. The snippet below stores the serialized state:
 
 ~~~js
 const state = list.serialize();

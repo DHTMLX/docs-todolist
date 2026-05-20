@@ -6,7 +6,7 @@ description: You can learn about the To Do List localization in the documentatio
 
 # Localization
 
-Present the interface of DHTMLX To Do List in any language. The library provides a number of predefined locales and lets you create custom ones. By default, DHTMLX To Do List uses the [English locale](#default-locale).
+Display the DHTMLX To Do List interface in any language. The library provides a number of predefined locales and lets you create custom ones. By default, DHTMLX To Do List uses the [English locale](#default-locale).
 
 ## Default locale
 
@@ -129,11 +129,11 @@ const de = {
 ~~~
 
 :::tip
-To create a custom locale, copy the default ([English](#default-locale)) locale and translate its text labels into the required language.
+To create a custom locale, copy the [default English locale](#default-locale) and translate its text labels.
 :::
 
 :::info
-Download [**a repository from GitHub**](https://github.com/web-widgets/wx-todo-locales/tree/master/locales) that includes To Do List locales for the following languages:
+[**This GitHub repository**](https://github.com/web-widgets/wx-todo-locales/tree/master/locales) provides To Do List locales for the following languages:
 
 - Chinese (**cn**)
 - French (**fr**)
@@ -168,7 +168,7 @@ const toolbar = new Toolbar("#toolbar", {
 ~~~
 
 :::tip
-To change the locale dynamically, use the [`setLocale()`](api/methods/setlocale_method.md) method of the To Do List and the [`setLocale()`](api/toolbar_api/methods/setlocale_method.md) method of the Toolbar.
+To change the locale dynamically, call [`setLocale()`](api/methods/setlocale_method.md) on the To Do List and [the matching `setLocale()`](api/toolbar_api/methods/setlocale_method.md) on the Toolbar.
 :::
 
 ## Example

@@ -80,7 +80,7 @@ The [`clone-task`](api/events/clonetask_event.md) event fires after [`paste-task
 
 ## Update a task {#updating-a-task}
 
-To update parameters of a task dynamically, apply the [`updateTask()`](api/methods/updatetask_method.md) method. The example below changes the text of a task:
+To update parameters of a task dynamically, use the [`updateTask()`](api/methods/updatetask_method.md) method. The example below changes the text of a task:
 
 ~~~js
 list.updateTask({ 
@@ -184,7 +184,7 @@ list.api.on("close-menu", ({ id, type }) => {
 
 ## Mark a task complete or incomplete {#marking-a-task-completeincomplete}
 
-Mark a task as complete or incomplete through the [`checkTask()`](api/methods/checktask_method.md) and [`uncheckTask()`](api/methods/unchecktask_method.md) methods. The example below toggles a task between the two states:
+Mark a task as complete or incomplete through the [`checkTask()`](api/methods/checktask_method.md) and [`uncheckTask()`](api/methods/unchecktask_method.md) methods. The example below shows both calls:
 
 ~~~js
 list.checkTask({ 
@@ -198,9 +198,9 @@ list.uncheckTask({
 });
 ~~~
 
-When `manual: false`, the result depends on the value specified for the `behavior` attribute of the `completed` parameter of the [`taskShape`](api/configs/taskshape_config.md) property.
+When `manual: false`, the result depends on `taskShape.completed.behavior` (see the [`taskShape`](api/configs/taskshape_config.md) reference for details).
 
-If the `taskShape` property sets the `"auto"` mode but you need to check or uncheck the task in the `"manual"` mode, set the `manual` parameter of the [`checkTask()`](api/methods/checktask_method.md) or [`uncheckTask()`](api/methods/unchecktask_method.md) method to `true`:
+If `taskShape.completed.behavior` is `"auto"` but you need a one-off manual check, set `manual: true`:
 
 ~~~js
 list.checkTask({ 
@@ -256,7 +256,7 @@ console.log(list.getParentIds({ id: "1.2" })); //  []
 ~~~
 
 :::info
-The result depends on the structure of the list.
+If the task is already at the top level, `unindentTask()` does nothing.
 :::
 
 ## Filter tasks

@@ -15,24 +15,24 @@ Adjust the settings of DHTMLX To Do List to fit your needs. The available config
 - [change the mode used for marking tasks done](#mode-of-marking-tasks-complete)
 - [configure the appearance of the toolbar](#toolbar)
 - [manage the history of changes](#history-of-changes)
-
-You can also configure the mode of [hiding completed tasks](#mode-of-hiding-completed-tasks) and initialize the To Do List in the [readonly](#read-only-mode) mode.
+- [configure how completed tasks are hidden](#hiding-mode-for-completed-tasks)
+- [initialize the To Do List in read-only mode](#read-only-mode)
 
 :::tip
-To change configuration parameters dynamically after initialization, use the [`setConfig()`](api/methods/setconfig_method.md) method. The method destroys the current component and creates a new one with the merged settings, so call the matching [Toolbar `setConfig()`](api/toolbar_api/methods/setconfig_method.md) afterward to rebind the Toolbar to the new API.
+To change configuration parameters dynamically after initialization, use the [`setConfig()`](api/methods/setconfig_method.md) method. The method destroys the current component and recreates it with the merged settings. Call the matching [Toolbar `setConfig()`](api/toolbar_api/methods/setconfig_method.md) afterward to rebind the toolbar to the new API.
 :::
 
 ## Tasks
 
 ### Counter of completed subtasks
 
-Change the type of the counter that renders the progress of child task completion.
+Change the counter type that shows how many child tasks are complete.
 
 ![counter](../assets/counter.png)
 
 By default, each parent task shows a counter as a ratio of completed child tasks to the total number of child tasks.
 
-To display the counter value as a percentage, set the `type: "percentage"` attribute inside the `counter` parameter of the [`taskShape`](api/configs/taskshape_config.md) property. The example below switches the counter to percentage mode:
+To display the counter value as a percentage, set `taskShape.counter.type` to `"percentage"`. See the [`taskShape`](api/configs/taskshape_config.md) reference for details. The example below switches the counter to percentage mode:
 
 ~~~js {5-9}
 const list = new ToDo("#root", {
@@ -73,7 +73,7 @@ Check [the list of available characters](api/configs/taskshape_config.md#list-of
 
 ### Drag-n-drop
 
-The default configuration of the To Do List includes drag-n-drop. [Select one or several tasks](../../#selecting-tasks) and drag them vertically at once. To create a copy of the selected tasks, hold the *Alt* key during drag-n-drop.
+Drag-n-drop is enabled by default. [Select one or several tasks](../../#selecting-tasks) and drag the whole selection at once. To create a copy of the selected tasks, hold the *Alt* key during drag-n-drop.
 
 Use the [`drag`](api/configs/drag_config.md) property to:
 
@@ -132,13 +132,11 @@ If you specify a [due date](api/configs/tasks_config.md) for a task, due date va
 
 ![due_date](../assets/due_date.png)
 
-Dates of tasks that have not been completed by the due date appear in red.
+Dates of overdue tasks appear in red.
 
 ![due_date](../assets/overdue_task.png)
 
-This validation works by default.
-
-To disable this functionality, set the `validate` setting inside the `date` parameter of the [`taskShape`](api/configs/taskshape_config.md) property to `false`. The code snippet below turns off due date validation:
+Validation is enabled by default. To disable it, set `taskShape.date.validate` to `false`. See the [`taskShape`](api/configs/taskshape_config.md) reference for details. The code snippet below turns off due date validation:
 
 ~~~js {5-10}
 const list = new ToDo("#root", {
@@ -154,18 +152,18 @@ const list = new ToDo("#root", {
 });
 ~~~
 
-In this configuration, the due dates appear grey.
+In this configuration, the due dates appear gray.
 
 ### Mode of marking tasks complete
 
-By default, the To Do List checks and unchecks tasks in the `"auto"` mode:
+By default, the To Do List checks and unchecks tasks in `"auto"` mode:
 
 - mark all children of a task as completed → the parent task becomes completed automatically
 - mark the parent task as completed → all child tasks become completed automatically
 - mark at least one child of a completed task as uncompleted → the parent task becomes uncompleted automatically
 - mark the parent task as uncompleted → all child tasks become uncompleted automatically
 
-To disable this behavior and activate the `"manual"` mode, apply the `behavior: "manual"` setting of the `completed` parameter of the [`taskShape`](api/configs/taskshape_config.md) property. The example below activates manual mode:
+To disable this behavior and activate `"manual"` mode, set `taskShape.completed.behavior` to `"manual"`. See the [`taskShape`](api/configs/taskshape_config.md) reference for details. The example below activates manual mode:
 
 ~~~js {5-9}
 const list = new ToDo("#root", {
@@ -206,13 +204,13 @@ list.undo(); // revert the last action
 list.redo(); // restore it
 ~~~
 
-To disable history management entirely, set the property to `false`. The `undo()` and `redo()` methods become unavailable, and the corresponding Toolbar controls hide.
+To disable history management entirely, set the property to `false`. The `undo()` and `redo()` methods become unavailable, and the corresponding Toolbar controls disappear.
 
 *Change log:* The `history` config, `undo()`, and `redo()` methods were added in v1.3.
 
 ## Toolbar
 
-The toolbar is the top part of the To Do List, [initialized](guides/initialization.md#initialize-toolbar) and [configured](category/toolbar-properties.md) separately from the To Do List.
+The toolbar appears at the top of the component and is [initialized](guides/initialization.md#initialize-toolbar) and [configured](category/toolbar-properties.md) separately.
 
 To change the default structure of the toolbar, use the [`items`](api/toolbar_api/configs/items_config.md) configuration property of the Toolbar component. The snippet below keeps only the search and combo controls:
 
@@ -223,11 +221,11 @@ const toolbar = new Toolbar("#toolbar", {
 });
 ~~~
 
-The `items` property defines which controls appear in the toolbar. List the controls in the `items` array in the order you want them to appear.
+The `items` property defines which controls the toolbar renders. List them in the order you want.
 
-## Mode of hiding completed tasks
+## Hiding mode for completed tasks
 
-The [Hide completed tasks](guides/hide_completed_tasks.md) section explains how to hide completed tasks from the To Do List.
+See [Hide completed tasks](guides/hide_completed_tasks.md) for details.
 
 ## Read-only mode
 

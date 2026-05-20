@@ -10,10 +10,10 @@ description: You can learn about how to hide or show completed tasks in the docu
 
 The To Do List has two display modes for tasks:
 
-- show all tasks on the page (*default*)
-- hide completed tasks from the page
+- show all tasks (*default*)
+- hide completed tasks
 
-Initialize the To Do List with completed tasks hidden to focus only on outstanding tasks. Enable the `taskHide` setting of the `completed` parameter of the [`taskShape`](api/configs/taskshape_config.md) property. The example below hides completed tasks on initialization:
+Hide completed tasks on startup so users focus on outstanding ones. Set `taskShape.completed.taskHide` to `true`. See the [`taskShape`](api/configs/taskshape_config.md) reference for details. The example below hides completed tasks on initialization:
 
 ~~~js {6}
 const list = new ToDo("#root", {
@@ -29,15 +29,15 @@ const list = new ToDo("#root", {
 
 ## Switch between modes {#switching-between-modes}
 
-Switch between the two modes after initialization in two ways:
+After initialization, switch between modes in one of two ways:
 
 - through the **Completed tasks → Show/Hide** option of the [Toolbar menu](../../#toolbar)
 - through the [`hideCompletedTasks()`](api/methods/hidecompletedtasks_method.md) and [`showCompletedTasks()`](api/methods/showcompletedtasks_method.md) methods
 
-The snippet below toggles the visibility of completed tasks:
+The snippet below shows how to hide or show completed tasks at runtime:
 
 ~~~js
-list.hideCompletedTasks(); 
+list.hideCompletedTasks();
 // or
-list.showCompletedTasks(); 
+list.showCompletedTasks();
 ~~~

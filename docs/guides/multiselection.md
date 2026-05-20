@@ -8,8 +8,6 @@ description: You can learn about selection of multiple tasks in the documentatio
 
 The To Do List library lets you select multiple tasks and manage them at once.
 
-This article covers how to initialize the To Do List with selected tasks, select tasks after initialization, retrieve IDs of the selected tasks, perform bulk operations, and reset the selection.
-
 ![Multiselection](../assets/multiselection.png)
 
 :::info
@@ -18,7 +16,7 @@ Learn how to [select](../../#selecting-tasks) and [manage multiple tasks](../../
 
 ## Initially selected tasks
 
-To create a To Do List with initially selected tasks, use the [`selected`](api/configs/selected_config.md) configuration property of the To Do List. The example below preselects three tasks on initialization:
+To create a To Do List with initially selected tasks, use the [`selected`](api/configs/selected_config.md) configuration property. The example below preselects three tasks on initialization:
 
 ~~~js {12}
 const list = new ToDo("#root", {
@@ -40,10 +38,10 @@ console.log(list.getSelection()); // ["1.1", "1.2", "2.2"]
 
 ## Select tasks
 
-Use the [`selectTask()`](api/methods/selecttask_method.md) method to select tasks after the To Do List initialization. The method takes two parameters:
+Use the [`selectTask()`](api/methods/selecttask_method.md) method to select tasks after initialization. The method takes two parameters:
 
 - `id` — id of the task to select
-- `join` — defines whether the To Do List adds the specified task to the previously selected tasks
+- `join` — whether to add the task to the existing selection
 
 ### Select one task
 
@@ -127,7 +125,7 @@ list.getSelection({ sorted: false }); // ["1.2", "1.1", "2.2", "2.1"]
 list.getSelection({ sorted: true }); // ["1.1", "1.2", "2.1", "2.2"]
 ~~~
 
-Enable the `sorted` parameter to get IDs of the selected tasks in the order they appear in the List.
+Enable the `sorted` parameter to get IDs of the selected tasks in the order they appear on screen.
 
 ## Manage selected tasks
 
@@ -142,8 +140,6 @@ list.eachSelected(id => {
     list.deleteTask({ id });
 }, true);
 ~~~
-
-Check the full list of available operations [below](#list-of-available-operations).
 
 ### List of available operations
 

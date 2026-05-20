@@ -10,7 +10,7 @@ Delegate tasks to one or several people.
 
 ## Configure task assignees
 
-Specify the list of assignees through the [`users`](api/configs/users_config.md) configuration property of the To Do List. The example below defines four users:
+Specify the list of assignees through the [`users`](api/configs/users_config.md) configuration property. The example below defines four users:
 
 ~~~js
 const users = [
@@ -25,7 +25,7 @@ const list = new ToDo("#root", { users });
 
 ## Set assignees on initialization
 
-To assign people to a task on the initialization stage, pass the ids of the assignees to the `assigned` parameter of the related [`task`](api/configs/tasks_config.md) object. The snippet below assigns four users to a task:
+To assign people to a task at initialization, pass the ids of the assignees to the `assigned` parameter of the related [`task`](api/configs/tasks_config.md) object. The snippet below assigns four users to a task:
 
 ~~~js {11}
 const users = [
@@ -52,11 +52,11 @@ The assigned people appear to the right of the task.
 
 ![users](../assets/users.png)
 
-To view the list of people assigned to a task, click on the people avatars. To close the opened list, click outside it.
+To view the list of people assigned to a task, click the avatars. To close it, click outside the list.
 
 ## Change task assignees
 
-Reassign or remove a task assignee after the To Do List initialization in two ways:
+After initialization, reassign or remove a task assignee in one of two ways:
 
 - through the **Assign to** option of the task menu
 - through the [`assignUser()`](api/methods/assignuser_method.md) and [`unassignUser()`](api/methods/unassignuser_method.md) methods

@@ -5,7 +5,7 @@ description: You can learn about working with server in the documentation of the
 ---
 # Working with server
 
-DHTMLX To Do List works both with client and server data. The widget has no special requirements for the backend and connects to any backend platform that supports the REST API (RESTful API).
+DHTMLX To Do List works with both client and server data. The widget has no special backend requirements and connects to any platform that supports a REST API.
 
 :::info
 The widget ships with the built-in [**Go**](https://github.com/web-widgets/todo-go) and [**Node**](https://github.com/web-widgets/todo-node) backend. You can also use custom server scripts.
@@ -13,7 +13,7 @@ The widget ships with the built-in [**Go**](https://github.com/web-widgets/todo-
 
 ## RestDataProvider
 
-The To Do List provides the **RestDataProvider** service that fully supports the REST API for working with the backend. The service interacts with the server and performs the following data operations:
+The To Do List provides the **RestDataProvider** service that talks to a REST backend and handles the following data operations:
 
 - `"add-task"` — add a task
 - `"update-task"` — update a task
@@ -92,11 +92,11 @@ The snippet below connects **RestDataProvider** to the backend and loads server 
 
 ## Multiuser backend
 
-Task management tools, such as the To Do List, support concurrent collaboration. The multiuser feature lets multiple users manage the same tasks in real time without page reloads. Users see each other's changes immediately, which improves productivity and user satisfaction.
+The multiuser feature lets multiple users manage the same tasks in real time without page reloads. Users see each other's changes immediately.
 
-To implement a multiuser backend, get authorization on the server before the To Do List initialization. The example below defines a `login()` function:
+Before initializing the To Do List, authorize on the server. The example below defines a `login()` function:
 
-~~~js {}
+~~~js
 const login = (url) => {
     const token = sessionStorage.getItem("login-token");
     if (token) {
@@ -113,7 +113,7 @@ const login = (url) => {
 
 The `login()` function returns the server token required for all subsequent interactions with the server. Include the token in each request as the value of the `Remote-Token` header. The snippet below sets the token header:
 
-~~~js {}
+~~~js
 login(url).then(token => {
     const restProvider = new todo.RestDataProvider(url);
     restProvider.setHeaders({
@@ -151,8 +151,6 @@ Promise.all([
 });
 ~~~
 
-The multiuser backend lets users collaborate and track changes from other users through the UI in real time.
-
 ### Example
 
 The snippet below configures the multiuser backend to track changes from other users in real time:
@@ -163,7 +161,7 @@ The snippet below configures the multiuser backend to track changes from other u
 
 Define your own logic for handling server events. Pass the `handlers` object to the `RemoteEvents.on(handlers)` method. The `handlers` object has the following structure:
 
-~~~js {}
+~~~js
 {
     "tasks": tasksHandler: function(obj: any),
     "projects": projectsHandler: function(obj: any)
@@ -172,14 +170,14 @@ Define your own logic for handling server events. Pass the `handlers` object to 
 
 When a change occurs on the server, the server returns the name of the modified element. The names can vary depending on the server logic.
 
-The data updated on the client side appears in the `obj` argument of the `function(obj: any)` function. The `type: string` field specifies the operation. The field accepts the following values:
+The updated data arrives in the handler's `obj` argument. Its `type` field specifies the operation:
 
 - for **tasks**: `"add-task"`, `"update-task"`, `"delete-task"`, `"move-task"`, `"clone-task"`
 - for **projects**: `"add-project"`, `"update-project"`, `"delete-project"`, `"move-project"`, `"clone-project"`
 
 The following code snippet shows the implementation details:
 
-~~~js {}
+~~~js
 const todoInstance = new todo.ToDo("#root", config);
 const restProvider = new todo.RestDataProvider(url);
 const idResolver = restProvider.getIDResolver();

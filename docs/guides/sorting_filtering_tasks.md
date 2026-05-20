@@ -8,7 +8,7 @@ description: You can learn about sorting and filtering of tasks in the documenta
 
 ## Sort tasks {#sorting-tasks}
 
-Sort tasks in the list after the To Do List initialization in two ways:
+After initialization, sort tasks in one of two ways:
 
 - through the **Sort by** option of the [Toolbar menu](../../#toolbar) — sort tasks by *text*, *due date*, *completion date*, *creation date*, or *editing date*
 - through the [`setSort()`](api/methods/setsort_method.md) method — specify a custom sort function or sort by a [task attribute](api/configs/tasks_config.md#parameters)
@@ -25,7 +25,7 @@ list.setSort({
 
 ## Filter tasks
 
-Find tasks that match the specified criteria in two ways:
+Filter tasks in one of two ways:
 
 - through the [search bar](../../#toolbar) of the Toolbar
 - through the [`setFilter()`](api/methods/setfilter_method.md) method — supports the *strict* mode for exact-match filtering

@@ -8,7 +8,7 @@ description: You can learn about keyboard navigation in the documentation of the
 
 DHTMLX To Do List supports full keyboard navigation. Create, manage, and organize tasks without a mouse.
 
-Keyboard shortcuts work only when a task is focused. To focus a task, click on it or use <kbd>ArrowUp</kbd> / <kbd>ArrowDown</kbd> to navigate through the list.
+Keyboard shortcuts work only when a task is focused. To focus a task, click it or use <kbd>ArrowUp</kbd> / <kbd>ArrowDown</kbd> to navigate the list.
 
 :::tip
 Keyboard shortcuts do **not** work when the Search bar in the Toolbar is focused.
@@ -29,7 +29,7 @@ The following shortcuts work when the inline editor is **closed**.
 | <kbd>ArrowUp</kbd> | Moves selection to the previous task |
 | <kbd>ArrowDown</kbd> | Moves selection to the next task |
 | <kbd>ArrowRight</kbd> | Expands a collapsed parent task |
-| <kbd>ArrowLeft</kbd> | Collapses an expanded parent task. Otherwise (already collapsed or no children), moves selection to the parent task |
+| <kbd>ArrowLeft</kbd> | Collapses an expanded parent task. If already collapsed or no children, moves selection to the parent |
 | <kbd>Shift</kbd>+<kbd>ArrowUp</kbd> | Extends selection to the task above. If that task is already selected, deselects it |
 | <kbd>Shift</kbd>+<kbd>ArrowDown</kbd> | Extends selection to the task below (including its children). If that task is already selected, deselects it |
 | <kbd>Ctrl(Cmd)</kbd>+<kbd>Click</kbd> / <kbd>Ctrl(Cmd)</kbd>+<kbd>Shift</kbd>+<kbd>Click</kbd> | Selects or deselects multiple tasks together with their children:<br/>• if the task has selected parents — deselects the task and its parents<br/>• if the task has selected children — deselects only the task itself |
@@ -68,6 +68,6 @@ The following shortcuts work when the inline editor is **open**.
 
 ## Related articles
 
-- [keypress-on-todo](api/events/keypressontodo_event.md) event — use this event to intercept key presses and implement custom behavior
+- [`keypress-on-todo`](api/events/keypressontodo_event.md) event — intercept key presses and implement custom behavior
 - [Inline editing](guides/inline_editing.md) — learn how to manage the editor programmatically
 - [Multiselection](guides/multiselection.md) — work with multiple selected tasks

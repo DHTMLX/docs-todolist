@@ -6,9 +6,9 @@ description: You can learn about the To Do List Customization in the documentati
 
 # Customization
 
-## Toolbar
+## Customize the toolbar
 
-Customize the appearance of the toolbar to fit your needs. Hide some default controls, add custom ones, and place them in the required order. Use the [`items`](api/toolbar_api/configs/items_config.md) property of the Toolbar component.
+Use the [`items`](api/toolbar_api/configs/items_config.md) property of the Toolbar to hide default controls, add custom ones, or change their order.
 
 The example below shows a customized toolbar:
 
@@ -16,7 +16,7 @@ The example below shows a customized toolbar:
 
 ## Style the To Do List
 
-Change the look and feel of the To Do List by adjusting values of the [**CSS variables provided by the library**](guides/stylization.md).
+Adjust the [**CSS variables provided by the library**](guides/stylization.md) to change how the To Do List looks.
 
 The example below applies custom styles to the To Do List:
 

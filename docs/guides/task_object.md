@@ -55,7 +55,7 @@ console.log(list.getChildrenIds({ id: "1" })); // ['1.1', '1.1.1', '1.2']
 console.log(list.getChildrenIds({ id: "1", tree: false })); // ['1.1', '1.2']
 ~~~
 
-Filtering can make some tasks invisible on the page. The `filtered` parameter of the method defines whether the filtered (hidden) tasks appear in the result (`filtered: false` by default) or not (`filtered: true`). The snippet below shows both options:
+Filtering can make some tasks invisible on the page. The `filtered` parameter defines whether hidden tasks appear in the result. Set it to `true` to exclude them (default is `false`). The snippet below shows both options:
 
 ~~~js
 // filter the tasks
@@ -68,14 +68,14 @@ console.log(list.getChildrenIds({ id: "1", filtered: false })); // -> ['1.1', '1
 console.log(list.getChildrenIds({ id: "1", filtered: true })); // -> ['1.1', '1.1.1']
 ~~~
 
-The `tree` parameter returns ids only for the first-level children. Set the parameter to `false`:
+Set `tree` to `false` to return only first-level children:
 
 ~~~js
 console.log(list.getChildrenIds({ id: "1", filtered: true, tree: false })); // -> ['1.1']
 console.log(list.getChildrenIds({ id: "1", filtered: false, tree: false })); // -> ['1.1', '1.2']
 ~~~
 
-The `hideCompleted` parameter returns ids only for outstanding children and excludes completed ones. Set the parameter to `true`. The example below combines the `filtered`, `tree`, and `hideCompleted` parameters in different ways:
+Set `hideCompleted` to `true` to exclude completed children. The example below combines `filtered`, `tree`, and `hideCompleted` in different ways:
 
 ~~~js {4,11,18,21}
 const tasks = [
@@ -103,7 +103,7 @@ console.log(list.getChildrenIds({ id: "1", filtered: false, tree: true, hideComp
 
 ## Check if a task has children
 
-To check whether a task has child tasks, apply the [`hasChildren()`](api/methods/haschildren_method.md) method. The snippet below verifies that a task has children:
+To check whether a task has child tasks, use the [`hasChildren()`](api/methods/haschildren_method.md) method. The snippet below verifies that a task has children:
 
 ~~~js
 const tasks = [
@@ -128,7 +128,7 @@ console.log(list.hasChildren({ id: "1.1" })); // -> true
 console.log(list.hasChildren({ id: "1.1", filtered: true })); // -> false
 ~~~
 
-The `hideCompleted` parameter excludes completed tasks from the result. Set the parameter to `true`:
+Set `hideCompleted` to `true` to exclude completed tasks from the result:
 
 ~~~js {4,9}
 const tasks = [
