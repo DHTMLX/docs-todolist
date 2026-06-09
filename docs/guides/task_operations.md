@@ -138,41 +138,16 @@ list.expandTask({ id: "1.1" });
 
 ## Context menu
 
-Open or close the context menu of a task, user, or project through API methods.
+Each task and user has a context menu. Track its activity with two events:
 
-To open the menu at specific coordinates, use the [`openMenu()`](api/methods/openmenu_method.md) method. The method takes the item id, an optional menu type (`"task"` by default, `"user"`, or `"project"`), and the x/y coordinates:
-
-~~~js
-list.openMenu({
-    id: "1.1",
-    type: "task",
-    coords: { x: 200, y: 150 }
-});
-~~~
-
-To close the menu, use the [`closeMenu()`](api/methods/closemenu_method.md) method. Pass the item id to close a specific menu, or call the method without parameters to close the currently opened one:
-
-~~~js
-list.closeMenu({ id: "1.1" });
-// or
-list.closeMenu({});
-~~~
-
-Track menu activity with three events:
-
-- [`open-menu`](api/events/openmenu_event.md) — fires when the menu opens; provides the item id, the menu type, and optionally an array of task ids for batch operations
+- [`open-menu`](api/events/openmenu_event.md) — fires when the menu opens; provides the item id, the menu type, and optionally an array of task ids (`source`) for batch operations
 - [`close-menu`](api/events/closemenu_event.md) — fires when the menu closes; provides the item id and the menu type
-- [`click-menu-item`](api/events/clickmenuitem_event.md) — fires when the user clicks a menu item; provides the item id, the clicked action, and the optional submenu item id
 
 The example below logs menu lifecycle events:
 
 ~~~js
 list.api.on("open-menu", ({ id, type, source }) => {
     console.log("menu opened for", id, "type", type, "source", source);
-});
-
-list.api.on("click-menu-item", ({ id, action, extra }) => {
-    console.log("menu item clicked:", action, extra, "for", id);
 });
 
 list.api.on("close-menu", ({ id, type }) => {

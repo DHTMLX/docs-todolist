@@ -54,6 +54,10 @@ To learn more about working with multiple selected tasks, see the [Multiselectio
 | <kbd>Ctrl(Cmd)</kbd>+<kbd>D</kbd> | Duplicates the selected task at the same level |
 | <kbd>Ctrl(Cmd)</kbd>+<kbd>C</kbd> | Copies the selected task (including all child tasks) to the clipboard |
 | <kbd>Ctrl(Cmd)</kbd>+<kbd>V</kbd> | Pastes the copied task at the same level as the currently selected task, preserving the original structure |
+| <kbd>Ctrl(Cmd)</kbd>+<kbd>Z</kbd> | Reverts the last operation (undo) |
+| <kbd>Ctrl(Cmd)</kbd>+<kbd>Y</kbd> / <kbd>Ctrl(Cmd)</kbd>+<kbd>Shift</kbd>+<kbd>Z</kbd> | Restores the reverted operation (redo) |
+| <kbd>Alt</kbd>+<kbd>1</kbd> / <kbd>Alt</kbd>+<kbd>2</kbd> / <kbd>Alt</kbd>+<kbd>3</kbd> | Sets the priority of the selected task (matches the hotkey of the corresponding [`priorities`](api/configs/priorities_config.md) item) |
+| <kbd>Alt</kbd>+<kbd>0</kbd> | Resets the priority of the selected task |
 | <kbd>Escape</kbd> | Closes the context menu if it is open. Press again to close the editor, reset active filtering, and collapse search results in the Toolbar |
 
 ## Editing mode

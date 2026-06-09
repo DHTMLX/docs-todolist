@@ -29,7 +29,7 @@ Variable names can change between versions. Re-check them after each update.
     /* WX library CSS variables */
 
         /* base colors */
-        --wx-color-primary: #0a76bf;
+        --wx-color-primary: #2f77e3;
         --wx-color-success: #0ab169;
         --wx-color-danger: #ff5252;
 
@@ -62,6 +62,13 @@ Variable names can change between versions. Re-check them after each update.
         /* animation */
         --wx-all-transition: all 0.2s ease-out;
         /* end animation */
+
+        /* border */
+        --wx-border-color: #dfdfdf;
+        --wx-border-width: 1px;
+        --wx-border-radius: 2px;
+        --wx-border: var(--wx-border-width) solid var(--wx-border-color);
+        /* end border */
         
 
         /* checkbox */
@@ -91,6 +98,12 @@ Variable names can change between versions. Re-check them after each update.
         /* End main component */
 
     /* end of To Do List CSS variables */
+
+
+    /* other */
+        --wx-base-size: 20px;
+        --wx-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    /* end other */
     }
 </style>
 ~~~

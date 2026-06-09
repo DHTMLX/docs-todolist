@@ -47,7 +47,7 @@ Run the following commands with [**npm**](https://www.npmjs.com/):
 
 ~~~bash
 npm install
-npm run dev
+npm start
 ~~~
 
 The app runs on a localhost address (for example, `http://localhost:3000`).

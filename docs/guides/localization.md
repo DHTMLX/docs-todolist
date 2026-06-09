@@ -98,12 +98,17 @@ const en = {
         "CMD+V": "CMD+V",
 
         // Editor
-        "Type you want": "Type you want",
+        "Type what you want": "Type what you want",
 
         // Other
         "Search": "Search",
         "Add task": "Add task",
-        "New project": "New project"
+        "New project": "New project",
+
+        // Default priority labels
+        "High": "High",
+        "Medium": "Medium",
+        "Low": "Low"
     }
 };
 ~~~
