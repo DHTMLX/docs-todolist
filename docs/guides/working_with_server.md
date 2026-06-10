@@ -173,7 +173,7 @@ When a change occurs on the server, the server returns the name of the modified 
 The updated data arrives in the handler's `obj` argument. Its `type` field specifies the operation:
 
 - for **tasks**: `"add-task"`, `"update-task"`, `"delete-task"`, `"move-task"`, `"clone-task"`
-- for **projects**: `"add-project"`, `"update-project"`, `"delete-project"`, `"move-project"`, `"clone-project"`
+- for **projects**: `"add-project"`, `"update-project"`, `"delete-project"`, `"set-sort"`
 
 The following code snippet shows the implementation details:
 

@@ -87,6 +87,10 @@ The **key codes** described below are not available if focus is set on the Searc
 | <kbd>Ctrl(Cmd)</kbd>+<kbd>D</kbd> | `ctrl+d` | Duplicates the selected task at the same level |
 | <kbd>Ctrl(Cmd)</kbd>+<kbd>C</kbd> | `ctrl+c` | Copies the selected task into the clipboard, including all child tasks |
 | <kbd>Ctrl(Cmd)</kbd>+<kbd>V</kbd> | `ctrl+v` | Pastes the copied task to the same level as the currently selected task. It is possible to paste a copied task to any level, the structure of the copied task is saved |
+| <kbd>Ctrl(Cmd)</kbd>+<kbd>Z</kbd> | `ctrl+z` | Reverts the last operation (undo) |
+| <kbd>Ctrl(Cmd)</kbd>+<kbd>Y</kbd> /<br><kbd>Ctrl(Cmd)</kbd>+<kbd>Shift</kbd>+<kbd>Z</kbd> | `ctrl+y` /<br>`ctrl+shift+z` | Restores the reverted operation (redo) |
+| <kbd>Alt</kbd>+<kbd>1</kbd> /<br><kbd>Alt</kbd>+<kbd>2</kbd> /<br><kbd>Alt</kbd>+<kbd>3</kbd> | `alt+1` /<br>`alt+2` /<br>`alt+3` | Sets the priority of the selected task (matches the hotkey of the corresponding [`priorities`](api/configs/priorities_config.md) item) |
+| <kbd>Alt</kbd>+<kbd>0</kbd> | `alt+0` | Resets the priority of the selected task |
 
 ### Editing mode
 
