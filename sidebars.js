@@ -324,8 +324,10 @@ module.exports = {
                                         "api/rest_api/methods/gettasks_method",
                                         "api/rest_api/methods/getusers_method",
                                         "api/rest_api/methods/setapi_method",
+                                        "api/rest_api/methods/setheaders_method",
+                                        "api/rest_api/methods/getidresolver_method",
                                         "api/rest_api/methods/send_method"
-                                    ]  
+                                    ]
                                 }
                             ]
                         },

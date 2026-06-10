@@ -8,12 +8,12 @@ description: You can learn about the tasks config in the documentation of the DH
 
 ### Description
 
-@short: Required. Specifies an array of task objects to set into the list
+@short: Optional. Specifies an array of task objects to set into the list
 
 ### Usage
 
 ~~~js
-tasks: [
+tasks?: [
     {
         id?: string | number,
         parent?: string | number,

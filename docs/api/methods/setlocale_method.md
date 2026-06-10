@@ -107,11 +107,11 @@ const de = {
         "CMD+C": "CMD+C",
         "CMD+V": "CMD+V",
         // Editor
-        "Type you want": "Warten auf Eingabe",
+        "Type what you want": "Warten auf Eingabe",
         // Other
         "Search": "Suche",
         "Add task": "Aufgabe hinzufügen",
-        "Untitled": "Ohne Titel",
+        "New project": "Neues Projekt",
     },
 };
 

@@ -14,7 +14,8 @@ description: You can learn about the delete-task event in the documentation of t
 
 ~~~js
 "delete-task": ({
-    id: string | number
+    id: string | number,
+    batch?: (string | number)[]
 }) => void;
 ~~~
 
@@ -23,6 +24,7 @@ description: You can learn about the delete-task event in the documentation of t
 The callback of the **delete-task** event can take an object with the following parameters:
 
 - `id` - (required) the ID of a removed task
+- `batch` - (optional) an array of IDs of tasks removed together in a bulk operation
 
 :::info
 To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods.md)

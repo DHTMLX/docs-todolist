@@ -16,7 +16,8 @@ description: You can learn about the drag event in the documentation of the DHTM
 "drag":({
     start: string | number,
     source: (string | number)[],
-    target: string | number | null
+    target: string | number | null,
+    dropPosition: "top" | "bottom" | "in" | null
 }) => void;
 ~~~
 
@@ -27,6 +28,10 @@ The callback of the **drag** event can take an object with the following paramet
 - `start` - (required) the ID of the task from which the dragging process has started
 - `source` - (required) an array with IDs of dragged tasks
 - `target` - (required) the ID of a potential target task
+- `dropPosition` - (required) the position relative to the target task where the tasks would be dropped:
+    - `top` - above the target task
+    - `bottom` - below the target task
+    - `in` - over the target task
 
 :::info
 To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods.md)
@@ -49,8 +54,8 @@ const toolbar = new Toolbar("#toolbar", {
 });
 
 // subscribe to the "drag" event
-list.api.on("drag", ({start, source, target}) => {
-    console.log(start, source, target);
+list.api.on("drag", ({start, source, target, dropPosition}) => {
+    console.log(start, source, target, dropPosition);
 });
 ~~~
 

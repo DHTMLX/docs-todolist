@@ -26,6 +26,7 @@ The method returns serialized data of the To Do List
     users: [],
     projects: [],
     tags: [],
+    priorities: [],
     activeProject: string,
 }
 ~~~

@@ -121,6 +121,7 @@ DHTMLX To Do List uses the following characters for setting a date format:
 | Character | Definition                                        |
 |-----------|---------------------------------------------------|
 | **%d**    | day as a number with leading zero, 01..31         |
+| **%j**    | day as a number, 1..31                            |
 | **%D**    | short name of the day, Su Mo Tu...                |
 | **%l**    | full name of the day, Sunday Monday Tuesday...    |
 | **%m**    | month as a number with leading zero, 01..12       |

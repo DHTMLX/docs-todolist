@@ -21,7 +21,7 @@ The tasks will belong to the *No project* section in the following cases:
 ### Usage
 
 ~~~js
-activeProject?: string | number;
+activeProject?: string | number | null;
 ~~~
 
 :::info

@@ -18,6 +18,7 @@ parse({
     users?: [],
     projects?: [],
     tags?: [],
+    priorities?: [],
     activeProject?: string
 }): void;
 ~~~
@@ -28,6 +29,7 @@ parse({
 - [`users`](api/configs/users_config.md) - (optional) an array of objects with users data
 - [`projects`](api/configs/projects_config.md) - (optional) an array of objects with projects data
 - [`tags`](api/configs/tags_config.md) - (optional) an array with a list of tags
+- [`priorities`](api/configs/priorities_config.md) - (optional) an array of objects with priorities data
 - [`activeProject`](api/configs/activeproject_config.md) - (optional) the ID of the active project
 
 ### Example

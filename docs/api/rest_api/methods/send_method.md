@@ -116,12 +116,13 @@ const { ToDo, Toolbar, RestDataProvider } = todo;
 class MyDataProvider extends RestDataProvider {
   send(url, method, data, headers) {
       headers = { ...headers, "SomeToken": "abc" };
-      return super.send(url, methods, data, headers);
+      return super.send(url, method, data, headers);
   }
 }
 
-list.api.setNext(new MyDataProvider(url));
-MyDataProvider.setAPI(list.api);
+const myProvider = new MyDataProvider(url);
+list.api.setNext(myProvider);
+myProvider.setAPI(list.api);
 ~~~ 
 ---
 
