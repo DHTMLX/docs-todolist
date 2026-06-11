@@ -8,6 +8,16 @@ description: You can learn a new information about DHTMLX JavaScript To Do List 
 
 If you are updating To Do List from an older version, check [Migration to newer version](migration.md) for details.
 
+# Version 1.3.2
+
+Released on June 10, 2026
+
+### Fixes
+
+- Custom menu icons are not displayed correctly
+- Task IDs are not synchronized: temporary IDs are not replaced by server-side IDs in the UI during task creation and cloning
+- The task editor and active menus do not close when a project is deleted
+
 ## Version 1.3.1
 
 Released on April 3, 2025
