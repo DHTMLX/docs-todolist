@@ -84,7 +84,7 @@ taskShape: {
 const { ToDo, Toolbar } = todo;
 const { tasks, users, projects, priorities } = getData();
 
-// create To do list
+// создание To Do List
 const list = new ToDo("#root", {
     tasks,
     users,

@@ -38,7 +38,7 @@ setFilter({
 const { ToDo, Toolbar } = todo;
 const { tasks, users, projects, tags } = getData();
 
-// create To do list
+// создание To Do List
 const list = new ToDo("#root", {
     tasks,
     users,
@@ -46,13 +46,13 @@ const list = new ToDo("#root", {
     tags,
 });
 
-// filter data by the specified rules
+// фильтрация данных по заданным правилам
 list.setFilter({
     match: "ran",
     highlight: true
 });
 
-// reset filtering
+// сброс фильтрации
 list.setFilter({ match: null });
 ~~~
 

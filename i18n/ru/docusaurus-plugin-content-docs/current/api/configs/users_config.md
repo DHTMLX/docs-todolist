@@ -20,7 +20,7 @@ users?: [
         avatar?: string,
         color?: string,
     },
-    {...} // more user objects
+    {...} // другие объекты пользователей
 ];
 ~~~
 

@@ -22,9 +22,9 @@ DHTMLX To Do List принимает следующие типы данных ч
 ~~~js title="data.js"
 function getData() {
 
-    // data for tasks
+    // данные для задач
     const tasks = [
-        // data for tasks of the "widgets" project
+        // данные для задач проекта "widgets"
         {
             id: "widgets",
             project: "widgets",
@@ -52,7 +52,7 @@ function getData() {
             text: "Diagram",
             priority: 3
         },
-        // data for tasks of the "introduction" project    
+        // данные для задач проекта "introduction"    
         {
             id: "temp://1652991560212",
             project: "introduction",
@@ -97,10 +97,10 @@ function getData() {
             checked: false,
             priority: null
         },
-        // more task objects
+        // другие объекты задач
     ];
 
-    // data for projects
+    // данные для проектов
     const projects = [
         {
             id: "introduction",
@@ -110,10 +110,10 @@ function getData() {
             id: "widgets",
             label: "Our widgets"
         },
-        // more project objects
+        // другие объекты проектов
     ];
 
-    // data for users
+    // данные для пользователей
     const users = [
         {
             id: "user_1",
@@ -130,10 +130,10 @@ function getData() {
             label: "Mike Young",
             avatar: "../avatar_21.jpg"
         },
-        // more user objects
+        // другие объекты пользователей
     ];
 
-    // data for priorities
+    // данные для приоритетов
     const priorities = [
         {
             id: 1,
@@ -155,7 +155,7 @@ function getData() {
             label: "Minor",
             hotkey: "Alt+M",
         },
-        // more priority objects
+        // другие объекты приоритетов
     ];
 
     return { tasks, projects, users, priorities };
@@ -207,7 +207,7 @@ const toolbar = new Toolbar("#toolbar", {
     api: list.api,
 });
 
-// parse data into the component
+// разбор данных в компонент
 list.parse({
     tasks,
     users,
@@ -235,9 +235,9 @@ const state = list.serialize();
 Передайте сохранённое состояние в другой To Do List с помощью метода `parse()`. Пример ниже восстанавливает состояние в новый экземпляр:
 
 ~~~js
-// create a new To Do
+// создание нового To Do
 const list2 =  new ToDo("#root2", {});
 
-// parse the state of one To Do List into another
+// перенос состояния одного To Do List в другой
 list2.parse(state);
 ~~~

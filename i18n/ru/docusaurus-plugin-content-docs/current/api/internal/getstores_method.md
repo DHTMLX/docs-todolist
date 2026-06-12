@@ -30,7 +30,7 @@ state: DataStore // ( object )
 const { ToDo, Toolbar } = todo;
 const { tasks, users, projects } = getData();
 
-// create To do list
+// создание To Do List
 const list = new ToDo("#root", {
     tasks,
     users,

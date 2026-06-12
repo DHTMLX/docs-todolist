@@ -18,7 +18,7 @@ description: You can learn about the drag config in the documentation of the DHT
 
 ~~~js
 drag?: boolean;
-//or 
+//или 
 drag?: {
     expand?: boolean
 };
@@ -41,7 +41,7 @@ drag?: {
 
 ~~~js
 drag: true
-// or
+// или
 drag: {
     expand: true
 }

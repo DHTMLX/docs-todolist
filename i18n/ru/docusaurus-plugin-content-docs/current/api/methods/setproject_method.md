@@ -40,7 +40,7 @@ const toolbar = new Toolbar("#toolbar", {
     api: list.api,
 });
 
-// change an active project
+// смена активного проекта
 list.setProject({
     id: "first"
 });

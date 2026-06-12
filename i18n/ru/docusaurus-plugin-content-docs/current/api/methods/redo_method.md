@@ -26,7 +26,7 @@ redo(): void;
 const { ToDo } = todo;
 const { tasks, users, projects, tags } = getData();
 
-// create To Do List
+// создание To Do List
 const list = new ToDo("#root", {
     tasks,
     users,

@@ -25,7 +25,7 @@ readonly?: boolean;
 ### Конфигурация по умолчанию {#default-config}
 
 ~~~jsx {}
-readonly: false // readonly mode is disabled
+readonly: false // режим только для чтения отключён
 ~~~
 
 ### Пример {#example}
@@ -34,7 +34,7 @@ readonly: false // readonly mode is disabled
 const { ToDo, Toolbar } = todo;
 const { tasks, users, projects } = getData();
 
-// create To do list
+// создание To Do List
 const list = new ToDo("#root", {
     tasks,
     users,

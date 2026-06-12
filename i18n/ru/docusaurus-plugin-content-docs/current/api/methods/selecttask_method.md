@@ -15,7 +15,7 @@ description: Вы можете узнать о методе selectTask в док
 ~~~js
 selectTask({
     id: string | number,
-    join?: boolean // false by default
+    join?: boolean // по умолчанию false
 }): void;
 ~~~
 

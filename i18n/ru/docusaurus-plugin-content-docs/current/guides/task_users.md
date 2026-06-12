@@ -64,13 +64,13 @@ const list = new ToDo("#root", {
 Пример ниже назначает пользователя на одну задачу и удаляет пользователя из другой:
 
 ~~~js
-// assign a person to the task
+// назначение исполнителя на задачу
 list.assignUser({
     id: "3",
     userId: "user_1"
 });
 
-// unassign a person from the task
+// снятие исполнителя с задачи
 list.unassignUser({
     id: "2",
     userId: "user_1"

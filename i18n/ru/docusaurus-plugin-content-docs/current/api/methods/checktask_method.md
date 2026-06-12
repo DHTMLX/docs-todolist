@@ -15,7 +15,7 @@ description: Вы можете узнать о методе checkTask в док�
 ~~~js
 checkTask({
     id: string | number,
-    manual?: boolean // false by default
+    manual?: boolean // по умолчанию false
 }): void;
 ~~~
 

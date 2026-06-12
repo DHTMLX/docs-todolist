@@ -19,7 +19,7 @@ items?: [
     "menu",
     "undo",
     "redo"
-    custom_control // string or function
+    custom_control // строка или функция
 ];
 ~~~
 

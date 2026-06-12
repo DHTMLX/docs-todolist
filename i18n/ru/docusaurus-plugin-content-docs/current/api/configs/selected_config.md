@@ -21,7 +21,7 @@ selected?: (string | number)[];
 ~~~js {11}
 const { ToDo, Toolbar } = todo;
 
-// create To do list
+// создание To Do List
 const list = new ToDo("#root", {
     tasks: [
         { id: "1", text: "Task 1 #tag1" },

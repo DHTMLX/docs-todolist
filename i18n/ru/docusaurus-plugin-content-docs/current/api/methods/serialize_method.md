@@ -44,7 +44,7 @@ const list = new ToDo("#root", {
     tags,
 });
 
-// get an object with data of To Do List
+// получение объекта с данными To Do List
 list.serialize();
 ~~~
 

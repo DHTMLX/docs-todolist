@@ -18,7 +18,7 @@ projects?: [
         id: string | number,
         label: string
     },
-    {...} // more projects
+    {...} // другие проекты
 ];
 ~~~
 
@@ -34,13 +34,13 @@ projects?: [
 ~~~js {4-7,11}
 const { ToDo, Toolbar } = todo;
 
-// projects data
+// данные проектов
 const projects = [
     { "id": "books", "label": "Books" },
     { "id": "films", "label": "Films" },
 ];
 
-// create To do list
+// создание To Do List
 const list = new ToDo("#root", {
     projects,
     activeProject: "films"

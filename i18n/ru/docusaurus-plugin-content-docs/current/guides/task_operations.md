@@ -38,12 +38,12 @@ list.addTask({
 
 ~~~js
 list.copyTask({ 
-    id: "1.1", // ID of the task to copy
-    join: false, // resets copies of other tasks and copies only this task
-    project: "p_2", // ID of the future project (if exists)
-    parent: "2.1", // ID of the future parent
-    targetId: "2.1.2", // ID of the target task
-    reverse: true // paste the task before the target one
+    id: "1.1", // ID копируемой задачи
+    join: false, // сбрасывает копии других задач и копирует только эту
+    project: "p_2", // ID будущего проекта (если существует)
+    parent: "2.1", // ID будущего родителя
+    targetId: "2.1.2", // ID целевой задачи
+    reverse: true // вставить задачу перед целевой
 });
 ~~~
 
@@ -97,11 +97,11 @@ list.updateTask({
 
 ~~~js
 list.moveTask({ 
-    id: "1.1", // ID of the task to move
-    project:"p_2", // ID of the future project (if exists)
-    parent: "2", // ID of the future parent
-    targetId: "2.1", // ID of the target task
-    reverse: true // place the task before the target one
+    id: "1.1", // ID перемещаемой задачи
+    project:"p_2", // ID будущего проекта (если существует)
+    parent: "2", // ID будущего родителя
+    targetId: "2.1", // ID целевой задачи
+    reverse: true // поместить задачу перед целевой
 });
 ~~~
 
@@ -239,7 +239,7 @@ console.log(list.getParentIds({ id: "1.2" })); //  []
 Найдите задачи, соответствующие заданным критериям, с помощью метода [`setFilter()`](api/methods/setfilter_method.md). Метод поддерживает *строгий* режим для точного совпадения. Фрагмент ниже фильтрует задачи по хэштегу:
 
 ~~~js
-// filter data by the specified rules
+// фильтрация данных по заданным правилам
 list.setFilter({
     match: "#tag1",
     highlight: true,
@@ -250,7 +250,7 @@ list.setFilter({
 Чтобы сбросить фильтрацию, передайте `match: null`:
 
 ~~~js
-// reset filtering
+// сброс фильтрации
 list.setFilter({ match: null });
 ~~~
 
@@ -261,8 +261,8 @@ To Do List по умолчанию отслеживает историю изм�
 ~~~js
 list.addTask({ task: { text: "New task" } });
 
-list.undo(); // revert the addition
-list.redo(); // restore it
+list.undo(); // отмена добавления
+list.redo(); // восстановить
 ~~~
 
 Область и глубина истории зависят от свойства конфигурации [`history`](api/configs/history_config.md). Подробнее см. [Конфигурация → История изменений](guides/configuration.md#history-of-changes).

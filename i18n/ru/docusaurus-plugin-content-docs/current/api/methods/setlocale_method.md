@@ -83,7 +83,7 @@ const de = {
         "Add project": "Projekt hinzufügen",
         "Rename project": "Projekt umbenennen",
         "Delete project": "Projekt löschen",
-        // Task
+        // задачи
         "Add task below": "Aufgabe unten hinzufügen",
         "Add subtask": "Unteraufgabe hinzufügen",
         "Set due date": "Fälligkeitsdatum festlegen",
@@ -95,20 +95,20 @@ const de = {
         "Copy": "Kopieren",
         "Paste": "Einfügung",
         "Delete": "Löschen",
-        // Shortcut
+        // горячие клавиши
         "Enter": "Enter",
         "Tab": "Tab",
         "Shift+Tab": "Shift+Tab",
         "Ctrl+D": "Ctrl+D",
         "Ctrl+C": "Ctrl+C",
         "Ctrl+V": "Ctrl+V",
-        // For Mac OS
+        // для Mac OS
         "CMD+D": "CMD+D",
         "CMD+C": "CMD+C",
         "CMD+V": "CMD+V",
-        // Editor
+        // редактор
         "Type what you want": "Warten auf Eingabe",
-        // Other
+        // прочее
         "Search": "Suche",
         "Add task": "Aufgabe hinzufügen",
         "New project": "Neues Projekt",
@@ -125,10 +125,10 @@ const toolbar = new Toolbar("#toolbar", {
     api: list.api,
 });
 
-// change locale of To Do List
+// смена локали To Do List
 list.setLocale(de);
 
-// change locale of Toolbar (read Info)
+// смена локали Toolbar (см. примечание)
 toolbar.setLocale(de, list.api);
 ~~~
 

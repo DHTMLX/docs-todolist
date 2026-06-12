@@ -36,14 +36,14 @@ api.intercept(
 const { ToDo, Toolbar } = todo;
 const { tasks, users, projects } = getData();
 
-// create To do list
+// создание To Do List
 const list = new ToDo("#root", {
     tasks,
     users,
     projects
 });
 
-// forbid removing a project with the "first" ID
+// запрет удаления проекта с ID "first"
 list.api.intercept("delete-project", ({ id }) => {
     if(id == "first"){
         return false;

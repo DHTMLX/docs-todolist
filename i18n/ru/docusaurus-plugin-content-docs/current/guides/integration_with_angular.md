@@ -92,8 +92,8 @@ import { Component, ElementRef, OnInit, ViewChild, OnDestroy, ViewEncapsulation}
 
 @Component({
     encapsulation: ViewEncapsulation.None,
-    selector: "todo", // template name used in "app.component.ts" as <todo />
-    styleUrls: ["./todo.component.css"], // include the css file
+    selector: "todo", // имя шаблона, используемое в "app.component.ts" как <todo />
+    styleUrls: ["./todo.component.css"], // подключение css-файла
 
     template:  `<main class = "component_container">
                     <div #toolbar_container></div>
@@ -102,28 +102,28 @@ import { Component, ElementRef, OnInit, ViewChild, OnDestroy, ViewEncapsulation}
 })
 
 export class ToDoComponent implements OnInit, OnDestroy {
-    // initialize container for Toolbar
+    // инициализация контейнера для Toolbar
     @ViewChild("toolbar_container", { static: true }) toolbar_container!: ElementRef;
-    // initialize container for To Do List 
+    // инициализация контейнера для To Do List 
     @ViewChild("todo_container", { static: true }) todo_container!: ElementRef;
     
     private _todo!: ToDo;
     private _toolbar!: Toolbar;
 
     ngOnInit() {
-        // initialize the To Do List component
+        // инициализация компонента To Do List
         this._todo = new ToDo(this.todo_container.nativeElement, {});
         
-        // initialize the Toolbar component
+        // инициализация компонента Toolbar
         this._toolbar = new Toolbar(this.toolbar_container.nativeElement, {
             api: this._todo.api,
-            // other configuration properties 
+            // другие свойства конфигурации 
         });
     }
 
     ngOnDestroy(): void {
-        this._todo.destructor(); // destruct To Do List
-        this._toolbar.destructor(); // destruct Toolbar
+        this._todo.destructor(); // уничтожение To Do List
+        this._toolbar.destructor(); // уничтожение Toolbar
     }
 }
 ~~~
@@ -133,10 +133,10 @@ export class ToDoComponent implements OnInit, OnDestroy {
 Импортируйте CSS-файл, чтобы To Do List отображался корректно. Создайте файл *todo.component.css* в директории *src/app/todo/* и добавьте стили для To Do List и его контейнера. Фрагмент ниже импортирует стили To Do List и задаёт размеры макета:
 
 ~~~css title="todo.component.css"
-/* import To Do List styles */
+/* импорт стилей To Do List */
 @import "@dhx/trial-todolist/dist/todo.css";
 
-/* styles for the initial page */
+/* стили для начальной страницы */
 html,
 body{
     height: 100%;
@@ -145,14 +145,14 @@ body{
     background-color: #f7f7f7;
 }
 
-/* styles for the To Do List and Toolbar container */
+/* стили для контейнера To Do List и Toolbar */
 .component_container {
     height: 100%; 
     max-width: 800px; 
     margin: 0 auto;
 }
 
-/* styles for the To Do List container */
+/* стили для контейнера To Do List */
 .widget {
     height: calc(100% - 56px);
 }
@@ -208,7 +208,7 @@ export function getData() {
 
 ~~~jsx {2,23,25-27} title="todo.component.ts"
 import { ToDo, Toolbar } from '@dhx/trial-todolist';
-import { getData } from "./data"; // import data
+import { getData } from "./data"; // импорт данных
 import { Component, ElementRef, OnInit, ViewChild, OnDestroy, ViewEncapsulation} from '@angular/core';
 
 @Component({
@@ -229,17 +229,17 @@ export class ToDoComponent implements OnInit, OnDestroy {
     private _toolbar!: Toolbar;
 
     ngOnInit() {
-        const { users, tasks, projects } = getData(); // initialize data properties
+        const { users, tasks, projects } = getData(); // инициализация свойств данных
         this._todo = new ToDo(this.todo_container.nativeElement, {
             users,
             tasks,
             projects,
-            // other configuration properties
+            // другие свойства конфигурации
         });
 
         this._toolbar = new Toolbar(this.toolbar_container.nativeElement, {
             api: this._todo.api,
-            // other configuration properties 
+            // другие свойства конфигурации 
         });
     }
 
@@ -254,7 +254,7 @@ export class ToDoComponent implements OnInit, OnDestroy {
 
 ~~~jsx {2,23,31-36} title="todo.component.ts"
 import { ToDo, Toolbar } from '@dhx/trial-todolist';
-import { getData } from "./data"; // import data
+import { getData } from "./data"; // импорт данных
 import { Component, ElementRef, OnInit, ViewChild, OnDestroy, ViewEncapsulation} from '@angular/core';
 
 @Component({
@@ -275,15 +275,15 @@ export class ToDoComponent implements OnInit, OnDestroy {
     private _toolbar!: Toolbar;
 
     ngOnInit() {
-        const { users, tasks, projects } = getData(); // initialize data properties
+        const { users, tasks, projects } = getData(); // инициализация свойств данных
         this._todo = new ToDo(this.todo_container.nativeElement, {});
 
         this._toolbar = new Toolbar(this.toolbar_container.nativeElement, {
             api: this._todo.api,
-            // other configuration properties 
+            // другие свойства конфигурации 
         });
 
-        // apply the data via the parse() method
+        // применение данных через метод parse()
         this._todo.parse({ 
             users, 
             tasks, 
@@ -332,7 +332,7 @@ import { Component } from "@angular/core";
 
 @Component({
     selector: "app-root",
-    template: `<todo/>` // template created in "todo.component.ts"
+    template: `<todo/>` // шаблон, созданный в "todo.component.ts"
 })
 export class AppComponent {
     name = "";

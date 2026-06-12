@@ -46,12 +46,12 @@ const toolbar = new Toolbar("#toolbar", {
     api: list.api,
 });
 
-// change configuration of To Do List
+// изменение конфигурации To Do List
 list.setConfig({
     activeProject: "second"
 });
 
-// update configuration parameters of Toolbar
+// обновление параметров конфигурации Toolbar
 toolbar.setConfig({
     api: list.api,
 });

@@ -17,9 +17,9 @@ description: Вы можете узнать о сортировке и филь�
 
 ~~~js
 list.setSort({
-    by: task => task.id, // or by: "text"
+    by: task => task.id, // или by: "text"
     dir: "asc",
-    // tree: true // enable tree sort, false by default
+    // tree: true // включить древовидную сортировку, по умолчанию false
 });
 ~~~
 
@@ -33,7 +33,7 @@ list.setSort({
 Фрагмент ниже фильтрует задачи по определённому хэштегу в строгом режиме:
 
 ~~~js
-// filter data by the specified rules
+// фильтрация данных по заданным правилам
 list.setFilter({
     match: "#tag1",
     highlight: true,
@@ -44,6 +44,6 @@ list.setFilter({
 Чтобы сбросить фильтрацию, передайте `match: null`:
 
 ~~~js
-// reset filtering
+// сброс фильтрации
 list.setFilter({ match: null });
 ~~~

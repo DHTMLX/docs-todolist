@@ -108,19 +108,19 @@ import "@dhx/trial-todolist/dist/todo.css";
 
 export default {
     mounted() {
-        // initialize the To Do List component
+        // инициализация компонента To Do List
         this.todo = new ToDo(this.$refs.todo_container, {});
 
-        // initialize the Toolbar component
+        // инициализация компонента Toolbar
         this.toolbar = new Toolbar(this.$refs.toolbar_container, {
-            api: this.todo.api, // provide To Do List inner API
-            // other configuration properties
+            api: this.todo.api, // передача внутреннего API To Do List
+            // другие свойства конфигурации
         });
     },
 
     unmounted() {
-        this.todo.destructor(); // destruct To Do List
-        this.toolbar.destructor(); // destruct Toolbar
+        this.todo.destructor(); // уничтожение To Do List
+        this.toolbar.destructor(); // уничтожение Toolbar
     }
 };
 </script>
@@ -219,12 +219,12 @@ export default {
             users: this.users,
             tasks: this.tasks,
             projects: this.projects,
-            // other configuration properties
+            // другие свойства конфигурации
         });
 
         this.toolbar = new Toolbar(this.$refs.toolbar_container, {
             api: this.todo.api,
-            // other configuration properties
+            // другие свойства конфигурации
         });
     },
 
@@ -258,7 +258,7 @@ export default {
 
         this.toolbar = new Toolbar(this.$refs.toolbar_container, {
             api: this.todo.api,
-            // other configuration properties
+            // другие свойства конфигурации
         });
 
         this.todo.parse({

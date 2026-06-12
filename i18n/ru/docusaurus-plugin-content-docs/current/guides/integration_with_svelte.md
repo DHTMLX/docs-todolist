@@ -110,23 +110,23 @@ import { onMount, onDestroy } from "svelte";
 import { ToDo, Toolbar } from "@dhx/trial-todolist";
 import "@dhx/trial-todolist/dist/todo.css";
 
-let toolbar_container, todo_container; // initialize containers for To Do List and Toolbar
+let toolbar_container, todo_container; // инициализация контейнеров для To Do List и Toolbar
 let todo, toolbar;
 
 onMount(() => {
-    // initialize the To Do List component
+    // инициализация компонента To Do List
     todo = new ToDo(todo_container, {})
 
-    // initialize the Toolbar component
+    // инициализация компонента Toolbar
     toolbar = new Toolbar(toolbar_container, {
-        api: todo.api, // provide To Do List inner API
-        // other configuration properties
+        api: todo.api, // передача внутреннего API To Do List
+        // другие свойства конфигурации
     })
 });
 
 onDestroy(() => {
-    todo.destructor(); // destruct To Do List
-    toolbar.destructor(); // destruct Toolbar
+    todo.destructor(); // уничтожение To Do List
+    toolbar.destructor(); // уничтожение Toolbar
 });
 </script>
 
@@ -215,12 +215,12 @@ onMount(() => {
         users,
         tasks,
         projects,
-        // other configuration properties
+        // другие свойства конфигурации
     })
 
     toolbar = new Toolbar(toolbar_container, {
         api: todo.api, 
-        // other configuration properties
+        // другие свойства конфигурации
     })
 });
 
@@ -256,7 +256,7 @@ onMount(() => {
 
     toolbar = new Toolbar(toolbar_container, {
         api: todo.api,
-        // other configuration properties
+        // другие свойства конфигурации
     })
 
     todo.parse({ tasks, users, projects });

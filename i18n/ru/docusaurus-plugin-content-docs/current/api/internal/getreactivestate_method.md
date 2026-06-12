@@ -41,17 +41,17 @@ api.getReactiveState(): object;
 const { ToDo, Toolbar } = todo;
 const { tasks, users, projects } = getData();
 
-// create To Do List
+// создание To Do List
 const list = new ToDo("#root", {
     tasks,
     users,
     projects
 });
 
-// subscribe to the task selection
+// подписка на выбор задачи
 list.api.getReactiveState().selected.subscribe((value) => {
     console.log(value);
-    // other actions
+    // другие действия
 });
 ~~~
 

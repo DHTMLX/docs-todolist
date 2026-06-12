@@ -137,11 +137,11 @@ Promise.all([
         api: list.api,
     });
 
-    // save data from client to server
+    // сохранение данных с клиента на сервер
     list.api.setNext(restProvider);
     restProvider.setAPI(list.api);
 
-    // get updates from server to client
+    // получение обновлений с сервера на клиент
     const events = new todo.RemoteEvents(url + "/api/v1", token);
     const handlers = todo.todoUpdates(
         list.api,
@@ -201,7 +201,7 @@ const resolveTask = (data: any) => {
 };
 
 const tasksHandler = (obj: any) => {
-    resolveTask(obj); // synchronize client ids with the server ids
+    resolveTask(obj); // синхронизация id клиента с id сервера
     switch (obj.type) {
         case "add-task":
             todoInstance.api.exec("add-task", {
@@ -211,10 +211,10 @@ const tasksHandler = (obj: any) => {
                 targetId: obj.data.targetId,
                 reverse: obj.data.reverse,
                 task: { ...obj.data.task },
-                skipProvider: true // prevent the client from sending the request to the server
+                skipProvider: true // запрет клиенту отправлять запрос на сервер
             })
             break;
-        // other operations
+        // другие операции
     }
 };
 

@@ -18,7 +18,7 @@ description: You can learn about the history config in the documentation of the 
 
 ~~~js
 history?: boolean; 
-// or 
+// или 
 history?: { 
     projects?: boolean, 
     limit?: number 

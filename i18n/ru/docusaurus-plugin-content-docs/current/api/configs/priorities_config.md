@@ -20,7 +20,7 @@ priorities?: [
         hotkey?: string,
         color?: string,
     },
-    { ... } // more priorities items
+    { ... } // другие элементы приоритетов
 ];
 ~~~
 
@@ -94,7 +94,7 @@ const priorities = [
     {
         id: 4,
         label: "Minor",
-        hotkey: "Alt+M", // Handle the "keydown" event to define the "Alt+M" combination
+        hotkey: "Alt+M", // обработка события "keydown" для определения комбинации "Alt+M"
     },
 ];
 
@@ -105,7 +105,7 @@ const list = new ToDo ("#root", {
     priorities
 });
 
-// Custom event handler for hotkey: "Alt+M"
+// пользовательский обработчик для горячей клавиши: "Alt+M"
 document.addEventListener("keydown", event => {
     if (event.altKey && event.key.toLocaleLowerCase() === "m") {
         list.eachSelected(id => {

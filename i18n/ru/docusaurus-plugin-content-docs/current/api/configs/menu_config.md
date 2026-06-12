@@ -14,7 +14,7 @@ description: You can learn about the menu config in the documentation of the DHT
 
 ~~~js
 menu?: boolean; 
-// or
+// или
 menu?: function(config: object);
 ~~~
 
@@ -25,7 +25,7 @@ menu?: function(config: object);
 ~~~js
 menu: true // отображает контекстное меню по умолчанию
 
-// or
+// или
 
 menu: false // скрывает контекстное меню
 ~~~
@@ -96,7 +96,7 @@ config: {
                 icon: string,
                 label: string,
                 hotkey: string,
-                data: [ // if required
+                data: [ // при необходимости
                     // ... same objects for sub-items
                 ]
             }
@@ -121,7 +121,7 @@ config: {
         По умолчанию в подменю элемента `"setPriority"` отображаются элементы **Высокий**, **Средний** и **Низкий**.
 
         ~~~js {2,10,18}
-        {   // High priority
+        {   // высокий приоритет
             type: "priority",
             label: "High",
             color: "#ff5252",
@@ -129,7 +129,7 @@ config: {
             icon: "empty",
             id: "priority:1"
         },
-        {   // Medium priority
+        {   // средний приоритет
             type: "priority",
             label: "Medium",
             color: "#ffc975",
@@ -137,7 +137,7 @@ config: {
             icon: "empty",
             id: "priority:2"
         },
-        {   // Low priority
+        {   // низкий приоритет
             type: "priority",
             label: "Low",
             color: "#0ab169",
@@ -160,9 +160,9 @@ config: {
         ~~~js {2}
         {
             type: "datepicker",
-            id: "dueDate", // default ID
-            value: new Date(), // selected date
-            store: object // readonly
+            id: "dueDate", // ID по умолчанию
+            value: new Date(), // выбранная дата
+            store: object // только для чтения
         }
         ~~~
 
@@ -200,7 +200,7 @@ const menu = function (config) {
 
     const { source, store, type } = config;
     if (type === "task") {
-        // leaving only some of the default menu options
+        // оставляем только некоторые пункты меню по умолчанию
         options = options.filter(o => {
             return (
                 o.id == "addSubtask" ||
@@ -209,7 +209,7 @@ const menu = function (config) {
                 o.id == "assign"
             );
         });
-        // adding new menu options
+        // добавление новых пунктов меню
         options.push({ type: "separator" });
         options.push({
             type: "item",

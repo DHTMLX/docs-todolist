@@ -58,13 +58,13 @@ console.log(list.getChildrenIds({ id: "1", tree: false })); // ['1.1', '1.2']
 Фильтрация может скрывать некоторые задачи на странице. Параметр `filtered` определяет, будут ли скрытые задачи включены в результат. Установите его в `true`, чтобы исключить их (по умолчанию `false`). Фрагмент ниже демонстрирует оба варианта:
 
 ~~~js
-// filter the tasks
+// фильтрация задач
 list.setFilter({ match: "#tag1", highlight: true });
 
-// get children of the task after filtering
+// получение дочерних элементов задачи после фильтрации
 console.log(list.getChildrenIds({ id: "1", filtered: false })); // -> ['1.1', '1.1.1', '1.2']
 
-// enable the "filtered" parameter
+// включение параметра "filtered"
 console.log(list.getChildrenIds({ id: "1", filtered: true })); // -> ['1.1', '1.1.1']
 ~~~
 
@@ -85,15 +85,15 @@ const tasks = [
     { id: "1.2", text: "Task 1.2", parent: "1" },
 ];
 
-// before filtering
+// до фильтрации
 console.log(list.getChildrenIds({ id: "1", tree: true, hideCompleted: false })); // -> ['1.1', '1.1.1', '1.2']
 
 console.log(list.getChildrenIds({ id: "1", tree: true, hideCompleted: true })); // ['1.1', '1.2']
 
-// filter the tasks
+// фильтрация задач
 list.setFilter({ match: "#tag1", highlight: true });
 
-// after filtering
+// после фильтрации
 console.log(list.getChildrenIds({ id: "1", filtered: true, tree: true, hideCompleted: false})); // -> ['1.1', '1.1.1']
 console.log(list.getChildrenIds({ id: "1", filtered: true, tree: true, hideCompleted: true })); // -> ['1.1']
 
@@ -113,17 +113,17 @@ const tasks = [
     { id: "1.2", text: "Task 1.2", parent: "1" },
 ];
 
-// check whether the task has children (before filtering)
+// проверка, есть ли у задачи дочерние элементы (до фильтрации)
 console.log(list.hasChildren({ id: "1.1" })); // -> true
 ~~~
 
 Фильтрация может скрывать некоторые задачи на странице. Параметр `filtered` определяет, будут ли отфильтрованные (скрытые) задачи включены в результат (`filtered: false` по умолчанию) или нет (`filtered: true`):
 
 ~~~js
-// filter the tasks
+// фильтрация задач
 list.setFilter({ match: "#tag3", highlight: true });
 
-// check whether the task has children (after filtering)
+// проверка, есть ли у задачи дочерние элементы (после фильтрации)
 console.log(list.hasChildren({ id: "1.1" })); // -> true
 console.log(list.hasChildren({ id: "1.1", filtered: true })); // -> false
 ~~~

@@ -96,25 +96,25 @@ import "@dhx/trial-todolist/dist/todo.css";
 ~~~jsx {2,6-7,10-11,13-17} title="ToDo.jsx"
 import { useEffect, useRef } from "react";
 import { ToDo, Toolbar } from "@dhx/trial-todolist";
-import "@dhx/trial-todolist/dist/todo.css"; // include To Do List styles
+import "@dhx/trial-todolist/dist/todo.css"; // подключение стилей To Do List
 
 export default function ToDoComponent(props) {
-    let toolbar_container = useRef(); // initialize container for Toolbar
-    let todo_container = useRef(); // initialize container for To Do List 
+    let toolbar_container = useRef(); // инициализация контейнера для Toolbar
+    let todo_container = useRef(); // инициализация контейнера для To Do List 
 
     useEffect(() => {
-        // initialize the To Do List component
+        // инициализация компонента To Do List
         const todo = new ToDo(todo_container.current, {});
 
-        // initialize the Toolbar component
+        // инициализация компонента Toolbar
         const toolbar = new Toolbar(toolbar_container.current, {
-            api: todo.api, // provide To Do List inner API
-            // other configuration properties
+            api: todo.api, // передача внутреннего API To Do List
+            // другие свойства конфигурации
         });
 
         return () => {
-            todo.destructor(); // destruct To Do List
-            toolbar.destructor(); // destruct Toolbar
+            todo.destructor(); // уничтожение To Do List
+            toolbar.destructor(); // уничтожение Toolbar
         };
     }, []);
 
@@ -130,7 +130,7 @@ export default function ToDoComponent(props) {
 Настройте стили, чтобы To Do List отображался корректно. Используйте файл *index.css* для задания стилей To Do List и его контейнеров. Пример ниже определяет размеры макета страницы:
 
 ~~~css title="index.css"
-/* styles for the initial page */
+/* стили для начальной страницы */
 html,
 body,
 #root {
@@ -140,14 +140,14 @@ body,
     background-color: #f7f7f7;
 }
 
-/* styles for the To Do List and Toolbar container */
+/* стили для контейнера To Do List и Toolbar */
 .component_container {
     height: 100%; 
     max-width: 800px; 
     margin: 0 auto;
 }
 
-/* styles for the To Do List container */
+/* стили для контейнера To Do List */
 .widget {
     height: calc(100% - 56px);
 }
@@ -229,12 +229,12 @@ export default function ToDoComponent(props) {
             users: props.users,
             tasks: props.tasks,
             projects: props.projects,
-            // other configuration properties
+            // другие свойства конфигурации
         });
 
         const toolbar = new Toolbar(toolbar_container.current, {
             api: todo.api,
-            // other configuration properties
+            // другие свойства конфигурации
         });
 
         return () => {
@@ -270,7 +270,7 @@ export default function ToDoComponent(props) {
 
         const toolbar = new Toolbar(toolbar_container.current, {
             api: todo.api,
-            // other configuration properties
+            // другие свойства конфигурации
         });
     
         todo.parse({ tasks, users, projects });

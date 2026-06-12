@@ -29,7 +29,7 @@ tasks?: [
         priority?: number | null,
         [key: string]?: any
     },
-    {...} // more task objects
+    {...} // другие объекты задач
 ];
 ~~~
 

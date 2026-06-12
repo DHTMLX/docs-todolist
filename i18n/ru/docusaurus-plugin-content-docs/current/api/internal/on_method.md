@@ -36,14 +36,14 @@ api.on(
 const { ToDo, Toolbar } = todo;
 const { tasks, users, projects } = getData();
 
-// create To do list
+// создание To Do List
 const list = new ToDo("#root", {
     tasks,
     users,
     projects
 });
 
-// output the project data to console when you remove it
+// вывод данных проекта в консоль при его удалении
 list.api.on("delete-project", ({ id }) => {
     console.log( "The id of the project", { id });
 });
