@@ -52,4 +52,4 @@ list.api.on("uncheck-task", ({id}) => {
 });
 ~~~
 
-**관련 문서:** [태스크 작업](guides/task_operations.md#marking-a-task-completeincomplete)
+**관련 문서**: [태스크 작업](guides/task_operations.md#marking-a-task-completeincomplete)

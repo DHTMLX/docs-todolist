@@ -47,7 +47,7 @@ const list = new ToDo("#root", {
 });
 ~~~
 
-**Связанный пример:** [To do list. Счётчик подзадач и формат даты](https://snippet.dhtmlx.com/magidhw8)
+**Связанный пример**: [To do list. Счётчик подзадач и формат даты](https://snippet.dhtmlx.com/magidhw8)
 
 ### Формат даты {#date-format}
 
@@ -67,7 +67,7 @@ const list = new ToDo("#root", {
 });
 ~~~
 
-**Связанный пример:** [To do list. Счётчик подзадач и формат даты](https://snippet.dhtmlx.com/magidhw8)
+**Связанный пример**: [To do list. Счётчик подзадач и формат даты](https://snippet.dhtmlx.com/magidhw8)
 
 Проверьте [список доступных символов](api/configs/taskshape_config.md#list-of-characters).
 
@@ -178,7 +178,7 @@ const list = new ToDo("#root", {
 });
 ~~~
 
-**Связанный пример:** [To do list. Два варианта отметки родительской задачи как выполненной](https://snippet.dhtmlx.com/5892fcr2)
+**Связанный пример**: [To do list. Два варианта отметки родительской задачи как выполненной](https://snippet.dhtmlx.com/5892fcr2)
 
 ## История изменений {#history-of-changes}
 

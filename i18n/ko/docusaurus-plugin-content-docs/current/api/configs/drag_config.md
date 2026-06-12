@@ -68,6 +68,6 @@ const toolbar = new Toolbar("#toolbar", {
 });
 ~~~
 
-**변경 이력:** v1.1에서 추가됨
+**변경 이력**: v1.1에서 추가됨
 
-**관련 문서:** [구성](guides/configuration.md#drag-n-drop)
+**관련 문서**: [구성](guides/configuration.md#drag-n-drop)

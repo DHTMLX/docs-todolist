@@ -135,16 +135,16 @@ DHTMLX To Do List uses the following characters for setting a date format:
 Check the [**Localization**](guides/localization.md) article to learn how to present the date labels in the necessary language
 :::
 
-**Change log:**
+**Change log**:
 
 - The `priority` parameter was added in v1.2
 
-**Related articles:**
+**Related articles**:
 
 - [Configuration](guides/configuration.md#tasks)
 - [Show/hide completed tasks](guides/hide_completed_tasks.md)
 
-**Related samples:**
+**Related samples**:
 - [To do list. Subtask counter and date format](https://snippet.dhtmlx.com/magidhw8?tag=todolist)
 - [To do list. Two variants of marking a parent task done](https://snippet.dhtmlx.com/5892fcr2?tag=todolist)
 - [To do list. Custom hotkeys for setting priorities](https://snippet.dhtmlx.com/5cymicwt?tag=todolist)

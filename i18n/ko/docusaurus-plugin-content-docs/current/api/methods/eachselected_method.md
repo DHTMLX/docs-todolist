@@ -72,6 +72,6 @@ list.eachSelected(id => {
 }, true, true);
 ~~~
 
-**변경 이력:** v1.1에서 추가되었습니다
+**변경 이력**: v1.1에서 추가되었습니다
 
-**관련 문서:** [다중 선택 및 일괄 작업](guides/multiselection.md)
+**관련 문서**: [다중 선택 및 일괄 작업](guides/multiselection.md)

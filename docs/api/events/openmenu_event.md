@@ -50,4 +50,4 @@ list.api.on("open-menu", ({id, type, source}) => {
 });
 ~~~
 
-**Change log:** Added in v1.1
+**Change log**: Added in v1.1

@@ -52,6 +52,6 @@ Die Toolbar ist eine separate Komponente von To Do List. Daher müssen Sie das e
 Um das Gebietsschema dynamisch zu ändern, verwenden Sie die Methode [`setLocale()`](api/methods/setlocale_method.md).
 :::
 
-**Verwandter Artikel:** [Lokalisierung](guides/localization.md)
+**Verwandter Artikel**: [Lokalisierung](guides/localization.md)
 
-**Verwandtes Beispiel:** [To-do-Liste. Lokalisierung](https://snippet.dhtmlx.com/kzjwvuq5)
+**Verwandtes Beispiel**: [To-do-Liste. Lokalisierung](https://snippet.dhtmlx.com/kzjwvuq5)

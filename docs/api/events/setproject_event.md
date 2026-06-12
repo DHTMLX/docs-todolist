@@ -54,4 +54,4 @@ list.api.on("set-project", ({id}) => {
 });
 ~~~
 
-**Related article:** [Operations with projects](guides/project_operations.md#changing-the-active-project)
+**Related article**: [Operations with projects](guides/project_operations.md#changing-the-active-project)

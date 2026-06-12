@@ -134,4 +134,4 @@ toolbar.setLocale(de, list.api);
 To Do List의 **Toolbar**는 별도 컴포넌트입니다. Toolbar의 로케일을 변경하기 전에 **To Do List** 컴포넌트에 [`setLocale()`](api/toolbar_api/methods/setlocale_method.md) 메서드를 먼저 적용했는지 확인하세요
 :::
 
-**관련 문서:** [지역화](guides/localization.md)
+**관련 문서**: [지역화](guides/localization.md)

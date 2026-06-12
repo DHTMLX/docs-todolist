@@ -47,4 +47,4 @@ const toolbar = new Toolbar("#toolbar", {
 });
 ~~~
 
-**Verwandter Artikel:** [Nur-Lesen-Modus](guides/readonly_mode.md)
+**Verwandter Artikel**: [Nur-Lesen-Modus](guides/readonly_mode.md)

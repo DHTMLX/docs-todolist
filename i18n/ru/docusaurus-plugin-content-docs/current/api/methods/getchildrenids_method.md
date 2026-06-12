@@ -73,6 +73,6 @@ console.log(list.getChildrenIds({ id: "1", filtered: true, tree: false })); // -
 console.log(list.getChildrenIds({ id: "1", filtered: true, hideCompleted: true })); // -> ['1.1']
 ~~~
 
-**История изменений:** Параметр `hideCompleted` добавлен в v1.1
+**История изменений**: Параметр `hideCompleted` добавлен в v1.1
 
-**Связанная статья:** [Объект задачи/Id](guides/task_object.md)
+**Связанная статья**: [Объект задачи/Id](guides/task_object.md)

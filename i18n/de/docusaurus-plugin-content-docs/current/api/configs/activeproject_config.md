@@ -50,4 +50,4 @@ const toolbar = new Toolbar("#toolbar", {
 });
 ~~~
 
-**Verwandter Artikel:** [Projekte verwalten](guides/project_index.md)
+**Verwandter Artikel**: [Projekte verwalten](guides/project_index.md)

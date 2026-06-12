@@ -49,6 +49,6 @@ list.api.on("unselect-task", ({id}) => {
 });
 ~~~
 
-**Связанные статьи:**
+**Связанные статьи**:
 - [Операции с задачами](guides/task_operations.md)
 - [Множественный выбор и групповые операции](guides/multiselection.md)

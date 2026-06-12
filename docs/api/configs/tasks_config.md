@@ -112,8 +112,8 @@ const toolbar = new Toolbar("#toolbar", {
 });
 ~~~
 
-**Change log:** The `priority` parameter was added in v1.2
+**Change log**: The `priority` parameter was added in v1.2
 
-**Related articles:**
+**Related articles**:
 - [Loading and storing data](guides/loading_data.md)
 - [Managing tasks](guides/task_index.md)

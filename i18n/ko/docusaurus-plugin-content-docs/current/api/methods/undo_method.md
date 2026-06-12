@@ -39,8 +39,8 @@ list.addTask({ task: { text: "New task 1" } });
 list.undo();
 ~~~
 
-**변경 로그:** `undo()` 메서드는 v1.3에서 추가됨
+**변경 로그**: `undo()` 메서드는 v1.3에서 추가됨
 
-**관련 API:**
+**관련 API**:
     - [`history`](api/configs/history_config.md)
     - [`redo`](api/methods/redo_method.md)

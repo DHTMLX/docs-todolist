@@ -112,7 +112,7 @@ list.pasteTask({
 list.unselectTask({ id: null });
 ~~~
 
-**Change log:** The `join` parameter was added in v1.1
+**Change log**: The `join` parameter was added in v1.1
 
-**Related article:** [Operations with tasks](guides/task_operations.md)
+**Related article**: [Operations with tasks](guides/task_operations.md)
 

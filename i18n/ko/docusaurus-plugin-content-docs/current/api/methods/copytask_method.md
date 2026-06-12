@@ -112,6 +112,6 @@ list.pasteTask({
 list.unselectTask({ id: null });
 ~~~
 
-**변경 이력:** `join` 매개변수는 v1.1에서 추가되었습니다
+**변경 이력**: `join` 매개변수는 v1.1에서 추가되었습니다
 
-**관련 문서:** [태스크 작업](guides/task_operations.md)
+**관련 문서**: [태스크 작업](guides/task_operations.md)

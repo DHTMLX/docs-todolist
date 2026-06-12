@@ -59,6 +59,6 @@ list.api.on("drag", ({start, source, target, dropPosition}) => {
 });
 ~~~
 
-**변경 사항:** v1.1에서 추가됨
+**변경 사항**: v1.1에서 추가됨
 
-**관련 문서:** [드래그 앤 드롭](guides/configuration.md#drag-n-drop)
+**관련 문서**: [드래그 앤 드롭](guides/configuration.md#drag-n-drop)

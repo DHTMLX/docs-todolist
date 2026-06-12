@@ -55,6 +55,6 @@ const toolbar = new Toolbar("#toolbar", {
 기본적으로 프로젝트 객체 목록의 첫 번째 프로젝트가 활성 프로젝트로 로드됩니다. 다른 프로젝트를 활성 프로젝트로 지정하려면 [`activeProject`](api/configs/activeproject_config.md) 속성을 사용하세요
 :::
 
-**관련 문서:** 
+**관련 문서**: 
 - [데이터 로드 및 저장](guides/loading_data.md)
 - [프로젝트 관리](guides/project_index.md)

@@ -68,6 +68,6 @@ console.log(list.hasChildren({ id: "1.1", hideCompleted: true })); // -> false
 console.log(list.hasChildren({ id: "1.1", filtered: true })); // -> false
 ~~~
 
-**Änderungsprotokoll:** Der Parameter `hideCompleted` wurde in v1.1 hinzugefügt
+**Änderungsprotokoll**: Der Parameter `hideCompleted` wurde in v1.1 hinzugefügt
 
-**Verwandter Artikel:** [Aufgabenobjekt/ID](guides/task_object.md)
+**Verwandter Artikel**: [Aufgabenobjekt/ID](guides/task_object.md)

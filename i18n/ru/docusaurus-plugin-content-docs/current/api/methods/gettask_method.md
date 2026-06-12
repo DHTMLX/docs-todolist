@@ -48,4 +48,4 @@ const toolbar = new Toolbar("#toolbar", {
 list.getTask({ id: "1.2" }); // -> {id: '1.2', text: 'Task 1.2', parent: '1'}
 ~~~
 
-**Связанная статья:** [Объект задачи/Id](guides/task_object.md)
+**Связанная статья**: [Объект задачи/Id](guides/task_object.md)

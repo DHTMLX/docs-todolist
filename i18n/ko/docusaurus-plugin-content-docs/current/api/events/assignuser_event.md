@@ -52,4 +52,4 @@ list.api.on("assign-user", ({id, userId}) => {
 });
 ~~~
 
-**관련 문서:** [작업 사용자](guides/task_users.md)
+**관련 문서**: [작업 사용자](guides/task_users.md)

@@ -112,6 +112,6 @@ list.pasteTask({
 list.unselectTask({ id: null });
 ~~~
 
-**Änderungsprotokoll:** Der Parameter `join` wurde in v1.1 hinzugefügt
+**Änderungsprotokoll**: Der Parameter `join` wurde in v1.1 hinzugefügt
 
-**Verwandter Artikel:** [Operationen mit Aufgaben](guides/task_operations.md)
+**Verwandter Artikel**: [Operationen mit Aufgaben](guides/task_operations.md)

@@ -50,4 +50,4 @@ const toolbar = new Toolbar("#toolbar", {
 });
 ~~~
 
-**Связанная статья:** [Управление проектами](guides/project_index.md)
+**Связанная статья**: [Управление проектами](guides/project_index.md)

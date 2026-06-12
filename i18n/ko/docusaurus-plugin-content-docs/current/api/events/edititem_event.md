@@ -52,4 +52,4 @@ list.api.on("edit-item", ({id, currentValue}) => {
 });
 ~~~
 
-**관련 문서:** [인라인 편집](guides/inline_editing.md)
+**관련 문서**: [인라인 편집](guides/inline_editing.md)

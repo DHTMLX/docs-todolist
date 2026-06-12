@@ -56,6 +56,6 @@ list.setSort({
 });
 ~~~
 
-**변경 로그:** v1.1에서 추가됨
+**변경 로그**: v1.1에서 추가됨
 
-**관련 문서:** [작업 정렬 및 필터링](guides/sorting_filtering_tasks.md)
+**관련 문서**: [작업 정렬 및 필터링](guides/sorting_filtering_tasks.md)

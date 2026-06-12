@@ -59,6 +59,6 @@ list.api.on("drag", ({ target, dropPosition, mode }) => {
 });
 ~~~
 
-**Change log:** 在 v1.1 中新增
+**Change log**: 在 v1.1 中新增
 
 **相关文章：** [拖放](guides/configuration.md#drag-n-drop)

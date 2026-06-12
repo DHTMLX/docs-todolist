@@ -59,6 +59,6 @@ list.api.on("drag", ({ target, dropPosition, mode }) => {
 });
 ~~~
 
-**Änderungsprotokoll:** Hinzugefügt in v1.1
+**Änderungsprotokoll**: Hinzugefügt in v1.1
 
-**Verwandter Artikel:** [Drag-n-drop](guides/configuration.md#drag-n-drop)
+**Verwandter Artikel**: [Drag-n-drop](guides/configuration.md#drag-n-drop)

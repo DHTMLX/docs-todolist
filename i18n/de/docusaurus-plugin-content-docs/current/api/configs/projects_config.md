@@ -55,6 +55,6 @@ const toolbar = new Toolbar("#toolbar", {
 Standardmäßig wird das erste Projekt aus der Liste der Projektobjekte als aktives Projekt geladen. Um ein anderes Projekt als aktives Projekt festzulegen, verwenden Sie die Eigenschaft [`activeProject`](api/configs/activeproject_config.md).
 :::
 
-**Verwandte Artikel:** 
+**Verwandte Artikel**: 
 - [Daten laden und speichern](guides/loading_data.md)
 - [Projekte verwalten](guides/project_index.md)

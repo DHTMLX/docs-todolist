@@ -42,6 +42,6 @@ list.api.on("hide-completed-tasks", () => {
 });
 ~~~
 
-**Change log:** 在 v1.1 中新增
+**Change log**: 在 v1.1 中新增
 
 **相关文章：** [显示/隐藏已完成任务](guides/hide_completed_tasks.md)

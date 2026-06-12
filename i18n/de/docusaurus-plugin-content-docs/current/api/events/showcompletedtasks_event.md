@@ -42,6 +42,6 @@ list.api.on("show-completed-tasks", () => {
 });
 ~~~
 
-**Änderungsprotokoll:** Hinzugefügt in v1.1
+**Änderungsprotokoll**: Hinzugefügt in v1.1
 
-**Verwandter Artikel:** [Erledigte Aufgaben anzeigen/ausblenden](guides/hide_completed_tasks.md)
+**Verwandter Artikel**: [Erledigte Aufgaben anzeigen/ausblenden](guides/hide_completed_tasks.md)

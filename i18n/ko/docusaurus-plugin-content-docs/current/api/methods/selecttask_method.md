@@ -57,6 +57,6 @@ list.selectTask({
 console.log(list.getSelection()); // -> ['1.1', '1.1.1']
 ~~~
 
-**변경 로그:** `join` 파라미터는 v1.1에서 추가되었습니다
+**변경 로그**: `join` 파라미터는 v1.1에서 추가되었습니다
 
-**관련 문서:** [다중 선택 및 일괄 작업](guides/multiselection.md)
+**관련 문서**: [다중 선택 및 일괄 작업](guides/multiselection.md)

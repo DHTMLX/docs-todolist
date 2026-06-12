@@ -69,6 +69,6 @@ list.eachSelected(id => {
 }, true);
 ~~~
 
-**Verwandte Artikel:**
+**Verwandte Artikel**:
 - [Operationen mit Aufgaben](guides/task_operations.md)
 - [Mehrfachauswahl und Massenoperationen](guides/multiselection.md)

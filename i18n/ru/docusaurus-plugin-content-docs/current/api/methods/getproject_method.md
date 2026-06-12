@@ -48,4 +48,4 @@ const toolbar = new Toolbar("#toolbar", {
 list.getProject({ id: "first" }); // -> {id: 'first', label: 'First project'}
 ~~~
 
-**Связанная статья:** [Объект проекта](guides/project_object_operations.md)
+**Связанная статья**: [Объект проекта](guides/project_object_operations.md)

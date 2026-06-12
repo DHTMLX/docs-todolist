@@ -42,6 +42,6 @@ const toolbar = new Toolbar("#toolbar", {
 });
 ~~~
 
-**Связанные статьи:** 
+**Связанные статьи**: 
 - [Загрузка и хранение данных](guides/loading_data.md)
 - [Встроенное редактирование](guides/inline_editing.md)

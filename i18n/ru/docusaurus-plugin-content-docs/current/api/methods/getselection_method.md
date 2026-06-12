@@ -54,8 +54,8 @@ console.log(list.getSelection({ sorted: false })); // ["1.2", "1.1", "2.2", "2.1
 console.log(list.getSelection({ sorted: true })); // ["1.1", "1.2", "2.1", "2.2"]
 ~~~
 
-**История изменений:** Параметр `sorted` добавлен в v1.1
+**История изменений**: Параметр `sorted` добавлен в v1.1
 
-**Связанная статья:** 
+**Связанная статья**: 
 - [Объект задачи/Id](guides/task_object.md)
 - [Множественный выбор и групповые операции](guides/multiselection.md)

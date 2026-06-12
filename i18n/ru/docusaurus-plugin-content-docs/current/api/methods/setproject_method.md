@@ -46,4 +46,4 @@ list.setProject({
 });
 ~~~
 
-**Связанная статья:** [Операции с проектами](guides/project_operations.md)
+**Связанная статья**: [Операции с проектами](guides/project_operations.md)

@@ -42,6 +42,6 @@ const toolbar = new Toolbar("#toolbar", {
 });
 ~~~
 
-**Verwandte Artikel:** 
+**Verwandte Artikel**: 
 - [Daten laden und speichern](guides/loading_data.md)
 - [Inline-Bearbeitung](guides/inline_editing.md)

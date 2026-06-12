@@ -47,4 +47,4 @@ const toolbar = new Toolbar("#toolbar", {
 list.deleteProject({ id: "first" });
 ~~~
 
-**관련 문서:** [프로젝트 작업](guides/project_operations.md)
+**관련 문서**: [프로젝트 작업](guides/project_operations.md)

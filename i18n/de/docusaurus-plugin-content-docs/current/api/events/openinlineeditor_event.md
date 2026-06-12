@@ -52,4 +52,4 @@ list.api.on("open-inline-editor", ({id, type}) => {
 });
 ~~~
 
-**Verwandter Artikel:** [Inline-Bearbeitung](guides/inline_editing.md#working-with-editor)
+**Verwandter Artikel**: [Inline-Bearbeitung](guides/inline_editing.md#working-with-editor)

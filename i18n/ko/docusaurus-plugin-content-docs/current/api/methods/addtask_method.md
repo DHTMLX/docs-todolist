@@ -75,4 +75,4 @@ list.addTask({
 });
 ~~~
 
-**관련 문서:** [태스크 관련 작업](guides/task_operations.md)
+**관련 문서**: [태스크 관련 작업](guides/task_operations.md)

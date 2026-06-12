@@ -48,4 +48,4 @@ list.openInlineEditor({
 });
 ~~~
 
-**Связанная статья:** [Встроенное редактирование](guides/inline_editing.md)
+**Связанная статья**: [Встроенное редактирование](guides/inline_editing.md)

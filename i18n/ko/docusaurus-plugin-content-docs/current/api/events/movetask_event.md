@@ -67,4 +67,4 @@ list.api.on("move-task", ({id}) => {
 }); 
 ~~~
 
-**관련 문서:** [태스크 작업](guides/task_operations.md#moving-a-task)
+**관련 문서**: [태스크 작업](guides/task_operations.md#moving-a-task)

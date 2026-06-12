@@ -50,4 +50,4 @@ list.api.on("indent-task", ({id}) => {
 });
 ~~~
 
-**Verwandter Artikel:** [Operationen mit Aufgaben](guides/task_operations.md#changing-the-indent-level-of-a-task)
+**Verwandter Artikel**: [Operationen mit Aufgaben](guides/task_operations.md#changing-the-indent-level-of-a-task)

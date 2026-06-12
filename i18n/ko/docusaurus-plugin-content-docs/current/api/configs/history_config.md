@@ -64,8 +64,8 @@ new ToDo("#root", {
 });
 ~~~
 
-**변경 이력:** `history` config는 v1.3에서 추가되었습니다
+**변경 이력**: `history` config는 v1.3에서 추가되었습니다
 
-**관련 API:**
+**관련 API**:
     - [`redo`](api/methods/redo_method.md)
     - [`undo`](api/methods/undo_method.md)

@@ -51,4 +51,4 @@ list.addProject({
 });
 ~~~
 
-**관련 문서:** [프로젝트 관련 작업](guides/project_operations.md)
+**관련 문서**: [프로젝트 관련 작업](guides/project_operations.md)

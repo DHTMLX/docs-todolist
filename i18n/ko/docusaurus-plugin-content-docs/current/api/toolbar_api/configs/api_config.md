@@ -37,5 +37,5 @@ const toolbar = new Toolbar("#toolbar", {
 });
 ~~~
 
-**관련 문서:**
+**관련 문서**:
 - [초기화](guides/initialization.md)

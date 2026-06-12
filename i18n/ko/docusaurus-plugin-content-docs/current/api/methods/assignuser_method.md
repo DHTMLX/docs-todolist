@@ -54,4 +54,4 @@ list.assignUser({
 });
 ~~~
 
-**관련 문서:** [태스크 담당자](guides/task_users.md)
+**관련 문서**: [태스크 담당자](guides/task_users.md)

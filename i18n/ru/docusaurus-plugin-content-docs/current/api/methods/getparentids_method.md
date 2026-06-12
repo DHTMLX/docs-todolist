@@ -52,4 +52,4 @@ const toolbar = new Toolbar("#toolbar", {
 console.log(list.getParentIds({ id: "1.1.1" })); //  ['1.1', '1']
 ~~~
 
-**Связанная статья:** [Объект задачи/Id](guides/task_object.md)
+**Связанная статья**: [Объект задачи/Id](guides/task_object.md)

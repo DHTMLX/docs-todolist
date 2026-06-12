@@ -56,4 +56,4 @@ list.setFilter({
 list.setFilter({ match: null });
 ~~~
 
-**Verwandter Artikel:** [Aufgaben sortieren und filtern](guides/sorting_filtering_tasks.md)
+**Verwandter Artikel**: [Aufgaben sortieren und filtern](guides/sorting_filtering_tasks.md)

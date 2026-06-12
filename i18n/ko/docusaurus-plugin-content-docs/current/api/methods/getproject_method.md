@@ -48,4 +48,4 @@ const toolbar = new Toolbar("#toolbar", {
 list.getProject({ id: "first" }); // -> {id: 'first', label: 'First project'}
 ~~~
 
-**관련 문서:** [프로젝트 객체](guides/project_object_operations.md)
+**관련 문서**: [프로젝트 객체](guides/project_object_operations.md)

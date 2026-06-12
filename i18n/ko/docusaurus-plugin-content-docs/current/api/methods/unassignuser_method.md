@@ -54,4 +54,4 @@ list.unassignUser({
 });
 ~~~
 
-**관련 문서:** [작업 담당자](guides/task_users.md)
+**관련 문서**: [작업 담당자](guides/task_users.md)

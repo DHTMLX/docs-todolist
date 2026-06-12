@@ -52,4 +52,4 @@ list.api.on("close-inline-editor", ({id, save}) => {
 });
 ~~~
 
-**Related article:** [Inline editing](guides/inline_editing.md#working-with-editor)
+**Related article**: [Inline editing](guides/inline_editing.md#working-with-editor)

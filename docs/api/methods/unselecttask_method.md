@@ -52,6 +52,6 @@ list.selectTask({ id: "1.1"});
 list.unselectTask({ id: "1.1" });
 ~~~
 
-**Change log:** The ability to pass `id: null` to the method was added in v1.1
+**Change log**: The ability to pass `id: null` to the method was added in v1.1
 
-**Related article:** [Multiple select and bulk operations](guides/multiselection.md)
+**Related article**: [Multiple select and bulk operations](guides/multiselection.md)

@@ -52,4 +52,4 @@ list.api.on("unassign-user", ({id, userId}) => {
 });
 ~~~
 
-**Связанная статья:** [Пользователи задач](guides/task_users.md)
+**Связанная статья**: [Пользователи задач](guides/task_users.md)

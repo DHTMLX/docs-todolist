@@ -65,6 +65,6 @@ list.api.on("copy-task", ({id}) => {
 });
 ~~~ 
 
-**Change log:** The `join` parameter was added in v1.1
+**Change log**: The `join` parameter was added in v1.1
 
-**Related article:** [Operations with tasks](guides/task_operations.md#copyingpasting-a-task)
+**Related article**: [Operations with tasks](guides/task_operations.md#copyingpasting-a-task)

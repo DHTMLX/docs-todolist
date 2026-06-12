@@ -47,4 +47,4 @@ list.existsProject({ id: 1 }); // -> false
 list.existsProject({ id: "first" }); // -> true
 ~~~
 
-**Связанная статья:** [Объект проекта](guides/project_object_operations.md)
+**Связанная статья**: [Объект проекта](guides/project_object_operations.md)

@@ -52,4 +52,4 @@ list.api.on("delete-task", ({id}) => {
 });
 ~~~
 
-**관련 문서:** [태스크 작업](guides/task_operations.md#deleting-a-task)
+**관련 문서**: [태스크 작업](guides/task_operations.md#deleting-a-task)

@@ -56,4 +56,4 @@ list.setFilter({
 list.setFilter({ match: null });
 ~~~
 
-**Связанная статья:** [Сортировка и фильтрация задач](guides/sorting_filtering_tasks.md)
+**Связанная статья**: [Сортировка и фильтрация задач](guides/sorting_filtering_tasks.md)

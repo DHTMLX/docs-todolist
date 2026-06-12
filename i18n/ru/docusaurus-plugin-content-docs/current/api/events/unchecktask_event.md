@@ -52,4 +52,4 @@ list.api.on("uncheck-task", ({id}) => {
 });
 ~~~
 
-**Связанная статья:** [Операции с задачами](guides/task_operations.md#marking-a-task-completeincomplete)
+**Связанная статья**: [Операции с задачами](guides/task_operations.md#marking-a-task-completeincomplete)

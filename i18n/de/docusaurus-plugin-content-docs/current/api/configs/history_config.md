@@ -64,8 +64,8 @@ new ToDo("#root", {
 });
 ~~~
 
-**Änderungsprotokoll:** Die Konfiguration `history` wurde in v1.3 hinzugefügt
+**Änderungsprotokoll**: Die Konfiguration `history` wurde in v1.3 hinzugefügt
 
-**Verwandte API:**
+**Verwandte API**:
     - [`redo`](api/methods/redo_method.md)
     - [`undo`](api/methods/undo_method.md)

@@ -35,6 +35,6 @@ const toolbar = new Toolbar("#toolbar", {
 list.showCompletedTasks(); 
 ~~~
 
-**История изменений:** Добавлено в v1.1
+**История изменений**: Добавлено в v1.1
 
-**Связанная статья:** [Показать/скрыть выполненные задачи](guides/hide_completed_tasks.md)
+**Связанная статья**: [Показать/скрыть выполненные задачи](guides/hide_completed_tasks.md)

@@ -54,4 +54,4 @@ list.unassignUser({
 });
 ~~~
 
-**Связанная статья:** [Исполнители задач](guides/task_users.md)
+**Связанная статья**: [Исполнители задач](guides/task_users.md)

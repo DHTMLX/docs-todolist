@@ -56,4 +56,4 @@ list.api.on("set-filter", (obj) => {
 });
 ~~~
 
-**Verwandter Artikel:** [Aufgaben sortieren und filtern](guides/sorting_filtering_tasks.md)
+**Verwandter Artikel**: [Aufgaben sortieren und filtern](guides/sorting_filtering_tasks.md)

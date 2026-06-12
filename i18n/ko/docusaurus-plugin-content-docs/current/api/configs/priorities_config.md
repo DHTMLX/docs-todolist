@@ -118,7 +118,7 @@ document.addEventListener("keydown", event => {
 });
 ~~~
 
-**관련 문서:**
+**관련 문서**:
 - [데이터 로드 및 저장](guides/loading_data.md)
 
-**관련 예제:** [To do list. 우선순위 설정을 위한 사용자 정의 단축키](https://snippet.dhtmlx.com/5cymicwt?tag=todolist)
+**관련 예제**: [To do list. 우선순위 설정을 위한 사용자 정의 단축키](https://snippet.dhtmlx.com/5cymicwt?tag=todolist)

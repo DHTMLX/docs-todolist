@@ -52,4 +52,4 @@ list.api.on("uncheck-task", ({id}) => {
 });
 ~~~
 
-**Verwandter Artikel:** [Operationen mit Aufgaben](guides/task_operations.md#marking-a-task-completeincomplete)
+**Verwandter Artikel**: [Operationen mit Aufgaben](guides/task_operations.md#marking-a-task-completeincomplete)

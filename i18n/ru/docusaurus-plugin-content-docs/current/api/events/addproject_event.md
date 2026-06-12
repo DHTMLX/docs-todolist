@@ -53,4 +53,4 @@ list.api.on("add-project", ({id, project}) => {
 });
 ~~~
 
-**Связанная статья:** [Операции с проектами](guides/project_operations.md#adding-a-new-project)
+**Связанная статья**: [Операции с проектами](guides/project_operations.md#adding-a-new-project)

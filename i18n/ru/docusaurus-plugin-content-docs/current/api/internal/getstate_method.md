@@ -52,4 +52,4 @@ const state = list.api.getState();
 console.log(state);
 ~~~
 
-**История изменений:** Параметр `historyState` был добавлен в v1.3
+**История изменений**: Параметр `historyState` был добавлен в v1.3

@@ -50,4 +50,4 @@ const toolbar = new Toolbar("#toolbar", {
 });
 ~~~
 
-**관련 문서:** [프로젝트 관리](guides/project_index.md)
+**관련 문서**: [프로젝트 관리](guides/project_index.md)

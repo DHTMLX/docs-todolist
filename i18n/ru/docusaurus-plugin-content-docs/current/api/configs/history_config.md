@@ -64,8 +64,8 @@ new ToDo("#root", {
 });
 ~~~
 
-**История изменений:** Конфиг `history` добавлен в v1.3
+**История изменений**: Конфиг `history` добавлен в v1.3
 
-**Связанный API:**
+**Связанный API**:
     - [`redo`](api/methods/redo_method.md)
     - [`undo`](api/methods/undo_method.md)

@@ -54,6 +54,6 @@ list.api.on("start-drag", ({ start, mode }) => {
 });
 ~~~
 
-**변경 이력:** v1.1에서 추가됨
+**변경 이력**: v1.1에서 추가됨
 
-**관련 문서:** [드래그 앤 드롭](guides/configuration.md#drag-n-drop)
+**관련 문서**: [드래그 앤 드롭](guides/configuration.md#drag-n-drop)

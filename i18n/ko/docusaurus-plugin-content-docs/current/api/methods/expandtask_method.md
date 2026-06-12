@@ -51,4 +51,4 @@ list.expandTask({
 });
 ~~~
 
-**관련 문서:** [작업 관련 연산](guides/task_operations.md)
+**관련 문서**: [작업 관련 연산](guides/task_operations.md)

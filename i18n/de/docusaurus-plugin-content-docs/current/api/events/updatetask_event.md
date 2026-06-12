@@ -58,4 +58,4 @@ list.api.on("update-task", ({id, task}) => {
 ~~~
 
 
-**Verwandter Artikel:** [Operationen mit Aufgaben](guides/task_operations.md#updating-a-task)
+**Verwandter Artikel**: [Operationen mit Aufgaben](guides/task_operations.md#updating-a-task)

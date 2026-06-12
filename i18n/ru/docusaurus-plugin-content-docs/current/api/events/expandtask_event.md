@@ -50,4 +50,4 @@ list.api.on("expand-task", ({id}) => {
 });
 ~~~ 
 
-**Связанная статья:** [Операции с задачами](guides/task_operations.md#expandingcollapsing-a-task)
+**Связанная статья**: [Операции с задачами](guides/task_operations.md#expandingcollapsing-a-task)

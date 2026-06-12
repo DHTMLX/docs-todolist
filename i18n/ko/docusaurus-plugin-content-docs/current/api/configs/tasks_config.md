@@ -112,8 +112,8 @@ const toolbar = new Toolbar("#toolbar", {
 });
 ~~~
 
-**변경 이력:** `priority` 파라미터가 v1.2에서 추가됨
+**변경 이력**: `priority` 파라미터가 v1.2에서 추가됨
 
-**관련 문서:**
+**관련 문서**:
 - [데이터 로드 및 저장](guides/loading_data.md)
 - [작업 관리](guides/task_index.md)

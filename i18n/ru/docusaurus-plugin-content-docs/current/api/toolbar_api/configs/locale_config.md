@@ -53,4 +53,4 @@ Toolbar является отдельным компонентом To Do List. �
 Для динамического изменения локали используйте метод [`setLocale()`](api/toolbar_api/methods/setlocale_method.md)
 :::
 
-**Связанная статья:** [Локализация](guides/localization.md)
+**Связанная статья**: [Локализация](guides/localization.md)

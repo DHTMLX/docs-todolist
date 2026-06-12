@@ -55,4 +55,4 @@ list.api.getReactiveState().selected.subscribe((value) => {
 });
 ~~~
 
-**Änderungsprotokoll:** Der Parameter `historyState` wurde in v1.3 hinzugefügt
+**Änderungsprotokoll**: Der Parameter `historyState` wurde in v1.3 hinzugefügt

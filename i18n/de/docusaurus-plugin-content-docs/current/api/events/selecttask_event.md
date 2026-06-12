@@ -55,8 +55,8 @@ list.api.on("select-task", ({id, join}) => {
 });
 ~~~
 
-**Änderungsprotokoll:** Der Parameter `join` wurde in v1.1 hinzugefügt
+**Änderungsprotokoll**: Der Parameter `join` wurde in v1.1 hinzugefügt
 
-**Verwandte Artikel:**
+**Verwandte Artikel**:
 - [Operationen mit Aufgaben](guides/task_operations.md)
 - [Mehrfachauswahl und Massenoperationen](guides/multiselection.md)

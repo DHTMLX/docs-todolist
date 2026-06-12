@@ -52,4 +52,4 @@ const toolbar = new Toolbar("#toolbar", {
 console.log(list.getParentIds({ id: "1.1.1" })); //  ['1.1', '1']
 ~~~
 
-**Verwandter Artikel:** [Aufgabenobjekt/ID](guides/task_object.md)
+**Verwandter Artikel**: [Aufgabenobjekt/ID](guides/task_object.md)

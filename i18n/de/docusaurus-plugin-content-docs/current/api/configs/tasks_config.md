@@ -112,8 +112,8 @@ const toolbar = new Toolbar("#toolbar", {
 });
 ~~~
 
-**Änderungsprotokoll:** Der Parameter `priority` wurde in v1.2 hinzugefügt
+**Änderungsprotokoll**: Der Parameter `priority` wurde in v1.2 hinzugefügt
 
-**Verwandte Artikel:**
+**Verwandte Artikel**:
 - [Daten laden und speichern](guides/loading_data.md)
 - [Aufgaben verwalten](guides/task_index.md)

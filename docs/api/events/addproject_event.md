@@ -53,4 +53,4 @@ list.api.on("add-project", ({id, project}) => {
 });
 ~~~
 
-**Related article:** [Operations with projects](guides/project_operations.md#adding-a-new-project)
+**Related article**: [Operations with projects](guides/project_operations.md#adding-a-new-project)

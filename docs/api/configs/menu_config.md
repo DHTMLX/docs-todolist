@@ -268,9 +268,9 @@ new ToDo("#root", {
 });
 ~~~
 
-**Change log:** The `menu` config was added in v1.3
+**Change log**: The `menu` config was added in v1.3
 
-**Related samples:**
+**Related samples**:
     - [To do list. Menu customization. Adding and removing options](https://snippet.dhtmlx.com/slpjstbb)
     - [To do list. Menu customization. Custom icons](https://snippet.dhtmlx.com/cmfqmg00)
     - [To do list. Remove menu for specific part of interface](https://snippet.dhtmlx.com/5pnk7y0d)

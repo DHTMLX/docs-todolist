@@ -65,6 +65,6 @@ list.api.on("copy-task", ({id}) => {
 });
 ~~~ 
 
-**변경 사항:** `join` 매개변수가 v1.1에서 추가됨
+**변경 사항**: `join` 매개변수가 v1.1에서 추가됨
 
-**관련 문서:** [태스크 작업](guides/task_operations.md#copyingpasting-a-task)
+**관련 문서**: [태스크 작업](guides/task_operations.md#copyingpasting-a-task)

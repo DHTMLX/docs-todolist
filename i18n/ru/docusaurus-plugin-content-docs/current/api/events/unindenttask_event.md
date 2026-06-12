@@ -50,4 +50,4 @@ list.api.on("unindent-task", ({id}) => {
 });
 ~~~ 
 
-**Связанная статья:** [Операции с задачами](guides/task_operations.md#changing-the-indent-level-of-a-task)
+**Связанная статья**: [Операции с задачами](guides/task_operations.md#changing-the-indent-level-of-a-task)

@@ -54,4 +54,4 @@ list.api.on("set-sort", ({ by, dir, tree }) => {
 });
 ~~~
 
-**Verwandter Artikel:** [Aufgaben sortieren und filtern](guides/sorting_filtering_tasks.md)
+**Verwandter Artikel**: [Aufgaben sortieren und filtern](guides/sorting_filtering_tasks.md)

@@ -52,4 +52,4 @@ list.api.on("open-inline-editor", ({id, type}) => {
 });
 ~~~
 
-**관련 문서:** [인라인 편집](guides/inline_editing.md#working-with-editor)
+**관련 문서**: [인라인 편집](guides/inline_editing.md#working-with-editor)

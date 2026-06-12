@@ -52,4 +52,4 @@ list.api.on("assign-user", ({id, userId}) => {
 });
 ~~~
 
-**Verwandter Artikel:** [Aufgaben-Benutzer](guides/task_users.md)
+**Verwandter Artikel**: [Aufgaben-Benutzer](guides/task_users.md)

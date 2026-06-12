@@ -50,4 +50,4 @@ list.existsTask({ id: "2" }); // -> false
 list.existsTask({ id: "1.2" }); // -> true
 ~~~
 
-**Связанная статья:** [Объект задачи / Id](guides/task_object.md)
+**Связанная статья**: [Объект задачи / Id](guides/task_object.md)

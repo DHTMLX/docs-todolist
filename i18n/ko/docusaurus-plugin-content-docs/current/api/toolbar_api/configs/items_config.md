@@ -77,8 +77,8 @@ const toolbar = new Toolbar("#toolbar", {
 });
 ~~~
 
-**변경 이력:** `"undo"` 및 `"redo"` 파라미터는 v1.3에서 추가되었습니다
+**변경 이력**: `"undo"` 및 `"redo"` 파라미터는 v1.3에서 추가되었습니다
 
-**관련 문서:**
+**관련 문서**:
 - [구성](guides/configuration.md#toolbar)
 - [커스터마이즈](guides/customization.md#customize-the-toolbar)

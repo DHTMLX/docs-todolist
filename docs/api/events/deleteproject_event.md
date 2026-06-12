@@ -50,4 +50,4 @@ list.api.on("delete-project", ({id}) => {
 });
 ~~~
 
-**Related article:** [Operations with projects](guides/project_operations.md#deleting-a-project)
+**Related article**: [Operations with projects](guides/project_operations.md#deleting-a-project)

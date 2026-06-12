@@ -53,4 +53,4 @@ Toolbar는 To Do List의 별도 컴포넌트입니다. Toolbar에 로케일을 �
 로케일을 동적으로 변경하려면 [`setLocale()`](api/toolbar_api/methods/setlocale_method.md) 메서드를 사용하세요
 :::
 
-**관련 문서:** [지역화](guides/localization.md)
+**관련 문서**: [지역화](guides/localization.md)

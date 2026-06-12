@@ -55,8 +55,8 @@ list.api.on("select-task", ({id, join}) => {
 });
 ~~~
 
-**변경 이력:** `join` 매개변수가 v1.1에서 추가됨
+**변경 이력**: `join` 매개변수가 v1.1에서 추가됨
 
-**관련 문서:**
+**관련 문서**:
 - [Task 작업](guides/task_operations.md)
 - [다중 선택 및 일괄 작업](guides/multiselection.md)

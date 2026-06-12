@@ -75,6 +75,6 @@ list.eachSelected(id => {
 }, true);
 ~~~
 
-**관련 문서:**
+**관련 문서**:
 - [작업 조작](guides/task_operations.md)
 - [다중 선택 및 일괄 작업](guides/multiselection.md)

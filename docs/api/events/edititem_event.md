@@ -52,4 +52,4 @@ list.api.on("edit-item", ({id, currentValue}) => {
 });
 ~~~
 
-**Related article:** [Inline editing](guides/inline_editing.md)
+**Related article**: [Inline editing](guides/inline_editing.md)

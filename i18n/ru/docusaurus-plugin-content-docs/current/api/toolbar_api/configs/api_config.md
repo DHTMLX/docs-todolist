@@ -37,5 +37,5 @@ const toolbar = new Toolbar("#toolbar", {
 });
 ~~~
 
-**Связанная статья:**
+**Связанная статья**:
 - [Инициализация](guides/initialization.md)

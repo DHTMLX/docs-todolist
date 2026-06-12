@@ -56,4 +56,4 @@ list.setFilter({
 list.setFilter({ match: null });
 ~~~
 
-**관련 문서:** [태스크 정렬 및 필터링](guides/sorting_filtering_tasks.md)
+**관련 문서**: [태스크 정렬 및 필터링](guides/sorting_filtering_tasks.md)

@@ -57,6 +57,6 @@ list.selectTask({
 console.log(list.getSelection()); // -> ['1.1', '1.1.1']
 ~~~
 
-**Change log:** The `join` parameter was added in v1.1
+**Change log**: The `join` parameter was added in v1.1
 
-**Related article:** [Multiple select and bulk operations](guides/multiselection.md)
+**Related article**: [Multiple select and bulk operations](guides/multiselection.md)

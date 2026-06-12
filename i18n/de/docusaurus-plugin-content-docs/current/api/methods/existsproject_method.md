@@ -47,4 +47,4 @@ list.existsProject({ id: 1 }); // -> false
 list.existsProject({ id: "first" }); // -> true
 ~~~
 
-**Verwandter Artikel:** [Projektobjekt](guides/project_object_operations.md)
+**Verwandter Artikel**: [Projektobjekt](guides/project_object_operations.md)

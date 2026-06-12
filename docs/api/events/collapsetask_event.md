@@ -50,4 +50,4 @@ list.api.on("collapse-task", ({id}) => {
 });
 ~~~ 
 
-**Related article:** [Operations with tasks](guides/task_operations.md#expandingcollapsing-a-task)
+**Related article**: [Operations with tasks](guides/task_operations.md#expandingcollapsing-a-task)

@@ -51,4 +51,4 @@ list.updateProject({
 });
 ~~~
 
-**관련 문서:** [프로젝트 조작](guides/project_operations.md)
+**관련 문서**: [프로젝트 조작](guides/project_operations.md)

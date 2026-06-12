@@ -58,6 +58,6 @@ list.pasteTask({
 });
 ~~~
 
-**관련 API:** [copyTask()](api/methods/copytask_method.md)
+**관련 API**: [copyTask()](api/methods/copytask_method.md)
 
-**관련 문서:** [태스크 작업](guides/task_operations.md)
+**관련 문서**: [태스크 작업](guides/task_operations.md)

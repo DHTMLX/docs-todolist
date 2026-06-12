@@ -132,4 +132,4 @@ list.setLocale(de);
 toolbar.setLocale(de, list.api);
 ~~~
 
-**관련 문서:** [현지화](guides/localization.md)
+**관련 문서**: [현지화](guides/localization.md)

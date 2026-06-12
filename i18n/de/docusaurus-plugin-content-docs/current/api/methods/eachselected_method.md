@@ -72,6 +72,6 @@ list.eachSelected(id => {
 }, true, true);
 ~~~
 
-**Änderungsprotokoll:** Hinzugefügt in v1.1
+**Änderungsprotokoll**: Hinzugefügt in v1.1
 
-**Verwandter Artikel:** [Mehrfachauswahl und Massenoperationen](guides/multiselection.md)
+**Verwandter Artikel**: [Mehrfachauswahl und Massenoperationen](guides/multiselection.md)

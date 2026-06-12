@@ -51,4 +51,4 @@ list.updateTask({
 });
 ~~~
 
-**관련 문서:** [작업 조작](guides/task_operations.md)
+**관련 문서**: [작업 조작](guides/task_operations.md)

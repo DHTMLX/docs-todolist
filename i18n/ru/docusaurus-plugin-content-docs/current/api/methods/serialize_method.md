@@ -48,4 +48,4 @@ const list = new ToDo("#root", {
 list.serialize();
 ~~~
 
-**Связанная статья:** [Загрузка и сохранение данных](guides/loading_data.md)
+**Связанная статья**: [Загрузка и сохранение данных](guides/loading_data.md)

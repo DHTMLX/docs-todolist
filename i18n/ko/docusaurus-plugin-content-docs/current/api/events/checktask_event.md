@@ -52,4 +52,4 @@ list.api.on("check-task", ({id}) => {
 });
 ~~~
 
-**관련 문서:** [작업 관련 작업](guides/task_operations.md#marking-a-task-completeincomplete)
+**관련 문서**: [작업 관련 작업](guides/task_operations.md#marking-a-task-completeincomplete)

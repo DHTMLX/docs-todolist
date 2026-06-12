@@ -53,4 +53,4 @@ list.api.on("update-project", ({id, project}) => {
 });
 ~~~
 
-**Related article:** [Operations with projects](guides/project_operations.md#updating-a-project)
+**Related article**: [Operations with projects](guides/project_operations.md#updating-a-project)

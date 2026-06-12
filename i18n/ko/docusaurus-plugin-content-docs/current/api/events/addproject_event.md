@@ -53,4 +53,4 @@ list.api.on("add-project", ({id, project}) => {
 });
 ~~~
 
-**관련 문서:** [프로젝트 작업](guides/project_operations.md#adding-a-new-project)
+**관련 문서**: [프로젝트 작업](guides/project_operations.md#adding-a-new-project)
