@@ -23,7 +23,7 @@ description: You can learn about the drag event in the documentation of the DHTM
 
 ### Parameters
 
-The callback of the **drag** event can take an object with the following parameters:
+The callback of the `drag` event can take an object with the following parameters:
 
 - `start` - (required) the ID of the task from which the dragging process has started
 - `source` - (required) an array with IDs of dragged tasks
@@ -59,6 +59,6 @@ list.api.on("drag", ({start, source, target, dropPosition}) => {
 });
 ~~~
 
-**Change log:** Added in v1.1
+**Change log**: Added in v1.1
 
-**Related article:** [Drag-n-drop](guides/configuration.md#drag-n-drop)
+**Related article**: [Drag-n-drop](guides/configuration.md#drag-n-drop)

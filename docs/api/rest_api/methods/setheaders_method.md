@@ -11,7 +11,7 @@ description: You can learn about the setHeaders method of the RestDataProvider i
 @short: Sets custom headers that are added to every request of the RestDataProvider
 
 :::info
-The headers passed to **setHeaders()** are merged into the default **Content-Type: application/json** header and sent with each request. This is commonly used to pass an authorization token (for example, the **Remote-Token** header) in a multiuser backend.
+The headers passed to `setHeaders()` are merged into the default `Content-Type: application/json` header and sent with each request. This is commonly used to pass an authorization token (for example, the `Remote-Token` header) in a multiuser backend.
 :::
 
 ### Usage

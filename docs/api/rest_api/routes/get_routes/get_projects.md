@@ -32,7 +32,7 @@ No payload is required.
 ### Response
 
 The route returns a json object with an array of all projects objects.
-For an example of the returned object, go to [**projects**](api/configs/projects_config.md).
+For an example of the returned object, go to [`projects`](api/configs/projects_config.md).
 
 The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500).
 

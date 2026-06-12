@@ -21,7 +21,7 @@ description: You can learn about the assign-user event in the documentation of t
 
 ### Parameters
 
-The callback of the **assign-user** event can take an object with the following parameters:
+The callback of the `assign-user` event can take an object with the following parameters:
 
 - `id` - (required) the id of a task
 - `userId` - (required) the id of the user assigned to the task
@@ -52,4 +52,4 @@ list.api.on("assign-user", ({id, userId}) => {
 });
 ~~~
 
-**Related article:** [Task users](guides/task_users.md)
+**Related article**: [Task users](guides/task_users.md)

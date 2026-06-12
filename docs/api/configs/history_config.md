@@ -64,8 +64,8 @@ new ToDo("#root", {
 });
 ~~~
 
-**Change log:** The `history` config was added in v1.3
+**Change log**: The `history` config was added in v1.3
 
-**Related API:**
+**Related API**:
     - [`redo`](api/methods/redo_method.md)
     - [`undo`](api/methods/undo_method.md)

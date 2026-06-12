@@ -35,8 +35,8 @@ The server side expects to receive a json object with the next properties:
 | `targetId`  | number      | *Optional*. The ID of the future target task where a new task will be added.|
 | `parent`    | number      | *Optional*. The ID of the parent task.|
 | `project`   | number      | *Optional*. The ID of the project to which a new task should be added.|
-| `reverse`   | boolean     | *Optional*. Defines the position where a new task will be added: **true**, if the task is added before the target task; otherwise, **false** (default).|
-| `task`      | object      | *Required*. The task object an example of which you can find here [**tasks**](api/configs/tasks_config.md).|
+| `reverse`   | boolean     | *Optional*. Defines the position where a new task will be added: `true`, if the task is added before the target task; otherwise, `false` (default).|
+| `task`      | object      | *Required*. The task object an example of which you can find here [`tasks`](api/configs/tasks_config.md).|
 
 Example:
 

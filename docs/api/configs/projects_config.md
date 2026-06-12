@@ -24,7 +24,7 @@ projects?: [
 
 ### Parameters
 
-The **projects** property presents an array of project objects. Each object includes the following set of parameters:
+The `projects` property presents an array of project objects. Each object includes the following set of parameters:
 
 - `id` - (required) the id of a project
 - `label` - (required) the name of a project. It is displayed in the list of available projects
@@ -55,6 +55,6 @@ const toolbar = new Toolbar("#toolbar", {
 By default, the first project from the list of project objects will be loaded as an active project. To specify any other project as an active one, use the [`activeProject`](api/configs/activeproject_config.md) property
 :::
 
-**Related articles:** 
+**Related articles**: 
 - [Loading and storing data](guides/loading_data.md)
 - [Managing projects](guides/project_index.md)

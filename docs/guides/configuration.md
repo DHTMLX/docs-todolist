@@ -47,7 +47,7 @@ const list = new ToDo("#root", {
 });
 ~~~
 
-**Related sample:** [To do list. Subtask counter and date format](https://snippet.dhtmlx.com/magidhw8)
+**Related sample**: [To do list. Subtask counter and date format](https://snippet.dhtmlx.com/magidhw8)
 
 ### Date format
 
@@ -67,7 +67,7 @@ const list = new ToDo("#root", {
 });
 ~~~
 
-**Related sample:** [To do list. Subtask counter and date format](https://snippet.dhtmlx.com/magidhw8)
+**Related sample**: [To do list. Subtask counter and date format](https://snippet.dhtmlx.com/magidhw8)
 
 Check [the list of available characters](api/configs/taskshape_config.md#list-of-characters).
 
@@ -178,7 +178,7 @@ const list = new ToDo("#root", {
 });
 ~~~
 
-**Related sample:** [To do list. Two variants of marking a parent task done](https://snippet.dhtmlx.com/5892fcr2)
+**Related sample**: [To do list. Two variants of marking a parent task done](https://snippet.dhtmlx.com/5892fcr2)
 
 ## History of changes
 

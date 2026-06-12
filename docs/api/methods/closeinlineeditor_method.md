@@ -22,7 +22,7 @@ closeInlineEditor({
 ### Parameters
 
 - `id` - (required) the id of a task/project
-- `save` - (optional) defines whether the changes should be saved after closing the editor; **true** by default
+- `save` - (optional) defines whether the changes should be saved after closing the editor; `true` by default
 
 ### Example
 
@@ -49,4 +49,4 @@ list.closeInlineEditor({
 });
 ~~~
 
-**Related article:** [Inline editing](guides/inline_editing.md)
+**Related article**: [Inline editing](guides/inline_editing.md)

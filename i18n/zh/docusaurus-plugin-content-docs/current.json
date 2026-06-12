@@ -1,0 +1,170 @@
+{
+  "version.label": {
+    "message": "下一个",
+    "description": "The label for version current"
+  },
+  "sidebar.docs.category.What's new and migration": {
+    "message": "新功能和迁移",
+    "description": "The label for category 'What's new and migration' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.What's new and migration.link.generated-index.title": {
+    "message": "新功能和迁移",
+    "description": "The generated-index page title for category 'What's new and migration' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.API": {
+    "message": "API",
+    "description": "The label for category 'API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.API.link.generated-index.title": {
+    "message": "API",
+    "description": "The generated-index page title for category 'API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.To Do List API": {
+    "message": "To Do List API",
+    "description": "The label for category 'To Do List API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.To Do List methods": {
+    "message": "To Do List 方法",
+    "description": "The label for category 'To Do List methods' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.To Do List internal API": {
+    "message": "To Do List 内部 API",
+    "description": "The label for category 'To Do List internal API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.To Do List internal API.link.generated-index.title": {
+    "message": "API",
+    "description": "The generated-index page title for category 'To Do List internal API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Event Bus methods": {
+    "message": "事件总线方法",
+    "description": "The label for category 'Event Bus methods' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Event Bus methods.link.generated-index.title": {
+    "message": "事件总线方法",
+    "description": "The generated-index page title for category 'Event Bus methods' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.State methods": {
+    "message": "状态方法",
+    "description": "The label for category 'State methods' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.State methods.link.generated-index.title": {
+    "message": "状态方法",
+    "description": "The generated-index page title for category 'State methods' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.To Do List events": {
+    "message": "To Do List 事件",
+    "description": "The label for category 'To Do List events' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.To Do List properties": {
+    "message": "To Do List 属性",
+    "description": "The label for category 'To Do List properties' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Toolbar API": {
+    "message": "工具栏 API",
+    "description": "The label for category 'Toolbar API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Toolbar API.link.generated-index.title": {
+    "message": "工具栏 API",
+    "description": "The generated-index page title for category 'Toolbar API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Toolbar methods": {
+    "message": "工具栏方法",
+    "description": "The label for category 'Toolbar methods' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Toolbar methods.link.generated-index.title": {
+    "message": "工具栏方法",
+    "description": "The generated-index page title for category 'Toolbar methods' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Toolbar properties": {
+    "message": "工具栏属性",
+    "description": "The label for category 'Toolbar properties' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Toolbar properties.link.generated-index.title": {
+    "message": "工具栏属性",
+    "description": "The generated-index page title for category 'Toolbar properties' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Backend API": {
+    "message": "后端 API",
+    "description": "The label for category 'Backend API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Backend API.link.generated-index.title": {
+    "message": "后端 API",
+    "description": "The generated-index page title for category 'Backend API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.RestDataProvider API": {
+    "message": "RestDataProvider API",
+    "description": "The label for category 'RestDataProvider API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.RestDataProvider API.link.generated-index.title": {
+    "message": "RestDataProvider API",
+    "description": "The generated-index page title for category 'RestDataProvider API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.REST methods": {
+    "message": "REST 方法",
+    "description": "The label for category 'REST methods' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.REST methods.link.generated-index.title": {
+    "message": "REST 方法",
+    "description": "The generated-index page title for category 'REST methods' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.REST routes": {
+    "message": "REST 路由",
+    "description": "The label for category 'REST routes' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.GET routes": {
+    "message": "GET 路由",
+    "description": "The label for category 'GET routes' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.GET routes.link.generated-index.title": {
+    "message": "GET 路由",
+    "description": "The generated-index page title for category 'GET routes' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.POST routes": {
+    "message": "POST 路由",
+    "description": "The label for category 'POST routes' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.POST routes.link.generated-index.title": {
+    "message": "POST 路由",
+    "description": "The generated-index page title for category 'POST routes' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.PUT routes": {
+    "message": "PUT 路由",
+    "description": "The label for category 'PUT routes' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.PUT routes.link.generated-index.title": {
+    "message": "PUT 路由",
+    "description": "The generated-index page title for category 'PUT routes' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.DELETE routes": {
+    "message": "DELETE 路由",
+    "description": "The label for category 'DELETE routes' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.DELETE routes.link.generated-index.title": {
+    "message": "DELETE 路由",
+    "description": "The generated-index page title for category 'DELETE routes' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Backend and frameworks integration": {
+    "message": "后端和框架集成",
+    "description": "The label for category 'Backend and frameworks integration' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Backend and frameworks integration.link.generated-index.title": {
+    "message": "后端和框架集成",
+    "description": "The generated-index page title for category 'Backend and frameworks integration' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Guides": {
+    "message": "指南",
+    "description": "The label for category 'Guides' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Guides.link.generated-index.title": {
+    "message": "指南",
+    "description": "The generated-index page title for category 'Guides' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Managing tasks": {
+    "message": "管理任务",
+    "description": "The label for category 'Managing tasks' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Managing projects": {
+    "message": "管理项目",
+    "description": "The label for category 'Managing projects' in sidebar 'docs'"
+  }
+}

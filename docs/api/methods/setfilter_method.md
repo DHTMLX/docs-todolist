@@ -24,7 +24,7 @@ setFilter({
 ### Parameters
 
 - `match` - (required) a pattern to match
-- `by` - (optional) the parameter of the **task** object for searching; by default, *text*
+- `by` - (optional) the parameter of the `task` object for searching; by default, *text*
 - `highlight` - (optional) defines whether the matches found should be highlighted 
 - `strict` - (optional) enables the *strict* mode of filtering. The searching will be implemented by the exact match
 
@@ -56,4 +56,4 @@ list.setFilter({
 list.setFilter({ match: null });
 ~~~
 
-**Related article:** [Sorting and filtering tasks](guides/sorting_filtering_tasks.md)
+**Related article**: [Sorting and filtering tasks](guides/sorting_filtering_tasks.md)

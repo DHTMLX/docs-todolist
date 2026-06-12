@@ -68,6 +68,6 @@ const toolbar = new Toolbar("#toolbar", {
 });
 ~~~
 
-**Change log:** Added in v1.1
+**Change log**: Added in v1.1
 
-**Related article:** [Configuration](guides/configuration.md#drag-n-drop)
+**Related article**: [Configuration](guides/configuration.md#drag-n-drop)

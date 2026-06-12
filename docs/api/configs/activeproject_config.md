@@ -14,8 +14,8 @@ description: You can learn about the activeProject config in the documentation o
 If the specified active project doesn't exist or there are no projects loaded into To Do List at all, the *No project* section will be displayed on initialization of the component. 
 
 The tasks will belong to the *No project* section in the following cases:
-- if the **project** parameter is not specified in the [object of the root task](api/configs/tasks_config.md)
-- if **project: null | undefined** is specified in the [object of the root task](api/configs/tasks_config.md)
+- if the `project` parameter is not specified in the [object of the root task](api/configs/tasks_config.md)
+- if `project: null | undefined` is specified in the [object of the root task](api/configs/tasks_config.md)
 :::
 
 ### Usage
@@ -25,7 +25,7 @@ activeProject?: string | number | null;
 ~~~
 
 :::info
-If **activeProject** is not specified and there are no tasks which belong to the *No project* section, the first project from the list of project objects will be loaded as an active one.
+If `activeProject` is not specified and there are no tasks which belong to the *No project* section, the first project from the list of project objects will be loaded as an active one.
 :::
 
 ### Example
@@ -50,4 +50,4 @@ const toolbar = new Toolbar("#toolbar", {
 });
 ~~~
 
-**Related article:** [Managing projects](guides/project_index.md)
+**Related article**: [Managing projects](guides/project_index.md)

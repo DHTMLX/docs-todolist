@@ -21,10 +21,10 @@ description: You can learn about the close-inline-editor event in the documentat
 
 ### Parameters
 
-The callback of the **close-inline-editor** event can take an object with the following parameters:
+The callback of the `close-inline-editor` event can take an object with the following parameters:
 
 - `id` - (required) the id of a task/project
-- `save` - (required) **true** if the made changes have been saved after closing the editor; otherwise, **false**
+- `save` - (required) `true` if the made changes have been saved after closing the editor; otherwise, `false`
 
 :::info
 To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods.md)
@@ -52,4 +52,4 @@ list.api.on("close-inline-editor", ({id, save}) => {
 });
 ~~~
 
-**Related article:** [Inline editing](guides/inline_editing.md#working-with-editor)
+**Related article**: [Inline editing](guides/inline_editing.md#working-with-editor)

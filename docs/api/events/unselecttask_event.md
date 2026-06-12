@@ -19,7 +19,7 @@ description: You can learn about the unselect-task event in the documentation of
 ```
 ### Parameters
 
-The callback of the **unselect-task** event can take an object with the following parameters:
+The callback of the `unselect-task` event can take an object with the following parameters:
 
 - `id` - (required) the id of a task
 
@@ -49,6 +49,6 @@ list.api.on("unselect-task", ({id}) => {
 });
 ~~~
 
-**Related articles:**
+**Related articles**:
 - [Operations with tasks](guides/task_operations.md)
 - [Multiple select and bulk operations](guides/multiselection.md)

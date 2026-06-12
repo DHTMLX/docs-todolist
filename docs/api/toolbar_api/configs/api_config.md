@@ -37,5 +37,5 @@ const toolbar = new Toolbar("#toolbar", {
 });
 ~~~
 
-**Related article:**
+**Related article**:
 - [Initialization](guides/initialization.md)

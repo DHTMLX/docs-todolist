@@ -52,6 +52,6 @@ The Toolbar is a separate component of To Do List . Thus, you also need to apply
 To change the locale dynamically, use the [`setLocale()`](api/methods/setlocale_method.md) method
 :::
 
-**Related article:** [Localization](guides/localization.md)
+**Related article**: [Localization](guides/localization.md)
 
-**Related sample:** [To do list. Localization](https://snippet.dhtmlx.com/kzjwvuq5)
+**Related sample**: [To do list. Localization](https://snippet.dhtmlx.com/kzjwvuq5)

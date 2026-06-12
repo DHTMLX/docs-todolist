@@ -35,6 +35,6 @@ const toolbar = new Toolbar("#toolbar", {
 list.hideCompletedTasks(); 
 ~~~
 
-**Change log:** Added in v1.1
+**Change log**: Added in v1.1
 
-**Related article:** [Show/hide completed tasks](guides/hide_completed_tasks.md)
+**Related article**: [Show/hide completed tasks](guides/hide_completed_tasks.md)
