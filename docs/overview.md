@@ -141,4 +141,4 @@ Read the [**keyboard shortcuts**](api/events/keypressontodo_event.md#keyboard-sh
 
 ## What's next
 
-Once you have a short overview of To Do List you are ready to learn how to display the component on the page. Follow the directions given in the [How to start](how_to_start/) article. 
+Once you have a short overview of To Do List you are ready to learn how to display the component on the page. Follow the directions given in the [How to start](how_to_start.md) article. 

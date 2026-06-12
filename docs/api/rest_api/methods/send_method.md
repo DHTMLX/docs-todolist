@@ -10,7 +10,7 @@ description: You can learn about the send method of the RestDataProvider in the 
 
 @short: Sends a necessary HTTP request to the server and returns a promise with or without data depending on the request 
 
-All requests to the server are made with the **send()** method which is a part of the [**RestDataProvider**](guides/working_with_server.md/#restdataprovider) service.
+All requests to the server are made with the **send()** method which is a part of the [**RestDataProvider**](guides/working_with_server.md#restdataprovider) service.
 
 
 ### Usage

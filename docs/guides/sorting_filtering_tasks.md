@@ -10,7 +10,7 @@ description: You can learn about sorting and filtering of tasks in the documenta
 
 After initialization, sort tasks in one of two ways:
 
-- through the **Sort by** option of the [Toolbar menu](../../#toolbar) — sort tasks by *text*, *due date*, *completion date*, *creation date*, or *editing date*
+- through the **Sort by** option of the [Toolbar menu](/#toolbar) — sort tasks by *text*, *due date*, *completion date*, *creation date*, or *editing date*
 - through the [`setSort()`](api/methods/setsort_method.md) method — specify a custom sort function or sort by a [task attribute](api/configs/tasks_config.md#parameters)
 
 The example below sorts tasks by id in ascending order:
@@ -27,7 +27,7 @@ list.setSort({
 
 Filter tasks in one of two ways:
 
-- through the [search bar](../../#toolbar) of the Toolbar
+- through the [search bar](/#toolbar) of the Toolbar
 - through the [`setFilter()`](api/methods/setfilter_method.md) method — supports the *strict* mode for exact-match filtering
 
 The snippet below filters tasks by a specific hashtag in strict mode:

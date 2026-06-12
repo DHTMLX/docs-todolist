@@ -73,7 +73,7 @@ Check [the list of available characters](api/configs/taskshape_config.md#list-of
 
 ### Drag-n-drop
 
-Drag-n-drop is enabled by default. [Select one or several tasks](../../#selecting-tasks) and drag the whole selection at once. To create a copy of the selected tasks, hold the *Alt* key during drag-n-drop.
+Drag-n-drop is enabled by default. [Select one or several tasks](/#selecting-tasks) and drag the whole selection at once. To create a copy of the selected tasks, hold the *Alt* key during drag-n-drop.
 
 Use the [`drag`](api/configs/drag_config.md) property to:
 

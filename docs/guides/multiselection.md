@@ -11,7 +11,7 @@ The To Do List library lets you select multiple tasks and manage them at once.
 ![Multiselection](../assets/multiselection.png)
 
 :::info
-Learn how to [select](../../#selecting-tasks) and [manage multiple tasks](../../#managing-multiple-tasks) through the UI.
+Learn how to [select](/#selecting-tasks) and [manage multiple tasks](/#managing-multiple-tasks) through the UI.
 :::
 
 ## Initially selected tasks

@@ -248,6 +248,6 @@ Now you have a ready To Do List. You can load your own set of data, and configur
 
 If you feel like diving deeper into the world of To Do List, these are suggestions for further studying:
 
-- [To Do List overview](../)
+- [To Do List overview](/)
 - [Guides](category/guides.md)
 - [API](category/api.md)

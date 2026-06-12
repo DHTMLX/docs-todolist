@@ -58,7 +58,7 @@ Stop the app and install the To Do List package.
 
 ### Step 1. Install the package
 
-Download the [**trial To Do List package**](/how_to_start/#installing-to-do-list-via-npm-or-yarn) and follow the steps in the README file. The trial version is available for 30 days only.
+Download the [**trial To Do List package**](how_to_start.md#installing-to-do-list-via-npm-or-yarn) and follow the steps in the README file. The trial version is available for 30 days only.
 
 ### Step 2. Create the component
 

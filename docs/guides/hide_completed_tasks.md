@@ -31,7 +31,7 @@ const list = new ToDo("#root", {
 
 After initialization, switch between modes in one of two ways:
 
-- through the **Completed tasks → Show/Hide** option of the [Toolbar menu](../../#toolbar)
+- through the **Completed tasks → Show/Hide** option of the [Toolbar menu](/#toolbar)
 - through the [`hideCompletedTasks()`](api/methods/hidecompletedtasks_method.md) and [`showCompletedTasks()`](api/methods/showcompletedtasks_method.md) methods
 
 The snippet below shows how to hide or show completed tasks at runtime:
