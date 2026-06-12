@@ -21,7 +21,7 @@ description: You can learn about the close-menu event in the documentation of th
 
 ### Parameters
 
-The callback of the **close-menu** event can take an object with the following parameters:
+The callback of the `close-menu` event can take an object with the following parameters:
 
 - `id` - (required) the ID of an item for which menu is closed
 - `type` - (required) the type of a menu

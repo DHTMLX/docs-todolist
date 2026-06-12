@@ -24,7 +24,7 @@ setSort({
 
 - `by` - (optional) the search criterion (either the key of the [task attribute](api/configs/tasks_config.md#parameters) or a search function which returns a string)
 - `dir` - (optional) the direction of sorting: "asc" or "desc"
-- `tree` - (optional) enables/disables sorting for child tasks; **false** by default
+- `tree` - (optional) enables/disables sorting for child tasks; `false` by default
 
 ### Example
 

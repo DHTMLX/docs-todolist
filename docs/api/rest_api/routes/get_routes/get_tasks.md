@@ -32,7 +32,7 @@ No payload is required.
 ### Response
 
 The route returns a json object with an array of all tasks objects.
-You can look up an example of the tasks object in the [**tasks**](api/configs/tasks_config.md) section. <br/> 
+You can look up an example of the tasks object in the [`tasks`](api/configs/tasks_config.md) section. <br/> 
 The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500).
 
 ---

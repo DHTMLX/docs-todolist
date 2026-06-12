@@ -25,12 +25,12 @@ getChildrenIds({
 ### Parameters
 
 - `id` - (required) the ID of the parent task
-- `filtered` - (optional) if **false**, the filtered child tasks will be also included into the result 
-- `tree` - (optional) if **true**, all child tasks will be included into the result; if **false**, only first-level children of the parent task will be included
-- `hideCompleted` - (optional) if **false**, the completed tasks will be included into the result; otherwise, will be excluded from it
+- `filtered` - (optional) if `false`, the filtered child tasks will be also included into the result 
+- `tree` - (optional) if `true`, all child tasks will be included into the result; if `false`, only first-level children of the parent task will be included
+- `hideCompleted` - (optional) if `false`, the completed tasks will be included into the result; otherwise, will be excluded from it
 
 :::tip
-The **filtered** parameter can be used if the filtering has been applied
+The `filtered` parameter can be used if the filtering has been applied
 :::
 
 ### Returns

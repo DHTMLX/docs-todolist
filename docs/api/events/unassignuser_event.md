@@ -21,7 +21,7 @@ description: You can learn about the unassign-user event in the documentation of
 
 ### Parameters
 
-The callback of the **unassign-user** event can take an object with the following parameters:
+The callback of the `unassign-user` event can take an object with the following parameters:
 
 - `id` - (required) the id of a task
 - `userId` - (required) the id of the user unassigned from the task

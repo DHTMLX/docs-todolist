@@ -11,7 +11,7 @@ description: You can learn about the getIDResolver method of the RestDataProvide
 @short: Returns a function that synchronizes client (temporary) ids with server ids
 
 :::info
-When the client creates a new object (task or project), it receives a temporary id, while the corresponding server id is stored in the RestDataProvider. The function returned by **getIDResolver()** maps a client id to its server id. It is mainly used when handling server events in a multiuser backend.
+When the client creates a new object (task or project), it receives a temporary id, while the corresponding server id is stored in the RestDataProvider. The function returned by `getIDResolver()` maps a client id to its server id. It is mainly used when handling server events in a multiuser backend.
 :::
 
 ### Usage
@@ -26,8 +26,8 @@ The method returns the `idResolver(id, type)` function:
 
 - `id` - the client (temporary) id to resolve
 - `type` - the type of the model:
-    - `1` - a task (**TaskID**)
-    - `2` - a project (**ProjID**)
+    - `1` - a task (`TaskID`)
+    - `2` - a project (`ProjID`)
 
 The function returns the server id that corresponds to the passed client id.
 

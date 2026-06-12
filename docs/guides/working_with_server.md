@@ -13,7 +13,7 @@ The widget ships with the built-in [**Go**](https://github.com/web-widgets/todo-
 
 ## RestDataProvider
 
-The To Do List provides the **RestDataProvider** service that talks to a REST backend and handles the following data operations:
+The To Do List provides the `RestDataProvider` service that talks to a REST backend and handles the following data operations:
 
 - `"add-task"` — add a task
 - `"update-task"` — update a task
@@ -27,10 +27,10 @@ The To Do List provides the **RestDataProvider** service that talks to a REST ba
 
 ## REST methods
 
-The **RestDataProvider** service includes the following REST methods for dynamic data loading:
+The `RestDataProvider` service includes the following REST methods for dynamic data loading:
 
 - [`getProjects()`](api/rest_api/methods/getprojects_method.md) — get a promise with the **projects data**
-- [`getProjectTasks()`](api/rest_api/methods/getprojecttasks_method.md) — get a promise with the **tasks data** of the specified **project**
+- [`getProjectTasks()`](api/rest_api/methods/getprojecttasks_method.md) — get a promise with the **tasks data** of the specified `project`
 - [`getTags()`](api/rest_api/methods/gettags_method.md) — get a promise with the list of **default tags**
 - [`getTasks()`](api/rest_api/methods/gettasks_method.md) — get a promise with the **tasks data**
 - [`getUsers()`](api/rest_api/methods/getusers_method.md) — get a promise with the **users data**
@@ -39,7 +39,7 @@ The **RestDataProvider** service includes the following REST methods for dynamic
 
 ## Interact with the backend
 
-To interact with the server, connect **RestDataProvider** to the server scripts. The built-in backend is available in two repositories:
+To interact with the server, connect `RestDataProvider` to the server scripts. The built-in backend is available in two repositories:
 
 - [**Go**](https://github.com/web-widgets/todo-go) — Go backend
 - [**Node**](https://github.com/web-widgets/todo-node) — Node.js backend
@@ -50,7 +50,7 @@ You can also create a custom backend.
 If you use a custom backend, refer to the [**REST API routes**](api/rest_api/routes/rest_routes_overview.md) topic for more information.
 :::
 
-To connect **RestDataProvider** to the backend, call the `new RestDataProvider()` constructor and pass the corresponding **URL** as a parameter. The example below initializes the To Do List with data loaded from the server:
+To connect `RestDataProvider` to the backend, call the `new RestDataProvider()` constructor and pass the corresponding **URL** as a parameter. The example below initializes the To Do List with data loaded from the server:
 
 ~~~js {4-5,23-24}
 const { ToDo, Toolbar, RestDataProvider } = todo;
@@ -81,12 +81,12 @@ Promise.all([
 ~~~
 
 :::info
-Include **RestDataProvider** in the **Event Bus** order through the [`api.setNext()`](api/internal/setnext_method.md) method to perform data operations (adding, deleting, and other actions) and send the corresponding requests to the server.
+Include `RestDataProvider` in the **Event Bus** order through the [`api.setNext()`](api/internal/setnext_method.md) method to perform data operations (adding, deleting, and other actions) and send the corresponding requests to the server.
 :::
 
 ### Example
 
-The snippet below connects **RestDataProvider** to the backend and loads server data dynamically:
+The snippet below connects `RestDataProvider` to the backend and loads server data dynamically:
 
 <iframe src="https://snippet.dhtmlx.com/hnk06gm7?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
 
@@ -172,8 +172,8 @@ When a change occurs on the server, the server returns the name of the modified 
 
 The updated data arrives in the handler's `obj` argument. Its `type` field specifies the operation:
 
-- for **tasks**: `"add-task"`, `"update-task"`, `"delete-task"`, `"move-task"`, `"clone-task"`
-- for **projects**: `"add-project"`, `"update-project"`, `"delete-project"`, `"set-sort"`
+- for `tasks`: `"add-task"`, `"update-task"`, `"delete-task"`, `"move-task"`, `"clone-task"`
+- for `projects`: `"add-project"`, `"update-project"`, `"delete-project"`, `"set-sort"`
 
 The following code snippet shows the implementation details:
 

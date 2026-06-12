@@ -20,7 +20,7 @@ description: You can learn about the collapse-task event in the documentation of
 
 ### Parameters
 
-The callback of the **collapse-task** event can take an object with the following parameters:
+The callback of the `collapse-task` event can take an object with the following parameters:
 
 - `id` - (required) the id of a task
 

@@ -21,7 +21,7 @@ description: You can learn about the add-project event in the documentation of t
 
 ### Parameters
 
-The callback of the **add-project** event can take an object with the following parameters:
+The callback of the `add-project` event can take an object with the following parameters:
 
 - `id` - (required) the ID of the created project
 - `project` - (optional) an object with project parameters:

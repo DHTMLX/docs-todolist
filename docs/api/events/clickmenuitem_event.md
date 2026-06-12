@@ -23,7 +23,7 @@ description: You can learn about the click-menu-item event in the documentation 
 
 ### Parameters
 
-The callback of the **click-menu-item** event can take an object with the following parameters:
+The callback of the `click-menu-item` event can take an object with the following parameters:
 
 - `id` - (required) the id of a task
 - `type` - (required) the type of a menu

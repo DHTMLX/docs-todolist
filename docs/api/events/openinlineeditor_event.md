@@ -21,7 +21,7 @@ description: You can learn about the open-inline-editor event in the documentati
 
 ### Parameters
 
-The callback of the **open-inline-editor** event can take an object with the following parameters:
+The callback of the `open-inline-editor` event can take an object with the following parameters:
 
 - `id` - (required) the id of a task/project
 - `type` - (required) the type of the item: "task" or "project"

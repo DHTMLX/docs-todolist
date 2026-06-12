@@ -25,8 +25,8 @@ eachSelected(
 - `callback` - (required) a callback function to run for each selected task. The function takes two parameters:
     - `id` - the ID of a selected task
     - `index` - the index of the current task
-- `sorted` - (optional) defines whether the method should sort IDs of the selected tasks by the order they are displayed in the list (**true**) or not (**false**)
-- `reversed` - (optional) defines whether the method should iterate over selected tasks in the reverse order (**true**) or not (**false**)
+- `sorted` - (optional) defines whether the method should sort IDs of the selected tasks by the order they are displayed in the list (`true`) or not (`false`)
+- `reversed` - (optional) defines whether the method should iterate over selected tasks in the reverse order (`true`) or not (`false`)
 
 ### Example
 

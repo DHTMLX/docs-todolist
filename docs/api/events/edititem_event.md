@@ -21,7 +21,7 @@ description: You can learn about the edit-item event in the documentation of the
 
 ### Parameters
 
-The callback of the **edit-item** event can take an object with the following parameters:
+The callback of the `edit-item` event can take an object with the following parameters:
 
 - `id` - (required) the id of a task/project
 - `currentValue` - (required) the current (but not saved) value of the task/project

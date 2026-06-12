@@ -26,12 +26,12 @@ The event fires after the [paste-task](api/events/pastetask_event.md) event
 
 ### Parameters
 
-The callback of the **clone-task** event can take an object with the following parameters:
+The callback of the `clone-task` event can take an object with the following parameters:
 
 - `parent` - (optional) the ID of the parent task
 - `project` - (optional) the ID of the project
 - `targetId` - (optional) the ID of the target task where the task was pasted
-- `reverse` - (optional) **true**, if the task was pasted before the target task; otherwise, **false**
+- `reverse` - (optional) `true`, if the task was pasted before the target task; otherwise, `false`
 - `batch` - (required) an array of objects that were created on copying and then pasted
 
 :::info

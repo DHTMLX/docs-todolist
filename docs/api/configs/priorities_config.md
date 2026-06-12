@@ -26,7 +26,7 @@ priorities?: [
 
 ### Parameters
 
-The **priorities** property presents an array of priorities objects. Each object includes the following set of parameters:
+The `priorities` property presents an array of priorities objects. Each object includes the following set of parameters:
 
 - `id` - (required) the priority id
 - `label` - (required) the priority label
@@ -34,7 +34,7 @@ The **priorities** property presents an array of priorities objects. Each object
 - `color` - (optional) the priority color
 
 :::info
-If the **color** parameter is not specified, the widget will apply one of the default colors:
+If the `color` parameter is not specified, the widget will apply one of the default colors:
 
 `"#ff5252" "#ffc975" "#0ab169" "#607D8B" "#00C7B5"`
 

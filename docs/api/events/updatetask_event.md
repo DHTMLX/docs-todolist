@@ -23,12 +23,12 @@ description: You can learn about the update-task event in the documentation of t
 
 ### Parameters
 
-The callback of the **update-task** event can take an object with the following parameters:
+The callback of the `update-task` event can take an object with the following parameters:
 
 - `id` - (required) the id of the updated task
 - `task` - (required) the object of the updated task
 - Additional parameters that can be applied to the [RestDataProvider](guides/working_with_server.md) work:
-  - `skipProvider` - (optional) allows skipping events sent to RestDataProvider; if **false (default)**, RestDataProvider works with the event, **true** - RestDataProvider skips the event
+  - `skipProvider` - (optional) allows skipping events sent to RestDataProvider; if `false (default)`, RestDataProvider works with the event, `true` - RestDataProvider skips the event
   - `batch` - (optional) an array of updated tasks objects
 
 :::info

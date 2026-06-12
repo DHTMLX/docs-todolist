@@ -23,12 +23,12 @@ description: You can learn about the set-filter event in the documentation of th
 
 ### Parameters
 
-The callback of the **set-filter** event can take an object with the following parameters:
+The callback of the `set-filter` event can take an object with the following parameters:
 
 - `match` - (optional) a pattern to match
-- `by` - (optional) the parameter of the **task** object for searching
+- `by` - (optional) the parameter of the `task` object for searching
 - `highlight` - (optional) defines whether the matches found are highlighted 
-- `strict` - (optional) **true**, if the *strict* mode of filtering is enabled; otherwise, **false**
+- `strict` - (optional) `true`, if the *strict* mode of filtering is enabled; otherwise, `false`
 
 :::info
 To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods.md)

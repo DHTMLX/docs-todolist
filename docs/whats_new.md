@@ -47,8 +47,8 @@ Released on February 27, 2025
 
 - The [`getState()`](api/internal/getstate_method.md) and [`getReactiveState()`](api/internal/getreactivestate_method.md) methods return the `historyState` object
 - The [`items`](api/toolbar_api/configs/items_config.md) property of Toolbar was extended by `"undo"` and `"redo"` parameters that allow you to display controls for managing history of changes
-- The **POST** [`/tasks`](api/rest_api/routes/post_routes/post_tasks.md) and [`/projects`](api/rest_api/routes/post_routes/post_projects.md) routes were extended by the `id` parameter, that allows you to manage history changes on backend
-- The **DELETE** [`/tasks`](api/rest_api/routes/delete_routes/delete_tasks.md) route was extended by the `batch` payload. The `id` parameter related to the task to be deleted become optional. You can delete multiple tasks by once
+- The `POST` [`/tasks`](api/rest_api/routes/post_routes/post_tasks.md) and [`/projects`](api/rest_api/routes/post_routes/post_projects.md) routes were extended by the `id` parameter, that allows you to manage history changes on backend
+- The `DELETE` [`/tasks`](api/rest_api/routes/delete_routes/delete_tasks.md) route was extended by the `batch` payload. The `id` parameter related to the task to be deleted become optional. You can delete multiple tasks by once
 
 ### Fixes
 
@@ -153,12 +153,12 @@ The [`priorities`](api/configs/priorities_config.md) property allows you to appl
 
 ### Updates
 
-- The [`tasks`](api/configs/tasks_config.md) property was extended by the ***priority*** parameter. This parameter allows users to specify an initial priority
-- The [`taskShape`](api/configs/taskshape_config.md) property was extended by the ***priority*** parameter. This parameter allows user to manage the priority appearance of the card
+- The [`tasks`](api/configs/tasks_config.md) property was extended by the `priority` parameter. This parameter allows users to specify an initial priority
+- The [`taskShape`](api/configs/taskshape_config.md) property was extended by the `priority` parameter. This parameter allows user to manage the priority appearance of the card
 - The extended list of [localized options](guides/localization.md)
 ### Fixes
 
-- Setting users without **users[n].avatar** property invokes an error
+- Setting users without `users[n].avatar` property invokes an error
 
 ## Version 1.1
 
@@ -220,8 +220,8 @@ Released on June 20, 2022
 
 ### Initial functionality
 
-- The ability [to load data for **tasks**, **projects**, **users**, **tags**, **activeProject**](guides/loading_data.md)
-- The ability to work with **projects** in the following ways:
+- The ability [to load data for `tasks`, `projects`, `users`, `tags`, `activeProject`](guides/loading_data.md)
+- The ability to work with `projects` in the following ways:
     - [via API](guides/project_index.md):
         - [change the active project](api/methods/setproject_method.md)
         - [add new projects](api/methods/addproject_method.md)
@@ -231,7 +231,7 @@ Released on June 20, 2022
         - switch between projects
         - add, rename, or delete projects
         - search for the necessary projects
-- The ability to work with **tasks** in the following ways:
+- The ability to work with `tasks` in the following ways:
     - [via API](guides/task_index.md):
         - [add new tasks](api/methods/addtask_method.md)
         - [update tasks](api/methods/updatetask_method.md)

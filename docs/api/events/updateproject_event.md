@@ -21,7 +21,7 @@ description: You can learn about the update-project event in the documentation o
 
 ### Parameters
 
-The callback of the **update-project** event can take an object with the following parameters:
+The callback of the `update-project` event can take an object with the following parameters:
 
 - `id` - (required) the id of the updated project
 - `project` - (required) the object of the updated project

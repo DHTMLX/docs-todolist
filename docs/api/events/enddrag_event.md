@@ -22,7 +22,7 @@ description: You can learn about the end-drag event in the documentation of the 
 
 ### Parameters
 
-The callback of the **end-drag** event can take an object with the following parameters:
+The callback of the `end-drag` event can take an object with the following parameters:
 
 - `target` - (required) the ID of the task on which the dragging process was finished
 - `dropPosition` - (required) the position where the dragged tasks has been dropped:

@@ -10,7 +10,7 @@ description: You can learn about the send method of the RestDataProvider in the 
 
 @short: Sends a necessary HTTP request to the server and returns a promise with or without data depending on the request 
 
-All requests to the server are made with the **send()** method which is a part of the [**RestDataProvider**](guides/working_with_server.md#restdataprovider) service.
+All requests to the server are made with the `send()` method which is a part of the [`RestDataProvider`](guides/working_with_server.md#restdataprovider) service.
 
 
 ### Usage
@@ -32,7 +32,7 @@ send(
 | `url`         |  string     | *Required*. A path to the server where a request is sent to.            |
 | `method`            |string             | *Required*. An HTTP method type (Get, Post, Put, Delete)            |
 | `data`  | object        | *Optional*. Parameters that are sent to the server. By default, parameters of the fired event are sent.  But you are free to add additional parameters with the custom object. See the [Example](#examples) below. |
-| `headers`  |object       | *Optional*. A default header is the **Content-Type** header set to *application/json*. More optional headers can be added with the **customHeaders** parameter. See the [Example](#examples) below. |
+| `headers`  |object       | *Optional*. A default header is the `Content-Type` header set to *application/json*. More optional headers can be added with the `customHeaders` parameter. See the [Example](#examples) below. |
 
 ### Response
 
@@ -40,7 +40,7 @@ The method returns the promise object with or without data depending on the requ
 
 A promise is returned back to the success request status. In case of the failed request (response.status == 500), an exception with an error text is thrown.
 
-You can configure what to return back. To handle a response to the failed request, use the **catch** method of the promise that is returned. 
+You can configure what to return back. To handle a response to the failed request, use the `catch` method of the promise that is returned. 
 
 ~~~js
 
@@ -92,7 +92,7 @@ Promise.all([
 
 ~~~
 
-The following examples demonstrate how to add more headers to the **send** method.
+The following examples demonstrate how to add more headers to the `send` method.
 
 ~~~js
 const customHeaders = {

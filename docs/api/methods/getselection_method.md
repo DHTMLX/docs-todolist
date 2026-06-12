@@ -20,7 +20,7 @@ getSelection({
 
 ### Parameters
 
-- `sorted` - (optional) if **true**, sorts IDs of selected tasks by the order they are displayed in the list; if **false**, outputs tasks' IDs without sorting
+- `sorted` - (optional) if `true`, sorts IDs of selected tasks by the order they are displayed in the list; if `false`, outputs tasks' IDs without sorting
 
 ### Returns
 

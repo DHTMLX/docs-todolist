@@ -21,10 +21,10 @@ description: You can learn about the check-task event in the documentation of th
 
 ### Parameters
 
-The callback of the **check-task** event can take an object with the following parameters:
+The callback of the `check-task` event can take an object with the following parameters:
 
 - `id` - (required) the id of a task
-- `manual` - (optional) **true** if the task is marked as completed in the "manual" mode
+- `manual` - (optional) `true` if the task is marked as completed in the "manual" mode
 
 :::info
 To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods.md)

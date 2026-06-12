@@ -18,7 +18,7 @@ api.getStores(): object;
 
 ### Returns
 
-The method returns an object with **DataStore**:
+The method returns an object with `DataStore`:
 
 ~~~js
 state: DataStore // ( object )

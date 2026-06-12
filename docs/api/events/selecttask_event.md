@@ -21,12 +21,12 @@ description: You can learn about the select-task event in the documentation of t
 
 ### Parameters
 
-The callback of the **select-task** event can take an object with the following parameters:
+The callback of the `select-task` event can take an object with the following parameters:
 
 - `id` - (required) the id of a task
 - `join` - (optional) defines the mode in which the task has been selected: 
-    - **true** - multi-selection mode
-    - **false** - single selection mode
+    - `true` - multi-selection mode
+    - `false` - single selection mode
 
 :::info
 To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods.md)

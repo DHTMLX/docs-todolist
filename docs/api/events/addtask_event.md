@@ -25,13 +25,13 @@ description: You can learn about the add-task event in the documentation of the 
 
 ### Parameters
 
-The callback of the **add-task** event can take an object with the following parameters:
+The callback of the `add-task` event can take an object with the following parameters:
 
 - `id` - (required) the ID of the added task
 - `parent` - (optional) the ID of the parent task
 - `project` - (optional) the ID of the project
 - `targetId` - (optional) the ID of the target task
-- `reverse` - (optional) **true**, if the task is added before the target task; otherwise, **false**
+- `reverse` - (optional) `true`, if the task is added before the target task; otherwise, `false`
 - `task` - (required) the object of the added task
 
 :::info

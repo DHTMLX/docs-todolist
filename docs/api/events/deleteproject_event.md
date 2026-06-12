@@ -20,7 +20,7 @@ description: You can learn about the delete-project event in the documentation o
 
 ### Parameters
 
-The callback of the **delete-project** event can take an object with the following parameters:
+The callback of the `delete-project` event can take an object with the following parameters:
 
 - `id` - (required) the ID of a project
 

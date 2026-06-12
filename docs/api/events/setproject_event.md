@@ -24,7 +24,7 @@ The event fires when you use the [setProject] method to change the currently act
 
 ### Parameters
 
-The callback of the **set-project** event can take an object with the following parameters:
+The callback of the `set-project` event can take an object with the following parameters:
 
 - `id` - (required) the ID of a newly active project
 

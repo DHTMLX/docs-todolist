@@ -22,7 +22,7 @@ description: You can learn about the set-sort event in the documentation of the 
 
 ### Parameters
 
-The callback of the **set-sort** event can take an object with the following parameters:
+The callback of the `set-sort` event can take an object with the following parameters:
 
 - `by` - (optional) the search criterion (either the key of the [task attribute](api/configs/tasks_config.md#parameters) or a search function which returns a string)
 - `dir` - (optional) the direction of sorting: "asc" or "desc"

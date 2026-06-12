@@ -22,7 +22,7 @@ description: You can learn about the open-menu event in the documentation of the
 
 ### Parameters
 
-The callback of the **open-menu** event can take an object with the following parameters:
+The callback of the `open-menu` event can take an object with the following parameters:
 
 - `id` - (required) the ID of an item for which menu is opened
 - `type` - (required) the type of a menu

@@ -31,7 +31,7 @@ items: ["combo", "search", "menu"]
 
 ### Parameters
 
-The **items** array can include the following parameters:
+The `items` array can include the following parameters:
 
 - `"combo"` - the combo control for choosing a project
 - `"search"` - the search bar
@@ -49,7 +49,7 @@ The **items** array can include the following parameters:
 - `"custom_item"` - a custom control specified either as a string or a function
 
 :::tip
-You can specify your own structure of the toolbar by enumerating necessary elements in the **items** array in the desired order
+You can specify your own structure of the toolbar by enumerating necessary elements in the `items` array in the desired order
 :::
 
 ### Example

@@ -22,7 +22,7 @@ selectTask({
 ### Parameters
 
 - `id` - (required) the ID of a task
-- `join` - (optional) if **true**, adds the specified task to the collection of selected tasks, saving the IDs of previously selected tasks 
+- `join` - (optional) if `true`, adds the specified task to the collection of selected tasks, saving the IDs of previously selected tasks 
 
 :::info
 Calling the method with `join: false` invokes the [`unselect-task`](api/events/unselecttask_event.md) event for previously selected tasks

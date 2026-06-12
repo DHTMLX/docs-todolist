@@ -11,7 +11,7 @@ description: You can learn about the getTags method of the RestDataProvider in t
 @short: Gets a promise with an array of default tags
 
 :::info
-The **getTags()** method is a part of the **RestDataProvider** service intended for working with a server
+The `getTags()` method is a part of the `RestDataProvider` service intended for working with a server
 :::
 
 ### Usage
@@ -22,7 +22,7 @@ getTags(): Promise<string[]>;
 
 ### Response
 
-The **getTags()** method sends a request to the server by the **GET** method and returns **a promise** with the list of tags which are set by default.
+The `getTags()` method sends a request to the server by the `GET` method and returns **a promise** with the list of tags which are set by default.
 
 
 ### Example
