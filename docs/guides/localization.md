@@ -6,9 +6,11 @@ description: You can learn about the To Do List localization in the documentatio
 
 # Localization
 
-You can present the interface of DHTMLX To Do List in any language. The library provides a number of predefined locales and gives the ability to create custom ones. By default, DHTMLX To Do List uses [English locale](#default-locale).
+Display the DHTMLX To Do List interface in any language. The library provides a number of predefined locales and lets you create custom ones. By default, DHTMLX To Do List uses the [English locale](#default-locale).
 
 ## Default locale
+
+The snippet below shows the full structure of the default English locale:
 
 ~~~js
 const en = {
@@ -35,7 +37,7 @@ const en = {
         done: "Done",
         today: "Today",
 
-        weekStart: 1 // defines a first day of week (Monday by default)
+        weekStart: 1 // defines the first day of the week (Monday by default)
     },
     // To Do List
     todo: {
@@ -96,21 +98,29 @@ const en = {
         "CMD+V": "CMD+V",
 
         // Editor
-        "Type you want": "Type you want",
+        "Type what you want": "Type what you want",
 
         // Other
         "Search": "Search",
         "Add task": "Add task",
-        "New project": "New project"
+        "New project": "New project",
+
+        // Default priority labels
+        "High": "High",
+        "Medium": "Medium",
+        "Low": "Low"
     }
 };
 ~~~
 
 ## Custom locale
 
-To initialize the To Do List component in non-English language, you need to:
+To initialize the To Do List component in a non-English language:
 
-- define necessary language settings: provide translations for all text labels (it can be any language you need)
+- define the language settings — provide translations for all text labels
+- apply the locale to the To Do List component and its Toolbar through the `locale` configuration property
+
+The example below declares a German locale object:
 
 ~~~js
 const de = {
@@ -124,11 +134,11 @@ const de = {
 ~~~
 
 :::tip
-To create a custom locale, you can make a copy of the default ([English](#default-locale)) locale, and translate text labels from it into the required language.
+To create a custom locale, copy the [default English locale](#default-locale) and translate its text labels.
 :::
 
 :::info
-You can download [**a repository from GitHub**](https://github.com/web-widgets/wx-todo-locales/tree/master/locales) which includes locales of the To Do List for the following languages: 
+[**This GitHub repository**](https://github.com/web-widgets/wx-todo-locales/tree/master/locales) provides To Do List locales for the following languages:
 
 - Chinese (**cn**)
 - French (**fr**)
@@ -140,10 +150,10 @@ You can download [**a repository from GitHub**](https://github.com/web-widgets/w
 - Russian (**ru**)
 - Spanish (**es**)
 
-*The files don't include translations for the Calendar labels, therefore you will need to add them yourself.*
+The files do not include translations for the Calendar labels — add them yourself.
 :::
 
-- apply the necessary locale to the To Do List component and its Toolbar via the corresponding **locale** properties:
+The snippet below applies the `de` locale to the To Do List and the Toolbar:
 
 ~~~js {8,13}
 const { ToDo, Toolbar} = todo;
@@ -163,11 +173,11 @@ const toolbar = new Toolbar("#toolbar", {
 ~~~
 
 :::tip
-To change the locale dynamically, use the related `setLocale()` methods of the [To Do List](api/methods/setlocale_method.md) and [Toolbar](api/toolbar_api/methods/setlocale_method.md)
+To change the locale dynamically, call [`setLocale()`](api/methods/setlocale_method.md) on the To Do List and [the matching `setLocale()`](api/toolbar_api/methods/setlocale_method.md) on the Toolbar.
 :::
 
 ## Example
 
-In this snippet you can see how to switch between the EN and DE locales:
+The snippet below switches between the EN and DE locales:
 
 <iframe src="https://snippet.dhtmlx.com/kzjwvuq5?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>

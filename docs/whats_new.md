@@ -34,21 +34,21 @@ Released on February 27, 2025
 
 ### New functionality
 
-- You can manage the history of changes in a separate project or in the whole app via the [`history`](../api/configs/history_config) property and [`undo()`](../api/methods/undo_method)/[`redo()`](../api/methods/redo_method) methods
-- You can customize a context menu via the [`menu`](../api/configs/menu_config) property ([Example](https://snippet.dhtmlx.com/slpjstbb))
+- You can manage the history of changes in a separate project or in the whole app via the [`history`](api/configs/history_config.md) property and [`undo()`](api/methods/undo_method.md)/[`redo()`](api/methods/redo_method.md) methods
+- You can customize a context menu via the [`menu`](api/configs/menu_config.md) property ([Example](https://snippet.dhtmlx.com/slpjstbb))
 
 ### New API
 
-- The [`history`](../api/configs/history_config) property allows you to enable/disable the history of changes in a separate project or in the whole app and limit the number of stored actions
-- The [`undo()`](../api/methods/undo_method)/[`redo()`](../api/methods/redo_method) methods allows you to manage the history of changes
-- The [`menu`](../api/configs/menu_config) property allows you to customize a context menu ([Example](https://snippet.dhtmlx.com/cmfqmg00))
+- The [`history`](api/configs/history_config.md) property allows you to enable/disable the history of changes in a separate project or in the whole app and limit the number of stored actions
+- The [`undo()`](api/methods/undo_method.md)/[`redo()`](api/methods/redo_method.md) methods allows you to manage the history of changes
+- The [`menu`](api/configs/menu_config.md) property allows you to customize a context menu ([Example](https://snippet.dhtmlx.com/cmfqmg00))
 
 ### Updates
 
-- The [`getState()`](../api/internal/getstate_method) and [`getReactiveState()`](../api/internal/getreactivestate_method) methods return the `historyState` object
-- The [`items`](../api/toolbar_api/configs/items_config) property of Toolbar was extended by `"undo"` and `"redo"` parameters that allow you to display controls for managing history of changes
-- The **POST** [`/tasks`](../api/rest_api/routes/post_routes/post_tasks) and [`/projects`](../api/rest_api/routes/post_routes/post_projects) routes were extended by the `id` parameter, that allows you to manage history changes on backend
-- The **DELETE** [`/tasks`](../api/rest_api/routes/delete_routes/delete_tasks) route was extended by the `batch` payload. The `id` parameter related to the task to be deleted become optional. You can delete multiple tasks by once
+- The [`getState()`](api/internal/getstate_method.md) and [`getReactiveState()`](api/internal/getreactivestate_method.md) methods return the `historyState` object
+- The [`items`](api/toolbar_api/configs/items_config.md) property of Toolbar was extended by `"undo"` and `"redo"` parameters that allow you to display controls for managing history of changes
+- The **POST** [`/tasks`](api/rest_api/routes/post_routes/post_tasks.md) and [`/projects`](api/rest_api/routes/post_routes/post_projects.md) routes were extended by the `id` parameter, that allows you to manage history changes on backend
+- The **DELETE** [`/tasks`](api/rest_api/routes/delete_routes/delete_tasks.md) route was extended by the `batch` payload. The `id` parameter related to the task to be deleted become optional. You can delete multiple tasks by once
 
 ### Fixes
 
@@ -144,17 +144,17 @@ Released on May 16, 2023
 
 - You can prioritize your tasks using context menu or the corresponding API ([Example](https://snippet.dhtmlx.com/5cymicwt))
 - You can sort tasks by priorities
-- [Multiuser backend](../guides/working_with_server/#multiuser-backend) allows you to track changes of other users in a real time ([Example](https://snippet.dhtmlx.com/82ayq2lk))
+- [Multiuser backend](guides/working_with_server.md#multiuser-backend) allows you to track changes of other users in a real time ([Example](https://snippet.dhtmlx.com/82ayq2lk))
 - Displaying To Do List tasks in a Table view. Integration with the [JavaScript DataGrid](https://dhtmlx.com/docs/products/dhtmlxGrid/) component ([Example](https://snippet.dhtmlx.com/e97idjs8))
 
 ### New API
 
-The [`priorities`](../api/configs/priorities_config) property allows you to apply an initial priority to the tasks
+The [`priorities`](api/configs/priorities_config.md) property allows you to apply an initial priority to the tasks
 
 ### Updates
 
-- The [`tasks`](../api/configs/tasks_config) property was extended by the ***priority*** parameter. This parameter allows users to specify an initial priority
-- The [`taskShape`](../api/configs/taskshape_config) property was extended by the ***priority*** parameter. This parameter allows user to manage the priority appearance of the card
+- The [`tasks`](api/configs/tasks_config.md) property was extended by the ***priority*** parameter. This parameter allows users to specify an initial priority
+- The [`taskShape`](api/configs/taskshape_config.md) property was extended by the ***priority*** parameter. This parameter allows user to manage the priority appearance of the card
 - The extended list of [localized options](guides/localization.md)
 ### Fixes
 
@@ -176,7 +176,7 @@ The new release introduces some changes to the `taskShape` property. Check the [
     - the ability to [configure or disable the functionality](guides/configuration.md#drag-n-drop)
     - new events: [`start-drag`](api/events/startdrag_event.md), [`drag`](api/events/drag_event.md), [`end-drag`](api/events/enddrag_event.md)
 - Multi-select and bulk operations:
-    - the ability to [select](../#selecting-multiple-tasks) and [manage](../#managing-multiple-tasks) multiple tasks using keyboard shortcuts
+    - the ability to [select](/#selecting-multiple-tasks) and [manage](/#managing-multiple-tasks) multiple tasks using keyboard shortcuts
     - the ability to manage multiple tasks via menu
     - the ability to [select and manage multiple tasks via API](guides/multiselection.md):
         - new [`selected`](api/configs/selected_config.md) property
@@ -227,7 +227,7 @@ Released on June 20, 2022
         - [add new projects](api/methods/addproject_method.md)
         - [update projects](api/methods/updateproject_method.md)
         - [delete projects](api/methods/deleteproject_method.md)
-    - [via UI](../#toolbar):
+    - [via UI](/#toolbar):
         - switch between projects
         - add, rename, or delete projects
         - search for the necessary projects
@@ -244,7 +244,7 @@ Released on June 20, 2022
         - change the indent level of tasks: [indentTask()](api/methods/indenttask_method.md) / [unindentTask()](api/methods/unindenttask_method.md)
         - [assign](api/methods/assignuser_method.md) and [unassign](api/methods/unassignuser_method.md) users
         - [filter tasks](api/methods/setfilter_method.md)
-    - [via UI](../#managing-a-task):
+    - [via UI](/#managing-a-task):
         - add, copy and paste, select, move, indent/unindent, delete tasks
         - search for tasks (by symbols or hashtags)
         - edit tasks:
@@ -256,7 +256,7 @@ Released on June 20, 2022
     - [date format](guides/configuration.md#date-format)
     - [due date validation](guides/configuration.md#due-date-validation)
     - [mode of marking tasks complete](guides/configuration.md#mode-of-marking-tasks-complete)
-- The ability to [configure](guides/configuration.md#toolbar) and [customize](guides/customization.md#toolbar) **Toolbar**
+- The ability to [configure](guides/configuration.md#toolbar) and [customize](guides/customization.md#customize-the-toolbar) **Toolbar**
 - [Keyboard navigation](api/events/keypressontodo_event.md#keyboard-shortcuts)
 - [Read-only mode](guides/readonly_mode.md)
 - [Localization](guides/localization.md)

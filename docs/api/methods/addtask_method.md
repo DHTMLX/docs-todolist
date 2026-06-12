@@ -27,7 +27,7 @@ addTask({
 
 - `id` - (optional) the ID of a new task
 - `parent` - (optional) the ID of the parent task
-- `project` - (optional) the ID of the project. By default, the ID of the [currently active project](../../configs/activeproject_config/)<br>
+- `project` - (optional) the ID of the project. By default, the ID of the [currently active project](api/configs/activeproject_config.md)<br>
 :::info
 In case the active project is specified but you need to add a task into the *No project* section, specify the value of the parameter to **null**
 :::

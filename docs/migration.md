@@ -8,7 +8,7 @@ description: You can learn about the Migration to Newer Versions in the document
 
 ## 1.1 -> 1.2
 
-The [`taskShape`](../api/configs/taskshape_config) property of To do list was updated in the following way:
+The [`taskShape`](api/configs/taskshape_config.md) property of To do list was updated in the following way:
 
 ~~~js {} title="Before v1.2"
 taskShape: {
@@ -30,7 +30,7 @@ taskShape: {
 }
 ~~~
 
-The [`tasks`](../api/configs/tasks_config) property of To do list was updated in the following way:
+The [`tasks`](api/configs/tasks_config.md) property of To do list was updated in the following way:
 
 ~~~js {} title="Before v1.2"
 tasks: [

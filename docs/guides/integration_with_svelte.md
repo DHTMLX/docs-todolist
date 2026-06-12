@@ -7,74 +7,78 @@ description: You can learn about the integration with Svelte in the documentatio
 # Integration with Svelte
 
 :::tip
-You should be familiar with the basic concepts and patterns of **Svelte** before reading this documentation. To refresh your knowledge, please refer to the [**Svelte documentation**](https://svelte.dev/docs/svelte/overview).
+Familiarize yourself with the basic concepts and patterns of **Svelte** before reading this documentation. To refresh your knowledge, refer to the [**Svelte documentation**](https://svelte.dev/docs/svelte/overview).
 :::
 
-DHTMLX To Do List is compatible with **Svelte**. We have prepared code examples on how to use DHTMLX To Do List with **Svelte**. For more information, refer to the corresponding [**Example on GitHub**](https://github.com/DHTMLX/svelte-todolist-demo).
+DHTMLX To Do List is compatible with **Svelte**. The examples below show how to use them together. For a complete project, see the [**example on GitHub**](https://github.com/DHTMLX/svelte-todolist-demo).
 
-## Creating a project
+## Create a project
+
+Scaffold a new Svelte project and install dependencies.
 
 :::info
-Before you start to create a new project, install [**Vite**](https://vite.dev/) (optional) and [**Node.js**](https://nodejs.org/en/).
+Before you create a new project, install [**Vite**](https://vite.dev/) (optional) and [**Node.js**](https://nodejs.org/en/).
 :::
 
-There are several ways of creating a **Svelte** project:
+Create a **Svelte** project in one of two ways:
 
-- you can use the [**SvelteKit**](https://kit.svelte.dev/)
+- use [**SvelteKit**](https://kit.svelte.dev/)
+- use **Svelte with Vite** without SvelteKit
 
-or
+The example below scaffolds a Svelte + Vite project:
 
-- you can also use **Svelte with Vite** (but without SvelteKit):
-
-~~~json
+~~~bash
 npm create vite@latest
 ~~~
 
 Check the details in the [related article](https://svelte.dev/docs/svelte/overview).
 
-### Installation of dependencies
+### Install dependencies
 
-Let's name the project as **my-svelte-todo-app** and go to the app directory:
+Name the project *my-svelte-todo-app* and go to the app directory:
 
-~~~json
+~~~bash
 cd my-svelte-todo-app
 ~~~
 
-Install dependencies and start the dev server. For this, use a package manager:
+Install dependencies and start the dev server with a package manager.
 
-- if you use [**yarn**](https://yarnpkg.com/), run the following commands:
+Run the following commands with [**yarn**](https://yarnpkg.com/):
 
-~~~json
+~~~bash
 yarn
 yarn start
 ~~~
 
-- if you use [**npm**](https://www.npmjs.com/), run the following commands:
+Run the following commands with [**npm**](https://www.npmjs.com/):
 
-~~~json
+~~~bash
 npm install
 npm run dev
 ~~~
 
-The app should run on a localhost (for instance `http://localhost:3000`).
+The app runs on a localhost address (for example, `http://localhost:3000`).
 
-## Creating To Do List
+## Create the To Do List
 
-Now you should get the DHTMLX To Do List source code. First of all, stop the app and proceed with installing the To Do List package.
+Stop the app and install the To Do List package.
 
-### Step 1. Package installation
+### Step 1. Install the package
 
-Download the [**trial To Do List package**](/how_to_start/#installing-to-do-list-via-npm-or-yarn) and follow steps mentioned in the README file. Note that trial To Do List is available 30 days only.
+Download the [**trial To Do List package**](how_to_start.md#installing-to-do-list-via-npm-or-yarn) and follow the steps in the README file. The trial version is available for 30 days only.
 
-### Step 2. Component creation
+### Step 2. Create the component
 
-Now you need to create a Svelte component, to add To Do List with Toolbar into the application. Let's create a new file in the ***src/*** directory and name it ***ToDo.svelte***.
+Create a Svelte component to add the To Do List with the Toolbar into the application. In the *src/* directory, add a new file named *ToDo.svelte*.
 
-#### Import source file
+#### Import source files
 
-Open the ***ToDo.svelte*** file and import To Do List source files. Note that:
+Open *ToDo.svelte* and import the To Do List source files. Choose one of two import paths:
 
-- if you use PRO version and install the To Do List package from a local folder, the import paths look like this:
+- PRO version installed from a local folder — import from `dhx-todolist-package`
+- trial version — import from `@dhx/trial-todolist`
+
+The example below imports from the PRO package:
 
 ~~~html title="ToDo.svelte"
 <script>
@@ -83,9 +87,9 @@ import 'dhx-todolist-package/dist/todo.css';
 </script>
 ~~~
 
-Note that depending on the used package, the source files can be minified. In this case make sure that you are importing the CSS file as **todo.min.css**.
+Depending on the package, the source files can be minified. Import the CSS file as *todo.min.css* in that case.
 
-- if you use the trial version of To Do List, specify the following paths:
+The snippet below imports from the trial package:
 
 ~~~html title="ToDo.svelte"
 <script>
@@ -94,11 +98,11 @@ import '@dhx/trial-todolist/dist/todo.css';
 </script>
 ~~~
 
-In this tutorial you can see how to configure the **trial** version of To Do List.
+This tutorial uses the **trial** version.
 
-#### Setting containers and adding To Do List with Toolbar
+#### Set containers and add the To Do List with Toolbar
 
-To display To Do List with Toolbar on the page, you need to create containers for To Do List and Toolbar, and initialize these components using the corresponding constructors:
+To display the To Do List with the Toolbar on the page, create containers for both components and initialize them with the constructors. The example below binds the containers and initializes the components inside `onMount`:
 
 ~~~html {3,6,10-11,13-17,27-28} title="ToDo.svelte"
 <script>
@@ -132,9 +136,9 @@ onDestroy(() => {
 </div>
 ~~~
 
-#### Loading data
+#### Load data
 
-To add data into the To Do List, we need to provide a data set. You can create the ***data.js*** file in the ***src/*** directory and add some data into it:
+Create the *data.js* file in the *src/* directory and add data into it. The following example exports a `getData()` function that returns tasks, users, and projects:
 
 ~~~jsx {2,19,28,38} title="data.js"
 export function getData() {
@@ -178,7 +182,7 @@ export function getData() {
 }
 ~~~
 
-Then open the ***App.svelte*** file, import data, and pass it into the new created `<ToDo/>` components as **props**:
+Open *App.svelte*, import the data, and pass it into the `<ToDo/>` component as **props**:
 
 ~~~html {3,5,8} title="App.svelte"
 <script>
@@ -191,7 +195,7 @@ const { users, tasks, projects } = getData();
 <ToDo {users} {tasks} {projects} />
 ~~~
 
-Go to the ***ToDo.svelte*** file and apply the passed **props** to the To Do List configuration object:
+Go to *ToDo.svelte* and apply the passed **props** to the To Do List configuration object. The snippet below passes user, task, and project data through configuration:
 
 ~~~html {6-8,15-17} title="ToDo.svelte"
 <script>
@@ -208,9 +212,9 @@ let todo, toolbar;
 
 onMount(() => {
     todo = new ToDo(todo_container, {
-        users, // apply user data
-        tasks, // apply task data
-        projects, // apply project data
+        users,
+        tasks,
+        projects,
         // other configuration properties
     })
 
@@ -232,7 +236,7 @@ onDestroy(() => {
 </div>
 ~~~
 
-You can also use the [`parse()`](/api/methods/parse_method/) method inside the `onMount()` method of Svelte to load data into To Do List:
+You can also use the [`parse()`](api/methods/parse_method.md) method inside `onMount()` to load data into the To Do List. The example below loads data with `parse()` after initialization:
 
 ~~~html {6-8,21} title="ToDo.svelte"
 <script>
@@ -270,15 +274,15 @@ onDestroy(() => {
 </div>
 ~~~
 
-The `parse(data)` method provides data reloading on each applied change.
+Each call to `parse(data)` replaces the current dataset.
 
-Now the To Do List component is ready to use. When the element will be added to the page, it will initialize the To Do List with data. You can provide necessary configuration settings as well. Visit our [To Do List API docs](/api/overview/configs_overview/) to check the full list of available properties.
+The component now renders a populated To Do List. See the [configuration overview](api/overview/configs_overview.md) for other available properties.
 
-#### Handling events
+#### Handle events
 
-When a user makes some action in the To Do List, it invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](/api/overview/events_overview/).
+Subscribe to events to react to user actions. See the [full list of events](api/overview/events_overview.md).
 
-Open ***ToDo.svelte*** and complete the `onMount()` method in the following way:
+Open *ToDo.svelte* and complete the `onMount()` method. The snippet below attaches a handler to the `add-task` event:
 
 ~~~html {8-10} title="ToDo.svelte"
 <script>
@@ -301,9 +305,9 @@ onDestroy(() => {
 // ...
 ~~~
 
-### Step 3. Adding To Do List into the app
+### Step 3. Add the To Do List into the app
 
-To add the component into the app, open the **App.svelte** file and replace the default code with the following one:
+To add the component into the app, open *App.svelte* and replace the default code with the following snippet:
 
 ~~~html title="App.svelte"
 <script>
@@ -316,8 +320,8 @@ const { users, tasks, projects } = getData();
 <ToDo {users} {tasks} {projects} />
 ~~~
 
-After that, you can start the app to see To Do List loaded with data on a page.
+Start the app — the To Do List renders with sample data:
 
 ![To Do List initialization](../assets/trial_todolist.png)
 
-Now you know how to integrate DHTMLX To Do List with Svelte. You can customize the code according to your specific requirements. The final example you can find on [**GitHub**](https://github.com/DHTMLX/svelte-todolist-demo).
+Find the complete project on [**GitHub**](https://github.com/DHTMLX/svelte-todolist-demo).

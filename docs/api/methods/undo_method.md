@@ -35,7 +35,7 @@ const list = new ToDo("#root", {
     history: { projects: false, limit: 10 }
 });
 
-list.addTask({ text: "New task 1 });
+list.addTask({ task: { text: "New task 1" } });
 list.undo();
 ~~~
 

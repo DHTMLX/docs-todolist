@@ -6,15 +6,17 @@ description: You can learn about the To Do List Stylization in the documentation
 
 # Stylization
 
-You can stylize any part of the interface of DHTMLX To Do List to meet your project requirements. For this, the library provides a wide range of CSS variables. Note, that To Do List includes **two** types of CSS variables:
+Style any part of the DHTMLX To Do List interface. The library exposes **two** types of CSS variables:
 
-- variables related to To Do List style
-- variables related to the WX library style (font, icons, checkboxes, etc)
+- variables related to the To Do List style
+- variables related to the WX library style (font, icons, checkboxes, and other common elements)
 
 ## Default style
 
+The snippet below shows the default values of all CSS variables that affect the To Do List and the WX library.
+
 :::tip Note
-New versions of the To Do List can bring some changes for the variables and their names. So, please, do not forget to check the names after updating to the newest version and promptly modify them in your code to avoid problems with display of the component
+Variable names can change between versions. Re-check them after each update.
 :::
 
 ~~~html
@@ -27,7 +29,7 @@ New versions of the To Do List can bring some changes for the variables and thei
     /* WX library CSS variables */
 
         /* base colors */
-        --wx-color-primary: #0a76bf;
+        --wx-color-primary: #2f77e3;
         --wx-color-success: #0ab169;
         --wx-color-danger: #ff5252;
 
@@ -60,6 +62,13 @@ New versions of the To Do List can bring some changes for the variables and thei
         /* animation */
         --wx-all-transition: all 0.2s ease-out;
         /* end animation */
+
+        /* border */
+        --wx-border-color: #dfdfdf;
+        --wx-border-width: 1px;
+        --wx-border-radius: 2px;
+        --wx-border: var(--wx-border-width) solid var(--wx-border-color);
+        /* end border */
         
 
         /* checkbox */
@@ -89,18 +98,24 @@ New versions of the To Do List can bring some changes for the variables and thei
         /* End main component */
 
     /* end of To Do List CSS variables */
+
+
+    /* other */
+        --wx-base-size: 20px;
+        --wx-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    /* end other */
     }
 </style>
 ~~~
 
 ## Custom style
 
-To customize the appearance of To Do List, just change the values of the necessary CSS variables. 
+To customize the To Do List, override the relevant CSS variables.
 
-In this snippet you can see how to apply a custom style to To Do List:
+The snippet below applies a custom style to the To Do List:
 
 <iframe src="https://snippet.dhtmlx.com/thmx9921?mode=html" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 ## Related articles
 
-- [Customization](guides/customization.md)
+- [Customization](guides/customization.md) — overview of available customization options

@@ -6,9 +6,9 @@ description: You can learn about task object and task id in the documentation of
 
 # Task object/Id
 
-## Getting a task object
+## Get a task object
 
-To get a task object, use the [`getTask()`](api/methods/gettask_method.md) method:
+To get a task object, use the [`getTask()`](api/methods/gettask_method.md) method. The example below retrieves a task by id:
 
 ~~~js
 const tasks = [
@@ -22,9 +22,9 @@ const list = new ToDo("#root", { tasks });
 list.getTask({ id: "1.2" }); // -> {id: '1.2', text: 'Task 1.2', parent: '1'}
 ~~~
 
-## Checking if a task exists
+## Check if a task exists
 
-To check whether a task exists or not, use the [`existsTask()`](api/methods/existstask_method.md) method:
+To check whether a task exists, use the [`existsTask()`](api/methods/existstask_method.md) method. The snippet below checks two ids:
 
 ~~~js
 const tasks = [
@@ -39,9 +39,9 @@ list.existsTask({ id: "2" }); // -> false
 list.existsTask({ id: "1.2" }); // -> true
 ~~~
 
-## Getting child Ids
+## Get child ids
 
-To get the children of a task, use the [`getChildrenIds()`](api/methods/getchildrenids_method.md) method:
+To get the children of a task, use the [`getChildrenIds()`](api/methods/getchildrenids_method.md) method. The example below returns all descendants of a task:
 
 ~~~js
 const tasks = [
@@ -55,7 +55,7 @@ console.log(list.getChildrenIds({ id: "1" })); // ['1.1', '1.1.1', '1.2']
 console.log(list.getChildrenIds({ id: "1", tree: false })); // ['1.1', '1.2']
 ~~~
 
-If you apply filtering, some tasks can become invisible on the page. The **filtered** parameter of the method gives you the ability to define whether the filtered (hidden) tasks must be included into the result (*filtered: false* by default) or not (*filtered: true*):
+Filtering can make some tasks invisible on the page. The `filtered` parameter defines whether hidden tasks appear in the result. Set it to `true` to exclude them (default is `false`). The snippet below shows both options:
 
 ~~~js
 // filter the tasks
@@ -68,14 +68,14 @@ console.log(list.getChildrenIds({ id: "1", filtered: false })); // -> ['1.1', '1
 console.log(list.getChildrenIds({ id: "1", filtered: true })); // -> ['1.1', '1.1.1']
 ~~~
 
-The **tree** parameter of the method allows you to get the IDs only for the first-level children of the task. For that, set the parameter to *false*:
+Set `tree` to `false` to return only first-level children:
 
 ~~~js
 console.log(list.getChildrenIds({ id: "1", filtered: true, tree: false })); // -> ['1.1']
 console.log(list.getChildrenIds({ id: "1", filtered: false, tree: false })); // -> ['1.1', '1.2']
 ~~~
 
-The **hideCompleted** parameter of the method lets you get the IDs only of those children tasks which yet need to be done, excluding the completed ones. For that, set the parameter to *true*:
+Set `hideCompleted` to `true` to exclude completed children. The example below combines `filtered`, `tree`, and `hideCompleted` in different ways:
 
 ~~~js {4,11,18,21}
 const tasks = [
@@ -101,9 +101,9 @@ console.log(list.getChildrenIds({ id: "1", filtered: false, tree: true, hideComp
 console.log(list.getChildrenIds({ id: "1", filtered: false, tree: true, hideCompleted: true})); // -> ['1.1', '1.2']
 ~~~
 
-## Checking if a task has children
+## Check if a task has children
 
-To check whether a task has child tasks, apply the [`hasChildren()`](api/methods/haschildren_method.md) method:
+To check whether a task has child tasks, use the [`hasChildren()`](api/methods/haschildren_method.md) method. The snippet below verifies that a task has children:
 
 ~~~js
 const tasks = [
@@ -117,7 +117,7 @@ const tasks = [
 console.log(list.hasChildren({ id: "1.1" })); // -> true
 ~~~
 
-If you apply filtering, some tasks can become invisible on the page. The **filtered** parameter of the method gives you the ability to define whether the filtered (hidden) tasks must be included into the result (*filtered: false* by default) or not (*filtered: true*):
+Filtering can make some tasks invisible on the page. The `filtered` parameter defines whether the filtered (hidden) tasks appear in the result (`filtered: false` by default) or not (`filtered: true`):
 
 ~~~js
 // filter the tasks
@@ -128,7 +128,7 @@ console.log(list.hasChildren({ id: "1.1" })); // -> true
 console.log(list.hasChildren({ id: "1.1", filtered: true })); // -> false
 ~~~
 
-The **hideCompleted** parameter of the method lets you exclude completed tasks from the result. For that, set the parameter to *true*:
+Set `hideCompleted` to `true` to exclude completed tasks from the result:
 
 ~~~js {4,9}
 const tasks = [
@@ -142,9 +142,9 @@ console.log(list.hasChildren({ id: "1.1" })); // -> true
 console.log(list.hasChildren({ id: "1.1", hideCompleted: true })); // -> false
 ~~~
 
-## Getting parent Ids
+## Get parent ids
 
-To get the parents of a task, use the [`getParentIds()`](api/methods/getparentids_method.md) method:
+To get the parents of a task, use the [`getParentIds()`](api/methods/getparentids_method.md) method. The example below returns the full parent chain for a task:
 
 ~~~js
 const tasks = [
@@ -159,9 +159,9 @@ const list = new ToDo("#root", { tasks });
 console.log(list.getParentIds({ id: "1.1.1" })); //  ['1.1', '1']
 ~~~
 
-## Getting Ids of selected tasks
+## Get ids of selected tasks
 
-To get IDs of all currently selected tasks, use the [`getSelection()`](api/methods/getselection_method.md) method:
+To get ids of all currently selected tasks, use the [`getSelection()`](api/methods/getselection_method.md) method. The snippet below initializes the To Do List with preselected tasks and adds one more selection:
 
 ~~~js
 const tasks = [
@@ -181,5 +181,5 @@ list.selectTask({
     join: true
 });
 
-console.log(list.getSelection( sorted: false )); // -> ["1.1", "1.2", "1.1.1"]
+console.log(list.getSelection({ sorted: false })); // -> ["1.1", "1.2", "1.1.1"]
 ~~~

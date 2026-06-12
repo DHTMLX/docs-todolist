@@ -6,9 +6,9 @@ description: You can learn about keyboard navigation in the documentation of the
 
 # Keyboard navigation
 
-DHTMLX To Do List supports full keyboard navigation, so you can create, manage, and organize tasks without a mouse.
+DHTMLX To Do List supports full keyboard navigation. Create, manage, and organize tasks without a mouse.
 
-Keyboard shortcuts work only when a task is focused. To focus a task, click on it or use <kbd>ArrowUp</kbd> / <kbd>ArrowDown</kbd> to navigate through the list.
+Keyboard shortcuts work only when a task is focused. To focus a task, click it or use <kbd>ArrowUp</kbd> / <kbd>ArrowDown</kbd> to navigate the list.
 
 :::tip
 Keyboard shortcuts do **not** work when the Search bar in the Toolbar is focused.
@@ -29,7 +29,7 @@ The following shortcuts work when the inline editor is **closed**.
 | <kbd>ArrowUp</kbd> | Moves selection to the previous task |
 | <kbd>ArrowDown</kbd> | Moves selection to the next task |
 | <kbd>ArrowRight</kbd> | Expands a collapsed parent task |
-| <kbd>ArrowLeft</kbd> | Collapses an expanded parent task. Otherwise (already collapsed or no children), moves selection to the parent task |
+| <kbd>ArrowLeft</kbd> | Collapses an expanded parent task. If already collapsed or no children, moves selection to the parent |
 | <kbd>Shift</kbd>+<kbd>ArrowUp</kbd> | Extends selection to the task above. If that task is already selected, deselects it |
 | <kbd>Shift</kbd>+<kbd>ArrowDown</kbd> | Extends selection to the task below (including its children). If that task is already selected, deselects it |
 | <kbd>Ctrl(Cmd)</kbd>+<kbd>Click</kbd> / <kbd>Ctrl(Cmd)</kbd>+<kbd>Shift</kbd>+<kbd>Click</kbd> | Selects or deselects multiple tasks together with their children:<br/>• if the task has selected parents — deselects the task and its parents<br/>• if the task has selected children — deselects only the task itself |
@@ -54,6 +54,10 @@ To learn more about working with multiple selected tasks, see the [Multiselectio
 | <kbd>Ctrl(Cmd)</kbd>+<kbd>D</kbd> | Duplicates the selected task at the same level |
 | <kbd>Ctrl(Cmd)</kbd>+<kbd>C</kbd> | Copies the selected task (including all child tasks) to the clipboard |
 | <kbd>Ctrl(Cmd)</kbd>+<kbd>V</kbd> | Pastes the copied task at the same level as the currently selected task, preserving the original structure |
+| <kbd>Ctrl(Cmd)</kbd>+<kbd>Z</kbd> | Reverts the last operation (undo) |
+| <kbd>Ctrl(Cmd)</kbd>+<kbd>Y</kbd> / <kbd>Ctrl(Cmd)</kbd>+<kbd>Shift</kbd>+<kbd>Z</kbd> | Restores the reverted operation (redo) |
+| <kbd>Alt</kbd>+<kbd>1</kbd> / <kbd>Alt</kbd>+<kbd>2</kbd> / <kbd>Alt</kbd>+<kbd>3</kbd> | Sets the priority of the selected task (matches the hotkey of the corresponding [`priorities`](api/configs/priorities_config.md) item) |
+| <kbd>Alt</kbd>+<kbd>0</kbd> | Resets the priority of the selected task |
 | <kbd>Escape</kbd> | Closes the context menu if it is open. Press again to close the editor, reset active filtering, and collapse search results in the Toolbar |
 
 ## Editing mode
@@ -68,6 +72,6 @@ The following shortcuts work when the inline editor is **open**.
 
 ## Related articles
 
-- [keypress-on-todo](api/events/keypressontodo_event.md) event — use this event to intercept key presses and implement custom behavior
+- [`keypress-on-todo`](api/events/keypressontodo_event.md) event — intercept key presses and implement custom behavior
 - [Inline editing](guides/inline_editing.md) — learn how to manage the editor programmatically
 - [Multiselection](guides/multiselection.md) — work with multiple selected tasks

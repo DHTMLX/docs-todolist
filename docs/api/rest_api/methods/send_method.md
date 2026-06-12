@@ -10,7 +10,7 @@ description: You can learn about the send method of the RestDataProvider in the 
 
 @short: Sends a necessary HTTP request to the server and returns a promise with or without data depending on the request 
 
-All requests to the server are made with the **send()** method which is a part of the [**RestDataProvider**](guides/working_with_server.md/#restdataprovider) service.
+All requests to the server are made with the **send()** method which is a part of the [**RestDataProvider**](guides/working_with_server.md#restdataprovider) service.
 
 
 ### Usage
@@ -116,12 +116,13 @@ const { ToDo, Toolbar, RestDataProvider } = todo;
 class MyDataProvider extends RestDataProvider {
   send(url, method, data, headers) {
       headers = { ...headers, "SomeToken": "abc" };
-      return super.send(url, methods, data, headers);
+      return super.send(url, method, data, headers);
   }
 }
 
-list.api.setNext(new MyDataProvider(url));
-MyDataProvider.setAPI(list.api);
+const myProvider = new MyDataProvider(url);
+list.api.setNext(myProvider);
+myProvider.setAPI(list.api);
 ~~~ 
 ---
 

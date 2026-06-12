@@ -162,7 +162,7 @@ The callback should return one of the following values:
             type: "datepicker",
             id: "dueDate", // default ID
             value: new Date(), // selected date
-            state: object // readonly
+            store: object // readonly
         }
         ~~~
 
