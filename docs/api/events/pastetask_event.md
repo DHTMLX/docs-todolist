@@ -23,12 +23,12 @@ description: You can learn about the paste-task event in the documentation of th
 
 ### Parameters
 
-The callback of the **paste-task** event can take an object with the following parameters:
+The callback of the `paste-task` event can take an object with the following parameters:
 
 - `parent` - (optional) the ID of the future parent task
 - `project` - (optional) the ID of the project
 - `targetId` - (optional) the ID of the target task where the task is pasted
-- `reverse` - (optional) **true**, if the task is pasted before the target task; otherwise, **false**
+- `reverse` - (optional) `true`, if the task is pasted before the target task; otherwise, `false`
 
 :::info
 To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods.md)
@@ -56,4 +56,4 @@ list.api.on("paste-task", (obj) => {
 });
 ~~~ 
 
-**Related article:** [Operations with tasks](guides/task_operations.md#copyingpasting-a-task)
+**Related article**: [Operations with tasks](guides/task_operations.md#copyingpasting-a-task)

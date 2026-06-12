@@ -20,7 +20,7 @@ description: You can learn about the indent-task event in the documentation of t
 
 ### Parameters
 
-The callback of the **indent-task** event can take an object with the following parameters:
+The callback of the `indent-task` event can take an object with the following parameters:
 
 - `id` - (required) the id of a task
 
@@ -50,4 +50,4 @@ list.api.on("indent-task", ({id}) => {
 });
 ~~~ 
 
-**Related article:** [Operations with tasks](guides/task_operations.md#changing-the-indent-level-of-a-task)
+**Related article**: [Operations with tasks](guides/task_operations.md#changing-the-indent-level-of-a-task)

@@ -62,7 +62,7 @@ You can access the DHTMLX private **npm** directly in the [Client's Area](https:
 Now you can add a To Do List to the page. For this, you should create two DIV containers to place the To Do List and its Toolbar into. So, your steps are:
 
 - specify two DIV containers in the *index.html* file
-- initialize To Do List and its Toolbar via the **new ToDo()** and **new Toolbar()** constructors correspondingly
+- initialize To Do List and its Toolbar via the `new ToDo()` and `new Toolbar()` constructors correspondingly
 
 ~~~js title="index.html"
 <!DOCTYPE html>
@@ -92,13 +92,13 @@ Now you can add a To Do List to the page. For this, you should create two DIV co
 ~~~
 
 :::note
-You should apply the object destructuring to "unpack" the **todo** global object into two variables: ToDo and Toolbar. 
+You should apply the object destructuring to "unpack" the `todo` global object into two variables: ToDo and Toolbar. 
 
-You don't need this step if you use the **new todo.ToDo()** and **new todo.Toolbar()** constructors.
+You don't need this step if you use the `new todo.ToDo()` and `new todo.Toolbar()` constructors.
 :::
 
 :::info
-Toolbar is an optional part of the To Do List interface. To create a To Do List without the Toolbar, you can specify only one DIV container and initialize List via the **new ToDo()** constructor
+Toolbar is an optional part of the To Do List interface. To create a To Do List without the Toolbar, you can specify only one DIV container and initialize List via the `new ToDo()` constructor
 :::
 
 For more information about initialization of To Do List read the [Initialization](guides/initialization.md) article.
@@ -111,7 +111,7 @@ As you can see, we've initialized the To Do List but it is still empty. At this 
 You can skip this step if you want to display an empty component on the page
 :::
 
-At first, you should prepare data to load into the component. The data can include the following sets of information: [**tasks**](api/configs/tasks_config.md), [**projects**](api/configs/projects_config.md), [**users**](api/configs/users_config.md), [**tags**](api/configs/tags_config.md), and [**activeProject**](api/configs/activeproject_config.md)
+At first, you should prepare data to load into the component. The data can include the following sets of information: [`tasks`](api/configs/tasks_config.md), [`projects`](api/configs/projects_config.md), [`users`](api/configs/users_config.md), [`tags`](api/configs/tags_config.md), and [`activeProject`](api/configs/activeproject_config.md)
 
 The most convenient way is to prepare data in a separate file, for example:
 

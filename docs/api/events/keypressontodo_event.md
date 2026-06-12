@@ -21,7 +21,7 @@ description: You can learn about the keypress-on-todo event in the documentation
 
 ### Parameters
 
-The callback of the **keypress-on-todo** event can take an object with the following parameters:
+The callback of the `keypress-on-todo` event can take an object with the following parameters:
 
 - `code` - (required) the code of the pressed key or a combination of the pressed keys in the *lower case*. The full lists of keyboard shortcuts and their codes are given [below](#keyboard-shortcuts)
 - `event` - (required) a native [event object](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent) 

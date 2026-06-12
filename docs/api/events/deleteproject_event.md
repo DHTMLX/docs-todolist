@@ -20,7 +20,7 @@ description: You can learn about the delete-project event in the documentation o
 
 ### Parameters
 
-The callback of the **delete-project** event can take an object with the following parameters:
+The callback of the `delete-project` event can take an object with the following parameters:
 
 - `id` - (required) the ID of a project
 
@@ -50,4 +50,4 @@ list.api.on("delete-project", ({id}) => {
 });
 ~~~
 
-**Related article:** [Operations with projects](guides/project_operations.md#deleting-a-project)
+**Related article**: [Operations with projects](guides/project_operations.md#deleting-a-project)

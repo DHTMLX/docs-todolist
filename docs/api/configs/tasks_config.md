@@ -35,10 +35,10 @@ tasks?: [
 
 ### Parameters
 
-The **tasks** property presents an array of task objects. Each object includes the following set of parameters:
+The `tasks` property presents an array of task objects. Each object includes the following set of parameters:
 
 - `id` - (optional) the id of a task
-- `parent` - (optional) the id of the parent task. The value of the parameter is **null | undefined** for root tasks
+- `parent` - (optional) the id of the parent task. The value of the parameter is `null | undefined` for root tasks
 - `project` - (optional) the id of the project where the task should be rendered. To initialize the projects, use the [projects](api/configs/projects_config.md) property.
 
 :::info
@@ -112,8 +112,8 @@ const toolbar = new Toolbar("#toolbar", {
 });
 ~~~
 
-**Change log:** The `priority` parameter was added in v1.2
+**Change log**: The `priority` parameter was added in v1.2
 
-**Related articles:**
+**Related articles**:
 - [Loading and storing data](guides/loading_data.md)
 - [Managing tasks](guides/task_index.md)

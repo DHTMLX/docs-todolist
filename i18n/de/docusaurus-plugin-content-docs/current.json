@@ -1,0 +1,170 @@
+{
+  "version.label": {
+    "message": "Nächste",
+    "description": "The label for version current"
+  },
+  "sidebar.docs.category.What's new and migration": {
+    "message": "Neuigkeiten und Migration",
+    "description": "The label for category 'What's new and migration' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.What's new and migration.link.generated-index.title": {
+    "message": "Neuigkeiten und Migration",
+    "description": "The generated-index page title for category 'What's new and migration' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.API": {
+    "message": "API",
+    "description": "The label for category 'API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.API.link.generated-index.title": {
+    "message": "API",
+    "description": "The generated-index page title for category 'API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.To Do List API": {
+    "message": "To Do List-API",
+    "description": "The label for category 'To Do List API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.To Do List methods": {
+    "message": "To Do List-Methoden",
+    "description": "The label for category 'To Do List methods' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.To Do List internal API": {
+    "message": "To Do List interne API",
+    "description": "The label for category 'To Do List internal API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.To Do List internal API.link.generated-index.title": {
+    "message": "API",
+    "description": "The generated-index page title for category 'To Do List internal API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Event Bus methods": {
+    "message": "Event-Bus-Methoden",
+    "description": "The label for category 'Event Bus methods' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Event Bus methods.link.generated-index.title": {
+    "message": "Event-Bus-Methoden",
+    "description": "The generated-index page title for category 'Event Bus methods' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.State methods": {
+    "message": "Status-Methoden",
+    "description": "The label for category 'State methods' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.State methods.link.generated-index.title": {
+    "message": "Status-Methoden",
+    "description": "The generated-index page title for category 'State methods' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.To Do List events": {
+    "message": "To Do List-Ereignisse",
+    "description": "The label for category 'To Do List events' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.To Do List properties": {
+    "message": "To Do List-Eigenschaften",
+    "description": "The label for category 'To Do List properties' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Toolbar API": {
+    "message": "Toolbar-API",
+    "description": "The label for category 'Toolbar API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Toolbar API.link.generated-index.title": {
+    "message": "Toolbar-API",
+    "description": "The generated-index page title for category 'Toolbar API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Toolbar methods": {
+    "message": "Toolbar-Methoden",
+    "description": "The label for category 'Toolbar methods' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Toolbar methods.link.generated-index.title": {
+    "message": "Toolbar-Methoden",
+    "description": "The generated-index page title for category 'Toolbar methods' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Toolbar properties": {
+    "message": "Toolbar-Eigenschaften",
+    "description": "The label for category 'Toolbar properties' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Toolbar properties.link.generated-index.title": {
+    "message": "Toolbar-Eigenschaften",
+    "description": "The generated-index page title for category 'Toolbar properties' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Backend API": {
+    "message": "Backend-API",
+    "description": "The label for category 'Backend API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Backend API.link.generated-index.title": {
+    "message": "Backend-API",
+    "description": "The generated-index page title for category 'Backend API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.RestDataProvider API": {
+    "message": "RestDataProvider-API",
+    "description": "The label for category 'RestDataProvider API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.RestDataProvider API.link.generated-index.title": {
+    "message": "RestDataProvider-API",
+    "description": "The generated-index page title for category 'RestDataProvider API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.REST methods": {
+    "message": "REST-Methoden",
+    "description": "The label for category 'REST methods' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.REST methods.link.generated-index.title": {
+    "message": "REST-Methoden",
+    "description": "The generated-index page title for category 'REST methods' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.REST routes": {
+    "message": "REST-Routen",
+    "description": "The label for category 'REST routes' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.GET routes": {
+    "message": "GET-Routen",
+    "description": "The label for category 'GET routes' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.GET routes.link.generated-index.title": {
+    "message": "GET-Routen",
+    "description": "The generated-index page title for category 'GET routes' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.POST routes": {
+    "message": "POST-Routen",
+    "description": "The label for category 'POST routes' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.POST routes.link.generated-index.title": {
+    "message": "POST-Routen",
+    "description": "The generated-index page title for category 'POST routes' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.PUT routes": {
+    "message": "PUT-Routen",
+    "description": "The label for category 'PUT routes' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.PUT routes.link.generated-index.title": {
+    "message": "PUT-Routen",
+    "description": "The generated-index page title for category 'PUT routes' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.DELETE routes": {
+    "message": "DELETE-Routen",
+    "description": "The label for category 'DELETE routes' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.DELETE routes.link.generated-index.title": {
+    "message": "DELETE-Routen",
+    "description": "The generated-index page title for category 'DELETE routes' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Backend and frameworks integration": {
+    "message": "Backend- und Framework-Integration",
+    "description": "The label for category 'Backend and frameworks integration' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Backend and frameworks integration.link.generated-index.title": {
+    "message": "Backend- und Framework-Integration",
+    "description": "The generated-index page title for category 'Backend and frameworks integration' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Guides": {
+    "message": "Anleitungen",
+    "description": "The label for category 'Guides' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Guides.link.generated-index.title": {
+    "message": "Anleitungen",
+    "description": "The generated-index page title for category 'Guides' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Managing tasks": {
+    "message": "Aufgabenverwaltung",
+    "description": "The label for category 'Managing tasks' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Managing projects": {
+    "message": "Projektverwaltung",
+    "description": "The label for category 'Managing projects' in sidebar 'docs'"
+  }
+}

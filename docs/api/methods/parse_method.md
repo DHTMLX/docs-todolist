@@ -51,4 +51,4 @@ list.parse({
 });
 ~~~
 
-**Related article:** [Loading and storing data](guides/loading_data.md)
+**Related article**: [Loading and storing data](guides/loading_data.md)

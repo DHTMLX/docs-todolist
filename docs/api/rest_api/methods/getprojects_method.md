@@ -11,7 +11,7 @@ description: You can learn about the getProjects method of the RestDataProvider 
 @short: Gets a promise with an array of projects objects
 
 :::info
-The **getProjects()** method is a part of the **RestDataProvider** service intended for working with a server
+The `getProjects()` method is a part of the `RestDataProvider` service intended for working with a server
 :::
 
 ### Usage
@@ -22,7 +22,7 @@ getProjects(): Promise<obj[]>;
 
 ### Response
 
-The **getProjects()** method sends a request to the server by the **GET** method and returns **a promise** with data on projects.
+The `getProjects()` method sends a request to the server by the `GET` method and returns **a promise** with data on projects.
 
 
 ### Example

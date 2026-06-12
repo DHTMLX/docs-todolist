@@ -140,15 +140,15 @@ To create a custom locale, copy the [default English locale](#default-locale) an
 :::info
 [**This GitHub repository**](https://github.com/web-widgets/wx-todo-locales/tree/master/locales) provides To Do List locales for the following languages:
 
-- Chinese (**cn**)
-- French (**fr**)
-- German (**de**)
-- English (**en**)
-- Italian (**it**)
-- Japanese (**jp**)
-- Portuguese (**pt**)
-- Russian (**ru**)
-- Spanish (**es**)
+- Chinese (`cn`)
+- French (`fr`)
+- German (`de`)
+- English (`en`)
+- Italian (`it`)
+- Japanese (`jp`)
+- Portuguese (`pt`)
+- Russian (`ru`)
+- Spanish (`es`)
 
 The files do not include translations for the Calendar labels — add them yourself.
 :::

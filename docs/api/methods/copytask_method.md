@@ -32,7 +32,7 @@ copyTask({
 ### Parameters
 
 - `id` - (required) the ID of a task
-- `join` - (optional) if **true**, adds the specified task to the list of tasks to copy; child tasks are added automatically. If **false**, resets all previous copies (that is only the last specified task will be copied)
+- `join` - (optional) if `true`, adds the specified task to the list of tasks to copy; child tasks are added automatically. If `false`, resets all previous copies (that is only the last specified task will be copied)
 
 :::info
 If you need to copy (and paste!) a task, pass the following parameters to the method to define a new position of the task:
@@ -112,7 +112,7 @@ list.pasteTask({
 list.unselectTask({ id: null });
 ~~~
 
-**Change log:** The `join` parameter was added in v1.1
+**Change log**: The `join` parameter was added in v1.1
 
-**Related article:** [Operations with tasks](guides/task_operations.md)
+**Related article**: [Operations with tasks](guides/task_operations.md)
 

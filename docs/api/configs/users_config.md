@@ -26,7 +26,7 @@ users?: [
 
 ### Parameters
 
-The **users** property presents an array of people objects. Each object includes the following set of parameters:
+The `users` property presents an array of people objects. Each object includes the following set of parameters:
 
 - `id` - (required) the id of a person
 - `label` - (required) the description of the person
@@ -34,7 +34,7 @@ The **users** property presents an array of people objects. Each object includes
 - `color` - (optional) the color of the icon if the image isn't uploaded
 
 :::info
-If the **color** parameter is not specified, the color from the default set of colors will be applied.
+If the `color` parameter is not specified, the color from the default set of colors will be applied.
 :::
 
 ### Example
@@ -96,6 +96,6 @@ const toolbar = new Toolbar("#toolbar", {
 });
 ~~~
 
-**Related articles:**
+**Related articles**:
 - [Loading and storing data](guides/loading_data.md)
 - [Task users](guides/task_users.md)

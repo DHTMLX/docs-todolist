@@ -11,7 +11,7 @@ description: You can learn about the getProjectTasks method of the RestDataProvi
 @short: Gets a promise with an array of tasks objects for the specified project
 
 :::info
-The **getProjectTasks()** method is a part of the **RestDataProvider** service intended for working with a server
+The `getProjectTasks()` method is a part of the `RestDataProvider` service intended for working with a server
 :::
 
 ### Usage
@@ -28,7 +28,7 @@ getProjectTasks(id: string | number | null): Promise<obj[]>;
 
 ### Response
 
-The **getProjectTasks()** method sends a request to the server by the **GET** method and returns **a promise** with data on the tasks of the specified project.
+The `getProjectTasks()` method sends a request to the server by the `GET` method and returns **a promise** with data on the tasks of the specified project.
 
 
 ### Example

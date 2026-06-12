@@ -29,7 +29,7 @@ moveTask({
 - `id` - (optional) the ID of the task to be moved
 - `project` - (optional) the ID of the project<br>
 :::info
-To move a task to the *No project* section, specify the value of the parameter to **null**
+To move a task to the *No project* section, specify the value of the parameter to `null`
 :::
 - `parent` - (optional) the ID of the parent task
 - `targetId` - (optional) the ID of the target task where the moved task will be pasted
@@ -68,7 +68,7 @@ list.moveTask({
 });
 ~~~
 
-The example below shows where the task will be moved if you specify only the **parent** and, optionally, **reverse** parameters:
+The example below shows where the task will be moved if you specify only the `parent` and, optionally, `reverse` parameters:
 
 ~~~js {5,12-13}
 // move "Task 1.1" to "Project 2" and place it after "Task 2.1" as a child of "Task 2"
@@ -87,7 +87,7 @@ list.moveTask({
 });
 ~~~
 
-The example below shows where the task will be moved if you specify only the **targetId** and, optionally, **reverse** parameters:
+The example below shows where the task will be moved if you specify only the `targetId` and, optionally, `reverse` parameters:
 
 ~~~js {5,12-13}
 // move "Task 1.1" to "Project 2" and place it after "Task 2" as a root task
@@ -130,6 +130,6 @@ list.eachSelected(id => {
 }, true);
 ~~~
 
-**Related articles:**
+**Related articles**:
 - [Operations with tasks](guides/task_operations.md)
 - [Multiple select and bulk operations](guides/multiselection.md)

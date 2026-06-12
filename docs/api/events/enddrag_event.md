@@ -22,7 +22,7 @@ description: You can learn about the end-drag event in the documentation of the 
 
 ### Parameters
 
-The callback of the **end-drag** event can take an object with the following parameters:
+The callback of the `end-drag` event can take an object with the following parameters:
 
 - `target` - (required) the ID of the task on which the dragging process was finished
 - `dropPosition` - (required) the position where the dragged tasks has been dropped:
@@ -59,6 +59,6 @@ list.api.on("drag", ({ target, dropPosition, mode }) => {
 });
 ~~~
 
-**Change log:** Added in v1.1
+**Change log**: Added in v1.1
 
-**Related article:** [Drag-n-drop](guides/configuration.md#drag-n-drop)
+**Related article**: [Drag-n-drop](guides/configuration.md#drag-n-drop)

@@ -42,6 +42,6 @@ const toolbar = new Toolbar("#toolbar", {
 });
 ~~~
 
-**Related articles:** 
+**Related articles**: 
 - [Loading and storing data](guides/loading_data.md)
 - [Inline editing](guides/inline_editing.md)

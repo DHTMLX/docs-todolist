@@ -32,7 +32,7 @@ Adjust relative paths to match your project layout. The example below loads both
 
 The To Do List widget consists of two components: a List and a Toolbar.
 
-Create **two containers** for the List and the Toolbar, and assign them IDs (for example, **"root"** and **"toolbar"**). The following snippet declares both containers:
+Create **two containers** for the List and the Toolbar, and assign them IDs (for example, `"root"` and `"toolbar"`). The following snippet declares both containers:
 
 ~~~html title="index.html"
 <div id="toolbar"></div> <!-- container for Toolbar (optional) -->

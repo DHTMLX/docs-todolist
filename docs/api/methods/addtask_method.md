@@ -29,14 +29,14 @@ addTask({
 - `parent` - (optional) the ID of the parent task
 - `project` - (optional) the ID of the project. By default, the ID of the [currently active project](api/configs/activeproject_config.md)<br>
 :::info
-In case the active project is specified but you need to add a task into the *No project* section, specify the value of the parameter to **null**
+In case the active project is specified but you need to add a task into the *No project* section, specify the value of the parameter to `null`
 :::
 - `targetId` - (optional) the ID of the future target task where the new task will be added
 - `reverse` - (optional) defines the position where the new task will be added: **before** or **after** the target task
 - `task` - (required) the data object of the new task. The full list of the task parameters can be found [here](api/configs/tasks_config.md)
 
 :::info
-If you specify the **id**, **parent**, **project** parameters of the method, you don't need to specify them in the task object
+If you specify the `id`, `parent`, `project` parameters of the method, you don't need to specify them in the task object
 :::
 
 ### Example
@@ -75,4 +75,4 @@ list.addTask({
 });
 ~~~
 
-**Related article:** [Operations with tasks](guides/task_operations.md)
+**Related article**: [Operations with tasks](guides/task_operations.md)

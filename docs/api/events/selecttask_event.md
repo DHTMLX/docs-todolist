@@ -21,12 +21,12 @@ description: You can learn about the select-task event in the documentation of t
 
 ### Parameters
 
-The callback of the **select-task** event can take an object with the following parameters:
+The callback of the `select-task` event can take an object with the following parameters:
 
 - `id` - (required) the id of a task
 - `join` - (optional) defines the mode in which the task has been selected: 
-    - **true** - multi-selection mode
-    - **false** - single selection mode
+    - `true` - multi-selection mode
+    - `false` - single selection mode
 
 :::info
 To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods.md)
@@ -55,8 +55,8 @@ list.api.on("select-task", ({id, join}) => {
 });
 ~~~
 
-**Change log:** The `join` parameter was added in v1.1
+**Change log**: The `join` parameter was added in v1.1
 
-**Related articles:**
+**Related articles**:
 - [Operations with tasks](guides/task_operations.md)
 - [Multiple select and bulk operations](guides/multiselection.md)

@@ -77,7 +77,7 @@ The callback should return one of the following values:
     ~~~
 
     - `id` - (required) the ID of the menu item
-    - `icon` - (optional) the icon for the menu item (by default taken from the **wxi** font)
+    - `icon` - (optional) the icon for the menu item (by default taken from the `wxi` font)
     - `label` - (optional) the text for the menu item
     - `hotkey` - (optional) a hotkey for the action from this menu item
     - `value` - (optional) the due date, valid for "datepicker"
@@ -88,7 +88,7 @@ The callback should return one of the following values:
         - `"item"` - the basic menu item
 
         <details>
-        <summary>The **"item"** type default structure</summary>
+        <summary>The `"item"` type default structure</summary>
             ~~~js {2}
             {
                 type: "item",
@@ -107,7 +107,7 @@ The callback should return one of the following values:
         - `"separator"` - the line for separating menu items
 
         <details>
-        <summary>The **"separator"** type default structure</summary>
+        <summary>The `"separator"` type default structure</summary>
             ~~~js
             { type: "separator" }
             ~~~
@@ -116,7 +116,7 @@ The callback should return one of the following values:
         - `"priority"` - the menu item intended for setting priorities
 
         <details>
-        <summary>The **"priority"** type default structure</summary>
+        <summary>The `"priority"` type default structure</summary>
 
         By default, there are **High**, **Medium**, and **Low** items displayed in the submenu of the `"setPriority"` item.
 
@@ -153,9 +153,9 @@ The callback should return one of the following values:
         - `"datepicker"` - the menu item intended for setting dates
 
         <details>
-        <summary>The **"datepicker"** type default structure</summary>
+        <summary>The `"datepicker"` type default structure</summary>
 
-        By default, the **"datepicker"** item displayed in the submenu of the `"setDate"` item.
+        By default, the `"datepicker"` item displayed in the submenu of the `"setDate"` item.
 
         ~~~js {2}
         {
@@ -172,7 +172,7 @@ The callback should return one of the following values:
         - `"user"` - the menu item intended for assigning users to tasks
 
         <details>
-        <summary>The **"user"** type default structure</summary>
+        <summary>The `"user"` type default structure</summary>
 
         ~~~js {2}
         {
@@ -268,9 +268,9 @@ new ToDo("#root", {
 });
 ~~~
 
-**Change log:** The `menu` config was added in v1.3
+**Change log**: The `menu` config was added in v1.3
 
-**Related samples:**
+**Related samples**:
     - [To do list. Menu customization. Adding and removing options](https://snippet.dhtmlx.com/slpjstbb)
     - [To do list. Menu customization. Custom icons](https://snippet.dhtmlx.com/cmfqmg00)
     - [To do list. Remove menu for specific part of interface](https://snippet.dhtmlx.com/5pnk7y0d)

@@ -21,7 +21,7 @@ description: You can learn about the start-drag event in the documentation of th
 
 ### Parameters
 
-The callback of the **start-drag** event can take an object with the following parameters:
+The callback of the `start-drag` event can take an object with the following parameters:
 
 - `start` - (required) the ID of the task from which the dragging process has started
 - `mode` - (required) the mode of drag-n-drop:
@@ -54,6 +54,6 @@ list.api.on("start-drag", ({ start, mode }) => {
 });
 ~~~
 
-**Change log:** Added in v1.1
+**Change log**: Added in v1.1
 
-**Related article:** [Drag-n-drop](guides/configuration.md#drag-n-drop)
+**Related article**: [Drag-n-drop](guides/configuration.md#drag-n-drop)

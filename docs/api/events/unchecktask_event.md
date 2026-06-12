@@ -21,10 +21,10 @@ description: You can learn about the uncheck-task event in the documentation of 
 
 ### Parameters
 
-The callback of the **uncheck-task** event can take an object with the following parameters:
+The callback of the `uncheck-task` event can take an object with the following parameters:
 
 - `id` - (required) the id of a task
-- `manual` - (optional) **true** if the task is marked as uncompleted in the "manual" mode
+- `manual` - (optional) `true` if the task is marked as uncompleted in the "manual" mode
 
 :::info
 To handle the inner events, you can use the [**Event Bus methods**](category/event-bus-methods.md)
@@ -52,4 +52,4 @@ list.api.on("uncheck-task", ({id}) => {
 });
 ~~~
 
-**Related article:** [Operations with tasks](guides/task_operations.md#marking-a-task-completeincomplete)
+**Related article**: [Operations with tasks](guides/task_operations.md#marking-a-task-completeincomplete)

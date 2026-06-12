@@ -26,18 +26,18 @@ description: You can learn about the move-task event in the documentation of the
 
 ### Parameters
 
-The callback of the **move-task** event can take an object with the following parameters:
+The callback of the `move-task` event can take an object with the following parameters:
 
 - `id` - (required) the ID of the moved task
 - `parent` - (optional) the ID of the parent task
 - `project` - (optional) the ID of the project
 - `targetId` - (optional) the ID of the target task
-- `reverse` - (optional) **true**, if the task is pasted before the target task; otherwise, **false**
+- `reverse` - (optional) `true`, if the task is pasted before the target task; otherwise, `false`
 - Additional parameters that can be applied to the [RestDataProvider](guides/working_with_server.md) work:
     - `operation` - (optional) an operation type performed on a task; values:
-        - **indent** - demoting the task nesting level by one
-        - **unindent** - promoting the task nesting level by one
-        - **project** - moving a task to another project 
+        - `indent` - demoting the task nesting level by one
+        - `unindent` - promoting the task nesting level by one
+        - `project` - moving a task to another project 
         - if no value is set, it indicates changing a task position within a project it belongs to
     - `batch` - (optional) an array of IDs of the tasks on which an operation is perfromed 
 
@@ -67,4 +67,4 @@ list.api.on("move-task", ({id}) => {
 });
 ~~~ 
 
-**Related article:** [Operations with tasks](guides/task_operations.md#moving-a-task)
+**Related article**: [Operations with tasks](guides/task_operations.md#moving-a-task)

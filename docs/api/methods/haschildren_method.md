@@ -24,11 +24,11 @@ hasChildren({
 ### Parameters
 
 - `id` - (required) the ID of the task
-- `filtered` - (optional) if **false**, the filtered child tasks will be also included into the result; otherwise, will be excluded from it
-- `hideCompleted` - (optional) if **false**, the completed tasks will be included into the result; otherwise, will be excluded from it
+- `filtered` - (optional) if `false`, the filtered child tasks will be also included into the result; otherwise, will be excluded from it
+- `hideCompleted` - (optional) if `false`, the completed tasks will be included into the result; otherwise, will be excluded from it
 
 :::tip
-The **filtered** parameter is used if the filtering has been applied
+The `filtered` parameter is used if the filtering has been applied
 :::
 
 ### Returns
@@ -68,6 +68,6 @@ console.log(list.hasChildren({ id: "1.1", hideCompleted: true })); // -> false
 console.log(list.hasChildren({ id: "1.1", filtered: true })); // -> false
 ~~~
 
-**Change log:** The `hideCompleted` parameter was added in v1.1
+**Change log**: The `hideCompleted` parameter was added in v1.1
 
-**Related article:** [Task object/Id](guides/task_object.md)
+**Related article**: [Task object/Id](guides/task_object.md)

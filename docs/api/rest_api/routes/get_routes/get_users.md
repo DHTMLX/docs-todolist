@@ -32,7 +32,7 @@ No payload is required.
 ### Response
 
 The route returns a json object with an array of all users objects. <br/> 
-Look up an example of the users object in the [**users**](api/configs/users_config.md) section. <br/> 
+Look up an example of the users object in the [`users`](api/configs/users_config.md) section. <br/> 
 The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500).
 
 ---

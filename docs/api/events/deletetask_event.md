@@ -21,7 +21,7 @@ description: You can learn about the delete-task event in the documentation of t
 
 ### Parameters
 
-The callback of the **delete-task** event can take an object with the following parameters:
+The callback of the `delete-task` event can take an object with the following parameters:
 
 - `id` - (required) the ID of a removed task
 - `batch` - (optional) an array of IDs of tasks removed together in a bulk operation
@@ -52,4 +52,4 @@ list.api.on("delete-task", ({id}) => {
 });
 ~~~
 
-**Related article:** [Operations with tasks](guides/task_operations.md#deleting-a-task)
+**Related article**: [Operations with tasks](guides/task_operations.md#deleting-a-task)

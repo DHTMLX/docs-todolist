@@ -39,8 +39,8 @@ list.addTask({ task: { text: "New task 1" } });
 list.undo();
 ~~~
 
-**Change log:** The `undo()` method was added in v1.3
+**Change log**: The `undo()` method was added in v1.3
 
-**Related API:**
+**Related API**:
     - [`history`](api/configs/history_config.md)
     - [`redo`](api/methods/redo_method.md)
