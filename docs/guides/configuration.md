@@ -28,7 +28,7 @@ To change configuration parameters dynamically after initialization, use the [`s
 
 Change the counter type that shows how many child tasks are complete.
 
-![counter](../assets/counter.png)
+![Counter of completed subtasks in DHTMLX To Do List](/img/counter.png)
 
 By default, each parent task shows a counter as a ratio of completed child tasks to the total number of child tasks.
 
@@ -130,11 +130,11 @@ list.api.on("end-drag", ({ target, dropPosition, mode }) => {
 
 If you specify a [due date](api/configs/tasks_config.md) for a task, due date validation tracks task completion. The due date appears in green until the task becomes overdue.
 
-![due_date](../assets/due_date.png)
+![Task with a due date shown in green in DHTMLX To Do List](/img/due_date.png)
 
 Dates of overdue tasks appear in red.
 
-![due_date](../assets/overdue_task.png)
+![Overdue task with its due date shown in red in DHTMLX To Do List](/img/overdue_task.png)
 
 Validation is enabled by default. To disable it, set `taskShape.date.validate` to `false`. See the [`taskShape`](api/configs/taskshape_config.md) reference for details. The code snippet below turns off due date validation:
 

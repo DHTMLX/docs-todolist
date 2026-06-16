@@ -322,6 +322,6 @@ const { users, tasks, projects } = getData();
 
 Start the app — the To Do List renders with sample data:
 
-![To Do List initialization](../assets/trial_todolist.png)
+![DHTMLX To Do List rendered in a Svelte application with sample data](/img/trial_todolist.png)
 
 Find the complete project on [**GitHub**](https://github.com/DHTMLX/svelte-todolist-demo).

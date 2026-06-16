@@ -28,7 +28,7 @@ Um Konfigurationsparameter nach der Initialisierung dynamisch zu ändern, verwen
 
 Ändern Sie den Zählertyp, der anzeigt, wie viele Kindaufgaben abgeschlossen sind.
 
-![counter](../assets/counter.png)
+![Zähler abgeschlossener Teilaufgaben in DHTMLX To Do List](/img/counter.png)
 
 Standardmäßig zeigt jede übergeordnete Aufgabe einen Zähler als Verhältnis abgeschlossener Kindaufgaben zur Gesamtanzahl der Kindaufgaben an.
 
@@ -130,11 +130,11 @@ list.api.on("end-drag", ({ target, dropPosition, mode }) => {
 
 Wenn Sie für eine Aufgabe ein [Fälligkeitsdatum](api/configs/tasks_config.md) angeben, verfolgt die Fälligkeitsdatum-Validierung den Abschluss der Aufgabe. Das Fälligkeitsdatum erscheint grün, bis die Aufgabe überfällig wird.
 
-![due_date](../assets/due_date.png)
+![Aufgabe mit grün hervorgehobenem Fälligkeitsdatum in DHTMLX To Do List](/img/due_date.png)
 
 Die Datumsangaben überfälliger Aufgaben erscheinen in Rot.
 
-![due_date](../assets/overdue_task.png)
+![Überfällige Aufgabe mit rot hervorgehobenem Fälligkeitsdatum in DHTMLX To Do List](/img/overdue_task.png)
 
 Die Validierung ist standardmäßig aktiviert. Um sie zu deaktivieren, setzen Sie `taskShape.date.validate` auf `false`. Weitere Details finden Sie in der [`taskShape`](api/configs/taskshape_config.md)-Referenz. Der folgende Code-Ausschnitt deaktiviert die Fälligkeitsdatum-Validierung:
 

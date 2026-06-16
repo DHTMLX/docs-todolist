@@ -19,11 +19,11 @@ To Do List 컴포넌트의 인터페이스는 [Toolbar](#toolbar)와 [List](#lis
 
 - 프로젝트 간 전환 및 필요한 프로젝트 검색을 위한 **콤보** 컨트롤
 
-![toolbar](assets/toolbar.png)
+![프로젝트 선택 콤보가 있는 DHTMLX To Do List 도구 모음](/img/toolbar.png)
 
 - 필요한 작업을 검색하기 위한 **검색 표시줄**
 
-![toolbar](assets/search_field.png)
+![DHTMLX To Do List 도구 모음의 검색창](/img/search_field.png)
 
 - 다음 작업을 수행할 수 있는 컨트롤 세트가 포함된 **메뉴**:
     - 다음 기준에 따라 작업을 오름차순/내림차순으로 정렬:
@@ -36,7 +36,7 @@ To Do List 컴포넌트의 인터페이스는 [Toolbar](#toolbar)와 [List](#lis
     - 완료된 작업 숨기기/표시하기
     - 새 프로젝트 추가, 현재 활성 프로젝트 이름 바꾸기 또는 삭제하기
 
-![toolbar](assets/project_menu.png)
+![작업 정렬 및 프로젝트 옵션이 있는 DHTMLX To Do List 도구 모음 메뉴](/img/project_menu.png)
 
 :::info
 사용자 정의 요소를 추가하거나 내장 컨트롤의 순서를 변경하여 Toolbar 구조를 변경할 수 있습니다. 자세한 내용은 [**구성**](guides/configuration.md#toolbar) 및 [**커스터마이징**](guides/customization.md#customize-the-toolbar) 섹션을 참조하세요.
@@ -46,7 +46,7 @@ To Do List 컴포넌트의 인터페이스는 [Toolbar](#toolbar)와 [List](#lis
 
 **작업 목록**은 새 작업 추가, 기존 작업 편집 또는 삭제를 위한 To Do List 인터페이스의 주요 부분입니다. 작업의 외관을 손쉽게 구성할 수 있습니다. 자세한 내용은 [구성](guides/configuration.md) 섹션을 참조하세요.
 
-![list](assets/list.png)
+![DHTMLX To Do List 위젯의 작업 목록](/img/list.png)
 
 ## 작업 선택 {#selecting-tasks}
 
@@ -79,7 +79,7 @@ To Do List 컴포넌트의 인터페이스는 [Toolbar](#toolbar)와 [List](#lis
 
 작업의 **컨텍스트 메뉴**에는 항목 및 하위 항목 세트가 포함되어 있으며 다음과 같이 표시됩니다:
 
-![context_menu_of_task](assets/task_context_menu.png)
+![DHTMLX To Do List에서 단일 작업의 컨텍스트 메뉴](/img/task_context_menu.png)
 
 ### 새 작업 추가 {#adding-a-new-task}
 
@@ -124,7 +124,7 @@ To Do List 컴포넌트의 인터페이스는 [Toolbar](#toolbar)와 [List](#lis
 
 - 선택된 작업에 대한 **컨텍스트 메뉴** 열기
 
-![context_menu_of_tasks](assets/tasks_context_menu.png)
+![DHTMLX To Do List에서 여러 선택된 작업의 컨텍스트 메뉴](/img/tasks_context_menu.png)
 
 - `Backspace`/`Delete`를 눌러 작업 삭제하기
 - `Ctrl (Cmd) + C`로 작업 복사하고 `Ctrl (Cmd) + V`로 붙여넣기. 무작위 순서로 선택된 작업은 데이터 구조에 따라 정렬됩니다

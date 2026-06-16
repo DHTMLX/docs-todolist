@@ -8,7 +8,7 @@ description: 您可以在 DHTMLX JavaScript To Do List 库的文档中了解多�
 
 To Do List 库支持同时选择多个任务并对其进行统一管理。
 
-![多选](../assets/multiselection.png)
+![DHTMLX To Do List 小部件中的多个选定任务](/img/multiselection.png)
 
 :::info
 了解如何通过 UI [选择](/#selecting-tasks)和[管理多个任务](/#managing-multiple-tasks)。

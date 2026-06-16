@@ -50,7 +50,7 @@ const list = new ToDo("#root", {
 
 할당된 사람들은 작업 오른쪽에 표시됩니다.
 
-![users](../assets/users.png)
+![DHTMLX To Do List에서 작업에 배정된 사용자](/img/users.png)
 
 작업에 할당된 사람 목록을 보려면 아바타를 클릭합니다. 목록을 닫으려면 목록 외부를 클릭합니다.
 

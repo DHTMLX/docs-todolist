@@ -332,6 +332,6 @@ export default App;
 
 앱을 시작하면 To Do List가 샘플 데이터와 함께 렌더링됩니다:
 
-![To Do List 초기화](../assets/trial_todolist.png)
+![샘플 데이터와 함께 React 애플리케이션에 렌더링된 DHTMLX To Do List](/img/trial_todolist.png)
 
 완성된 프로젝트는 [**GitHub**](https://github.com/DHTMLX/react-todolist-demo)에서 확인할 수 있습니다.

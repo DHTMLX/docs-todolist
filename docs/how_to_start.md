@@ -8,7 +8,7 @@ description: You can learn about how to start working with DHTMLX To Do List in 
 
 This tutorial will teach you how to create a fully featured To Do List and add it into your web application.
 
-![how_to_start](assets/todolist.png)
+![Fully featured DHTMLX To Do List displayed on a web page](/img/todolist.png)
 
 After completing all the steps below, you will get a ready-to-use To Do List which you can easily configure to suite your needs and efficiently use in real life.
 

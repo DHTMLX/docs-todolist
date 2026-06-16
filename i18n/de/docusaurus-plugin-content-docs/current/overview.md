@@ -19,11 +19,11 @@ Die **Toolbar** ist der obere Teil von To Do List und enthält:
 
 - ein **Combo**-Steuerelement zum Wechseln zwischen Projekten und zum Suchen nach dem gewünschten Projekt
 
-![toolbar](assets/toolbar.png)
+![DHTMLX To Do List-Symbolleiste mit der Projektauswahl-Combobox](/img/toolbar.png)
 
 - eine **Suchleiste** zum Suchen nach den benötigten Aufgaben
 
-![toolbar](assets/search_field.png)
+![Suchleiste in der DHTMLX To Do List-Symbolleiste](/img/search_field.png)
 
 - ein **Menü** mit einer Reihe von Steuerelementen, mit denen Sie:
     - Aufgaben aufsteigend/absteigend nach folgenden Kriterien sortieren können:
@@ -36,7 +36,7 @@ Die **Toolbar** ist der obere Teil von To Do List und enthält:
     - erledigte Aufgaben aus- oder einblenden können
     - ein neues Projekt hinzufügen, das aktuell aktive Projekt umbenennen oder löschen können
 
-![toolbar](assets/project_menu.png)
+![Symbolleistenmenü von DHTMLX To Do List mit Aufgabensortierung und Projektoptionen](/img/project_menu.png)
 
 :::info
 Sie können die Toolbar-Struktur ändern, indem Sie benutzerdefinierte Elemente hinzufügen oder die Reihenfolge der integrierten Steuerelemente anpassen. Lesen Sie dazu die Abschnitte [**Konfiguration**](guides/configuration.md#toolbar) und [**Anpassung**](guides/customization.md#customize-the-toolbar).
@@ -46,7 +46,7 @@ Sie können die Toolbar-Struktur ändern, indem Sie benutzerdefinierte Elemente 
 
 Die **Aufgabenliste** ist der Hauptteil der To-Do-List-Oberfläche, mit dem Sie neue Aufgaben hinzufügen sowie vorhandene bearbeiten oder löschen können. Die Darstellung der Aufgaben lässt sich einfach konfigurieren. Lesen Sie dazu den Abschnitt [Konfiguration](guides/configuration.md). 
 
-![list](assets/list.png)
+![Aufgabenliste im DHTMLX To Do List-Widget](/img/list.png)
 
 ## Aufgaben auswählen {#selecting-tasks}
 
@@ -79,7 +79,7 @@ Sie können die ausgewählte Aufgabe sowohl über das Kontextmenü als auch per 
 
 Das **Kontextmenü** einer Aufgabe enthält eine Reihe von Einträgen und Untereinträgen und sieht folgendermaßen aus:
 
-![context_menu_of_task](assets/task_context_menu.png)
+![Kontextmenü einer einzelnen Aufgabe in DHTMLX To Do List](/img/task_context_menu.png)
 
 ### Eine neue Aufgabe hinzufügen {#adding-a-new-task}
 
@@ -124,7 +124,7 @@ Nachdem Sie [mehrere Aufgaben](#selecting-multiple-tasks) ausgewählt haben, kö
 
 - ein **Kontextmenü** für die ausgewählten Aufgaben öffnen
 
-![context_menu_of_tasks](assets/tasks_context_menu.png)
+![Kontextmenü für mehrere ausgewählte Aufgaben in DHTMLX To Do List](/img/tasks_context_menu.png)
 
 - Aufgaben durch Drücken von `Backspace`/`Delete` löschen
 - Aufgaben per `Ctrl (Cmd) + C` kopieren und per `Ctrl (Cmd) + V` einfügen. Aufgaben, die in beliebiger Reihenfolge ausgewählt wurden, werden entsprechend der Datenstruktur geordnet

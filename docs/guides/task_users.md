@@ -50,7 +50,7 @@ const list = new ToDo("#root", {
 
 The assigned people appear to the right of the task.
 
-![users](../assets/users.png)
+![Users assigned to a task in DHTMLX To Do List](/img/users.png)
 
 To view the list of people assigned to a task, click the avatars. To close it, click outside the list.
 

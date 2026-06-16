@@ -19,11 +19,11 @@ The interface of the To Do List component consists of two parts: [Toolbar](#tool
 
 - a **combo** control for switching between projects, and searching for the necessary project
 
-![toolbar](assets/toolbar.png)
+![DHTMLX To Do List toolbar with the project selector combo](/img/toolbar.png)
 
 - a **search bar** for searching for the needed tasks
 
-![toolbar](assets/search_field.png)
+![Search bar in the DHTMLX To Do List toolbar](/img/search_field.png)
 
 - a **menu** with a set of controls which allow you to:
     - sort tasks in the ascending/descending order by the following criteria:
@@ -36,7 +36,7 @@ The interface of the To Do List component consists of two parts: [Toolbar](#tool
     - hide/show completed tasks
     - add a new project, rename or delete a currently active project
 
-![toolbar](assets/project_menu.png)
+![DHTMLX To Do List toolbar menu with task sorting and project options](/img/project_menu.png)
 
 :::info
 You can change the toolbar structure by adding custom elements or changing the order of the built-in controls. Read more in the [**Configuration**](guides/configuration.md#toolbar) and [**Customization**](guides/customization.md#customize-the-toolbar) sections.
@@ -46,7 +46,7 @@ You can change the toolbar structure by adding custom elements or changing the o
 
 The **list of tasks** is the main part of the To Do List interface intended for adding new tasks, editing, or deleting the existing ones. You can easily configure the appearance of tasks. Read more in the [Configuration](guides/configuration.md) section. 
 
-![list](assets/list.png)
+![List of tasks in the DHTMLX To Do List widget](/img/list.png)
 
 ## Selecting tasks
 
@@ -79,7 +79,7 @@ You can manage the selected task both via the context menu or keyboard navigatio
 
 The **context menu** of a task contains a set of items and sub-items and looks like this:
 
-![context_menu_of_task](assets/task_context_menu.png)
+![Context menu of a single task in DHTMLX To Do List](/img/task_context_menu.png)
 
 ### Adding a new task
 
@@ -124,7 +124,7 @@ After you have selected [multiple tasks](#selecting-multiple-tasks), you can per
 
 - to open a **context menu** for the selected tasks
 
-![context_menu_of_tasks](assets/tasks_context_menu.png)
+![Context menu for multiple selected tasks in DHTMLX To Do List](/img/tasks_context_menu.png)
 
 - to delete tasks by pressing `Backspace`/`Delete`
 - to copy tasks via `Ctrl (Cmd) + C` and paste them via `Ctrl (Cmd) + V`. The tasks which are selected in the chaotic order will be structured depending on the structure of the data

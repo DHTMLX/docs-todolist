@@ -50,7 +50,7 @@ const list = new ToDo("#root", {
 
 Die zugewiesenen Personen erscheinen rechts neben der Aufgabe.
 
-![users](../assets/users.png)
+![Einer Aufgabe in DHTMLX To Do List zugewiesene Benutzer](/img/users.png)
 
 Um die Liste der einer Aufgabe zugewiesenen Personen anzuzeigen, klicken Sie auf die Avatare. Zum Schließen klicken Sie außerhalb der Liste.
 
