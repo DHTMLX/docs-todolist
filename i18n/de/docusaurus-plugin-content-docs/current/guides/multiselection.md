@@ -8,7 +8,7 @@ description: In der Dokumentation der DHTMLX JavaScript To Do List-Bibliothek er
 
 Die To Do List-Bibliothek ermöglicht die Auswahl mehrerer Aufgaben und deren gleichzeitige Verwaltung.
 
-![Mehrfachauswahl](../assets/multiselection.png)
+![Mehrere ausgewählte Aufgaben im DHTMLX To Do List-Widget](/img/multiselection.png)
 
 :::info
 Erfahren Sie, wie Sie Aufgaben über die Benutzeroberfläche [auswählen](/#selecting-tasks) und [mehrere Aufgaben verwalten](/#managing-multiple-tasks).

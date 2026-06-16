@@ -28,7 +28,7 @@ description: 您可以在 DHTMLX JavaScript To Do List 库的文档中了解 To 
 
 更改显示已完成子任务数量的计数器类型。
 
-![counter](../assets/counter.png)
+![DHTMLX To Do List 中已完成子任务的计数器](/img/counter.png)
 
 默认情况下，每个父任务以已完成子任务数与子任务总数之比的形式显示计数器。
 
@@ -130,11 +130,11 @@ list.api.on("end-drag", ({ target, dropPosition, mode }) => {
 
 如果为任务指定了[截止日期](api/configs/tasks_config.md)，截止日期验证会追踪任务完成情况。任务未逾期时截止日期显示为绿色。
 
-![due_date](../assets/due_date.png)
+![DHTMLX To Do List 中截止日期以绿色显示的任务](/img/due_date.png)
 
 逾期任务的日期显示为红色。
 
-![due_date](../assets/overdue_task.png)
+![DHTMLX To Do List 中截止日期以红色显示的逾期任务](/img/overdue_task.png)
 
 验证默认启用。若要禁用，请将 `taskShape.date.validate` 设置为 `false`。详情请参阅 [`taskShape`](api/configs/taskshape_config.md) 参考。以下代码片段关闭截止日期验证：
 

@@ -50,7 +50,7 @@ const list = new ToDo("#root", {
 
 已分配的人员显示在任务右侧。
 
-![users](../assets/users.png)
+![DHTMLX To Do List 中分配给任务的用户](/img/users.png)
 
 单击头像可查看分配给任务的人员列表；在列表外部单击可关闭。
 

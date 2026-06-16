@@ -28,7 +28,7 @@ description: You can learn about the To Do List Configuration in the documentati
 
 Измените тип счётчика, показывающего, сколько дочерних задач выполнено.
 
-![counter](../assets/counter.png)
+![Счётчик выполненных подзадач в DHTMLX To Do List](/img/counter.png)
 
 По умолчанию каждая родительская задача отображает счётчик в виде отношения выполненных дочерних задач к общему их числу.
 
@@ -130,11 +130,11 @@ list.api.on("end-drag", ({ target, dropPosition, mode }) => {
 
 Если для задачи задан [срок выполнения](api/configs/tasks_config.md), валидация отслеживает выполнение задачи. Срок отображается зелёным цветом, пока задача не просрочена.
 
-![due_date](../assets/due_date.png)
+![Задача со сроком выполнения, выделенным зелёным, в DHTMLX To Do List](/img/due_date.png)
 
 Даты просроченных задач отображаются красным.
 
-![due_date](../assets/overdue_task.png)
+![Просроченная задача со сроком выполнения, выделенным красным, в DHTMLX To Do List](/img/overdue_task.png)
 
 Валидация включена по умолчанию. Чтобы отключить её, установите `taskShape.date.validate` в `false`. Подробнее см. в описании [`taskShape`](api/configs/taskshape_config.md). Фрагмент кода ниже отключает валидацию срока выполнения:
 

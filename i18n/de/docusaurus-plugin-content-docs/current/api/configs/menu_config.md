@@ -101,7 +101,7 @@ Der Callback sollte einen der folgenden Werte zurückgeben:
                 ]
             }
             ~~~
-            ![Kontextmenüeintrag](../../assets/menu_item.png)
+            ![Standardeintrag des Kontextmenüs mit Untermenü in DHTMLX To Do List](/img/menu_item.png)
         </details>
 
         - `"separator"` - die Trennlinie zwischen Menüeinträgen
@@ -147,7 +147,7 @@ Der Callback sollte einen der folgenden Werte zurückgeben:
         }
         ~~~
 
-        ![Kontextmenüeintrag](../../assets/menu_priorities.png)
+        ![Prioritäten-Untermenü mit den Optionen High, Medium und Low in DHTMLX To Do List](/img/menu_priorities.png)
         </details>
 
         - `"datepicker"` - der Menüeintrag zum Festlegen von Datumsangaben
@@ -166,7 +166,7 @@ Der Callback sollte einen der folgenden Werte zurückgeben:
         }
         ~~~
 
-        ![Kontextmenüeintrag](../../assets/menu_datepicker.png)
+        ![Datepicker-Menüeintrag zum Festlegen eines Fälligkeitsdatums in DHTMLX To Do List](/img/menu_datepicker.png)
         </details>
 
         - `"user"` - der Menüeintrag zum Zuweisen von Benutzern zu Aufgaben
@@ -187,7 +187,7 @@ Der Callback sollte einen der folgenden Werte zurückgeben:
         }
         ~~~
 
-        ![Kontextmenüeintrag](../../assets/menu_users.png)
+        ![Menüeintrag zum Zuweisen von Benutzern zu einer Aufgabe in DHTMLX To Do List](/img/menu_users.png)
         </details>
 
 ### Beispiel {#example}

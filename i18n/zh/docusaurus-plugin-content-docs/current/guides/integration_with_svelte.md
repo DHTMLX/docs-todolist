@@ -322,6 +322,6 @@ const { users, tasks, projects } = getData();
 
 启动应用，To Do List 将渲染并显示示例数据：
 
-![To Do List 初始化](../assets/trial_todolist.png)
+![在 Svelte 应用程序中渲染的带有示例数据的 DHTMLX To Do List](/img/trial_todolist.png)
 
 在 [**GitHub**](https://github.com/DHTMLX/svelte-todolist-demo) 上查看完整项目。

@@ -8,7 +8,7 @@ description: You can learn about selection of multiple tasks in the documentatio
 
 The To Do List library lets you select multiple tasks and manage them at once.
 
-![Multiselection](../assets/multiselection.png)
+![Multiple selected tasks in the DHTMLX To Do List widget](/img/multiselection.png)
 
 :::info
 Learn how to [select](/#selecting-tasks) and [manage multiple tasks](/#managing-multiple-tasks) through the UI.

@@ -101,7 +101,7 @@ config: {
                 ]
             }
             ~~~
-            ![Элемент контекстного меню](../../assets/menu_item.png)
+            ![Стандартный пункт контекстного меню с подменю в DHTMLX To Do List](/img/menu_item.png)
         </details>
 
         - `"separator"` - линия для разделения элементов меню
@@ -147,7 +147,7 @@ config: {
         }
         ~~~
 
-        ![Элемент контекстного меню](../../assets/menu_priorities.png)
+        ![Подменю приоритетов с вариантами High, Medium и Low в DHTMLX To Do List](/img/menu_priorities.png)
         </details>
 
         - `"datepicker"` - элемент меню для установки дат
@@ -166,7 +166,7 @@ config: {
         }
         ~~~
 
-        ![Элемент контекстного меню](../../assets/menu_datepicker.png)
+        ![Пункт меню с датапикером для установки срока выполнения в DHTMLX To Do List](/img/menu_datepicker.png)
         </details>
 
         - `"user"` - элемент меню для назначения пользователей на задачи
@@ -187,7 +187,7 @@ config: {
         }
         ~~~
 
-        ![Элемент контекстного меню](../../assets/menu_users.png)
+        ![Пункт меню для назначения пользователей на задачу в DHTMLX To Do List](/img/menu_users.png)
         </details>
 
 ### Пример {#example}

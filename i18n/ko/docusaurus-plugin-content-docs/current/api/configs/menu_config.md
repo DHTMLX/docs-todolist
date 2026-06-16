@@ -101,7 +101,7 @@ config: {
                 ]
             }
             ~~~
-            ![컨텍스트 메뉴 항목](../../assets/menu_item.png)
+            ![하위 메뉴가 있는 DHTMLX To Do List 컨텍스트 메뉴의 기본 항목](/img/menu_item.png)
         </details>
 
         - `"separator"` - 메뉴 항목을 구분하는 선
@@ -147,7 +147,7 @@ config: {
         }
         ~~~
 
-        ![컨텍스트 메뉴 항목](../../assets/menu_priorities.png)
+        ![High, Medium, Low 옵션이 있는 DHTMLX To Do List 우선순위 하위 메뉴](/img/menu_priorities.png)
         </details>
 
         - `"datepicker"` - 날짜 설정을 위한 메뉴 항목
@@ -166,7 +166,7 @@ config: {
         }
         ~~~
 
-        ![컨텍스트 메뉴 항목](../../assets/menu_datepicker.png)
+        ![마감일을 설정하는 DHTMLX To Do List 날짜 선택기 메뉴 항목](/img/menu_datepicker.png)
         </details>
 
         - `"user"` - 작업에 사용자를 할당하기 위한 메뉴 항목
@@ -187,7 +187,7 @@ config: {
         }
         ~~~
 
-        ![컨텍스트 메뉴 항목](../../assets/menu_users.png)
+        ![작업에 사용자를 배정하는 DHTMLX To Do List 메뉴 항목](/img/menu_users.png)
         </details>
 
 ### 예제 {#example}

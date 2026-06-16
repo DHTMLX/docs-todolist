@@ -344,6 +344,6 @@ export default {
 
 Запустите приложение — To Do List отобразится с тестовыми данными:
 
-![Инициализация To Do List](../assets/trial_todolist.png)
+![DHTMLX To Do List, отрендеренный в приложении Vue с демонстрационными данными](/img/trial_todolist.png)
 
 Полный проект доступен на [**GitHub**](https://github.com/DHTMLX/vue-todolist-demo).

@@ -8,7 +8,7 @@ description: DHTMLX JavaScript To Do List 라이브러리 문서에서 DHTMLX To
 
 이 튜토리얼에서는 완전한 기능을 갖춘 To Do List를 만들고 웹 애플리케이션에 추가하는 방법을 안내합니다.
 
-![how_to_start](assets/todolist.png)
+![웹 페이지에 표시된 완전한 기능의 DHTMLX To Do List](/img/todolist.png)
 
 아래의 모든 단계를 완료하면 바로 사용할 수 있는 To Do List가 완성됩니다. 이를 필요에 맞게 손쉽게 구성하여 실제 환경에서 효율적으로 활용할 수 있습니다.
 

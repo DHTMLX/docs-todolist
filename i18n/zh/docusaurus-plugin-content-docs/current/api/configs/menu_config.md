@@ -101,7 +101,7 @@ config: {
                 ]
             }
             ~~~
-            ![右键菜单项](../../assets/menu_item.png)
+            ![DHTMLX To Do List 右键菜单中带有子菜单的默认菜单项](/img/menu_item.png)
         </details>
 
         - `"separator"` - 用于分隔菜单项的分割线
@@ -147,7 +147,7 @@ config: {
         }
         ~~~
 
-        ![右键菜单项](../../assets/menu_priorities.png)
+        ![DHTMLX To Do List 中包含 High、Medium 和 Low 选项的优先级子菜单](/img/menu_priorities.png)
         </details>
 
         - `"datepicker"` - 用于设置日期的菜单项
@@ -166,7 +166,7 @@ config: {
         }
         ~~~
 
-        ![右键菜单项](../../assets/menu_datepicker.png)
+        ![DHTMLX To Do List 中用于设置截止日期的日期选择器菜单项](/img/menu_datepicker.png)
         </details>
 
         - `"user"` - 用于为任务分配用户的菜单项
@@ -187,7 +187,7 @@ config: {
         }
         ~~~
 
-        ![右键菜单项](../../assets/menu_users.png)
+        ![DHTMLX To Do List 中用于为任务分配用户的菜单项](/img/menu_users.png)
         </details>
 
 ### 示例 {#example}
