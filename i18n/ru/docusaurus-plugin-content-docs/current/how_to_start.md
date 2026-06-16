@@ -8,7 +8,7 @@ description: You can learn about how to start working with DHTMLX To Do List in 
 
 Этот учебник поможет вам создать полнофункциональный To Do List и добавить его в ваше веб-приложение.
 
-![how_to_start](assets/todolist.png)
+![Полнофункциональный DHTMLX To Do List на веб-странице](/img/todolist.png)
 
 После выполнения всех шагов ниже вы получите готовый к использованию To Do List, который легко настроить под свои нужды и эффективно применять на практике.
 

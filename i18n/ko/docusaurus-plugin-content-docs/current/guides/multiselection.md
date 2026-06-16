@@ -8,7 +8,7 @@ description: DHTMLX JavaScript To Do List 라이브러리 문서에서 여러 �
 
 To Do List 라이브러리를 사용하면 여러 태스크를 선택하고 한 번에 관리할 수 있습니다.
 
-![다중 선택](../assets/multiselection.png)
+![DHTMLX To Do List 위젯에서 여러 선택된 작업](/img/multiselection.png)
 
 :::info
 UI를 통해 [태스크를 선택](/#selecting-tasks)하고 [여러 태스크를 관리](/#managing-multiple-tasks)하는 방법을 알아보세요.

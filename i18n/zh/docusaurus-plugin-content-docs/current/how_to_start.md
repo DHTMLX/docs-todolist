@@ -8,7 +8,7 @@ description: 您可以在 DHTMLX JavaScript To Do List 库的文档中了解如�
 
 本教程将指导您创建一个功能完整的 To Do List 并将其集成到 Web 应用中。
 
-![how_to_start](assets/todolist.png)
+![网页上显示的功能完整的 DHTMLX To Do List](/img/todolist.png)
 
 完成以下所有步骤后，您将获得一个可直接使用的 To Do List，可根据需求灵活配置并高效应用于实际场景。
 

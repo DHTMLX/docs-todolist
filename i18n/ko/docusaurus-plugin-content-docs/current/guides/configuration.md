@@ -28,7 +28,7 @@ DHTMLX To Do List의 설정을 필요에 맞게 조정하세요. 사용 가능�
 
 완료된 하위 작업 수를 표시하는 카운터 유형을 변경합니다.
 
-![counter](../assets/counter.png)
+![DHTMLX To Do List의 완료된 하위 작업 카운터](/img/counter.png)
 
 기본적으로 각 상위 작업은 완료된 하위 작업 수와 전체 하위 작업 수의 비율을 카운터로 표시합니다.
 
@@ -130,11 +130,11 @@ list.api.on("end-drag", ({ target, dropPosition, mode }) => {
 
 작업에 [마감일](api/configs/tasks_config.md)을 지정하면 마감일 유효성 검사가 작업 완료를 추적합니다. 마감일은 작업이 기한을 초과하기 전까지 녹색으로 표시됩니다.
 
-![due_date](../assets/due_date.png)
+![DHTMLX To Do List에서 마감일이 녹색으로 표시된 작업](/img/due_date.png)
 
 기한이 지난 작업의 날짜는 빨간색으로 표시됩니다.
 
-![due_date](../assets/overdue_task.png)
+![DHTMLX To Do List에서 마감일이 빨간색으로 표시된 기한이 지난 작업](/img/overdue_task.png)
 
 유효성 검사는 기본적으로 활성화되어 있습니다. 비활성화하려면 `taskShape.date.validate`를 `false`로 설정하세요. 자세한 내용은 [`taskShape`](api/configs/taskshape_config.md) 레퍼런스를 참고하세요. 아래 코드는 마감일 유효성 검사를 끕니다:
 

@@ -19,11 +19,11 @@ To Do List 组件的界面由两部分组成：[工具栏（Toolbar）](#toolbar
 
 - 用于切换项目和搜索项目的**下拉组合框（combo）**控件
 
-![toolbar](assets/toolbar.png)
+![带有项目选择组合框的 DHTMLX To Do List 工具栏](/img/toolbar.png)
 
 - 用于搜索任务的**搜索框**
 
-![toolbar](assets/search_field.png)
+![DHTMLX To Do List 工具栏中的搜索栏](/img/search_field.png)
 
 - 包含一组控件的**菜单**，支持以下操作：
     - 按以下条件对任务进行升序/降序排列：
@@ -36,7 +36,7 @@ To Do List 组件的界面由两部分组成：[工具栏（Toolbar）](#toolbar
     - 隐藏/显示已完成的任务
     - 添加新项目、重命名或删除当前活动项目
 
-![toolbar](assets/project_menu.png)
+![带有任务排序和项目选项的 DHTMLX To Do List 工具栏菜单](/img/project_menu.png)
 
 :::info
 您可以通过添加自定义元素或调整内置控件顺序来修改工具栏结构。详情请参阅[**配置**](guides/configuration.md#toolbar)和[**自定义**](guides/customization.md#customize-the-toolbar)章节。
@@ -46,7 +46,7 @@ To Do List 组件的界面由两部分组成：[工具栏（Toolbar）](#toolbar
 
 **任务列表**是 To Do List 界面的核心部分，用于添加新任务、编辑或删除现有任务。您可以轻松配置任务的外观样式。详情请参阅[配置](guides/configuration.md)章节。
 
-![list](assets/list.png)
+![DHTMLX To Do List 小部件中的任务列表](/img/list.png)
 
 ## 选择任务 {#selecting-tasks}
 
@@ -79,7 +79,7 @@ To Do List 组件的界面由两部分组成：[工具栏（Toolbar）](#toolbar
 
 任务的**右键菜单**包含一系列菜单项和子菜单项，如下所示：
 
-![context_menu_of_task](assets/task_context_menu.png)
+![DHTMLX To Do List 中单个任务的右键菜单](/img/task_context_menu.png)
 
 ### 添加新任务 {#adding-a-new-task}
 
@@ -124,7 +124,7 @@ To Do List 组件的界面由两部分组成：[工具栏（Toolbar）](#toolbar
 
 - 打开选中任务的**右键菜单**
 
-![context_menu_of_tasks](assets/tasks_context_menu.png)
+![DHTMLX To Do List 中多个选定任务的右键菜单](/img/tasks_context_menu.png)
 
 - 按 `Backspace`/`Delete` 键删除任务
 - 通过 `Ctrl (Cmd) + C` 复制任务，通过 `Ctrl (Cmd) + V` 粘贴任务。无序选择的任务在粘贴后将根据数据结构重新排列

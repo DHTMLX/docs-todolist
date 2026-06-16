@@ -8,7 +8,7 @@ description: Sie können erfahren, wie Sie mit DHTMLX To Do List arbeiten. Erkun
 
 Dieses Tutorial zeigt Ihnen, wie Sie eine voll funktionsfähige To-Do-Liste erstellen und in Ihre Webanwendung einbinden.
 
-![how_to_start](assets/todolist.png)
+![Voll funktionsfähige DHTMLX To Do List auf einer Webseite](/img/todolist.png)
 
 Nach Abschluss aller folgenden Schritte erhalten Sie eine einsatzbereite To-Do-Liste, die Sie nach Ihren Wünschen konfigurieren und im praktischen Einsatz nutzen können.
 

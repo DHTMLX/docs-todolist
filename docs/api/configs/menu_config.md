@@ -101,7 +101,7 @@ The callback should return one of the following values:
                 ]
             }
             ~~~
-            ![Context menu item](../../assets/menu_item.png)
+            ![Default context menu item with a submenu in DHTMLX To Do List](/img/menu_item.png)
         </details>
 
         - `"separator"` - the line for separating menu items
@@ -147,7 +147,7 @@ The callback should return one of the following values:
         }
         ~~~
 
-        ![Context menu item](../../assets/menu_priorities.png)
+        ![Priority submenu with High, Medium, and Low options in DHTMLX To Do List](/img/menu_priorities.png)
         </details>
 
         - `"datepicker"` - the menu item intended for setting dates
@@ -166,7 +166,7 @@ The callback should return one of the following values:
         }
         ~~~
 
-        ![Context menu item](../../assets/menu_datepicker.png)
+        ![Datepicker menu item for setting a due date in DHTMLX To Do List](/img/menu_datepicker.png)
         </details>
 
         - `"user"` - the menu item intended for assigning users to tasks
@@ -187,7 +187,7 @@ The callback should return one of the following values:
         }
         ~~~
 
-        ![Context menu item](../../assets/menu_users.png)
+        ![Menu item for assigning users to a task in DHTMLX To Do List](/img/menu_users.png)
         </details>
 
 ### Example

@@ -368,6 +368,6 @@ platformBrowserDynamic()
 
 Starten Sie die App — die To-Do-Liste wird mit Beispieldaten gerendert:
 
-![To-Do-List-Initialisierung](../assets/trial_todolist.png)
+![In einer Angular-Anwendung gerendertes DHTMLX To Do List mit Beispieldaten](/img/trial_todolist.png)
 
 Das vollständige Projekt finden Sie auf [**GitHub**](https://github.com/DHTMLX/angular-todolist-demo).

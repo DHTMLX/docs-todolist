@@ -332,6 +332,6 @@ export default App;
 
 Start the app — the To Do List renders with sample data:
 
-![To Do List initialization](../assets/trial_todolist.png)
+![DHTMLX To Do List rendered in a React application with sample data](/img/trial_todolist.png)
 
 Find the complete project on [**GitHub**](https://github.com/DHTMLX/react-todolist-demo).
