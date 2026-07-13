@@ -1,0 +1,239 @@
+---
+sidebar_label: DHTMLX MCP server
+title: Connect AI tools to DHTMLX To Do List with MCP
+description: Connect AI coding assistants to live DHTMLX To Do List documentation via the MCP server. Covers tasks, subtasks, projects, priorities, and the REST backend.
+---
+
+# Connect AI tools to DHTMLX To Do List with MCP
+
+DHTMLX To Do List looks like a simple checklist on the surface, but it packs in [nested subtasks](guides/task_operations.md#adding-a-new-task), [priority hotkeys](/#prioritizing-a-task), [drag-and-drop reordering](guides/configuration.md#drag-n-drop), [hashtag-based filtering](guides/inline_editing.md#hashtags), and a REST backend that chains through the [event bus](api/internal/setnext_method.md). When an AI assistant answers from stale training data instead of querying the DHTMLX MCP server, it tends to invent method signatures such as [`copyTask()`](api/methods/copytask_method.md) or [`indentTask()`](api/methods/indenttask_method.md), misplace event payloads, or suggest [`taskShape`](api/configs/taskshape_config.md) options that no longer exist.
+
+That's where the DHTMLX MCP server helps: it gives the assistant direct access to the live To Do List documentation before it answers. Point it at [task operations](guides/task_operations.md), [multiselection and bulk actions](guides/multiselection.md), the [REST backend integration](guides/working_with_server.md), or [task and project configuration](guides/configuration.md), and the assistant retrieves the current API surface instead of guessing.
+
+#### MCP endpoint
+
+~~~jsx
+https://docs.dhtmlx.com/mcp
+~~~
+
+:::note
+The DHTMLX MCP server covers all major DHTMLX products, not only DHTMLX To Do List. The same endpoint and configuration instructions work regardless of which DHTMLX component you are building with.
+:::
+
+## Where MCP server helps with To Do List
+
+The MCP server indexes the full DHTMLX To Do List documentation. Common scenarios include:
+
+- Looking up the current API for [To Do List methods](api/overview/methods_overview.md), [events](api/overview/events_overview.md), [properties](api/overview/configs_overview.md), and the matching [Toolbar API](category/toolbar-properties.md).
+- Generating ready-to-run [initialization](guides/initialization.md) and [configuration](guides/configuration.md) code for a specific set of tasks, projects, and users.
+- Managing task hierarchy and bulk actions, such as [adding, moving, and deleting tasks](guides/task_operations.md), changing the [indent level](guides/task_operations.md#changing-the-indent-level-of-a-task), and running operations over [multiple selected tasks](guides/multiselection.md).
+- Working with [projects](guides/project_operations.md) and the [project object](guides/project_object_operations.md), including switching the active project and moving tasks between projects.
+- Assigning [task performers](guides/task_users.md), setting due dates, and configuring [priorities](api/configs/priorities_config.md).
+- Connecting `RestDataProvider` to a [REST backend](guides/working_with_server.md), including the multiuser mode and the event bus order set through `api.setNext()`.
+- Configuring [sorting and filtering](guides/sorting_filtering_tasks.md), [hiding completed tasks](guides/hide_completed_tasks.md), and [read-only mode](guides/readonly_mode.md).
+- Handling [inline editing](guides/inline_editing.md) and [keyboard shortcuts](guides/keyboard_navigation.md) for tasks and projects.
+- Exploring [localization](guides/localization.md), [stylization](guides/stylization.md), and integration with [React](guides/integration_with_react.md), [Vue](guides/integration_with_vue.md), [Angular](guides/integration_with_angular.md), and [Svelte](guides/integration_with_svelte.md).
+
+## How DHTMLX MCP server works
+
+The DHTMLX MCP server combines Retrieval-Augmented Generation (RAG) with the Model Context Protocol (MCP) so that AI assistants can query documentation on demand rather than relying solely on training data.
+
+For example, when you ask *"How do I chain RestDataProvider into the event bus with api.setNext() so add-task and move-task operations reach my server?"*, the assistant sends the prompt via the MCP endpoint. The server matches it against the working-with-server documentation, retrieves the relevant reference pages, and returns them as context. The assistant then generates code based on the current API rather than a training snapshot.
+
+## Connect the MCP server to your AI tool
+
+Whether you are scaffolding a new To Do List project or wiring `RestDataProvider` into an existing backend, most AI development tools let you add MCP endpoints through a CLI command or a JSON configuration file. In either case, you register the server URL.
+
+~~~jsx
+https://docs.dhtmlx.com/mcp
+~~~
+
+Below are setup instructions for commonly used tools.
+
+### Claude Code
+
+:::info
+The [official documentation](https://code.claude.com/docs/en/mcp) covers all options for connecting Claude Code with MCP servers.
+:::
+
+To register the server from the command line, run:
+
+~~~jsx
+claude mcp add --transport http dhtmlx-mcp https://docs.dhtmlx.com/mcp
+~~~
+
+For manual setup, add the following to your `mcp.json`:
+
+~~~jsx
+{
+  "mcpServers": {
+    "dhtmlx-mcp": {
+      "type": "http",
+      "url": "https://docs.dhtmlx.com/mcp"
+    }
+  }
+}
+~~~
+
+### Cursor
+
+:::info
+The [official documentation](https://cursor.com/en-US/docs/mcp) covers all MCP configuration options for Cursor.
+:::
+
+Steps to add the server:
+
+1. Open Settings (`Cmd+Shift+J` on Mac, `Ctrl+Shift+J` on Windows/Linux)
+2. Go to **Tools & MCP**
+3. Click **Add Custom MCP**
+4. Paste the following config:
+
+~~~jsx
+{
+  "mcpServers": {
+    "dhtmlx-mcp": {
+      "url": "https://docs.dhtmlx.com/mcp"
+    }
+  }
+}
+~~~
+
+### Google Antigravity
+
+#### Antigravity 2.0
+
+:::info
+Refer to the [official documentation](https://antigravity.google/docs/mcp) for full details on MCP server integration in Antigravity.
+:::
+
+These are the steps to complete for connecting DHTMLX MCP server with Google Antigravity:
+
+1. Open the command palette
+2. Type "mcp add"
+3. Select "HTTP"
+4. Provide the following values:
+- Name:
+~~~jsx
+dhtmlx-mcp
+~~~
+- URL:
+~~~jsx
+https://docs.dhtmlx.com/mcp
+~~~
+
+#### Antigravity CLI
+
+:::info
+Check the [related guide](https://antigravity.google/docs/gcli-migration#mcp-config-formatting-changes) to learn about migration from Gemini CLI to Antigravity CLI.
+:::
+
+To connect the DHTMLX MCP server to Antigravity CLI, create `mcp_config.json` in one of these locations:
+
+- Global: `~/.gemini/config/mcp_config.json`
+- Workspace: `.agents/mcp_config.json`
+
+Add the following configuration:
+
+~~~jsx
+{
+  "mcpServers": {
+    "dhtmlx-mcp": {
+      "serverUrl": "https://docs.dhtmlx.com/mcp"
+    }
+  }
+}
+~~~
+
+Then run `agy` in the terminal.
+
+### ChatGPT
+
+:::info
+The [official documentation](https://developers.openai.com/api/docs/guides/tools-connectors-mcp) covers MCP connector setup for ChatGPT.
+:::
+
+Steps to configure the connector:
+
+1. Go to **Settings** → **Apps & Connectors**
+2. Click **Advanced settings**
+3. Enable **Developer mode**
+4. Return to **Apps & Connectors** and click "Create"
+5. Fill in the connector details:
+- Name:
+~~~jsx
+dhtmlx-mcp
+~~~
+- URL:
+~~~jsx
+https://docs.dhtmlx.com/mcp
+~~~
+- Authentication: `No authentication`
+6. Click **Create**
+
+After you create the connector, ChatGPT pulls documentation from the MCP server during conversations.
+
+:::warning
+For intensive coding workflows, other MCP-aware tools may be a better fit.
+:::
+
+### Other tools
+
+Many modern AI coding tools expose MCP support under labels such as "Model Context Protocol", "Context Sources", or similar. Add `https://docs.dhtmlx.com/mcp` as a custom source in the relevant settings panel.
+
+## Privacy and data handling
+
+The MCP server is a hosted service: nothing runs on your machine, no files from your environment are read, and no personal user data is stored.
+
+For debugging and service improvement, queries sent to the server may be logged.
+
+If your organization needs stricter guarantees, ask about a commercial deployment with query logging turned off by writing to `info@dhtmlx.com`.
+
+## Example prompts for To Do List with AI
+
+Once you connect the MCP server, phrase your prompts around a concrete goal so the assistant knows which part of the To Do List API to retrieve. The prompts below are organized by task type. Copy and adapt them as needed.
+
+**Tasks and hierarchy**
+
+~~~
+How do I add a subtask under a specific task using addTask() in DHTMLX To Do List?
+~~~
+~~~
+How do I indent a task with indentTask() to make it a subtask of the task above it? Use the docs.
+~~~
+~~~
+How do I copy a task with all its subtasks and paste it into another project with copyTask() and pasteTask()?
+~~~
+
+**Projects**
+
+~~~
+How do I switch the active project with setProject() and move a task into it?
+~~~
+~~~
+What happens to a project's tasks when I delete it with deleteProject() in DHTMLX To Do List?
+~~~
+
+**Selection and bulk operations**
+
+~~~
+How do I select several tasks and mark them all as complete at once in DHTMLX To Do List?
+~~~
+~~~
+How do I use eachSelected() to delete all currently selected tasks? Use the docs.
+~~~
+
+**Server integration**
+
+~~~
+How do I connect RestDataProvider to my Node.js backend and load tasks on initialization?
+~~~
+~~~
+How do I set up the multiuser mode with RemoteEvents so task changes sync across clients in real time?
+~~~
+
+## Tips for effective To Do List prompts
+
+- **Name the exact method.** DHTMLX To Do List exposes several similarly named method pairs (`checkTask()`/`uncheckTask()`, `indentTask()`/`unindentTask()`, `hideCompletedTasks()`/`showCompletedTasks()`). State the method name so the assistant retrieves the right reference instead of guessing the parameters.
+- **Say whether the target is a task, a project, or a user.** Many methods take a similar id-based object (for example, `getTask()` vs. `getProject()`). Naming the target narrows retrieval to the correct part of the API.
+- **Describe the data shape.** Prompts like "a task with subtasks and a due date" or "a task assigned to several users" retrieve more precise documentation than a generic "a task". This matters most when preparing data to load or configuring `taskShape`.
+- **Add "Use the docs"** to your prompt. This phrase signals that the assistant should trigger an MCP lookup instead of answering from training data alone. It helps most with event payloads (for example, `open-menu` or `edit-item`) and REST backend wiring, both of which change between versions.
