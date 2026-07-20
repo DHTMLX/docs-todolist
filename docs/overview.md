@@ -141,4 +141,4 @@ Read the [**keyboard shortcuts**](api/events/keypressontodo_event.md#keyboard-sh
 
 ## What's next
 
-Once you have a short overview of To Do List you are ready to learn how to display the component on the page. Follow the directions given in the [How to start](how_to_start.md) article. 
+Once you have a short overview of To Do List you are ready to learn how to display the component on the page. Follow the directions given in the [How to start](how_to_start.md) article. If you build with an AI coding assistant, connect it to the live documentation through the [DHTMLX MCP server](guides/mcp-server.md).

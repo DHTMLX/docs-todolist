@@ -1,16 +1,16 @@
 ---
 sidebar_label: DHTMLX MCP server
-title: Connect AI tools to DHTMLX To Do List with MCP
-description: Connect AI coding assistants to live DHTMLX To Do List documentation via the MCP server. Covers tasks, subtasks, projects, priorities, and the REST backend.
+title: DHTMLX To Do List MCP server keeps AI answers accurate
+description: Tasks, subtasks, projects, priorities, and REST sync in DHTMLX To Do List all stay current for AI assistants through the MCP server.
 ---
 
-# Connect AI tools to DHTMLX To Do List with MCP
+# DHTMLX To Do List MCP server: docs that stay current for AI
 
-DHTMLX To Do List looks like a simple checklist on the surface, but it packs in [nested subtasks](guides/task_operations.md#adding-a-new-task), [priority hotkeys](/#prioritizing-a-task), [drag-and-drop reordering](guides/configuration.md#drag-n-drop), [hashtag-based filtering](guides/inline_editing.md#hashtags), and a REST backend that chains through the [event bus](api/internal/setnext_method.md). When an AI assistant answers from stale training data instead of querying the DHTMLX MCP server, it tends to invent method signatures such as [`copyTask()`](api/methods/copytask_method.md) or [`indentTask()`](api/methods/indenttask_method.md), misplace event payloads, or suggest [`taskShape`](api/configs/taskshape_config.md) options that no longer exist.
+DHTMLX To Do List looks like a simple checklist on the surface, but it packs in [nested subtasks](guides/task_operations.md#adding-a-new-task), [priority hotkeys](/#prioritizing-a-task), [drag-and-drop reordering](guides/configuration.md#drag-n-drop), [hashtag-based filtering](guides/inline_editing.md#hashtags), and a REST backend that chains through the [event bus](api/internal/setnext_method.md). Skip the MCP server and an assistant falls back on stale training data: it invents method signatures for [`copyTask()`](api/methods/copytask_method.md) or [`indentTask()`](api/methods/indenttask_method.md) that don't match the real API, misplaces event payloads, or reaches for [`taskShape`](api/configs/taskshape_config.md) options that no longer exist.
 
-That's where the DHTMLX MCP server helps: it gives the assistant direct access to the live To Do List documentation before it answers. Point it at [task operations](guides/task_operations.md), [multiselection and bulk actions](guides/multiselection.md), the [REST backend integration](guides/working_with_server.md), or [task and project configuration](guides/configuration.md), and the assistant retrieves the current API surface instead of guessing.
+That's where the DHTMLX MCP server helps: it lets the assistant check the live To Do List documentation before it answers. Point it at [task operations](guides/task_operations.md), [multiselection and bulk actions](guides/multiselection.md), the [REST backend integration](guides/working_with_server.md), or [task and project configuration](guides/configuration.md), and the assistant retrieves the current API surface instead of guessing.
 
-#### MCP endpoint
+**MCP endpoint**
 
 ~~~jsx
 https://docs.dhtmlx.com/mcp
@@ -20,9 +20,9 @@ https://docs.dhtmlx.com/mcp
 The DHTMLX MCP server covers all major DHTMLX products, not only DHTMLX To Do List. The same endpoint and configuration instructions work regardless of which DHTMLX component you are building with.
 :::
 
-## Where MCP server helps with To Do List
+## MCP server support across the To Do List API
 
-The MCP server indexes the full DHTMLX To Do List documentation. Common scenarios include:
+The server's index covers the full DHTMLX To Do List documentation, including:
 
 - Looking up the current API for [To Do List methods](api/overview/methods_overview.md), [events](api/overview/events_overview.md), [properties](api/overview/configs_overview.md), and the matching [Toolbar API](category/toolbar-properties.md).
 - Generating ready-to-run [initialization](guides/initialization.md) and [configuration](guides/configuration.md) code for a specific set of tasks, projects, and users.
@@ -34,13 +34,13 @@ The MCP server indexes the full DHTMLX To Do List documentation. Common scenario
 - Handling [inline editing](guides/inline_editing.md) and [keyboard shortcuts](guides/keyboard_navigation.md) for tasks and projects.
 - Exploring [localization](guides/localization.md), [stylization](guides/stylization.md), and integration with [React](guides/integration_with_react.md), [Vue](guides/integration_with_vue.md), [Angular](guides/integration_with_angular.md), and [Svelte](guides/integration_with_svelte.md).
 
-## How DHTMLX MCP server works
+## Two ways the MCP server can respond
 
-The DHTMLX MCP server combines Retrieval-Augmented Generation (RAG) with the Model Context Protocol (MCP) so that AI assistants can query documentation on demand rather than relying solely on training data.
+A Retrieval-Augmented Generation (RAG) index backs the Model Context Protocol (MCP) endpoint, letting an assistant check current To Do List documentation instead of relying only on what it learned during training. The index serves two workflows: *Search*, which hands back matching reference pages for the assistant to build an answer from, and *Inference*, which reads those pages itself and delivers the finished answer.
 
-For example, when you ask *"How do I chain RestDataProvider into the event bus with api.setNext() so add-task and move-task operations reach my server?"*, the assistant sends the prompt via the MCP endpoint. The server matches it against the working-with-server documentation, retrieves the relevant reference pages, and returns them as context. The assistant then generates code based on the current API rather than a training snapshot.
+For example, when you ask *"How do I chain RestDataProvider into the event bus with api.setNext() so add-task and move-task operations reach my server?"*, the assistant sends the prompt via the MCP endpoint. *Search* matches it against the working-with-server documentation, retrieves the relevant reference pages, and returns them as context; the assistant then generates code based on the current API rather than a training snapshot. *Inference* suits a narrower question with one correct answer, such as confirming which event fires first in the chain, and returns that answer directly instead of the source pages.
 
-## Connect the MCP server to your AI tool
+## Setting up the MCP connection
 
 Whether you are scaffolding a new To Do List project or wiring `RestDataProvider` into an existing backend, most AI development tools let you add MCP endpoints through a CLI command or a JSON configuration file. In either case, you register the server URL.
 
@@ -149,7 +149,7 @@ Then run `agy` in the terminal.
 ### ChatGPT
 
 :::info
-The [official documentation](https://developers.openai.com/api/docs/guides/tools-connectors-mcp) covers MCP connector setup for ChatGPT.
+The [official documentation](https://help.openai.com/en/articles/12584461-developer-mode-and-mcp-apps-in-chatgpt) covers MCP connector setup for ChatGPT.
 :::
 
 Steps to configure the connector:
@@ -172,7 +172,7 @@ https://docs.dhtmlx.com/mcp
 
 After you create the connector, ChatGPT pulls documentation from the MCP server during conversations.
 
-:::warning
+:::info
 For intensive coding workflows, other MCP-aware tools may be a better fit.
 :::
 
@@ -180,7 +180,7 @@ For intensive coding workflows, other MCP-aware tools may be a better fit.
 
 Many modern AI coding tools expose MCP support under labels such as "Model Context Protocol", "Context Sources", or similar. Add `https://docs.dhtmlx.com/mcp` as a custom source in the relevant settings panel.
 
-## Privacy and data handling
+## How the MCP server treats your data
 
 The MCP server is a hosted service: nothing runs on your machine, no files from your environment are read, and no personal user data is stored.
 
@@ -188,9 +188,9 @@ For debugging and service improvement, queries sent to the server may be logged.
 
 If your organization needs stricter guarantees, ask about a commercial deployment with query logging turned off by writing to `info@dhtmlx.com`.
 
-## Example prompts for To Do List with AI
+## To Do List prompts to copy and adapt
 
-Once you connect the MCP server, phrase your prompts around a concrete goal so the assistant knows which part of the To Do List API to retrieve. The prompts below are organized by task type. Copy and adapt them as needed.
+State the concrete To Do List goal in your prompt and the assistant identifies the right slice of the API. The groups below sort the examples by task; adapt any of them to your own data.
 
 **Tasks and hierarchy**
 
@@ -231,7 +231,7 @@ How do I connect RestDataProvider to my Node.js backend and load tasks on initia
 How do I set up the multiuser mode with RemoteEvents so task changes sync across clients in real time?
 ~~~
 
-## Tips for effective To Do List prompts
+## Making To Do List prompts more precise
 
 - **Name the exact method.** DHTMLX To Do List exposes several similarly named method pairs (`checkTask()`/`uncheckTask()`, `indentTask()`/`unindentTask()`, `hideCompletedTasks()`/`showCompletedTasks()`). State the method name so the assistant retrieves the right reference instead of guessing the parameters.
 - **Say whether the target is a task, a project, or a user.** Many methods take a similar id-based object (for example, `getTask()` vs. `getProject()`). Naming the target narrows retrieval to the correct part of the API.
