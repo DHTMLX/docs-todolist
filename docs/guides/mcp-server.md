@@ -36,9 +36,9 @@ The server's index covers the full DHTMLX To Do List documentation, including:
 
 ## Two ways the MCP server can respond
 
-A Retrieval-Augmented Generation (RAG) index backs the Model Context Protocol (MCP) endpoint, letting an assistant check current To Do List documentation instead of relying only on what it learned during training. The index serves two workflows: *Search*, which hands back matching reference pages for the assistant to build an answer from, and *Inference*, which reads those pages itself and delivers the finished answer.
+The assistant chooses between two workflows depending on what's being asked. *Search* returns the matching To Do List reference pages so the assistant can compose the answer; *Inference* reads those pages itself and returns the finished answer. Both run on a Retrieval-Augmented Generation (RAG) index built from the documentation, reached through the Model Context Protocol (MCP).
 
-For example, when you ask *"How do I chain RestDataProvider into the event bus with api.setNext() so add-task and move-task operations reach my server?"*, the assistant sends the prompt via the MCP endpoint. *Search* matches it against the working-with-server documentation, retrieves the relevant reference pages, and returns them as context; the assistant then generates code based on the current API rather than a training snapshot. *Inference* suits a narrower question with one correct answer, such as confirming which event fires first in the chain, and returns that answer directly instead of the source pages.
+For example, when you ask *"How do I chain RestDataProvider into the event bus with api.setNext() so add-task and move-task operations reach my server?"*, the assistant sends the prompt via the MCP endpoint. *Search* matches it against the working-with-server documentation, retrieves the relevant reference pages, and returns them as context; the assistant then produces code that matches the API's current state instead of an old training snapshot. *Inference* suits a narrower question with one correct answer, such as confirming which event fires first in the chain, and returns that answer directly instead of the source pages.
 
 ## Setting up the MCP connection
 
@@ -190,7 +190,7 @@ If your organization needs stricter guarantees, ask about a commercial deploymen
 
 ## To Do List prompts to copy and adapt
 
-State the concrete To Do List goal in your prompt and the assistant identifies the right slice of the API. The groups below sort the examples by task; adapt any of them to your own data.
+These prompts work best when they name a To Do List object directly, a task, a project, a user, rather than describing it in the abstract. Each group below targets one kind of operation; adapt the wording to your own data.
 
 **Tasks and hierarchy**
 
