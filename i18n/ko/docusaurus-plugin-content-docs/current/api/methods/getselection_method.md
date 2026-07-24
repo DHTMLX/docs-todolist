@@ -54,8 +54,8 @@ console.log(list.getSelection({ sorted: false })); // ["1.2", "1.1", "2.2", "2.1
 console.log(list.getSelection({ sorted: true })); // ["1.1", "1.2", "2.1", "2.2"]
 ~~~
 
-**변경 로그**: `sorted` 매개변수가 v1.1에서 추가되었습니다
+**변경 로그:** `sorted` 매개변수가 v1.1에서 추가되었습니다
 
-**관련 문서**: 
+**관련 문서:** 
 - [작업 객체/Id](guides/task_object.md)
 - [다중 선택 및 일괄 연산](guides/multiselection.md)

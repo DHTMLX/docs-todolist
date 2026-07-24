@@ -56,4 +56,4 @@ list.api.on("set-filter", (obj) => {
 });
 ~~~
 
-**Связанная статья**: [Сортировка и фильтрация задач](guides/sorting_filtering_tasks.md)
+**Полезная статья:** [Сортировка и фильтрация задач](guides/sorting_filtering_tasks.md)

@@ -24,7 +24,7 @@ updateTask({
 - `id` - (필수) 업데이트할 작업의 id
 - `task` - (필수) 업데이트할 작업 속성의 해시를 포함하는 객체. 작업 매개변수의 전체 목록은 [여기](api/configs/tasks_config.md)에서 확인할 수 있습니다
 
-### 예시 {#example}
+### 예제 {#example}
 
 ~~~js {17-24}
 const { ToDo, Toolbar } = todo;
@@ -51,4 +51,4 @@ list.updateTask({
 });
 ~~~
 
-**관련 문서**: [작업 조작](guides/task_operations.md)
+**관련 문서:** [작업 조작](guides/task_operations.md)

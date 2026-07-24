@@ -56,4 +56,4 @@ list.api.on("paste-task", (obj) => {
 }); 
 ~~~
 
-**Связанная статья**: [Операции с задачами](guides/task_operations.md#copyingpasting-a-task)
+**Полезная статья:** [Операции с задачами](guides/task_operations.md#copyingpasting-a-task)

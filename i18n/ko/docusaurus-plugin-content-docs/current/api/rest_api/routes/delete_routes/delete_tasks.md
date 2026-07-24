@@ -61,9 +61,9 @@ HTTP 상태 코드는 요청의 성공 여부(response.status == 200) 또는 실
 
 ---
 
-**변경 이력**: `batch` 페이로드는 v1.3에서 추가되었습니다
+**변경 로그:** `batch` 페이로드는 v1.3에서 추가되었습니다
 
-**관련 문서**:
+**관련 문서:**
 
 - [send()](api/rest_api/methods/send_method.md)
 - [deleteTasks()](api/methods/deletetask_method.md)

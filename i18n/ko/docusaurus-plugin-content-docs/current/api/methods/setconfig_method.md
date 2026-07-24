@@ -16,7 +16,7 @@ description: DHTMLX JavaScript To Do List 라이브러리 문서에서 setConfig
 setConfig(config: object): void;
 ~~~
 
-### 파라미터 {#parameters}
+### 매개변수 {#parameters}
 
 - `config` - (필수) To Do List의 새 구성이 담긴 객체. 속성 전체 목록은 [여기](api/api_overview.md#to-do-list-properties)를 참조하세요
 

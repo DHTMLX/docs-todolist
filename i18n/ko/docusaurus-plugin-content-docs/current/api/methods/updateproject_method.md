@@ -25,7 +25,7 @@ updateProject({
 - `project` - (필수) 업데이트할 프로젝트 매개변수의 해시를 포함하는 객체:
   - `label` - (선택) 프로젝트 이름
 
-### 예시 {#example}
+### 예제 {#example}
 
 ~~~js {16-21}
 const { ToDo, Toolbar } = todo;
@@ -51,4 +51,4 @@ list.updateProject({
 });
 ~~~
 
-**관련 문서**: [프로젝트 조작](guides/project_operations.md)
+**관련 문서:** [프로젝트 조작](guides/project_operations.md)

@@ -52,4 +52,4 @@ list.api.on("open-inline-editor", ({id, type}) => {
 });
 ~~~
 
-**Связанная статья**: [Встроенное редактирование](guides/inline_editing.md#working-with-editor)
+**Полезная статья:** [Встроенное редактирование](guides/inline_editing.md#working-with-editor)

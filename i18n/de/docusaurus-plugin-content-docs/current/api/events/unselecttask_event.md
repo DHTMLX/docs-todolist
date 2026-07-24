@@ -24,7 +24,7 @@ Der Callback des `unselect-task`-Events kann ein Objekt mit folgenden Parametern
 - `id` - (erforderlich) die ID einer Aufgabe
 
 :::info
-Um die internen Events zu verarbeiten, können Sie die [**Event-Bus-Methoden**](category/event-bus-methods.md) verwenden.
+Um die internen Events zu verarbeiten, können Sie die [**Event Bus-Methoden**](category/event-bus-methods.md) verwenden.
 :::
 
 ### Beispiel {#example}
@@ -49,6 +49,6 @@ list.api.on("unselect-task", ({id}) => {
 });
 ~~~
 
-**Verwandte Artikel**:
+**Verwandte Artikel:**
 - [Operationen mit Aufgaben](guides/task_operations.md)
 - [Mehrfachauswahl und Massenoperationen](guides/multiselection.md)

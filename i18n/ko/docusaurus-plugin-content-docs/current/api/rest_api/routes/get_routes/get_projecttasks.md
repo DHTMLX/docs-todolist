@@ -48,7 +48,7 @@ HTTP 상태 코드는 요청의 성공 여부(response.status == 200) 또는 실
 
 ---
 
-**관련 문서**:
+**관련 문서:**
 
 - [getProjectTasks()](api/rest_api/methods/getprojecttasks_method.md)
 - [서버 연동하기](guides/working_with_server.md)

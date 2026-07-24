@@ -32,7 +32,7 @@ Der Callback des `update-task`-Events kann ein Objekt mit folgenden Parametern e
   - `batch` - (optional) ein Array von Objekten aktualisierter Aufgaben
 
 :::info
-Um die internen Events zu verarbeiten, können Sie die [**Event-Bus-Methoden**](category/event-bus-methods.md) verwenden.
+Um die internen Events zu verarbeiten, können Sie die [**Event Bus-Methoden**](category/event-bus-methods.md) verwenden.
 :::
 
 ### Beispiel {#example}
@@ -58,4 +58,4 @@ list.api.on("update-task", ({id, task}) => {
 ~~~
 
 
-**Verwandter Artikel**: [Operationen mit Aufgaben](guides/task_operations.md#updating-a-task)
+**Verwandter Artikel:** [Operationen mit Aufgaben](guides/task_operations.md#updating-a-task)

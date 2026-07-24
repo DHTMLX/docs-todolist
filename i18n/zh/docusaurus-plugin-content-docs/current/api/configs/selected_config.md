@@ -37,6 +37,6 @@ const toolbar = new Toolbar("#toolbar", {
 });
 ~~~
 
-**变更日志：** 在 v1.1 中新增
+**更新日志：** 在 v1.1 中新增
 
 **相关文章：** [多选与批量操作](guides/multiselection.md)

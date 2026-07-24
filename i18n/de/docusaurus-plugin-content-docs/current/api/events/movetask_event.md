@@ -67,4 +67,4 @@ list.api.on("move-task", ({id}) => {
 });
 ~~~
 
-**Verwandter Artikel**: [Operationen mit Aufgaben](guides/task_operations.md#moving-a-task)
+**Verwandter Artikel:** [Operationen mit Aufgaben](guides/task_operations.md#moving-a-task)

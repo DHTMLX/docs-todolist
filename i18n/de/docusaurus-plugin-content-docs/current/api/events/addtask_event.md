@@ -60,4 +60,4 @@ list.api.on("add-task", (obj) => {
 });
 ~~~
 
-**Verwandter Artikel**: [Operationen mit Aufgaben](guides/task_operations.md#adding-a-new-task)
+**Verwandter Artikel:** [Operationen mit Aufgaben](guides/task_operations.md#adding-a-new-task)

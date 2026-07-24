@@ -139,6 +139,6 @@ To Do List 组件的界面由两部分组成：[工具栏（Toolbar）](#toolbar
 详情请参阅[**键盘快捷键**](api/events/keypressontodo_event.md#keyboard-shortcuts)章节
 :::
 
-## 后续步骤 {#whats-next}
+## 下一步 {#whats-next}
 
 简要了解 To Do List 之后，您可以开始学习如何在页面上展示该组件。请按照[快速入门](how_to_start.md)文章中的指引进行操作。

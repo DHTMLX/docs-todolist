@@ -50,4 +50,4 @@ list.api.on("delete-project", ({id}) => {
 });
 ~~~
 
-**관련 문서**: [프로젝트 작업](guides/project_operations.md#deleting-a-project)
+**관련 문서:** [프로젝트 작업](guides/project_operations.md#deleting-a-project)

@@ -57,7 +57,7 @@ HTTP 상태 코드는 요청의 성공 여부(response.status == 200) 또는 실
 
 ---
 
-**관련 문서**:
+**관련 문서:**
 
 - [updateProject()](api/methods/updateproject_method.md)
 - [send()](api/rest_api/methods/send_method.md)

@@ -29,7 +29,7 @@ Der Callback des `set-project`-Events kann ein Objekt mit folgenden Parametern e
 - `id` - (erforderlich) die ID des neu aktiven Projekts
 
 :::info
-Um die internen Events zu verarbeiten, können Sie die [**Event-Bus-Methoden**](category/event-bus-methods.md) verwenden.
+Um die internen Events zu verarbeiten, können Sie die [**Event Bus-Methoden**](category/event-bus-methods.md) verwenden.
 :::
 
 ### Beispiel {#example}
@@ -54,4 +54,4 @@ list.api.on("set-project", ({id}) => {
 });
 ~~~
 
-**Verwandter Artikel**: [Operationen mit Projekten](guides/project_operations.md#changing-the-active-project)
+**Verwandter Artikel:** [Operationen mit Projekten](guides/project_operations.md#changing-the-active-project)

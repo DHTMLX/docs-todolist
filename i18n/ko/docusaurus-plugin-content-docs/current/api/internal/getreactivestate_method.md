@@ -55,4 +55,4 @@ list.api.getReactiveState().selected.subscribe((value) => {
 });
 ~~~
 
-**변경 로그**: `historyState` 매개변수가 v1.3에서 추가되었습니다
+**변경 로그:** `historyState` 매개변수가 v1.3에서 추가되었습니다

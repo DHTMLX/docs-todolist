@@ -59,9 +59,9 @@ HTTP 状态码表示请求是否成功（response.status == 200）或失败（re
 
 ---
 
-**变更日志**：`id` 参数在 v1.3 中新增
+**更新日志：**`id` 参数在 v1.3 中新增
 
-**相关文章**：
+**相关文章：**
 
 - [send()](api/rest_api/methods/send_method.md)
 - [addProject()](api/methods/addproject_method.md)

@@ -55,7 +55,7 @@ description: Sie können sich eine API-Übersicht der DHTMLX JavaScript To-Do-Li
 
 ## Interne To-Do-List-API {#to-do-list-internal-api}
 
-### Event-Bus-Methoden {#event-bus-methods}
+### Event Bus-Methoden {#event-bus-methods}
 
 | Name                                 | Beschreibung                                |
 | :----------------------------------- | :------------------------------------------ |

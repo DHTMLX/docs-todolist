@@ -24,7 +24,7 @@ unassignUser({
 - `id` - (필수) 작업의 id
 - `userId` - (필수) 작업에서 해제할 담당자의 id
 
-### 예시 {#example}
+### 예제 {#example}
 
 ~~~js {22-25}
 const { ToDo, Toolbar } = todo;
@@ -54,4 +54,4 @@ list.unassignUser({
 });
 ~~~
 
-**관련 문서**: [작업 담당자](guides/task_users.md)
+**관련 문서:** [작업 담당자](guides/task_users.md)

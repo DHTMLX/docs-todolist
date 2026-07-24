@@ -68,6 +68,6 @@ const toolbar = new Toolbar("#toolbar", {
 });
 ~~~
 
-**Änderungsprotokoll**: In v1.1 hinzugefügt
+**Changelog:** In v1.1 hinzugefügt
 
-**Verwandter Artikel**: [Konfiguration](guides/configuration.md#drag-n-drop)
+**Verwandter Artikel:** [Konfiguration](guides/configuration.md#drag-n-drop)
