@@ -27,7 +27,7 @@ Der Callback des `unassign-user`-Events kann ein Objekt mit folgenden Parametern
 - `userId` - (erforderlich) die ID des Benutzers, dessen Zuweisung zur Aufgabe aufgehoben wurde
 
 :::info
-Um die internen Events zu verarbeiten, können Sie die [**Event-Bus-Methoden**](category/event-bus-methods.md) verwenden.
+Um die internen Events zu verarbeiten, können Sie die [**Event Bus-Methoden**](category/event-bus-methods.md) verwenden.
 :::
 
 ### Beispiel {#example}
@@ -52,4 +52,4 @@ list.api.on("unassign-user", ({id, userId}) => {
 });
 ~~~
 
-**Verwandter Artikel**: [Aufgaben-Benutzer](guides/task_users.md)
+**Verwandter Artikel:** [Aufgaben-Benutzer](guides/task_users.md)

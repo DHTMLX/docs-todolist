@@ -118,7 +118,7 @@ document.addEventListener("keydown", event => {
 });
 ~~~
 
-**Связанные статьи**:
+**Полезные статьи:**
 - [Загрузка и хранение данных](guides/loading_data.md)
 
-**Связанный пример**: [To do list. Пользовательские горячие клавиши для установки приоритетов](https://snippet.dhtmlx.com/5cymicwt?tag=todolist)
+**Связанный пример:** [To do list. Пользовательские горячие клавиши для установки приоритетов](https://snippet.dhtmlx.com/5cymicwt?tag=todolist)

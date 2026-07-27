@@ -56,6 +56,6 @@ list.setSort({
 });
 ~~~
 
-**变更日志：** 在 v1.1 中新增
+**更新日志：** 在 v1.1 中新增
 
 **相关文章：** [任务的排序与过滤](guides/sorting_filtering_tasks.md)

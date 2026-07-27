@@ -192,7 +192,7 @@ HTTP 상태 코드는 요청의 성공 여부(response.status == 200) 또는 실
 
 ---
 
-**관련 문서**:
+**관련 문서:**
 - [move-task](api/events/movetask_event.md)
 - [send()](api/rest_api/methods/send_method.md)
 - [서버와 함께 작업하기](guides/working_with_server.md)

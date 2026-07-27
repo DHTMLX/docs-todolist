@@ -57,7 +57,7 @@ HTTP 状态码表示请求是否成功（response.status == 200）或失败（re
 
 ---
 
-**相关文章**：
+**相关文章：**
 
 - [updateProject()](api/methods/updateproject_method.md)
 - [send()](api/rest_api/methods/send_method.md)

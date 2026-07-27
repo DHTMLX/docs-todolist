@@ -166,7 +166,7 @@ description: DHTMLX JavaScript To Do List 라이브러리의 새로운 정보를
 
 [블로그에서 릴리스 리뷰 보기](https://dhtmlx.com/blog/dhtmlx-to-do-list-1-1/)
 
-### 호환성 변경 사항 {#breaking-changes}
+### 주요 변경 사항 {#breaking-changes}
 
 이번 릴리스에서 `taskShape` 속성에 일부 변경 사항이 도입되었습니다. 최신 버전에 맞춰 업데이트하려면 [마이그레이션 문서](migration.md#10---11)를 확인하세요.
 

@@ -73,6 +73,6 @@ console.log(list.getChildrenIds({ id: "1", filtered: true, tree: false })); // -
 console.log(list.getChildrenIds({ id: "1", filtered: true, hideCompleted: true })); // -> ['1.1']
 ~~~
 
-**변경 로그**: `hideCompleted` 매개변수가 v1.1에서 추가되었습니다
+**변경 로그:** `hideCompleted` 매개변수가 v1.1에서 추가되었습니다
 
-**관련 문서**: [작업 객체/Id](guides/task_object.md)
+**관련 문서:** [작업 객체/Id](guides/task_object.md)

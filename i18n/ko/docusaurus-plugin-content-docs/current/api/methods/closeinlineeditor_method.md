@@ -19,7 +19,7 @@ closeInlineEditor({
 }): void;
 ~~~
 
-### 파라미터 {#parameters}
+### 매개변수 {#parameters}
 
 - `id` - (필수) 태스크/프로젝트의 id
 - `save` - (선택) 에디터를 닫을 때 변경 사항을 저장할지 여부를 정의합니다. 기본값은 `true`입니다
@@ -49,4 +49,4 @@ list.closeInlineEditor({
 });
 ~~~
 
-**관련 문서**: [인라인 편집](guides/inline_editing.md)
+**관련 문서:** [인라인 편집](guides/inline_editing.md)

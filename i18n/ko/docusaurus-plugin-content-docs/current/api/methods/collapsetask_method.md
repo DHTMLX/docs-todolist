@@ -18,7 +18,7 @@ collapseTask({
 }): void;
 ~~~
 
-### 파라미터 {#parameters}
+### 매개변수 {#parameters}
 
 - `id` - (필수) 접을 태스크의 id
 
@@ -46,4 +46,4 @@ list.collapseTask({
 });
 ~~~
 
-**관련 문서**: [태스크 관련 작업](guides/task_operations.md)
+**관련 문서:** [태스크 관련 작업](guides/task_operations.md)

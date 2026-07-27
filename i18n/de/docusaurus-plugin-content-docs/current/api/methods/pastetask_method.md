@@ -58,6 +58,6 @@ list.pasteTask({
 });
 ~~~
 
-**Verwandte API**: [copyTask()](api/methods/copytask_method.md)
+**Verwandte API:** [copyTask()](api/methods/copytask_method.md)
 
-**Verwandter Artikel**: [Operationen mit Aufgaben](guides/task_operations.md)
+**Verwandter Artikel:** [Operationen mit Aufgaben](guides/task_operations.md)

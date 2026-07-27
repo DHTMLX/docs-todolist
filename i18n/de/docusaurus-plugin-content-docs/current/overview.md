@@ -139,6 +139,6 @@ Nachdem Sie [mehrere Aufgaben](#selecting-multiple-tasks) ausgewählt haben, kö
 Weitere Details finden Sie im Abschnitt [**Tastaturkürzel**](api/events/keypressontodo_event.md#keyboard-shortcuts)
 :::
 
-## Nächste Schritte {#whats-next}
+## Wie geht es weiter {#whats-next}
 
 Nachdem Sie sich einen kurzen Überblick über To Do List verschafft haben, können Sie nun lernen, die Komponente auf der Seite anzuzeigen. Folgen Sie den Anweisungen im Artikel [Erste Schritte](how_to_start.md).

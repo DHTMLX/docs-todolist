@@ -132,4 +132,4 @@ list.setLocale(de);
 toolbar.setLocale(de, list.api);
 ~~~
 
-**Verwandter Artikel**: [Lokalisierung](guides/localization.md)
+**Verwandter Artikel:** [Lokalisierung](guides/localization.md)

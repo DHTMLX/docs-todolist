@@ -23,7 +23,7 @@ addTask({
 }): void;
 ~~~
 
-### 파라미터 {#parameters}
+### 매개변수 {#parameters}
 
 - `id` - (선택) 새 태스크의 ID
 - `parent` - (선택) 부모 태스크의 ID
@@ -75,4 +75,4 @@ list.addTask({
 });
 ~~~
 
-**관련 문서**: [태스크 관련 작업](guides/task_operations.md)
+**관련 문서:** [태스크 관련 작업](guides/task_operations.md)

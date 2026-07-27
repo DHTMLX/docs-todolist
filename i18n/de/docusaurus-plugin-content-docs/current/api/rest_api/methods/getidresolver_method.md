@@ -45,4 +45,4 @@ const serverId = idResolver(clientId, TaskID);
 
 ---
 
-**Verwandte Artikel**: [Mit dem Server arbeiten](guides/working_with_server.md#customize-server-events)
+**Verwandte Artikel:** [Mit dem Server arbeiten](guides/working_with_server.md#customize-server-events)

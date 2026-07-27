@@ -31,7 +31,7 @@ Der Callback des `paste-task`-Events kann ein Objekt mit folgenden Parametern en
 - `reverse` - (optional) `true`, wenn die Aufgabe vor der Zielaufgabe eingefügt wird; andernfalls `false`
 
 :::info
-Um die internen Events zu verarbeiten, können Sie die [**Event-Bus-Methoden**](category/event-bus-methods.md) verwenden.
+Um die internen Events zu verarbeiten, können Sie die [**Event Bus-Methoden**](category/event-bus-methods.md) verwenden.
 :::
 
 ### Beispiel {#example}
@@ -56,4 +56,4 @@ list.api.on("paste-task", (obj) => {
 });
 ~~~ 
 
-**Verwandter Artikel**: [Operationen mit Aufgaben](guides/task_operations.md#copyingpasting-a-task)
+**Verwandter Artikel:** [Operationen mit Aufgaben](guides/task_operations.md#copyingpasting-a-task)

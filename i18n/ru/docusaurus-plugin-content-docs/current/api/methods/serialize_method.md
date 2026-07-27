@@ -16,7 +16,7 @@ description: Вы можете узнать о методе serialize в док�
 serialize(): object;
 ~~~
 
-### Возвращает {#returns}
+### Возвращаемое значение {#returns}
 
 Метод возвращает сериализованные данные To Do List
 
@@ -48,4 +48,4 @@ const list = new ToDo("#root", {
 list.serialize();
 ~~~
 
-**Связанная статья**: [Загрузка и сохранение данных](guides/loading_data.md)
+**Полезная статья:** [Загрузка и сохранение данных](guides/loading_data.md)

@@ -25,7 +25,7 @@ Der Callback des `unindent-task`-Events kann ein Objekt mit folgenden Parametern
 - `id` - (erforderlich) die ID einer Aufgabe
 
 :::info
-Um die internen Events zu verarbeiten, können Sie die [**Event-Bus-Methoden**](category/event-bus-methods.md) verwenden.
+Um die internen Events zu verarbeiten, können Sie die [**Event Bus-Methoden**](category/event-bus-methods.md) verwenden.
 :::
 
 ### Beispiel {#example}
@@ -50,4 +50,4 @@ list.api.on("unindent-task", ({id}) => {
 });
 ~~~ 
 
-**Verwandter Artikel**: [Operationen mit Aufgaben](guides/task_operations.md#changing-the-indent-level-of-a-task)
+**Verwandter Artikel:** [Operationen mit Aufgaben](guides/task_operations.md#changing-the-indent-level-of-a-task)

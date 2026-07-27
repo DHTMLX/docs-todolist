@@ -134,4 +134,4 @@ toolbar.setLocale(de, list.api);
 **Toolbar** компонента To Do List является отдельным компонентом. Перед изменением его локали убедитесь, что вы уже применили метод [`setLocale()`](api/toolbar_api/methods/setlocale_method.md) к компоненту **To Do List**
 :::
 
-**Связанная статья**: [Локализация](guides/localization.md)
+**Полезная статья:** [Локализация](guides/localization.md)

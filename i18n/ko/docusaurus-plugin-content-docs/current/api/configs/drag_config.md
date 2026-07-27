@@ -24,7 +24,7 @@ drag?: {
 };
 ~~~
 
-### 파라미터 {#parameters}
+### 매개변수 {#parameters}
 
 드래그 앤 드롭을 구성하려면 **간단한** 옵션 또는 **확장** 옵션을 사용할 수 있습니다.
 
@@ -37,7 +37,7 @@ drag?: {
 - `drag` - (선택 사항) 드래그 앤 드롭 설정이 담긴 객체. 다음 파라미터를 포함할 수 있습니다:
     - `expand` - (선택 사항) 드래그 앤 드롭 중 작업 위에 마우스를 올렸을 때 접혀 있는 작업을 자동으로 펼칠지 여부를 정의합니다
 
-### 기본 config {#default-config}
+### 기본 설정 {#default-config}
 
 ~~~js
 drag: true
@@ -68,6 +68,6 @@ const toolbar = new Toolbar("#toolbar", {
 });
 ~~~
 
-**변경 이력**: v1.1에서 추가됨
+**변경 로그:** v1.1에서 추가
 
-**관련 문서**: [구성](guides/configuration.md#drag-n-drop)
+**관련 문서:** [구성](guides/configuration.md#drag-n-drop)

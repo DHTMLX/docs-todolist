@@ -52,6 +52,6 @@ list.selectTask({ id: "1.1"});
 list.unselectTask({ id: "1.1" });
 ~~~
 
-**Änderungsprotokoll**: Die Möglichkeit, `id: null` an die Methode zu übergeben, wurde in v1.1 hinzugefügt
+**Changelog:** Die Möglichkeit, `id: null` an die Methode zu übergeben, wurde in v1.1 hinzugefügt
 
-**Verwandter Artikel**: [Mehrfachauswahl und Massenoperationen](guides/multiselection.md)
+**Verwandter Artikel:** [Mehrfachauswahl und Massenoperationen](guides/multiselection.md)

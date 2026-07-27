@@ -48,7 +48,7 @@ const en = {
         "Rename project": "Rename project",
         "Delete project": "Delete project",
 
-        // v1.1에서 추가됨 (시작)
+        // v1.1에서 추가 (시작)
         "Completed tasks": "Completed tasks",
         "Show": "Show",
         "Hide": "Hide",
@@ -63,7 +63,7 @@ const en = {
         "Created (old to new)": "Created (old to new)",
         "Edited (new to old)": "Edited (new to old)",
         "Edited (old to new)": "Edited (old to new)",
-        // v1.1에서 추가됨 (끝)
+        // v1.1에서 추가 (끝)
 
         // Task
         "Add task below": "Add task below",
@@ -78,7 +78,7 @@ const en = {
         "Paste": "Paste",
         "Delete": "Delete",
 
-        // 우선순위 (v1.2에서 추가됨)
+        // 우선순위 (v1.2에서 추가)
         "Priority (high to low)": "Priority (high to low)",
         "Priority (low to high)": "Priority (low to high)",
         "Set priority": "Set priority",

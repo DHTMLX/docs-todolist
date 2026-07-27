@@ -32,7 +32,7 @@ Veröffentlicht am 27. Februar 2025
 
 [Versionsüberblick im Blog](https://dhtmlx.com/blog/dhtmlx-to-do-list-1-3/)
 
-### Neue Funktionen {#new-functionality}
+### Neue Funktionalität {#new-functionality}
 
 - Sie können den Änderungsverlauf in einem einzelnen Projekt oder in der gesamten App über die Eigenschaft [`history`](api/configs/history_config.md) und die Methoden [`undo()`](api/methods/undo_method.md)/[`redo()`](api/methods/redo_method.md) verwalten
 - Sie können ein Kontextmenü über die Eigenschaft [`menu`](api/configs/menu_config.md) anpassen ([Beispiel](https://snippet.dhtmlx.com/slpjstbb))
@@ -140,7 +140,7 @@ Veröffentlicht am 16. Mai 2023
 
 [Versionsüberblick im Blog](https://dhtmlx.com/blog/dhtmlx-to-do-list-1-2/)
 
-### Neue Funktionen {#new-functionality-12}
+### Neue Funktionalität {#new-functionality-12}
 
 - Sie können Ihre Aufgaben über das Kontextmenü oder die entsprechende API priorisieren ([Beispiel](https://snippet.dhtmlx.com/5cymicwt))
 - Sie können Aufgaben nach Prioritäten sortieren
@@ -166,11 +166,11 @@ Veröffentlicht am 10. Oktober 2022
 
 [Versionsüberblick im Blog](https://dhtmlx.com/blog/dhtmlx-to-do-list-1-1/)
 
-### Grundlegende Änderungen {#breaking-changes}
+### Breaking Changes {#breaking-changes}
 
 Das neue Release führt einige Änderungen an der Eigenschaft `taskShape` ein. Lesen Sie den [Migrationsartikel](migration.md#10---11), um mit der neuesten Version auf dem Laufenden zu bleiben.
 
-### Neue Funktionen {#new-functionality-11}
+### Neue Funktionalität {#new-functionality-11}
 
 - Drag-and-Drop:
     - Möglichkeit, [die Funktion zu konfigurieren oder zu deaktivieren](guides/configuration.md#drag-n-drop)
@@ -270,7 +270,7 @@ Veröffentlicht am 20. Juni 2022
 - **To-Do-List-API**: 
     - [Methoden](api/overview/methods_overview.md)
     - Interne API:
-        - [Event-Bus-Methoden](category/event-bus-methods.md)
+        - [Event Bus-Methoden](category/event-bus-methods.md)
         - [State-Methoden](category/state-methods.md)
     - [Events](api/overview/events_overview.md)
     - [Eigenschaften](api/overview/configs_overview.md)

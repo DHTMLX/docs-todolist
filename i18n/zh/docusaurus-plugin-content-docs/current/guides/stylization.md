@@ -15,7 +15,7 @@ description: 您可以在 DHTMLX JavaScript To Do List 库的文档中了解 To 
 
 以下代码片段展示了影响 To Do List 和 WX 库的所有 CSS 变量的默认值。
 
-:::tip 注意
+:::tip 备注
 变量名称可能在版本之间发生变化，每次更新后请重新确认。
 :::
 

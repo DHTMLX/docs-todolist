@@ -44,4 +44,4 @@ login(url).then(token => {
 
 ---
 
-**Verwandte Artikel**: [Mit dem Server arbeiten](guides/working_with_server.md#multiuser-backend)
+**Verwandte Artikel:** [Mit dem Server arbeiten](guides/working_with_server.md#multiuser-backend)

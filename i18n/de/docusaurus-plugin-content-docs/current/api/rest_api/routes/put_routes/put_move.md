@@ -192,7 +192,7 @@ Bei Erfolg wird ein leeres JSON-Objekt zurückgegeben.
 
 ---
 
-**Verwandte Artikel**:
+**Verwandte Artikel:**
 - [move-task](api/events/movetask_event.md)
 - [send()](api/rest_api/methods/send_method.md)
 - [Mit dem Server arbeiten](guides/working_with_server.md)

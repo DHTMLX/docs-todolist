@@ -242,7 +242,7 @@ const toolbar = new Toolbar("#toolbar", {
 });
 ~~~
 
-## 后续步骤 {#whats-next}
+## 下一步 {#whats-next}
 
 至此，您已拥有一个可用的 To Do List。您可以加载自己的数据，并对组件进行配置以满足实际需求。
 

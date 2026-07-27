@@ -39,7 +39,7 @@ list.addTask({ task: { text: "New task 1" } });
 list.undo();
 ~~~
 
-**变更日志：** `undo()` 方法在 v1.3 中新增
+**更新日志：** `undo()` 方法在 v1.3 中新增
 
 **相关 API：**
     - [`history`](api/configs/history_config.md)

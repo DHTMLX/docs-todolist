@@ -192,7 +192,7 @@ HTTP-код статуса показывает, выполнен ли запр�
 
 ---
 
-**Связанные статьи**:
+**Полезные статьи:**
 - [move-task](api/events/movetask_event.md)
 - [send()](api/rest_api/methods/send_method.md)
 - [Работа с сервером](guides/working_with_server.md)

@@ -268,9 +268,9 @@ new ToDo("#root", {
 });
 ~~~
 
-**변경 이력**: `menu` config는 v1.3에서 추가되었습니다
+**변경 로그:** `menu` config는 v1.3에서 추가되었습니다
 
-**관련 예제**:
+**관련 예제:**
     - [To do list. 메뉴 커스터마이징. 옵션 추가 및 제거](https://snippet.dhtmlx.com/slpjstbb)
     - [To do list. 메뉴 커스터마이징. 사용자 정의 아이콘](https://snippet.dhtmlx.com/cmfqmg00)
     - [To do list. 인터페이스 특정 영역에서 메뉴 제거](https://snippet.dhtmlx.com/5pnk7y0d)

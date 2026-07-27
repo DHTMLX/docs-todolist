@@ -21,7 +21,7 @@ pasteTask({
 }): void;
 ~~~
 
-### 파라미터 {#parameters}
+### 매개변수 {#parameters}
 
 - `parent` - (선택) 미래 부모 태스크의 ID
 - `project` - (선택) 태스크가 붙여넣어질 프로젝트의 ID
@@ -58,6 +58,6 @@ list.pasteTask({
 });
 ~~~
 
-**관련 API**: [copyTask()](api/methods/copytask_method.md)
+**관련 API:** [copyTask()](api/methods/copytask_method.md)
 
-**관련 문서**: [태스크 작업](guides/task_operations.md)
+**관련 문서:** [태스크 작업](guides/task_operations.md)

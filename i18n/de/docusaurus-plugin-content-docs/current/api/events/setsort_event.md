@@ -29,7 +29,7 @@ Der Callback des `set-sort`-Events kann ein Objekt mit folgenden Parametern entg
 - `tree` - (optional) definiert, ob die Sortierung für untergeordnete Aufgaben aktiviert ist
 
 :::info
-Um die internen Events zu verarbeiten, können Sie die [**Event-Bus-Methoden**](category/event-bus-methods.md) verwenden.
+Um die internen Events zu verarbeiten, können Sie die [**Event Bus-Methoden**](category/event-bus-methods.md) verwenden.
 :::
 
 ### Beispiel {#example}
@@ -54,4 +54,4 @@ list.api.on("set-sort", ({ by, dir, tree }) => {
 });
 ~~~
 
-**Verwandter Artikel**: [Aufgaben sortieren und filtern](guides/sorting_filtering_tasks.md)
+**Verwandter Artikel:** [Aufgaben sortieren und filtern](guides/sorting_filtering_tasks.md)

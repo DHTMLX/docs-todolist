@@ -268,9 +268,9 @@ new ToDo("#root", {
 });
 ~~~
 
-**Änderungsprotokoll**: Die Konfiguration `menu` wurde in v1.3 hinzugefügt
+**Changelog:** Die Konfiguration `menu` wurde in v1.3 hinzugefügt
 
-**Verwandte Beispiele**:
+**Verwandte Beispiele:**
     - [To-do-Liste. Menü-Anpassung. Optionen hinzufügen und entfernen](https://snippet.dhtmlx.com/slpjstbb)
     - [To-do-Liste. Menü-Anpassung. Benutzerdefinierte Symbole](https://snippet.dhtmlx.com/cmfqmg00)
     - [To-do-Liste. Menü für bestimmte Teile der Oberfläche entfernen](https://snippet.dhtmlx.com/5pnk7y0d)

@@ -47,4 +47,4 @@ list.existsProject({ id: 1 }); // -> false
 list.existsProject({ id: "first" }); // -> true
 ~~~
 
-**관련 문서**: [프로젝트 객체](guides/project_object_operations.md)
+**관련 문서:** [프로젝트 객체](guides/project_object_operations.md)

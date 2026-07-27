@@ -112,6 +112,6 @@ list.pasteTask({
 list.unselectTask({ id: null });
 ~~~
 
-**История изменений**: Параметр `join` добавлен в v1.1
+**Журнал изменений:** Параметр `join` добавлен в v1.1
 
-**Связанная статья**: [Операции с задачами](guides/task_operations.md)
+**Полезная статья:** [Операции с задачами](guides/task_operations.md)

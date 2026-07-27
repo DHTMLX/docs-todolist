@@ -31,7 +31,7 @@ hasChildren({
 Параметр `filtered` используется, если применялась фильтрация
 :::
 
-### Возвращает {#returns}
+### Возвращаемое значение {#returns}
 
 Метод возвращает `true`, если у задачи есть дочерние задачи; в противном случае возвращает `false`
 
@@ -68,6 +68,6 @@ console.log(list.hasChildren({ id: "1.1", hideCompleted: true })); // -> false
 console.log(list.hasChildren({ id: "1.1", filtered: true })); // -> false
 ~~~
 
-**История изменений**: Параметр `hideCompleted` добавлен в v1.1
+**Журнал изменений:** Параметр `hideCompleted` добавлен в v1.1
 
-**Связанная статья**: [Объект задачи/Id](guides/task_object.md)
+**Полезная статья:** [Объект задачи/Id](guides/task_object.md)

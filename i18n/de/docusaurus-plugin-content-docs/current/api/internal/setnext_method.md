@@ -8,7 +8,7 @@ description: Sie können mehr über die setNext-Methode in der Dokumentation der
 
 ### Beschreibung {#description}
 
-@short: Ermöglicht das Hinzufügen einer Aktion in die Event-Bus-Reihenfolge
+@short: Ermöglicht das Hinzufügen einer Aktion in die Event Bus-Reihenfolge
 
 ### Verwendung {#usage}
 

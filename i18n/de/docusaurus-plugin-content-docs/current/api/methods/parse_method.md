@@ -51,4 +51,4 @@ list.parse({
 });
 ~~~
 
-**Verwandter Artikel**: [Daten laden und speichern](guides/loading_data.md)
+**Verwandter Artikel:** [Daten laden und speichern](guides/loading_data.md)

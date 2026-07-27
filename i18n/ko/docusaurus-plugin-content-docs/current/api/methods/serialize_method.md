@@ -48,4 +48,4 @@ const list = new ToDo("#root", {
 list.serialize();
 ~~~
 
-**관련 문서**: [데이터 로드 및 저장](guides/loading_data.md)
+**관련 문서:** [데이터 로드 및 저장](guides/loading_data.md)

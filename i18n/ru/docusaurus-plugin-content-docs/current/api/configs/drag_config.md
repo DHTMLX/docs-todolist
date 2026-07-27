@@ -68,6 +68,6 @@ const toolbar = new Toolbar("#toolbar", {
 });
 ~~~
 
-**История изменений**: Добавлено в v1.1
+**Журнал изменений:** Добавлено в v1.1
 
-**Связанная статья**: [Настройка](guides/configuration.md#drag-n-drop)
+**Полезная статья:** [Настройка](guides/configuration.md#drag-n-drop)

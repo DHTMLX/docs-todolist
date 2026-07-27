@@ -60,7 +60,7 @@ HTTP 状态码表示请求是否成功（response.status == 200）或失败（re
 
 ---
 
-**相关文章**：
+**相关文章：**
 - [send()](api/rest_api/methods/send_method.md)
 - [setSort()](api/methods/setsort_method.md)
 - [与服务器配合使用](guides/working_with_server.md)

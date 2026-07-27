@@ -27,7 +27,7 @@ Der Callback des `uncheck-task`-Events kann ein Objekt mit folgenden Parametern 
 - `manual` - (optional) `true`, wenn die Aufgabe im „manuellen" Modus als nicht abgeschlossen markiert wird
 
 :::info
-Um die internen Events zu verarbeiten, können Sie die [**Event-Bus-Methoden**](category/event-bus-methods.md) verwenden.
+Um die internen Events zu verarbeiten, können Sie die [**Event Bus-Methoden**](category/event-bus-methods.md) verwenden.
 :::
 
 ### Beispiel {#example}
@@ -52,4 +52,4 @@ list.api.on("uncheck-task", ({id}) => {
 });
 ~~~
 
-**Verwandter Artikel**: [Operationen mit Aufgaben](guides/task_operations.md#marking-a-task-completeincomplete)
+**Verwandter Artikel:** [Operationen mit Aufgaben](guides/task_operations.md#marking-a-task-completeincomplete)

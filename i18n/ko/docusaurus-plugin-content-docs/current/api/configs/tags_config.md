@@ -42,6 +42,6 @@ const toolbar = new Toolbar("#toolbar", {
 });
 ~~~
 
-**관련 문서**: 
+**관련 문서:** 
 - [데이터 로드 및 저장](guides/loading_data.md)
 - [인라인 편집](guides/inline_editing.md)

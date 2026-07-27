@@ -135,7 +135,7 @@ DHTMLX To Do List 使用以下字符设置日期格式：
 查看[**本地化**](guides/localization.md)文章，了解如何以所需语言显示日期标签
 :::
 
-**变更日志：**
+**更新日志：**
 
 - `priority` 参数在 v1.2 中新增
 
