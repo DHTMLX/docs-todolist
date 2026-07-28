@@ -19,7 +19,7 @@ assignUser({
 }): void;
 ~~~
 
-### 파라미터 {#parameters}
+### 매개변수 {#parameters}
 
 - `id` - (필수) 태스크의 id
 - `userId` - (필수) 태스크에 배정할 담당자의 id
@@ -54,4 +54,4 @@ list.assignUser({
 });
 ~~~
 
-**관련 문서**: [태스크 담당자](guides/task_users.md)
+**관련 문서:** [태스크 담당자](guides/task_users.md)

@@ -33,7 +33,7 @@ getChildrenIds({
 Параметр `filtered` можно использовать, если применялась фильтрация
 :::
 
-### Возвращает {#returns}
+### Возвращаемое значение {#returns}
 
 Метод возвращает массив идентификаторов дочерних задач
 
@@ -73,6 +73,6 @@ console.log(list.getChildrenIds({ id: "1", filtered: true, tree: false })); // -
 console.log(list.getChildrenIds({ id: "1", filtered: true, hideCompleted: true })); // -> ['1.1']
 ~~~
 
-**История изменений**: Параметр `hideCompleted` добавлен в v1.1
+**Журнал изменений:** Параметр `hideCompleted` добавлен в v1.1
 
-**Связанная статья**: [Объект задачи/Id](guides/task_object.md)
+**Полезная статья:** [Объект задачи/Id](guides/task_object.md)

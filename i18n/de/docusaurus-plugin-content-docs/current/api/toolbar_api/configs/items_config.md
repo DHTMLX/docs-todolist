@@ -77,8 +77,8 @@ const toolbar = new Toolbar("#toolbar", {
 });
 ~~~
 
-**Änderungsprotokoll**: Die Parameter `"undo"` und `"redo"` wurden in v1.3 hinzugefügt
+**Changelog:** Die Parameter `"undo"` und `"redo"` wurden in v1.3 hinzugefügt
 
-**Verwandte Artikel**:
+**Verwandte Artikel:**
 - [Konfiguration](guides/configuration.md#toolbar)
 - [Anpassung](guides/customization.md#customize-the-toolbar)

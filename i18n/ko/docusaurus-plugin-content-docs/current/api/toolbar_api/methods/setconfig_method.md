@@ -17,7 +17,7 @@ description: DHTMLX JavaScript To Do List 라이브러리 문서에서 Toolbar�
 setConfig(config: object): void;
 ~~~
 
-### 파라미터 {#parameters}
+### 매개변수 {#parameters}
 
 - `config` - (필수) Toolbar 설정이 담긴 객체. 전체 속성 목록은 [여기](category/toolbar-properties.md)에서 확인하세요
 

@@ -54,7 +54,7 @@ taskShape: {
 }
 ~~~
 
-### 파라미터 {#parameters}
+### 매개변수 {#parameters}
 
 작업 외관을 구성하려면 `taskShape` 객체에 다음 파라미터를 지정할 수 있습니다:
 
@@ -135,16 +135,16 @@ DHTMLX To Do List는 날짜 형식 설정에 다음 문자를 사용합니다:
 날짜 레이블을 원하는 언어로 표시하는 방법은 [**현지화**](guides/localization.md) 문서를 참조하세요
 :::
 
-**변경 이력**:
+**변경 로그:**
 
-- `priority` 파라미터가 v1.2에서 추가됨
+- `priority` 파라미터가 v1.2에서 추가
 
-**관련 문서**:
+**관련 문서:**
 
 - [구성](guides/configuration.md#tasks)
 - [완료된 작업 표시/숨기기](guides/hide_completed_tasks.md)
 
-**관련 샘플**:
+**관련 샘플:**
 - [To do list. 하위 작업 카운터 및 날짜 형식](https://snippet.dhtmlx.com/magidhw8?tag=todolist)
 - [To do list. 부모 작업 완료 표시 두 가지 방식](https://snippet.dhtmlx.com/5892fcr2?tag=todolist)
 - [To do list. 우선순위 설정을 위한 사용자 정의 단축키](https://snippet.dhtmlx.com/5cymicwt?tag=todolist)

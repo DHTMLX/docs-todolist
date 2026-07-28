@@ -47,4 +47,4 @@ const toolbar = new Toolbar("#toolbar", {
 });
 ~~~
 
-**Связанная статья**: [Режим только для чтения](guides/readonly_mode.md)
+**Полезная статья:** [Режим только для чтения](guides/readonly_mode.md)

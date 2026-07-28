@@ -70,9 +70,9 @@ Der HTTP-Statuscode zeigt an, ob die Anfrage erfolgreich war (response.status ==
 
 ---
 
-**Änderungsprotokoll**: Der Parameter `id` wurde in v1.3 hinzugefügt
+**Changelog:** Der Parameter `id` wurde in v1.3 hinzugefügt
 
-**Verwandte Artikel**:
+**Verwandte Artikel:**
 - [send()](api/rest_api/methods/send_method.md)
 - [addTask()](api/methods/addtask_method.md)
 - [Mit dem Server arbeiten](guides/working_with_server.md)

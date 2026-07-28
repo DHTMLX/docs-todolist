@@ -51,4 +51,4 @@ list.expandTask({
 });
 ~~~
 
-**Связанная статья**: [Операции с задачами](guides/task_operations.md)
+**Полезная статья:** [Операции с задачами](guides/task_operations.md)

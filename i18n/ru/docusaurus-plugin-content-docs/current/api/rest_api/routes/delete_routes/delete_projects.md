@@ -53,7 +53,7 @@ HTTP-код состояния показывает, выполнен ли за�
 
 ---
 
-**Связанные статьи**:
+**Полезные статьи:**
 
 - [send()](api/rest_api/methods/send_method.md)
 - [deleteProject()](api/methods/deleteproject_method.md)

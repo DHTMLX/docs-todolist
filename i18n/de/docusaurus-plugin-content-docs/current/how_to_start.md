@@ -242,7 +242,7 @@ const toolbar = new Toolbar("#toolbar", {
 });
 ~~~
 
-## Nächste Schritte {#whats-next}
+## Wie geht es weiter {#whats-next}
 
 Sie verfügen nun über eine einsatzbereite To-Do-Liste. Sie können Ihre eigenen Daten laden und die Komponente nach Ihren Anforderungen konfigurieren.
 

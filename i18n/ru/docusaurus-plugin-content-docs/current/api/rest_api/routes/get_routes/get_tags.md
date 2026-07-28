@@ -38,7 +38,7 @@ HTTP-код состояния показывает, выполнен ли за�
 
 ---
 
-**Связанные статьи**:
+**Полезные статьи:**
 
 - [getTags()](api/rest_api/methods/gettags_method.md)
 - [Работа с сервером](guides/working_with_server.md)

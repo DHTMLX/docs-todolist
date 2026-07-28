@@ -48,4 +48,4 @@ const toolbar = new Toolbar("#toolbar", {
 list.getTask({ id: "1.2" }); // -> {id: '1.2', text: 'Task 1.2', parent: '1'}
 ~~~
 
-**관련 문서**: [작업 객체/Id](guides/task_object.md)
+**관련 문서:** [작업 객체/Id](guides/task_object.md)

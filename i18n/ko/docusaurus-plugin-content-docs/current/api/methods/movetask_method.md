@@ -24,7 +24,7 @@ moveTask({
 }): void;
 ~~~
 
-### 파라미터 {#parameters}
+### 매개변수 {#parameters}
 
 - `id` - (선택) 이동할 태스크의 ID
 - `project` - (선택) 프로젝트의 ID<br>
@@ -130,6 +130,6 @@ list.eachSelected(id => {
 }, true);
 ~~~
 
-**관련 문서**:
+**관련 문서:**
 - [태스크 작업](guides/task_operations.md)
 - [다중 선택 및 일괄 작업](guides/multiselection.md)

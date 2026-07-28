@@ -42,6 +42,6 @@ list.api.on("show-completed-tasks", () => {
 });
 ~~~
 
-**변경 이력**: v1.1에서 추가됨
+**변경 로그:** v1.1에서 추가
 
-**관련 문서**: [완료된 task 표시/숨기기](guides/hide_completed_tasks.md)
+**관련 문서:** [완료된 task 표시/숨기기](guides/hide_completed_tasks.md)

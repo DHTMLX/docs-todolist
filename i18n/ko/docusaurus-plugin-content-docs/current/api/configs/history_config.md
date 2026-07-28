@@ -25,7 +25,7 @@ history?: {
 };
 ~~~
 
-### 파라미터 {#parameters}
+### 매개변수 {#parameters}
 
 `history` 속성을 구성하려면 **간단한** 방식 또는 **확장** 방식을 사용할 수 있습니다:
 
@@ -43,7 +43,7 @@ history?: {
 
     - `limit` - (선택 사항) 이력 작업의 수를 제한합니다
 
-### 기본 config {#default-config}
+### 기본 설정 {#default-config}
 
 ~~~jsx {}
 history: true
@@ -64,8 +64,8 @@ new ToDo("#root", {
 });
 ~~~
 
-**변경 이력**: `history` config는 v1.3에서 추가되었습니다
+**변경 로그:** `history` config는 v1.3에서 추가되었습니다
 
-**관련 API**:
+**관련 API:**
     - [`redo`](api/methods/redo_method.md)
     - [`undo`](api/methods/undo_method.md)

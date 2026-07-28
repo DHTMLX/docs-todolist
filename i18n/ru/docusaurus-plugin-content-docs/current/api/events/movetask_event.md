@@ -67,4 +67,4 @@ list.api.on("move-task", ({id}) => {
 });
 ~~~ 
 
-**Связанная статья**: [Операции с задачами](guides/task_operations.md#moving-a-task)
+**Полезная статья:** [Операции с задачами](guides/task_operations.md#moving-a-task)

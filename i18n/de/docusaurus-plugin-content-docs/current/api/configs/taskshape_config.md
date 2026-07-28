@@ -135,16 +135,16 @@ DHTMLX To Do List verwendet die folgenden Zeichen zur Festlegung eines Datumsfor
 Lesen Sie den Artikel [**Lokalisierung**](guides/localization.md), um zu erfahren, wie Sie die Datumsbezeichnungen in der gewünschten Sprache darstellen können.
 :::
 
-**Änderungsprotokoll**:
+**Changelog:**
 
 - Der Parameter `priority` wurde in v1.2 hinzugefügt
 
-**Verwandte Artikel**:
+**Verwandte Artikel:**
 
 - [Konfiguration](guides/configuration.md#tasks)
 - [Erledigte Aufgaben anzeigen/ausblenden](guides/hide_completed_tasks.md)
 
-**Verwandte Beispiele**:
+**Verwandte Beispiele:**
 - [To Do List. Unteraufgaben-Zähler und Datumsformat](https://snippet.dhtmlx.com/magidhw8?tag=todolist)
 - [To Do List. Zwei Varianten zum Markieren einer übergeordneten Aufgabe als erledigt](https://snippet.dhtmlx.com/5892fcr2?tag=todolist)
 - [To Do List. Benutzerdefinierte Tastenkombinationen für das Festlegen von Prioritäten](https://snippet.dhtmlx.com/5cymicwt?tag=todolist)

@@ -23,7 +23,7 @@ parse({
 }): void;
 ~~~
 
-### 파라미터 {#parameters}
+### 매개변수 {#parameters}
 
 - [`tasks`](api/configs/tasks_config.md) - (선택) 태스크 데이터 객체 배열
 - [`users`](api/configs/users_config.md) - (선택) 사용자 데이터 객체 배열
@@ -51,4 +51,4 @@ list.parse({
 });
 ~~~
 
-**관련 문서**: [데이터 로드 및 저장](guides/loading_data.md)
+**관련 문서:** [데이터 로드 및 저장](guides/loading_data.md)

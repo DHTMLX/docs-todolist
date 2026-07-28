@@ -54,4 +54,4 @@ list.unassignUser({
 });
 ~~~
 
-**Verwandter Artikel**: [Aufgaben-Bearbeiter](guides/task_users.md)
+**Verwandter Artikel:** [Aufgaben-Bearbeiter](guides/task_users.md)

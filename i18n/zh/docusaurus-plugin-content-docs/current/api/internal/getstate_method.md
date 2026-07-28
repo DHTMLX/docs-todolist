@@ -52,4 +52,4 @@ const state = list.api.getState();
 console.log(state);
 ~~~
 
-**变更日志：** `historyState` 参数已在 v1.3 中添加
+**更新日志：** `historyState` 参数已在 v1.3 中添加

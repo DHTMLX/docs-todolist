@@ -55,4 +55,4 @@ Promise.all([
 ~~~
 ---
 
-**Verwandte Artikel**: [Mit dem Server arbeiten](guides/working_with_server.md)
+**Verwandte Artikel:** [Mit dem Server arbeiten](guides/working_with_server.md)

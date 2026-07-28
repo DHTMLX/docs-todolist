@@ -52,6 +52,6 @@ list.selectTask({ id: "1.1"});
 list.unselectTask({ id: "1.1" });
 ~~~
 
-**变更日志：** 在 v1.1 中新增了向该方法传入 `id: null` 的能力
+**更新日志：** 在 v1.1 中新增了向该方法传入 `id: null` 的能力
 
 **相关文章：** [多选与批量操作](guides/multiselection.md)

@@ -10,7 +10,7 @@ description: DHTMLX JavaScript To Do List 라이브러리 문서에서 React와�
 이 문서를 읽기 전에 [**React**](https://react.dev)의 기본 개념과 패턴을 먼저 숙지하시기 바랍니다. 내용을 복습하려면 [**React 문서**](https://react.dev/learn)를 참조하세요.
 :::
 
-DHTMLX To Do List는 **React**와 호환됩니다. 아래 예제에서 두 기술을 함께 사용하는 방법을 보여줍니다. 완성된 프로젝트 예제는 [**GitHub의 예제**](https://github.com/DHTMLX/react-todolist-demo)를 참조하세요.
+DHTMLX To Do List는 **React**와 호환됩니다. 아래 예제에서 두 기술을 함께 사용하는 방법을 보여줍니다. 완성된 프로젝트 예제는 [**GitHub 예제**](https://github.com/DHTMLX/react-todolist-demo)를 참조하세요.
 
 ## 프로젝트 생성 {#create-a-project}
 

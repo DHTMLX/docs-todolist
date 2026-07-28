@@ -40,8 +40,8 @@ list.undo();
 list.redo();
 ~~~
 
-**Änderungsprotokoll**: Die `redo()`-Methode wurde in v1.3 hinzugefügt
+**Changelog:** Die `redo()`-Methode wurde in v1.3 hinzugefügt
 
-**Verwandte API**:
+**Verwandte API:**
     - [`history`](api/configs/history_config.md)
     - [`undo`](api/methods/undo_method.md)

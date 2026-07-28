@@ -56,6 +56,6 @@ list.setSort({
 });
 ~~~
 
-**Änderungsprotokoll**: Hinzugefügt in v1.1
+**Changelog:** Hinzugefügt in v1.1
 
-**Verwandter Artikel**: [Aufgaben sortieren und filtern](guides/sorting_filtering_tasks.md)
+**Verwandter Artikel:** [Aufgaben sortieren und filtern](guides/sorting_filtering_tasks.md)

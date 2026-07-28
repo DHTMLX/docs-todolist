@@ -24,7 +24,7 @@ uncheckTask({
 - `id` - (필수) 작업의 id
 - `manual` - (선택) `true`이면 "수동" 모드로 작업을 표시합니다. `false`이면 [taskShape](api/configs/taskshape_config.md) 속성의 `completed` 매개변수에서 `behavior` 속성에 지정된 값에 따라 메서드 적용 결과가 결정됩니다
 
-### 예시 {#example}
+### 예제 {#example}
 
 ~~~js {22-25} title="예시 1. 단일 작업 체크 해제"
 const { ToDo, Toolbar } = todo;
@@ -75,6 +75,6 @@ list.eachSelected(id => {
 }, true);
 ~~~
 
-**관련 문서**:
+**관련 문서:**
 - [작업 조작](guides/task_operations.md)
 - [다중 선택 및 일괄 작업](guides/multiselection.md)

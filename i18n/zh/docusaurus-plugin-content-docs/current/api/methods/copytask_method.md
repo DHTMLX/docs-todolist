@@ -112,6 +112,6 @@ list.pasteTask({
 list.unselectTask({ id: null });
 ~~~
 
-**变更日志：** `join` 参数在 v1.1 中新增
+**更新日志：** `join` 参数在 v1.1 中新增
 
 **相关文章：** [任务操作](guides/task_operations.md)

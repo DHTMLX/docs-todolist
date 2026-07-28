@@ -102,7 +102,7 @@ HTTP-код статуса показывает, выполнен ли запр�
 
 ---
 
-**Связанные статьи**:
+**Полезные статьи:**
 - [clone-task](api/events/clonetask_event.md)
 - [copyTask()](api/methods/copytask_method.md)
 - [pasteTask()](api/methods/pastetask_method.md)

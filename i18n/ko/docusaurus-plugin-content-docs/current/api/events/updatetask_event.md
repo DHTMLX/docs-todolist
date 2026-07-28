@@ -58,4 +58,4 @@ list.api.on("update-task", ({id, task}) => {
 ~~~
 
 
-**관련 문서**: [태스크 작업](guides/task_operations.md#updating-a-task)
+**관련 문서:** [태스크 작업](guides/task_operations.md#updating-a-task)

@@ -57,6 +57,6 @@ list.selectTask({
 console.log(list.getSelection()); // -> ['1.1', '1.1.1']
 ~~~
 
-**Änderungsprotokoll**: Der `join`-Parameter wurde in v1.1 hinzugefügt
+**Changelog:** Der `join`-Parameter wurde in v1.1 hinzugefügt
 
-**Verwandter Artikel**: [Mehrfachauswahl und Massenoperationen](guides/multiselection.md)
+**Verwandter Artikel:** [Mehrfachauswahl und Massenoperationen](guides/multiselection.md)

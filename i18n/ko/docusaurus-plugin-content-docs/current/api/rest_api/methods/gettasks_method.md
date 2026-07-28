@@ -52,4 +52,4 @@ Promise.all([
 ~~~
 ---
 
-**관련 문서**: [서버와 함께 작업하기](guides/working_with_server.md)
+**관련 문서:** [서버와 함께 작업하기](guides/working_with_server.md)

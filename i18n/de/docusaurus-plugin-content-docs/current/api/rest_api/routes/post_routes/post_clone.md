@@ -102,7 +102,7 @@ Der HTTP-Statuscode zeigt an, ob die Anfrage erfolgreich war (response.status ==
 
 ---
 
-**Verwandte Artikel**:
+**Verwandte Artikel:**
 - [clone-task](api/events/clonetask_event.md)
 - [copyTask()](api/methods/copytask_method.md)
 - [pasteTask()](api/methods/pastetask_method.md)

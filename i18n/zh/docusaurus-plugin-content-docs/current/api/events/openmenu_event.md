@@ -50,4 +50,4 @@ list.api.on("open-menu", ({id, type, source}) => {
 });
 ~~~
 
-**变更日志：** 在 v1.1 中新增
+**更新日志：** 在 v1.1 中新增

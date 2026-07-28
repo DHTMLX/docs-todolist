@@ -19,7 +19,7 @@ addProject({
 }): void;
 ~~~
 
-### 파라미터 {#parameters}
+### 매개변수 {#parameters}
 
 - `id` - (선택) 새 프로젝트의 ID
 - `project` - (선택) 프로젝트의 파라미터를 담은 객체:
@@ -51,4 +51,4 @@ list.addProject({
 });
 ~~~
 
-**관련 문서**: [프로젝트 관련 작업](guides/project_operations.md)
+**관련 문서:** [프로젝트 관련 작업](guides/project_operations.md)

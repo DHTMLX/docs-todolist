@@ -61,9 +61,9 @@ Der HTTP-Statuscode zeigt an, ob die Anfrage erfolgreich war (response.status ==
 
 ---
 
-**Änderungsprotokoll**: Der `batch`-Payload wurde in v1.3 hinzugefügt
+**Changelog:** Der `batch`-Payload wurde in v1.3 hinzugefügt
 
-**Verwandte Artikel**:
+**Verwandte Artikel:**
 
 - [send()](api/rest_api/methods/send_method.md)
 - [deleteTasks()](api/methods/deletetask_method.md)

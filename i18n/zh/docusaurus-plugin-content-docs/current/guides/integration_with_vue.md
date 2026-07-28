@@ -10,7 +10,7 @@ description: 您可以在 DHTMLX JavaScript To Do List 库的文档中了解与 
 在阅读本文档之前，请先熟悉 [**Vue**](https://vuejs.org/) 的基本概念和模式。如需温习相关知识，请参阅 [**Vue 3 文档**](https://vuejs.org/guide/introduction.html#getting-started)。
 :::
 
-DHTMLX To Do List 与 **Vue 3** 兼容。以下示例演示如何将两者结合使用。完整项目请参见 [**GitHub 上的示例**](https://github.com/DHTMLX/vue-todolist-demo)。
+DHTMLX To Do List 与 **Vue 3** 兼容。以下示例演示如何将两者结合使用。完整项目请参见 [**GitHub 示例**](https://github.com/DHTMLX/vue-todolist-demo)。
 
 ## 创建项目 {#create-a-project}
 

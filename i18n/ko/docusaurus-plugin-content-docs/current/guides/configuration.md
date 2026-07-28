@@ -47,7 +47,7 @@ const list = new ToDo("#root", {
 });
 ~~~
 
-**관련 샘플**: [To do list. 하위 작업 카운터 및 날짜 형식](https://snippet.dhtmlx.com/magidhw8)
+**관련 샘플:** [To do list. 하위 작업 카운터 및 날짜 형식](https://snippet.dhtmlx.com/magidhw8)
 
 ### 날짜 형식 {#date-format}
 
@@ -67,7 +67,7 @@ const list = new ToDo("#root", {
 });
 ~~~
 
-**관련 샘플**: [To do list. 하위 작업 카운터 및 날짜 형식](https://snippet.dhtmlx.com/magidhw8)
+**관련 샘플:** [To do list. 하위 작업 카운터 및 날짜 형식](https://snippet.dhtmlx.com/magidhw8)
 
 [사용 가능한 문자 목록](api/configs/taskshape_config.md#list-of-characters)을 확인하세요.
 
@@ -178,7 +178,7 @@ const list = new ToDo("#root", {
 });
 ~~~
 
-**관련 샘플**: [To do list. 상위 작업 완료 표시의 두 가지 방법](https://snippet.dhtmlx.com/5892fcr2)
+**관련 샘플:** [To do list. 상위 작업 완료 표시의 두 가지 방법](https://snippet.dhtmlx.com/5892fcr2)
 
 ## 변경 내역 {#history-of-changes}
 

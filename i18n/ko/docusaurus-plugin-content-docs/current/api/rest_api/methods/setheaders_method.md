@@ -20,7 +20,7 @@ description: DHTMLX JavaScript To Do List 라이브러리 문서에서 RestDataP
 setHeaders(headers: object): void;
 ~~~
 
-### 파라미터 {#parameters}
+### 매개변수 {#parameters}
 
 | 이름       | 타입        | 설명 |
 | ----------- | ----------- | ----------- |
@@ -44,4 +44,4 @@ login(url).then(token => {
 
 ---
 
-**관련 문서**: [서버와 함께 작업하기](guides/working_with_server.md#multiuser-backend)
+**관련 문서:** [서버와 함께 작업하기](guides/working_with_server.md#multiuser-backend)

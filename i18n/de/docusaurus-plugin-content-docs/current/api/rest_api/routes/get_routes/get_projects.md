@@ -38,7 +38,7 @@ Der HTTP-Statuscode zeigt an, ob die Anfrage erfolgreich war (response.status ==
 
 ---
 
-**Verwandte Artikel**:
+**Verwandte Artikel:**
 
 - [getProjects()](api/rest_api/methods/getprojects_method.md)
 - [Arbeiten mit dem Server](guides/working_with_server.md)

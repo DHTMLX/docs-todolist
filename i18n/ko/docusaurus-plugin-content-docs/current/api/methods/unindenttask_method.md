@@ -22,7 +22,7 @@ unindentTask({
 
 - `id` - (필수) 작업의 id
 
-### 예시 {#example}
+### 예제 {#example}
 
 ~~~js {17-19,21} title="예시 1. 단일 작업의 중첩 수준 올리기"
 const { ToDo, Toolbar } = todo;
@@ -69,6 +69,6 @@ list.eachSelected(id => {
 }, true);
 ~~~
 
-**관련 문서**:
+**관련 문서:**
 - [작업 조작](guides/task_operations.md)
 - [다중 선택 및 일괄 작업](guides/multiselection.md)

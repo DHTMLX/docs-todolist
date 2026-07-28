@@ -21,7 +21,7 @@ existsProject({ id: string | number }): boolean;
 
 - `id` - (обязательный) идентификатор проекта
 
-### Возвращает {#returns}
+### Возвращаемое значение {#returns}
 
 Метод возвращает `true`, если проект существует; иначе — `false`
 
@@ -47,4 +47,4 @@ list.existsProject({ id: 1 }); // -> false
 list.existsProject({ id: "first" }); // -> true
 ~~~
 
-**Связанная статья**: [Объект проекта](guides/project_object_operations.md)
+**Полезная статья:** [Объект проекта](guides/project_object_operations.md)

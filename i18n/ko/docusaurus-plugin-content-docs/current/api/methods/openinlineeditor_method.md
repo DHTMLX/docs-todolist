@@ -19,7 +19,7 @@ openInlineEditor({
 }): void;
 ~~~
 
-### 파라미터 {#parameters}
+### 매개변수 {#parameters}
 
 - `id` - (필수) 태스크/프로젝트의 id
 - `type` - (선택) 항목의 유형: "task" (기본값) 또는 "project"
@@ -48,4 +48,4 @@ list.openInlineEditor({
 });
 ~~~
 
-**관련 문서**: [인라인 편집](guides/inline_editing.md)
+**관련 문서:** [인라인 편집](guides/inline_editing.md)

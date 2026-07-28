@@ -49,4 +49,4 @@ list.closeInlineEditor({
 });
 ~~~
 
-**Verwandter Artikel**: [Inline-Bearbeitung](guides/inline_editing.md)
+**Verwandter Artikel:** [Inline-Bearbeitung](guides/inline_editing.md)

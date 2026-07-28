@@ -27,7 +27,7 @@ unselectTask({
 :::
 
 
-### 예시 {#example}
+### 예제 {#example}
 
 ~~~js {17,20}
 const { ToDo, Toolbar } = todo;
@@ -52,6 +52,6 @@ list.selectTask({ id: "1.1"});
 list.unselectTask({ id: "1.1" });
 ~~~
 
-**변경 로그**: `id: null`을 메서드에 전달하는 기능은 v1.1에서 추가됨
+**변경 로그:** `id: null`을 메서드에 전달하는 기능은 v1.1에서 추가
 
-**관련 문서**: [다중 선택 및 일괄 작업](guides/multiselection.md)
+**관련 문서:** [다중 선택 및 일괄 작업](guides/multiselection.md)

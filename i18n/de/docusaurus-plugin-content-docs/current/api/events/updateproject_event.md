@@ -28,7 +28,7 @@ Der Callback des `update-project`-Events kann ein Objekt mit folgenden Parameter
     - `label` - (optional) der Name des Projekts
 
 :::info
-Um die internen Events zu verarbeiten, können Sie die [**Event-Bus-Methoden**](category/event-bus-methods.md) verwenden.
+Um die internen Events zu verarbeiten, können Sie die [**Event Bus-Methoden**](category/event-bus-methods.md) verwenden.
 :::
 
 ### Beispiel {#example}
@@ -53,4 +53,4 @@ list.api.on("update-project", ({id, project}) => {
 });
 ~~~
 
-**Verwandter Artikel**: [Operationen mit Projekten](guides/project_operations.md#updating-a-project)
+**Verwandter Artikel:** [Operationen mit Projekten](guides/project_operations.md#updating-a-project)

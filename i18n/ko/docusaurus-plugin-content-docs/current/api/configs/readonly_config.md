@@ -47,4 +47,4 @@ const toolbar = new Toolbar("#toolbar", {
 });
 ~~~
 
-**관련 문서**: [읽기 전용 모드](guides/readonly_mode.md)
+**관련 문서:** [읽기 전용 모드](guides/readonly_mode.md)

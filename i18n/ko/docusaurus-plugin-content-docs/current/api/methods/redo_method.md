@@ -40,8 +40,8 @@ list.undo();
 list.redo();
 ~~~
 
-**변경 로그**: `redo()` 메서드는 v1.3에서 추가되었습니다
+**변경 로그:** `redo()` 메서드는 v1.3에서 추가되었습니다
 
-**관련 API**:
+**관련 API:**
     - [`history`](api/configs/history_config.md)
     - [`undo`](api/methods/undo_method.md)

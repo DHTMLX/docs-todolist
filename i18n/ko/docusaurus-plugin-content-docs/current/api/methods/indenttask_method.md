@@ -18,7 +18,7 @@ indentTask({
 }): void;
 ~~~
 
-### 파라미터 {#parameters}
+### 매개변수 {#parameters}
 
 - `id` - (필수) 태스크의 id
 
@@ -69,6 +69,6 @@ list.eachSelected(id => {
 }, true);
 ~~~
 
-**관련 문서**:
+**관련 문서:**
 - [태스크 작업](guides/task_operations.md)
 - [다중 선택 및 일괄 작업](guides/multiselection.md)

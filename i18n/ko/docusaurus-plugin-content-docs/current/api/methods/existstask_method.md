@@ -50,4 +50,4 @@ list.existsTask({ id: "2" }); // -> false
 list.existsTask({ id: "1.2" }); // -> true
 ~~~
 
-**관련 문서**: [태스크 객체/Id](guides/task_object.md)
+**관련 문서:** [태스크 객체/Id](guides/task_object.md)

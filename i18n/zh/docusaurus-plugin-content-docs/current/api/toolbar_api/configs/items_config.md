@@ -77,7 +77,7 @@ const toolbar = new Toolbar("#toolbar", {
 });
 ~~~
 
-**变更日志：** `"undo"` 和 `"redo"` 参数已在 v1.3 中添加
+**更新日志：** `"undo"` 和 `"redo"` 参数已在 v1.3 中添加
 
 **相关文章：**
 - [配置](guides/configuration.md#toolbar)

@@ -19,7 +19,7 @@ checkTask({
 }): void;
 ~~~
 
-### 파라미터 {#parameters}
+### 매개변수 {#parameters}
 
 - `id` - (필수) 태스크의 id
 - `manual` - (선택) `true`이면 태스크를 "수동" 모드로 표시합니다. `false`이면 메서드 적용 결과는 [taskShape](api/configs/taskshape_config.md) 속성의 `completed` 파라미터에 있는 `behavior` 속성값에 따라 결정됩니다
@@ -70,6 +70,6 @@ list.eachSelected(id => {
 }, true);
 ~~~
 
-**관련 문서**:
+**관련 문서:**
 - [태스크 관련 작업](guides/task_operations.md)
 - [다중 선택 및 일괄 작업](guides/multiselection.md)

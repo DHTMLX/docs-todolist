@@ -112,7 +112,7 @@ const toolbar = new Toolbar("#toolbar", {
 });
 ~~~
 
-**变更日志：** `priority` 参数在 v1.2 中新增
+**更新日志：** `priority` 参数在 v1.2 中新增
 
 **相关文章：**
 - [加载和存储数据](guides/loading_data.md)

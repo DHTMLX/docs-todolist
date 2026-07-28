@@ -24,7 +24,7 @@ send(
 ): Promise<obj[]>
 ~~~
 
-### 파라미터 {#parameters}
+### 매개변수 {#parameters}
 
 
 | 이름       | 타입        | 설명 |
@@ -126,4 +126,4 @@ myProvider.setAPI(list.api);
 ~~~ 
 ---
 
-**관련 문서**: [서버와 함께 작업하기](guides/working_with_server.md)
+**관련 문서:** [서버와 함께 작업하기](guides/working_with_server.md)

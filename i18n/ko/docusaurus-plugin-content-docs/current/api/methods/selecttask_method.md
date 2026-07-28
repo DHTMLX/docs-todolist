@@ -19,7 +19,7 @@ selectTask({
 }): void;
 ~~~
 
-### 파라미터 {#parameters}
+### 매개변수 {#parameters}
 
 - `id` - (필수) 태스크의 ID
 - `join` - (선택) `true`이면 이전에 선택된 태스크의 ID를 유지하면서 지정한 태스크를 선택된 태스크 컬렉션에 추가합니다
@@ -57,6 +57,6 @@ list.selectTask({
 console.log(list.getSelection()); // -> ['1.1', '1.1.1']
 ~~~
 
-**변경 로그**: `join` 파라미터는 v1.1에서 추가되었습니다
+**변경 로그:** `join` 파라미터는 v1.1에서 추가되었습니다
 
-**관련 문서**: [다중 선택 및 일괄 작업](guides/multiselection.md)
+**관련 문서:** [다중 선택 및 일괄 작업](guides/multiselection.md)

@@ -48,4 +48,4 @@ list.api.on("close-menu", ({id, type}) => {
 });
 ~~~
 
-**Änderungsprotokoll**: Hinzugefügt in v1.1
+**Changelog:** Hinzugefügt in v1.1
