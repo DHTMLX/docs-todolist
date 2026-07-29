@@ -198,16 +198,16 @@ These prompts work best when they name a To Do List object directly, a task, a p
 How do I add a subtask under a specific task using addTask() in DHTMLX To Do List?
 ~~~
 ~~~
-How do I indent a task with indentTask() to make it a subtask of the task above it? Use the docs.
+How do I make a task become a subtask of the task directly above it? Use the docs.
 ~~~
 ~~~
-How do I copy a task with all its subtasks and paste it into another project with copyTask() and pasteTask()?
+How do I copy a task along with its subtasks and paste it into a different project?
 ~~~
 
 **Projects**
 
 ~~~
-How do I switch the active project with setProject() and move a task into it?
+How do I switch to a different active project and move a task into it?
 ~~~
 ~~~
 What happens to a project's tasks when I delete it with deleteProject() in DHTMLX To Do List?
