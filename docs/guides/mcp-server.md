@@ -48,7 +48,7 @@ Setting up a fresh To Do List project or hooking into an existing `RestDataProvi
 https://docs.dhtmlx.com/mcp
 ~~~
 
-Below are setup instructions for commonly used tools.
+The following sections cover setup, one tool at a time.
 
 ### Claude Code
 
