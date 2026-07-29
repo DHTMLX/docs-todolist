@@ -118,7 +118,7 @@ document.addEventListener("keydown", event => {
 });
 ~~~
 
-**Verwandte Artikel**:
+**Verwandte Artikel:**
 - [Daten laden und speichern](guides/loading_data.md)
 
-**Verwandtes Beispiel**: [To-do-Liste. Benutzerdefinierte Tastenkürzel zum Festlegen von Prioritäten](https://snippet.dhtmlx.com/5cymicwt?tag=todolist)
+**Verwandtes Beispiel:** [To-do-Liste. Benutzerdefinierte Tastenkürzel zum Festlegen von Prioritäten](https://snippet.dhtmlx.com/5cymicwt?tag=todolist)

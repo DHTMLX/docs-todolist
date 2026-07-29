@@ -81,7 +81,7 @@ Promise.all([
 ~~~
 
 :::info
-Binden Sie `RestDataProvider` in die **Event-Bus**-Reihenfolge über die Methode [`api.setNext()`](api/internal/setnext_method.md) ein, um Datenoperationen (Hinzufügen, Löschen und weitere Aktionen) durchzuführen und die entsprechenden Anfragen an den Server zu senden.
+Binden Sie `RestDataProvider` in die **Event Bus**-Reihenfolge über die Methode [`api.setNext()`](api/internal/setnext_method.md) ein, um Datenoperationen (Hinzufügen, Löschen und weitere Aktionen) durchzuführen und die entsprechenden Anfragen an den Server zu senden.
 :::
 
 ### Beispiel {#example}

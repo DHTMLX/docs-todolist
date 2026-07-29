@@ -55,6 +55,6 @@ const toolbar = new Toolbar("#toolbar", {
 По умолчанию первый проект из списка объектов проектов загружается как активный. Чтобы задать другой проект активным, используйте свойство [`activeProject`](api/configs/activeproject_config.md)
 :::
 
-**Связанные статьи**: 
+**Полезные статьи:** 
 - [Загрузка и хранение данных](guides/loading_data.md)
 - [Управление проектами](guides/project_index.md)

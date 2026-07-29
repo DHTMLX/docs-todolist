@@ -42,6 +42,6 @@ list.api.on("show-completed-tasks", () => {
 });
 ~~~
 
-**变更日志：** 在 v1.1 中新增
+**更新日志：** 在 v1.1 中新增
 
 **相关文章：** [显示/隐藏已完成任务](guides/hide_completed_tasks.md)

@@ -56,4 +56,4 @@ list.api.on("paste-task", (obj) => {
 });
 ~~~ 
 
-**관련 문서**: [Task 작업](guides/task_operations.md#copyingpasting-a-task)
+**관련 문서:** [Task 작업](guides/task_operations.md#copyingpasting-a-task)

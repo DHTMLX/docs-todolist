@@ -33,7 +33,7 @@ tasks?: [
 ];
 ~~~
 
-### 파라미터 {#parameters}
+### 매개변수 {#parameters}
 
 `tasks` 속성은 작업 객체 배열을 나타냅니다. 각 객체는 다음 파라미터 집합을 포함합니다:
 
@@ -112,8 +112,8 @@ const toolbar = new Toolbar("#toolbar", {
 });
 ~~~
 
-**변경 이력**: `priority` 파라미터가 v1.2에서 추가됨
+**변경 로그:** `priority` 파라미터가 v1.2에서 추가
 
-**관련 문서**:
+**관련 문서:**
 - [데이터 로드 및 저장](guides/loading_data.md)
 - [작업 관리](guides/task_index.md)

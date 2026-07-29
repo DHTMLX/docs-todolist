@@ -51,4 +51,4 @@ list.expandTask({
 });
 ~~~
 
-**Verwandter Artikel**: [Operationen mit Aufgaben](guides/task_operations.md)
+**Verwandter Artikel:** [Operationen mit Aufgaben](guides/task_operations.md)

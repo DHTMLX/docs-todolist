@@ -102,7 +102,7 @@ HTTP 상태 코드는 요청의 성공 여부(response.status == 200) 또는 실
 
 ---
 
-**관련 문서**:
+**관련 문서:**
 - [clone-task](api/events/clonetask_event.md)
 - [copyTask()](api/methods/copytask_method.md)
 - [pasteTask()](api/methods/pastetask_method.md)

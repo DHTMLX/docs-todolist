@@ -59,6 +59,6 @@ list.api.on("drag", ({start, source, target, dropPosition}) => {
 });
 ~~~
 
-**变更日志：** 在 v1.1 中新增
+**更新日志：** 在 v1.1 中新增
 
 **相关文章：** [拖放功能](guides/configuration.md#drag-n-drop)

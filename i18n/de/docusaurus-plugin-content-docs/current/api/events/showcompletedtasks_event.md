@@ -17,7 +17,7 @@ description: In der Dokumentation der DHTMLX JavaScript To Do List Bibliothek er
 ~~~
 
 :::info
-Um die internen Events zu verarbeiten, können Sie die [**Event-Bus-Methoden**](category/event-bus-methods.md) verwenden.
+Um die internen Events zu verarbeiten, können Sie die [**Event Bus-Methoden**](category/event-bus-methods.md) verwenden.
 :::
 
 ### Beispiel {#example}
@@ -42,6 +42,6 @@ list.api.on("show-completed-tasks", () => {
 });
 ~~~
 
-**Änderungsprotokoll**: Hinzugefügt in v1.1
+**Changelog:** Hinzugefügt in v1.1
 
-**Verwandter Artikel**: [Erledigte Aufgaben anzeigen/ausblenden](guides/hide_completed_tasks.md)
+**Verwandter Artikel:** [Erledigte Aufgaben anzeigen/ausblenden](guides/hide_completed_tasks.md)

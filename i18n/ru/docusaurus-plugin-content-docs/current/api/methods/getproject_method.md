@@ -20,7 +20,7 @@ getProject({ id: string | number }): object;
 
 - `id` - (обязательный) идентификатор проекта
 
-### Возвращает {#returns}
+### Возвращаемое значение {#returns}
 
 Метод возвращает объект с данными проекта
 
@@ -48,4 +48,4 @@ const toolbar = new Toolbar("#toolbar", {
 list.getProject({ id: "first" }); // -> {id: 'first', label: 'First project'}
 ~~~
 
-**Связанная статья**: [Объект проекта](guides/project_object_operations.md)
+**Полезная статья:** [Объект проекта](guides/project_object_operations.md)

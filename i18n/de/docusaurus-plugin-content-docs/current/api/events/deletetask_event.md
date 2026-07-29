@@ -52,4 +52,4 @@ list.api.on("delete-task", ({id}) => {
 });
 ~~~
 
-**Verwandter Artikel**: [Operationen mit Aufgaben](guides/task_operations.md#deleting-a-task)
+**Verwandter Artikel:** [Operationen mit Aufgaben](guides/task_operations.md#deleting-a-task)

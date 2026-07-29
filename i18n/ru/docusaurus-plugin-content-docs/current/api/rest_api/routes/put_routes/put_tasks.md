@@ -98,7 +98,7 @@ HTTP-код статуса показывает, выполнен ли запр�
 
 ---
 
-**Связанные статьи**:
+**Полезные статьи:**
 
 - [updateTask()](api/methods/updatetask_method.md)
 - [send()](api/rest_api/methods/send_method.md)

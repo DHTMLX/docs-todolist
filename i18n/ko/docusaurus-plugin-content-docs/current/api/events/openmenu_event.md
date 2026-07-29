@@ -50,4 +50,4 @@ list.api.on("open-menu", ({id, type, source}) => {
 });
 ~~~
 
-**변경 이력**: v1.1에서 추가됨
+**변경 로그:** v1.1에서 추가

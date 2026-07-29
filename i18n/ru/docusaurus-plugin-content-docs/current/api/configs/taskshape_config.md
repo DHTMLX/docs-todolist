@@ -135,16 +135,16 @@ DHTMLX To Do List использует следующие символы для 
 Прочитайте статью [**Локализация**](guides/localization.md), чтобы узнать, как отображать метки дат на нужном языке
 :::
 
-**История изменений**:
+**Журнал изменений:**
 
 - Параметр `priority` добавлен в v1.2
 
-**Связанные статьи**:
+**Полезные статьи:**
 
 - [Конфигурация](guides/configuration.md#tasks)
 - [Показ/скрытие выполненных задач](guides/hide_completed_tasks.md)
 
-**Связанные примеры**:
+**Связанные примеры:**
 - [To do list. Счётчик подзадач и формат даты](https://snippet.dhtmlx.com/magidhw8?tag=todolist)
 - [To do list. Два варианта отметки родительской задачи как выполненной](https://snippet.dhtmlx.com/5892fcr2?tag=todolist)
 - [To do list. Пользовательские горячие клавиши для задания приоритетов](https://snippet.dhtmlx.com/5cymicwt?tag=todolist)

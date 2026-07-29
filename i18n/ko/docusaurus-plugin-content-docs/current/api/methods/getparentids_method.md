@@ -52,4 +52,4 @@ const toolbar = new Toolbar("#toolbar", {
 console.log(list.getParentIds({ id: "1.1.1" })); //  ['1.1', '1']
 ~~~
 
-**관련 문서**: [작업 객체/Id](guides/task_object.md)
+**관련 문서:** [작업 객체/Id](guides/task_object.md)

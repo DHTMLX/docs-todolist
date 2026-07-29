@@ -52,4 +52,4 @@ Promise.all([
 ~~~
 ---
 
-**Связанные статьи**: [Работа с сервером](guides/working_with_server.md)
+**Полезные статьи:** [Работа с сервером](guides/working_with_server.md)

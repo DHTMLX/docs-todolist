@@ -26,7 +26,7 @@ setSort({
 - `dir` - (선택) 정렬 방향: "asc" 또는 "desc"
 - `tree` - (선택) 하위 작업에 대한 정렬을 활성화/비활성화합니다. 기본값은 `false`입니다
 
-### 예시 {#example}
+### 예제 {#example}
 
 ~~~js {21-25}
 const { ToDo, Toolbar } = todo;
@@ -56,6 +56,6 @@ list.setSort({
 });
 ~~~
 
-**변경 로그**: v1.1에서 추가됨
+**변경 로그:** v1.1에서 추가
 
-**관련 문서**: [작업 정렬 및 필터링](guides/sorting_filtering_tasks.md)
+**관련 문서:** [작업 정렬 및 필터링](guides/sorting_filtering_tasks.md)

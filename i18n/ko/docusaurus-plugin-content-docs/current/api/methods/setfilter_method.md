@@ -21,7 +21,7 @@ setFilter({
 }): void;
 ~~~
 
-### 파라미터 {#parameters}
+### 매개변수 {#parameters}
 
 - `match` - (필수) 매칭할 패턴
 - `by` - (선택) 검색에 사용할 `task` 객체의 파라미터. 기본값은 *text*
@@ -56,4 +56,4 @@ list.setFilter({
 list.setFilter({ match: null });
 ~~~
 
-**관련 문서**: [태스크 정렬 및 필터링](guides/sorting_filtering_tasks.md)
+**관련 문서:** [태스크 정렬 및 필터링](guides/sorting_filtering_tasks.md)

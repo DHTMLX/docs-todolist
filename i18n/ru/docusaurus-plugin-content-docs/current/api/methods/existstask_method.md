@@ -21,7 +21,7 @@ existsTask({ id: string | number }): boolean;
 
 - `id` - (обязательный) идентификатор задачи
 
-### Возвращает {#returns}
+### Возвращаемое значение {#returns}
 
 Метод возвращает `true`, если задача существует; иначе — `false`
 
@@ -50,4 +50,4 @@ list.existsTask({ id: "2" }); // -> false
 list.existsTask({ id: "1.2" }); // -> true
 ~~~
 
-**Связанная статья**: [Объект задачи / Id](guides/task_object.md)
+**Полезная статья:** [Объект задачи / Id](guides/task_object.md)

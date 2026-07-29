@@ -134,4 +134,4 @@ toolbar.setLocale(de, list.api);
 Die **Toolbar** der To Do List ist eine separate Komponente. Bevor Sie deren Locale ändern, stellen Sie sicher, dass Sie die Methode [`setLocale()`](api/toolbar_api/methods/setlocale_method.md) bereits auf die **To Do List**-Komponente angewendet haben
 :::
 
-**Verwandter Artikel**: [Lokalisierung](guides/localization.md)
+**Verwandter Artikel:** [Lokalisierung](guides/localization.md)

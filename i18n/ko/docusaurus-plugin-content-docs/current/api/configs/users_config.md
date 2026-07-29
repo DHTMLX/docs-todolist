@@ -24,7 +24,7 @@ users?: [
 ];
 ~~~
 
-### 파라미터 {#parameters}
+### 매개변수 {#parameters}
 
 `users` 속성은 사람 객체 배열을 나타냅니다. 각 객체는 다음 파라미터 집합을 포함합니다:
 
@@ -96,6 +96,6 @@ const toolbar = new Toolbar("#toolbar", {
 });
 ~~~
 
-**관련 문서**:
+**관련 문서:**
 - [데이터 로드 및 저장](guides/loading_data.md)
 - [작업 사용자](guides/task_users.md)

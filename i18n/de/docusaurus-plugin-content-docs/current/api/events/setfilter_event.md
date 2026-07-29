@@ -31,7 +31,7 @@ Der Callback des `set-filter`-Events kann ein Objekt mit folgenden Parametern en
 - `strict` - (optional) `true`, wenn der *Strict*-Filtermodus aktiviert ist; andernfalls `false`
 
 :::info
-Um die internen Events zu verarbeiten, können Sie die [**Event-Bus-Methoden**](category/event-bus-methods.md) verwenden.
+Um die internen Events zu verarbeiten, können Sie die [**Event Bus-Methoden**](category/event-bus-methods.md) verwenden.
 :::
 
 ### Beispiel {#example}
@@ -56,4 +56,4 @@ list.api.on("set-filter", (obj) => {
 });
 ~~~
 
-**Verwandter Artikel**: [Aufgaben sortieren und filtern](guides/sorting_filtering_tasks.md)
+**Verwandter Artikel:** [Aufgaben sortieren und filtern](guides/sorting_filtering_tasks.md)

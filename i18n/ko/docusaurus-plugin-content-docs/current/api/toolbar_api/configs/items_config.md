@@ -29,7 +29,7 @@ items?: [
 items: ["combo", "search", "menu"]
 ~~~
 
-### 파라미터 {#parameters}
+### 매개변수 {#parameters}
 
 `items` 배열에는 다음 파라미터를 포함할 수 있습니다:
 
@@ -77,8 +77,8 @@ const toolbar = new Toolbar("#toolbar", {
 });
 ~~~
 
-**변경 이력**: `"undo"` 및 `"redo"` 파라미터는 v1.3에서 추가되었습니다
+**변경 로그:** `"undo"` 및 `"redo"` 파라미터는 v1.3에서 추가되었습니다
 
-**관련 문서**:
+**관련 문서:**
 - [구성](guides/configuration.md#toolbar)
 - [커스터마이즈](guides/customization.md#customize-the-toolbar)

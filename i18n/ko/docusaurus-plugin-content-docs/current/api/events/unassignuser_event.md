@@ -52,4 +52,4 @@ list.api.on("unassign-user", ({id, userId}) => {
 });
 ~~~
 
-**관련 문서**: [태스크 사용자](guides/task_users.md)
+**관련 문서:** [태스크 사용자](guides/task_users.md)

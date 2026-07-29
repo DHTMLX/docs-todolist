@@ -23,7 +23,7 @@ getParentIds({
 
 - `id` - (обязательный) идентификатор задачи
 
-### Возвращает {#returns}
+### Возвращаемое значение {#returns}
 
 Метод возвращает массив идентификаторов родительских задач
 
@@ -52,4 +52,4 @@ const toolbar = new Toolbar("#toolbar", {
 console.log(list.getParentIds({ id: "1.1.1" })); //  ['1.1', '1']
 ~~~
 
-**Связанная статья**: [Объект задачи/Id](guides/task_object.md)
+**Полезная статья:** [Объект задачи/Id](guides/task_object.md)

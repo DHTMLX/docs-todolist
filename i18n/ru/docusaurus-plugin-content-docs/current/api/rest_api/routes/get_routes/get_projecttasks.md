@@ -48,7 +48,7 @@ HTTP-код состояния показывает, выполнен ли за�
 
 ---
 
-**Связанные статьи**:
+**Полезные статьи:**
 
 - [getProjectTasks()](api/rest_api/methods/getprojecttasks_method.md)
 - [Работа с сервером](guides/working_with_server.md)

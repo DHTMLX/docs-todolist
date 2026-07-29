@@ -72,10 +72,10 @@ list.api.on("keypress-on-todo", ({code, event}) => {
 | <kbd>ArrowUp</kbd> | `arrowup` | 이전 태스크로 선택을 위로 이동합니다 |
 | <kbd>ArrowDown</kbd> | `arrowdown` | 다음 태스크로 선택을 아래로 이동합니다 |
 | <kbd>Ctrl(Cmd)</kbd>+<kbd>Enter</kbd> | `ctrl+enter` | 선택된 태스크의 편집기를 엽니다 |
-| <kbd>Ctrl(Cmd)</kbd>+<kbd>Click</kbd> /<br> <kbd>Ctrl(Cmd)</kbd>+<kbd>Shift</kbd>+<kbd>Click</kbd> <br> v1.1에서 추가됨 | `ctrl` /<br> `ctrl+shift` | 자식 태스크를 포함하여 여러 태스크를 선택합니다.<br> 태스크가 현재 선택 상태이면 선택을 해제하며:<br> - 부모 태스크도 선택된 경우 — 해당 태스크와 부모를 함께 선택 해제합니다.<br> - 자식 태스크도 선택된 경우 — 해당 태스크만 선택 해제합니다.|
-| <kbd>Shift</kbd>+<kbd>Click</kbd> <br> v1.1에서 추가됨| `shift` |태스크 범위를 선택합니다|
-| <kbd>Shift</kbd>+<kbd>ArrowUp</kbd> <br> v1.1에서 추가됨| `shift+arrowup` |현재 태스크 위의 태스크를 선택합니다.<br> 위의 태스크가 현재 선택 상태이면 선택을 해제합니다|
-| <kbd>Shift</kbd>+<kbd>ArrowDown</kbd> <br> v1.1에서 추가됨| `shift+arrowdown` |현재 태스크 아래의 태스크(및 모든 자식 태스크)를 선택합니다.<br> 아래의 태스크가 현재 선택 상태이면 선택을 해제합니다|
+| <kbd>Ctrl(Cmd)</kbd>+<kbd>Click</kbd> /<br> <kbd>Ctrl(Cmd)</kbd>+<kbd>Shift</kbd>+<kbd>Click</kbd> <br> v1.1에서 추가 | `ctrl` /<br> `ctrl+shift` | 자식 태스크를 포함하여 여러 태스크를 선택합니다.<br> 태스크가 현재 선택 상태이면 선택을 해제하며:<br> - 부모 태스크도 선택된 경우 — 해당 태스크와 부모를 함께 선택 해제합니다.<br> - 자식 태스크도 선택된 경우 — 해당 태스크만 선택 해제합니다.|
+| <kbd>Shift</kbd>+<kbd>Click</kbd> <br> v1.1에서 추가| `shift` |태스크 범위를 선택합니다|
+| <kbd>Shift</kbd>+<kbd>ArrowUp</kbd> <br> v1.1에서 추가| `shift+arrowup` |현재 태스크 위의 태스크를 선택합니다.<br> 위의 태스크가 현재 선택 상태이면 선택을 해제합니다|
+| <kbd>Shift</kbd>+<kbd>ArrowDown</kbd> <br> v1.1에서 추가| `shift+arrowdown` |현재 태스크 아래의 태스크(및 모든 자식 태스크)를 선택합니다.<br> 아래의 태스크가 현재 선택 상태이면 선택을 해제합니다|
 | <kbd>Ctrl</kbd>+<kbd>ArrowUp</kbd> | `ctrl+arrowup` | 선택된 태스크를 같은 레벨 내에서 위로 이동합니다 |
 | <kbd>Ctrl</kbd>+<kbd>ArrowDown</kbd> | `ctrl+arrowdown` | 선택된 태스크를 같은 레벨 내에서 아래로 이동합니다 |
 | <kbd>Space</kbd> | `space` | 초기 상태에 따라 태스크를 완료 또는 미완료로 표시합니다 |

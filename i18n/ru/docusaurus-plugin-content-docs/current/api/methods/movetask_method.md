@@ -130,6 +130,6 @@ list.eachSelected(id => {
 }, true);
 ~~~
 
-**Связанные статьи**:
+**Полезные статьи:**
 - [Операции с задачами](guides/task_operations.md)
 - [Множественный выбор и групповые операции](guides/multiselection.md)

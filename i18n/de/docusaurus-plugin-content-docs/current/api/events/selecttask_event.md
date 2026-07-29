@@ -29,7 +29,7 @@ Der Callback des `select-task`-Events kann ein Objekt mit folgenden Parametern e
     - `false` - Einzelauswahl-Modus
 
 :::info
-Um die internen Events zu verarbeiten, können Sie die [**Event-Bus-Methoden**](category/event-bus-methods.md) verwenden.
+Um die internen Events zu verarbeiten, können Sie die [**Event Bus-Methoden**](category/event-bus-methods.md) verwenden.
 :::
 
 ### Beispiel {#example}
@@ -55,8 +55,8 @@ list.api.on("select-task", ({id, join}) => {
 });
 ~~~
 
-**Änderungsprotokoll**: Der Parameter `join` wurde in v1.1 hinzugefügt
+**Changelog:** Der Parameter `join` wurde in v1.1 hinzugefügt
 
-**Verwandte Artikel**:
+**Verwandte Artikel:**
 - [Operationen mit Aufgaben](guides/task_operations.md)
 - [Mehrfachauswahl und Massenoperationen](guides/multiselection.md)

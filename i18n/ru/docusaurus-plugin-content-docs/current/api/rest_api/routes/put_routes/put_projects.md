@@ -57,7 +57,7 @@ HTTP-код статуса показывает, выполнен ли запр�
 
 ---
 
-**Связанные статьи**:
+**Полезные статьи:**
 
 - [updateProject()](api/methods/updateproject_method.md)
 - [send()](api/rest_api/methods/send_method.md)

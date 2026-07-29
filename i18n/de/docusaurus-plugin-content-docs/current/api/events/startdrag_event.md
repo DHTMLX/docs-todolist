@@ -29,7 +29,7 @@ Der Callback des `start-drag`-Events kann ein Objekt mit folgenden Parametern en
     - `copy` - der Kopieren-Modus
 
 :::info
-Um die internen Events zu verarbeiten, können Sie die [**Event-Bus-Methoden**](category/event-bus-methods.md) verwenden.
+Um die internen Events zu verarbeiten, können Sie die [**Event Bus-Methoden**](category/event-bus-methods.md) verwenden.
 :::
 
 ### Beispiel {#example}
@@ -54,6 +54,6 @@ list.api.on("start-drag", ({ start, mode }) => {
 });
 ~~~
 
-**Änderungsprotokoll**: In v1.1 hinzugefügt
+**Changelog:** In v1.1 hinzugefügt
 
-**Verwandter Artikel**: [Drag-n-Drop](guides/configuration.md#drag-n-drop)
+**Verwandter Artikel:** [Drag-n-Drop](guides/configuration.md#drag-n-drop)

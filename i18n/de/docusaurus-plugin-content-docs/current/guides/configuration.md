@@ -47,7 +47,7 @@ const list = new ToDo("#root", {
 });
 ~~~
 
-**Verwandtes Beispiel**: [To do list. Unteraufgaben-Zähler und Datumsformat](https://snippet.dhtmlx.com/magidhw8)
+**Verwandtes Beispiel:** [To do list. Unteraufgaben-Zähler und Datumsformat](https://snippet.dhtmlx.com/magidhw8)
 
 ### Datumsformat {#date-format}
 
@@ -67,7 +67,7 @@ const list = new ToDo("#root", {
 });
 ~~~
 
-**Verwandtes Beispiel**: [To do list. Unteraufgaben-Zähler und Datumsformat](https://snippet.dhtmlx.com/magidhw8)
+**Verwandtes Beispiel:** [To do list. Unteraufgaben-Zähler und Datumsformat](https://snippet.dhtmlx.com/magidhw8)
 
 Prüfen Sie [die Liste der verfügbaren Zeichen](api/configs/taskshape_config.md#list-of-characters).
 
@@ -178,7 +178,7 @@ const list = new ToDo("#root", {
 });
 ~~~
 
-**Verwandtes Beispiel**: [To do list. Zwei Varianten zum Markieren einer übergeordneten Aufgabe als erledigt](https://snippet.dhtmlx.com/5892fcr2)
+**Verwandtes Beispiel:** [To do list. Zwei Varianten zum Markieren einer übergeordneten Aufgabe als erledigt](https://snippet.dhtmlx.com/5892fcr2)
 
 ## Änderungsverlauf {#history-of-changes}
 

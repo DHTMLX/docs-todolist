@@ -58,6 +58,6 @@ list.pasteTask({
 });
 ~~~
 
-**Связанный API**: [copyTask()](api/methods/copytask_method.md)
+**Похожее API:** [copyTask()](api/methods/copytask_method.md)
 
-**Связанная статья**: [Операции с задачами](guides/task_operations.md)
+**Полезная статья:** [Операции с задачами](guides/task_operations.md)

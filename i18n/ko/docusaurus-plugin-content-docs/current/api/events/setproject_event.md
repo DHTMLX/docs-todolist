@@ -54,4 +54,4 @@ list.api.on("set-project", ({id}) => {
 });
 ~~~
 
-**관련 문서**: [프로젝트 작업](guides/project_operations.md#changing-the-active-project)
+**관련 문서:** [프로젝트 작업](guides/project_operations.md#changing-the-active-project)

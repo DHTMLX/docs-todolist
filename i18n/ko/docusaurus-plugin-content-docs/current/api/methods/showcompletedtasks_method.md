@@ -17,7 +17,7 @@ showCompletedTasks(): void;
 ~~~
 
 
-### 예시 {#example}
+### 예제 {#example}
 
 ~~~js {13}
 const { ToDo, Toolbar } = todo;
@@ -35,6 +35,6 @@ const toolbar = new Toolbar("#toolbar", {
 list.showCompletedTasks(); 
 ~~~
 
-**변경 로그**: v1.1에서 추가됨
+**변경 로그:** v1.1에서 추가
 
-**관련 문서**: [완료된 작업 표시/숨기기](guides/hide_completed_tasks.md)
+**관련 문서:** [완료된 작업 표시/숨기기](guides/hide_completed_tasks.md)

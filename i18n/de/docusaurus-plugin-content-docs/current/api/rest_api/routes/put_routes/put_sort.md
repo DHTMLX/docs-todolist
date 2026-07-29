@@ -60,7 +60,7 @@ Der HTTP-Statuscode zeigt an, ob die Anfrage erfolgreich war (response.status ==
 
 ---
 
-**Verwandte Artikel**:
+**Verwandte Artikel:**
 - [send()](api/rest_api/methods/send_method.md)
 - [setSort()](api/methods/setsort_method.md)
 - [Mit dem Server arbeiten](guides/working_with_server.md)

@@ -20,7 +20,7 @@ description: DHTMLX JavaScript To Do List 라이브러리의 문서에서 undo �
 undo(): void;
 ~~~
 
-### 예시 {#example}
+### 예제 {#example}
 
 ~~~js {10,14}
 const { ToDo } = todo;
@@ -39,8 +39,8 @@ list.addTask({ task: { text: "New task 1" } });
 list.undo();
 ~~~
 
-**변경 로그**: `undo()` 메서드는 v1.3에서 추가됨
+**변경 로그:** `undo()` 메서드는 v1.3에서 추가
 
-**관련 API**:
+**관련 API:**
     - [`history`](api/configs/history_config.md)
     - [`redo`](api/methods/redo_method.md)

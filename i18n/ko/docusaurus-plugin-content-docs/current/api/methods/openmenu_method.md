@@ -20,7 +20,7 @@ openMenu({
 }): void;
 ~~~
 
-### 파라미터 {#parameters}
+### 매개변수 {#parameters}
 
 - `id` - (필수) 태스크/프로젝트의 ID
 - `type` - (선택) 메뉴의 유형. 세 가지 메뉴 유형이 있습니다:

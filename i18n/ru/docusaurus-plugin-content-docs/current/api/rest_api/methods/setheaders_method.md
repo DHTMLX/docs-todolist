@@ -44,4 +44,4 @@ login(url).then(token => {
 
 ---
 
-**Связанные статьи**: [Работа с сервером](guides/working_with_server.md#multiuser-backend)
+**Полезные статьи:** [Работа с сервером](guides/working_with_server.md#multiuser-backend)

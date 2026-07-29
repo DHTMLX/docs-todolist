@@ -18,7 +18,7 @@ setProject({
 }): void;
 ~~~
 
-### 파라미터 {#parameters}
+### 매개변수 {#parameters}
 
 - `id` - (필수) 프로젝트의 ID. *프로젝트 없음* 섹션을 표시하려면 ID를 `null`로 설정하세요
 
@@ -46,4 +46,4 @@ list.setProject({
 });
 ~~~
 
-**관련 문서**: [프로젝트 작업](guides/project_operations.md)
+**관련 문서:** [프로젝트 작업](guides/project_operations.md)

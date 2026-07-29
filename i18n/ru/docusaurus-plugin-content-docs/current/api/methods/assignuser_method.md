@@ -54,4 +54,4 @@ list.assignUser({
 });
 ~~~
 
-**Связанная статья**: [Исполнители задач](guides/task_users.md)
+**Полезная статья:** [Исполнители задач](guides/task_users.md)

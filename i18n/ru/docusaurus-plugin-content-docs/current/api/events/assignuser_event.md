@@ -52,4 +52,4 @@ list.api.on("assign-user", ({id, userId}) => {
 });
 ~~~
 
-**Связанная статья**: [Пользователи задачи](guides/task_users.md)
+**Полезная статья:** [Пользователи задачи](guides/task_users.md)

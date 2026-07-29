@@ -52,4 +52,4 @@ list.api.on("edit-item", ({id, currentValue}) => {
 });
 ~~~
 
-**Связанная статья**: [Встроенное редактирование](guides/inline_editing.md)
+**Полезная статья:** [Встроенное редактирование](guides/inline_editing.md)

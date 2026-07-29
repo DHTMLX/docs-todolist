@@ -53,7 +53,7 @@ Der HTTP-Statuscode zeigt an, ob die Anfrage erfolgreich war (response.status ==
 
 ---
 
-**Verwandte Artikel**:
+**Verwandte Artikel:**
 
 - [send()](api/rest_api/methods/send_method.md)
 - [deleteProject()](api/methods/deleteproject_method.md)

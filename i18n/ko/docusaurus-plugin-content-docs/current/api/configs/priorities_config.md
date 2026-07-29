@@ -24,7 +24,7 @@ priorities?: [
 ];
 ~~~
 
-### 파라미터 {#parameters}
+### 매개변수 {#parameters}
 
 `priorities` 속성은 우선순위 객체 배열을 나타냅니다. 각 객체는 다음 파라미터를 포함합니다:
 
@@ -41,7 +41,7 @@ priorities?: [
 `"#03A9F4" "#9575CD" "#F06292" "#FF9800"`
 :::
 
-### 기본 config {#default-config}
+### 기본 설정 {#default-config}
 
 ~~~jsx {}
 const priorities: [
@@ -118,7 +118,7 @@ document.addEventListener("keydown", event => {
 });
 ~~~
 
-**관련 문서**:
+**관련 문서:**
 - [데이터 로드 및 저장](guides/loading_data.md)
 
-**관련 예제**: [To do list. 우선순위 설정을 위한 사용자 정의 단축키](https://snippet.dhtmlx.com/5cymicwt?tag=todolist)
+**관련 예제:** [To do list. 우선순위 설정을 위한 사용자 정의 단축키](https://snippet.dhtmlx.com/5cymicwt?tag=todolist)

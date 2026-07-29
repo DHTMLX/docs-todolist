@@ -60,7 +60,7 @@ HTTP-код статуса показывает, выполнен ли запр�
 
 ---
 
-**Связанные статьи**:
+**Полезные статьи:**
 - [send()](api/rest_api/methods/send_method.md)
 - [setSort()](api/methods/setsort_method.md)
 - [Работа с сервером](guides/working_with_server.md)
