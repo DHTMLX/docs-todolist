@@ -42,7 +42,7 @@ For example, when you ask *"How do I chain RestDataProvider into the event bus w
 
 ## Setting up the MCP connection
 
-Setting up a fresh To Do List project or hooking into an existing `RestDataProvider` backend both start the same way: register the MCP endpoint with your tool, via a CLI command or a JSON configuration entry, depending on what that tool expects.
+Setting up a fresh To Do List project or hooking into an existing `RestDataProvider` backend both start the same way: point your tool at the URL below, via a CLI command or a JSON configuration entry, depending on what that tool expects.
 
 ~~~jsx
 https://docs.dhtmlx.com/mcp
