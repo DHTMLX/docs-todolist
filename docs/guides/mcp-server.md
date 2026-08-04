@@ -1,16 +1,16 @@
 ---
 sidebar_label: DHTMLX MCP server
-title: DHTMLX To Do List MCP server keeps AI answers accurate
+title: DHTMLX To Do List MCP integration for tasks and REST sync
 description: Tasks, subtasks, projects, priorities, and REST sync in DHTMLX To Do List all stay current for AI assistants through the MCP server.
 ---
 
-# DHTMLX To Do List MCP server: docs that stay current for AI
+# DHTMLX To Do List MCP server: tasks, projects, and REST sync
 
 DHTMLX To Do List looks like a simple checklist on the surface, but it packs in [nested subtasks](guides/task_operations.md#adding-a-new-task), [priority hotkeys](/#prioritizing-a-task), [drag-and-drop reordering](guides/configuration.md#drag-n-drop), [hashtag-based filtering](guides/inline_editing.md#hashtags), and a REST backend that chains through the [event bus](api/internal/setnext_method.md). If generated code is going to work, it needs the current signatures for [copying a task](api/methods/copytask_method.md) or [indenting one into a subtask](api/methods/indenttask_method.md), the right event payload shape, and the [task field options](api/configs/taskshape_config.md) that actually exist today, not a stale training memory.
 
 That's where the DHTMLX MCP server helps: it lets the assistant check the live To Do List documentation before it answers. Point it at [task operations](guides/task_operations.md), [multiselection and bulk actions](guides/multiselection.md), the [REST backend integration](guides/working_with_server.md), or [task and project configuration](guides/configuration.md), and the assistant retrieves the current API surface instead of guessing.
 
-**MCP endpoint**
+### MCP endpoint
 
 ~~~jsx
 https://docs.dhtmlx.com/mcp
@@ -36,9 +36,16 @@ The server's index covers the full DHTMLX To Do List documentation, including:
 
 ## Two ways the MCP server can respond
 
-The assistant chooses between two workflows depending on what's being asked. *Search* returns the matching To Do List reference pages so the assistant can compose the answer; *Inference* reads those pages itself and returns the finished answer. Both run on a Retrieval-Augmented Generation (RAG) index built from the documentation, reached through the Model Context Protocol (MCP).
+Ask the DHTMLX MCP server anything about To Do List, and the request runs through a Retrieval-Augmented Generation (RAG) pipeline over the Model Context Protocol (MCP). One of two workflows picks it up from there: *Search* hands back matching reference pages for the assistant to write from, while *Inference* reads those same pages and answers directly. Here's that process for the prompt *"How do I chain RestDataProvider into the event bus with api.setNext() so add-task and move-task operations reach my server?"*:
 
-For example, when you ask *"How do I chain RestDataProvider into the event bus with api.setNext() so add-task and move-task operations reach my server?"*, the assistant sends the prompt via the MCP endpoint. *Search* matches it against the working-with-server documentation, retrieves the relevant reference pages, and returns them as context; the assistant then produces code that matches the API's current state instead of an old training snapshot. *Inference* suits a narrower question with one correct answer, such as confirming which event fires first in the chain, and returns that answer directly instead of the source pages.
+1. The assistant passes the query through MCP.
+2. The server pinpoints the working-with-server documentation it belongs to.
+3. Generating this handler calls for code, so the request goes to *Search* (a narrower question, like which event fires first in the chain, would go to *Inference* instead).
+4. *Search* fetches the matching pages from a vector index built on the current To Do List documentation.
+5. Those pages land back with the assistant as context.
+6. The assistant assembles the event bus chaining code from that context rather than guessing at it.
+
+That keeps To Do List integrations built against the API as it stands, not a remembered version of it.
 
 ## Setting up the MCP connection
 
