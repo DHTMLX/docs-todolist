@@ -34,18 +34,20 @@ The server's index covers the full DHTMLX To Do List documentation, including:
 - Handling [inline editing](guides/inline_editing.md) and [keyboard shortcuts](guides/keyboard_navigation.md) for tasks and projects.
 - Exploring [localization](guides/localization.md), [stylization](guides/stylization.md), and integration with [React](guides/integration_with_react.md), [Vue](guides/integration_with_vue.md), [Angular](guides/integration_with_angular.md), and [Svelte](guides/integration_with_svelte.md).
 
-## Two ways the MCP server can respond
+## How a To Do List question moves through the MCP server
 
-Ask the DHTMLX MCP server anything about To Do List, and the request runs through a Retrieval-Augmented Generation (RAG) pipeline over the Model Context Protocol (MCP). One of two workflows picks it up from there: *Search* hands back matching reference pages for the assistant to write from, while *Inference* reads those same pages and answers directly. Here's that process for the prompt *"How do I chain RestDataProvider into the event bus with api.setNext() so add-task and move-task operations reach my server?"*:
+Ask the DHTMLX MCP server anything about To Do List, and the request runs through a Retrieval-Augmented Generation (RAG) pipeline over the Model Context Protocol (MCP). One of two workflows picks it up from there: *Search* hands back matching reference pages for the assistant to write from, while *Inference* reads those same pages and answers directly. A To Do List request often bundles two separate jobs: one that needs current documentation, and one the assistant can already do on its own. It peels off the first before anything reaches MCP.
 
-1. The assistant passes the query through MCP.
+Here's that process for the prompt *"How do I chain RestDataProvider into the event bus with api.setNext() so add-task and move-task operations reach my server?"*:
+
+1. The assistant flags the documentation job: how to chain RestDataProvider into the event bus with api.setNext().
 2. The server pinpoints the working-with-server documentation it belongs to.
 3. Generating this handler calls for code, so the request goes to *Search* (a narrower question, like which event fires first in the chain, would go to *Inference* instead).
 4. *Search* fetches the matching pages from a vector index built on the current To Do List documentation.
 5. Those pages land back with the assistant as context.
-6. The assistant assembles the event bus chaining code from that context rather than guessing at it.
+6. The assistant assembles the event bus chaining code from that context, then fills in the server-specific request details from its own knowledge instead of guessing at the To Do List API.
 
-That keeps To Do List integrations built against the API as it stands, not a remembered version of it.
+That keeps To Do List integrations built against the API as it stands.
 
 ## Setting up the MCP connection
 
