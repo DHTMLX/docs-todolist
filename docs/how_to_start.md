@@ -251,3 +251,4 @@ If you feel like diving deeper into the world of To Do List, these are suggestio
 - [To Do List overview](/)
 - [Guides](category/guides.md)
 - [API](category/api.md)
+- [DHTMLX MCP server](guides/mcp-server.md)

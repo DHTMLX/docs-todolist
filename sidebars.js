@@ -490,6 +490,7 @@ module.exports = {
                 "guides/customization",
                 "guides/stylization",
                 //"guides/integration",
+                "guides/mcp-server",
             ]
         }
     ]
