@@ -38,7 +38,7 @@ The server's index covers the full DHTMLX To Do List documentation, including:
 
 Ask the DHTMLX MCP server anything about To Do List, and the request runs through a Retrieval-Augmented Generation (RAG) pipeline over the Model Context Protocol (MCP). One of two workflows picks it up from there: *Search* hands back matching reference pages for the assistant to write from, while *Inference* reads those same pages and answers directly. A To Do List request often bundles two separate jobs: one that needs current documentation, and one the assistant can already do on its own. It peels off the first before anything reaches MCP.
 
-Here's that process for the prompt *"How do I chain RestDataProvider into the event bus with api.setNext() so add-task and move-task operations reach my server?"*:
+Here's that process for the prompt *"How do I make sure add-task and move-task operations reach my server in the right order?"*:
 
 1. The assistant flags the documentation job: how to chain RestDataProvider into the event bus with api.setNext().
 2. The server pinpoints the working-with-server documentation it belongs to.
@@ -47,7 +47,7 @@ Here's that process for the prompt *"How do I chain RestDataProvider into the ev
 5. Those pages land back with the assistant as context.
 6. The assistant assembles the event bus chaining code from that context, then fills in the server-specific request details from its own knowledge instead of guessing at the To Do List API.
 
-That keeps To Do List integrations built against the API as it stands.
+Because of that lookup, the assistant wires RestDataProvider into the event bus the way it actually works today.
 
 ## Setting up the MCP connection
 
@@ -199,12 +199,12 @@ If your organization needs stricter guarantees, ask about a commercial deploymen
 
 ## To Do List prompts to copy and adapt
 
-These prompts work best when they name a To Do List object directly, a task, a project, a user, rather than describing it in the abstract. Each group below targets one kind of operation; adapt the wording to your own data.
+Each group below targets one kind of operation. Copy an example and adapt the wording to your own data.
 
 **Tasks and hierarchy**
 
 ~~~
-How do I add a subtask under a specific task using addTask() in DHTMLX To Do List?
+How do I add a subtask under a specific task in DHTMLX To Do List?
 ~~~
 ~~~
 How do I make a task become a subtask of the task directly above it? Use the docs.
@@ -219,7 +219,7 @@ How do I copy a task along with its subtasks and paste it into a different proje
 How do I switch to a different active project and move a task into it?
 ~~~
 ~~~
-What happens to a project's tasks when I delete it with deleteProject() in DHTMLX To Do List?
+What happens to a project's tasks when I delete the project in DHTMLX To Do List?
 ~~~
 
 **Selection and bulk operations**
@@ -228,16 +228,16 @@ What happens to a project's tasks when I delete it with deleteProject() in DHTML
 How do I select several tasks and mark them all as complete at once in DHTMLX To Do List?
 ~~~
 ~~~
-How do I use eachSelected() to delete all currently selected tasks? Use the docs.
+How do I delete all currently selected tasks at once? Use the docs.
 ~~~
 
 **Server integration**
 
 ~~~
-How do I connect RestDataProvider to my Node.js backend and load tasks on initialization?
+How do I connect DHTMLX To Do List to my Node.js backend and load tasks on initialization?
 ~~~
 ~~~
-How do I set up the multiuser mode with RemoteEvents so task changes sync across clients in real time?
+How do I set up multiuser mode so task changes sync across clients in real time?
 ~~~
 
 ## Making To Do List prompts more precise
