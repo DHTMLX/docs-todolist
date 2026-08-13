@@ -251,3 +251,4 @@ To Do List의 세계를 더 깊이 탐구하고 싶다면 다음 내용을 학�
 - [To Do List 개요](/)
 - [가이드](category/guides.md)
 - [API](category/api.md)
+- [DHTMLX MCP server](guides/mcp-server.md)
