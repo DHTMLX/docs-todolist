@@ -251,3 +251,4 @@ Wenn Sie tiefer in die Welt von To Do List eintauchen möchten, empfehlen wir fo
 - [To-Do-List-Übersicht](/)
 - [Handbücher](category/guides.md)
 - [API](category/api.md)
+- [DHTMLX MCP server](guides/mcp-server.md)

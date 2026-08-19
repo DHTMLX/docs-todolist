@@ -10,7 +10,11 @@ const MD_BOLD_TEXT_REGEXP = /\*\*(.+?)\*\*/g;
 
 // [text](<route><.md>#<route>) or [text](<route>/<route><.md>)
 // e.g. '[autoWidth](grid/configuration.md#autowidthforcolumns)'
-const MD_LINK_REGEXP = /(\[.+?\])\(([^\s]+?)(\.md)([^\s]*?)\)/g;
+// Parentheses are excluded from the route: a link target cannot contain an
+// unescaped ')', so without that the lazy quantifiers run past the closing
+// bracket and swallow the next link whenever two links are not separated by
+// whitespace (as in CJK text, where '、' joins them directly).
+const MD_LINK_REGEXP = /(\[.+?\])\(([^\s()]+?)(\.md)([^\s()]*?)\)/g;
 
 // @<text>:
 // e.g. '@short:' or '@short: sends a DELETE request to the server'

@@ -141,4 +141,4 @@ Weitere Details finden Sie im Abschnitt [**Tastaturkürzel**](api/events/keypres
 
 ## Wie geht es weiter {#whats-next}
 
-Nachdem Sie sich einen kurzen Überblick über To Do List verschafft haben, können Sie nun lernen, die Komponente auf der Seite anzuzeigen. Folgen Sie den Anweisungen im Artikel [Erste Schritte](how_to_start.md).
+Nachdem Sie sich einen kurzen Überblick über To Do List verschafft haben, können Sie nun lernen, die Komponente auf der Seite anzuzeigen. Folgen Sie den Anweisungen im Artikel [Erste Schritte](how_to_start.md). Wenn Sie mit einem KI-Coding-Assistenten entwickeln, verbinden Sie ihn über den [DHTMLX MCP server](guides/mcp-server.md) mit der aktuellen Dokumentation.
