@@ -251,3 +251,4 @@ const toolbar = new Toolbar("#toolbar", {
 - [To Do List 概览](/)
 - [指南](category/guides.md)
 - [API](category/api.md)
+- [DHTMLX MCP server](guides/mcp-server.md)

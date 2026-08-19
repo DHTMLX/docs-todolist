@@ -141,4 +141,4 @@ To Do List 컴포넌트의 인터페이스는 [Toolbar](#toolbar)와 [List](#lis
 
 ## 다음 단계 {#whats-next}
 
-To Do List에 대한 간략한 개요를 확인하셨으면 이제 페이지에 컴포넌트를 표시하는 방법을 학습할 준비가 되었습니다. [시작하기](how_to_start.md) 문서에 나와 있는 안내를 따르세요.
+To Do List에 대한 간략한 개요를 확인하셨으면 이제 페이지에 컴포넌트를 표시하는 방법을 학습할 준비가 되었습니다. [시작하기](how_to_start.md) 문서에 나와 있는 안내를 따르세요. AI 코딩 어시스턴트로 개발한다면 [DHTMLX MCP 서버](guides/mcp-server.md)를 통해 어시스턴트를 최신 문서에 연결하세요.
