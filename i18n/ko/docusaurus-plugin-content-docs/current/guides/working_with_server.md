@@ -15,34 +15,34 @@ DHTMLX To Do List는 클라이언트와 서버 데이터 모두와 함께 동작
 
 To Do List는 REST 백엔드와 통신하고 다음 데이터 작업을 처리하는 `RestDataProvider` 서비스를 제공합니다.
 
-- `"add-task"` — 작업 추가
-- `"update-task"` — 작업 업데이트
-- `"delete-task"` — 작업 삭제
-- `"add-project"` — 프로젝트 추가
-- `"update-project"` — 프로젝트 업데이트
-- `"delete-project"` — 프로젝트 삭제
-- `"set-project"` — 활성 프로젝트 설정
-- `"move-task"` — 작업 이동
-- `"clone-task"` — 작업 복제
+- `"add-task"` - 작업 추가
+- `"update-task"` - 작업 업데이트
+- `"delete-task"` - 작업 삭제
+- `"add-project"` - 프로젝트 추가
+- `"update-project"` - 프로젝트 업데이트
+- `"delete-project"` - 프로젝트 삭제
+- `"set-project"` - 활성 프로젝트 설정
+- `"move-task"` - 작업 이동
+- `"clone-task"` - 작업 복제
 
 ## REST 메서드 {#rest-methods}
 
 `RestDataProvider` 서비스는 동적 데이터 로딩을 위한 다음 REST 메서드를 포함합니다.
 
-- [`getProjects()`](api/rest_api/methods/getprojects_method.md) — **프로젝트 데이터**가 담긴 promise 반환
-- [`getProjectTasks()`](api/rest_api/methods/getprojecttasks_method.md) — 지정된 `project`의 **작업 데이터**가 담긴 promise 반환
-- [`getTags()`](api/rest_api/methods/gettags_method.md) — **기본 태그** 목록이 담긴 promise 반환
-- [`getTasks()`](api/rest_api/methods/gettasks_method.md) — **작업 데이터**가 담긴 promise 반환
-- [`getUsers()`](api/rest_api/methods/getusers_method.md) — **사용자 데이터**가 담긴 promise 반환
-- [`setAPI()`](api/rest_api/methods/setapi_method.md) — To Do List 컴포넌트의 API를 RestDataProvider에 설정
-- [`send()`](api/rest_api/methods/send_method.md) — 서버에 요청을 보내고 요청에 따라 데이터가 있거나 없는 promise 반환
+- [`getProjects()`](api/rest_api/methods/getprojects_method.md) - **프로젝트 데이터**가 담긴 promise 반환
+- [`getProjectTasks()`](api/rest_api/methods/getprojecttasks_method.md) - 지정된 `project`의 **작업 데이터**가 담긴 promise 반환
+- [`getTags()`](api/rest_api/methods/gettags_method.md) - **기본 태그** 목록이 담긴 promise 반환
+- [`getTasks()`](api/rest_api/methods/gettasks_method.md) - **작업 데이터**가 담긴 promise 반환
+- [`getUsers()`](api/rest_api/methods/getusers_method.md) - **사용자 데이터**가 담긴 promise 반환
+- [`setAPI()`](api/rest_api/methods/setapi_method.md) - To Do List 컴포넌트의 API를 RestDataProvider에 설정
+- [`send()`](api/rest_api/methods/send_method.md) - 서버에 요청을 보내고 요청에 따라 데이터가 있거나 없는 promise 반환
 
 ## 백엔드와 상호작용 {#interact-with-the-backend}
 
 서버와 상호작용하려면 `RestDataProvider`를 서버 스크립트에 연결합니다. 내장 백엔드는 다음 두 저장소에서 제공됩니다.
 
-- [**Go**](https://github.com/web-widgets/todo-go) — Go 백엔드
-- [**Node**](https://github.com/web-widgets/todo-node) — Node.js 백엔드
+- [**Go**](https://github.com/web-widgets/todo-go) - Go 백엔드
+- [**Node**](https://github.com/web-widgets/todo-node) - Node.js 백엔드
 
 커스텀 백엔드를 직접 만들 수도 있습니다.
 
@@ -230,7 +230,7 @@ remoteEvents.on(handlers);
 
 `type` 인수는 모델의 유형이며 다음 값을 가집니다.
 
-- `TaskID` — `1`
-- `ProjID` — `2`
+- `TaskID` - `1`
+- `ProjID` - `2`
 
 서버로 요청이 전송되지 않도록 하려면 `todoInstance.api.exec()` 메서드에 `skipProvider: true` 플래그를 전달합니다.

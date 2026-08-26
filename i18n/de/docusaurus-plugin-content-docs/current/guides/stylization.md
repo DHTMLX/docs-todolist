@@ -118,4 +118,4 @@ Der folgende Code-Ausschnitt wendet einen benutzerdefinierten Stil auf die To-Do
 
 ## Verwandte Artikel {#related-articles}
 
-- [Anpassung](guides/customization.md) — Übersicht der verfügbaren Anpassungsoptionen
+- [Anpassung](guides/customization.md) - Übersicht der verfügbaren Anpassungsoptionen

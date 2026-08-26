@@ -65,8 +65,8 @@ yarn start
 
 Откройте *todo.component.ts* и импортируйте исходные файлы To Do List. Выберите один из двух путей импорта:
 
-- PRO-версия, установленная из локальной папки — импорт из `dhx-todolist-package`
-- пробная версия — импорт из `@dhx/trial-todolist`
+- PRO-версия, установленная из локальной папки - импорт из `dhx-todolist-package`
+- пробная версия - импорт из `@dhx/trial-todolist`
 
 Следующий фрагмент импортирует из PRO-пакета:
 
@@ -366,7 +366,7 @@ platformBrowserDynamic()
     .catch((err) => console.error(err));
 ~~~
 
-Запустите приложение — To Do List отобразится с тестовыми данными:
+Запустите приложение. To Do List отобразится с тестовыми данными:
 
 ![DHTMLX To Do List, отрендеренный в приложении Angular с демонстрационными данными](/img/trial_todolist.png)
 

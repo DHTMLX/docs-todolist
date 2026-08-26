@@ -118,4 +118,4 @@ To Do List를 커스터마이징하려면 관련 CSS 변수를 재정의합니�
 
 ## 관련 문서 {#related-articles}
 
-- [커스터마이제이션](guides/customization.md) — 사용 가능한 커스터마이제이션 옵션 개요
+- [커스터마이제이션](guides/customization.md) - 사용 가능한 커스터마이제이션 옵션 개요

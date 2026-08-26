@@ -29,9 +29,9 @@ list.addTask({
 
 复制和粘贴任务最快捷的方式是使用 [`copyTask()`](api/methods/copytask_method.md) 方法。传入以下参数：
 
-- `id` — 要复制和粘贴的任务 id
-- `project` — 目标项目的 id（如果存在）
-- `targetId` — 粘贴位置的目标任务 id
+- `id` - 要复制和粘贴的任务 id
+- `project` - 目标项目的 id（如果存在）
+- `targetId` - 粘贴位置的目标任务 id
 - 其他参数为可选项
 
 以下代码片段将一个任务复制到新项目中：
@@ -140,8 +140,8 @@ list.expandTask({ id: "1.1" });
 
 每个任务和用户都有上下文菜单。通过以下两个事件追踪其活动状态：
 
-- [`open-menu`](api/events/openmenu_event.md) — 菜单打开时触发；提供条目 id、菜单类型，以及可选的用于批量操作的任务 id 数组（`source`）
-- [`close-menu`](api/events/closemenu_event.md) — 菜单关闭时触发；提供条目 id 和菜单类型
+- [`open-menu`](api/events/openmenu_event.md) - 菜单打开时触发；提供条目 id、菜单类型，以及可选的用于批量操作的任务 id 数组（`source`）
+- [`close-menu`](api/events/closemenu_event.md) - 菜单关闭时触发；提供条目 id 和菜单类型
 
 以下示例记录菜单生命周期事件：
 
@@ -193,8 +193,8 @@ list.uncheckTask({
 
 通过以下方法动态更改任务的嵌套层级：
 
-- [`indentTask()`](api/methods/indenttask_method.md) — 将任务的嵌套层级降低一级
-- [`unindentTask()`](api/methods/unindenttask_method.md) — 将任务的嵌套层级提升一级
+- [`indentTask()`](api/methods/indenttask_method.md) - 将任务的嵌套层级降低一级
+- [`unindentTask()`](api/methods/unindenttask_method.md) - 将任务的嵌套层级提升一级
 
 以下代码片段将任务降低一个层级：
 

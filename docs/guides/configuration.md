@@ -108,9 +108,9 @@ const list = new ToDo("#root", {
 
 Subscribe to drag events to track the drag-n-drop lifecycle:
 
-- [`start-drag`](api/events/startdrag_event.md) — fires when the user starts dragging tasks; provides the source task id and the mode (`"move"` or `"copy"`)
-- [`drag`](api/events/drag_event.md) — fires while the user drags tasks
-- [`end-drag`](api/events/enddrag_event.md) — fires when the drag completes; provides the target id, drop position (`"top"`, `"bottom"`, `"in"`, or `null`), and the mode
+- [`start-drag`](api/events/startdrag_event.md) - fires when the user starts dragging tasks; provides the source task id and the mode (`"move"` or `"copy"`)
+- [`drag`](api/events/drag_event.md) - fires while the user drags tasks
+- [`end-drag`](api/events/enddrag_event.md) - fires when the drag completes; provides the target id, drop position (`"top"`, `"bottom"`, `"in"`, or `null`), and the mode
 
 The snippet below logs the start and end of a drag operation:
 
@@ -186,8 +186,8 @@ The To Do List tracks the history of changes by default. Users can revert and re
 
 Use the [`history`](api/configs/history_config.md) property to configure this behavior. The property accepts a boolean (short form) or an object with extended settings:
 
-- `projects` — enable branching of history so that each project keeps a separate history; the whole app shares one history when set to `false`
-- `limit` — maximum number of history operations to keep
+- `projects` - enable branching of history so that each project keeps a separate history; the whole app shares one history when set to `false`
+- `limit` - maximum number of history operations to keep
 
 The example below limits history to 20 operations and disables per-project branching:
 

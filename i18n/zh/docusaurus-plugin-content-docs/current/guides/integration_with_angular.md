@@ -65,8 +65,8 @@ yarn start
 
 打开 *todo.component.ts*，导入 To Do List 的源文件。可选择以下两种导入路径之一：
 
-- 从本地文件夹安装的 PRO 版本 — 从 `dhx-todolist-package` 导入
-- 试用版 — 从 `@dhx/trial-todolist` 导入
+- 从本地文件夹安装的 PRO 版本 - 从 `dhx-todolist-package` 导入
+- 试用版 - 从 `@dhx/trial-todolist` 导入
 
 以下代码片段从 PRO 包导入：
 

@@ -108,9 +108,9 @@ const list = new ToDo("#root", {
 
 드래그 이벤트를 구독하여 드래그 앤 드롭 생명 주기를 추적하세요:
 
-- [`start-drag`](api/events/startdrag_event.md) — 사용자가 작업 드래그를 시작할 때 발생하며, 소스 작업 id와 모드(`"move"` 또는 `"copy"`)를 제공합니다
-- [`drag`](api/events/drag_event.md) — 사용자가 작업을 드래그하는 동안 발생합니다
-- [`end-drag`](api/events/enddrag_event.md) — 드래그가 완료될 때 발생하며, 대상 id, 드롭 위치(`"top"`, `"bottom"`, `"in"` 또는 `null`), 모드를 제공합니다
+- [`start-drag`](api/events/startdrag_event.md) - 사용자가 작업 드래그를 시작할 때 발생하며, 소스 작업 id와 모드(`"move"` 또는 `"copy"`)를 제공합니다
+- [`drag`](api/events/drag_event.md) - 사용자가 작업을 드래그하는 동안 발생합니다
+- [`end-drag`](api/events/enddrag_event.md) - 드래그가 완료될 때 발생하며, 대상 id, 드롭 위치(`"top"`, `"bottom"`, `"in"` 또는 `null`), 모드를 제공합니다
 
 아래 코드는 드래그 작업의 시작과 종료를 로그에 기록합니다:
 
@@ -186,8 +186,8 @@ To Do List는 기본적으로 변경 내역을 추적합니다. 사용자는 [`u
 
 [`history`](api/configs/history_config.md) 속성을 사용하여 이 동작을 구성하세요. 이 속성은 불리언(단축 형식) 또는 확장 설정이 담긴 객체를 허용합니다:
 
-- `projects` — 프로젝트별로 내역을 분기하여 각 프로젝트가 별도의 내역을 유지하도록 합니다. `false`로 설정하면 앱 전체가 하나의 내역을 공유합니다
-- `limit` — 유지할 내역 작업의 최대 수
+- `projects` - 프로젝트별로 내역을 분기하여 각 프로젝트가 별도의 내역을 유지하도록 합니다. `false`로 설정하면 앱 전체가 하나의 내역을 공유합니다
+- `limit` - 유지할 내역 작업의 최대 수
 
 아래 예제는 내역을 20개 작업으로 제한하고 프로젝트별 분기를 비활성화합니다:
 

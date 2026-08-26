@@ -32,7 +32,7 @@ DHTMLX To Do List 支持完整的键盘导航。无需鼠标即可创建、管�
 | <kbd>ArrowLeft</kbd> | 折叠已展开的父任务。若已折叠或无子任务，则将选中项移至父任务 |
 | <kbd>Shift</kbd>+<kbd>ArrowUp</kbd> | 将选中范围向上扩展至上方任务。若该任务已被选中，则取消选中 |
 | <kbd>Shift</kbd>+<kbd>ArrowDown</kbd> | 将选中范围向下扩展至下方任务（包括其子任务）。若该任务已被选中，则取消选中 |
-| <kbd>Ctrl(Cmd)</kbd>+<kbd>Click</kbd> / <kbd>Ctrl(Cmd)</kbd>+<kbd>Shift</kbd>+<kbd>Click</kbd> | 选中或取消选中多个任务及其子任务：<br/>• 若该任务有已选中的父任务 — 取消选中该任务及其父任务<br/>• 若该任务有已选中的子任务 — 仅取消选中该任务本身 |
+| <kbd>Ctrl(Cmd)</kbd>+<kbd>Click</kbd> / <kbd>Ctrl(Cmd)</kbd>+<kbd>Shift</kbd>+<kbd>Click</kbd> | 选中或取消选中多个任务及其子任务：<br/>• 若该任务有已选中的父任务，取消选中该任务及其父任务<br/>• 若该任务有已选中的子任务，仅取消选中该任务本身 |
 | <kbd>Shift</kbd>+<kbd>Click</kbd> | 选中当前已选任务与被点击任务之间的一段任务 |
 
 :::info
@@ -47,8 +47,8 @@ DHTMLX To Do List 支持完整的键盘导航。无需鼠标即可创建、管�
 | <kbd>Ctrl(Cmd)</kbd>+<kbd>Enter</kbd> | 为选中任务打开内联编辑器 |
 | <kbd>Space</kbd> | 将选中任务标记为已完成。若已完成，则标记为未完成 |
 | <kbd>Delete</kbd> / <kbd>Backspace</kbd> | 删除选中任务。删除后，焦点移至下一个任务；若无下一个任务，则移至父任务 |
-| <kbd>Tab</kbd> | 降级任务 — 将其下移一个嵌套层级 |
-| <kbd>Shift</kbd>+<kbd>Tab</kbd> | 升级任务 — 将其上移一个嵌套层级 |
+| <kbd>Tab</kbd> | 降级任务，将其下移一个嵌套层级 |
+| <kbd>Shift</kbd>+<kbd>Tab</kbd> | 升级任务，将其上移一个嵌套层级 |
 | <kbd>Ctrl</kbd>+<kbd>ArrowUp</kbd> | 在同级中将选中任务上移 |
 | <kbd>Ctrl</kbd>+<kbd>ArrowDown</kbd> | 在同级中将选中任务下移 |
 | <kbd>Ctrl(Cmd)</kbd>+<kbd>D</kbd> | 在同级复制选中任务 |
@@ -72,6 +72,6 @@ DHTMLX To Do List 支持完整的键盘导航。无需鼠标即可创建、管�
 
 ## 相关文章 {#related-articles}
 
-- [`keypress-on-todo`](api/events/keypressontodo_event.md) 事件 — 拦截按键操作并实现自定义行为
-- [内联编辑](guides/inline_editing.md) — 了解如何以编程方式管理编辑器
-- [多选](guides/multiselection.md) — 处理多个已选任务
+- [`keypress-on-todo`](api/events/keypressontodo_event.md) 事件 - 拦截按键操作并实现自定义行为
+- [内联编辑](guides/inline_editing.md) - 了解如何以编程方式管理编辑器
+- [多选](guides/multiselection.md) - 处理多个已选任务

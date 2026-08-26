@@ -40,8 +40,8 @@ console.log(list.getSelection()); // ["1.1", "1.2", "2.2"]
 
 使用 [`selectTask()`](api/methods/selecttask_method.md) 方法在初始化之后选择任务。该方法接受两个参数：
 
-- `id` — 要选中的任务 id
-- `join` — 是否将该任务追加到现有选择中
+- `id` - 要选中的任务 id
+- `join` - 是否将该任务追加到现有选择中
 
 ### 选择单个任务 {#select-one-task}
 
@@ -145,12 +145,12 @@ list.eachSelected(id => {
 
 您可以通过以下 API 方法对多个已选任务执行批量操作：
 
-- [`copyTask()`](api/methods/copytask_method.md) — 复制任务
-- [`pasteTask()`](api/methods/pastetask_method.md) — 粘贴任务
-- [`moveTask()`](api/methods/movetask_method.md) — 移动任务
-- [`deleteTask()`](api/methods/deletetask_method.md) — 删除任务
-- [`checkTask()`](api/methods/checktask_method.md)、[`uncheckTask()`](api/methods/unchecktask_method.md) — 将任务标记为已完成或未完成
-- [`indentTask()`](api/methods/indenttask_method.md)、[`unindentTask()`](api/methods/unindenttask_method.md) — 降低或提升任务的嵌套层级
+- [`copyTask()`](api/methods/copytask_method.md) - 复制任务
+- [`pasteTask()`](api/methods/pastetask_method.md) - 粘贴任务
+- [`moveTask()`](api/methods/movetask_method.md) - 移动任务
+- [`deleteTask()`](api/methods/deletetask_method.md) - 删除任务
+- [`checkTask()`](api/methods/checktask_method.md)、[`uncheckTask()`](api/methods/unchecktask_method.md) - 将任务标记为已完成或未完成
+- [`indentTask()`](api/methods/indenttask_method.md)、[`unindentTask()`](api/methods/unindenttask_method.md) - 降低或提升任务的嵌套层级
 
 ## 重置选择 {#reset-selection}
 

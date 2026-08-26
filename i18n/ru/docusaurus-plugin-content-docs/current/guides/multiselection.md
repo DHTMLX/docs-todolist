@@ -40,8 +40,8 @@ console.log(list.getSelection()); // ["1.1", "1.2", "2.2"]
 
 Используйте метод [`selectTask()`](api/methods/selecttask_method.md) для выбора задач после инициализации. Метод принимает два параметра:
 
-- `id` — идентификатор выбираемой задачи
-- `join` — добавлять ли задачу к текущему выделению
+- `id` - идентификатор выбираемой задачи
+- `join` - добавлять ли задачу к текущему выделению
 
 ### Выбор одной задачи {#select-one-task}
 
@@ -131,7 +131,7 @@ list.getSelection({ sorted: true }); // ["1.1", "1.2", "2.1", "2.2"]
 
 После выбора нескольких задач примените операции ко всем им сразу.
 
-Библиотека предоставляет метод [`eachSelected()`](api/methods/eachselected_method.md) для перебора всех выбранных задач. Метод принимает дополнительные параметры — `sorted` и `reversed` — управляющие сортировкой и направлением обхода.
+Библиотека предоставляет метод [`eachSelected()`](api/methods/eachselected_method.md) для перебора всех выбранных задач. Метод принимает дополнительные параметры `sorted` и `reversed`, управляющие сортировкой и направлением обхода.
 
 Пример ниже удаляет все выбранные задачи:
 
@@ -145,12 +145,12 @@ list.eachSelected(id => {
 
 Через методы API можно выполнять следующие групповые операции над несколькими выбранными задачами:
 
-- [`copyTask()`](api/methods/copytask_method.md) — копировать задачи
-- [`pasteTask()`](api/methods/pastetask_method.md) — вставить задачи
-- [`moveTask()`](api/methods/movetask_method.md) — переместить задачи
-- [`deleteTask()`](api/methods/deletetask_method.md) — удалить задачи
-- [`checkTask()`](api/methods/checktask_method.md), [`uncheckTask()`](api/methods/unchecktask_method.md) — отметить задачи как выполненные или невыполненные
-- [`indentTask()`](api/methods/indenttask_method.md), [`unindentTask()`](api/methods/unindenttask_method.md) — увеличить или уменьшить уровень вложенности задач
+- [`copyTask()`](api/methods/copytask_method.md) - копировать задачи
+- [`pasteTask()`](api/methods/pastetask_method.md) - вставить задачи
+- [`moveTask()`](api/methods/movetask_method.md) - переместить задачи
+- [`deleteTask()`](api/methods/deletetask_method.md) - удалить задачи
+- [`checkTask()`](api/methods/checktask_method.md), [`uncheckTask()`](api/methods/unchecktask_method.md) - отметить задачи как выполненные или невыполненные
+- [`indentTask()`](api/methods/indenttask_method.md), [`unindentTask()`](api/methods/unindenttask_method.md) - увеличить или уменьшить уровень вложенности задач
 
 ## Сброс выделения {#reset-selection}
 
