@@ -65,8 +65,8 @@ Create an Angular component to add the To Do List with the Toolbar into the appl
 
 Open *todo.component.ts* and import the To Do List source files. Choose one of two import paths:
 
-- PRO version installed from a local folder — import from `dhx-todolist-package`
-- trial version — import from `@dhx/trial-todolist`
+- PRO version installed from a local folder - import from `dhx-todolist-package`
+- trial version - import from `@dhx/trial-todolist`
 
 The following snippet imports from the PRO package:
 
@@ -366,7 +366,7 @@ platformBrowserDynamic()
     .catch((err) => console.error(err));
 ~~~
 
-Start the app — the To Do List renders with sample data:
+Start the app. The To Do List renders with sample data:
 
 ![DHTMLX To Do List rendered in an Angular application with sample data](/img/trial_todolist.png)
 

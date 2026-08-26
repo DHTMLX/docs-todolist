@@ -26,7 +26,7 @@ DHTMLX To Do List совместим с **Vue 3**. Приведённые ниж
 npm create vue@latest
 ~~~
 
-Команда устанавливает и запускает `create-vue` — официальный инструмент создания проектов **Vue**. Подробности смотрите в [Быстром старте Vue.js](https://vuejs.org/guide/quick-start.html#creating-a-vue-application).
+Команда устанавливает и запускает `create-vue`, официальный инструмент создания проектов **Vue**. Подробности смотрите в [Быстром старте Vue.js](https://vuejs.org/guide/quick-start.html#creating-a-vue-application).
 
 Назовите проект *my-vue-todo-app*.
 
@@ -72,8 +72,8 @@ npm run dev
 
 Откройте *ToDo.vue* и импортируйте исходные файлы To Do List. Выберите один из двух путей импорта:
 
-- PRO-версия, установленная из локальной папки — импорт из `dhx-todolist-package`
-- пробная версия — импорт из `@dhx/trial-todolist`
+- PRO-версия, установленная из локальной папки - импорт из `dhx-todolist-package`
+- пробная версия - импорт из `@dhx/trial-todolist`
 
 Пример ниже импортирует из PRO-пакета:
 
@@ -342,7 +342,7 @@ export default {
 </template>
 ~~~
 
-Запустите приложение — To Do List отобразится с тестовыми данными:
+Запустите приложение. To Do List отобразится с тестовыми данными:
 
 ![DHTMLX To Do List, отрендеренный в приложении Vue с демонстрационными данными](/img/trial_todolist.png)
 

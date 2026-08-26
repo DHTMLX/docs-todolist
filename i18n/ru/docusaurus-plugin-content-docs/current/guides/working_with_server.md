@@ -15,34 +15,34 @@ DHTMLX To Do List работает как с клиентскими, так и �
 
 To Do List предоставляет сервис `RestDataProvider`, который взаимодействует с REST-бэкендом и обрабатывает следующие операции с данными:
 
-- `"add-task"` — добавить задачу
-- `"update-task"` — обновить задачу
-- `"delete-task"` — удалить задачу
-- `"add-project"` — добавить проект
-- `"update-project"` — обновить проект
-- `"delete-project"` — удалить проект
-- `"set-project"` — установить активный проект
-- `"move-task"` — переместить задачу
-- `"clone-task"` — клонировать задачу
+- `"add-task"` - добавить задачу
+- `"update-task"` - обновить задачу
+- `"delete-task"` - удалить задачу
+- `"add-project"` - добавить проект
+- `"update-project"` - обновить проект
+- `"delete-project"` - удалить проект
+- `"set-project"` - установить активный проект
+- `"move-task"` - переместить задачу
+- `"clone-task"` - клонировать задачу
 
 ## REST-методы {#rest-methods}
 
 Сервис `RestDataProvider` включает следующие REST-методы для динамической загрузки данных:
 
-- [`getProjects()`](api/rest_api/methods/getprojects_method.md) — получить промис с **данными проектов**
-- [`getProjectTasks()`](api/rest_api/methods/getprojecttasks_method.md) — получить промис с **данными задач** указанного `project`
-- [`getTags()`](api/rest_api/methods/gettags_method.md) — получить промис со списком **тегов по умолчанию**
-- [`getTasks()`](api/rest_api/methods/gettasks_method.md) — получить промис с **данными задач**
-- [`getUsers()`](api/rest_api/methods/getusers_method.md) — получить промис с **данными пользователей**
-- [`setAPI()`](api/rest_api/methods/setapi_method.md) — установить API компонента To Do List в RestDataProvider
-- [`send()`](api/rest_api/methods/send_method.md) — отправить запрос на сервер и получить промис с данными или без, в зависимости от запроса
+- [`getProjects()`](api/rest_api/methods/getprojects_method.md) - получить промис с **данными проектов**
+- [`getProjectTasks()`](api/rest_api/methods/getprojecttasks_method.md) - получить промис с **данными задач** указанного `project`
+- [`getTags()`](api/rest_api/methods/gettags_method.md) - получить промис со списком **тегов по умолчанию**
+- [`getTasks()`](api/rest_api/methods/gettasks_method.md) - получить промис с **данными задач**
+- [`getUsers()`](api/rest_api/methods/getusers_method.md) - получить промис с **данными пользователей**
+- [`setAPI()`](api/rest_api/methods/setapi_method.md) - установить API компонента To Do List в RestDataProvider
+- [`send()`](api/rest_api/methods/send_method.md) - отправить запрос на сервер и получить промис с данными или без, в зависимости от запроса
 
 ## Взаимодействие с бэкендом {#interact-with-the-backend}
 
 Для взаимодействия с сервером подключите `RestDataProvider` к серверным скриптам. Встроенный бэкенд доступен в двух репозиториях:
 
-- [**Go**](https://github.com/web-widgets/todo-go) — бэкенд на Go
-- [**Node**](https://github.com/web-widgets/todo-node) — бэкенд на Node.js
+- [**Go**](https://github.com/web-widgets/todo-go) - бэкенд на Go
+- [**Node**](https://github.com/web-widgets/todo-node) - бэкенд на Node.js
 
 Вы также можете создать собственный бэкенд.
 
@@ -230,7 +230,7 @@ remoteEvents.on(handlers);
 
 Аргумент `type` — это тип модели, принимающий следующие значения:
 
-- `TaskID` — `1`
-- `ProjID` — `2`
+- `TaskID` - `1`
+- `ProjID` - `2`
 
 Чтобы предотвратить отправку запроса на сервер, передайте флаг `skipProvider: true` методу `todoInstance.api.exec()`.

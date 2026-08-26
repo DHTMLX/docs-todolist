@@ -72,8 +72,8 @@ Toolbar가 포함된 To Do List를 애플리케이션에 추가할 Vue 컴포넌
 
 *ToDo.vue*를 열고 To Do List 소스 파일을 가져옵니다. 두 가지 가져오기 경로 중 하나를 선택하세요:
 
-- 로컬 폴더에서 설치한 PRO 버전 — `dhx-todolist-package`에서 가져오기
-- 평가판 버전 — `@dhx/trial-todolist`에서 가져오기
+- 로컬 폴더에서 설치한 PRO 버전 - `dhx-todolist-package`에서 가져오기
+- 평가판 버전 - `@dhx/trial-todolist`에서 가져오기
 
 아래 예제는 PRO 패키지에서 가져옵니다:
 

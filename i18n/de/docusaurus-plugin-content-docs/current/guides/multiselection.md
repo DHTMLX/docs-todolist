@@ -40,8 +40,8 @@ console.log(list.getSelection()); // ["1.1", "1.2", "2.2"]
 
 Verwenden Sie die Methode [`selectTask()`](api/methods/selecttask_method.md), um Aufgaben nach der Initialisierung auszuwählen. Die Methode nimmt zwei Parameter entgegen:
 
-- `id` — ID der auszuwählenden Aufgabe
-- `join` — ob die Aufgabe zur bestehenden Auswahl hinzugefügt werden soll
+- `id` - ID der auszuwählenden Aufgabe
+- `join` - ob die Aufgabe zur bestehenden Auswahl hinzugefügt werden soll
 
 ### Eine Aufgabe auswählen {#select-one-task}
 
@@ -131,7 +131,7 @@ Aktivieren Sie den Parameter `sorted`, um die IDs der ausgewählten Aufgaben in 
 
 Nach der Auswahl mehrerer Aufgaben können Operationen auf alle gleichzeitig angewendet werden.
 
-Die Bibliothek stellt die Methode [`eachSelected()`](api/methods/eachselected_method.md) zur Verfügung, um über alle ausgewählten Aufgaben zu iterieren. Die Methode nimmt zusätzliche Parameter entgegen — `sorted` und `reversed` — die Sortierung und Iterationsrichtung steuern.
+Die Bibliothek stellt die Methode [`eachSelected()`](api/methods/eachselected_method.md) zur Verfügung, um über alle ausgewählten Aufgaben zu iterieren. Die Methode nimmt zusätzliche Parameter entgegen, `sorted` und `reversed`, die Sortierung und Iterationsrichtung steuern.
 
 Das folgende Beispiel löscht alle ausgewählten Aufgaben:
 
@@ -145,12 +145,12 @@ list.eachSelected(id => {
 
 Über API-Methoden können folgende Massenoperationen für mehrere ausgewählte Aufgaben durchgeführt werden:
 
-- [`copyTask()`](api/methods/copytask_method.md) — Aufgaben kopieren
-- [`pasteTask()`](api/methods/pastetask_method.md) — Aufgaben einfügen
-- [`moveTask()`](api/methods/movetask_method.md) — Aufgaben verschieben
-- [`deleteTask()`](api/methods/deletetask_method.md) — Aufgaben löschen
-- [`checkTask()`](api/methods/checktask_method.md), [`uncheckTask()`](api/methods/unchecktask_method.md) — Aufgaben als erledigt oder unerledigt markieren
-- [`indentTask()`](api/methods/indenttask_method.md), [`unindentTask()`](api/methods/unindenttask_method.md) — Verschachtelungsebene von Aufgaben erhöhen oder verringern
+- [`copyTask()`](api/methods/copytask_method.md) - Aufgaben kopieren
+- [`pasteTask()`](api/methods/pastetask_method.md) - Aufgaben einfügen
+- [`moveTask()`](api/methods/movetask_method.md) - Aufgaben verschieben
+- [`deleteTask()`](api/methods/deletetask_method.md) - Aufgaben löschen
+- [`checkTask()`](api/methods/checktask_method.md), [`uncheckTask()`](api/methods/unchecktask_method.md) - Aufgaben als erledigt oder unerledigt markieren
+- [`indentTask()`](api/methods/indenttask_method.md), [`unindentTask()`](api/methods/unindenttask_method.md) - Verschachtelungsebene von Aufgaben erhöhen oder verringern
 
 ## Auswahl zurücksetzen {#reset-selection}
 

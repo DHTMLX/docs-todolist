@@ -40,8 +40,8 @@ console.log(list.getSelection()); // ["1.1", "1.2", "2.2"]
 
 초기화 이후 태스크를 선택하려면 [`selectTask()`](api/methods/selecttask_method.md) 메서드를 사용하세요. 이 메서드는 두 개의 파라미터를 받습니다:
 
-- `id` — 선택할 태스크의 id
-- `join` — 기존 선택에 태스크를 추가할지 여부
+- `id` - 선택할 태스크의 id
+- `join` - 기존 선택에 태스크를 추가할지 여부
 
 ### 태스크 하나 선택 {#select-one-task}
 
@@ -145,12 +145,12 @@ list.eachSelected(id => {
 
 API 메서드를 통해 선택된 여러 태스크에 대해 다음과 같은 일괄 작업을 수행할 수 있습니다:
 
-- [`copyTask()`](api/methods/copytask_method.md) — 태스크 복사
-- [`pasteTask()`](api/methods/pastetask_method.md) — 태스크 붙여넣기
-- [`moveTask()`](api/methods/movetask_method.md) — 태스크 이동
-- [`deleteTask()`](api/methods/deletetask_method.md) — 태스크 삭제
-- [`checkTask()`](api/methods/checktask_method.md), [`uncheckTask()`](api/methods/unchecktask_method.md) — 태스크를 완료 또는 미완료로 표시
-- [`indentTask()`](api/methods/indenttask_method.md), [`unindentTask()`](api/methods/unindenttask_method.md) — 태스크의 중첩 수준을 내리거나 올리기
+- [`copyTask()`](api/methods/copytask_method.md) - 태스크 복사
+- [`pasteTask()`](api/methods/pastetask_method.md) - 태스크 붙여넣기
+- [`moveTask()`](api/methods/movetask_method.md) - 태스크 이동
+- [`deleteTask()`](api/methods/deletetask_method.md) - 태스크 삭제
+- [`checkTask()`](api/methods/checktask_method.md), [`uncheckTask()`](api/methods/unchecktask_method.md) - 태스크를 완료 또는 미완료로 표시
+- [`indentTask()`](api/methods/indenttask_method.md), [`unindentTask()`](api/methods/unindenttask_method.md) - 태스크의 중첩 수준을 내리거나 올리기
 
 ## 선택 해제 {#reset-selection}
 

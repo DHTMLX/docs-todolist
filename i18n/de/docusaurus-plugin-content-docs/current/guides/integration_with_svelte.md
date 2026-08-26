@@ -75,8 +75,8 @@ Erstellen Sie eine Svelte-Komponente, um die To-Do-Liste mit der Toolbar in die 
 
 Öffnen Sie *ToDo.svelte* und importieren Sie die Quelldateien der To-Do-Liste. Wählen Sie einen der beiden Importpfade:
 
-- PRO-Version aus einem lokalen Ordner installiert — Import aus `dhx-todolist-package`
-- Testversion — Import aus `@dhx/trial-todolist`
+- PRO-Version aus einem lokalen Ordner installiert - Import aus `dhx-todolist-package`
+- Testversion - Import aus `@dhx/trial-todolist`
 
 Das folgende Beispiel importiert aus dem PRO-Paket:
 
@@ -320,7 +320,7 @@ const { users, tasks, projects } = getData();
 <ToDo {users} {tasks} {projects} />
 ~~~
 
-Starten Sie die App — die To-Do-Liste wird mit Beispieldaten gerendert:
+Starten Sie die App. Die To-Do-Liste wird mit Beispieldaten gerendert:
 
 ![In einer Svelte-Anwendung gerendertes DHTMLX To Do List mit Beispieldaten](/img/trial_todolist.png)
 

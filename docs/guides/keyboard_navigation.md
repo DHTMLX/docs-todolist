@@ -32,7 +32,7 @@ The following shortcuts work when the inline editor is **closed**.
 | <kbd>ArrowLeft</kbd> | Collapses an expanded parent task. If already collapsed or no children, moves selection to the parent |
 | <kbd>Shift</kbd>+<kbd>ArrowUp</kbd> | Extends selection to the task above. If that task is already selected, deselects it |
 | <kbd>Shift</kbd>+<kbd>ArrowDown</kbd> | Extends selection to the task below (including its children). If that task is already selected, deselects it |
-| <kbd>Ctrl(Cmd)</kbd>+<kbd>Click</kbd> / <kbd>Ctrl(Cmd)</kbd>+<kbd>Shift</kbd>+<kbd>Click</kbd> | Selects or deselects multiple tasks together with their children:<br/>• if the task has selected parents — deselects the task and its parents<br/>• if the task has selected children — deselects only the task itself |
+| <kbd>Ctrl(Cmd)</kbd>+<kbd>Click</kbd> / <kbd>Ctrl(Cmd)</kbd>+<kbd>Shift</kbd>+<kbd>Click</kbd> | Selects or deselects multiple tasks together with their children:<br/>• if the task has selected parents, deselects the task and its parents<br/>• if the task has selected children, deselects only the task itself |
 | <kbd>Shift</kbd>+<kbd>Click</kbd> | Selects a range of tasks between the currently selected task and the clicked task |
 
 :::info
@@ -47,8 +47,8 @@ To learn more about working with multiple selected tasks, see the [Multiselectio
 | <kbd>Ctrl(Cmd)</kbd>+<kbd>Enter</kbd> | Opens the inline editor for the selected task |
 | <kbd>Space</kbd> | Marks the selected task as complete. If already complete, marks it as incomplete |
 | <kbd>Delete</kbd> / <kbd>Backspace</kbd> | Removes the selected task. After removal, selection moves down to the next task, or up to the parent task if no next task exists |
-| <kbd>Tab</kbd> | Demotes the task — moves it one nesting level deeper |
-| <kbd>Shift</kbd>+<kbd>Tab</kbd> | Promotes the task — moves it one nesting level up |
+| <kbd>Tab</kbd> | Demotes the task, moving it one nesting level deeper |
+| <kbd>Shift</kbd>+<kbd>Tab</kbd> | Promotes the task, moving it one nesting level up |
 | <kbd>Ctrl</kbd>+<kbd>ArrowUp</kbd> | Moves the selected task up within the same level |
 | <kbd>Ctrl</kbd>+<kbd>ArrowDown</kbd> | Moves the selected task down within the same level |
 | <kbd>Ctrl(Cmd)</kbd>+<kbd>D</kbd> | Duplicates the selected task at the same level |
@@ -72,6 +72,6 @@ The following shortcuts work when the inline editor is **open**.
 
 ## Related articles
 
-- [`keypress-on-todo`](api/events/keypressontodo_event.md) event — intercept key presses and implement custom behavior
-- [Inline editing](guides/inline_editing.md) — learn how to manage the editor programmatically
-- [Multiselection](guides/multiselection.md) — work with multiple selected tasks
+- [`keypress-on-todo`](api/events/keypressontodo_event.md) event - intercept key presses and implement custom behavior
+- [Inline editing](guides/inline_editing.md) - learn how to manage the editor programmatically
+- [Multiselection](guides/multiselection.md) - work with multiple selected tasks

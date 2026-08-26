@@ -108,9 +108,9 @@ const list = new ToDo("#root", {
 
 订阅拖放事件以追踪拖放生命周期：
 
-- [`start-drag`](api/events/startdrag_event.md) — 当用户开始拖动任务时触发；提供源任务 id 和模式（`"move"` 或 `"copy"`）
-- [`drag`](api/events/drag_event.md) — 当用户拖动任务时持续触发
-- [`end-drag`](api/events/enddrag_event.md) — 拖放完成时触发；提供目标 id、放置位置（`"top"`、`"bottom"`、`"in"` 或 `null`）以及模式
+- [`start-drag`](api/events/startdrag_event.md) - 当用户开始拖动任务时触发；提供源任务 id 和模式（`"move"` 或 `"copy"`）
+- [`drag`](api/events/drag_event.md) - 当用户拖动任务时持续触发
+- [`end-drag`](api/events/enddrag_event.md) - 拖放完成时触发；提供目标 id、放置位置（`"top"`、`"bottom"`、`"in"` 或 `null`）以及模式
 
 以下代码片段记录拖放操作的开始和结束：
 
@@ -186,8 +186,8 @@ To Do List 默认追踪更改历史。用户可通过 [`undo()`](api/methods/und
 
 使用 [`history`](api/configs/history_config.md) 属性配置此行为。该属性接受布尔值（简写形式）或包含扩展设置的对象：
 
-- `projects` — 启用历史分支，使每个项目保留独立的历史记录；设置为 `false` 时，整个应用共享一个历史记录
-- `limit` — 保留的最大历史操作数量
+- `projects` - 启用历史分支，使每个项目保留独立的历史记录；设置为 `false` 时，整个应用共享一个历史记录
+- `limit` - 保留的最大历史操作数量
 
 以下示例将历史记录限制为 20 次操作并禁用按项目分支：
 

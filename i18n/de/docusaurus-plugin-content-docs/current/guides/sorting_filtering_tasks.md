@@ -10,8 +10,8 @@ description: In der Dokumentation der DHTMLX JavaScript To-Do-List-Bibliothek er
 
 Nach der Initialisierung können Sie Aufgaben auf eine von zwei Arten sortieren:
 
-- über die Option **Sortieren nach** im [Toolbar-Menü](/#toolbar) — Aufgaben nach *Text*, *Fälligkeitsdatum*, *Abschlussdatum*, *Erstellungsdatum* oder *Bearbeitungsdatum* sortieren
-- über die Methode [`setSort()`](api/methods/setsort_method.md) — eine benutzerdefinierte Sortierfunktion angeben oder nach einem [Aufgaben-Attribut](api/configs/tasks_config.md#parameters) sortieren
+- über die Option **Sortieren nach** im [Toolbar-Menü](/#toolbar) - Aufgaben nach *Text*, *Fälligkeitsdatum*, *Abschlussdatum*, *Erstellungsdatum* oder *Bearbeitungsdatum* sortieren
+- über die Methode [`setSort()`](api/methods/setsort_method.md) - eine benutzerdefinierte Sortierfunktion angeben oder nach einem [Aufgaben-Attribut](api/configs/tasks_config.md#parameters) sortieren
 
 Das folgende Beispiel sortiert Aufgaben nach ID in aufsteigender Reihenfolge:
 
@@ -28,7 +28,7 @@ list.setSort({
 Aufgaben können auf eine von zwei Arten gefiltert werden:
 
 - über die [Suchleiste](/#toolbar) der Toolbar
-- über die Methode [`setFilter()`](api/methods/setfilter_method.md) — unterstützt den *strict*-Modus für exakte Übereinstimmungen
+- über die Methode [`setFilter()`](api/methods/setfilter_method.md) - unterstützt den *strict*-Modus für exakte Übereinstimmungen
 
 Der folgende Code-Ausschnitt filtert Aufgaben nach einem bestimmten Hashtag im strict-Modus:
 

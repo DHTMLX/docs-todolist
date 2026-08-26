@@ -15,34 +15,34 @@ Das Widget wird mit dem integrierten [**Go**](https://github.com/web-widgets/tod
 
 Die To-Do-Liste stellt den `RestDataProvider`-Dienst bereit, der mit einem REST-Backend kommuniziert und folgende Datenoperationen verarbeitet:
 
-- `"add-task"` — eine Aufgabe hinzufügen
-- `"update-task"` — eine Aufgabe aktualisieren
-- `"delete-task"` — eine Aufgabe löschen
-- `"add-project"` — ein Projekt hinzufügen
-- `"update-project"` — ein Projekt aktualisieren
-- `"delete-project"` — ein Projekt löschen
-- `"set-project"` — das aktive Projekt festlegen
-- `"move-task"` — eine Aufgabe verschieben
-- `"clone-task"` — eine Aufgabe klonen
+- `"add-task"` - eine Aufgabe hinzufügen
+- `"update-task"` - eine Aufgabe aktualisieren
+- `"delete-task"` - eine Aufgabe löschen
+- `"add-project"` - ein Projekt hinzufügen
+- `"update-project"` - ein Projekt aktualisieren
+- `"delete-project"` - ein Projekt löschen
+- `"set-project"` - das aktive Projekt festlegen
+- `"move-task"` - eine Aufgabe verschieben
+- `"clone-task"` - eine Aufgabe klonen
 
 ## REST-Methoden {#rest-methods}
 
 Der `RestDataProvider`-Dienst enthält folgende REST-Methoden für das dynamische Laden von Daten:
 
-- [`getProjects()`](api/rest_api/methods/getprojects_method.md) — gibt ein Promise mit den **Projektdaten** zurück
-- [`getProjectTasks()`](api/rest_api/methods/getprojecttasks_method.md) — gibt ein Promise mit den **Aufgabendaten** des angegebenen `project` zurück
-- [`getTags()`](api/rest_api/methods/gettags_method.md) — gibt ein Promise mit der Liste der **Standard-Tags** zurück
-- [`getTasks()`](api/rest_api/methods/gettasks_method.md) — gibt ein Promise mit den **Aufgabendaten** zurück
-- [`getUsers()`](api/rest_api/methods/getusers_method.md) — gibt ein Promise mit den **Benutzerdaten** zurück
-- [`setAPI()`](api/rest_api/methods/setapi_method.md) — setzt die API der To-Do-List-Komponente in den RestDataProvider
-- [`send()`](api/rest_api/methods/send_method.md) — sendet eine Anfrage an den Server und gibt je nach Anfrage ein Promise mit oder ohne Daten zurück
+- [`getProjects()`](api/rest_api/methods/getprojects_method.md) - gibt ein Promise mit den **Projektdaten** zurück
+- [`getProjectTasks()`](api/rest_api/methods/getprojecttasks_method.md) - gibt ein Promise mit den **Aufgabendaten** des angegebenen `project` zurück
+- [`getTags()`](api/rest_api/methods/gettags_method.md) - gibt ein Promise mit der Liste der **Standard-Tags** zurück
+- [`getTasks()`](api/rest_api/methods/gettasks_method.md) - gibt ein Promise mit den **Aufgabendaten** zurück
+- [`getUsers()`](api/rest_api/methods/getusers_method.md) - gibt ein Promise mit den **Benutzerdaten** zurück
+- [`setAPI()`](api/rest_api/methods/setapi_method.md) - setzt die API der To-Do-List-Komponente in den RestDataProvider
+- [`send()`](api/rest_api/methods/send_method.md) - sendet eine Anfrage an den Server und gibt je nach Anfrage ein Promise mit oder ohne Daten zurück
 
 ## Mit dem Backend interagieren {#interact-with-the-backend}
 
 Um mit dem Server zu interagieren, verbinden Sie `RestDataProvider` mit den Server-Skripten. Das integrierte Backend ist in zwei Repositories verfügbar:
 
-- [**Go**](https://github.com/web-widgets/todo-go) — Go-Backend
-- [**Node**](https://github.com/web-widgets/todo-node) — Node.js-Backend
+- [**Go**](https://github.com/web-widgets/todo-go) - Go-Backend
+- [**Node**](https://github.com/web-widgets/todo-node) - Node.js-Backend
 
 Sie können auch ein eigenes Backend erstellen.
 
@@ -92,7 +92,7 @@ Der folgende Code-Ausschnitt verbindet `RestDataProvider` mit dem Backend und l�
 
 ## Mehrbenutzer-Backend {#multiuser-backend}
 
-Die Mehrbenutzer-Funktion ermöglicht es mehreren Benutzern, dieselben Aufgaben in Echtzeit zu verwalten — ohne Seitenaktualisierungen. Änderungen anderer Benutzer sind sofort sichtbar.
+Die Mehrbenutzer-Funktion ermöglicht es mehreren Benutzern, dieselben Aufgaben in Echtzeit und ohne Seitenaktualisierungen zu verwalten. Änderungen anderer Benutzer sind sofort sichtbar.
 
 Vor der Initialisierung der To-Do-Liste müssen Sie sich auf dem Server authentifizieren. Das folgende Beispiel definiert eine `login()`-Funktion:
 
@@ -230,7 +230,7 @@ Die Methode `RestDataProvider.getIDResolver()` gibt eine Funktion zurück, die C
 
 Das Argument `type` ist der Modelltyp und nimmt folgende Werte an:
 
-- `TaskID` — `1`
-- `ProjID` — `2`
+- `TaskID` - `1`
+- `ProjID` - `2`
 
 Um zu verhindern, dass die Anfrage an den Server gesendet wird, übergeben Sie das Flag `skipProvider: true` an die Methode `todoInstance.api.exec()`.

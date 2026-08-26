@@ -68,8 +68,8 @@ Create a React component to add the To Do List with the Toolbar into the applica
 
 Open *ToDo.jsx* and import the To Do List source files. Choose one of two import paths:
 
-- PRO version installed from a local folder — import from `dhx-todolist-package`
-- trial version — import from `@dhx/trial-todolist`
+- PRO version installed from a local folder - import from `dhx-todolist-package`
+- trial version - import from `@dhx/trial-todolist`
 
 The example below imports from the PRO package:
 
@@ -330,7 +330,7 @@ function App() {
 export default App;
 ~~~
 
-Start the app — the To Do List renders with sample data:
+Start the app. The To Do List renders with sample data:
 
 ![DHTMLX To Do List rendered in a React application with sample data](/img/trial_todolist.png)
 

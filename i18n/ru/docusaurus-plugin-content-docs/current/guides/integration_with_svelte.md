@@ -75,8 +75,8 @@ npm run dev
 
 Откройте *ToDo.svelte* и импортируйте исходные файлы To Do List. Выберите один из двух путей импорта:
 
-- PRO-версия, установленная из локальной папки — импорт из `dhx-todolist-package`
-- пробная версия — импорт из `@dhx/trial-todolist`
+- PRO-версия, установленная из локальной папки - импорт из `dhx-todolist-package`
+- пробная версия - импорт из `@dhx/trial-todolist`
 
 Пример ниже импортирует из PRO-пакета:
 
@@ -320,7 +320,7 @@ const { users, tasks, projects } = getData();
 <ToDo {users} {tasks} {projects} />
 ~~~
 
-Запустите приложение — To Do List отобразится с тестовыми данными:
+Запустите приложение. To Do List отобразится с тестовыми данными:
 
 ![DHTMLX To Do List, отрендеренный в приложении Svelte с демонстрационными данными](/img/trial_todolist.png)
 

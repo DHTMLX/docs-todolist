@@ -117,7 +117,7 @@ const en = {
 
 So initialisieren Sie die To Do List-Komponente in einer anderen Sprache als Englisch:
 
-- Definieren Sie die Spracheinstellungen — stellen Sie Übersetzungen für alle Textbezeichnungen bereit
+- Definieren Sie die Spracheinstellungen, indem Sie Übersetzungen für alle Textbezeichnungen bereitstellen
 - Wenden Sie das Locale auf die To Do List-Komponente und die Toolbar über die Konfigurationseigenschaft `locale` an
 
 Das folgende Beispiel deklariert ein Deutsches Locale-Objekt:
@@ -150,7 +150,7 @@ Um ein benutzerdefiniertes Locale zu erstellen, kopieren Sie das [Standard-Engli
 - Russisch (`ru`)
 - Spanisch (`es`)
 
-Die Dateien enthalten keine Übersetzungen für die Kalenderbezeichnungen — fügen Sie diese selbst hinzu.
+Die Dateien enthalten keine Übersetzungen für die Kalenderbezeichnungen, fügen Sie diese daher selbst hinzu.
 :::
 
 Der folgende Code-Ausschnitt wendet das `de`-Locale auf die To Do List und die Toolbar an:

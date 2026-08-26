@@ -26,7 +26,7 @@ Use hashtags to categorize tasks and make them more searchable. Follow these rul
 
 - a hashtag combines the `#` symbol with letters and numbers (for example, `#sport`)
 - to create a hashtag, enter `#` followed by at least one symbol (for example, `#t`) and press Enter
-- the To Do List supports an unlimited number of hashtags — separate them by spaces (for example, `#tag #tag1`)
+- the To Do List supports an unlimited number of hashtags, separated by spaces (for example, `#tag #tag1`)
 - all hashtags are accessible in all projects
 - to view the list of hashtags, enter the `#` symbol
 - to add a hashtag to a task, click it in the list
@@ -38,7 +38,7 @@ Create a default list of tags through the [`tags`](api/configs/tags_config.md) p
 
 ### Dates
 
-To enter a date through the inline editor, type the `!` symbol — the built-in date picker appears on the page.
+To enter a date through the inline editor, type the `!` symbol. The built-in date picker appears on the page.
 
 You can also wrap text in the special symbols `!()`. For example, type `!(Enter Booking date)` and press Enter to close the editor. Click this text later to reopen the date picker.
 

@@ -108,9 +108,9 @@ const list = new ToDo("#root", {
 
 Abonnieren Sie Drag-Events, um den Drag-n-Drop-Lebenszyklus zu verfolgen:
 
-- [`start-drag`](api/events/startdrag_event.md) — wird ausgelöst, wenn der Benutzer Aufgaben zu ziehen beginnt; liefert die Quell-Aufgaben-ID und den Modus (`"move"` oder `"copy"`)
-- [`drag`](api/events/drag_event.md) — wird ausgelöst, während der Benutzer Aufgaben zieht
-- [`end-drag`](api/events/enddrag_event.md) — wird ausgelöst, wenn das Ziehen abgeschlossen ist; liefert die Ziel-ID, die Ablageposition (`"top"`, `"bottom"`, `"in"` oder `null`) und den Modus
+- [`start-drag`](api/events/startdrag_event.md) - wird ausgelöst, wenn der Benutzer Aufgaben zu ziehen beginnt; liefert die Quell-Aufgaben-ID und den Modus (`"move"` oder `"copy"`)
+- [`drag`](api/events/drag_event.md) - wird ausgelöst, während der Benutzer Aufgaben zieht
+- [`end-drag`](api/events/enddrag_event.md) - wird ausgelöst, wenn das Ziehen abgeschlossen ist; liefert die Ziel-ID, die Ablageposition (`"top"`, `"bottom"`, `"in"` oder `null`) und den Modus
 
 Der folgende Ausschnitt protokolliert Beginn und Ende einer Ziehoperation:
 
@@ -186,8 +186,8 @@ Die To Do List verfolgt den Änderungsverlauf standardmäßig. Benutzer können 
 
 Verwenden Sie die Eigenschaft [`history`](api/configs/history_config.md), um dieses Verhalten zu konfigurieren. Die Eigenschaft akzeptiert einen booleschen Wert (Kurzform) oder ein Objekt mit erweiterten Einstellungen:
 
-- `projects` — Verzweigung des Verlaufs aktivieren, sodass jedes Projekt einen separaten Verlauf führt; wenn auf `false` gesetzt, teilt die gesamte App einen gemeinsamen Verlauf
-- `limit` — maximale Anzahl der zu speichernden Verlaufsoperationen
+- `projects` - Verzweigung des Verlaufs aktivieren, sodass jedes Projekt einen separaten Verlauf führt; wenn auf `false` gesetzt, teilt die gesamte App einen gemeinsamen Verlauf
+- `limit` - maximale Anzahl der zu speichernden Verlaufsoperationen
 
 Das folgende Beispiel begrenzt den Verlauf auf 20 Operationen und deaktiviert die projektbezogene Verzweigung:
 

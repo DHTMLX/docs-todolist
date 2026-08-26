@@ -118,4 +118,4 @@ The snippet below applies a custom style to the To Do List:
 
 ## Related articles
 
-- [Customization](guides/customization.md) — overview of available customization options
+- [Customization](guides/customization.md) - overview of available customization options

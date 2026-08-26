@@ -15,34 +15,34 @@ DHTMLX To Do List 同时支持客户端和服务器端数据。该 widget 对后
 
 To Do List 提供了 `RestDataProvider` 服务，用于与 REST 后端通信并处理以下数据操作：
 
-- `"add-task"` — 添加任务
-- `"update-task"` — 更新任务
-- `"delete-task"` — 删除任务
-- `"add-project"` — 添加项目
-- `"update-project"` — 更新项目
-- `"delete-project"` — 删除项目
-- `"set-project"` — 设置活跃项目
-- `"move-task"` — 移动任务
-- `"clone-task"` — 克隆任务
+- `"add-task"` - 添加任务
+- `"update-task"` - 更新任务
+- `"delete-task"` - 删除任务
+- `"add-project"` - 添加项目
+- `"update-project"` - 更新项目
+- `"delete-project"` - 删除项目
+- `"set-project"` - 设置活跃项目
+- `"move-task"` - 移动任务
+- `"clone-task"` - 克隆任务
 
 ## REST 方法 {#rest-methods}
 
 `RestDataProvider` 服务提供以下 REST 方法，用于动态加载数据：
 
-- [`getProjects()`](api/rest_api/methods/getprojects_method.md) — 获取包含**项目数据**的 Promise
-- [`getProjectTasks()`](api/rest_api/methods/getprojecttasks_method.md) — 获取指定 `project` 的**任务数据**的 Promise
-- [`getTags()`](api/rest_api/methods/gettags_method.md) — 获取包含**默认标签**列表的 Promise
-- [`getTasks()`](api/rest_api/methods/gettasks_method.md) — 获取包含**任务数据**的 Promise
-- [`getUsers()`](api/rest_api/methods/getusers_method.md) — 获取包含**用户数据**的 Promise
-- [`setAPI()`](api/rest_api/methods/setapi_method.md) — 将 To Do List 组件的 API 设置到 RestDataProvider 中
-- [`send()`](api/rest_api/methods/send_method.md) — 向服务器发送请求，并根据请求类型返回包含或不包含数据的 Promise
+- [`getProjects()`](api/rest_api/methods/getprojects_method.md) - 获取包含**项目数据**的 Promise
+- [`getProjectTasks()`](api/rest_api/methods/getprojecttasks_method.md) - 获取指定 `project` 的**任务数据**的 Promise
+- [`getTags()`](api/rest_api/methods/gettags_method.md) - 获取包含**默认标签**列表的 Promise
+- [`getTasks()`](api/rest_api/methods/gettasks_method.md) - 获取包含**任务数据**的 Promise
+- [`getUsers()`](api/rest_api/methods/getusers_method.md) - 获取包含**用户数据**的 Promise
+- [`setAPI()`](api/rest_api/methods/setapi_method.md) - 将 To Do List 组件的 API 设置到 RestDataProvider 中
+- [`send()`](api/rest_api/methods/send_method.md) - 向服务器发送请求，并根据请求类型返回包含或不包含数据的 Promise
 
 ## 与后端交互 {#interact-with-the-backend}
 
 要与服务器交互，需将 `RestDataProvider` 连接到服务器脚本。内置后端可在以下两个仓库中获取：
 
-- [**Go**](https://github.com/web-widgets/todo-go) — Go 后端
-- [**Node**](https://github.com/web-widgets/todo-node) — Node.js 后端
+- [**Go**](https://github.com/web-widgets/todo-go) - Go 后端
+- [**Node**](https://github.com/web-widgets/todo-node) - Node.js 后端
 
 您也可以创建自定义后端。
 
@@ -230,7 +230,7 @@ remoteEvents.on(handlers);
 
 `type` 参数表示模型类型，取以下值：
 
-- `TaskID` — `1`
-- `ProjID` — `2`
+- `TaskID` - `1`
+- `ProjID` - `2`
 
 要阻止向服务器发送请求，在 `todoInstance.api.exec()` 方法中传入 `skipProvider: true` 标志。

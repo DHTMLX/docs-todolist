@@ -29,9 +29,9 @@ list.addTask({
 
 작업을 복사하고 붙여넣는 가장 빠른 방법은 [`copyTask()`](api/methods/copytask_method.md) 메서드입니다. 다음 매개변수를 전달합니다.
 
-- `id` — 복사하여 붙여넣을 작업의 id
-- `project` — 대상 프로젝트가 존재하는 경우 그 id
-- `targetId` — 복사된 작업을 붙여넣을 대상 작업의 id
+- `id` - 복사하여 붙여넣을 작업의 id
+- `project` - 대상 프로젝트가 존재하는 경우 그 id
+- `targetId` - 복사된 작업을 붙여넣을 대상 작업의 id
 - 기타 매개변수는 선택 사항
 
 아래 코드는 작업을 새 프로젝트로 복사합니다.
@@ -140,8 +140,8 @@ list.expandTask({ id: "1.1" });
 
 각 작업과 사용자에는 컨텍스트 메뉴가 있습니다. 다음 두 이벤트로 메뉴 활동을 추적할 수 있습니다.
 
-- [`open-menu`](api/events/openmenu_event.md) — 메뉴가 열릴 때 발생합니다. 항목 id, 메뉴 유형, 그리고 배치 작업을 위한 작업 id 배열(`source`)을 제공합니다.
-- [`close-menu`](api/events/closemenu_event.md) — 메뉴가 닫힐 때 발생합니다. 항목 id와 메뉴 유형을 제공합니다.
+- [`open-menu`](api/events/openmenu_event.md) - 메뉴가 열릴 때 발생합니다. 항목 id, 메뉴 유형, 그리고 배치 작업을 위한 작업 id 배열(`source`)을 제공합니다.
+- [`close-menu`](api/events/closemenu_event.md) - 메뉴가 닫힐 때 발생합니다. 항목 id와 메뉴 유형을 제공합니다.
 
 아래 예제는 메뉴 생명주기 이벤트를 로깅합니다.
 
@@ -193,8 +193,8 @@ list.uncheckTask({
 
 다음 메서드를 사용하여 작업의 중첩 수준을 동적으로 변경합니다.
 
-- [`indentTask()`](api/methods/indenttask_method.md) — 작업의 중첩 수준을 한 단계 낮춥니다.
-- [`unindentTask()`](api/methods/unindenttask_method.md) — 작업의 중첩 수준을 한 단계 높입니다.
+- [`indentTask()`](api/methods/indenttask_method.md) - 작업의 중첩 수준을 한 단계 낮춥니다.
+- [`unindentTask()`](api/methods/unindenttask_method.md) - 작업의 중첩 수준을 한 단계 높입니다.
 
 아래 코드는 작업을 한 단계 더 깊이 내립니다.
 
