@@ -117,7 +117,7 @@ const en = {
 
 To initialize the To Do List component in a non-English language:
 
-- define the language settings — provide translations for all text labels
+- define the language settings by providing translations for all text labels
 - apply the locale to the To Do List component and its Toolbar through the `locale` configuration property
 
 The example below declares a German locale object:
@@ -150,7 +150,7 @@ To create a custom locale, copy the [default English locale](#default-locale) an
 - Russian (`ru`)
 - Spanish (`es`)
 
-The files do not include translations for the Calendar labels — add them yourself.
+The files do not include translations for the Calendar labels, so add them yourself.
 :::
 
 The snippet below applies the `de` locale to the To Do List and the Toolbar:

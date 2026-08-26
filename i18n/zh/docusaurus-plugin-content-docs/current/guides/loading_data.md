@@ -10,12 +10,12 @@ description: 您可以在 DHTMLX JavaScript To Do List 库的文档中了解加�
 
 DHTMLX To Do List 通过以下配置属性接受各类数据：
 
-- [`tasks`](api/configs/tasks_config.md) — 任务列表
-- [`projects`](api/configs/projects_config.md) — 项目列表
-- [`users`](api/configs/users_config.md) — 用户列表
-- [`priorities`](api/configs/priorities_config.md) — 优先级列表
-- [`tags`](api/configs/tags_config.md) — 标签列表
-- [`activeProject`](api/configs/activeproject_config.md) — 当前活动项目的 id
+- [`tasks`](api/configs/tasks_config.md) - 任务列表
+- [`projects`](api/configs/projects_config.md) - 项目列表
+- [`users`](api/configs/users_config.md) - 用户列表
+- [`priorities`](api/configs/priorities_config.md) - 优先级列表
+- [`tags`](api/configs/tags_config.md) - 标签列表
+- [`activeProject`](api/configs/activeproject_config.md) - 当前活动项目的 id
 
 将数据准备在单独的文件中。以下示例返回包含任务、项目、用户和优先级的数据集：
 

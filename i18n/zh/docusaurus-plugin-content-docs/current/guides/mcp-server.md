@@ -51,7 +51,7 @@ DHTMLX MCP 服务器覆盖所有主要的 DHTMLX 产品，而不仅仅是 DHTMLX
 
 ## 配置 MCP 连接 {#setting-up-the-mcp-connection}
 
-无论是搭建全新的 To Do List 项目，还是接入现有的 `RestDataProvider` 后端，起步方式都是一样的：把您的工具指向下面这个 URL——具体使用 CLI 命令还是 JSON 配置项，取决于该工具的要求。
+无论是搭建全新的 To Do List 项目，还是接入现有的 `RestDataProvider` 后端，起步方式都是一样的：把您的工具指向下面这个 URL，具体使用 CLI 命令还是 JSON 配置项，取决于该工具的要求。
 
 ~~~jsx
 https://docs.dhtmlx.com/mcp

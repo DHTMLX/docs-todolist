@@ -118,4 +118,4 @@ description: 您可以在 DHTMLX JavaScript To Do List 库的文档中了解 To 
 
 ## 相关文章 {#related-articles}
 
-- [自定义](guides/customization.md) — 可用自定义选项概览
+- [自定义](guides/customization.md) - 可用自定义选项概览

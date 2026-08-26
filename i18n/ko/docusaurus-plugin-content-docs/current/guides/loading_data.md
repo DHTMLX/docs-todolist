@@ -10,12 +10,12 @@ description: DHTMLX JavaScript To Do List 라이브러리 문서에서 데이터
 
 DHTMLX To Do List는 구성 속성을 통해 다음 유형의 데이터를 허용합니다:
 
-- [`tasks`](api/configs/tasks_config.md) — 작업 목록
-- [`projects`](api/configs/projects_config.md) — 프로젝트 목록
-- [`users`](api/configs/users_config.md) — 사용자 목록
-- [`priorities`](api/configs/priorities_config.md) — 우선순위 목록
-- [`tags`](api/configs/tags_config.md) — 태그 목록
-- [`activeProject`](api/configs/activeproject_config.md) — 활성 프로젝트의 id
+- [`tasks`](api/configs/tasks_config.md) - 작업 목록
+- [`projects`](api/configs/projects_config.md) - 프로젝트 목록
+- [`users`](api/configs/users_config.md) - 사용자 목록
+- [`priorities`](api/configs/priorities_config.md) - 우선순위 목록
+- [`tags`](api/configs/tags_config.md) - 태그 목록
+- [`activeProject`](api/configs/activeproject_config.md) - 활성 프로젝트의 id
 
 별도의 파일에 데이터를 준비합니다. 아래 예제는 tasks, projects, users, priorities가 포함된 데이터셋을 반환합니다:
 

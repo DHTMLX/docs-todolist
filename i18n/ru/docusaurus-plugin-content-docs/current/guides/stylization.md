@@ -118,4 +118,4 @@ description: Вы можете узнать о стилизации To Do List �
 
 ## Связанные статьи {#related-articles}
 
-- [Кастомизация](guides/customization.md) — обзор доступных вариантов кастомизации
+- [Кастомизация](guides/customization.md) - обзор доступных вариантов кастомизации

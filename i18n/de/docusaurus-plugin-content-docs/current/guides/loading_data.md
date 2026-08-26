@@ -10,12 +10,12 @@ description: In der Dokumentation der DHTMLX JavaScript To-Do-List-Bibliothek er
 
 DHTMLX To Do List akzeptiert über seine Konfigurationseigenschaften folgende Datentypen:
 
-- [`tasks`](api/configs/tasks_config.md) — Liste der Aufgaben
-- [`projects`](api/configs/projects_config.md) — Liste der Projekte
-- [`users`](api/configs/users_config.md) — Liste der Benutzer
-- [`priorities`](api/configs/priorities_config.md) — Liste der Prioritäten
-- [`tags`](api/configs/tags_config.md) — Liste der Tags
-- [`activeProject`](api/configs/activeproject_config.md) — ID des aktiven Projekts
+- [`tasks`](api/configs/tasks_config.md) - Liste der Aufgaben
+- [`projects`](api/configs/projects_config.md) - Liste der Projekte
+- [`users`](api/configs/users_config.md) - Liste der Benutzer
+- [`priorities`](api/configs/priorities_config.md) - Liste der Prioritäten
+- [`tags`](api/configs/tags_config.md) - Liste der Tags
+- [`activeProject`](api/configs/activeproject_config.md) - ID des aktiven Projekts
 
 Bereiten Sie die Daten in einer separaten Datei vor. Das folgende Beispiel gibt einen Datensatz mit Aufgaben, Projekten, Benutzern und Prioritäten zurück:
 

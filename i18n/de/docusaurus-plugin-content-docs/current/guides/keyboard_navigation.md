@@ -32,7 +32,7 @@ Die folgenden Tastenkürzel funktionieren, wenn der Inline-Editor **geschlossen*
 | <kbd>ArrowLeft</kbd> | Klappt eine aufgeklappte übergeordnete Aufgabe ein. Falls bereits eingeklappt oder keine Unteraufgaben vorhanden, verschiebt die Auswahl zur übergeordneten Aufgabe |
 | <kbd>Shift</kbd>+<kbd>ArrowUp</kbd> | Erweitert die Auswahl auf die Aufgabe darüber. Falls diese Aufgabe bereits ausgewählt ist, wird sie abgewählt |
 | <kbd>Shift</kbd>+<kbd>ArrowDown</kbd> | Erweitert die Auswahl auf die Aufgabe darunter (einschließlich ihrer Unteraufgaben). Falls diese Aufgabe bereits ausgewählt ist, wird sie abgewählt |
-| <kbd>Ctrl(Cmd)</kbd>+<kbd>Click</kbd> / <kbd>Ctrl(Cmd)</kbd>+<kbd>Shift</kbd>+<kbd>Click</kbd> | Wählt mehrere Aufgaben zusammen mit ihren Unteraufgaben aus oder ab:<br/>• Falls die Aufgabe ausgewählte übergeordnete Aufgaben hat — wählt die Aufgabe und ihre übergeordneten Aufgaben ab<br/>• Falls die Aufgabe ausgewählte Unteraufgaben hat — wählt nur die Aufgabe selbst ab |
+| <kbd>Ctrl(Cmd)</kbd>+<kbd>Click</kbd> / <kbd>Ctrl(Cmd)</kbd>+<kbd>Shift</kbd>+<kbd>Click</kbd> | Wählt mehrere Aufgaben zusammen mit ihren Unteraufgaben aus oder ab:<br/>• Falls die Aufgabe ausgewählte übergeordnete Aufgaben hat, wählt sie die Aufgabe und ihre übergeordneten Aufgaben ab<br/>• Falls die Aufgabe ausgewählte Unteraufgaben hat, wählt sie nur die Aufgabe selbst ab |
 | <kbd>Shift</kbd>+<kbd>Click</kbd> | Wählt einen Bereich von Aufgaben zwischen der aktuell ausgewählten Aufgabe und der angeklickten Aufgabe aus |
 
 :::info
@@ -47,8 +47,8 @@ Weitere Informationen zur Arbeit mit mehreren ausgewählten Aufgaben finden Sie 
 | <kbd>Ctrl(Cmd)</kbd>+<kbd>Enter</kbd> | Öffnet den Inline-Editor für die ausgewählte Aufgabe |
 | <kbd>Space</kbd> | Markiert die ausgewählte Aufgabe als abgeschlossen. Falls bereits abgeschlossen, wird sie als nicht abgeschlossen markiert |
 | <kbd>Delete</kbd> / <kbd>Backspace</kbd> | Entfernt die ausgewählte Aufgabe. Nach dem Entfernen verschiebt sich die Auswahl zur nächsten Aufgabe nach unten oder zur übergeordneten Aufgabe, falls keine nächste Aufgabe vorhanden ist |
-| <kbd>Tab</kbd> | Stuft die Aufgabe herab — verschiebt sie eine Hierarchieebene tiefer |
-| <kbd>Shift</kbd>+<kbd>Tab</kbd> | Stuft die Aufgabe herauf — verschiebt sie eine Hierarchieebene höher |
+| <kbd>Tab</kbd> | Stuft die Aufgabe herab und verschiebt sie eine Hierarchieebene tiefer |
+| <kbd>Shift</kbd>+<kbd>Tab</kbd> | Stuft die Aufgabe herauf und verschiebt sie eine Hierarchieebene höher |
 | <kbd>Ctrl</kbd>+<kbd>ArrowUp</kbd> | Verschiebt die ausgewählte Aufgabe innerhalb derselben Ebene nach oben |
 | <kbd>Ctrl</kbd>+<kbd>ArrowDown</kbd> | Verschiebt die ausgewählte Aufgabe innerhalb derselben Ebene nach unten |
 | <kbd>Ctrl(Cmd)</kbd>+<kbd>D</kbd> | Dupliziert die ausgewählte Aufgabe auf derselben Ebene |
@@ -72,6 +72,6 @@ Die folgenden Tastenkürzel funktionieren, wenn der Inline-Editor **geöffnet** 
 
 ## Verwandte Artikel {#related-articles}
 
-- [`keypress-on-todo`](api/events/keypressontodo_event.md)-Event — Tastendrücke abfangen und benutzerdefiniertes Verhalten implementieren
-- [Inline-Bearbeitung](guides/inline_editing.md) — erfahren Sie, wie Sie den Editor programmgesteuert steuern
-- [Mehrfachauswahl](guides/multiselection.md) — mit mehreren ausgewählten Aufgaben arbeiten
+- [`keypress-on-todo`](api/events/keypressontodo_event.md)-Event - Tastendrücke abfangen und benutzerdefiniertes Verhalten implementieren
+- [Inline-Bearbeitung](guides/inline_editing.md) - erfahren Sie, wie Sie den Editor programmgesteuert steuern
+- [Mehrfachauswahl](guides/multiselection.md) - mit mehreren ausgewählten Aufgaben arbeiten

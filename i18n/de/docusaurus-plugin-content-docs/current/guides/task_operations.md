@@ -29,9 +29,9 @@ list.addTask({
 
 Die schnellste Möglichkeit, eine Aufgabe zu kopieren und einzufügen, bietet die Methode [`copyTask()`](api/methods/copytask_method.md). Übergeben Sie die folgenden Parameter:
 
-- `id` — ID der zu kopierenden Aufgabe
-- `project` — ID des Zielprojekts, sofern vorhanden
-- `targetId` — ID der Zielaufgabe, an der die kopierte Aufgabe eingefügt wird
+- `id` - ID der zu kopierenden Aufgabe
+- `project` - ID des Zielprojekts, sofern vorhanden
+- `targetId` - ID der Zielaufgabe, an der die kopierte Aufgabe eingefügt wird
 - weitere Parameter sind optional
 
 Der folgende Code-Ausschnitt kopiert eine Aufgabe in ein neues Projekt:
@@ -65,7 +65,7 @@ Um eine Aufgabe zu kopieren und zuvor kopierte Aufgaben beizubehalten, übergebe
 
 ### Aus der Zwischenablage einfügen
 
-Fügen Sie eine kopierte Aufgabe aus der Zwischenablage an der gewünschten Stelle ein — über die Methode [`pasteTask()`](api/methods/pastetask_method.md). Der folgende Code-Ausschnitt fügt die kopierte Aufgabe neben einer Zielaufgabe ein:
+Fügen Sie eine kopierte Aufgabe aus der Zwischenablage über die Methode [`pasteTask()`](api/methods/pastetask_method.md) an der gewünschten Stelle ein. Der folgende Code-Ausschnitt fügt die kopierte Aufgabe neben einer Zielaufgabe ein:
 
 ~~~js
 list.pasteTask({ 
@@ -140,8 +140,8 @@ list.expandTask({ id: "1.1" });
 
 Jede Aufgabe und jeder Benutzer verfügt über ein Kontextmenü. Verfolgen Sie dessen Aktivität mit zwei Ereignissen:
 
-- [`open-menu`](api/events/openmenu_event.md) — wird ausgelöst, wenn das Menü geöffnet wird; liefert die Element-ID, den Menütyp und optional ein Array von Aufgaben-IDs (`source`) für Batch-Operationen
-- [`close-menu`](api/events/closemenu_event.md) — wird ausgelöst, wenn das Menü geschlossen wird; liefert die Element-ID und den Menütyp
+- [`open-menu`](api/events/openmenu_event.md) - wird ausgelöst, wenn das Menü geöffnet wird; liefert die Element-ID, den Menütyp und optional ein Array von Aufgaben-IDs (`source`) für Batch-Operationen
+- [`close-menu`](api/events/closemenu_event.md) - wird ausgelöst, wenn das Menü geschlossen wird; liefert die Element-ID und den Menütyp
 
 Das folgende Beispiel protokolliert die Lebenszyklusereignisse des Menüs:
 
@@ -159,7 +159,7 @@ list.api.on("close-menu", ({ id, type }) => {
 
 ## Eine Aufgabe als abgeschlossen oder offen markieren {#marking-a-task-completeincomplete}
 
-Markieren Sie eine Aufgabe als abgeschlossen oder offen — über die Methoden [`checkTask()`](api/methods/checktask_method.md) und [`uncheckTask()`](api/methods/unchecktask_method.md). Das folgende Beispiel zeigt beide Aufrufe:
+Markieren Sie eine Aufgabe über die Methoden [`checkTask()`](api/methods/checktask_method.md) und [`uncheckTask()`](api/methods/unchecktask_method.md) als abgeschlossen oder offen. Das folgende Beispiel zeigt beide Aufrufe:
 
 ~~~js
 list.checkTask({ 
@@ -193,8 +193,8 @@ list.uncheckTask({
 
 Ändern Sie die Verschachtelungsebene einer Aufgabe dynamisch mit folgenden Methoden:
 
-- [`indentTask()`](api/methods/indenttask_method.md) — Verschachtelungsebene einer Aufgabe um eine Ebene nach unten verschieben
-- [`unindentTask()`](api/methods/unindenttask_method.md) — Verschachtelungsebene einer Aufgabe um eine Ebene nach oben verschieben
+- [`indentTask()`](api/methods/indenttask_method.md) - Verschachtelungsebene einer Aufgabe um eine Ebene nach unten verschieben
+- [`unindentTask()`](api/methods/unindenttask_method.md) - Verschachtelungsebene einer Aufgabe um eine Ebene nach oben verschieben
 
 Der folgende Code-Ausschnitt verschiebt eine Aufgabe eine Ebene tiefer:
 

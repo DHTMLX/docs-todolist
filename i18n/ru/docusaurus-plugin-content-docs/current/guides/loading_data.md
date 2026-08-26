@@ -10,12 +10,12 @@ description: Вы можете узнать о загрузке и хранен�
 
 DHTMLX To Do List принимает следующие типы данных через свойства конфигурации:
 
-- [`tasks`](api/configs/tasks_config.md) — список задач
-- [`projects`](api/configs/projects_config.md) — список проектов
-- [`users`](api/configs/users_config.md) — список пользователей
-- [`priorities`](api/configs/priorities_config.md) — список приоритетов
-- [`tags`](api/configs/tags_config.md) — список тегов
-- [`activeProject`](api/configs/activeproject_config.md) — идентификатор активного проекта
+- [`tasks`](api/configs/tasks_config.md) - список задач
+- [`projects`](api/configs/projects_config.md) - список проектов
+- [`users`](api/configs/users_config.md) - список пользователей
+- [`priorities`](api/configs/priorities_config.md) - список приоритетов
+- [`tags`](api/configs/tags_config.md) - список тегов
+- [`activeProject`](api/configs/activeproject_config.md) - идентификатор активного проекта
 
 Подготовьте данные в отдельном файле. Пример ниже возвращает набор данных с задачами, проектами, пользователями и приоритетами:
 

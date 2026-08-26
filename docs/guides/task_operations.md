@@ -29,9 +29,9 @@ list.addTask({
 
 The quickest way to copy and paste a task is the [`copyTask()`](api/methods/copytask_method.md) method. Pass the following parameters:
 
-- `id` — id of the task to copy and paste
-- `project` — id of the target project, if it exists
-- `targetId` — id of the target task where the copied task is pasted
+- `id` - id of the task to copy and paste
+- `project` - id of the target project, if it exists
+- `targetId` - id of the target task where the copied task is pasted
 - other parameters are optional
 
 The snippet below copies a task into a new project:
@@ -140,8 +140,8 @@ list.expandTask({ id: "1.1" });
 
 Each task and user has a context menu. Track its activity with two events:
 
-- [`open-menu`](api/events/openmenu_event.md) — fires when the menu opens; provides the item id, the menu type, and optionally an array of task ids (`source`) for batch operations
-- [`close-menu`](api/events/closemenu_event.md) — fires when the menu closes; provides the item id and the menu type
+- [`open-menu`](api/events/openmenu_event.md) - fires when the menu opens; provides the item id, the menu type, and optionally an array of task ids (`source`) for batch operations
+- [`close-menu`](api/events/closemenu_event.md) - fires when the menu closes; provides the item id and the menu type
 
 The example below logs menu lifecycle events:
 
@@ -193,8 +193,8 @@ list.uncheckTask({
 
 Change the nesting level of a task dynamically through the following methods:
 
-- [`indentTask()`](api/methods/indenttask_method.md) — demote the nesting level of a task by one
-- [`unindentTask()`](api/methods/unindenttask_method.md) — promote the nesting level of a task by one
+- [`indentTask()`](api/methods/indenttask_method.md) - demote the nesting level of a task by one
+- [`unindentTask()`](api/methods/unindenttask_method.md) - promote the nesting level of a task by one
 
 The snippet below demotes a task one level deeper:
 

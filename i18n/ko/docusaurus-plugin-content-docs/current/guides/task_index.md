@@ -10,7 +10,7 @@ description: DHTMLX JavaScript To Do List 라이브러리 문서에서 작업 �
 작업을 구성하려면 To Do List의 [`tasks`](api/configs/tasks_config.md) 속성을 사용하세요.
 :::
 
-이 가이드는 작업에 대한 To Do List API를 다룹니다 — 작업 객체 가져오기, 작업 계층 구조 탐색, CRUD 작업 실행, 다중 선택된 작업 관리.
+이 가이드는 작업 객체 가져오기, 작업 계층 구조 탐색, CRUD 작업 실행, 다중 선택된 작업 관리 등 작업에 대한 To Do List API를 다룹니다.
 
 import DocCardList from '@theme/DocCardList';
 import {useCurrentSidebarCategory} from '@docusaurus/theme-common';

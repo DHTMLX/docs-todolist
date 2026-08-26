@@ -40,8 +40,8 @@ console.log(list.getSelection()); // ["1.1", "1.2", "2.2"]
 
 Use the [`selectTask()`](api/methods/selecttask_method.md) method to select tasks after initialization. The method takes two parameters:
 
-- `id` — id of the task to select
-- `join` — whether to add the task to the existing selection
+- `id` - id of the task to select
+- `join` - whether to add the task to the existing selection
 
 ### Select one task
 
@@ -131,7 +131,7 @@ Enable the `sorted` parameter to get IDs of the selected tasks in the order they
 
 After selecting multiple tasks, apply operations to all of them at once.
 
-The library provides the [`eachSelected()`](api/methods/eachselected_method.md) method to iterate over all selected tasks. The method takes additional parameters — `sorted` and `reversed` — that control sorting and iteration direction.
+The library provides the [`eachSelected()`](api/methods/eachselected_method.md) method to iterate over all selected tasks. The method takes additional parameters, `sorted` and `reversed`, that control sorting and iteration direction.
 
 The example below deletes all selected tasks:
 
@@ -145,12 +145,12 @@ list.eachSelected(id => {
 
 You can perform the following bulk operations over multiple selected tasks through API methods:
 
-- [`copyTask()`](api/methods/copytask_method.md) — copy tasks
-- [`pasteTask()`](api/methods/pastetask_method.md) — paste tasks
-- [`moveTask()`](api/methods/movetask_method.md) — move tasks
-- [`deleteTask()`](api/methods/deletetask_method.md) — delete tasks
-- [`checkTask()`](api/methods/checktask_method.md), [`uncheckTask()`](api/methods/unchecktask_method.md) — mark tasks complete or incomplete
-- [`indentTask()`](api/methods/indenttask_method.md), [`unindentTask()`](api/methods/unindenttask_method.md) — demote or promote the nesting level of tasks
+- [`copyTask()`](api/methods/copytask_method.md) - copy tasks
+- [`pasteTask()`](api/methods/pastetask_method.md) - paste tasks
+- [`moveTask()`](api/methods/movetask_method.md) - move tasks
+- [`deleteTask()`](api/methods/deletetask_method.md) - delete tasks
+- [`checkTask()`](api/methods/checktask_method.md), [`uncheckTask()`](api/methods/unchecktask_method.md) - mark tasks complete or incomplete
+- [`indentTask()`](api/methods/indenttask_method.md), [`unindentTask()`](api/methods/unindenttask_method.md) - demote or promote the nesting level of tasks
 
 ## Reset selection
 

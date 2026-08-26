@@ -6,7 +6,7 @@ description: Aufgaben, Unteraufgaben, Projekte, Prioritäten und REST-Synchronis
 
 # DHTMLX To Do List MCP-Server: Aufgaben, Projekte und REST-Synchronisierung
 
-DHTMLX To Do List wirkt an der Oberfläche wie eine einfache Checkliste, bringt aber [verschachtelte Unteraufgaben](guides/task_operations.md#adding-a-new-task), [Tastenkürzel für Prioritäten](/#prioritizing-a-task), [Umsortieren per Drag-and-Drop](guides/configuration.md#drag-n-drop), [Filterung über Hashtags](guides/inline_editing.md#hashtags) und ein REST-Backend mit, das über den [Event Bus](api/internal/setnext_method.md) verkettet wird. Damit generierter Code funktioniert, benötigt er die aktuellen Signaturen zum [Kopieren einer Aufgabe](api/methods/copytask_method.md) oder zum [Einrücken einer Aufgabe zu einer Unteraufgabe](api/methods/indenttask_method.md), die richtige Struktur der Event-Payload und die [Optionen für Aufgabenfelder](api/configs/taskshape_config.md), die es heute tatsächlich gibt — und nicht eine veraltete Erinnerung aus dem Training.
+DHTMLX To Do List wirkt an der Oberfläche wie eine einfache Checkliste, bringt aber [verschachtelte Unteraufgaben](guides/task_operations.md#adding-a-new-task), [Tastenkürzel für Prioritäten](/#prioritizing-a-task), [Umsortieren per Drag-and-Drop](guides/configuration.md#drag-n-drop), [Filterung über Hashtags](guides/inline_editing.md#hashtags) und ein REST-Backend mit, das über den [Event Bus](api/internal/setnext_method.md) verkettet wird. Damit generierter Code funktioniert, benötigt er die aktuellen Signaturen zum [Kopieren einer Aufgabe](api/methods/copytask_method.md) oder zum [Einrücken einer Aufgabe zu einer Unteraufgabe](api/methods/indenttask_method.md), die richtige Struktur der Event-Payload und die [Optionen für Aufgabenfelder](api/configs/taskshape_config.md), die es heute tatsächlich gibt, und nicht eine veraltete Erinnerung aus dem Training.
 
 Genau hier hilft der DHTMLX MCP-Server: Er lässt den Assistenten die aktuelle To Do List-Dokumentation prüfen, bevor dieser antwortet. Verweisen Sie ihn auf [Aufgabenoperationen](guides/task_operations.md), [Mehrfachauswahl und Sammelaktionen](guides/multiselection.md), die [Integration des REST-Backends](guides/working_with_server.md) oder die [Konfiguration von Aufgaben und Projekten](guides/configuration.md), und der Assistent ruft die aktuelle API-Oberfläche ab, statt zu raten.
 
@@ -51,7 +51,7 @@ Dank dieser Recherche bindet der Assistent RestDataProvider genau so in den Even
 
 ## MCP-Verbindung einrichten {#setting-up-the-mcp-connection}
 
-Ob Sie ein neues To Do List-Projekt aufsetzen oder an ein bestehendes `RestDataProvider`-Backend andocken — beides beginnt gleich: Richten Sie Ihr Tool auf die untenstehende URL aus, je nach Erwartung des Tools über einen CLI-Befehl oder einen JSON-Konfigurationseintrag.
+Ob Sie ein neues To Do List-Projekt aufsetzen oder an ein bestehendes `RestDataProvider`-Backend andocken: Beides beginnt gleich. Richten Sie Ihr Tool auf die untenstehende URL aus, je nach Erwartung des Tools über einen CLI-Befehl oder einen JSON-Konfigurationseintrag.
 
 ~~~jsx
 https://docs.dhtmlx.com/mcp
@@ -71,7 +71,7 @@ Um den Server über die Befehlszeile zu registrieren, führen Sie aus:
 claude mcp add --transport http dhtmlx-mcp https://docs.dhtmlx.com/mcp
 ~~~
 
-Auch eine manuelle Einrichtung ist möglich — fügen Sie dazu einfach Folgendes zu Ihrer `.mcp.json` hinzu:
+Auch eine manuelle Einrichtung ist möglich, fügen Sie dazu einfach Folgendes zu Ihrer `.mcp.json` hinzu:
 
 ~~~jsx
 {
@@ -245,4 +245,4 @@ How do I set up multiuser mode so task changes sync across clients in real time?
 - **Nennen Sie die genaue Methode.** DHTMLX To Do List stellt mehrere ähnlich benannte Methodenpaare bereit (`checkTask()`/`uncheckTask()`, `indentTask()`/`unindentTask()`, `hideCompletedTasks()`/`showCompletedTasks()`). Geben Sie den Methodennamen an, damit der Assistent die richtige Referenz abruft, statt die Parameter zu erraten.
 - **Sagen Sie, ob das Ziel eine Aufgabe, ein Projekt oder ein Benutzer ist.** Viele Methoden erwarten ein ähnliches id-basiertes Objekt (zum Beispiel `getTask()` gegenüber `getProject()`). Die Nennung des Ziels grenzt die Suche auf den richtigen Teil der API ein.
 - **Beschreiben Sie die Datenstruktur.** Prompts wie "eine Aufgabe mit Unteraufgaben und einem Fälligkeitsdatum" oder "eine mehreren Benutzern zugewiesene Aufgabe" liefern präzisere Dokumentation als ein allgemeines "eine Aufgabe". Das ist besonders wichtig, wenn Sie zu ladende Daten vorbereiten oder `taskShape` konfigurieren.
-- **Ergänzen Sie "Use the docs"** in Ihrem Prompt. Diese Formulierung signalisiert, dass der Assistent eine MCP-Abfrage auslösen soll, statt allein aus den Trainingsdaten zu antworten. Am meisten hilft das bei Event-Payloads (zum Beispiel `open-menu` oder `edit-item`) und bei der Anbindung des REST-Backends — beides ändert sich zwischen Versionen.
+- **Ergänzen Sie "Use the docs"** in Ihrem Prompt. Diese Formulierung signalisiert, dass der Assistent eine MCP-Abfrage auslösen soll, statt allein aus den Trainingsdaten zu antworten. Am meisten hilft das bei Event-Payloads (zum Beispiel `open-menu` oder `edit-item`) und bei der Anbindung des REST-Backends, die sich beide zwischen Versionen ändern.

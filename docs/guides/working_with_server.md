@@ -15,34 +15,34 @@ The widget ships with the built-in [**Go**](https://github.com/web-widgets/todo-
 
 The To Do List provides the `RestDataProvider` service that talks to a REST backend and handles the following data operations:
 
-- `"add-task"` — add a task
-- `"update-task"` — update a task
-- `"delete-task"` — delete a task
-- `"add-project"` — add a project
-- `"update-project"` — update a project
-- `"delete-project"` — delete a project
-- `"set-project"` — set the active project
-- `"move-task"` — move a task
-- `"clone-task"` — clone a task
+- `"add-task"` - add a task
+- `"update-task"` - update a task
+- `"delete-task"` - delete a task
+- `"add-project"` - add a project
+- `"update-project"` - update a project
+- `"delete-project"` - delete a project
+- `"set-project"` - set the active project
+- `"move-task"` - move a task
+- `"clone-task"` - clone a task
 
 ## REST methods
 
 The `RestDataProvider` service includes the following REST methods for dynamic data loading:
 
-- [`getProjects()`](api/rest_api/methods/getprojects_method.md) — get a promise with the **projects data**
-- [`getProjectTasks()`](api/rest_api/methods/getprojecttasks_method.md) — get a promise with the **tasks data** of the specified `project`
-- [`getTags()`](api/rest_api/methods/gettags_method.md) — get a promise with the list of **default tags**
-- [`getTasks()`](api/rest_api/methods/gettasks_method.md) — get a promise with the **tasks data**
-- [`getUsers()`](api/rest_api/methods/getusers_method.md) — get a promise with the **users data**
-- [`setAPI()`](api/rest_api/methods/setapi_method.md) — set the API of the To Do List component into the RestDataProvider
-- [`send()`](api/rest_api/methods/send_method.md) — send a request to the server and get a promise with or without data, depending on the request
+- [`getProjects()`](api/rest_api/methods/getprojects_method.md) - get a promise with the **projects data**
+- [`getProjectTasks()`](api/rest_api/methods/getprojecttasks_method.md) - get a promise with the **tasks data** of the specified `project`
+- [`getTags()`](api/rest_api/methods/gettags_method.md) - get a promise with the list of **default tags**
+- [`getTasks()`](api/rest_api/methods/gettasks_method.md) - get a promise with the **tasks data**
+- [`getUsers()`](api/rest_api/methods/getusers_method.md) - get a promise with the **users data**
+- [`setAPI()`](api/rest_api/methods/setapi_method.md) - set the API of the To Do List component into the RestDataProvider
+- [`send()`](api/rest_api/methods/send_method.md) - send a request to the server and get a promise with or without data, depending on the request
 
 ## Interact with the backend
 
 To interact with the server, connect `RestDataProvider` to the server scripts. The built-in backend is available in two repositories:
 
-- [**Go**](https://github.com/web-widgets/todo-go) — Go backend
-- [**Node**](https://github.com/web-widgets/todo-node) — Node.js backend
+- [**Go**](https://github.com/web-widgets/todo-go) - Go backend
+- [**Node**](https://github.com/web-widgets/todo-node) - Node.js backend
 
 You can also create a custom backend.
 
@@ -230,7 +230,7 @@ The `RestDataProvider.getIDResolver()` method returns a function that synchroniz
 
 The `type` argument is the type of model and takes the following values:
 
-- `TaskID` — `1`
-- `ProjID` — `2`
+- `TaskID` - `1`
+- `ProjID` - `2`
 
 To prevent the request from being sent to the server, pass the `skipProvider: true` flag to the `todoInstance.api.exec()` method.

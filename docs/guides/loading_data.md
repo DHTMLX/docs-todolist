@@ -10,12 +10,12 @@ description: You can learn about loading and storing data in the documentation o
 
 DHTMLX To Do List accepts the following types of data through its configuration properties:
 
-- [`tasks`](api/configs/tasks_config.md) — list of tasks
-- [`projects`](api/configs/projects_config.md) — list of projects
-- [`users`](api/configs/users_config.md) — list of users
-- [`priorities`](api/configs/priorities_config.md) — list of priorities
-- [`tags`](api/configs/tags_config.md) — list of tags
-- [`activeProject`](api/configs/activeproject_config.md) — id of the active project
+- [`tasks`](api/configs/tasks_config.md) - list of tasks
+- [`projects`](api/configs/projects_config.md) - list of projects
+- [`users`](api/configs/users_config.md) - list of users
+- [`priorities`](api/configs/priorities_config.md) - list of priorities
+- [`tags`](api/configs/tags_config.md) - list of tags
+- [`activeProject`](api/configs/activeproject_config.md) - id of the active project
 
 Prepare data in a separate file. The example below returns a data set with tasks, projects, users, and priorities:
 

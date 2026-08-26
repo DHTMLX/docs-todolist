@@ -10,7 +10,7 @@ description: You can learn about managing tasks in the documentation of the DHTM
 To configure tasks, use the [`tasks`](api/configs/tasks_config.md) property of the To Do List.
 :::
 
-These guides cover the To Do List API for tasks — getting task objects, navigating task hierarchy, running CRUD operations, and managing multiple selected tasks.
+These guides cover the To Do List API for tasks: getting task objects, navigating task hierarchy, running CRUD operations, and managing multiple selected tasks.
 
 import DocCardList from '@theme/DocCardList';
 import {useCurrentSidebarCategory} from '@docusaurus/theme-common';

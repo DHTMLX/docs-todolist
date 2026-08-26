@@ -10,8 +10,8 @@ description: 您可以在 DHTMLX JavaScript To Do List 库的文档中了解任�
 
 初始化完成后，可通过以下两种方式对任务进行排序：
 
-- 通过[工具栏菜单](/#toolbar)的**排序方式**选项——按*文本*、*截止日期*、*完成日期*、*创建日期*或*编辑日期*排序
-- 通过 [`setSort()`](api/methods/setsort_method.md) 方法——指定自定义排序函数，或按[任务属性](api/configs/tasks_config.md#parameters)排序
+- 通过[工具栏菜单](/#toolbar)的**排序方式**选项 - 按*文本*、*截止日期*、*完成日期*、*创建日期*或*编辑日期*排序
+- 通过 [`setSort()`](api/methods/setsort_method.md) 方法 - 指定自定义排序函数，或按[任务属性](api/configs/tasks_config.md#parameters)排序
 
 以下示例按 id 升序对任务进行排序：
 
@@ -28,7 +28,7 @@ list.setSort({
 可通过以下两种方式筛选任务：
 
 - 通过工具栏的[搜索栏](/#toolbar)
-- 通过 [`setFilter()`](api/methods/setfilter_method.md) 方法——支持用于精确匹配的*严格*模式
+- 通过 [`setFilter()`](api/methods/setfilter_method.md) 方法 - 支持用于精确匹配的*严格*模式
 
 以下代码片段在严格模式下按指定话题标签筛选任务：
 

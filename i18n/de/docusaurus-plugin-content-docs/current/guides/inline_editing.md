@@ -26,7 +26,7 @@ Verwenden Sie Hashtags, um Aufgaben zu kategorisieren und die Suche zu erleichte
 
 - ein Hashtag kombiniert das Symbol `#` mit Buchstaben und Zahlen (zum Beispiel `#sport`)
 - um einen Hashtag zu erstellen, geben Sie `#` gefolgt von mindestens einem Symbol ein (zum Beispiel `#t`) und drücken Sie die Eingabetaste
-- die To Do List unterstützt eine unbegrenzte Anzahl von Hashtags — trennen Sie sie durch Leerzeichen (zum Beispiel `#tag #tag1`)
+- die To Do List unterstützt eine unbegrenzte Anzahl von Hashtags, die durch Leerzeichen getrennt werden (zum Beispiel `#tag #tag1`)
 - alle Hashtags sind in allen Projekten zugänglich
 - um die Liste der Hashtags anzuzeigen, geben Sie das Symbol `#` ein
 - um einer Aufgabe einen Hashtag hinzuzufügen, klicken Sie in der Liste darauf
@@ -38,7 +38,7 @@ Erstellen Sie eine Standardliste von Tags über die Eigenschaft [`tags`](api/con
 
 ### Datumsangaben {#dates}
 
-Um ein Datum über den Inline-Editor einzugeben, tippen Sie das Symbol `!` — der integrierte Datumswähler erscheint auf der Seite.
+Um ein Datum über den Inline-Editor einzugeben, tippen Sie das Symbol `!`. Der integrierte Datumswähler erscheint auf der Seite.
 
 Sie können Text auch in die speziellen Symbole `!()` einschließen. Geben Sie zum Beispiel `!(Buchungsdatum eingeben)` ein und drücken Sie die Eingabetaste, um den Editor zu schließen. Klicken Sie später auf diesen Text, um den Datumswähler erneut zu öffnen.
 

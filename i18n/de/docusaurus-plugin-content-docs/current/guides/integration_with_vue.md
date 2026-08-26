@@ -72,8 +72,8 @@ Erstellen Sie eine Vue-Komponente, um die To-Do-Liste mit der Toolbar in die Anw
 
 Öffnen Sie *ToDo.vue* und importieren Sie die Quelldateien der To-Do-Liste. Wählen Sie einen der beiden Importpfade:
 
-- PRO-Version aus einem lokalen Ordner installiert — Import aus `dhx-todolist-package`
-- Testversion — Import aus `@dhx/trial-todolist`
+- PRO-Version aus einem lokalen Ordner installiert - Import aus `dhx-todolist-package`
+- Testversion - Import aus `@dhx/trial-todolist`
 
 Das folgende Beispiel importiert aus dem PRO-Paket:
 
@@ -342,7 +342,7 @@ export default {
 </template>
 ~~~
 
-Starten Sie die App — die To-Do-Liste wird mit Beispieldaten gerendert:
+Starten Sie die App. Die To-Do-Liste wird mit Beispieldaten gerendert:
 
 ![In einer Vue-Anwendung gerendertes DHTMLX To Do List mit Beispieldaten](/img/trial_todolist.png)
 
